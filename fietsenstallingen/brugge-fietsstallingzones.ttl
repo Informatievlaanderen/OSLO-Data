@@ -1,0 +1,897 @@
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix csvw: <http://www.w3.org/ns/csvw#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ex: <http://example.com/ns#> .
+@prefix fixme: <http://fixme.com#> .
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix mobivoc: <http://schema.mobivoc.org/#> .
+@prefix openbaardomein: <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix rml: <http://w3id.org/rml/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.com/fietsstallingszone/id/10> a mobivoc:BicycleParkingStation, openbaardomein:Fietsstalling,
+    openbaardomein:FysiekObject, openbaardomein:Infrastructuurelement;
+  fixme:eigenaar <https://example.com/fietsstallingszone/id/10#eigenaar>;
+  dcterms:type <https://example.com/id/concept/deelgemeentetype/Sint-Kruis>, <https://example.com/id/concept/sectortype/Oost>,
+    <https://example.com/id/concept/sitetype/voetpad>, <https://example.com/id/concept/statustype/in%20gebruik>;
+  mobivoc:level 0;
+  adms:indentifier <https://example.com/fietsstallingszone/id/10#identificator>;
+  locn:address <https://example.com/fietstalling/id/10#adres>;
+  locn:geometry <https://example.com/fietsstallingszone/id/10#geometrie>;
+  openbaardomein:afsluitbaar false;
+  openbaardomein:beheerder <https://example.com/fietsstallingszone/id/10#beheerder>;
+  openbaardomein:capaciteit 2;
+  openbaardomein:fietsdelen false;
+  openbaardomein:materiaal <https://example.com/id/concept/ondergrondtype#betontegels>;
+  openbaardomein:overdekt false;
+  openbaardomein:verplaatsbaar false .
+
+<http://example.com/fietsstallingszone/id/10#geometrie> a geosparql:Geometry;
+  geosparql:asGeoJSON "{type=MultiPolygon, coordinates=[[[[3.2483060243, 51.2084652102], [3.2482920607, 51.208431245], [3.2483105622, 51.2084266754], [3.2483159906, 51.2084331221], [3.2483204142, 51.2084403844], [3.2483241415, 51.2084492906], [3.2483060243, 51.2084652102]]]]}"^^geosparql:geoJSONLiteral .
+
+<http://example.com/fietsstallingszone/id/11> a mobivoc:BicycleParkingStation, openbaardomein:Fietsstalling,
+    openbaardomein:FysiekObject, openbaardomein:Infrastructuurelement;
+  fixme:eigenaar <https://example.com/fietsstallingszone/id/11#eigenaar>;
+  dcterms:type <https://example.com/id/concept/deelgemeentetype/Assebroek>, <https://example.com/id/concept/sectortype/Oost>,
+    <https://example.com/id/concept/sitetype/voetpad>, <https://example.com/id/concept/statustype/in%20gebruik>;
+  mobivoc:level 0;
+  adms:indentifier <https://example.com/fietsstallingszone/id/11#identificator>;
+  locn:address <https://example.com/fietstalling/id/11#adres>;
+  locn:geometry <https://example.com/fietsstallingszone/id/11#geometrie>;
+  openbaardomein:afsluitbaar false;
+  openbaardomein:beheerder <https://example.com/fietsstallingszone/id/11#beheerder>;
+  openbaardomein:capaciteit 4;
+  openbaardomein:fietsdelen false;
+  openbaardomein:materiaal <https://example.com/id/concept/ondergrondtype#betonstraatstenen>;
+  openbaardomein:overdekt false;
+  openbaardomein:verplaatsbaar false .
+
+<http://example.com/fietsstallingszone/id/11#geometrie> a geosparql:Geometry;
+  geosparql:asGeoJSON "{type=MultiPolygon, coordinates=[[[[3.2498624647, 51.2037270801], [3.2499023369, 51.2037439908], [3.2498907797, 51.2037550526], [3.2498493817, 51.203738742], [3.2498624647, 51.2037270801]]]]}"^^geosparql:geoJSONLiteral .
+
+<http://example.com/fietsstallingszone/id/12> a mobivoc:BicycleParkingStation, openbaardomein:Fietsstalling,
+    openbaardomein:FysiekObject, openbaardomein:Infrastructuurelement;
+  fixme:eigenaar <https://example.com/fietsstallingszone/id/12#eigenaar>;
+  dcterms:type <https://example.com/id/concept/deelgemeentetype/Assebroek>, <https://example.com/id/concept/sectortype/Oost>,
+    <https://example.com/id/concept/sitetype/plein>, <https://example.com/id/concept/statustype/in%20gebruik>;
+  adms:indentifier <https://example.com/fietsstallingszone/id/12#identificator>;
+  locn:address <https://example.com/fietstalling/id/12#adres>;
+  locn:geometry <https://example.com/fietsstallingszone/id/12#geometrie>;
+  openbaardomein:afsluitbaar false;
+  openbaardomein:beheerder <https://example.com/fietsstallingszone/id/12#beheerder>;
+  openbaardomein:capaciteit 10;
+  openbaardomein:fietsdelen false;
+  openbaardomein:materiaal <https://example.com/id/concept/ondergrondtype#betonstraatstenen>;
+  openbaardomein:overdekt false;
+  openbaardomein:verplaatsbaar false .
+
+<http://example.com/fietsstallingszone/id/12#geometrie> a geosparql:Geometry;
+  geosparql:asGeoJSON "{type=MultiPolygon, coordinates=[[[[3.2463848832, 51.2008403808], [3.2463637497, 51.2008023097], [3.2463977997, 51.2007949806], [3.2464200133, 51.2008325033], [3.2463848832, 51.2008403808]]]]}"^^geosparql:geoJSONLiteral .
+
+<http://example.com/fietsstallingszone/id/13> a mobivoc:BicycleParkingStation, openbaardomein:Fietsstalling,
+    openbaardomein:FysiekObject, openbaardomein:Infrastructuurelement;
+  fixme:eigenaar <https://example.com/fietsstallingszone/id/13#eigenaar>;
+  dcterms:type <https://example.com/id/concept/deelgemeentetype/Assebroek>, <https://example.com/id/concept/sectortype/Oost>,
+    <https://example.com/id/concept/sitetype/plein>, <https://example.com/id/concept/statustype/in%20gebruik>;
+  adms:indentifier <https://example.com/fietsstallingszone/id/13#identificator>;
+  locn:address <https://example.com/fietstalling/id/13#adres>;
+  locn:geometry <https://example.com/fietsstallingszone/id/13#geometrie>;
+  openbaardomein:afsluitbaar false;
+  openbaardomein:beheerder <https://example.com/fietsstallingszone/id/13#beheerder>;
+  openbaardomein:capaciteit 10;
+  openbaardomein:fietsdelen false;
+  openbaardomein:materiaal <https://example.com/id/concept/ondergrondtype#betonstraatstenen>;
+  openbaardomein:overdekt false;
+  openbaardomein:verplaatsbaar false .
+
+<http://example.com/fietsstallingszone/id/13#geometrie> a geosparql:Geometry;
+  geosparql:asGeoJSON "{type=MultiPolygon, coordinates=[[[[3.2463848832, 51.2008403808], [3.2463637497, 51.2008023097], [3.2463977997, 51.2007949806], [3.2464200133, 51.2008325033], [3.2463848832, 51.2008403808]]]]}"^^geosparql:geoJSONLiteral .
+
+<http://example.com/fietsstallingszone/id/14> a mobivoc:BicycleParkingStation, openbaardomein:Fietsstalling,
+    openbaardomein:FysiekObject, openbaardomein:Infrastructuurelement;
+  fixme:eigenaar <https://example.com/fietsstallingszone/id/14#eigenaar>;
+  dcterms:type <https://example.com/id/concept/deelgemeentetype/Assebroek>, <https://example.com/id/concept/sectortype/Oost>,
+    <https://example.com/id/concept/sitetype/plein>;
+  mobivoc:level 0;
+  adms:indentifier <https://example.com/fietsstallingszone/id/14#identificator>;
+  locn:address <https://example.com/fietstalling/id/14#adres>;
+  locn:geometry <https://example.com/fietsstallingszone/id/14#geometrie>;
+  openbaardomein:afsluitbaar false;
+  openbaardomein:beheerder <https://example.com/fietsstallingszone/id/14#beheerder>;
+  openbaardomein:capaciteit 10;
+  openbaardomein:fietsdelen false;
+  openbaardomein:materiaal <https://example.com/id/concept/ondergrondtype#betonstraatstenen>;
+  openbaardomein:overdekt false;
+  openbaardomein:verplaatsbaar false .
+
+<http://example.com/fietsstallingszone/id/14#geometrie> a geosparql:Geometry;
+  geosparql:asGeoJSON "{type=MultiPolygon, coordinates=[[[[3.2463347383, 51.2009513378], [3.2463094332, 51.2009055749], [3.2463360694, 51.2008996835], [3.2463588292, 51.2009477683], [3.2463347383, 51.2009513378]]]]}"^^geosparql:geoJSONLiteral .
+
+<http://example.com/fietsstallingszone/id/15> a mobivoc:BicycleParkingStation, openbaardomein:Fietsstalling,
+    openbaardomein:FysiekObject, openbaardomein:Infrastructuurelement;
+  fixme:eigenaar <https://example.com/fietsstallingszone/id/15#eigenaar>;
+  dcterms:type <https://example.com/id/concept/deelgemeentetype/Assebroek>, <https://example.com/id/concept/sectortype/Oost>,
+    <https://example.com/id/concept/sitetype/plein>, <https://example.com/id/concept/statustype/in%20gebruik>;
+  mobivoc:level 0;
+  adms:indentifier <https://example.com/fietsstallingszone/id/15#identificator>;
+  locn:address <https://example.com/fietstalling/id/15#adres>;
+  locn:geometry <https://example.com/fietsstallingszone/id/15#geometrie>;
+  openbaardomein:afsluitbaar false;
+  openbaardomein:beheerder <https://example.com/fietsstallingszone/id/15#beheerder>;
+  openbaardomein:capaciteit 12;
+  openbaardomein:fietsdelen false;
+  openbaardomein:materiaal <https://example.com/id/concept/ondergrondtype#betonstraatstenen>;
+  openbaardomein:overdekt false;
+  openbaardomein:verplaatsbaar false .
+
+<http://example.com/fietsstallingszone/id/15#geometrie> a geosparql:Geometry;
+  geosparql:asGeoJSON "{type=MultiPolygon, coordinates=[[[[3.2466191647, 51.2010840145], [3.2466277946, 51.2010985631], [3.2465491962, 51.2011135128], [3.2465418, 51.2010994227], [3.2466191647, 51.2010840145]]]]}"^^geosparql:geoJSONLiteral .
+
+<http://example.com/fietsstallingszone/id/16> a mobivoc:BicycleParkingStation, openbaardomein:Fietsstalling,
+    openbaardomein:FysiekObject, openbaardomein:Infrastructuurelement;
+  fixme:eigenaar <https://example.com/fietsstallingszone/id/16#eigenaar>;
+  dcterms:type <https://example.com/id/concept/deelgemeentetype/Centrum>, <https://example.com/id/concept/sectortype/Oost>,
+    <https://example.com/id/concept/sitetype/voetpad>, <https://example.com/id/concept/statustype/in%20gebruik>;
+  mobivoc:level 0;
+  adms:indentifier <https://example.com/fietsstallingszone/id/16#identificator>;
+  locn:address <https://example.com/fietstalling/id/16#adres>;
+  locn:geometry <https://example.com/fietsstallingszone/id/16#geometrie>;
+  openbaardomein:afsluitbaar false;
+  openbaardomein:beheerder <https://example.com/fietsstallingszone/id/16#beheerder>;
+  openbaardomein:capaciteit 4;
+  openbaardomein:fietsdelen false;
+  openbaardomein:materiaal <https://example.com/id/concept/ondergrondtype#betontegels>;
+  openbaardomein:overdekt false;
+  openbaardomein:verplaatsbaar false .
+
+<http://example.com/fietsstallingszone/id/16#geometrie> a geosparql:Geometry;
+  geosparql:asGeoJSON "{type=MultiPolygon, coordinates=[[[[3.2364954593, 51.1983580211], [3.2364938269, 51.1983776669], [3.2364732391, 51.1983834464], [3.2364450942, 51.198374575], [3.2364954593, 51.1983580211]]]]}"^^geosparql:geoJSONLiteral .
+
+<http://example.com/fietsstallingszone/id/17> a mobivoc:BicycleParkingStation, openbaardomein:Fietsstalling,
+    openbaardomein:FysiekObject, openbaardomein:Infrastructuurelement;
+  fixme:eigenaar <https://example.com/fietsstallingszone/id/17#eigenaar>;
+  dcterms:type <https://example.com/id/concept/deelgemeentetype/Assebroek>, <https://example.com/id/concept/sectortype/Oost>,
+    <https://example.com/id/concept/sitetype/voetpad>, <https://example.com/id/concept/statustype/in%20gebruik>;
+  mobivoc:level 0;
+  adms:indentifier <https://example.com/fietsstallingszone/id/17#identificator>;
+  locn:address <https://example.com/fietstalling/id/17#adres>;
+  locn:geometry <https://example.com/fietsstallingszone/id/17#geometrie>;
+  openbaardomein:afsluitbaar false;
+  openbaardomein:beheerder <https://example.com/fietsstallingszone/id/17#beheerder>;
+  openbaardomein:capaciteit 2;
+  openbaardomein:fietsdelen false;
+  openbaardomein:materiaal <https://example.com/id/concept/ondergrondtype#betontegels>;
+  openbaardomein:overdekt false;
+  openbaardomein:verplaatsbaar false .
+
+<http://example.com/fietsstallingszone/id/17#geometrie> a geosparql:Geometry;
+  geosparql:asGeoJSON "{type=MultiPolygon, coordinates=[[[[3.2386192305, 51.2000857679], [3.2386576681, 51.2000623428], [3.2386802386, 51.2000765307], [3.2386424678, 51.2000999063], [3.2386192305, 51.2000857679]]]]}"^^geosparql:geoJSONLiteral .
+
+<http://example.com/fietsstallingszone/id/18> a mobivoc:BicycleParkingStation, openbaardomein:Fietsstalling,
+    openbaardomein:FysiekObject, openbaardomein:Infrastructuurelement;
+  fixme:eigenaar <https://example.com/fietsstallingszone/id/18#eigenaar>;
+  dcterms:type <https://example.com/id/concept/deelgemeentetype/Assebroek>, <https://example.com/id/concept/sectortype/Oost>,
+    <https://example.com/id/concept/sitetype/voetpad>, <https://example.com/id/concept/statustype/in%20gebruik>;
+  mobivoc:level 0;
+  adms:indentifier <https://example.com/fietsstallingszone/id/18#identificator>;
+  locn:address <https://example.com/fietstalling/id/18#adres>;
+  locn:geometry <https://example.com/fietsstallingszone/id/18#geometrie>;
+  openbaardomein:afsluitbaar false;
+  openbaardomein:beheerder <https://example.com/fietsstallingszone/id/18#beheerder>;
+  openbaardomein:capaciteit 2;
+  openbaardomein:fietsdelen false;
+  openbaardomein:materiaal <https://example.com/id/concept/ondergrondtype#betontegels>;
+  openbaardomein:overdekt false;
+  openbaardomein:verplaatsbaar false .
+
+<http://example.com/fietsstallingszone/id/18#geometrie> a geosparql:Geometry;
+  geosparql:asGeoJSON "{type=MultiPolygon, coordinates=[[[[3.2385309241, 51.2000047007], [3.2385535777, 51.1999915977], [3.2385877829, 51.2000173744], [3.2385644012, 51.2000292811], [3.2385309241, 51.2000047007]]]]}"^^geosparql:geoJSONLiteral .
+
+<http://example.com/fietsstallingszone/id/19> a mobivoc:BicycleParkingStation, openbaardomein:Fietsstalling,
+    openbaardomein:FysiekObject, openbaardomein:Infrastructuurelement;
+  fixme:eigenaar <https://example.com/fietsstallingszone/id/19#eigenaar>;
+  dcterms:type <https://example.com/id/concept/deelgemeentetype/Sint-Kruis>, <https://example.com/id/concept/sectortype/Oost>,
+    <https://example.com/id/concept/sitetype/parking>, <https://example.com/id/concept/statustype/in%20gebruik>;
+  mobivoc:level 0;
+  adms:indentifier <https://example.com/fietsstallingszone/id/19#identificator>;
+  locn:address <https://example.com/fietstalling/id/19#adres>;
+  locn:geometry <https://example.com/fietsstallingszone/id/19#geometrie>;
+  openbaardomein:afsluitbaar false;
+  openbaardomein:beheerder <https://example.com/fietsstallingszone/id/19#beheerder>;
+  openbaardomein:capaciteit 12;
+  openbaardomein:fietsdelen false;
+  openbaardomein:materiaal <https://example.com/id/concept/ondergrondtype#betonstraatstenen>;
+  openbaardomein:overdekt false;
+  openbaardomein:verplaatsbaar false .
+
+<http://example.com/fietsstallingszone/id/19#geometrie> a geosparql:Geometry;
+  geosparql:asGeoJSON "{type=MultiPolygon, coordinates=[[[[3.2382869252, 51.2233713477], [3.2381793742, 51.2233166985], [3.2381951647, 51.2233037791], [3.2383032493, 51.2233584335], [3.2382869252, 51.2233713477]]]]}"^^geosparql:geoJSONLiteral .
+
+<http://example.com/fietsstallingszone/id/2> a mobivoc:BicycleParkingStation, openbaardomein:Fietsstalling,
+    openbaardomein:FysiekObject, openbaardomein:Infrastructuurelement;
+  fixme:eigenaar <https://example.com/fietsstallingszone/id/2#eigenaar>;
+  dcterms:type <https://example.com/id/concept/deelgemeentetype/Centrum>, <https://example.com/id/concept/sectortype/Centrum>,
+    <https://example.com/id/concept/sitetype/wegzone>;
+  adms:indentifier <https://example.com/fietsstallingszone/id/2#identificator>;
+  locn:address <https://example.com/fietstalling/id/2#adres>;
+  locn:geometry <https://example.com/fietsstallingszone/id/2#geometrie>;
+  openbaardomein:afsluitbaar false;
+  openbaardomein:beheerder <https://example.com/fietsstallingszone/id/2#beheerder>;
+  openbaardomein:capaciteit 10;
+  openbaardomein:fietsdelen false;
+  openbaardomein:materiaal <https://example.com/id/concept/ondergrondtype#kassei>;
+  openbaardomein:overdekt false;
+  openbaardomein:verplaatsbaar false .
+
+<http://example.com/fietsstallingszone/id/2#geometrie> a geosparql:Geometry;
+  geosparql:asGeoJSON "{type=MultiPolygon, coordinates=[[[[3.2287947848, 51.2095114252], [3.2288075632, 51.2094979567], [3.2289398452, 51.2095431718], [3.2289264468, 51.2095577514], [3.2287947848, 51.2095114252]]]]}"^^geosparql:geoJSONLiteral .
+
+<http://example.com/fietsstallingszone/id/20> a mobivoc:BicycleParkingStation, openbaardomein:Fietsstalling,
+    openbaardomein:FysiekObject, openbaardomein:Infrastructuurelement;
+  fixme:eigenaar <https://example.com/fietsstallingszone/id/20#eigenaar>;
+  dcterms:type <https://example.com/id/concept/deelgemeentetype/Sint-Kruis>, <https://example.com/id/concept/sectortype/Oost>,
+    <https://example.com/id/concept/sitetype/parking>, <https://example.com/id/concept/statustype/gepland>;
+  mobivoc:level 0;
+  adms:indentifier <https://example.com/fietsstallingszone/id/20#identificator>;
+  locn:address <https://example.com/fietstalling/id/20#adres>;
+  locn:geometry <https://example.com/fietsstallingszone/id/20#geometrie>;
+  openbaardomein:afsluitbaar false;
+  openbaardomein:beheerder <https://example.com/fietsstallingszone/id/20#beheerder>;
+  openbaardomein:capaciteit 6;
+  openbaardomein:fietsdelen false;
+  openbaardomein:materiaal <https://example.com/id/concept/ondergrondtype#betonstraatstenen>;
+  openbaardomein:overdekt false;
+  openbaardomein:verplaatsbaar false .
+
+<http://example.com/fietsstallingszone/id/20#geometrie> a geosparql:Geometry;
+  geosparql:asGeoJSON "{type=MultiPolygon, coordinates=[[[[3.2429452425, 51.2139439365], [3.2429564133, 51.213890086], [3.2429832971, 51.2138926878], [3.2429721344, 51.2139462032], [3.2429452425, 51.2139439365]]]]}"^^geosparql:geoJSONLiteral .
+
+<http://example.com/fietsstallingszone/id/21> a mobivoc:BicycleParkingStation, openbaardomein:Fietsstalling,
+    openbaardomein:FysiekObject, openbaardomein:Infrastructuurelement;
+  fixme:eigenaar <https://example.com/fietsstallingszone/id/21#eigenaar>;
+  dcterms:type <https://example.com/id/concept/deelgemeentetype/Sint-Kruis>, <https://example.com/id/concept/sectortype/Oost>,
+    <https://example.com/id/concept/sitetype/parking>, <https://example.com/id/concept/statustype/gepland>;
+  mobivoc:level 0;
+  adms:indentifier <https://example.com/fietsstallingszone/id/21#identificator>;
+  locn:address <https://example.com/fietstalling/id/21#adres>;
+  locn:geometry <https://example.com/fietsstallingszone/id/21#geometrie>;
+  openbaardomein:afsluitbaar false;
+  openbaardomein:beheerder <https://example.com/fietsstallingszone/id/21#beheerder>;
+  openbaardomein:capaciteit 6;
+  openbaardomein:fietsdelen false;
+  openbaardomein:materiaal <https://example.com/id/concept/ondergrondtype#betonstraatstenen>;
+  openbaardomein:overdekt false;
+  openbaardomein:verplaatsbaar false .
+
+<http://example.com/fietsstallingszone/id/21#geometrie> a geosparql:Geometry;
+  geosparql:asGeoJSON "{type=MultiPolygon, coordinates=[[[[3.2412567134, 51.2139315396], [3.2412722412, 51.2139182822], [3.2413592966, 51.2139591607], [3.2413432151, 51.2139732507], [3.2412567134, 51.2139315396]]]]}"^^geosparql:geoJSONLiteral .
+
+<http://example.com/fietsstallingszone/id/23> a mobivoc:BicycleParkingStation, openbaardomein:Fietsstalling,
+    openbaardomein:FysiekObject, openbaardomein:Infrastructuurelement;
+  fixme:eigenaar <https://example.com/fietsstallingszone/id/23#eigenaar>;
+  dcterms:type <https://example.com/id/concept/deelgemeentetype/Zeebrugge>, <https://example.com/id/concept/sectortype/Noord%201>,
+    <https://example.com/id/concept/sitetype/wegzone>, <https://example.com/id/concept/statustype/in%20gebruik>;
+  adms:indentifier <https://example.com/fietsstallingszone/id/23#identificator>;
+  locn:address <https://example.com/fietstalling/id/23#adres>;
+  locn:geometry <https://example.com/fietsstallingszone/id/23#geometrie>;
+  openbaardomein:afsluitbaar false;
+  openbaardomein:beheerder <https://example.com/fietsstallingszone/id/23#beheerder>;
+  openbaardomein:capaciteit 24;
+  openbaardomein:fietsdelen false;
+  openbaardomein:materiaal <https://example.com/id/concept/ondergrondtype#betonstraatstenen>;
+  openbaardomein:overdekt false;
+  openbaardomein:verplaatsbaar false .
+
+<http://example.com/fietsstallingszone/id/23#geometrie> a geosparql:Geometry;
+  geosparql:asGeoJSON "{type=MultiPolygon, coordinates=[[[[3.172031928, 51.3272470109], [3.172059901, 51.3271992587], [3.1721868557, 51.3272314459], [3.1721547523, 51.3272780394], [3.172031928, 51.3272470109]]]]}"^^geosparql:geoJSONLiteral .
+
+<http://example.com/fietsstallingszone/id/24> a mobivoc:BicycleParkingStation, openbaardomein:Fietsstalling,
+    openbaardomein:FysiekObject, openbaardomein:Infrastructuurelement;
+  fixme:eigenaar <https://example.com/fietsstallingszone/id/24#eigenaar>;
+  dcterms:type <https://example.com/id/concept/deelgemeentetype/Zeebrugge>, <https://example.com/id/concept/sectortype/Noord%201>,
+    <https://example.com/id/concept/sitetype/wegzone>, <https://example.com/id/concept/statustype/in%20gebruik>;
+  adms:indentifier <https://example.com/fietsstallingszone/id/24#identificator>;
+  locn:address <https://example.com/fietstalling/id/24#adres>;
+  locn:geometry <https://example.com/fietsstallingszone/id/24#geometrie>;
+  openbaardomein:afsluitbaar false;
+  openbaardomein:beheerder <https://example.com/fietsstallingszone/id/24#beheerder>;
+  openbaardomein:capaciteit 24;
+  openbaardomein:fietsdelen false;
+  openbaardomein:materiaal <https://example.com/id/concept/ondergrondtype#betonstraatstenen>;
+  openbaardomein:overdekt false;
+  openbaardomein:verplaatsbaar false .
+
+<http://example.com/fietsstallingszone/id/24#geometrie> a geosparql:Geometry;
+  geosparql:asGeoJSON "{type=MultiPolygon, coordinates=[[[[3.1729490117, 51.3274774458], [3.1729830308, 51.3274256584], [3.1731217748, 51.327461687], [3.1730889728, 51.3275123697], [3.1729490117, 51.3274774458]]]]}"^^geosparql:geoJSONLiteral .
+
+<http://example.com/fietsstallingszone/id/25> a mobivoc:BicycleParkingStation, openbaardomein:Fietsstalling,
+    openbaardomein:FysiekObject, openbaardomein:Infrastructuurelement;
+  fixme:eigenaar <https://example.com/fietsstallingszone/id/25#eigenaar>;
+  dcterms:type <https://example.com/id/concept/deelgemeentetype/Zeebrugge>, <https://example.com/id/concept/sectortype/Noord%201>,
+    <https://example.com/id/concept/sitetype/wegzone>, <https://example.com/id/concept/statustype/in%20gebruik>;
+  adms:indentifier <https://example.com/fietsstallingszone/id/25#identificator>;
+  locn:address <https://example.com/fietstalling/id/25#adres>;
+  locn:geometry <https://example.com/fietsstallingszone/id/25#geometrie>;
+  openbaardomein:afsluitbaar false;
+  openbaardomein:beheerder <https://example.com/fietsstallingszone/id/25#beheerder>;
+  openbaardomein:capaciteit 24;
+  openbaardomein:fietsdelen false;
+  openbaardomein:materiaal <https://example.com/id/concept/ondergrondtype#betonstraatstenen>;
+  openbaardomein:overdekt false;
+  openbaardomein:verplaatsbaar false .
+
+<http://example.com/fietsstallingszone/id/25#geometrie> a geosparql:Geometry;
+  geosparql:asGeoJSON "{type=MultiPolygon, coordinates=[[[[3.1738867576, 51.3277136671], [3.1739165306, 51.3276651878], [3.1740754497, 51.3277025358], [3.1740426868, 51.3277517297], [3.1738867576, 51.3277136671]]]]}"^^geosparql:geoJSONLiteral .
+
+<http://example.com/fietsstallingszone/id/26> a mobivoc:BicycleParkingStation, openbaardomein:Fietsstalling,
+    openbaardomein:FysiekObject, openbaardomein:Infrastructuurelement;
+  fixme:eigenaar <https://example.com/fietsstallingszone/id/26#eigenaar>;
+  dcterms:type <https://example.com/id/concept/deelgemeentetype/Zeebrugge>, <https://example.com/id/concept/sectortype/Noord%201>,
+    <https://example.com/id/concept/sitetype/wegzone>, <https://example.com/id/concept/statustype/in%20gebruik>;
+  adms:indentifier <https://example.com/fietsstallingszone/id/26#identificator>;
+  locn:address <https://example.com/fietstalling/id/26#adres>;
+  locn:geometry <https://example.com/fietsstallingszone/id/26#geometrie>;
+  openbaardomein:afsluitbaar false;
+  openbaardomein:beheerder <https://example.com/fietsstallingszone/id/26#beheerder>;
+  openbaardomein:capaciteit 24;
+  openbaardomein:fietsdelen false;
+  openbaardomein:materiaal <https://example.com/id/concept/ondergrondtype#betonstraatstenen>;
+  openbaardomein:overdekt false;
+  openbaardomein:verplaatsbaar false .
+
+<http://example.com/fietsstallingszone/id/26#geometrie> a geosparql:Geometry;
+  geosparql:asGeoJSON "{type=MultiPolygon, coordinates=[[[[3.1781179425, 51.328733322], [3.178160609, 51.3286685873], [3.1782237886, 51.3286848608], [3.178183518, 51.3287488748], [3.1781179425, 51.328733322]]]]}"^^geosparql:geoJSONLiteral .
+
+<http://example.com/fietsstallingszone/id/27> a mobivoc:BicycleParkingStation, openbaardomein:Fietsstalling,
+    openbaardomein:FysiekObject, openbaardomein:Infrastructuurelement;
+  fixme:eigenaar <https://example.com/fietsstallingszone/id/27#eigenaar>;
+  dcterms:type <https://example.com/id/concept/deelgemeentetype/Zeebrugge>, <https://example.com/id/concept/sectortype/Noord%201>,
+    <https://example.com/id/concept/sitetype/wegzone>;
+  adms:indentifier <https://example.com/fietsstallingszone/id/27#identificator>;
+  locn:address <https://example.com/fietstalling/id/27#adres>;
+  locn:geometry <https://example.com/fietsstallingszone/id/27#geometrie>;
+  openbaardomein:afsluitbaar false;
+  openbaardomein:beheerder <https://example.com/fietsstallingszone/id/27#beheerder>;
+  openbaardomein:capaciteit 8;
+  openbaardomein:fietsdelen false;
+  openbaardomein:materiaal <https://example.com/id/concept/ondergrondtype#betonstraatstenen>;
+  openbaardomein:overdekt false;
+  openbaardomein:verplaatsbaar false .
+
+<http://example.com/fietsstallingszone/id/27#geometrie> a geosparql:Geometry;
+  geosparql:asGeoJSON "{type=MultiPolygon, coordinates=[[[[3.1782803938, 51.3287025577], [3.178329446, 51.3287134763], [3.1783164726, 51.3287327087], [3.1782686374, 51.3287206853], [3.1782803938, 51.3287025577]]]]}"^^geosparql:geoJSONLiteral .
+
+<http://example.com/fietsstallingszone/id/28> a mobivoc:BicycleParkingStation, openbaardomein:Fietsstalling,
+    openbaardomein:FysiekObject, openbaardomein:Infrastructuurelement;
+  fixme:eigenaar <https://example.com/fietsstallingszone/id/28#eigenaar>;
+  dcterms:type <https://example.com/id/concept/deelgemeentetype/Sint-Andries>, <https://example.com/id/concept/sectortype/West>,
+    <https://example.com/id/concept/sitetype/wegzone>, <https://example.com/id/concept/statustype/in%20gebruik>;
+  adms:indentifier <https://example.com/fietsstallingszone/id/28#identificator>;
+  locn:address <https://example.com/fietstalling/id/28#adres>;
+  locn:geometry <https://example.com/fietsstallingszone/id/28#geometrie>;
+  openbaardomein:afsluitbaar false;
+  openbaardomein:beheerder <https://example.com/fietsstallingszone/id/28#beheerder>;
+  openbaardomein:capaciteit 29;
+  openbaardomein:fietsdelen false;
+  openbaardomein:materiaal <https://example.com/id/concept/ondergrondtype#bitumineuze%20verharding>;
+  openbaardomein:overdekt false;
+  openbaardomein:verplaatsbaar false .
+
+<http://example.com/fietsstallingszone/id/28#geometrie> a geosparql:Geometry;
+  geosparql:asGeoJSON "{type=MultiPolygon, coordinates=[[[[3.2082112808, 51.2010887578], [3.2082206416, 51.2010698584], [3.2087393819, 51.2011847997], [3.2087221789, 51.2012092079], [3.2082112808, 51.2010887578]]]]}"^^geosparql:geoJSONLiteral .
+
+<http://example.com/fietsstallingszone/id/29> a mobivoc:BicycleParkingStation, openbaardomein:Fietsstalling,
+    openbaardomein:FysiekObject, openbaardomein:Infrastructuurelement;
+  fixme:eigenaar <https://example.com/fietsstallingszone/id/29#eigenaar>;
+  dcterms:type <https://example.com/id/concept/deelgemeentetype/Sint-Andries>, <https://example.com/id/concept/sectortype/West>,
+    <https://example.com/id/concept/sitetype/parking>, <https://example.com/id/concept/statustype/in%20gebruik>;
+  adms:indentifier <https://example.com/fietsstallingszone/id/29#identificator>;
+  locn:address <https://example.com/fietstalling/id/29#adres>;
+  locn:geometry <https://example.com/fietsstallingszone/id/29#geometrie>;
+  openbaardomein:afsluitbaar true;
+  openbaardomein:beheerder <https://example.com/fietsstallingszone/id/29#beheerder>;
+  openbaardomein:capaciteit 40;
+  openbaardomein:fietsdelen false;
+  openbaardomein:materiaal <https://example.com/id/concept/ondergrondtype#betonstraatstenen>;
+  openbaardomein:overdekt true;
+  openbaardomein:verplaatsbaar false .
+
+<http://example.com/fietsstallingszone/id/29#geometrie> a geosparql:Geometry;
+  geosparql:asGeoJSON "{type=MultiPolygon, coordinates=[[[[3.2088614725, 51.2015799503], [3.2090290576, 51.2013239091], [3.2090620016, 51.2013339139], [3.2088980279, 51.2015877564], [3.2088614725, 51.2015799503]]]]}"^^geosparql:geoJSONLiteral .
+
+<http://example.com/fietsstallingszone/id/3> a mobivoc:BicycleParkingStation, openbaardomein:Fietsstalling,
+    openbaardomein:FysiekObject, openbaardomein:Infrastructuurelement;
+  fixme:eigenaar <https://example.com/fietsstallingszone/id/3#eigenaar>;
+  dcterms:type <https://example.com/id/concept/deelgemeentetype/Sint-Kruis>, <https://example.com/id/concept/sectortype/Oost>,
+    <https://example.com/id/concept/sitetype/parking>, <https://example.com/id/concept/statustype/in%20gebruik>;
+  mobivoc:level 0;
+  adms:indentifier <https://example.com/fietsstallingszone/id/3#identificator>;
+  locn:address <https://example.com/fietstalling/id/3#adres>;
+  locn:geometry <https://example.com/fietsstallingszone/id/3#geometrie>;
+  openbaardomein:afsluitbaar false;
+  openbaardomein:beheerder <https://example.com/fietsstallingszone/id/3#beheerder>;
+  openbaardomein:capaciteit 2;
+  openbaardomein:fietsdelen false;
+  openbaardomein:materiaal <https://example.com/id/concept/ondergrondtype#betonstraatstenen>;
+  openbaardomein:overdekt false;
+  openbaardomein:verplaatsbaar false .
+
+<http://example.com/fietsstallingszone/id/3#geometrie> a geosparql:Geometry;
+  geosparql:asGeoJSON "{type=MultiPolygon, coordinates=[[[[3.2488948525, 51.2099441327], [3.2488719647, 51.2099474069], [3.2488688169, 51.2099377699], [3.2488917073, 51.209934384], [3.2488948525, 51.2099441327]]]]}"^^geosparql:geoJSONLiteral .
+
+<http://example.com/fietsstallingszone/id/4> a mobivoc:BicycleParkingStation, openbaardomein:Fietsstalling,
+    openbaardomein:FysiekObject, openbaardomein:Infrastructuurelement;
+  fixme:eigenaar <https://example.com/fietsstallingszone/id/4#eigenaar>;
+  dcterms:type <https://example.com/id/concept/deelgemeentetype/Sint-Kruis>, <https://example.com/id/concept/sectortype/Oost>,
+    <https://example.com/id/concept/sitetype/parking>, <https://example.com/id/concept/statustype/in%20gebruik>;
+  mobivoc:level 0;
+  adms:indentifier <https://example.com/fietsstallingszone/id/4#identificator>;
+  locn:address <https://example.com/fietstalling/id/4#adres>;
+  locn:geometry <https://example.com/fietsstallingszone/id/4#geometrie>;
+  openbaardomein:afsluitbaar true;
+  openbaardomein:beheerder <https://example.com/fietsstallingszone/id/4#beheerder>;
+  openbaardomein:capaciteit 8;
+  openbaardomein:fietsdelen false;
+  openbaardomein:materiaal <https://example.com/id/concept/ondergrondtype#betonstraatstenen>;
+  openbaardomein:overdekt true;
+  openbaardomein:verplaatsbaar false .
+
+<http://example.com/fietsstallingszone/id/4#geometrie> a geosparql:Geometry;
+  geosparql:asGeoJSON "{type=MultiPolygon, coordinates=[[[[3.2488747342, 51.2099334413], [3.248832278, 51.2098044589], [3.2488492235, 51.2098023851], [3.2488895393, 51.2099316265], [3.2488747342, 51.2099334413]]]]}"^^geosparql:geoJSONLiteral .
+
+<http://example.com/fietsstallingszone/id/5> a mobivoc:BicycleParkingStation, openbaardomein:Fietsstalling,
+    openbaardomein:FysiekObject, openbaardomein:Infrastructuurelement;
+  fixme:eigenaar <https://example.com/fietsstallingszone/id/5#eigenaar>;
+  dcterms:type <https://example.com/id/concept/deelgemeentetype/Sint-Kruis>, <https://example.com/id/concept/sectortype/Oost>,
+    <https://example.com/id/concept/sitetype/parking>, <https://example.com/id/concept/statustype/in%20gebruik>;
+  mobivoc:level 0;
+  adms:indentifier <https://example.com/fietsstallingszone/id/5#identificator>;
+  locn:address <https://example.com/fietstalling/id/5#adres>;
+  locn:geometry <https://example.com/fietsstallingszone/id/5#geometrie>;
+  openbaardomein:afsluitbaar false;
+  openbaardomein:beheerder <https://example.com/fietsstallingszone/id/5#beheerder>;
+  openbaardomein:capaciteit 4;
+  openbaardomein:fietsdelen false;
+  openbaardomein:materiaal <https://example.com/id/concept/ondergrondtype#betonstraatstenen>;
+  openbaardomein:overdekt false;
+  openbaardomein:verplaatsbaar false .
+
+<http://example.com/fietsstallingszone/id/5#geometrie> a geosparql:Geometry;
+  geosparql:asGeoJSON "{type=MultiPolygon, coordinates=[[[[3.2484977222, 51.2090763503], [3.248484083, 51.2090314665], [3.2485067208, 51.2090283994], [3.2485207326, 51.2090735101], [3.2484977222, 51.2090763503]]]]}"^^geosparql:geoJSONLiteral .
+
+<http://example.com/fietsstallingszone/id/6> a mobivoc:BicycleParkingStation, openbaardomein:Fietsstalling,
+    openbaardomein:FysiekObject, openbaardomein:Infrastructuurelement;
+  fixme:eigenaar <https://example.com/fietsstallingszone/id/6#eigenaar>;
+  dcterms:type <https://example.com/id/concept/deelgemeentetype/Sint-Kruis>, <https://example.com/id/concept/sectortype/Oost>,
+    <https://example.com/id/concept/sitetype/parking>, <https://example.com/id/concept/statustype/in%20gebruik>;
+  mobivoc:level 0;
+  adms:indentifier <https://example.com/fietsstallingszone/id/6#identificator>;
+  locn:address <https://example.com/fietstalling/id/6#adres>;
+  locn:geometry <https://example.com/fietsstallingszone/id/6#geometrie>;
+  openbaardomein:afsluitbaar false;
+  openbaardomein:beheerder <https://example.com/fietsstallingszone/id/6#beheerder>;
+  openbaardomein:capaciteit 4;
+  openbaardomein:fietsdelen false;
+  openbaardomein:materiaal <https://example.com/id/concept/ondergrondtype#betonstraatstenen>;
+  openbaardomein:overdekt false;
+  openbaardomein:verplaatsbaar false .
+
+<http://example.com/fietsstallingszone/id/6#geometrie> a geosparql:Geometry;
+  geosparql:asGeoJSON "{type=MultiPolygon, coordinates=[[[[3.2483915481, 51.2086616404], [3.2484019762, 51.2086945476], [3.2483796671, 51.2086973525], [3.2483690757, 51.2086648836], [3.2483915481, 51.2086616404]]]]}"^^geosparql:geoJSONLiteral .
+
+<http://example.com/fietsstallingszone/id/7> a mobivoc:BicycleParkingStation, openbaardomein:Fietsstalling,
+    openbaardomein:FysiekObject, openbaardomein:Infrastructuurelement;
+  fixme:eigenaar <https://example.com/fietsstallingszone/id/7#eigenaar>;
+  dcterms:type <https://example.com/id/concept/deelgemeentetype/Sint-Kruis>, <https://example.com/id/concept/sectortype/Oost>,
+    <https://example.com/id/concept/sitetype/parking>, <https://example.com/id/concept/statustype/in%20gebruik>;
+  mobivoc:level 0;
+  adms:indentifier <https://example.com/fietsstallingszone/id/7#identificator>;
+  locn:address <https://example.com/fietstalling/id/7#adres>;
+  locn:geometry <https://example.com/fietsstallingszone/id/7#geometrie>;
+  openbaardomein:afsluitbaar false;
+  openbaardomein:beheerder <https://example.com/fietsstallingszone/id/7#beheerder>;
+  openbaardomein:capaciteit 4;
+  openbaardomein:fietsdelen false;
+  openbaardomein:materiaal <https://example.com/id/concept/ondergrondtype#betonstraatstenen>;
+  openbaardomein:overdekt false;
+  openbaardomein:verplaatsbaar false .
+
+<http://example.com/fietsstallingszone/id/7#geometrie> a geosparql:Geometry;
+  geosparql:asGeoJSON "{type=MultiPolygon, coordinates=[[[[3.2487663049, 51.2095345527], [3.2487441048, 51.2095369677], [3.2487319234, 51.2094984794], [3.248755067, 51.2094956544], [3.2487663049, 51.2095345527]]]]}"^^geosparql:geoJSONLiteral .
+
+<http://example.com/fietsstallingszone/id/8> a mobivoc:BicycleParkingStation, openbaardomein:Fietsstalling,
+    openbaardomein:FysiekObject, openbaardomein:Infrastructuurelement;
+  fixme:eigenaar <https://example.com/fietsstallingszone/id/8#eigenaar>;
+  dcterms:type <https://example.com/id/concept/deelgemeentetype/Sint-Kruis>, <https://example.com/id/concept/sectortype/Oost>,
+    <https://example.com/id/concept/sitetype/parking>, <https://example.com/id/concept/statustype/in%20gebruik>;
+  mobivoc:level 0;
+  adms:indentifier <https://example.com/fietsstallingszone/id/8#identificator>;
+  locn:address <https://example.com/fietstalling/id/8#adres>;
+  locn:geometry <https://example.com/fietsstallingszone/id/8#geometrie>;
+  openbaardomein:afsluitbaar false;
+  openbaardomein:beheerder <https://example.com/fietsstallingszone/id/8#beheerder>;
+  openbaardomein:capaciteit 4;
+  openbaardomein:fietsdelen false;
+  openbaardomein:materiaal <https://example.com/id/concept/ondergrondtype#betonstraatstenen>;
+  openbaardomein:overdekt false;
+  openbaardomein:verplaatsbaar false .
+
+<http://example.com/fietsstallingszone/id/8#geometrie> a geosparql:Geometry;
+  geosparql:asGeoJSON "{type=MultiPolygon, coordinates=[[[[3.2485815338, 51.2093413846], [3.2485685451, 51.2093008777], [3.2485913674, 51.2092984686], [3.2486045325, 51.209339033], [3.2485815338, 51.2093413846]]]]}"^^geosparql:geoJSONLiteral .
+
+<http://example.com/fietsstallingszone/id/9> a mobivoc:BicycleParkingStation, openbaardomein:Fietsstalling,
+    openbaardomein:FysiekObject, openbaardomein:Infrastructuurelement;
+  fixme:eigenaar <https://example.com/fietsstallingszone/id/9#eigenaar>;
+  dcterms:type <https://example.com/id/concept/deelgemeentetype/Sint-Kruis>, <https://example.com/id/concept/sectortype/Oost>,
+    <https://example.com/id/concept/sitetype/parking>, <https://example.com/id/concept/statustype/in%20gebruik>;
+  mobivoc:level 0;
+  adms:indentifier <https://example.com/fietsstallingszone/id/9#identificator>;
+  locn:address <https://example.com/fietstalling/id/9#adres>;
+  locn:geometry <https://example.com/fietsstallingszone/id/9#geometrie>;
+  openbaardomein:afsluitbaar false;
+  openbaardomein:beheerder <https://example.com/fietsstallingszone/id/9#beheerder>;
+  openbaardomein:capaciteit 4;
+  openbaardomein:fietsdelen false;
+  openbaardomein:materiaal <https://example.com/id/concept/ondergrondtype#betonstraatstenen>;
+  openbaardomein:overdekt false;
+  openbaardomein:verplaatsbaar false .
+
+<http://example.com/fietsstallingszone/id/9#geometrie> a geosparql:Geometry;
+  geosparql:asGeoJSON "{type=MultiPolygon, coordinates=[[[[3.2484795664, 51.2086146824], [3.2484843443, 51.2086300322], [3.2484611627, 51.2086326054], [3.2484477147, 51.2085890221], [3.248470542, 51.2085863897], [3.2484743267, 51.2085977364], [3.2484795664, 51.2086146824]]]]}"^^geosparql:geoJSONLiteral .
+
+<https://example.com/fietsstallingszone/id/10#beheerder> a org:Organization;
+  skos:prefLabel "stad Brugge"@nl .
+
+<https://example.com/fietsstallingszone/id/10#eigenaar> a org:Organization;
+  skos:prefLabel "stad Brugge"@nl .
+
+<https://example.com/fietsstallingszone/id/10#identificator> a adms:Identifier;
+  skos:notation "10" .
+
+<https://example.com/fietsstallingszone/id/11#beheerder> a org:Organization;
+  skos:prefLabel "stad Brugge"@nl .
+
+<https://example.com/fietsstallingszone/id/11#eigenaar> a org:Organization;
+  skos:prefLabel "stad Brugge"@nl .
+
+<https://example.com/fietsstallingszone/id/11#identificator> a adms:Identifier;
+  skos:notation "11" .
+
+<https://example.com/fietsstallingszone/id/12#beheerder> a org:Organization;
+  skos:prefLabel "stad Brugge"@nl .
+
+<https://example.com/fietsstallingszone/id/12#eigenaar> a org:Organization;
+  skos:prefLabel "stad Brugge"@nl .
+
+<https://example.com/fietsstallingszone/id/12#identificator> a adms:Identifier;
+  skos:notation "12" .
+
+<https://example.com/fietsstallingszone/id/13#beheerder> a org:Organization;
+  skos:prefLabel "stad Brugge"@nl .
+
+<https://example.com/fietsstallingszone/id/13#eigenaar> a org:Organization;
+  skos:prefLabel "stad Brugge"@nl .
+
+<https://example.com/fietsstallingszone/id/13#identificator> a adms:Identifier;
+  skos:notation "13" .
+
+<https://example.com/fietsstallingszone/id/14#beheerder> a org:Organization;
+  skos:prefLabel "stad Brugge"@nl .
+
+<https://example.com/fietsstallingszone/id/14#eigenaar> a org:Organization;
+  skos:prefLabel "stad Brugge"@nl .
+
+<https://example.com/fietsstallingszone/id/14#identificator> a adms:Identifier;
+  skos:notation "14" .
+
+<https://example.com/fietsstallingszone/id/15#beheerder> a org:Organization;
+  skos:prefLabel "stad Brugge"@nl .
+
+<https://example.com/fietsstallingszone/id/15#eigenaar> a org:Organization;
+  skos:prefLabel "stad Brugge"@nl .
+
+<https://example.com/fietsstallingszone/id/15#identificator> a adms:Identifier;
+  skos:notation "15" .
+
+<https://example.com/fietsstallingszone/id/16#beheerder> a org:Organization;
+  skos:prefLabel "stad Brugge"@nl .
+
+<https://example.com/fietsstallingszone/id/16#eigenaar> a org:Organization;
+  skos:prefLabel "stad Brugge"@nl .
+
+<https://example.com/fietsstallingszone/id/16#identificator> a adms:Identifier;
+  skos:notation "16" .
+
+<https://example.com/fietsstallingszone/id/17#beheerder> a org:Organization;
+  skos:prefLabel "stad Brugge"@nl .
+
+<https://example.com/fietsstallingszone/id/17#eigenaar> a org:Organization;
+  skos:prefLabel "stad Brugge"@nl .
+
+<https://example.com/fietsstallingszone/id/17#identificator> a adms:Identifier;
+  skos:notation "17" .
+
+<https://example.com/fietsstallingszone/id/18#beheerder> a org:Organization;
+  skos:prefLabel "stad Brugge"@nl .
+
+<https://example.com/fietsstallingszone/id/18#eigenaar> a org:Organization;
+  skos:prefLabel "stad Brugge"@nl .
+
+<https://example.com/fietsstallingszone/id/18#identificator> a adms:Identifier;
+  skos:notation "18" .
+
+<https://example.com/fietsstallingszone/id/19#beheerder> a org:Organization;
+  skos:prefLabel "stad Brugge"@nl .
+
+<https://example.com/fietsstallingszone/id/19#eigenaar> a org:Organization;
+  skos:prefLabel "stad Brugge"@nl .
+
+<https://example.com/fietsstallingszone/id/19#identificator> a adms:Identifier;
+  skos:notation "19" .
+
+<https://example.com/fietsstallingszone/id/2#beheerder> a org:Organization;
+  skos:prefLabel "stad Brugge"@nl .
+
+<https://example.com/fietsstallingszone/id/2#eigenaar> a org:Organization;
+  skos:prefLabel "stad Brugge"@nl .
+
+<https://example.com/fietsstallingszone/id/2#identificator> a adms:Identifier;
+  skos:notation "2" .
+
+<https://example.com/fietsstallingszone/id/20#beheerder> a org:Organization;
+  skos:prefLabel "stad Brugge"@nl .
+
+<https://example.com/fietsstallingszone/id/20#eigenaar> a org:Organization;
+  skos:prefLabel "stad Brugge"@nl .
+
+<https://example.com/fietsstallingszone/id/20#identificator> a adms:Identifier;
+  skos:notation "20" .
+
+<https://example.com/fietsstallingszone/id/21#beheerder> a org:Organization;
+  skos:prefLabel "stad Brugge"@nl .
+
+<https://example.com/fietsstallingszone/id/21#eigenaar> a org:Organization;
+  skos:prefLabel "stad Brugge"@nl .
+
+<https://example.com/fietsstallingszone/id/21#identificator> a adms:Identifier;
+  skos:notation "21" .
+
+<https://example.com/fietsstallingszone/id/23#beheerder> a org:Organization;
+  skos:prefLabel "stad Brugge"@nl .
+
+<https://example.com/fietsstallingszone/id/23#eigenaar> a org:Organization;
+  skos:prefLabel "stad Brugge"@nl .
+
+<https://example.com/fietsstallingszone/id/23#identificator> a adms:Identifier;
+  skos:notation "23" .
+
+<https://example.com/fietsstallingszone/id/24#beheerder> a org:Organization;
+  skos:prefLabel "stad Brugge"@nl .
+
+<https://example.com/fietsstallingszone/id/24#eigenaar> a org:Organization;
+  skos:prefLabel "stad Brugge"@nl .
+
+<https://example.com/fietsstallingszone/id/24#identificator> a adms:Identifier;
+  skos:notation "24" .
+
+<https://example.com/fietsstallingszone/id/25#beheerder> a org:Organization;
+  skos:prefLabel "stad Brugge"@nl .
+
+<https://example.com/fietsstallingszone/id/25#eigenaar> a org:Organization;
+  skos:prefLabel "stad Brugge"@nl .
+
+<https://example.com/fietsstallingszone/id/25#identificator> a adms:Identifier;
+  skos:notation "25" .
+
+<https://example.com/fietsstallingszone/id/26#beheerder> a org:Organization;
+  skos:prefLabel "stad Brugge"@nl .
+
+<https://example.com/fietsstallingszone/id/26#eigenaar> a org:Organization;
+  skos:prefLabel "stad Brugge"@nl .
+
+<https://example.com/fietsstallingszone/id/26#identificator> a adms:Identifier;
+  skos:notation "26" .
+
+<https://example.com/fietsstallingszone/id/27#beheerder> a org:Organization;
+  skos:prefLabel "stad Brugge"@nl .
+
+<https://example.com/fietsstallingszone/id/27#eigenaar> a org:Organization;
+  skos:prefLabel "stad Brugge"@nl .
+
+<https://example.com/fietsstallingszone/id/27#identificator> a adms:Identifier;
+  skos:notation "27" .
+
+<https://example.com/fietsstallingszone/id/28#beheerder> a org:Organization;
+  skos:prefLabel "stad Brugge"@nl .
+
+<https://example.com/fietsstallingszone/id/28#eigenaar> a org:Organization;
+  skos:prefLabel "stad Brugge"@nl .
+
+<https://example.com/fietsstallingszone/id/28#identificator> a adms:Identifier;
+  skos:notation "28" .
+
+<https://example.com/fietsstallingszone/id/29#beheerder> a org:Organization;
+  skos:prefLabel "stad Brugge"@nl .
+
+<https://example.com/fietsstallingszone/id/29#eigenaar> a org:Organization;
+  skos:prefLabel "stad Brugge"@nl .
+
+<https://example.com/fietsstallingszone/id/29#identificator> a adms:Identifier;
+  skos:notation "29" .
+
+<https://example.com/fietsstallingszone/id/3#beheerder> a org:Organization;
+  skos:prefLabel "stad Brugge"@nl .
+
+<https://example.com/fietsstallingszone/id/3#eigenaar> a org:Organization;
+  skos:prefLabel "stad Brugge"@nl .
+
+<https://example.com/fietsstallingszone/id/3#identificator> a adms:Identifier;
+  skos:notation "3" .
+
+<https://example.com/fietsstallingszone/id/4#beheerder> a org:Organization;
+  skos:prefLabel "stad Brugge"@nl .
+
+<https://example.com/fietsstallingszone/id/4#eigenaar> a org:Organization;
+  skos:prefLabel "stad Brugge"@nl .
+
+<https://example.com/fietsstallingszone/id/4#identificator> a adms:Identifier;
+  skos:notation "4" .
+
+<https://example.com/fietsstallingszone/id/5#beheerder> a org:Organization;
+  skos:prefLabel "stad Brugge"@nl .
+
+<https://example.com/fietsstallingszone/id/5#eigenaar> a org:Organization;
+  skos:prefLabel "stad Brugge"@nl .
+
+<https://example.com/fietsstallingszone/id/5#identificator> a adms:Identifier;
+  skos:notation "5" .
+
+<https://example.com/fietsstallingszone/id/6#beheerder> a org:Organization;
+  skos:prefLabel "stad Brugge"@nl .
+
+<https://example.com/fietsstallingszone/id/6#eigenaar> a org:Organization;
+  skos:prefLabel "stad Brugge"@nl .
+
+<https://example.com/fietsstallingszone/id/6#identificator> a adms:Identifier;
+  skos:notation "6" .
+
+<https://example.com/fietsstallingszone/id/7#beheerder> a org:Organization;
+  skos:prefLabel "stad Brugge"@nl .
+
+<https://example.com/fietsstallingszone/id/7#eigenaar> a org:Organization;
+  skos:prefLabel "stad Brugge"@nl .
+
+<https://example.com/fietsstallingszone/id/7#identificator> a adms:Identifier;
+  skos:notation "7" .
+
+<https://example.com/fietsstallingszone/id/8#beheerder> a org:Organization;
+  skos:prefLabel "stad Brugge"@nl .
+
+<https://example.com/fietsstallingszone/id/8#eigenaar> a org:Organization;
+  skos:prefLabel "stad Brugge"@nl .
+
+<https://example.com/fietsstallingszone/id/8#identificator> a adms:Identifier;
+  skos:notation "8" .
+
+<https://example.com/fietsstallingszone/id/9#beheerder> a org:Organization;
+  skos:prefLabel "stad Brugge"@nl .
+
+<https://example.com/fietsstallingszone/id/9#eigenaar> a org:Organization;
+  skos:prefLabel "stad Brugge"@nl .
+
+<https://example.com/fietsstallingszone/id/9#identificator> a adms:Identifier;
+  skos:notation "9" .
+
+<https://example.com/fietstalling/id/10#adres> a locn:Address;
+  locn:fullAddress "Vredestraat"@nl .
+
+<https://example.com/fietstalling/id/11#adres> a locn:Address;
+  locn:fullAddress "Collegestraat"@nl .
+
+<https://example.com/fietstalling/id/12#adres> a locn:Address;
+  locn:fullAddress "Gaston Roelandtsplein"@nl .
+
+<https://example.com/fietstalling/id/13#adres> a locn:Address;
+  locn:fullAddress "Gaston Roelandtsplein"@nl .
+
+<https://example.com/fietstalling/id/14#adres> a locn:Address;
+  locn:fullAddress "Gaston Roelandtsplein"@nl .
+
+<https://example.com/fietstalling/id/15#adres> a locn:Address;
+  locn:fullAddress "Gaston Roelandtsplein"@nl .
+
+<https://example.com/fietstalling/id/16#adres> a locn:Address;
+  locn:fullAddress "Weidestraat"@nl .
+
+<https://example.com/fietstalling/id/17#adres> a locn:Address;
+  locn:fullAddress "Daverlostraat"@nl .
+
+<https://example.com/fietstalling/id/18#adres> a locn:Address;
+  locn:fullAddress "Daverlostraat"@nl .
+
+<https://example.com/fietstalling/id/19#adres> a locn:Address;
+  locn:fullAddress "Damse Vaart-Zuid"@nl .
+
+<https://example.com/fietstalling/id/2#adres> a locn:Address;
+  locn:fullAddress "Hoogstraat"@nl .
+
+<https://example.com/fietstalling/id/20#adres> a locn:Address;
+  locn:fullAddress "Brugse-Mettenstraat"@nl .
+
+<https://example.com/fietstalling/id/21#adres> a locn:Address;
+  locn:fullAddress "Marcus Laurinstraat"@nl .
+
+<https://example.com/fietstalling/id/23#adres> a locn:Address;
+  locn:fullAddress "Zeedijk"@nl .
+
+<https://example.com/fietstalling/id/24#adres> a locn:Address;
+  locn:fullAddress "Zeedijk"@nl .
+
+<https://example.com/fietstalling/id/25#adres> a locn:Address;
+  locn:fullAddress "Zeedijk"@nl .
+
+<https://example.com/fietstalling/id/26#adres> a locn:Address;
+  locn:fullAddress "Sint-Thomas Morusstraat"@nl .
+
+<https://example.com/fietstalling/id/27#adres> a locn:Address;
+  locn:fullAddress "Sint-Thomas Morusstraat"@nl .
+
+<https://example.com/fietstalling/id/28#adres> a locn:Address;
+  locn:fullAddress "Magdalenastraat"@nl .
+
+<https://example.com/fietstalling/id/29#adres> a locn:Address;
+  locn:fullAddress "Edgard De Smedtplantsoen"@nl .
+
+<https://example.com/fietstalling/id/3#adres> a locn:Address;
+  locn:fullAddress "Vredestraat"@nl .
+
+<https://example.com/fietstalling/id/4#adres> a locn:Address;
+  locn:fullAddress "Vredestraat"@nl .
+
+<https://example.com/fietstalling/id/5#adres> a locn:Address;
+  locn:fullAddress "Vredestraat"@nl .
+
+<https://example.com/fietstalling/id/6#adres> a locn:Address;
+  locn:fullAddress "Vredestraat"@nl .
+
+<https://example.com/fietstalling/id/7#adres> a locn:Address;
+  locn:fullAddress "Vredestraat"@nl .
+
+<https://example.com/fietstalling/id/8#adres> a locn:Address;
+  locn:fullAddress "Vredestraat"@nl .
+
+<https://example.com/fietstalling/id/9#adres> a locn:Address;
+  locn:fullAddress "Vredestraat"@nl .
+
+<https://example.com/id/concept/deelgemeentetype/Assebroek> a skos:Concept .
+
+<https://example.com/id/concept/deelgemeentetype/Centrum> a skos:Concept .
+
+<https://example.com/id/concept/deelgemeentetype/Sint-Andries> a skos:Concept .
+
+<https://example.com/id/concept/deelgemeentetype/Sint-Kruis> a skos:Concept .
+
+<https://example.com/id/concept/deelgemeentetype/Zeebrugge> a skos:Concept .
+
+<https://example.com/id/concept/sectortype/Centrum> a skos:Concept .
+
+<https://example.com/id/concept/sectortype/Noord%201> a skos:Concept .
+
+<https://example.com/id/concept/sectortype/Oost> a skos:Concept .
+
+<https://example.com/id/concept/sectortype/West> a skos:Concept .
+
+<https://example.com/id/concept/sitetype/parking> a skos:Concept .
+
+<https://example.com/id/concept/sitetype/plein> a skos:Concept .
+
+<https://example.com/id/concept/sitetype/voetpad> a skos:Concept .
+
+<https://example.com/id/concept/sitetype/wegzone> a skos:Concept .
+
+<https://example.com/id/concept/statustype/gepland> a skos:Concept .
+
+<https://example.com/id/concept/statustype/in%20gebruik> a skos:Concept .
