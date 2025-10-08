@@ -1,0 +1,5400 @@
+{
+	"type" : "FeatureCollection",
+	"name" : "FIETSSTALLING",
+	"features" : [
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2288077364, 51.2095066422 ]
+				]
+			},
+			"properties" : {
+				"ID" : 1,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250311092127",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250312124230",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Centrum",
+				"DEELGEMEENTE" : "Centrum",
+				"STRAATNAAM" : "Hoogstraat",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : null,
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.228821449, 51.2095119614 ]
+				]
+			},
+			"properties" : {
+				"ID" : 2,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250311092139",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250312124230",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Centrum",
+				"DEELGEMEENTE" : "Centrum",
+				"STRAATNAAM" : "Hoogstraat",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : null,
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2288358698, 51.2095161966 ]
+				]
+			},
+			"properties" : {
+				"ID" : 3,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250311092145",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250312124230",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Centrum",
+				"DEELGEMEENTE" : "Centrum",
+				"STRAATNAAM" : "Hoogstraat",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : null,
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2288484762, 51.2095219037 ]
+				]
+			},
+			"properties" : {
+				"ID" : 4,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250311092150",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250312124230",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Centrum",
+				"DEELGEMEENTE" : "Centrum",
+				"STRAATNAAM" : "Hoogstraat",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : null,
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2288623089, 51.2095259469 ]
+				]
+			},
+			"properties" : {
+				"ID" : 5,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250311092200",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250312124230",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Centrum",
+				"DEELGEMEENTE" : "Centrum",
+				"STRAATNAAM" : "Hoogstraat",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : null,
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2288725946, 51.2095295836 ]
+				]
+			},
+			"properties" : {
+				"ID" : 6,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250311092305",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250312124230",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Centrum",
+				"DEELGEMEENTE" : "Centrum",
+				"STRAATNAAM" : "Hoogstraat",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : null,
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2289219804, 51.2095464441 ]
+				]
+			},
+			"properties" : {
+				"ID" : 7,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250311092316",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250312124230",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Centrum",
+				"DEELGEMEENTE" : "Centrum",
+				"STRAATNAAM" : "Hoogstraat",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : null,
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.228912602, 51.2095420714 ]
+				]
+			},
+			"properties" : {
+				"ID" : 8,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250311092323",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250312124230",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Centrum",
+				"DEELGEMEENTE" : "Centrum",
+				"STRAATNAAM" : "Hoogstraat",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : null,
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2288990565, 51.2095384033 ]
+				]
+			},
+			"properties" : {
+				"ID" : 9,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250311092330",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250312124230",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Centrum",
+				"DEELGEMEENTE" : "Centrum",
+				"STRAATNAAM" : "Hoogstraat",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : null,
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2288837466, 51.2095341596 ]
+				]
+			},
+			"properties" : {
+				"ID" : 10,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250311092337",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250312124230",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Centrum",
+				"DEELGEMEENTE" : "Centrum",
+				"STRAATNAAM" : "Hoogstraat",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : null,
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2488868248, 51.2099409846 ]
+				]
+			},
+			"properties" : {
+				"ID" : 11,
+				"USERID_CREATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_CREATED" : "20250317120440",
+				"USERID_UPDATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_UPDATED" : "20250317121518",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Oost",
+				"DEELGEMEENTE" : "Sint-Kruis",
+				"STRAATNAAM" : "Vredestraat",
+				"AARD_SITE" : "parking",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : null,
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2488797149, 51.2099232109 ]
+				]
+			},
+			"properties" : {
+				"ID" : 12,
+				"USERID_CREATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_CREATED" : "20250318113857",
+				"USERID_UPDATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_UPDATED" : "20250318113857",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Oost",
+				"DEELGEMEENTE" : "Sint-Kruis",
+				"STRAATNAAM" : "Vredestraat",
+				"AARD_SITE" : "parking",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietskluis"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2488678953, 51.2098839999 ]
+				]
+			},
+			"properties" : {
+				"ID" : 13,
+				"USERID_CREATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_CREATED" : "20250318113952",
+				"USERID_UPDATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_UPDATED" : "20250318114045",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Oost",
+				"DEELGEMEENTE" : "Sint-Kruis",
+				"STRAATNAAM" : "Vredestraat",
+				"AARD_SITE" : "parking",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietskluis"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2488585213, 51.2098547712 ]
+				]
+			},
+			"properties" : {
+				"ID" : 14,
+				"USERID_CREATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_CREATED" : "20250318114427",
+				"USERID_UPDATED" : "82dd59c0-6ad8-4179-ac52-dea5bf63482f",
+				"DATE_UPDATED" : "20250318115324",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Oost",
+				"DEELGEMEENTE" : "Sint-Kruis",
+				"STRAATNAAM" : "Vredestraat",
+				"AARD_SITE" : "parking",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietskluis"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2488446629, 51.2098117816 ]
+				]
+			},
+			"properties" : {
+				"ID" : 15,
+				"USERID_CREATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_CREATED" : "20250318115426",
+				"USERID_UPDATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_UPDATED" : "20250318120244",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Oost",
+				"DEELGEMEENTE" : "Sint-Kruis",
+				"STRAATNAAM" : "Vredestraat",
+				"AARD_SITE" : "parking",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietskluis"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2485041553, 51.2090632711 ]
+				]
+			},
+			"properties" : {
+				"ID" : 16,
+				"USERID_CREATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_CREATED" : "20250318122108",
+				"USERID_UPDATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_UPDATED" : "20250318122604",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Oost",
+				"DEELGEMEENTE" : "Sint-Kruis",
+				"STRAATNAAM" : "Vredestraat",
+				"AARD_SITE" : "parking",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2484963635, 51.2090405756 ]
+				]
+			},
+			"properties" : {
+				"ID" : 17,
+				"USERID_CREATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_CREATED" : "20250318122127",
+				"USERID_UPDATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_UPDATED" : "20250318122540",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Oost",
+				"DEELGEMEENTE" : "Sint-Kruis",
+				"STRAATNAAM" : "Vredestraat",
+				"AARD_SITE" : "parking",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2483910776, 51.2086915398 ]
+				]
+			},
+			"properties" : {
+				"ID" : 18,
+				"USERID_CREATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_CREATED" : "20250318130710",
+				"USERID_UPDATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_UPDATED" : "20250318130901",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Oost",
+				"DEELGEMEENTE" : "Sint-Kruis",
+				"STRAATNAAM" : "Vredestraat",
+				"AARD_SITE" : "parking",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2483849528, 51.2086734962 ]
+				]
+			},
+			"properties" : {
+				"ID" : 19,
+				"USERID_CREATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_CREATED" : "20250318130803",
+				"USERID_UPDATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_UPDATED" : "20250318130803",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Oost",
+				"DEELGEMEENTE" : "Sint-Kruis",
+				"STRAATNAAM" : "Vredestraat",
+				"AARD_SITE" : "parking",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.248751952, 51.2095258709 ]
+				]
+			},
+			"properties" : {
+				"ID" : 20,
+				"USERID_CREATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_CREATED" : "20250318131555",
+				"USERID_UPDATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_UPDATED" : "20250318131655",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Oost",
+				"DEELGEMEENTE" : "Sint-Kruis",
+				"STRAATNAAM" : "Vredestraat",
+				"AARD_SITE" : "parking",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.248747942, 51.2095104725 ]
+				]
+			},
+			"properties" : {
+				"ID" : 21,
+				"USERID_CREATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_CREATED" : "20250318131713",
+				"USERID_UPDATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_UPDATED" : "20250318132103",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Oost",
+				"DEELGEMEENTE" : "Sint-Kruis",
+				"STRAATNAAM" : "Vredestraat",
+				"AARD_SITE" : "parking",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.248589645, 51.2093257659 ]
+				]
+			},
+			"properties" : {
+				"ID" : 22,
+				"USERID_CREATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_CREATED" : "20250318133104",
+				"USERID_UPDATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_UPDATED" : "20250318133411",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Oost",
+				"DEELGEMEENTE" : "Sint-Kruis",
+				"STRAATNAAM" : "Vredestraat",
+				"AARD_SITE" : "parking",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2485848458, 51.2093099132 ]
+				]
+			},
+			"properties" : {
+				"ID" : 23,
+				"USERID_CREATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_CREATED" : "20250318133157",
+				"USERID_UPDATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_UPDATED" : "20250318133353",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Oost",
+				"DEELGEMEENTE" : "Sint-Kruis",
+				"STRAATNAAM" : "Vredestraat",
+				"AARD_SITE" : "parking",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2484707789, 51.2086204633 ]
+				]
+			},
+			"properties" : {
+				"ID" : 24,
+				"USERID_CREATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_CREATED" : "20250318135946",
+				"USERID_UPDATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_UPDATED" : "20250318140052",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Oost",
+				"DEELGEMEENTE" : "Sint-Kruis",
+				"STRAATNAAM" : "Vredestraat",
+				"AARD_SITE" : "parking",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2484676276, 51.2086012477 ]
+				]
+			},
+			"properties" : {
+				"ID" : 25,
+				"USERID_CREATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_CREATED" : "20250318140112",
+				"USERID_UPDATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_UPDATED" : "20250318140133",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Oost",
+				"DEELGEMEENTE" : "Sint-Kruis",
+				"STRAATNAAM" : "Vredestraat",
+				"AARD_SITE" : "parking",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2483101363, 51.208444413 ]
+				]
+			},
+			"properties" : {
+				"ID" : 26,
+				"USERID_CREATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_CREATED" : "20250318141710",
+				"USERID_UPDATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_UPDATED" : "20250318144058",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Oost",
+				"DEELGEMEENTE" : "Sint-Kruis",
+				"STRAATNAAM" : "Vredestraat",
+				"AARD_SITE" : "voetpad",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2498663789, 51.2037381208 ]
+				]
+			},
+			"properties" : {
+				"ID" : 27,
+				"USERID_CREATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_CREATED" : "20250318143551",
+				"USERID_UPDATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_UPDATED" : "20250318143551",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Oost",
+				"DEELGEMEENTE" : "Assebroek",
+				"STRAATNAAM" : "Collegestraat",
+				"AARD_SITE" : "voetpad",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2498861924, 51.2037461281 ]
+				]
+			},
+			"properties" : {
+				"ID" : 28,
+				"USERID_CREATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_CREATED" : "20250318143603",
+				"USERID_UPDATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_UPDATED" : "20250318143619",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Oost",
+				"DEELGEMEENTE" : "Assebroek",
+				"STRAATNAAM" : "Collegestraat",
+				"AARD_SITE" : "voetpad",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2464016042, 51.2008327196 ]
+				]
+			},
+			"properties" : {
+				"ID" : 29,
+				"USERID_CREATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_CREATED" : "20250318150844",
+				"USERID_UPDATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_UPDATED" : "20250318150844",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Oost",
+				"DEELGEMEENTE" : "Assebroek",
+				"STRAATNAAM" : "Gaston Roelandtsplein",
+				"AARD_SITE" : "voetpad",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : "20230501000000",
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsnietje"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2463848551, 51.2008045767 ]
+				]
+			},
+			"properties" : {
+				"ID" : 30,
+				"USERID_CREATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_CREATED" : "20250318150856",
+				"USERID_UPDATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_UPDATED" : "20250318164445",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Oost",
+				"DEELGEMEENTE" : "Assebroek",
+				"STRAATNAAM" : "Gaston Roelandtsplein",
+				"AARD_SITE" : "voetpad",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : "20230501000000",
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsnietje"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2463894198, 51.2008107084 ]
+				]
+			},
+			"properties" : {
+				"ID" : 31,
+				"USERID_CREATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_CREATED" : "20250318150907",
+				"USERID_UPDATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_UPDATED" : "20250318151114",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Oost",
+				"DEELGEMEENTE" : "Assebroek",
+				"STRAATNAAM" : "Gaston Roelandtsplein",
+				"AARD_SITE" : "voetpad",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : "20230501000000",
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsnietje"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2463925354, 51.2008179434 ]
+				]
+			},
+			"properties" : {
+				"ID" : 32,
+				"USERID_CREATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_CREATED" : "20250318151008",
+				"USERID_UPDATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_UPDATED" : "20250318151008",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Oost",
+				"DEELGEMEENTE" : "Assebroek",
+				"STRAATNAAM" : "Gaston Roelandtsplein",
+				"AARD_SITE" : "voetpad",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : "20230501000000",
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsnietje"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2463972362, 51.2008258078 ]
+				]
+			},
+			"properties" : {
+				"ID" : 33,
+				"USERID_CREATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_CREATED" : "20250318151018",
+				"USERID_UPDATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_UPDATED" : "20250318151035",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Oost",
+				"DEELGEMEENTE" : "Assebroek",
+				"STRAATNAAM" : "Gaston Roelandtsplein",
+				"AARD_SITE" : "voetpad",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : "20230501000000",
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsnietje"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2463432925, 51.2009443356 ]
+				]
+			},
+			"properties" : {
+				"ID" : 34,
+				"USERID_CREATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_CREATED" : "20250318151823",
+				"USERID_UPDATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_UPDATED" : "20250318151851",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Oost",
+				"DEELGEMEENTE" : "Assebroek",
+				"STRAATNAAM" : "Gaston Roelandtsplein",
+				"AARD_SITE" : "voetpad",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : "20230501000000",
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsnietje"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2463235778, 51.2009069012 ]
+				]
+			},
+			"properties" : {
+				"ID" : 35,
+				"USERID_CREATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_CREATED" : "20250318151859",
+				"USERID_UPDATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_UPDATED" : "20250318151923",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Oost",
+				"DEELGEMEENTE" : "Assebroek",
+				"STRAATNAAM" : "Gaston Roelandtsplein",
+				"AARD_SITE" : "voetpad",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : "20230501000000",
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsnietje"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2463347056, 51.2009268167 ]
+				]
+			},
+			"properties" : {
+				"ID" : 36,
+				"USERID_CREATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_CREATED" : "20250318151935",
+				"USERID_UPDATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_UPDATED" : "20250318151954",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Oost",
+				"DEELGEMEENTE" : "Assebroek",
+				"STRAATNAAM" : "Gaston Roelandtsplein",
+				"AARD_SITE" : "voetpad",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : "20230501000000",
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsnietje"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2463314794, 51.2009167878 ]
+				]
+			},
+			"properties" : {
+				"ID" : 37,
+				"USERID_CREATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_CREATED" : "20250318152005",
+				"USERID_UPDATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_UPDATED" : "20250318152022",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Oost",
+				"DEELGEMEENTE" : "Assebroek",
+				"STRAATNAAM" : "Gaston Roelandtsplein",
+				"AARD_SITE" : "voetpad",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : "20230501000000",
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsnietje"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2463404408, 51.2009360315 ]
+				]
+			},
+			"properties" : {
+				"ID" : 38,
+				"USERID_CREATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_CREATED" : "20250318152029",
+				"USERID_UPDATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_UPDATED" : "20250318152042",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Oost",
+				"DEELGEMEENTE" : "Assebroek",
+				"STRAATNAAM" : "Gaston Roelandtsplein",
+				"AARD_SITE" : "voetpad",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : "20230501000000",
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsnietje"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2466175009, 51.201093823 ]
+				]
+			},
+			"properties" : {
+				"ID" : 39,
+				"USERID_CREATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_CREATED" : "20250318152859",
+				"USERID_UPDATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_UPDATED" : "20250318152919",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Oost",
+				"DEELGEMEENTE" : "Assebroek",
+				"STRAATNAAM" : "Gaston Roelandtsplein",
+				"AARD_SITE" : "voetpad",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : "20230501000000",
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsnietje"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2465522946, 51.2011066719 ]
+				]
+			},
+			"properties" : {
+				"ID" : 40,
+				"USERID_CREATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_CREATED" : "20250318152931",
+				"USERID_UPDATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_UPDATED" : "20250318153012",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Oost",
+				"DEELGEMEENTE" : "Assebroek",
+				"STRAATNAAM" : "Gaston Roelandtsplein",
+				"AARD_SITE" : "voetpad",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : "20230501000000",
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsnietje"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2466054952, 51.2010969551 ]
+				]
+			},
+			"properties" : {
+				"ID" : 41,
+				"USERID_CREATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_CREATED" : "20250318153022",
+				"USERID_UPDATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_UPDATED" : "20250318153108",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Oost",
+				"DEELGEMEENTE" : "Assebroek",
+				"STRAATNAAM" : "Gaston Roelandtsplein",
+				"AARD_SITE" : "voetpad",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : "20230501000000",
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsnietje"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2465648936, 51.2011040545 ]
+				]
+			},
+			"properties" : {
+				"ID" : 42,
+				"USERID_CREATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_CREATED" : "20250318153052",
+				"USERID_UPDATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_UPDATED" : "20250318153052",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Oost",
+				"DEELGEMEENTE" : "Assebroek",
+				"STRAATNAAM" : "Gaston Roelandtsplein",
+				"AARD_SITE" : "voetpad",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : "20230501000000",
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsnietje"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.246578013, 51.2011010511 ]
+				]
+			},
+			"properties" : {
+				"ID" : 43,
+				"USERID_CREATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_CREATED" : "20250318153117",
+				"USERID_UPDATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_UPDATED" : "20250318153142",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Oost",
+				"DEELGEMEENTE" : "Assebroek",
+				"STRAATNAAM" : "Gaston Roelandtsplein",
+				"AARD_SITE" : "voetpad",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : "20230501000000",
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsnietje"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2465913238, 51.2010993342 ]
+				]
+			},
+			"properties" : {
+				"ID" : 44,
+				"USERID_CREATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_CREATED" : "20250318153153",
+				"USERID_UPDATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_UPDATED" : "20250318153211",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Oost",
+				"DEELGEMEENTE" : "Assebroek",
+				"STRAATNAAM" : "Gaston Roelandtsplein",
+				"AARD_SITE" : "voetpad",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : "20230501000000",
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsnietje"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2364871095, 51.1983687214 ]
+				]
+			},
+			"properties" : {
+				"ID" : 45,
+				"USERID_CREATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_CREATED" : "20250318154235",
+				"USERID_UPDATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_UPDATED" : "20250318154235",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Oost",
+				"DEELGEMEENTE" : "Assebroek",
+				"STRAATNAAM" : "Weidestraat",
+				"AARD_SITE" : "voetpad",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2364724014, 51.1983739987 ]
+				]
+			},
+			"properties" : {
+				"ID" : 46,
+				"USERID_CREATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_CREATED" : "20250318154248",
+				"USERID_UPDATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_UPDATED" : "20250318154310",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Oost",
+				"DEELGEMEENTE" : "Assebroek",
+				"STRAATNAAM" : "Weidestraat",
+				"AARD_SITE" : "voetpad",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2386625998, 51.2000746614 ]
+				]
+			},
+			"properties" : {
+				"ID" : 47,
+				"USERID_CREATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_CREATED" : "20250318155631",
+				"USERID_UPDATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_UPDATED" : "20250318155631",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Oost",
+				"DEELGEMEENTE" : "Assebroek",
+				"STRAATNAAM" : "Daverlostraat",
+				"AARD_SITE" : "voetpad",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2386397498, 51.200085726 ]
+				]
+			},
+			"properties" : {
+				"ID" : 48,
+				"USERID_CREATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_CREATED" : "20250318155723",
+				"USERID_UPDATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_UPDATED" : "20250318155747",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Oost",
+				"DEELGEMEENTE" : "Assebroek",
+				"STRAATNAAM" : "Daverlostraat",
+				"AARD_SITE" : "voetpad",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2385680191, 51.2000170435 ]
+				]
+			},
+			"properties" : {
+				"ID" : 49,
+				"USERID_CREATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_CREATED" : "20250319082141",
+				"USERID_UPDATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_UPDATED" : "20250319082201",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Oost",
+				"DEELGEMEENTE" : "Assebroek",
+				"STRAATNAAM" : "Daverlostraat",
+				"AARD_SITE" : "voetpad",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2385469359, 51.2000024767 ]
+				]
+			},
+			"properties" : {
+				"ID" : 50,
+				"USERID_CREATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_CREATED" : "20250319082211",
+				"USERID_UPDATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_UPDATED" : "20250319082230",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Oost",
+				"DEELGEMEENTE" : "Assebroek",
+				"STRAATNAAM" : "Daverlostraat",
+				"AARD_SITE" : "voetpad",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2382831853, 51.2233605039 ]
+				]
+			},
+			"properties" : {
+				"ID" : 51,
+				"USERID_CREATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_CREATED" : "20250319083451",
+				"USERID_UPDATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_UPDATED" : "20250319083451",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Oost",
+				"DEELGEMEENTE" : "Sint-Kruis",
+				"STRAATNAAM" : "Damse Vaart-Zuid",
+				"AARD_SITE" : "parking",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsnietje"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2382694492, 51.2233547173 ]
+				]
+			},
+			"properties" : {
+				"ID" : 52,
+				"USERID_CREATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_CREATED" : "20250319083505",
+				"USERID_UPDATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_UPDATED" : "20250319083521",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Oost",
+				"DEELGEMEENTE" : "Sint-Kruis",
+				"STRAATNAAM" : "Damse Vaart-Zuid",
+				"AARD_SITE" : "parking",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsnietje"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2382583871, 51.2233487048 ]
+				]
+			},
+			"properties" : {
+				"ID" : 53,
+				"USERID_CREATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_CREATED" : "20250319083532",
+				"USERID_UPDATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_UPDATED" : "20250319083548",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Oost",
+				"DEELGEMEENTE" : "Sint-Kruis",
+				"STRAATNAAM" : "Damse Vaart-Zuid",
+				"AARD_SITE" : "parking",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsnietje"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2382475827, 51.2233430718 ]
+				]
+			},
+			"properties" : {
+				"ID" : 54,
+				"USERID_CREATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_CREATED" : "20250319083611",
+				"USERID_UPDATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_UPDATED" : "20250319083630",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Oost",
+				"DEELGEMEENTE" : "Sint-Kruis",
+				"STRAATNAAM" : "Damse Vaart-Zuid",
+				"AARD_SITE" : "parking",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsnietje"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2382352019, 51.2233364184 ]
+				]
+			},
+			"properties" : {
+				"ID" : 55,
+				"USERID_CREATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_CREATED" : "20250319083638",
+				"USERID_UPDATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_UPDATED" : "20250319083659",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Oost",
+				"DEELGEMEENTE" : "Sint-Kruis",
+				"STRAATNAAM" : "Damse Vaart-Zuid",
+				"AARD_SITE" : "parking",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsnietje"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2382236286, 51.2233294795 ]
+				]
+			},
+			"properties" : {
+				"ID" : 56,
+				"USERID_CREATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_CREATED" : "20250319083711",
+				"USERID_UPDATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_UPDATED" : "20250319083723",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Oost",
+				"DEELGEMEENTE" : "Sint-Kruis",
+				"STRAATNAAM" : "Damse Vaart-Zuid",
+				"AARD_SITE" : "parking",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsnietje"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2382112367, 51.2233232867 ]
+				]
+			},
+			"properties" : {
+				"ID" : 57,
+				"USERID_CREATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_CREATED" : "20250319083740",
+				"USERID_UPDATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_UPDATED" : "20250319083754",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Oost",
+				"DEELGEMEENTE" : "Sint-Kruis",
+				"STRAATNAAM" : "Damse Vaart-Zuid",
+				"AARD_SITE" : "parking",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsnietje"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.238198578, 51.2233170914 ]
+				]
+			},
+			"properties" : {
+				"ID" : 58,
+				"USERID_CREATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_CREATED" : "20250319083802",
+				"USERID_UPDATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_UPDATED" : "20250319083814",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Oost",
+				"DEELGEMEENTE" : "Sint-Kruis",
+				"STRAATNAAM" : "Damse Vaart-Zuid",
+				"AARD_SITE" : "parking",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsnietje"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2429686548, 51.2139024349 ]
+				]
+			},
+			"properties" : {
+				"ID" : 59,
+				"USERID_CREATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_CREATED" : "20250319085019",
+				"USERID_UPDATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_UPDATED" : "20250319085304",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Oost",
+				"DEELGEMEENTE" : "Sint-Kruis",
+				"STRAATNAAM" : "Brugse-Mettenstraat",
+				"AARD_SITE" : "parking",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : "20250430000000",
+				"EINDDATUM" : "20250430000000",
+				"STATUS" : "gepland",
+				"STATUSDATUM" : null,
+				"TYPE" : "bakfietsnietje"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2429644901, 51.2139202413 ]
+				]
+			},
+			"properties" : {
+				"ID" : 60,
+				"USERID_CREATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_CREATED" : "20250319085158",
+				"USERID_UPDATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_UPDATED" : "20250319085236",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Oost",
+				"DEELGEMEENTE" : "Sint-Kruis",
+				"STRAATNAAM" : "Brugse-Mettenstraat",
+				"AARD_SITE" : "parking",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : "20250430000000",
+				"EINDDATUM" : null,
+				"STATUS" : "gepland",
+				"STATUSDATUM" : "20250430000000",
+				"TYPE" : "fietsnietje"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.242961469, 51.2139348747 ]
+				]
+			},
+			"properties" : {
+				"ID" : 61,
+				"USERID_CREATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_CREATED" : "20250319085211",
+				"USERID_UPDATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_UPDATED" : "20250319085211",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Oost",
+				"DEELGEMEENTE" : "Sint-Kruis",
+				"STRAATNAAM" : "Brugse-Mettenstraat",
+				"AARD_SITE" : "parking",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : "20250430000000",
+				"EINDDATUM" : null,
+				"STATUS" : "gepland",
+				"STATUSDATUM" : "20250430000000",
+				"TYPE" : "fietsnietje"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2412890953, 51.2139384672 ]
+				]
+			},
+			"properties" : {
+				"ID" : 62,
+				"USERID_CREATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_CREATED" : "20250319085847",
+				"USERID_UPDATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_UPDATED" : "20250319085912",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Oost",
+				"DEELGEMEENTE" : "Sint-Kruis",
+				"STRAATNAAM" : "Marcus Laurinstraat",
+				"AARD_SITE" : "parking",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : "20250430000000",
+				"EINDDATUM" : "20250430000000",
+				"STATUS" : "gepland",
+				"STATUSDATUM" : null,
+				"TYPE" : "bakfietsnietje"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2413188288, 51.2139501033 ]
+				]
+			},
+			"properties" : {
+				"ID" : 63,
+				"USERID_CREATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_CREATED" : "20250319085943",
+				"USERID_UPDATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_UPDATED" : "20250319090108",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Oost",
+				"DEELGEMEENTE" : "Sint-Kruis",
+				"STRAATNAAM" : "Marcus Laurinstraat",
+				"AARD_SITE" : "parking",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : "20250430000000",
+				"EINDDATUM" : null,
+				"STATUS" : "gepland",
+				"STATUSDATUM" : "20250430000000",
+				"TYPE" : "fietsnietje"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2413382204, 51.2139591274 ]
+				]
+			},
+			"properties" : {
+				"ID" : 64,
+				"USERID_CREATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_CREATED" : "20250319090032",
+				"USERID_UPDATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_UPDATED" : "20250319090050",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Oost",
+				"DEELGEMEENTE" : "Sint-Kruis",
+				"STRAATNAAM" : "Marcus Laurinstraat",
+				"AARD_SITE" : "parking",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : "20250430000000",
+				"EINDDATUM" : null,
+				"STATUS" : "gepland",
+				"STATUSDATUM" : "20250430000000",
+				"TYPE" : "fietsnietje"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.1720594983, 51.327238036 ]
+				]
+			},
+			"properties" : {
+				"ID" : 65,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250625112156",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250625113006",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Noord 1",
+				"DEELGEMEENTE" : "Zeebrugge",
+				"STRAATNAAM" : "Zeedijk",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.172143959, 51.3272586236 ]
+				]
+			},
+			"properties" : {
+				"ID" : 66,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250625112208",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250625113006",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Noord 1",
+				"DEELGEMEENTE" : "Zeebrugge",
+				"STRAATNAAM" : "Zeedijk",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.1721268235, 51.327254727 ]
+				]
+			},
+			"properties" : {
+				"ID" : 67,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250625112217",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250625113006",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Noord 1",
+				"DEELGEMEENTE" : "Zeebrugge",
+				"STRAATNAAM" : "Zeedijk",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.1721097166, 51.3272497137 ]
+				]
+			},
+			"properties" : {
+				"ID" : 68,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250625112224",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250625113006",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Noord 1",
+				"DEELGEMEENTE" : "Zeebrugge",
+				"STRAATNAAM" : "Zeedijk",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.1720925715, 51.3272461894 ]
+				]
+			},
+			"properties" : {
+				"ID" : 69,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250625112232",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250625113006",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Noord 1",
+				"DEELGEMEENTE" : "Zeebrugge",
+				"STRAATNAAM" : "Zeedijk",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.1720766243, 51.3272423048 ]
+				]
+			},
+			"properties" : {
+				"ID" : 70,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250625112241",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250625113006",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Noord 1",
+				"DEELGEMEENTE" : "Zeebrugge",
+				"STRAATNAAM" : "Zeedijk",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.1721600395, 51.32723421 ]
+				]
+			},
+			"properties" : {
+				"ID" : 71,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250625112254",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250625113006",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Noord 1",
+				"DEELGEMEENTE" : "Zeebrugge",
+				"STRAATNAAM" : "Zeedijk",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.172144696, 51.3272299592 ]
+				]
+			},
+			"properties" : {
+				"ID" : 72,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250625112300",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250625113006",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Noord 1",
+				"DEELGEMEENTE" : "Zeebrugge",
+				"STRAATNAAM" : "Zeedijk",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.1721269663, 51.3272260567 ]
+				]
+			},
+			"properties" : {
+				"ID" : 73,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250625112306",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250625113006",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Noord 1",
+				"DEELGEMEENTE" : "Zeebrugge",
+				"STRAATNAAM" : "Zeedijk",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.1721104441, 51.3272214216 ]
+				]
+			},
+			"properties" : {
+				"ID" : 74,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250625112313",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250625113006",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Noord 1",
+				"DEELGEMEENTE" : "Zeebrugge",
+				"STRAATNAAM" : "Zeedijk",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.1720933181, 51.3272171528 ]
+				]
+			},
+			"properties" : {
+				"ID" : 75,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250625112319",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250625113006",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Noord 1",
+				"DEELGEMEENTE" : "Zeebrugge",
+				"STRAATNAAM" : "Zeedijk",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.1720773804, 51.3272128959 ]
+				]
+			},
+			"properties" : {
+				"ID" : 76,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250625112327",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250625113006",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Noord 1",
+				"DEELGEMEENTE" : "Zeebrugge",
+				"STRAATNAAM" : "Zeedijk",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.1729884287, 51.3274700237 ]
+				]
+			},
+			"properties" : {
+				"ID" : 77,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250625113412",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250625113635",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Noord 1",
+				"DEELGEMEENTE" : "Zeebrugge",
+				"STRAATNAAM" : "Zeedijk",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.1730728808, 51.3274909829 ]
+				]
+			},
+			"properties" : {
+				"ID" : 78,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250625113420",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250625113635",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Noord 1",
+				"DEELGEMEENTE" : "Zeebrugge",
+				"STRAATNAAM" : "Zeedijk",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.1730540103, 51.3274852072 ]
+				]
+			},
+			"properties" : {
+				"ID" : 79,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250625113426",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250625113635",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Noord 1",
+				"DEELGEMEENTE" : "Zeebrugge",
+				"STRAATNAAM" : "Zeedijk",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.1730386093, 51.3274831901 ]
+				]
+			},
+			"properties" : {
+				"ID" : 80,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250625113431",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250625113635",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Noord 1",
+				"DEELGEMEENTE" : "Zeebrugge",
+				"STRAATNAAM" : "Zeedijk",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.1730214735, 51.3274792937 ]
+				]
+			},
+			"properties" : {
+				"ID" : 81,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250625113439",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250625113635",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Noord 1",
+				"DEELGEMEENTE" : "Zeebrugge",
+				"STRAATNAAM" : "Zeedijk",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.1730049416, 51.327475031 ]
+				]
+			},
+			"properties" : {
+				"ID" : 82,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250625113450",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250625113635",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Noord 1",
+				"DEELGEMEENTE" : "Zeebrugge",
+				"STRAATNAAM" : "Zeedijk",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.1730878011, 51.3274654404 ]
+				]
+			},
+			"properties" : {
+				"ID" : 83,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250625113501",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250625113635",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Noord 1",
+				"DEELGEMEENTE" : "Zeebrugge",
+				"STRAATNAAM" : "Zeedijk",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.1730700425, 51.3274626548 ]
+				]
+			},
+			"properties" : {
+				"ID" : 84,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250625113508",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250625113635",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Noord 1",
+				"DEELGEMEENTE" : "Zeebrugge",
+				"STRAATNAAM" : "Zeedijk",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.1730535201, 51.3274580199 ]
+				]
+			},
+			"properties" : {
+				"ID" : 85,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250625113515",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250625113635",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Noord 1",
+				"DEELGEMEENTE" : "Zeebrugge",
+				"STRAATNAAM" : "Zeedijk",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.1730340554, 51.3274522382 ]
+				]
+			},
+			"properties" : {
+				"ID" : 86,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250625113522",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250625113635",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Noord 1",
+				"DEELGEMEENTE" : "Zeebrugge",
+				"STRAATNAAM" : "Zeedijk",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.173018664, 51.3274498488 ]
+				]
+			},
+			"properties" : {
+				"ID" : 87,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250625113526",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250625113635",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Noord 1",
+				"DEELGEMEENTE" : "Zeebrugge",
+				"STRAATNAAM" : "Zeedijk",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.1730045088, 51.3274456101 ]
+				]
+			},
+			"properties" : {
+				"ID" : 88,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250625113532",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250625113635",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Noord 1",
+				"DEELGEMEENTE" : "Zeebrugge",
+				"STRAATNAAM" : "Zeedijk",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.1740112122, 51.3277275814 ]
+				]
+			},
+			"properties" : {
+				"ID" : 89,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250625113819",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250625114223",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Noord 1",
+				"DEELGEMEENTE" : "Zeebrugge",
+				"STRAATNAAM" : "Zeedijk",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.1739958493, 51.3277240754 ]
+				]
+			},
+			"properties" : {
+				"ID" : 90,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250625113829",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250625114223",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Noord 1",
+				"DEELGEMEENTE" : "Zeebrugge",
+				"STRAATNAAM" : "Zeedijk",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.1739769404, 51.3277197889 ]
+				]
+			},
+			"properties" : {
+				"ID" : 91,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250625113837",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250625114223",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Noord 1",
+				"DEELGEMEENTE" : "Zeebrugge",
+				"STRAATNAAM" : "Zeedijk",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.1739621908, 51.3277155443 ]
+				]
+			},
+			"properties" : {
+				"ID" : 92,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250625113847",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250625114223",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Noord 1",
+				"DEELGEMEENTE" : "Zeebrugge",
+				"STRAATNAAM" : "Zeedijk",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.1739456587, 51.3277112817 ]
+				]
+			},
+			"properties" : {
+				"ID" : 93,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250625113854",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250625114223",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Noord 1",
+				"DEELGEMEENTE" : "Zeebrugge",
+				"STRAATNAAM" : "Zeedijk",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.1739273344, 51.3277073735 ]
+				]
+			},
+			"properties" : {
+				"ID" : 94,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250625113903",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250625114223",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Noord 1",
+				"DEELGEMEENTE" : "Zeebrugge",
+				"STRAATNAAM" : "Zeedijk",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.1740290553, 51.3277039301 ]
+				]
+			},
+			"properties" : {
+				"ID" : 95,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250625113944",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250625114223",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Noord 1",
+				"DEELGEMEENTE" : "Zeebrugge",
+				"STRAATNAAM" : "Zeedijk",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.1740125422, 51.3276989231 ]
+				]
+			},
+			"properties" : {
+				"ID" : 96,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250625113951",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250625114223",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Noord 1",
+				"DEELGEMEENTE" : "Zeebrugge",
+				"STRAATNAAM" : "Zeedijk",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.1739948026, 51.3276953931 ]
+				]
+			},
+			"properties" : {
+				"ID" : 97,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250625113959",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250625114223",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Noord 1",
+				"DEELGEMEENTE" : "Zeebrugge",
+				"STRAATNAAM" : "Zeedijk",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.1739782896, 51.327690386 ]
+				]
+			},
+			"properties" : {
+				"ID" : 98,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250625114005",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250625114223",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Noord 1",
+				"DEELGEMEENTE" : "Zeebrugge",
+				"STRAATNAAM" : "Zeedijk",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.1739611728, 51.3276857452 ]
+				]
+			},
+			"properties" : {
+				"ID" : 99,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250625114010",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250625114223",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Noord 1",
+				"DEELGEMEENTE" : "Zeebrugge",
+				"STRAATNAAM" : "Zeedijk",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.1739446311, 51.3276818549 ]
+				]
+			},
+			"properties" : {
+				"ID" : 100,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250625114016",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250625114223",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Noord 1",
+				"DEELGEMEENTE" : "Zeebrugge",
+				"STRAATNAAM" : "Zeedijk",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.1782041042, 51.3286876234 ]
+				]
+			},
+			"properties" : {
+				"ID" : 101,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250625114407",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250625115627",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Noord 1",
+				"DEELGEMEENTE" : "Zeebrugge",
+				"STRAATNAAM" : "Sint-Thomas Morusstraat",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : "20240603000000",
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsnietje"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.1781955283, 51.3286975911 ]
+				]
+			},
+			"properties" : {
+				"ID" : 102,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250625114415",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250625115627",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Noord 1",
+				"DEELGEMEENTE" : "Zeebrugge",
+				"STRAATNAAM" : "Sint-Thomas Morusstraat",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : "20240603000000",
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsnietje"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.1781899233, 51.3287075885 ]
+				]
+			},
+			"properties" : {
+				"ID" : 103,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250625114420",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250625115627",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Noord 1",
+				"DEELGEMEENTE" : "Zeebrugge",
+				"STRAATNAAM" : "Sint-Thomas Morusstraat",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : "20240603000000",
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsnietje"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.1781807056, 51.3287194115 ]
+				]
+			},
+			"properties" : {
+				"ID" : 104,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250625114426",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250625115627",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Noord 1",
+				"DEELGEMEENTE" : "Zeebrugge",
+				"STRAATNAAM" : "Sint-Thomas Morusstraat",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : "20240603000000",
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsnietje"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.1781745541, 51.3287275417 ]
+				]
+			},
+			"properties" : {
+				"ID" : 105,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250625114431",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250625115627",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Noord 1",
+				"DEELGEMEENTE" : "Zeebrugge",
+				"STRAATNAAM" : "Sint-Thomas Morusstraat",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : "20240603000000",
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsnietje"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.1781665247, 51.3287393766 ]
+				]
+			},
+			"properties" : {
+				"ID" : 106,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250625114436",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250625115627",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Noord 1",
+				"DEELGEMEENTE" : "Zeebrugge",
+				"STRAATNAAM" : "Sint-Thomas Morusstraat",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : "20240603000000",
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsnietje"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.1781710003, 51.3286805886 ]
+				]
+			},
+			"properties" : {
+				"ID" : 107,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250625114444",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250625115627",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Noord 1",
+				"DEELGEMEENTE" : "Zeebrugge",
+				"STRAATNAAM" : "Sint-Thomas Morusstraat",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : "20240603000000",
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsnietje"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.1781654145, 51.3286898415 ]
+				]
+			},
+			"properties" : {
+				"ID" : 108,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250625114449",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250625115627",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Noord 1",
+				"DEELGEMEENTE" : "Zeebrugge",
+				"STRAATNAAM" : "Sint-Thomas Morusstraat",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : "20240603000000",
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsnietje"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.1781603466, 51.3287020785 ]
+				]
+			},
+			"properties" : {
+				"ID" : 109,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250625114454",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250625115627",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Noord 1",
+				"DEELGEMEENTE" : "Zeebrugge",
+				"STRAATNAAM" : "Sint-Thomas Morusstraat",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : "20240603000000",
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsnietje"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.1781541474, 51.32871207 ]
+				]
+			},
+			"properties" : {
+				"ID" : 110,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250625114459",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250625115627",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Noord 1",
+				"DEELGEMEENTE" : "Zeebrugge",
+				"STRAATNAAM" : "Sint-Thomas Morusstraat",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : "20240603000000",
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsnietje"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.1781461847, 51.328721299 ]
+				]
+			},
+			"properties" : {
+				"ID" : 111,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250625114504",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250625115627",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Noord 1",
+				"DEELGEMEENTE" : "Zeebrugge",
+				"STRAATNAAM" : "Sint-Thomas Morusstraat",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : "20240603000000",
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsnietje"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.1781411073, 51.3287339083 ]
+				]
+			},
+			"properties" : {
+				"ID" : 112,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250625114510",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250625115627",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Noord 1",
+				"DEELGEMEENTE" : "Zeebrugge",
+				"STRAATNAAM" : "Sint-Thomas Morusstraat",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : "20240603000000",
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsnietje"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.1783193055, 51.3287149011 ]
+				]
+			},
+			"properties" : {
+				"ID" : 113,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250625115333",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250625115513",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Noord 1",
+				"DEELGEMEENTE" : "Zeebrugge",
+				"STRAATNAAM" : "Sint-Thomas Morusstraat",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : "20240603000000",
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsnietje"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.1783142567, 51.3287263936 ]
+				]
+			},
+			"properties" : {
+				"ID" : 114,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250625115339",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250625115513",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Noord 1",
+				"DEELGEMEENTE" : "Zeebrugge",
+				"STRAATNAAM" : "Sint-Thomas Morusstraat",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : "20240603000000",
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsnietje"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.1782897763, 51.3287075298 ]
+				]
+			},
+			"properties" : {
+				"ID" : 115,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250625115345",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250625115513",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Noord 1",
+				"DEELGEMEENTE" : "Zeebrugge",
+				"STRAATNAAM" : "Sint-Thomas Morusstraat",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : "20240603000000",
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsnietje"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.1782841238, 51.3287193886 ]
+				]
+			},
+			"properties" : {
+				"ID" : 116,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250625115351",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250625115513",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Noord 1",
+				"DEELGEMEENTE" : "Zeebrugge",
+				"STRAATNAAM" : "Sint-Thomas Morusstraat",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : "20240603000000",
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsnietje"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.208704656, 51.2011922342 ]
+				]
+			},
+			"properties" : {
+				"ID" : 117,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250724162107",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250724163345",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "West",
+				"DEELGEMEENTE" : "Sint-Andries",
+				"STRAATNAAM" : "Magdalenastraat",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2086863878, 51.2011879588 ]
+				]
+			},
+			"properties" : {
+				"ID" : 118,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250724162121",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250724163345",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "West",
+				"DEELGEMEENTE" : "Sint-Andries",
+				"STRAATNAAM" : "Magdalenastraat",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2086701704, 51.2011846345 ]
+				]
+			},
+			"properties" : {
+				"ID" : 119,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250724162129",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250724163345",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "West",
+				"DEELGEMEENTE" : "Sint-Andries",
+				"STRAATNAAM" : "Magdalenastraat",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2086527865, 51.201180554 ]
+				]
+			},
+			"properties" : {
+				"ID" : 120,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250724162137",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250724163345",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "West",
+				"DEELGEMEENTE" : "Sint-Andries",
+				"STRAATNAAM" : "Magdalenastraat",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2086362775, 51.2011770406 ]
+				]
+			},
+			"properties" : {
+				"ID" : 121,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250724162144",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250724163345",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "West",
+				"DEELGEMEENTE" : "Sint-Andries",
+				"STRAATNAAM" : "Magdalenastraat",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2086186111, 51.2011723988 ]
+				]
+			},
+			"properties" : {
+				"ID" : 123,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250724162202",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250724163345",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "West",
+				"DEELGEMEENTE" : "Sint-Andries",
+				"STRAATNAAM" : "Magdalenastraat",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2086038845, 51.2011687167 ]
+				]
+			},
+			"properties" : {
+				"ID" : 124,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250724162756",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250724163345",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "West",
+				"DEELGEMEENTE" : "Sint-Andries",
+				"STRAATNAAM" : "Magdalenastraat",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2085858848, 51.2011655611 ]
+				]
+			},
+			"properties" : {
+				"ID" : 125,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250724162802",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250724163345",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "West",
+				"DEELGEMEENTE" : "Sint-Andries",
+				"STRAATNAAM" : "Magdalenastraat",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2085688064, 51.2011611112 ]
+				]
+			},
+			"properties" : {
+				"ID" : 126,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250724162809",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250724163345",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "West",
+				"DEELGEMEENTE" : "Sint-Andries",
+				"STRAATNAAM" : "Magdalenastraat",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2085531956, 51.2011572343 ]
+				]
+			},
+			"properties" : {
+				"ID" : 127,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250724162816",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250724163345",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "West",
+				"DEELGEMEENTE" : "Sint-Andries",
+				"STRAATNAAM" : "Magdalenastraat",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.208535807, 51.2011533399 ]
+				]
+			},
+			"properties" : {
+				"ID" : 128,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250724162825",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250724163345",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "West",
+				"DEELGEMEENTE" : "Sint-Andries",
+				"STRAATNAAM" : "Magdalenastraat",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2085181314, 51.2011490703 ]
+				]
+			},
+			"properties" : {
+				"ID" : 129,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250724162832",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250724163345",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "West",
+				"DEELGEMEENTE" : "Sint-Andries",
+				"STRAATNAAM" : "Magdalenastraat",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.20850134, 51.2011449956 ]
+				]
+			},
+			"properties" : {
+				"ID" : 130,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250724162840",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250724163345",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "West",
+				"DEELGEMEENTE" : "Sint-Andries",
+				"STRAATNAAM" : "Magdalenastraat",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.208484544, 51.201141107 ]
+				]
+			},
+			"properties" : {
+				"ID" : 131,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250724162847",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250724163345",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "West",
+				"DEELGEMEENTE" : "Sint-Andries",
+				"STRAATNAAM" : "Magdalenastraat",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2084686277, 51.2011375994 ]
+				]
+			},
+			"properties" : {
+				"ID" : 132,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250724162854",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250724163345",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "West",
+				"DEELGEMEENTE" : "Sint-Andries",
+				"STRAATNAAM" : "Magdalenastraat",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2084518317, 51.2011337109 ]
+				]
+			},
+			"properties" : {
+				"ID" : 133,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250724162900",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250724163345",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "West",
+				"DEELGEMEENTE" : "Sint-Andries",
+				"STRAATNAAM" : "Magdalenastraat",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2084350357, 51.2011298223 ]
+				]
+			},
+			"properties" : {
+				"ID" : 134,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250724162907",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250724163345",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "West",
+				"DEELGEMEENTE" : "Sint-Andries",
+				"STRAATNAAM" : "Magdalenastraat",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.208418249, 51.2011255614 ]
+				]
+			},
+			"properties" : {
+				"ID" : 135,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250724162918",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250724163345",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "West",
+				"DEELGEMEENTE" : "Sint-Andries",
+				"STRAATNAAM" : "Magdalenastraat",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2083996799, 51.2011214692 ]
+				]
+			},
+			"properties" : {
+				"ID" : 136,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250724162924",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250724163345",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "West",
+				"DEELGEMEENTE" : "Sint-Andries",
+				"STRAATNAAM" : "Magdalenastraat",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2083849348, 51.2011185317 ]
+				]
+			},
+			"properties" : {
+				"ID" : 137,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250724162935",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250724163345",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "West",
+				"DEELGEMEENTE" : "Sint-Andries",
+				"STRAATNAAM" : "Magdalenastraat",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2083672777, 51.2011135175 ]
+				]
+			},
+			"properties" : {
+				"ID" : 138,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250724162941",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250724163345",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "West",
+				"DEELGEMEENTE" : "Sint-Andries",
+				"STRAATNAAM" : "Magdalenastraat",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.208350167, 51.2011103706 ]
+				]
+			},
+			"properties" : {
+				"ID" : 139,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250724162948",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250724163345",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "West",
+				"DEELGEMEENTE" : "Sint-Andries",
+				"STRAATNAAM" : "Magdalenastraat",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2083336673, 51.2011064849 ]
+				]
+			},
+			"properties" : {
+				"ID" : 140,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250724162953",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250724163345",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "West",
+				"DEELGEMEENTE" : "Sint-Andries",
+				"STRAATNAAM" : "Magdalenastraat",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2083165843, 51.2011022211 ]
+				]
+			},
+			"properties" : {
+				"ID" : 141,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250724163000",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250724163345",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "West",
+				"DEELGEMEENTE" : "Sint-Andries",
+				"STRAATNAAM" : "Magdalenastraat",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2082995013, 51.2010979573 ]
+				]
+			},
+			"properties" : {
+				"ID" : 142,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250724163008",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250724163345",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "West",
+				"DEELGEMEENTE" : "Sint-Andries",
+				"STRAATNAAM" : "Magdalenastraat",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2082897792, 51.2010956276 ]
+				]
+			},
+			"properties" : {
+				"ID" : 143,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250724163022",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250724163345",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "West",
+				"DEELGEMEENTE" : "Sint-Andries",
+				"STRAATNAAM" : "Magdalenastraat",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2082791545, 51.2010938477 ]
+				]
+			},
+			"properties" : {
+				"ID" : 144,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250724163028",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250724163345",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "West",
+				"DEELGEMEENTE" : "Sint-Andries",
+				"STRAATNAAM" : "Magdalenastraat",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2082614697, 51.2010899503 ]
+				]
+			},
+			"properties" : {
+				"ID" : 145,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250724163034",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250724163345",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "West",
+				"DEELGEMEENTE" : "Sint-Andries",
+				"STRAATNAAM" : "Magdalenastraat",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2082443728, 51.2010862449 ]
+				]
+			},
+			"properties" : {
+				"ID" : 146,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250724163041",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250724163345",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "West",
+				"DEELGEMEENTE" : "Sint-Andries",
+				"STRAATNAAM" : "Magdalenastraat",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2082287666, 51.2010821818 ]
+				]
+			},
+			"properties" : {
+				"ID" : 147,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250724163048",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250724163345",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "West",
+				"DEELGEMEENTE" : "Sint-Andries",
+				"STRAATNAAM" : "Magdalenastraat",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2090432742, 51.2013349999 ]
+				]
+			},
+			"properties" : {
+				"ID" : 148,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250724164532",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250724170010",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "West",
+				"DEELGEMEENTE" : "Sint-Andries",
+				"STRAATNAAM" : "Edgard De Smedtplantsoen",
+				"AARD_SITE" : "parking",
+				"AANTAL_FIETSEN" : 1,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietskluis"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2090377282, 51.2013435101 ]
+				]
+			},
+			"properties" : {
+				"ID" : 149,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250724164539",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250724170010",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "West",
+				"DEELGEMEENTE" : "Sint-Andries",
+				"STRAATNAAM" : "Edgard De Smedtplantsoen",
+				"AARD_SITE" : "parking",
+				"AANTAL_FIETSEN" : 1,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietskluis"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2090334505, 51.2013486815 ]
+				]
+			},
+			"properties" : {
+				"ID" : 150,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250724164547",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250724170010",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "West",
+				"DEELGEMEENTE" : "Sint-Andries",
+				"STRAATNAAM" : "Edgard De Smedtplantsoen",
+				"AARD_SITE" : "parking",
+				"AANTAL_FIETSEN" : 1,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietskluis"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2090326914, 51.2013553768 ]
+				]
+			},
+			"properties" : {
+				"ID" : 151,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250724164556",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250724170010",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "West",
+				"DEELGEMEENTE" : "Sint-Andries",
+				"STRAATNAAM" : "Edgard De Smedtplantsoen",
+				"AARD_SITE" : "parking",
+				"AANTAL_FIETSEN" : 1,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietskluis"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2090242565, 51.2013608797 ]
+				]
+			},
+			"properties" : {
+				"ID" : 152,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250724164603",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250724170010",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "West",
+				"DEELGEMEENTE" : "Sint-Andries",
+				"STRAATNAAM" : "Edgard De Smedtplantsoen",
+				"AARD_SITE" : "parking",
+				"AANTAL_FIETSEN" : 1,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietskluis"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2090217012, 51.2013683022 ]
+				]
+			},
+			"properties" : {
+				"ID" : 153,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250724164610",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250724170010",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "West",
+				"DEELGEMEENTE" : "Sint-Andries",
+				"STRAATNAAM" : "Edgard De Smedtplantsoen",
+				"AARD_SITE" : "parking",
+				"AANTAL_FIETSEN" : 1,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietskluis"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2090197661, 51.2013746137 ]
+				]
+			},
+			"properties" : {
+				"ID" : 154,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250724164617",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250724170010",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "West",
+				"DEELGEMEENTE" : "Sint-Andries",
+				"STRAATNAAM" : "Edgard De Smedtplantsoen",
+				"AARD_SITE" : "parking",
+				"AANTAL_FIETSEN" : 1,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietskluis"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.209013109, 51.201380134 ]
+				]
+			},
+			"properties" : {
+				"ID" : 155,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250724164624",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250724170010",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "West",
+				"DEELGEMEENTE" : "Sint-Andries",
+				"STRAATNAAM" : "Edgard De Smedtplantsoen",
+				"AARD_SITE" : "parking",
+				"AANTAL_FIETSEN" : 1,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietskluis"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2090147017, 51.2013875972 ]
+				]
+			},
+			"properties" : {
+				"ID" : 156,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250724164632",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250724170010",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "West",
+				"DEELGEMEENTE" : "Sint-Andries",
+				"STRAATNAAM" : "Edgard De Smedtplantsoen",
+				"AARD_SITE" : "parking",
+				"AANTAL_FIETSEN" : 1,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietskluis"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2090056834, 51.201392722 ]
+				]
+			},
+			"properties" : {
+				"ID" : 157,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250724164639",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250724170010",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "West",
+				"DEELGEMEENTE" : "Sint-Andries",
+				"STRAATNAAM" : "Edgard De Smedtplantsoen",
+				"AARD_SITE" : "parking",
+				"AANTAL_FIETSEN" : 1,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietskluis"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2090023891, 51.2013994687 ]
+				]
+			},
+			"properties" : {
+				"ID" : 158,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250724164648",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250724170010",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "West",
+				"DEELGEMEENTE" : "Sint-Andries",
+				"STRAATNAAM" : "Edgard De Smedtplantsoen",
+				"AARD_SITE" : "parking",
+				"AANTAL_FIETSEN" : 1,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietskluis"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2089986671, 51.201406135 ]
+				]
+			},
+			"properties" : {
+				"ID" : 159,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250724164654",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250724170010",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "West",
+				"DEELGEMEENTE" : "Sint-Andries",
+				"STRAATNAAM" : "Edgard De Smedtplantsoen",
+				"AARD_SITE" : "parking",
+				"AANTAL_FIETSEN" : 1,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietskluis"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.208996158, 51.2014116961 ]
+				]
+			},
+			"properties" : {
+				"ID" : 160,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250724164701",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250724170010",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "West",
+				"DEELGEMEENTE" : "Sint-Andries",
+				"STRAATNAAM" : "Edgard De Smedtplantsoen",
+				"AARD_SITE" : "parking",
+				"AANTAL_FIETSEN" : 1,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietskluis"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2089915332, 51.201418912 ]
+				]
+			},
+			"properties" : {
+				"ID" : 161,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250724164707",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250724170010",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "West",
+				"DEELGEMEENTE" : "Sint-Andries",
+				"STRAATNAAM" : "Edgard De Smedtplantsoen",
+				"AARD_SITE" : "parking",
+				"AANTAL_FIETSEN" : 1,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietskluis"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2089881075, 51.2014255812 ]
+				]
+			},
+			"properties" : {
+				"ID" : 162,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250724164716",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250724170010",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "West",
+				"DEELGEMEENTE" : "Sint-Andries",
+				"STRAATNAAM" : "Edgard De Smedtplantsoen",
+				"AARD_SITE" : "parking",
+				"AANTAL_FIETSEN" : 1,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietskluis"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2089835197, 51.2014313081 ]
+				]
+			},
+			"properties" : {
+				"ID" : 163,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250724164725",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250724170010",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "West",
+				"DEELGEMEENTE" : "Sint-Andries",
+				"STRAATNAAM" : "Edgard De Smedtplantsoen",
+				"AARD_SITE" : "parking",
+				"AANTAL_FIETSEN" : 1,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietskluis"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2089804273, 51.201436491 ]
+				]
+			},
+			"properties" : {
+				"ID" : 164,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250724164732",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250724170010",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "West",
+				"DEELGEMEENTE" : "Sint-Andries",
+				"STRAATNAAM" : "Edgard De Smedtplantsoen",
+				"AARD_SITE" : "parking",
+				"AANTAL_FIETSEN" : 1,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietskluis"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2089813145, 51.2014431263 ]
+				]
+			},
+			"properties" : {
+				"ID" : 165,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250724164755",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250724170010",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "West",
+				"DEELGEMEENTE" : "Sint-Andries",
+				"STRAATNAAM" : "Edgard De Smedtplantsoen",
+				"AARD_SITE" : "parking",
+				"AANTAL_FIETSEN" : 1,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietskluis"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2089717037, 51.2014482453 ]
+				]
+			},
+			"properties" : {
+				"ID" : 166,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250724164802",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250724170010",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "West",
+				"DEELGEMEENTE" : "Sint-Andries",
+				"STRAATNAAM" : "Edgard De Smedtplantsoen",
+				"AARD_SITE" : "parking",
+				"AANTAL_FIETSEN" : 1,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietskluis"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.208969025, 51.2014540671 ]
+				]
+			},
+			"properties" : {
+				"ID" : 167,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250724164811",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250724170010",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "West",
+				"DEELGEMEENTE" : "Sint-Andries",
+				"STRAATNAAM" : "Edgard De Smedtplantsoen",
+				"AARD_SITE" : "parking",
+				"AANTAL_FIETSEN" : 1,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietskluis"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2089676641, 51.2014611289 ]
+				]
+			},
+			"properties" : {
+				"ID" : 168,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250724164821",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250724170010",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "West",
+				"DEELGEMEENTE" : "Sint-Andries",
+				"STRAATNAAM" : "Edgard De Smedtplantsoen",
+				"AARD_SITE" : "parking",
+				"AANTAL_FIETSEN" : 1,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietskluis"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2089654513, 51.2014666929 ]
+				]
+			},
+			"properties" : {
+				"ID" : 169,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250724164829",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250724170010",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "West",
+				"DEELGEMEENTE" : "Sint-Andries",
+				"STRAATNAAM" : "Edgard De Smedtplantsoen",
+				"AARD_SITE" : "parking",
+				"AANTAL_FIETSEN" : 1,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietskluis"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2089620625, 51.2014718729 ]
+				]
+			},
+			"properties" : {
+				"ID" : 170,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250724164836",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250724170010",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "West",
+				"DEELGEMEENTE" : "Sint-Andries",
+				"STRAATNAAM" : "Edgard De Smedtplantsoen",
+				"AARD_SITE" : "parking",
+				"AANTAL_FIETSEN" : 1,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietskluis"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2088889481, 51.2015822341 ]
+				]
+			},
+			"properties" : {
+				"ID" : 171,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250724165039",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250724170010",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "West",
+				"DEELGEMEENTE" : "Sint-Andries",
+				"STRAATNAAM" : "Edgard De Smedtplantsoen",
+				"AARD_SITE" : "parking",
+				"AANTAL_FIETSEN" : 1,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietskluis"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2088909016, 51.2015751781 ]
+				]
+			},
+			"properties" : {
+				"ID" : 172,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250724165047",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250724170010",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "West",
+				"DEELGEMEENTE" : "Sint-Andries",
+				"STRAATNAAM" : "Edgard De Smedtplantsoen",
+				"AARD_SITE" : "parking",
+				"AANTAL_FIETSEN" : 1,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietskluis"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2088941533, 51.2015689558 ]
+				]
+			},
+			"properties" : {
+				"ID" : 173,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250724165057",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250724170010",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "West",
+				"DEELGEMEENTE" : "Sint-Andries",
+				"STRAATNAAM" : "Edgard De Smedtplantsoen",
+				"AARD_SITE" : "parking",
+				"AANTAL_FIETSEN" : 1,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietskluis"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2088972689, 51.2015628422 ]
+				]
+			},
+			"properties" : {
+				"ID" : 174,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250724165104",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250724170010",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "West",
+				"DEELGEMEENTE" : "Sint-Andries",
+				"STRAATNAAM" : "Edgard De Smedtplantsoen",
+				"AARD_SITE" : "parking",
+				"AANTAL_FIETSEN" : 1,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietskluis"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.208899815, 51.201555792 ]
+				]
+			},
+			"properties" : {
+				"ID" : 175,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250724165115",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250724170010",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "West",
+				"DEELGEMEENTE" : "Sint-Andries",
+				"STRAATNAAM" : "Edgard De Smedtplantsoen",
+				"AARD_SITE" : "parking",
+				"AANTAL_FIETSEN" : 1,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietskluis"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2089041389, 51.2015487592 ]
+				]
+			},
+			"properties" : {
+				"ID" : 176,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250724165122",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250724170010",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "West",
+				"DEELGEMEENTE" : "Sint-Andries",
+				"STRAATNAAM" : "Edgard De Smedtplantsoen",
+				"AARD_SITE" : "parking",
+				"AANTAL_FIETSEN" : 1,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietskluis"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2089090276, 51.2015428492 ]
+				]
+			},
+			"properties" : {
+				"ID" : 177,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250724165134",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250724170010",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "West",
+				"DEELGEMEENTE" : "Sint-Andries",
+				"STRAATNAAM" : "Edgard De Smedtplantsoen",
+				"AARD_SITE" : "parking",
+				"AANTAL_FIETSEN" : 1,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietskluis"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2089118376, 51.2015371049 ]
+				]
+			},
+			"properties" : {
+				"ID" : 178,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250724165318",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250724170010",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "West",
+				"DEELGEMEENTE" : "Sint-Andries",
+				"STRAATNAAM" : "Edgard De Smedtplantsoen",
+				"AARD_SITE" : "parking",
+				"AANTAL_FIETSEN" : 1,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietskluis"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2089180949, 51.2015303872 ]
+				]
+			},
+			"properties" : {
+				"ID" : 179,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250724165508",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250724170010",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "West",
+				"DEELGEMEENTE" : "Sint-Andries",
+				"STRAATNAAM" : "Edgard De Smedtplantsoen",
+				"AARD_SITE" : "parking",
+				"AANTAL_FIETSEN" : 1,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietskluis"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2089236317, 51.2015222492 ]
+				]
+			},
+			"properties" : {
+				"ID" : 180,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250724165515",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250724170010",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "West",
+				"DEELGEMEENTE" : "Sint-Andries",
+				"STRAATNAAM" : "Edgard De Smedtplantsoen",
+				"AARD_SITE" : "parking",
+				"AANTAL_FIETSEN" : 1,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietskluis"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2089279741, 51.2015144719 ]
+				]
+			},
+			"properties" : {
+				"ID" : 181,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250724165522",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250724170010",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "West",
+				"DEELGEMEENTE" : "Sint-Andries",
+				"STRAATNAAM" : "Edgard De Smedtplantsoen",
+				"AARD_SITE" : "parking",
+				"AANTAL_FIETSEN" : 1,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietskluis"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.208934122, 51.2015055952 ]
+				]
+			},
+			"properties" : {
+				"ID" : 182,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250724165529",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250724170010",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "West",
+				"DEELGEMEENTE" : "Sint-Andries",
+				"STRAATNAAM" : "Edgard De Smedtplantsoen",
+				"AARD_SITE" : "parking",
+				"AANTAL_FIETSEN" : 1,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietskluis"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2089384274, 51.201499307 ]
+				]
+			},
+			"properties" : {
+				"ID" : 183,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250724165535",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250724170010",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "West",
+				"DEELGEMEENTE" : "Sint-Andries",
+				"STRAATNAAM" : "Edgard De Smedtplantsoen",
+				"AARD_SITE" : "parking",
+				"AANTAL_FIETSEN" : 1,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietskluis"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2089415475, 51.2014930072 ]
+				]
+			},
+			"properties" : {
+				"ID" : 184,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250724165542",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250724170010",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "West",
+				"DEELGEMEENTE" : "Sint-Andries",
+				"STRAATNAAM" : "Edgard De Smedtplantsoen",
+				"AARD_SITE" : "parking",
+				"AANTAL_FIETSEN" : 1,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietskluis"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2089470288, 51.2014871029 ]
+				]
+			},
+			"properties" : {
+				"ID" : 185,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250724165550",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250724170010",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "West",
+				"DEELGEMEENTE" : "Sint-Andries",
+				"STRAATNAAM" : "Edgard De Smedtplantsoen",
+				"AARD_SITE" : "parking",
+				"AANTAL_FIETSEN" : 1,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietskluis"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2089526231, 51.2014820207 ]
+				]
+			},
+			"properties" : {
+				"ID" : 186,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250724165559",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250724170010",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "West",
+				"DEELGEMEENTE" : "Sint-Andries",
+				"STRAATNAAM" : "Edgard De Smedtplantsoen",
+				"AARD_SITE" : "parking",
+				"AANTAL_FIETSEN" : 1,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietskluis"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2089580673, 51.2014776056 ]
+				]
+			},
+			"properties" : {
+				"ID" : 187,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250724165608",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250724170010",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "West",
+				"DEELGEMEENTE" : "Sint-Andries",
+				"STRAATNAAM" : "Edgard De Smedtplantsoen",
+				"AARD_SITE" : "parking",
+				"AANTAL_FIETSEN" : 1,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"TYPE" : "fietskluis"
+			}
+		}
+	]
+}

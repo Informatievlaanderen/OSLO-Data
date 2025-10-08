@@ -1,0 +1,240 @@
+@prefix rml: <http://w3id.org/rml/> .
+@prefix ex: <http://example.com/ns#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix openbaardomein: <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#> .
+@prefix csvw: <http://www.w3.org/ns/csvw#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix fixme: <http://fixme.com#> .
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix mobivoc: <http://schema.mobivoc.org/#> .
+@base <http://data.vlaanderen.be/mapping/> .
+
+<#FietsstallingenBruggeLogicalSource>
+  rml:source "STADBRUGGE_FIETSSTALLING.json";
+  rml:referenceFormulation rml:JSONPath;
+  rml:iterator "$.features.[*]"
+.
+
+<#FietsstallingTriplesMap> a rml:TriplesMap;
+  rml:logicalSource <#FietsstallingenBruggeLogicalSource> ;
+  rml:subjectMap [
+    rml:template "http://example.com/fietsstalling/id/{$.properties.ID}" ;
+    rml:class openbaardomein:Fietsstalling;
+    rml:class openbaardomein:Infrastructuurelement;
+    rml:class openbaardomein:FysiekObject;
+    rml:class mobivoc:BicycleParkingStation;
+  ] ;
+
+  rml:predicateObjectMap [
+    rml:predicate locn:address ;
+    rml:objectMap [
+      rml:template "https://example.com/fietstalling/id/{$.properties.ID}#adres" ;
+      rml:termType rml:IRI;
+    ];
+  ];
+
+  rml:predicateObjectMap [
+    rml:predicate dcterms:type ;
+    rml:objectMap [
+      rml:template "https://example.com/id/concept/karaktertype/{$.properties.TYPE}" ;
+      rml:termType rml:IRI;
+    ];
+  ];
+
+  rml:predicateObjectMap [
+    rml:predicate dcterms:type ;
+    rml:objectMap [
+      rml:template "https://example.com/id/concept/sitetype/{$.properties.AARD_SITE}" ;
+      rml:termType rml:IRI;
+    ];
+  ];
+
+  rml:predicateObjectMap [
+    rml:predicate dcterms:type ;
+    rml:objectMap [
+      rml:template "https://example.com/id/concept/sectortype/{$.properties.SECTOR}" ;
+      rml:termType rml:IRI;
+    ];
+  ];
+
+  rml:predicateObjectMap [
+    rml:predicate dcterms:type ;
+    rml:objectMap [
+      rml:template "https://example.com/id/concept/deelgemeentetype/{$.properties.DEELGEMEENTE}" ;
+      rml:termType rml:IRI;
+    ];
+  ];
+
+  rml:predicateObjectMap [
+    rml:predicate dcterms:type ;
+    rml:objectMap [
+      rml:template "https://example.com/id/concept/statustype/{$.properties.STATUS}" ;
+      rml:termType rml:IRI;
+    ];
+  ];
+
+  rml:predicateObjectMap [
+    rml:predicate openbaardomein:capaciteit ;
+    rml:objectMap [
+      rml:reference "$.properties.AANTAL_FIETSEN" ;
+      rml:datatype xsd:integer;
+    ];
+  ];
+
+  rml:predicateObjectMap [
+    rml:predicate adms:indentifier ;
+    rml:objectMap [
+      rml:template "https://example.com/fietsstalling/id/{$.properties.ID}#identificator" ;
+      rml:termType rml:IRI;
+    ];
+  ];
+
+  rml:predicateObjectMap [
+    rml:predicate locn:geometry ;
+    rml:objectMap [
+      rml:template "https://example.com/fietsstalling/id/{$.properties.ID}#geometrie" ;
+      rml:termType rml:IRI;
+    ];
+  ];
+
+  rml:predicateObjectMap [
+    rml:predicate fixme:eigenaar ;
+    rml:objectMap [
+      rml:template "https://example.com/fietsstalling/id/{$.properties.ID}#eigenaar" ;
+      rml:termType rml:IRI;
+    ];
+  ];
+
+  rml:predicateObjectMap [
+    rml:predicate openbaardomein:beheerder ;
+    rml:objectMap [
+      rml:template "https://example.com/fietsstalling/id/{$.properties.ID}#beheerder" ;
+      rml:termType rml:IRI;
+    ];
+  ];
+.
+
+<#FietsstallingAdresTriplesMap> a rml:TriplesMap;
+  rml:logicalSource <#FietsstallingenBruggeLogicalSource> ;
+  rml:subjectMap [
+    rml:template "https://example.com/fietstalling/id/{$.properties.ID}#adres" ;
+    rml:class locn:Address;
+  ];
+
+  rml:predicateObjectMap [
+    rml:predicate locn:fullAddress ;
+    rml:objectMap [
+      rml:reference "$.properties.STRAATNAAM" ;
+      rml:language "nl";
+    ];
+  ];
+.
+
+
+<#FietsstallingEigenaarTriplesMap> a rml:TriplesMap;
+  rml:logicalSource <#FietsstallingenBruggeLogicalSource> ;
+  rml:subjectMap [
+    rml:template "https://example.com/fietsstalling/id/{$.properties.ID}#eigenaar" ;
+    rml:class org:Organization;
+  ];
+
+  rml:predicateObjectMap [
+    rml:predicate skos:prefLabel ;
+    rml:objectMap [
+      rml:reference "$.properties.EIGENAAR" ;
+      rml:language "nl";
+    ];
+  ];
+.
+
+<#FietsstallingBeheerderTriplesMap> a rml:TriplesMap;
+  rml:logicalSource <#FietsstallingenBruggeLogicalSource> ;
+  rml:subjectMap [
+    rml:template "https://example.com/fietsstalling/id/{$.properties.ID}#beheerder" ;
+    rml:class org:Organization;
+  ];
+
+  rml:predicateObjectMap [
+    rml:predicate skos:prefLabel ;
+    rml:objectMap [
+      rml:reference "$.properties.BEHEERDER" ;
+      rml:language "nl";
+    ];
+  ];
+.
+
+<#FietsstallingIdentificatorTriplesMap> a rml:TriplesMap;
+  rml:logicalSource <#FietsstallingenBruggeLogicalSource> ;
+  rml:subjectMap [
+    rml:template "https://example.com/fietsstalling/id/{$.properties.ID}#identificator" ;
+    rml:class adms:Identifier;
+  ];
+
+  rml:predicateObjectMap [
+    rml:predicate skos:notation ;
+    rml:objectMap [
+      rml:reference "$.properties.ID" ;
+      #rml:datatype "https://example.com/id/concept/identificatortype/infrastructuurelementnummer";
+    ];
+  ];
+.
+
+<#FietsstallingGeometrieTriplesMap> a rml:TriplesMap;
+  rml:logicalSource <#FietsstallingenBruggeLogicalSource> ;
+  rml:subjectMap [
+    rml:template "http://example.com/fietsstalling/id/{$.properties.ID}#geometrie" ;
+    rml:class geosparql:Geometry;
+  ];
+
+  rml:predicateObjectMap [
+    rml:predicate geosparql:asGeoJSON ;
+    rml:objectMap [
+      rml:reference "$.geometry" ;
+      rml:datatype geosparql:geoJSONLiteral;
+    ];
+  ];
+.
+
+<#FietsstallingKarakterTypeTriplesMap> a rml:TriplesMap;
+  rml:logicalSource <#FietsstallingenBruggeLogicalSource> ;
+  rml:subjectMap [
+    rml:template "https://example.com/id/concept/karaktertype/{$.properties.TYPE}" ;
+    rml:class skos:Concept;
+  ];
+.
+
+<#FietsstallingAardSiteTypeTriplesMap> a rml:TriplesMap;
+  rml:logicalSource <#FietsstallingenBruggeLogicalSource> ;
+  rml:subjectMap [
+    rml:template "https://example.com/id/concept/sitetype/{$.properties.AARD_SITE}" ;
+    rml:class skos:Concept;
+  ];
+.
+
+<#FietsstallingStatusTypeTriplesMap> a rml:TriplesMap;
+  rml:logicalSource <#FietsstallingenBruggeLogicalSource> ;
+  rml:subjectMap [
+    rml:template "https://example.com/id/concept/statustype/{$.properties.STATUS}" ;
+    rml:class skos:Concept;
+  ];
+.
+
+<#FietsstallingDeelgemeenteTriplesMap> a rml:TriplesMap;
+  rml:logicalSource <#FietsstallingenBruggeLogicalSource> ;
+  rml:subjectMap [
+    rml:template "https://example.com/id/concept/deelgemeentetype/{$.properties.DEELGEMEENTE}" ;
+    rml:class skos:Concept;
+  ];
+.
+
+<#FietsstallingSectorTriplesMap> a rml:TriplesMap;
+  rml:logicalSource <#FietsstallingenBruggeLogicalSource> ;
+  rml:subjectMap [
+    rml:template "https://example.com/id/concept/sectortype/{$.properties.SECTOR}" ;
+    rml:class skos:Concept;
+  ];
+.

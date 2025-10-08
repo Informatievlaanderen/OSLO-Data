@@ -1,0 +1,53 @@
+{
+	"type" : "FeatureCollection",
+	"name" : "FIETSSTALLINGSZONE",
+	"features" : [
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPolygon",
+				"coordinates" : [
+					[
+						[
+							[ 3.2287947848, 51.2095114252 ],
+							[ 3.2288075632, 51.2094979567 ],
+							[ 3.2289398452, 51.2095431718 ],
+							[ 3.2289264468, 51.2095577514 ],
+							[ 3.2287947848, 51.2095114252 ]
+						]
+					]
+				]
+			},
+			"properties" : {
+				"ID" : 2,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250311093039",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250318145922",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Centrum",
+				"DEELGEMEENTE" : "Centrum",
+				"NIVEAU" : null,
+				"PROJECT_ID" : 24,
+				"STRAATNAAM" : "Hoogstraat",
+				"OPPERVLAKTE" : 19.0468230756781,
+				"OMTREK" : 24.6874751883577,
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 10,
+				"AANTAL_VERDWENEN_PARKEERPLAATSEN" : 2,
+				"OVERDEKT" : false,
+				"MATERIAAL" : "kassei",
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : null,
+				"STATUSDATUM" : null,
+				"MATERIAAL_FIETSVOORZIENING" : "Staal",
+				"AFSLUITBAAR" : false,
+				"FIETSDELEN" : false,
+				"VERPLAATSBAAR" : false
+			}
+		}
+	]
+}

@@ -1,0 +1,229 @@
+@prefix rml: <http://w3id.org/rml/> .
+@prefix ex: <http://example.com/ns#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix openbaardomein: <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#> .
+@prefix csvw: <http://www.w3.org/ns/csvw#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix fixme: <http://fixme.com#> .
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix fnml: <http://semweb.mmlab.be/ns/fnml#> .
+@prefix fno: <https://w3id.org/function/ontology#> .
+@prefix grel: <http://users.ugent.be/~bjdmeest/function/grel.ttl#> .
+@prefix idlab: <https://w3id.org/imec/idlab/function#> .
+@prefix mobivoc: <http://schema.mobivoc.org/#> .
+@base <http://data.vlaanderen.be/mapping/> .
+
+<#FietsstallingenAntwerpenLogicalSource>
+  rml:source [ a csvw:Table;
+    csvw:url "fietsenstallingen-antwerpen.csv";
+    csvw:dialect [ a csvw:Dialect;
+      csvw:delimiter ","
+    ];
+  ];
+  rml:referenceFormulation rml:CSV;
+.
+
+<#FietsstallingTriplesMap> a rml:TriplesMap;
+  rml:logicalSource <#FietsstallingenAntwerpenLogicalSource> ;
+  rml:subjectMap [
+    rml:template "http://example.com/fietsstalling/id/{OBJECTID}" ;
+    rml:class openbaardomein:Fietsstalling;
+    rml:class openbaardomein:Infrastructuurelement;
+    rml:class openbaardomein:FysiekObject;
+    rml:class mobivoc:BicycleParkingStation;
+  ] ;
+
+  rml:predicateObjectMap [
+    rml:predicate locn:address ;
+    rml:objectMap [
+      rml:template "https://example.com/fietstalling/id/{OBJECTID}#adres" ;
+      rml:termType rml:IRI;
+    ];
+  ];
+
+  rml:predicateObjectMap [
+    rml:predicate dcterms:type ;
+    rml:objectMap [
+      rml:template "https://example.com/id/concept/karaktertype/{Type_fietsstalling}" ;
+      rml:termType rml:IRI;
+    ];
+  ];
+
+  rml:predicateObjectMap [
+    rml:predicate dcterms:type ;
+    rml:objectMap [
+      rml:template "https://example.com/id/concept/bestemmingstype/{Ligging}" ;
+      rml:termType rml:IRI;
+    ];
+  ];
+
+  rml:predicateObjectMap [
+    rml:predicate openbaardomein:capaciteit ;
+    rml:objectMap [
+      rml:reference "Aantal_plaatsen" ;
+      rml:datatype xsd:integer;
+    ];
+  ];
+
+  rml:predicateObjectMap [
+    rml:predicate adms:indentifier ;
+    rml:objectMap [
+      rml:template "https://example.com/fietsstalling/id/{OBJECTID}#identificator" ;
+      rml:termType rml:IRI;
+    ];
+  ];
+
+  rml:predicateObjectMap [
+    rml:predicate locn:geometry ;
+    rml:objectMap [
+      rml:template "https://example.com/fietsstalling/id/{OBJECTID}#geometrie" ;
+      rml:termType rml:IRI;
+    ];
+  ];
+
+  rml:predicateObjectMap [
+    rml:predicate fixme:eigenaar ;
+    rml:objectMap [
+      rml:template "https://example.com/fietsstalling/id/{OBJECTID}#eigenaar" ;
+      rml:termType rml:IRI;
+    ];
+  ];
+.
+
+<#FietsstallingAdresTriplesMap> a rml:TriplesMap;
+  rml:logicalSource <#FietsstallingenAntwerpenLogicalSource> ;
+  rml:subjectMap [
+    rml:template "https://example.com/fietstalling/id/{OBJECTID}#adres" ;
+    rml:class locn:Address;
+  ];
+
+  rml:predicateObjectMap [
+    rml:predicate locn:fullAddress ;
+    rml:objectMap [
+      fnml:functionValue [
+        rml:predicateObjectMap [
+          rml:predicate fno:executes;
+          rml:objectMap [ rml:constant grel:array_join ];
+        ];
+        rml:predicateObjectMap [
+          rml:predicate grel:p_array_a;
+          rml:objectMap [ rml:reference "Straatnaam" ];
+        ];
+        rml:predicateObjectMap [
+          rml:predicate grel:p_array_a;
+          rml:objectMap [ rml:reference "Huisnummer" ];
+        ];
+        rml:predicateObjectMap [
+          rml:predicate grel:p_array_a;
+          rml:objectMap [ rml:reference "Postcode" ];
+        ];
+        rml:predicateObjectMap [
+          rml:predicate grel:p_array_a;
+          rml:objectMap [ rml:reference "District" ];
+        ];
+        rml:predicateObjectMap [
+          rml:predicate grel:p_string_sep;
+          rml:objectMap [ rml:constant " " ];
+        ];
+      ];
+      rml:language "nl";
+    ];
+  ];
+.
+
+<#FietsstallingEigenaarTriplesMap> a rml:TriplesMap;
+  rml:logicalSource <#FietsstallingenAntwerpenLogicalSource> ;
+  rml:subjectMap [
+    rml:template "https://example.com/fietsstalling/id/{OBJECTID}#eigenaar" ;
+    rml:class org:Organization;
+  ];
+
+  rml:predicateObjectMap [
+    rml:predicate skos:prefLabel ;
+    rml:objectMap [
+      rml:constant "Stad Antwerpen" ;
+      rml:language "nl";
+    ];
+  ];
+.
+
+<#FietsstallingIdentificatorTriplesMap> a rml:TriplesMap;
+  rml:logicalSource <#FietsstallingenAntwerpenLogicalSource> ;
+  rml:subjectMap [
+    rml:template "https://example.com/fietsstalling/id/{OBJECTID}#identificator" ;
+    rml:class adms:Identifier;
+  ];
+
+  rml:predicateObjectMap [
+    rml:predicate skos:notation ;
+    rml:objectMap [
+      rml:reference "Objectcode" ;
+      #rml:datatype "https://example.com/id/concept/identificatortype/infrastructuurelementnummer";
+    ];
+  ];
+.
+
+<#FietsstallingGeometrieTriplesMap> a rml:TriplesMap;
+  rml:logicalSource <#FietsstallingenAntwerpenLogicalSource> ;
+  rml:subjectMap [
+    rml:template "http://example.com/fietsstalling/id/{OBJECTID}#geometrie" ;
+    rml:class geosparql:Geometry;
+  ];
+
+  rml:predicateObjectMap [
+    rml:predicate geosparql:asGML ;
+    rml:objectMap [
+      fnml:functionValue [
+        rml:predicateObjectMap [
+          rml:predicate fno:executes;
+          rml:objectMap [ rml:constant grel:array_join ];
+        ];
+        rml:predicateObjectMap [
+          rml:predicate grel:p_array_a;
+          rml:objectMap [ rml:constant "<gml:point srsName=\"http:\\//www.opengis.net/def/crs/EPSG/0/4326\"><gml:coordinates>" ];
+        ];
+        rml:predicateObjectMap [
+          rml:predicate grel:p_array_a;
+          rml:objectMap [ rml:reference "X" ];
+        ];
+        rml:predicateObjectMap [
+          rml:predicate grel:p_array_a;
+          rml:objectMap [ rml:constant "," ];
+        ];
+        rml:predicateObjectMap [
+          rml:predicate grel:p_array_a;
+          rml:objectMap [ rml:reference "Y" ];
+        ];
+        rml:predicateObjectMap [
+          rml:predicate grel:p_array_a;
+          rml:objectMap [ rml:constant "</gml:coordinates></gml:point>" ];
+        ];
+        rml:predicateObjectMap [
+          rml:predicate grel:p_string_sep;
+          rml:objectMap [ rml:constant "" ];
+        ];
+      ];
+      rml:datatype geosparql:gmlLiteral;
+    ];
+  ];
+.
+
+<#FietsstallingKarakterTypeTriplesMap> a rml:TriplesMap;
+  rml:logicalSource <#FietsstallingenAntwerpenLogicalSource> ;
+  rml:subjectMap [
+    rml:template "https://example.com/id/concept/karaktertype/{Type_fietsstalling}" ;
+    rml:class skos:Concept;
+  ];
+.
+
+<#FietsstallingBestemmingsTypeTriplesMap> a rml:TriplesMap;
+  rml:logicalSource <#FietsstallingenAntwerpenLogicalSource> ;
+  rml:subjectMap [
+    rml:template "https://example.com/id/concept/bestemmingstype/{Ligging}" ;
+    rml:class skos:Concept;
+  ];
+.

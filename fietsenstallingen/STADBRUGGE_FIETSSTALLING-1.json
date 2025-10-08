@@ -1,0 +1,35 @@
+{
+	"type" : "FeatureCollection",
+	"name" : "FIETSSTALLING",
+	"features" : [
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPoint",
+				"coordinates" : [
+					[ 3.2288077364, 51.2095066422 ]
+				]
+			},
+			"properties" : {
+				"ID" : 1,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250311092127",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250312124230",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Centrum",
+				"DEELGEMEENTE" : "Centrum",
+				"STRAATNAAM" : "Hoogstraat",
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 2,
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : null,
+				"STATUSDATUM" : null,
+				"TYPE" : "fietsbeugel"
+			}
+		}
+	]
+}

@@ -1,0 +1,1279 @@
+{
+	"type" : "FeatureCollection",
+	"name" : "FIETSSTALLINGSZONE",
+	"features" : [
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPolygon",
+				"coordinates" : [
+					[
+						[
+							[ 3.2287947848, 51.2095114252 ],
+							[ 3.2288075632, 51.2094979567 ],
+							[ 3.2289398452, 51.2095431718 ],
+							[ 3.2289264468, 51.2095577514 ],
+							[ 3.2287947848, 51.2095114252 ]
+						]
+					]
+				]
+			},
+			"properties" : {
+				"ID" : 2,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250311093039",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250318145922",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Centrum",
+				"DEELGEMEENTE" : "Centrum",
+				"NIVEAU" : null,
+				"PROJECT_ID" : 24,
+				"STRAATNAAM" : "Hoogstraat",
+				"OPPERVLAKTE" : 19.0468230756781,
+				"OMTREK" : 24.6874751883577,
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 10,
+				"AANTAL_VERDWENEN_PARKEERPLAATSEN" : 2,
+				"OVERDEKT" : false,
+				"MATERIAAL" : "kassei",
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : null,
+				"STATUSDATUM" : null,
+				"MATERIAAL_FIETSVOORZIENING" : "Staal",
+				"AFSLUITBAAR" : false,
+				"FIETSDELEN" : false,
+				"VERPLAATSBAAR" : false
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPolygon",
+				"coordinates" : [
+					[
+						[
+							[ 3.2488948525, 51.2099441327 ],
+							[ 3.2488719647, 51.2099474069 ],
+							[ 3.2488688169, 51.2099377699 ],
+							[ 3.2488917073, 51.209934384 ],
+							[ 3.2488948525, 51.2099441327 ]
+						]
+					]
+				]
+			},
+			"properties" : {
+				"ID" : 3,
+				"USERID_CREATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_CREATED" : "20250317122723",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250318150056",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Oost",
+				"DEELGEMEENTE" : "Sint-Kruis",
+				"NIVEAU" : 0,
+				"PROJECT_ID" : 24,
+				"STRAATNAAM" : "Vredestraat",
+				"OPPERVLAKTE" : 1.80635081177589,
+				"OMTREK" : 5.48489566764303,
+				"AARD_SITE" : "parking",
+				"AANTAL_FIETSEN" : 2,
+				"AANTAL_VERDWENEN_PARKEERPLAATSEN" : null,
+				"OVERDEKT" : false,
+				"MATERIAAL" : "betonstraatstenen",
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"MATERIAAL_FIETSVOORZIENING" : "Staal",
+				"AFSLUITBAAR" : false,
+				"FIETSDELEN" : false,
+				"VERPLAATSBAAR" : false
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPolygon",
+				"coordinates" : [
+					[
+						[
+							[ 3.2488747342, 51.2099334413 ],
+							[ 3.248832278, 51.2098044589 ],
+							[ 3.2488492235, 51.2098023851 ],
+							[ 3.2488895393, 51.2099316265 ],
+							[ 3.2488747342, 51.2099334413 ]
+						]
+					]
+				]
+			},
+			"properties" : {
+				"ID" : 4,
+				"USERID_CREATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_CREATED" : "20250318121657",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250318150056",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Oost",
+				"DEELGEMEENTE" : "Sint-Kruis",
+				"NIVEAU" : 0,
+				"PROJECT_ID" : 24,
+				"STRAATNAAM" : "Vredestraat",
+				"OPPERVLAKTE" : 16.5611159078256,
+				"OMTREK" : 31.5659377739542,
+				"AARD_SITE" : "parking",
+				"AANTAL_FIETSEN" : 8,
+				"AANTAL_VERDWENEN_PARKEERPLAATSEN" : 3,
+				"OVERDEKT" : true,
+				"MATERIAAL" : "betonstraatstenen",
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"MATERIAAL_FIETSVOORZIENING" : "Staal",
+				"AFSLUITBAAR" : true,
+				"FIETSDELEN" : false,
+				"VERPLAATSBAAR" : false
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPolygon",
+				"coordinates" : [
+					[
+						[
+							[ 3.2484977222, 51.2090763503 ],
+							[ 3.248484083, 51.2090314665 ],
+							[ 3.2485067208, 51.2090283994 ],
+							[ 3.2485207326, 51.2090735101 ],
+							[ 3.2484977222, 51.2090763503 ]
+						]
+					]
+				]
+			},
+			"properties" : {
+				"ID" : 5,
+				"USERID_CREATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_CREATED" : "20250318122434",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250318150056",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Oost",
+				"DEELGEMEENTE" : "Sint-Kruis",
+				"NIVEAU" : 0,
+				"PROJECT_ID" : 24,
+				"STRAATNAAM" : "Vredestraat",
+				"OPPERVLAKTE" : 8.3023354827005,
+				"OMTREK" : 13.4542036892567,
+				"AARD_SITE" : "parking",
+				"AANTAL_FIETSEN" : 4,
+				"AANTAL_VERDWENEN_PARKEERPLAATSEN" : 1,
+				"OVERDEKT" : false,
+				"MATERIAAL" : "betonstraatstenen",
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"MATERIAAL_FIETSVOORZIENING" : "Staal",
+				"AFSLUITBAAR" : false,
+				"FIETSDELEN" : false,
+				"VERPLAATSBAAR" : false
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPolygon",
+				"coordinates" : [
+					[
+						[
+							[ 3.2483915481, 51.2086616404 ],
+							[ 3.2484019762, 51.2086945476 ],
+							[ 3.2483796671, 51.2086973525 ],
+							[ 3.2483690757, 51.2086648836 ],
+							[ 3.2483915481, 51.2086616404 ]
+						]
+					]
+				]
+			},
+			"properties" : {
+				"ID" : 6,
+				"USERID_CREATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_CREATED" : "20250318131036",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250318150056",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Oost",
+				"DEELGEMEENTE" : "Sint-Kruis",
+				"NIVEAU" : 0,
+				"PROJECT_ID" : 24,
+				"STRAATNAAM" : "Vredestraat",
+				"OPPERVLAKTE" : 5.93755860958639,
+				"OMTREK" : 10.6215535287192,
+				"AARD_SITE" : "parking",
+				"AANTAL_FIETSEN" : 4,
+				"AANTAL_VERDWENEN_PARKEERPLAATSEN" : 1,
+				"OVERDEKT" : false,
+				"MATERIAAL" : "betonstraatstenen",
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"MATERIAAL_FIETSVOORZIENING" : "Staal",
+				"AFSLUITBAAR" : false,
+				"FIETSDELEN" : false,
+				"VERPLAATSBAAR" : false
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPolygon",
+				"coordinates" : [
+					[
+						[
+							[ 3.2487663049, 51.2095345527 ],
+							[ 3.2487441048, 51.2095369677 ],
+							[ 3.2487319234, 51.2094984794 ],
+							[ 3.248755067, 51.2094956544 ],
+							[ 3.2487663049, 51.2095345527 ]
+						]
+					]
+				]
+			},
+			"properties" : {
+				"ID" : 7,
+				"USERID_CREATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_CREATED" : "20250318132259",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250318150056",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Oost",
+				"DEELGEMEENTE" : "Sint-Kruis",
+				"NIVEAU" : 0,
+				"PROJECT_ID" : 24,
+				"STRAATNAAM" : "Vredestraat",
+				"OPPERVLAKTE" : 7.05885202974222,
+				"OMTREK" : 11.9861310584418,
+				"AARD_SITE" : "parking",
+				"AANTAL_FIETSEN" : 4,
+				"AANTAL_VERDWENEN_PARKEERPLAATSEN" : 1,
+				"OVERDEKT" : false,
+				"MATERIAAL" : "betonstraatstenen",
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"MATERIAAL_FIETSVOORZIENING" : "Staal",
+				"AFSLUITBAAR" : false,
+				"FIETSDELEN" : false,
+				"VERPLAATSBAAR" : false
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPolygon",
+				"coordinates" : [
+					[
+						[
+							[ 3.2485815338, 51.2093413846 ],
+							[ 3.2485685451, 51.2093008777 ],
+							[ 3.2485913674, 51.2092984686 ],
+							[ 3.2486045325, 51.209339033 ],
+							[ 3.2485815338, 51.2093413846 ]
+						]
+					]
+				]
+			},
+			"properties" : {
+				"ID" : 8,
+				"USERID_CREATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_CREATED" : "20250318133535",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250318150056",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Oost",
+				"DEELGEMEENTE" : "Sint-Kruis",
+				"NIVEAU" : 0,
+				"PROJECT_ID" : 24,
+				"STRAATNAAM" : "Vredestraat",
+				"OPPERVLAKTE" : 7.46232003661617,
+				"OMTREK" : 12.4484391511985,
+				"AARD_SITE" : "parking",
+				"AANTAL_FIETSEN" : 4,
+				"AANTAL_VERDWENEN_PARKEERPLAATSEN" : 1,
+				"OVERDEKT" : false,
+				"MATERIAAL" : "betonstraatstenen",
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"MATERIAAL_FIETSVOORZIENING" : "Staal",
+				"AFSLUITBAAR" : false,
+				"FIETSDELEN" : false,
+				"VERPLAATSBAAR" : false
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPolygon",
+				"coordinates" : [
+					[
+						[
+							[ 3.2484795664, 51.2086146824 ],
+							[ 3.2484843443, 51.2086300322 ],
+							[ 3.2484611627, 51.2086326054 ],
+							[ 3.2484477147, 51.2085890221 ],
+							[ 3.248470542, 51.2085863897 ],
+							[ 3.2484743267, 51.2085977364 ],
+							[ 3.2484795664, 51.2086146824 ]
+						]
+					]
+				]
+			},
+			"properties" : {
+				"ID" : 9,
+				"USERID_CREATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_CREATED" : "20250318140837",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250318150056",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Oost",
+				"DEELGEMEENTE" : "Sint-Kruis",
+				"NIVEAU" : 0,
+				"PROJECT_ID" : 24,
+				"STRAATNAAM" : "Vredestraat",
+				"OPPERVLAKTE" : 8.10733940721236,
+				"OMTREK" : 13.156469013369,
+				"AARD_SITE" : "parking",
+				"AANTAL_FIETSEN" : 4,
+				"AANTAL_VERDWENEN_PARKEERPLAATSEN" : 1,
+				"OVERDEKT" : false,
+				"MATERIAAL" : "betonstraatstenen",
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"MATERIAAL_FIETSVOORZIENING" : "Staal",
+				"AFSLUITBAAR" : false,
+				"FIETSDELEN" : false,
+				"VERPLAATSBAAR" : false
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPolygon",
+				"coordinates" : [
+					[
+						[
+							[ 3.2483060243, 51.2084652102 ],
+							[ 3.2482920607, 51.208431245 ],
+							[ 3.2483105622, 51.2084266754 ],
+							[ 3.2483159906, 51.2084331221 ],
+							[ 3.2483204142, 51.2084403844 ],
+							[ 3.2483241415, 51.2084492906 ],
+							[ 3.2483060243, 51.2084652102 ]
+						]
+					]
+				]
+			},
+			"properties" : {
+				"ID" : 10,
+				"USERID_CREATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_CREATED" : "20250318142615",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250318150056",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Oost",
+				"DEELGEMEENTE" : "Sint-Kruis",
+				"NIVEAU" : 0,
+				"PROJECT_ID" : 24,
+				"STRAATNAAM" : "Vredestraat",
+				"OPPERVLAKTE" : 5.30893748154195,
+				"OMTREK" : 10.1701450793225,
+				"AARD_SITE" : "voetpad",
+				"AANTAL_FIETSEN" : 2,
+				"AANTAL_VERDWENEN_PARKEERPLAATSEN" : null,
+				"OVERDEKT" : false,
+				"MATERIAAL" : "betontegels",
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"MATERIAAL_FIETSVOORZIENING" : "Staal",
+				"AFSLUITBAAR" : false,
+				"FIETSDELEN" : false,
+				"VERPLAATSBAAR" : false
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPolygon",
+				"coordinates" : [
+					[
+						[
+							[ 3.2498624647, 51.2037270801 ],
+							[ 3.2499023369, 51.2037439908 ],
+							[ 3.2498907797, 51.2037550526 ],
+							[ 3.2498493817, 51.203738742 ],
+							[ 3.2498624647, 51.2037270801 ]
+						]
+					]
+				]
+			},
+			"properties" : {
+				"ID" : 11,
+				"USERID_CREATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_CREATED" : "20250318143828",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250318150056",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Oost",
+				"DEELGEMEENTE" : "Assebroek",
+				"NIVEAU" : 0,
+				"PROJECT_ID" : 24,
+				"STRAATNAAM" : "Collegestraat",
+				"OPPERVLAKTE" : 5.18117252897642,
+				"OMTREK" : 9.8369748506891,
+				"AARD_SITE" : "voetpad",
+				"AANTAL_FIETSEN" : 4,
+				"AANTAL_VERDWENEN_PARKEERPLAATSEN" : null,
+				"OVERDEKT" : false,
+				"MATERIAAL" : "betonstraatstenen",
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"MATERIAAL_FIETSVOORZIENING" : "Staal",
+				"AFSLUITBAAR" : false,
+				"FIETSDELEN" : false,
+				"VERPLAATSBAAR" : false
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPolygon",
+				"coordinates" : [
+					[
+						[
+							[ 3.2463848832, 51.2008403808 ],
+							[ 3.2463637497, 51.2008023097 ],
+							[ 3.2463977997, 51.2007949806 ],
+							[ 3.2464200133, 51.2008325033 ],
+							[ 3.2463848832, 51.2008403808 ]
+						]
+					]
+				]
+			},
+			"properties" : {
+				"ID" : 12,
+				"USERID_CREATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_CREATED" : "20250318151407",
+				"USERID_UPDATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_UPDATED" : "20250318164531",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Oost",
+				"DEELGEMEENTE" : "Assebroek",
+				"NIVEAU" : null,
+				"PROJECT_ID" : 24,
+				"STRAATNAAM" : "Gaston Roelandtsplein",
+				"OPPERVLAKTE" : 11.4478758466518,
+				"OMTREK" : 14.0625386407931,
+				"AARD_SITE" : "plein",
+				"AANTAL_FIETSEN" : 10,
+				"AANTAL_VERDWENEN_PARKEERPLAATSEN" : null,
+				"OVERDEKT" : false,
+				"MATERIAAL" : "betonstraatstenen",
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : "20230501000000",
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"MATERIAAL_FIETSVOORZIENING" : "Staal",
+				"AFSLUITBAAR" : false,
+				"FIETSDELEN" : false,
+				"VERPLAATSBAAR" : false
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPolygon",
+				"coordinates" : [
+					[
+						[
+							[ 3.2463848832, 51.2008403808 ],
+							[ 3.2463637497, 51.2008023097 ],
+							[ 3.2463977997, 51.2007949806 ],
+							[ 3.2464200133, 51.2008325033 ],
+							[ 3.2463848832, 51.2008403808 ]
+						]
+					]
+				]
+			},
+			"properties" : {
+				"ID" : 13,
+				"USERID_CREATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_CREATED" : "20250318151722",
+				"USERID_UPDATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_UPDATED" : "20250318152302",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Oost",
+				"DEELGEMEENTE" : "Assebroek",
+				"NIVEAU" : null,
+				"PROJECT_ID" : 24,
+				"STRAATNAAM" : "Gaston Roelandtsplein",
+				"OPPERVLAKTE" : 11.4478758466518,
+				"OMTREK" : 14.0625386407931,
+				"AARD_SITE" : "plein",
+				"AANTAL_FIETSEN" : 10,
+				"AANTAL_VERDWENEN_PARKEERPLAATSEN" : null,
+				"OVERDEKT" : false,
+				"MATERIAAL" : "betonstraatstenen",
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : "20230501000000",
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"MATERIAAL_FIETSVOORZIENING" : "Staal",
+				"AFSLUITBAAR" : false,
+				"FIETSDELEN" : false,
+				"VERPLAATSBAAR" : false
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPolygon",
+				"coordinates" : [
+					[
+						[
+							[ 3.2463347383, 51.2009513378 ],
+							[ 3.2463094332, 51.2009055749 ],
+							[ 3.2463360694, 51.2008996835 ],
+							[ 3.2463588292, 51.2009477683 ],
+							[ 3.2463347383, 51.2009513378 ]
+						]
+					]
+				]
+			},
+			"properties" : {
+				"ID" : 14,
+				"USERID_CREATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_CREATED" : "20250318152239",
+				"USERID_UPDATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_UPDATED" : "20250318152239",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Oost",
+				"DEELGEMEENTE" : "Assebroek",
+				"NIVEAU" : 0,
+				"PROJECT_ID" : 24,
+				"STRAATNAAM" : "Gaston Roelandtsplein",
+				"OPPERVLAKTE" : 10.1387680440584,
+				"OMTREK" : 14.6746711910247,
+				"AARD_SITE" : "plein",
+				"AANTAL_FIETSEN" : 10,
+				"AANTAL_VERDWENEN_PARKEERPLAATSEN" : null,
+				"OVERDEKT" : false,
+				"MATERIAAL" : "betonstraatstenen",
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : "20230501000000",
+				"EINDDATUM" : null,
+				"STATUS" : null,
+				"STATUSDATUM" : null,
+				"MATERIAAL_FIETSVOORZIENING" : "Staal",
+				"AFSLUITBAAR" : false,
+				"FIETSDELEN" : false,
+				"VERPLAATSBAAR" : false
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPolygon",
+				"coordinates" : [
+					[
+						[
+							[ 3.2466191647, 51.2010840145 ],
+							[ 3.2466277946, 51.2010985631 ],
+							[ 3.2465491962, 51.2011135128 ],
+							[ 3.2465418, 51.2010994227 ],
+							[ 3.2466191647, 51.2010840145 ]
+						]
+					]
+				]
+			},
+			"properties" : {
+				"ID" : 15,
+				"USERID_CREATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_CREATED" : "20250318153355",
+				"USERID_UPDATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_UPDATED" : "20250318153355",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Oost",
+				"DEELGEMEENTE" : "Assebroek",
+				"NIVEAU" : 0,
+				"PROJECT_ID" : 24,
+				"STRAATNAAM" : "Gaston Roelandtsplein",
+				"OPPERVLAKTE" : 9.62891825805781,
+				"OMTREK" : 14.79043393451,
+				"AARD_SITE" : "plein",
+				"AANTAL_FIETSEN" : 12,
+				"AANTAL_VERDWENEN_PARKEERPLAATSEN" : null,
+				"OVERDEKT" : false,
+				"MATERIAAL" : "betonstraatstenen",
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : "20230501000000",
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"MATERIAAL_FIETSVOORZIENING" : "Staal",
+				"AFSLUITBAAR" : false,
+				"FIETSDELEN" : false,
+				"VERPLAATSBAAR" : false
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPolygon",
+				"coordinates" : [
+					[
+						[
+							[ 3.2364954593, 51.1983580211 ],
+							[ 3.2364938269, 51.1983776669 ],
+							[ 3.2364732391, 51.1983834464 ],
+							[ 3.2364450942, 51.198374575 ],
+							[ 3.2364954593, 51.1983580211 ]
+						]
+					]
+				]
+			},
+			"properties" : {
+				"ID" : 16,
+				"USERID_CREATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_CREATED" : "20250318154440",
+				"USERID_UPDATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_UPDATED" : "20250318154440",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Oost",
+				"DEELGEMEENTE" : "Centrum",
+				"NIVEAU" : 0,
+				"PROJECT_ID" : 24,
+				"STRAATNAAM" : "Weidestraat",
+				"OPPERVLAKTE" : 5.08484647760556,
+				"OMTREK" : 9.93890649975583,
+				"AARD_SITE" : "voetpad",
+				"AANTAL_FIETSEN" : 4,
+				"AANTAL_VERDWENEN_PARKEERPLAATSEN" : null,
+				"OVERDEKT" : false,
+				"MATERIAAL" : "betontegels",
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"MATERIAAL_FIETSVOORZIENING" : "Staal",
+				"AFSLUITBAAR" : false,
+				"FIETSDELEN" : false,
+				"VERPLAATSBAAR" : false
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPolygon",
+				"coordinates" : [
+					[
+						[
+							[ 3.2386192305, 51.2000857679 ],
+							[ 3.2386576681, 51.2000623428 ],
+							[ 3.2386802386, 51.2000765307 ],
+							[ 3.2386424678, 51.2000999063 ],
+							[ 3.2386192305, 51.2000857679 ]
+						]
+					]
+				]
+			},
+			"properties" : {
+				"ID" : 17,
+				"USERID_CREATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_CREATED" : "20250319082429",
+				"USERID_UPDATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_UPDATED" : "20250319082454",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Oost",
+				"DEELGEMEENTE" : "Assebroek",
+				"NIVEAU" : 0,
+				"PROJECT_ID" : 24,
+				"STRAATNAAM" : "Daverlostraat",
+				"OPPERVLAKTE" : 8.36438525217615,
+				"OMTREK" : 11.941488440093,
+				"AARD_SITE" : "voetpad",
+				"AANTAL_FIETSEN" : 2,
+				"AANTAL_VERDWENEN_PARKEERPLAATSEN" : null,
+				"OVERDEKT" : false,
+				"MATERIAAL" : "betontegels",
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"MATERIAAL_FIETSVOORZIENING" : "Staal",
+				"AFSLUITBAAR" : false,
+				"FIETSDELEN" : false,
+				"VERPLAATSBAAR" : false
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPolygon",
+				"coordinates" : [
+					[
+						[
+							[ 3.2385309241, 51.2000047007 ],
+							[ 3.2385535777, 51.1999915977 ],
+							[ 3.2385877829, 51.2000173744 ],
+							[ 3.2385644012, 51.2000292811 ],
+							[ 3.2385309241, 51.2000047007 ]
+						]
+					]
+				]
+			},
+			"properties" : {
+				"ID" : 18,
+				"USERID_CREATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_CREATED" : "20250319082511",
+				"USERID_UPDATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_UPDATED" : "20250319082612",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Oost",
+				"DEELGEMEENTE" : "Assebroek",
+				"NIVEAU" : 0,
+				"PROJECT_ID" : 24,
+				"STRAATNAAM" : "Daverlostraat",
+				"OPPERVLAKTE" : 7.79746463163778,
+				"OMTREK" : 11.5887411150117,
+				"AARD_SITE" : "voetpad",
+				"AANTAL_FIETSEN" : 2,
+				"AANTAL_VERDWENEN_PARKEERPLAATSEN" : null,
+				"OVERDEKT" : false,
+				"MATERIAAL" : "betontegels",
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"MATERIAAL_FIETSVOORZIENING" : "Staal",
+				"AFSLUITBAAR" : false,
+				"FIETSDELEN" : false,
+				"VERPLAATSBAAR" : false
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPolygon",
+				"coordinates" : [
+					[
+						[
+							[ 3.2382869252, 51.2233713477 ],
+							[ 3.2381793742, 51.2233166985 ],
+							[ 3.2381951647, 51.2233037791 ],
+							[ 3.2383032493, 51.2233584335 ],
+							[ 3.2382869252, 51.2233713477 ]
+						]
+					]
+				]
+			},
+			"properties" : {
+				"ID" : 19,
+				"USERID_CREATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_CREATED" : "20250319083948",
+				"USERID_UPDATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_UPDATED" : "20250319083948",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Oost",
+				"DEELGEMEENTE" : "Sint-Kruis",
+				"NIVEAU" : 0,
+				"PROJECT_ID" : 24,
+				"STRAATNAAM" : "Damse Vaart-Zuid",
+				"OPPERVLAKTE" : 17.6451196594291,
+				"OMTREK" : 23.0065677680065,
+				"AARD_SITE" : "parking",
+				"AANTAL_FIETSEN" : 12,
+				"AANTAL_VERDWENEN_PARKEERPLAATSEN" : 2,
+				"OVERDEKT" : false,
+				"MATERIAAL" : "betonstraatstenen",
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"MATERIAAL_FIETSVOORZIENING" : "Staal",
+				"AFSLUITBAAR" : false,
+				"FIETSDELEN" : false,
+				"VERPLAATSBAAR" : false
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPolygon",
+				"coordinates" : [
+					[
+						[
+							[ 3.2429452425, 51.2139439365 ],
+							[ 3.2429564133, 51.213890086 ],
+							[ 3.2429832971, 51.2138926878 ],
+							[ 3.2429721344, 51.2139462032 ],
+							[ 3.2429452425, 51.2139439365 ]
+						]
+					]
+				]
+			},
+			"properties" : {
+				"ID" : 20,
+				"USERID_CREATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_CREATED" : "20250319085542",
+				"USERID_UPDATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_UPDATED" : "20250319085542",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Oost",
+				"DEELGEMEENTE" : "Sint-Kruis",
+				"NIVEAU" : 0,
+				"PROJECT_ID" : 24,
+				"STRAATNAAM" : "Brugse-Mettenstraat",
+				"OPPERVLAKTE" : 11.4323919309186,
+				"OMTREK" : 15.8430552602869,
+				"AARD_SITE" : "parking",
+				"AANTAL_FIETSEN" : 6,
+				"AANTAL_VERDWENEN_PARKEERPLAATSEN" : 1,
+				"OVERDEKT" : false,
+				"MATERIAAL" : "betonstraatstenen",
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : "20250430000000",
+				"EINDDATUM" : null,
+				"STATUS" : "gepland",
+				"STATUSDATUM" : "20250430000000",
+				"MATERIAAL_FIETSVOORZIENING" : "Staal",
+				"AFSLUITBAAR" : false,
+				"FIETSDELEN" : false,
+				"VERPLAATSBAAR" : false
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPolygon",
+				"coordinates" : [
+					[
+						[
+							[ 3.2412567134, 51.2139315396 ],
+							[ 3.2412722412, 51.2139182822 ],
+							[ 3.2413592966, 51.2139591607 ],
+							[ 3.2413432151, 51.2139732507 ],
+							[ 3.2412567134, 51.2139315396 ]
+						]
+					]
+				]
+			},
+			"properties" : {
+				"ID" : 21,
+				"USERID_CREATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_CREATED" : "20250319090323",
+				"USERID_UPDATED" : "c30b8ba2-e845-44e4-a7cc-d34b4a1e2b42",
+				"DATE_UPDATED" : "20250319090342",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Oost",
+				"DEELGEMEENTE" : "Sint-Kruis",
+				"NIVEAU" : 0,
+				"PROJECT_ID" : 24,
+				"STRAATNAAM" : "Marcus Laurinstraat",
+				"OPPERVLAKTE" : 14.2981342121761,
+				"OMTREK" : 18.9752580684846,
+				"AARD_SITE" : "parking",
+				"AANTAL_FIETSEN" : 6,
+				"AANTAL_VERDWENEN_PARKEERPLAATSEN" : 1,
+				"OVERDEKT" : false,
+				"MATERIAAL" : "betonstraatstenen",
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : "20250430000000",
+				"EINDDATUM" : null,
+				"STATUS" : "gepland",
+				"STATUSDATUM" : "20250430000000",
+				"MATERIAAL_FIETSVOORZIENING" : "Staal",
+				"AFSLUITBAAR" : false,
+				"FIETSDELEN" : false,
+				"VERPLAATSBAAR" : false
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPolygon",
+				"coordinates" : [
+					[
+						[
+							[ 3.172031928, 51.3272470109 ],
+							[ 3.172059901, 51.3271992587 ],
+							[ 3.1721868557, 51.3272314459 ],
+							[ 3.1721547523, 51.3272780394 ],
+							[ 3.172031928, 51.3272470109 ]
+						]
+					]
+				]
+			},
+			"properties" : {
+				"ID" : 23,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250625113248",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250625113248",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Noord 1",
+				"DEELGEMEENTE" : "Zeebrugge",
+				"NIVEAU" : null,
+				"PROJECT_ID" : 24,
+				"STRAATNAAM" : "Zeedijk",
+				"OPPERVLAKTE" : 53.0536501747582,
+				"OMTREK" : 30.0837287789162,
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 24,
+				"AANTAL_VERDWENEN_PARKEERPLAATSEN" : null,
+				"OVERDEKT" : false,
+				"MATERIAAL" : "betonstraatstenen",
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"MATERIAAL_FIETSVOORZIENING" : null,
+				"AFSLUITBAAR" : false,
+				"FIETSDELEN" : false,
+				"VERPLAATSBAAR" : false
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPolygon",
+				"coordinates" : [
+					[
+						[
+							[ 3.1729490117, 51.3274774458 ],
+							[ 3.1729830308, 51.3274256584 ],
+							[ 3.1731217748, 51.327461687 ],
+							[ 3.1730889728, 51.3275123697 ],
+							[ 3.1729490117, 51.3274774458 ]
+						]
+					]
+				]
+			},
+			"properties" : {
+				"ID" : 24,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250625113735",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250625113735",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Noord 1",
+				"DEELGEMEENTE" : "Zeebrugge",
+				"NIVEAU" : null,
+				"PROJECT_ID" : 24,
+				"STRAATNAAM" : "Zeedijk",
+				"OPPERVLAKTE" : 64.563843609181,
+				"OMTREK" : 33.2859973415107,
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 24,
+				"AANTAL_VERDWENEN_PARKEERPLAATSEN" : null,
+				"OVERDEKT" : false,
+				"MATERIAAL" : "betonstraatstenen",
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"MATERIAAL_FIETSVOORZIENING" : "Staal",
+				"AFSLUITBAAR" : false,
+				"FIETSDELEN" : false,
+				"VERPLAATSBAAR" : false
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPolygon",
+				"coordinates" : [
+					[
+						[
+							[ 3.1738867576, 51.3277136671 ],
+							[ 3.1739165306, 51.3276651878 ],
+							[ 3.1740754497, 51.3277025358 ],
+							[ 3.1740426868, 51.3277517297 ],
+							[ 3.1738867576, 51.3277136671 ]
+						]
+					]
+				]
+			},
+			"properties" : {
+				"ID" : 25,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250625114326",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250625114326",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Noord 1",
+				"DEELGEMEENTE" : "Zeebrugge",
+				"NIVEAU" : null,
+				"PROJECT_ID" : 24,
+				"STRAATNAAM" : "Zeedijk",
+				"OPPERVLAKTE" : 68.7669161320739,
+				"OMTREK" : 35.2059963478126,
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 24,
+				"AANTAL_VERDWENEN_PARKEERPLAATSEN" : null,
+				"OVERDEKT" : false,
+				"MATERIAAL" : "betonstraatstenen",
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"MATERIAAL_FIETSVOORZIENING" : "Staal",
+				"AFSLUITBAAR" : false,
+				"FIETSDELEN" : false,
+				"VERPLAATSBAAR" : false
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPolygon",
+				"coordinates" : [
+					[
+						[
+							[ 3.1781179425, 51.328733322 ],
+							[ 3.178160609, 51.3286685873 ],
+							[ 3.1782237886, 51.3286848608 ],
+							[ 3.178183518, 51.3287488748 ],
+							[ 3.1781179425, 51.328733322 ]
+						]
+					]
+				]
+			},
+			"properties" : {
+				"ID" : 26,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250625115751",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250625115751",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Noord 1",
+				"DEELGEMEENTE" : "Zeebrugge",
+				"NIVEAU" : null,
+				"PROJECT_ID" : 24,
+				"STRAATNAAM" : "Sint-Thomas Morusstraat",
+				"OPPERVLAKTE" : 37.2571581729187,
+				"OMTREK" : 25.0965183203078,
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 24,
+				"AANTAL_VERDWENEN_PARKEERPLAATSEN" : null,
+				"OVERDEKT" : false,
+				"MATERIAAL" : "betonstraatstenen",
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : "20240603000000",
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"MATERIAAL_FIETSVOORZIENING" : "Staal",
+				"AFSLUITBAAR" : false,
+				"FIETSDELEN" : false,
+				"VERPLAATSBAAR" : false
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPolygon",
+				"coordinates" : [
+					[
+						[
+							[ 3.1782803938, 51.3287025577 ],
+							[ 3.178329446, 51.3287134763 ],
+							[ 3.1783164726, 51.3287327087 ],
+							[ 3.1782686374, 51.3287206853 ],
+							[ 3.1782803938, 51.3287025577 ]
+						]
+					]
+				]
+			},
+			"properties" : {
+				"ID" : 27,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250625115858",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250625115858",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "Noord 1",
+				"DEELGEMEENTE" : "Zeebrugge",
+				"NIVEAU" : null,
+				"PROJECT_ID" : 24,
+				"STRAATNAAM" : "Sint-Thomas Morusstraat",
+				"OPPERVLAKTE" : 8.11788252672241,
+				"OMTREK" : 11.7211499155928,
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 8,
+				"AANTAL_VERDWENEN_PARKEERPLAATSEN" : null,
+				"OVERDEKT" : false,
+				"MATERIAAL" : "betonstraatstenen",
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : "20240603000000",
+				"EINDDATUM" : null,
+				"STATUS" : null,
+				"STATUSDATUM" : null,
+				"MATERIAAL_FIETSVOORZIENING" : "Staal",
+				"AFSLUITBAAR" : false,
+				"FIETSDELEN" : false,
+				"VERPLAATSBAAR" : false
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPolygon",
+				"coordinates" : [
+					[
+						[
+							[ 3.2082112808, 51.2010887578 ],
+							[ 3.2082206416, 51.2010698584 ],
+							[ 3.2087393819, 51.2011847997 ],
+							[ 3.2087221789, 51.2012092079 ],
+							[ 3.2082112808, 51.2010887578 ]
+						]
+					]
+				]
+			},
+			"properties" : {
+				"ID" : 28,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250724162046",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250724163412",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "West",
+				"DEELGEMEENTE" : "Sint-Andries",
+				"NIVEAU" : null,
+				"PROJECT_ID" : 24,
+				"STRAATNAAM" : "Magdalenastraat",
+				"OPPERVLAKTE" : 98.8413410950495,
+				"OMTREK" : 81.7587972813415,
+				"AARD_SITE" : "wegzone",
+				"AANTAL_FIETSEN" : 29,
+				"AANTAL_VERDWENEN_PARKEERPLAATSEN" : null,
+				"OVERDEKT" : false,
+				"MATERIAAL" : "bitumineuze verharding",
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"MATERIAAL_FIETSVOORZIENING" : "Staal",
+				"AFSLUITBAAR" : false,
+				"FIETSDELEN" : false,
+				"VERPLAATSBAAR" : false
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "MultiPolygon",
+				"coordinates" : [
+					[
+						[
+							[ 3.2088614725, 51.2015799503 ],
+							[ 3.2090290576, 51.2013239091 ],
+							[ 3.2090620016, 51.2013339139 ],
+							[ 3.2088980279, 51.2015877564 ],
+							[ 3.2088614725, 51.2015799503 ]
+						]
+					]
+				]
+			},
+			"properties" : {
+				"ID" : 29,
+				"USERID_CREATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_CREATED" : "20250724163748",
+				"USERID_UPDATED" : "89ed203a-3bfd-4786-a8e6-910bd3d474ee",
+				"DATE_UPDATED" : "20250724164134",
+				"BEHEERDER" : "stad Brugge",
+				"EIGENAAR" : "stad Brugge",
+				"SECTOR" : "West",
+				"DEELGEMEENTE" : "Sint-Andries",
+				"NIVEAU" : null,
+				"PROJECT_ID" : 24,
+				"STRAATNAAM" : "Edgard De Smedtplantsoen",
+				"OPPERVLAKTE" : 80.368878466226,
+				"OMTREK" : 66.5337645912687,
+				"AARD_SITE" : "parking",
+				"AANTAL_FIETSEN" : 40,
+				"AANTAL_VERDWENEN_PARKEERPLAATSEN" : 12,
+				"OVERDEKT" : true,
+				"MATERIAAL" : "betonstraatstenen",
+				"BEGINDATUM" : null,
+				"AANLEGDATUM" : null,
+				"EINDDATUM" : null,
+				"STATUS" : "in gebruik",
+				"STATUSDATUM" : null,
+				"MATERIAAL_FIETSVOORZIENING" : "Staal",
+				"AFSLUITBAAR" : true,
+				"FIETSDELEN" : false,
+				"VERPLAATSBAAR" : false
+			}
+		}
+	]
+}

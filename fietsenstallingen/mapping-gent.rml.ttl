@@ -1,0 +1,220 @@
+@prefix rml: <http://w3id.org/rml/> .
+@prefix ex: <http://example.com/ns#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix openbaardomein: <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#> .
+@prefix csvw: <http://www.w3.org/ns/csvw#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix fixme: <http://fixme.com#> .
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix mobivoc: <http://schema.mobivoc.org/#> .
+@base <http://data.vlaanderen.be/mapping/> .
+
+<#FietsstallingenGentLogicalSource>
+  rml:source [ a csvw:Table;
+    csvw:url "fietsenstallingen-gent.csv";
+    csvw:dialect [ a csvw:Dialect;
+      csvw:delimiter ";"
+    ];
+  ];
+  rml:referenceFormulation rml:CSV;
+.
+
+<#FietsstallingTriplesMap> a rml:TriplesMap;
+  rml:logicalSource <#FietsstallingenGentLogicalSource> ;
+  rml:subjectMap [
+    rml:template "http://example.com/fietsstalling/id/{urid}" ;
+    rml:class openbaardomein:Fietsstalling;
+    rml:class openbaardomein:Infrastructuurelement;
+    rml:class openbaardomein:FysiekObject;
+    rml:class mobivoc:BicycleParkingStation;
+  ] ;
+
+  rml:predicateObjectMap [
+    rml:predicate locn:address ;
+    rml:objectMap [
+      rml:template "https://example.com/fietstalling/id/{urid}#adres" ;
+      rml:termType rml:IRI;
+    ];
+  ];
+
+  rml:predicateObjectMap [
+    rml:predicate dcterms:type ;
+    rml:objectMap [
+      rml:template "https://example.com/id/concept/karaktertype/{karakter}" ;
+      rml:termType rml:IRI;
+    ];
+  ];
+
+  rml:predicateObjectMap [
+    rml:predicate dcterms:type ;
+    rml:objectMap [
+      rml:template "https://example.com/id/concept/toegankelijkheidstype/{openbaar}" ;
+      rml:termType rml:IRI;
+    ];
+  ];
+
+  rml:predicateObjectMap [
+    rml:predicate dcterms:type ;
+    rml:objectMap [
+      rml:template "https://example.com/id/concept/bestemmingstype/{bestemming}" ;
+      rml:termType rml:IRI;
+    ];
+  ];
+
+  rml:predicateObjectMap [
+    rml:predicate dcterms:type ;
+    rml:objectMap [
+      rml:template "https://example.com/id/concept/statustype/{status}" ;
+      rml:termType rml:IRI;
+    ];
+  ];
+
+  rml:predicateObjectMap [
+    rml:predicate openbaardomein:capaciteit ;
+    rml:objectMap [
+      rml:reference "capaciteit" ;
+      rml:datatype xsd:integer;
+    ];
+  ];
+
+  rml:predicateObjectMap [
+    rml:predicate adms:indentifier ;
+    rml:objectMap [
+      rml:template "https://example.com/fietsstalling/id/{urid}#identificator" ;
+      rml:termType rml:IRI;
+    ];
+  ];
+
+  rml:predicateObjectMap [
+    rml:predicate locn:geometry ;
+    rml:objectMap [
+      rml:template "https://example.com/fietsstalling/id/{urid}#geometrie" ;
+      rml:termType rml:IRI;
+    ];
+  ];
+
+  rml:predicateObjectMap [
+    rml:predicate fixme:eigenaar ;
+    rml:objectMap [
+      rml:template "https://example.com/fietsstalling/id/{urid}#eigenaar" ;
+      rml:termType rml:IRI;
+    ];
+  ];
+
+  rml:predicateObjectMap [
+    rml:predicate openbaardomein:materiaal ;
+    rml:objectMap [
+      rml:template "https://example.com/id/concept/ondergrondtype#{ondergrond}" ;
+      rml:termtype rml:IRI;
+    ];
+  ];
+.
+
+<#FietsstallingAdresTriplesMap> a rml:TriplesMap;
+  rml:logicalSource <#FietsstallingenGentLogicalSource> ;
+  rml:subjectMap [
+    rml:template "https://example.com/fietstalling/id/{urid}#adres" ;
+    rml:class locn:Address;
+  ];
+
+  rml:predicateObjectMap [
+    rml:predicate locn:fullAddress ;
+    rml:objectMap [
+      rml:reference "betrokkenadressen" ;
+      rml:language "nl";
+    ];
+  ];
+.
+
+
+<#FietsstallingEigenaarTriplesMap> a rml:TriplesMap;
+  rml:logicalSource <#FietsstallingenGentLogicalSource> ;
+  rml:subjectMap [
+    rml:template "https://example.com/fietsstalling/id/{urid}#eigenaar" ;
+    rml:class org:Organization;
+  ];
+
+  rml:predicateObjectMap [
+    rml:predicate skos:prefLabel ;
+    rml:objectMap [
+      rml:reference "eigenaar" ;
+      rml:language "nl";
+    ];
+  ];
+.
+
+<#FietsstallingIdentificatorTriplesMap> a rml:TriplesMap;
+  rml:logicalSource <#FietsstallingenGentLogicalSource> ;
+  rml:subjectMap [
+    rml:template "https://example.com/fietsstalling/id/{urid}#identificator" ;
+    rml:class adms:Identifier;
+  ];
+
+  rml:predicateObjectMap [
+    rml:predicate skos:notation ;
+    rml:objectMap [
+      rml:reference "urid" ;
+      #rml:datatype "https://example.com/id/concept/identificatortype/infrastructuurelementnummer";
+    ];
+  ];
+.
+
+<#FietsstallingOndergrondTypeTriplesMap> a rml:TriplesMap;
+  rml:logicalSource <#FietsstallingenGentLogicalSource> ;
+  rml:subjectMap [
+    rml:template "https://example.com/id/concept/ondergrondtype#{ondergrond}" ;
+    rml:class skos:Concept;
+  ];
+.
+
+<#FietsstallingGeometrieTriplesMap> a rml:TriplesMap;
+  rml:logicalSource <#FietsstallingenGentLogicalSource> ;
+  rml:subjectMap [
+    rml:template "http://example.com/fietsstalling/id/{urid}#geometrie" ;
+    rml:class geosparql:Geometry;
+  ];
+
+  rml:predicateObjectMap [
+    rml:predicate geosparql:asGeoJSON ;
+    rml:objectMap [
+      rml:reference "geometry" ;
+      rml:datatype geosparql:geoJSONLiteral;
+    ];
+  ];
+.
+
+<#FietsstallingKarakterTypeTriplesMap> a rml:TriplesMap;
+  rml:logicalSource <#FietsstallingenGentLogicalSource> ;
+  rml:subjectMap [
+    rml:template "https://example.com/id/concept/karaktertype/{karakter}" ;
+    rml:class skos:Concept;
+  ];
+.
+
+<#FietsstallingToegankelijkheidstypeTriplesMap> a rml:TriplesMap;
+  rml:logicalSource <#FietsstallingenGentLogicalSource> ;
+  rml:subjectMap [
+    rml:template "https://example.com/id/concept/toegankelijkheidstype/{openbaar}" ;
+    rml:class skos:Concept;
+  ];
+.
+
+<#FietsstallingBestemmingsTypeTriplesMap> a rml:TriplesMap;
+  rml:logicalSource <#FietsstallingenGentLogicalSource> ;
+  rml:subjectMap [
+    rml:template "https://example.com/id/concept/bestemmingstype/{bestemming}" ;
+    rml:class skos:Concept;
+  ];
+.
+
+<#FietsstallingStatusTypeTriplesMap> a rml:TriplesMap;
+  rml:logicalSource <#FietsstallingenGentLogicalSource> ;
+  rml:subjectMap [
+    rml:template "https://example.com/id/concept/statustype/{status}" ;
+    rml:class skos:Concept;
+  ];
+.

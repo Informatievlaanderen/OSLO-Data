@@ -1,0 +1,47 @@
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix csvw: <http://www.w3.org/ns/csvw#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ex: <http://example.com/ns#> .
+@prefix fixme: <http://fixme.com#> .
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix mobivoc: <http://schema.mobivoc.org/#> .
+@prefix openbaardomein: <https://data.vlaanderen.be/ns/openbaardomein/infrastructuur#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix rml: <http://w3id.org/rml/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.com/fietsstalling/id/1> a mobivoc:BicycleParkingStation, openbaardomein:Fietsstalling,
+    openbaardomein:FysiekObject, openbaardomein:Infrastructuurelement;
+  fixme:eigenaar <https://example.com/fietsstalling/id/1#eigenaar>;
+  dcterms:type <https://example.com/id/concept/deelgemeentetype/Centrum>, <https://example.com/id/concept/karaktertype/fietsbeugel>,
+    <https://example.com/id/concept/sectortype/Centrum>, <https://example.com/id/concept/sitetype/wegzone>;
+  adms:indentifier <https://example.com/fietsstalling/id/1#identificator>;
+  locn:address <https://example.com/fietstalling/id/1#adres>;
+  locn:geometry <https://example.com/fietsstalling/id/1#geometrie>;
+  openbaardomein:beheerder <https://example.com/fietsstalling/id/1#beheerder>;
+  openbaardomein:capaciteit 2 .
+
+<http://example.com/fietsstalling/id/1#geometrie> a geosparql:Geometry;
+  geosparql:asGeoJSON "{type=MultiPoint, coordinates=[[3.2288077364, 51.2095066422]]}"^^geosparql:geoJSONLiteral .
+
+<https://example.com/fietsstalling/id/1#beheerder> a org:Organization;
+  skos:prefLabel "stad Brugge"@nl .
+
+<https://example.com/fietsstalling/id/1#eigenaar> a org:Organization;
+  skos:prefLabel "stad Brugge"@nl .
+
+<https://example.com/fietsstalling/id/1#identificator> a adms:Identifier;
+  skos:notation "1" .
+
+<https://example.com/fietstalling/id/1#adres> a locn:Address;
+  locn:fullAddress "Hoogstraat"@nl .
+
+<https://example.com/id/concept/deelgemeentetype/Centrum> a skos:Concept .
+
+<https://example.com/id/concept/karaktertype/fietsbeugel> a skos:Concept .
+
+<https://example.com/id/concept/sectortype/Centrum> a skos:Concept .
+
+<https://example.com/id/concept/sitetype/wegzone> a skos:Concept .
