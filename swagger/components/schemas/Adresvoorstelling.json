@@ -1,0 +1,297 @@
+{
+  "title": "Adresvoorstelling",
+  "type": "object",
+  "description": "Meer leesbare voorstelling met enkel de basisgegevens van het adres, bedoeld voor het gebruik van een adres als attribuut van een ander object.",
+  "properties": {
+    "@context": {
+      "type": "string",
+      "format": "uri",
+      "enum": [
+        "http://example.org/context.jsonld"
+      ]
+    },
+    "@id": {
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "type": "array",
+      "description": "Lijst van object types (klasse)",
+      "items": {
+        "type": "string",
+        "description": "Adresvoorstelling type"
+      },
+      "minItems": 1
+    },
+    "Adresvoorstelling.administratieveEenheidNiveau1": {
+      "type": "object",
+      "description": "Hoogste Administratieve eenheid van het adres, doorgaans een land.",
+      "properties": {
+        "@value": {
+          "type": "string"
+        },
+        "@language": {
+          "type": "string",
+          "enum": [
+            "nl"
+          ]
+        }
+      },
+      "required": [
+        "@value",
+        "@language"
+      ]
+    },
+    "Adresvoorstelling.administratieveEenheidNiveau2": {
+      "type": "object",
+      "description": "De regio van het adres, doorgaans een provincie of deelstaat of gelijkaardig gebied dat typisch meerdere plaatsen omvat.",
+      "properties": {
+        "@value": {
+          "type": "string"
+        },
+        "@language": {
+          "type": "string",
+          "enum": [
+            "nl"
+          ]
+        }
+      },
+      "required": [
+        "@value",
+        "@language"
+      ]
+    },
+    "Adresvoorstelling.adresgebied": {
+      "type": "object",
+      "description": "Naam van een geografisch gebied of plaats die een aantal adresseerbare objecten groepeert om deze te adresseren zonder dat het gebied of de plaats een administratieve eenheid is. Bvb de naam van het gehucht waarin het adres ligt.",
+      "properties": {
+        "@value": {
+          "type": "string"
+        },
+        "@language": {
+          "type": "string",
+          "enum": [
+            "nl"
+          ]
+        }
+      },
+      "required": [
+        "@value",
+        "@language"
+      ]
+    },
+    "Adresvoorstelling.busnummer": {
+      "type": "object",
+      "description": "Officieel toegekende alfanumerieke code die wordt toegevoegd aan het huisnummer om meerdere gebouweenheden, standplaatsen, ligplaatsen of percelen te onderscheiden die eenzelfde huisnummer hebben. Specialisatie van Adresvoorstelling:locatieaanduiding ten behoeve van Belgische adressen.",
+      "properties": {
+        "@value": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "@value"
+      ]
+    },
+    "Adresvoorstelling.gemeentenaam": {
+      "type": "object",
+      "description": "Gemeentenaam van het adres.",
+      "properties": {
+        "@value": {
+          "type": "string"
+        },
+        "@language": {
+          "type": "string",
+          "enum": [
+            "nl"
+          ]
+        }
+      },
+      "required": [
+        "@value",
+        "@language"
+      ]
+    },
+    "Adresvoorstelling.huisnummer": {
+      "type": "object",
+      "description": "Alfanumerieke code officieel toegekend aan gebouweenheden, ligplaatsen, standplaatsen of percelen. Specialisatie van Adresvoorstelling:locatieaanduiding tbv Belgische adressen.",
+      "properties": {
+        "@value": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "@value"
+      ]
+    },
+    "Adresvoorstelling.land": {
+      "type": "object",
+      "description": "Land waarin het adres gelegen is.",
+      "properties": {
+        "@value": {
+          "type": "string"
+        },
+        "@language": {
+          "type": "string",
+          "enum": [
+            "nl"
+          ]
+        }
+      },
+      "required": [
+        "@value",
+        "@language"
+      ]
+    },
+    "Adresvoorstelling.locatieaanduiding": {
+      "type": "array",
+      "description": "Lijst van String items.",
+      "items": {
+        "type": "object",
+        "description": "Alfanumerieke code die de adreslocator uniek identificeert binnen de straat, administratieve eenheid etc.",
+        "properties": {
+          "@value": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "@value"
+        ]
+      },
+      "minItems": 0
+    },
+    "Adresvoorstelling.locatienaam": {
+      "type": "array",
+      "description": "Lijst van LangString items.",
+      "items": {
+        "type": "object",
+        "description": "Naam of omschrijving van het het geografisch object dat de adreslocator aanduidt.",
+        "properties": {
+          "@value": {
+            "type": "string"
+          },
+          "@language": {
+            "type": "string",
+            "enum": [
+              "nl"
+            ]
+          }
+        },
+        "required": [
+          "@value",
+          "@language"
+        ]
+      },
+      "minItems": 0
+    },
+    "Adresvoorstelling.postbus": {
+      "type": "object",
+      "description": "Postbusnummer in een postkantoor.",
+      "properties": {
+        "@value": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "@value"
+      ]
+    },
+    "Adresvoorstelling.postcode": {
+      "type": "object",
+      "description": "Code waarmee het geografisch gebied dat adressen voor postale doeleinden groepeert wordt aangeduid.",
+      "properties": {
+        "@value": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "@value"
+      ]
+    },
+    "Adresvoorstelling.postnaam": {
+      "type": "object",
+      "description": "Naam waarmee het geografisch gebied dat adressen voor postale doeleinden groepeert wordt aangeduid.",
+      "properties": {
+        "@value": {
+          "type": "string"
+        },
+        "@language": {
+          "type": "string",
+          "enum": [
+            "nl"
+          ]
+        }
+      },
+      "required": [
+        "@value",
+        "@language"
+      ]
+    },
+    "Adresvoorstelling.straatnaam": {
+      "type": "object",
+      "description": "Straatnaam van het adres.",
+      "properties": {
+        "@value": {
+          "type": "string"
+        },
+        "@language": {
+          "type": "string",
+          "enum": [
+            "nl"
+          ]
+        }
+      },
+      "required": [
+        "@value",
+        "@language"
+      ]
+    },
+    "Adresvoorstelling.volledigAdres": {
+      "type": "object",
+      "description": "Het complete adres in één string, al dan niet geformatteerd. Vermijdt fouten ten gevolge van het opsplitsen van een adres in zijn onderdelen. Geeft de voorgeschreven volgorde van de verschillende onderdelen weer.",
+      "properties": {
+        "@value": {
+          "type": "string"
+        },
+        "@language": {
+          "type": "string",
+          "enum": [
+            "nl"
+          ]
+        }
+      },
+      "required": [
+        "@value",
+        "@language"
+      ]
+    },
+    "Adresvoorstelling.verwijstNaar": {
+      "type": "object",
+      "description": "Adres waarvan de adresvoorstelling is afgeleid. Dit kan enkel voor Belgische adressen aangezien onder adres een Belgisch adres wordt verstaan.",
+      "properties": {
+        "@id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "uri"
+            },
+            {
+              "type": "string",
+              "format": "blanknode"
+            },
+            {
+              "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Belgisch Adres.json"
+            }
+          ]
+        }
+      },
+      "required": [
+        "@id"
+      ]
+    }
+  },
+  "required": [
+    "@context",
+    "@id",
+    "@type"
+  ]
+}
