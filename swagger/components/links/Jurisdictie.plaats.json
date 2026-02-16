@@ -1,6 +1,5 @@
 {
-  "title": "Jurisdictie.plaats",
-  "operationId": "Jurisdictie.plaatsGET",
+  "operationId": "JurisdictieGET",
   "parameters": {
     "id": "$response.body#/Jurisdictie.plaats/@id"
   },

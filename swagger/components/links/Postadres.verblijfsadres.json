@@ -1,6 +1,5 @@
 {
-  "title": "Postadres.verblijfsadres",
-  "operationId": "Postadres.verblijfsadresGET",
+  "operationId": "PostadresGET",
   "parameters": {
     "id": "$response.body#/Postadres.verblijfsadres/@id"
   },

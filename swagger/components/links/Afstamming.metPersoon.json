@@ -1,6 +1,5 @@
 {
-  "title": "Afstamming.metPersoon",
-  "operationId": "Afstamming.metPersoonGET",
+  "operationId": "AfstammingGET",
   "parameters": {
     "id": "$response.body#/Afstamming.metPersoon/@id"
   },

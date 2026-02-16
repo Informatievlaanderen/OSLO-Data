@@ -1,6 +1,5 @@
 {
-  "title": "Gezinsrelatie.metPersoon",
-  "operationId": "Gezinsrelatie.metPersoonGET",
+  "operationId": "GezinsrelatieGET",
   "parameters": {
     "id": "$response.body#/Gezinsrelatie.metPersoon/@id"
   },

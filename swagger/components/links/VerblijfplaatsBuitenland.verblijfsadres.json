@@ -1,6 +1,5 @@
 {
-  "title": "VerblijfplaatsBuitenland.verblijfsadres",
-  "operationId": "VerblijfplaatsBuitenland.verblijfsadresGET",
+  "operationId": "VerblijfplaatsBuitenlandGET",
   "parameters": {
     "id": "$response.body#/VerblijfplaatsBuitenland.verblijfsadres/@id"
   },

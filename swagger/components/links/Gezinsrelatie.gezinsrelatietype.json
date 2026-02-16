@@ -1,6 +1,5 @@
 {
-  "title": "Gezinsrelatie.gezinsrelatietype",
-  "operationId": "Gezinsrelatie.gezinsrelatietypeGET",
+  "operationId": "GezinsrelatieGET",
   "parameters": {
     "id": "$response.body#/Gezinsrelatie.gezinsrelatietype/@id"
   },

@@ -1,6 +1,5 @@
 {
-  "title": "Registratie.volgendeRegistratie",
-  "operationId": "Registratie.volgendeRegistratieGET",
+  "operationId": "RegistratieGET",
   "parameters": {
     "id": "$response.body#/Registratie.volgendeRegistratie/@id"
   },

@@ -39,6 +39,281 @@
                   "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Persoon.json"
                 }
               }
+            },
+            "links": {
+              "Persoon.contactinfo": {
+                "operationId": "PersoonGET",
+                "parameters": {
+                  "id": "$response.body#/Persoon.contactinfo/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Contactinfo` op te halen."
+              },
+              "Persoon.geslacht": {
+                "operationId": "PersoonGET",
+                "parameters": {
+                  "id": "$response.body#/Persoon.geslacht/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Geslacht` op te halen."
+              },
+              "Persoon.isHoofdVan": {
+                "operationId": "PersoonGET",
+                "parameters": {
+                  "id": "$response.body#/Persoon.isHoofdVan/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Gezin` op te halen."
+              },
+              "Persoon.heeftBurgerlijkeStaat": {
+                "operationId": "PersoonGET",
+                "parameters": {
+                  "id": "$response.body#/Persoon.heeftBurgerlijkeStaat/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `BurgerlijkeStaat` op te halen."
+              },
+              "Persoon.heeftGeboorte": {
+                "operationId": "PersoonGET",
+                "parameters": {
+                  "id": "$response.body#/Persoon.heeftGeboorte/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Geboorte` op te halen."
+              },
+              "Persoon.heeftOverlijden": {
+                "operationId": "PersoonGET",
+                "parameters": {
+                  "id": "$response.body#/Persoon.heeftOverlijden/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Overlijden` op te halen."
+              },
+              "Persoon.inwonerschap": {
+                "operationId": "PersoonGET",
+                "parameters": {
+                  "id": "$response.body#/Persoon.inwonerschap/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Jurisdictie` op te halen."
+              },
+              "Persoon.inwonerschapdetail": {
+                "operationId": "PersoonGET",
+                "parameters": {
+                  "id": "$response.body#/Persoon.inwonerschapdetail/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Inwonerschap` op te halen."
+              },
+              "Persoon.heeftRelatieMet": {
+                "operationId": "PersoonGET",
+                "parameters": {
+                  "id": "$response.body#/Persoon.heeftRelatieMet/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Persoon` op te halen."
+              },
+              "Persoon.persoonsrelatiedetail": {
+                "operationId": "PersoonGET",
+                "parameters": {
+                  "id": "$response.body#/Persoon.persoonsrelatiedetail/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Persoonsrelatie` op te halen."
+              },
+              "Persoon.isLidVan": {
+                "operationId": "PersoonGET",
+                "parameters": {
+                  "id": "$response.body#/Persoon.isLidVan/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Gezin` op te halen."
+              },
+              "Gezinsrelatie.vanPersoon": {
+                "operationId": "GezinsrelatieGET",
+                "parameters": {
+                  "id": "$response.body#/Gezinsrelatie.vanPersoon/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Persoon` op te halen."
+              },
+              "Gezinsrelatie.metPersoon": {
+                "operationId": "GezinsrelatieGET",
+                "parameters": {
+                  "id": "$response.body#/Gezinsrelatie.metPersoon/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Persoon` op te halen."
+              },
+              "Persoonsrelatie.vanPersoon": {
+                "operationId": "PersoonsrelatieGET",
+                "parameters": {
+                  "id": "$response.body#/Persoonsrelatie.vanPersoon/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Persoon` op te halen."
+              },
+              "Persoonsrelatie.metPersoon": {
+                "operationId": "PersoonsrelatieGET",
+                "parameters": {
+                  "id": "$response.body#/Persoonsrelatie.metPersoon/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Persoon` op te halen."
+              },
+              "Persoonsgebeurtenis.plaats": {
+                "operationId": "PersoonsgebeurtenisGET",
+                "parameters": {
+                  "id": "$response.body#/Persoonsgebeurtenis.plaats/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Plaats` op te halen."
+              },
+              "Huwelijk.vanPersoon": {
+                "operationId": "HuwelijkGET",
+                "parameters": {
+                  "id": "$response.body#/Huwelijk.vanPersoon/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Persoon` op te halen."
+              },
+              "Huwelijk.metPersoon": {
+                "operationId": "HuwelijkGET",
+                "parameters": {
+                  "id": "$response.body#/Huwelijk.metPersoon/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Persoon` op te halen."
+              },
+              "Registratie.geregistreerdPersoon": {
+                "operationId": "RegistratieGET",
+                "parameters": {
+                  "id": "$response.body#/Registratie.geregistreerdPersoon/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `GeregistreerdPersoon` op te halen."
+              },
+              "Samenwonen.vanPersoon": {
+                "operationId": "SamenwonenGET",
+                "parameters": {
+                  "id": "$response.body#/Samenwonen.vanPersoon/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Persoon` op te halen."
+              },
+              "Samenwonen.metPersoon": {
+                "operationId": "SamenwonenGET",
+                "parameters": {
+                  "id": "$response.body#/Samenwonen.metPersoon/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Persoon` op te halen."
+              },
+              "GeregistreerdPersoon.registratie": {
+                "operationId": "GeregistreerdPersoonGET",
+                "parameters": {
+                  "id": "$response.body#/GeregistreerdPersoon.registratie/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Identificator` op te halen."
+              },
+              "GeregistreerdPersoon.beheerder": {
+                "operationId": "GeregistreerdPersoonGET",
+                "parameters": {
+                  "id": "$response.body#/GeregistreerdPersoon.beheerder/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `AdministratiefBeheerder` op te halen."
+              },
+              "GeregistreerdPersoon.registratiedetail": {
+                "operationId": "GeregistreerdPersoonGET",
+                "parameters": {
+                  "id": "$response.body#/GeregistreerdPersoon.registratiedetail/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Registratie` op te halen."
+              },
+              "GeregistreerdPersoon.contactinfo": {
+                "operationId": "GeregistreerdPersoonGET",
+                "parameters": {
+                  "id": "$response.body#/GeregistreerdPersoon.contactinfo/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Contactinfo` op te halen."
+              },
+              "GeregistreerdPersoon.geslacht": {
+                "operationId": "GeregistreerdPersoonGET",
+                "parameters": {
+                  "id": "$response.body#/GeregistreerdPersoon.geslacht/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Geslacht` op te halen."
+              },
+              "GeregistreerdPersoon.isHoofdVan": {
+                "operationId": "GeregistreerdPersoonGET",
+                "parameters": {
+                  "id": "$response.body#/GeregistreerdPersoon.isHoofdVan/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Gezin` op te halen."
+              },
+              "GeregistreerdPersoon.heeftBurgerlijkeStaat": {
+                "operationId": "GeregistreerdPersoonGET",
+                "parameters": {
+                  "id": "$response.body#/GeregistreerdPersoon.heeftBurgerlijkeStaat/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `BurgerlijkeStaat` op te halen."
+              },
+              "GeregistreerdPersoon.heeftGeboorte": {
+                "operationId": "GeregistreerdPersoonGET",
+                "parameters": {
+                  "id": "$response.body#/GeregistreerdPersoon.heeftGeboorte/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Geboorte` op te halen."
+              },
+              "GeregistreerdPersoon.heeftOverlijden": {
+                "operationId": "GeregistreerdPersoonGET",
+                "parameters": {
+                  "id": "$response.body#/GeregistreerdPersoon.heeftOverlijden/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Overlijden` op te halen."
+              },
+              "GeregistreerdPersoon.inwonerschap": {
+                "operationId": "GeregistreerdPersoonGET",
+                "parameters": {
+                  "id": "$response.body#/GeregistreerdPersoon.inwonerschap/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Jurisdictie` op te halen."
+              },
+              "GeregistreerdPersoon.inwonerschapdetail": {
+                "operationId": "GeregistreerdPersoonGET",
+                "parameters": {
+                  "id": "$response.body#/GeregistreerdPersoon.inwonerschapdetail/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Inwonerschap` op te halen."
+              },
+              "GeregistreerdPersoon.heeftRelatieMet": {
+                "operationId": "GeregistreerdPersoonGET",
+                "parameters": {
+                  "id": "$response.body#/GeregistreerdPersoon.heeftRelatieMet/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Persoon` op te halen."
+              },
+              "GeregistreerdPersoon.persoonsrelatiedetail": {
+                "operationId": "GeregistreerdPersoonGET",
+                "parameters": {
+                  "id": "$response.body#/GeregistreerdPersoon.persoonsrelatiedetail/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Persoonsrelatie` op te halen."
+              },
+              "GeregistreerdPersoon.isLidVan": {
+                "operationId": "GeregistreerdPersoonGET",
+                "parameters": {
+                  "id": "$response.body#/GeregistreerdPersoon.isLidVan/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Gezin` op te halen."
+              },
+              "Afstamming.vanPersoon": {
+                "operationId": "AfstammingGET",
+                "parameters": {
+                  "id": "$response.body#/Afstamming.vanPersoon/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Persoon` op te halen."
+              },
+              "Afstamming.metPersoon": {
+                "operationId": "AfstammingGET",
+                "parameters": {
+                  "id": "$response.body#/Afstamming.metPersoon/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Persoon` op te halen."
+              },
+              "Voogdij.vanPersoon": {
+                "operationId": "VoogdijGET",
+                "parameters": {
+                  "id": "$response.body#/Voogdij.vanPersoon/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Persoon` op te halen."
+              },
+              "Voogdij.metPersoon": {
+                "operationId": "VoogdijGET",
+                "parameters": {
+                  "id": "$response.body#/Voogdij.metPersoon/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Persoon` op te halen."
+              }
             }
           },
           "400": {
@@ -77,6 +352,15 @@
                 "schema": {
                   "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Plaats.json"
                 }
+              }
+            },
+            "links": {
+              "Plaats.geometrie": {
+                "operationId": "PlaatsGET",
+                "parameters": {
+                  "id": "$response.body#/Plaats.geometrie/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Geometrie` op te halen."
               }
             }
           },
@@ -117,6 +401,29 @@
                   "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Gezinsrelatie.json"
                 }
               }
+            },
+            "links": {
+              "Gezinsrelatie.gezinsrelatietype": {
+                "operationId": "GezinsrelatieGET",
+                "parameters": {
+                  "id": "$response.body#/Gezinsrelatie.gezinsrelatietype/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Gezinsrelatietype` op te halen."
+              },
+              "Gezinsrelatie.vanPersoon": {
+                "operationId": "GezinsrelatieGET",
+                "parameters": {
+                  "id": "$response.body#/Gezinsrelatie.vanPersoon/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Persoon` op te halen."
+              },
+              "Gezinsrelatie.metPersoon": {
+                "operationId": "GezinsrelatieGET",
+                "parameters": {
+                  "id": "$response.body#/Gezinsrelatie.metPersoon/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Persoon` op te halen."
+              }
             }
           },
           "400": {
@@ -155,6 +462,22 @@
                 "schema": {
                   "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Persoonsrelatie.json"
                 }
+              }
+            },
+            "links": {
+              "Persoonsrelatie.vanPersoon": {
+                "operationId": "PersoonsrelatieGET",
+                "parameters": {
+                  "id": "$response.body#/Persoonsrelatie.vanPersoon/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Persoon` op te halen."
+              },
+              "Persoonsrelatie.metPersoon": {
+                "operationId": "PersoonsrelatieGET",
+                "parameters": {
+                  "id": "$response.body#/Persoonsrelatie.metPersoon/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Persoon` op te halen."
               }
             }
           },
@@ -195,6 +518,29 @@
                   "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Overlijden.json"
                 }
               }
+            },
+            "links": {
+              "Persoon.heeftOverlijden": {
+                "operationId": "PersoonGET",
+                "parameters": {
+                  "id": "$response.body#/Persoon.heeftOverlijden/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Overlijden` op te halen."
+              },
+              "Overlijden.plaats": {
+                "operationId": "OverlijdenGET",
+                "parameters": {
+                  "id": "$response.body#/Overlijden.plaats/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Plaats` op te halen."
+              },
+              "GeregistreerdPersoon.heeftOverlijden": {
+                "operationId": "GeregistreerdPersoonGET",
+                "parameters": {
+                  "id": "$response.body#/GeregistreerdPersoon.heeftOverlijden/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Overlijden` op te halen."
+              }
             }
           },
           "400": {
@@ -233,6 +579,15 @@
                 "schema": {
                   "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Persoonsgebeurtenis.json"
                 }
+              }
+            },
+            "links": {
+              "Persoonsgebeurtenis.plaats": {
+                "operationId": "PersoonsgebeurtenisGET",
+                "parameters": {
+                  "id": "$response.body#/Persoonsgebeurtenis.plaats/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Plaats` op te halen."
               }
             }
           },
@@ -273,6 +628,29 @@
                   "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Geboorte.json"
                 }
               }
+            },
+            "links": {
+              "Persoon.heeftGeboorte": {
+                "operationId": "PersoonGET",
+                "parameters": {
+                  "id": "$response.body#/Persoon.heeftGeboorte/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Geboorte` op te halen."
+              },
+              "Geboorte.plaats": {
+                "operationId": "GeboorteGET",
+                "parameters": {
+                  "id": "$response.body#/Geboorte.plaats/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Plaats` op te halen."
+              },
+              "GeregistreerdPersoon.heeftGeboorte": {
+                "operationId": "GeregistreerdPersoonGET",
+                "parameters": {
+                  "id": "$response.body#/GeregistreerdPersoon.heeftGeboorte/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Geboorte` op te halen."
+              }
             }
           },
           "400": {
@@ -312,6 +690,22 @@
                   "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Huwelijk.json"
                 }
               }
+            },
+            "links": {
+              "Huwelijk.vanPersoon": {
+                "operationId": "HuwelijkGET",
+                "parameters": {
+                  "id": "$response.body#/Huwelijk.vanPersoon/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Persoon` op te halen."
+              },
+              "Huwelijk.metPersoon": {
+                "operationId": "HuwelijkGET",
+                "parameters": {
+                  "id": "$response.body#/Huwelijk.metPersoon/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Persoon` op te halen."
+              }
             }
           },
           "400": {
@@ -349,7 +743,8 @@
                   "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Brontype.json"
                 }
               }
-            }
+            },
+            "links": {}
           },
           "400": {
             "description": "Ontbrekende informatie bij het opvragen een Brontype object."
@@ -387,6 +782,36 @@
                 "schema": {
                   "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Registratie.json"
                 }
+              }
+            },
+            "links": {
+              "Registratie.dossierstatus": {
+                "operationId": "RegistratieGET",
+                "parameters": {
+                  "id": "$response.body#/Registratie.dossierstatus/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Dossierstatustype` op te halen."
+              },
+              "Registratie.geregistreerdPersoon": {
+                "operationId": "RegistratieGET",
+                "parameters": {
+                  "id": "$response.body#/Registratie.geregistreerdPersoon/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `GeregistreerdPersoon` op te halen."
+              },
+              "Registratie.vorigeRegistratie": {
+                "operationId": "RegistratieGET",
+                "parameters": {
+                  "id": "$response.body#/Registratie.vorigeRegistratie/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Registratie` op te halen."
+              },
+              "Registratie.volgendeRegistratie": {
+                "operationId": "RegistratieGET",
+                "parameters": {
+                  "id": "$response.body#/Registratie.volgendeRegistratie/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Registratie` op te halen."
               }
             }
           },
@@ -427,6 +852,15 @@
                   "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Versie.json"
                 }
               }
+            },
+            "links": {
+              "Versie.bron": {
+                "operationId": "VersieGET",
+                "parameters": {
+                  "id": "$response.body#/Versie.bron/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Organisatie` op te halen."
+              }
             }
           },
           "400": {
@@ -464,7 +898,8 @@
                   "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Geslacht.json"
                 }
               }
-            }
+            },
+            "links": {}
           },
           "400": {
             "description": "Ontbrekende informatie bij het opvragen een Geslacht object."
@@ -502,6 +937,29 @@
                 "schema": {
                   "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Inwonerschap.json"
                 }
+              }
+            },
+            "links": {
+              "Inwonerschap.persoon": {
+                "operationId": "InwonerschapGET",
+                "parameters": {
+                  "id": "$response.body#/Inwonerschap.persoon/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Persoon` op te halen."
+              },
+              "Inwonerschap.jurisdictie": {
+                "operationId": "InwonerschapGET",
+                "parameters": {
+                  "id": "$response.body#/Inwonerschap.jurisdictie/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Jurisdictie` op te halen."
+              },
+              "Inwonerschap.heeftVerblijfplaats": {
+                "operationId": "InwonerschapGET",
+                "parameters": {
+                  "id": "$response.body#/Inwonerschap.heeftVerblijfplaats/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Verblijfplaats` op te halen."
               }
             }
           },
@@ -542,6 +1000,22 @@
                   "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/GeregistreerdeOrganisatie.json"
                 }
               }
+            },
+            "links": {
+              "GeregistreerdeOrganisatie.registratie": {
+                "operationId": "GeregistreerdeOrganisatieGET",
+                "parameters": {
+                  "id": "$response.body#/GeregistreerdeOrganisatie.registratie/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Identificator` op te halen."
+              },
+              "GeregistreerdeOrganisatie.contactinfo": {
+                "operationId": "GeregistreerdeOrganisatieGET",
+                "parameters": {
+                  "id": "$response.body#/GeregistreerdeOrganisatie.contactinfo/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Contactinfo` op te halen."
+              }
             }
           },
           "400": {
@@ -581,6 +1055,29 @@
                   "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Organisatie.json"
                 }
               }
+            },
+            "links": {
+              "GeregistreerdeOrganisatie.registratie": {
+                "operationId": "GeregistreerdeOrganisatieGET",
+                "parameters": {
+                  "id": "$response.body#/GeregistreerdeOrganisatie.registratie/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Identificator` op te halen."
+              },
+              "GeregistreerdeOrganisatie.contactinfo": {
+                "operationId": "GeregistreerdeOrganisatieGET",
+                "parameters": {
+                  "id": "$response.body#/GeregistreerdeOrganisatie.contactinfo/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Contactinfo` op te halen."
+              },
+              "Organisatie.contactinfo": {
+                "operationId": "OrganisatieGET",
+                "parameters": {
+                  "id": "$response.body#/Organisatie.contactinfo/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Contactinfo` op te halen."
+              }
             }
           },
           "400": {
@@ -618,7 +1115,8 @@
                   "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/BurgerlijkeStaatType.json"
                 }
               }
-            }
+            },
+            "links": {}
           },
           "400": {
             "description": "Ontbrekende informatie bij het opvragen een BurgerlijkeStaatType object."
@@ -656,6 +1154,22 @@
                 "schema": {
                   "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Samenwonen.json"
                 }
+              }
+            },
+            "links": {
+              "Samenwonen.vanPersoon": {
+                "operationId": "SamenwonenGET",
+                "parameters": {
+                  "id": "$response.body#/Samenwonen.vanPersoon/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Persoon` op te halen."
+              },
+              "Samenwonen.metPersoon": {
+                "operationId": "SamenwonenGET",
+                "parameters": {
+                  "id": "$response.body#/Samenwonen.metPersoon/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Persoon` op te halen."
               }
             }
           },
@@ -696,6 +1210,106 @@
                   "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/GeregistreerdPersoon.json"
                 }
               }
+            },
+            "links": {
+              "GeregistreerdPersoon.registratie": {
+                "operationId": "GeregistreerdPersoonGET",
+                "parameters": {
+                  "id": "$response.body#/GeregistreerdPersoon.registratie/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Identificator` op te halen."
+              },
+              "GeregistreerdPersoon.beheerder": {
+                "operationId": "GeregistreerdPersoonGET",
+                "parameters": {
+                  "id": "$response.body#/GeregistreerdPersoon.beheerder/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `AdministratiefBeheerder` op te halen."
+              },
+              "GeregistreerdPersoon.registratiedetail": {
+                "operationId": "GeregistreerdPersoonGET",
+                "parameters": {
+                  "id": "$response.body#/GeregistreerdPersoon.registratiedetail/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Registratie` op te halen."
+              },
+              "GeregistreerdPersoon.contactinfo": {
+                "operationId": "GeregistreerdPersoonGET",
+                "parameters": {
+                  "id": "$response.body#/GeregistreerdPersoon.contactinfo/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Contactinfo` op te halen."
+              },
+              "GeregistreerdPersoon.geslacht": {
+                "operationId": "GeregistreerdPersoonGET",
+                "parameters": {
+                  "id": "$response.body#/GeregistreerdPersoon.geslacht/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Geslacht` op te halen."
+              },
+              "GeregistreerdPersoon.isHoofdVan": {
+                "operationId": "GeregistreerdPersoonGET",
+                "parameters": {
+                  "id": "$response.body#/GeregistreerdPersoon.isHoofdVan/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Gezin` op te halen."
+              },
+              "GeregistreerdPersoon.heeftBurgerlijkeStaat": {
+                "operationId": "GeregistreerdPersoonGET",
+                "parameters": {
+                  "id": "$response.body#/GeregistreerdPersoon.heeftBurgerlijkeStaat/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `BurgerlijkeStaat` op te halen."
+              },
+              "GeregistreerdPersoon.heeftGeboorte": {
+                "operationId": "GeregistreerdPersoonGET",
+                "parameters": {
+                  "id": "$response.body#/GeregistreerdPersoon.heeftGeboorte/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Geboorte` op te halen."
+              },
+              "GeregistreerdPersoon.heeftOverlijden": {
+                "operationId": "GeregistreerdPersoonGET",
+                "parameters": {
+                  "id": "$response.body#/GeregistreerdPersoon.heeftOverlijden/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Overlijden` op te halen."
+              },
+              "GeregistreerdPersoon.inwonerschap": {
+                "operationId": "GeregistreerdPersoonGET",
+                "parameters": {
+                  "id": "$response.body#/GeregistreerdPersoon.inwonerschap/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Jurisdictie` op te halen."
+              },
+              "GeregistreerdPersoon.inwonerschapdetail": {
+                "operationId": "GeregistreerdPersoonGET",
+                "parameters": {
+                  "id": "$response.body#/GeregistreerdPersoon.inwonerschapdetail/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Inwonerschap` op te halen."
+              },
+              "GeregistreerdPersoon.heeftRelatieMet": {
+                "operationId": "GeregistreerdPersoonGET",
+                "parameters": {
+                  "id": "$response.body#/GeregistreerdPersoon.heeftRelatieMet/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Persoon` op te halen."
+              },
+              "GeregistreerdPersoon.persoonsrelatiedetail": {
+                "operationId": "GeregistreerdPersoonGET",
+                "parameters": {
+                  "id": "$response.body#/GeregistreerdPersoon.persoonsrelatiedetail/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Persoonsrelatie` op te halen."
+              },
+              "GeregistreerdPersoon.isLidVan": {
+                "operationId": "GeregistreerdPersoonGET",
+                "parameters": {
+                  "id": "$response.body#/GeregistreerdPersoon.isLidVan/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Gezin` op te halen."
+              }
             }
           },
           "400": {
@@ -734,6 +1348,22 @@
                 "schema": {
                   "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Domicilie.json"
                 }
+              }
+            },
+            "links": {
+              "Domicilie.verblijfsadres": {
+                "operationId": "DomicilieGET",
+                "parameters": {
+                  "id": "$response.body#/Domicilie.verblijfsadres/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Adresvoorstelling` op te halen."
+              },
+              "VerblijfplaatsBuitenlandDomicilie.verblijfsadres": {
+                "operationId": "VerblijfplaatsBuitenlandDomicilieGET",
+                "parameters": {
+                  "id": "$response.body#/VerblijfplaatsBuitenlandDomicilie.verblijfsadres/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Adresvoorstelling` op te halen."
               }
             }
           },
@@ -774,6 +1404,36 @@
                   "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Verblijfplaats.json"
                 }
               }
+            },
+            "links": {
+              "Inwonerschap.heeftVerblijfplaats": {
+                "operationId": "InwonerschapGET",
+                "parameters": {
+                  "id": "$response.body#/Inwonerschap.heeftVerblijfplaats/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Verblijfplaats` op te halen."
+              },
+              "Verblijfplaats.verblijfsadres": {
+                "operationId": "VerblijfplaatsGET",
+                "parameters": {
+                  "id": "$response.body#/Verblijfplaats.verblijfsadres/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Adresvoorstelling` op te halen."
+              },
+              "VerblijfplaatsBuitenlandDomicilie.verblijfsadres": {
+                "operationId": "VerblijfplaatsBuitenlandDomicilieGET",
+                "parameters": {
+                  "id": "$response.body#/VerblijfplaatsBuitenlandDomicilie.verblijfsadres/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Adresvoorstelling` op te halen."
+              },
+              "VerblijfplaatsBuitenland.verblijfsadres": {
+                "operationId": "VerblijfplaatsBuitenlandGET",
+                "parameters": {
+                  "id": "$response.body#/VerblijfplaatsBuitenland.verblijfsadres/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Adresvoorstelling` op te halen."
+              }
             }
           },
           "400": {
@@ -812,6 +1472,29 @@
                 "schema": {
                   "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Afstamming.json"
                 }
+              }
+            },
+            "links": {
+              "Afstamming.afstammingstype": {
+                "operationId": "AfstammingGET",
+                "parameters": {
+                  "id": "$response.body#/Afstamming.afstammingstype/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Afstammingstype` op te halen."
+              },
+              "Afstamming.vanPersoon": {
+                "operationId": "AfstammingGET",
+                "parameters": {
+                  "id": "$response.body#/Afstamming.vanPersoon/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Persoon` op te halen."
+              },
+              "Afstamming.metPersoon": {
+                "operationId": "AfstammingGET",
+                "parameters": {
+                  "id": "$response.body#/Afstamming.metPersoon/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Persoon` op te halen."
               }
             }
           },
@@ -852,6 +1535,15 @@
                   "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/AangegevenAdres.json"
                 }
               }
+            },
+            "links": {
+              "AangegevenAdres.verblijfsadres": {
+                "operationId": "AangegevenAdresGET",
+                "parameters": {
+                  "id": "$response.body#/AangegevenAdres.verblijfsadres/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Adresvoorstelling` op te halen."
+              }
             }
           },
           "400": {
@@ -891,6 +1583,15 @@
                   "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Afwezig.json"
                 }
               }
+            },
+            "links": {
+              "Afwezig.verblijfsadres": {
+                "operationId": "AfwezigGET",
+                "parameters": {
+                  "id": "$response.body#/Afwezig.verblijfsadres/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Adresvoorstelling` op te halen."
+              }
             }
           },
           "400": {
@@ -928,7 +1629,8 @@
                   "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/AdministratiefBeheerdertype.json"
                 }
               }
-            }
+            },
+            "links": {}
           },
           "400": {
             "description": "Ontbrekende informatie bij het opvragen een AdministratiefBeheerdertype object."
@@ -965,7 +1667,8 @@
                   "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Dossierstatustype.json"
                 }
               }
-            }
+            },
+            "links": {}
           },
           "400": {
             "description": "Ontbrekende informatie bij het opvragen een Dossierstatustype object."
@@ -1004,7 +1707,8 @@
                   "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/BelgischAdres.json"
                 }
               }
-            }
+            },
+            "links": {}
           },
           "400": {
             "description": "Ontbrekende informatie bij het opvragen een BelgischAdres object."
@@ -1042,6 +1746,22 @@
                 "schema": {
                   "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Voogdij.json"
                 }
+              }
+            },
+            "links": {
+              "Voogdij.vanPersoon": {
+                "operationId": "VoogdijGET",
+                "parameters": {
+                  "id": "$response.body#/Voogdij.vanPersoon/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Persoon` op te halen."
+              },
+              "Voogdij.metPersoon": {
+                "operationId": "VoogdijGET",
+                "parameters": {
+                  "id": "$response.body#/Voogdij.metPersoon/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Persoon` op te halen."
               }
             }
           },
@@ -1082,6 +1802,15 @@
                   "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Jurisdictie.json"
                 }
               }
+            },
+            "links": {
+              "Jurisdictie.plaats": {
+                "operationId": "JurisdictieGET",
+                "parameters": {
+                  "id": "$response.body#/Jurisdictie.plaats/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Plaats` op te halen."
+              }
             }
           },
           "400": {
@@ -1121,7 +1850,8 @@
                   "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Taal.json"
                 }
               }
-            }
+            },
+            "links": {}
           },
           "400": {
             "description": "Ontbrekende informatie bij het opvragen een Taal object."
@@ -1159,6 +1889,50 @@
                 "schema": {
                   "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Gezin.json"
                 }
+              }
+            },
+            "links": {
+              "Gezinsrelatie.gezinsrelatietype": {
+                "operationId": "GezinsrelatieGET",
+                "parameters": {
+                  "id": "$response.body#/Gezinsrelatie.gezinsrelatietype/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Gezinsrelatietype` op te halen."
+              },
+              "Gezinsrelatie.vanPersoon": {
+                "operationId": "GezinsrelatieGET",
+                "parameters": {
+                  "id": "$response.body#/Gezinsrelatie.vanPersoon/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Persoon` op te halen."
+              },
+              "Gezinsrelatie.metPersoon": {
+                "operationId": "GezinsrelatieGET",
+                "parameters": {
+                  "id": "$response.body#/Gezinsrelatie.metPersoon/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Persoon` op te halen."
+              },
+              "Gezin.gezinsadres": {
+                "operationId": "GezinGET",
+                "parameters": {
+                  "id": "$response.body#/Gezin.gezinsadres/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Adresvoorstelling` op te halen."
+              },
+              "Gezin.gezinshoofd": {
+                "operationId": "GezinGET",
+                "parameters": {
+                  "id": "$response.body#/Gezin.gezinshoofd/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Persoon` op te halen."
+              },
+              "Gezin.gezinslid": {
+                "operationId": "GezinGET",
+                "parameters": {
+                  "id": "$response.body#/Gezin.gezinslid/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Persoon` op te halen."
               }
             }
           },
@@ -1199,6 +1973,29 @@
                   "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/BurgerlijkeStaat.json"
                 }
               }
+            },
+            "links": {
+              "Persoon.heeftBurgerlijkeStaat": {
+                "operationId": "PersoonGET",
+                "parameters": {
+                  "id": "$response.body#/Persoon.heeftBurgerlijkeStaat/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `BurgerlijkeStaat` op te halen."
+              },
+              "GeregistreerdPersoon.heeftBurgerlijkeStaat": {
+                "operationId": "GeregistreerdPersoonGET",
+                "parameters": {
+                  "id": "$response.body#/GeregistreerdPersoon.heeftBurgerlijkeStaat/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `BurgerlijkeStaat` op te halen."
+              },
+              "BurgerlijkeStaat.type": {
+                "operationId": "BurgerlijkeStaatGET",
+                "parameters": {
+                  "id": "$response.body#/BurgerlijkeStaat.type/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `BurgerlijkeStaatType` op te halen."
+              }
             }
           },
           "400": {
@@ -1236,7 +2033,8 @@
                   "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Afstammingstype.json"
                 }
               }
-            }
+            },
+            "links": {}
           },
           "400": {
             "description": "Ontbrekende informatie bij het opvragen een Afstammingstype object."
@@ -1273,7 +2071,8 @@
                   "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Gezinsrelatietype.json"
                 }
               }
-            }
+            },
+            "links": {}
           },
           "400": {
             "description": "Ontbrekende informatie bij het opvragen een Gezinsrelatietype object."
@@ -1311,6 +2110,15 @@
                 "schema": {
                   "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Postadres.json"
                 }
+              }
+            },
+            "links": {
+              "Postadres.verblijfsadres": {
+                "operationId": "PostadresGET",
+                "parameters": {
+                  "id": "$response.body#/Postadres.verblijfsadres/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Adresvoorstelling` op te halen."
               }
             }
           },
@@ -1351,6 +2159,15 @@
                   "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Referentieadres.json"
                 }
               }
+            },
+            "links": {
+              "Referentieadres.verblijfsadres": {
+                "operationId": "ReferentieadresGET",
+                "parameters": {
+                  "id": "$response.body#/Referentieadres.verblijfsadres/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Adresvoorstelling` op te halen."
+              }
             }
           },
           "400": {
@@ -1389,6 +2206,15 @@
                 "schema": {
                   "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/VerblijfplaatsBuitenlandDomicilie.json"
                 }
+              }
+            },
+            "links": {
+              "VerblijfplaatsBuitenlandDomicilie.verblijfsadres": {
+                "operationId": "VerblijfplaatsBuitenlandDomicilieGET",
+                "parameters": {
+                  "id": "$response.body#/VerblijfplaatsBuitenlandDomicilie.verblijfsadres/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Adresvoorstelling` op te halen."
               }
             }
           },
@@ -1429,6 +2255,22 @@
                   "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/VerblijfplaatsBuitenland.json"
                 }
               }
+            },
+            "links": {
+              "VerblijfplaatsBuitenlandDomicilie.verblijfsadres": {
+                "operationId": "VerblijfplaatsBuitenlandDomicilieGET",
+                "parameters": {
+                  "id": "$response.body#/VerblijfplaatsBuitenlandDomicilie.verblijfsadres/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Adresvoorstelling` op te halen."
+              },
+              "VerblijfplaatsBuitenland.verblijfsadres": {
+                "operationId": "VerblijfplaatsBuitenlandGET",
+                "parameters": {
+                  "id": "$response.body#/VerblijfplaatsBuitenland.verblijfsadres/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Adresvoorstelling` op te halen."
+              }
             }
           },
           "400": {
@@ -1468,6 +2310,15 @@
                   "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/WettelijkVerblijf.json"
                 }
               }
+            },
+            "links": {
+              "WettelijkVerblijf.verblijfsadres": {
+                "operationId": "WettelijkVerblijfGET",
+                "parameters": {
+                  "id": "$response.body#/WettelijkVerblijf.verblijfsadres/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Adresvoorstelling` op te halen."
+              }
             }
           },
           "400": {
@@ -1506,6 +2357,15 @@
                 "schema": {
                   "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/AdministratiefBeheerder.json"
                 }
+              }
+            },
+            "links": {
+              "AdministratiefBeheerder.type": {
+                "operationId": "AdministratiefBeheerderGET",
+                "parameters": {
+                  "id": "$response.body#/AdministratiefBeheerder.type/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `AdministratiefBeheerdertype` op te halen."
               }
             }
           },

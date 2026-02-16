@@ -1,6 +1,5 @@
 {
-  "title": "Registratie.geregistreerdPersoon",
-  "operationId": "Registratie.geregistreerdPersoonGET",
+  "operationId": "RegistratieGET",
   "parameters": {
     "id": "$response.body#/Registratie.geregistreerdPersoon/@id"
   },

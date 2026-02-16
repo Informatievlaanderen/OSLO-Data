@@ -1,6 +1,5 @@
 {
-  "title": "Registratie.dossierstatus",
-  "operationId": "Registratie.dossierstatusGET",
+  "operationId": "RegistratieGET",
   "parameters": {
     "id": "$response.body#/Registratie.dossierstatus/@id"
   },

@@ -1,6 +1,5 @@
 {
-  "title": "Gezin.gezinslid",
-  "operationId": "Gezin.gezinslidGET",
+  "operationId": "GezinGET",
   "parameters": {
     "id": "$response.body#/Gezin.gezinslid/@id"
   },

@@ -1,6 +1,5 @@
 {
-  "title": "Plaats.geometrie",
-  "operationId": "Plaats.geometrieGET",
+  "operationId": "PlaatsGET",
   "parameters": {
     "id": "$response.body#/Plaats.geometrie/@id"
   },

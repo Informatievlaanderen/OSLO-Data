@@ -1,6 +1,5 @@
 {
-  "title": "AdministratiefBeheerder.type",
-  "operationId": "AdministratiefBeheerder.typeGET",
+  "operationId": "AdministratiefBeheerderGET",
   "parameters": {
     "id": "$response.body#/AdministratiefBeheerder.type/@id"
   },

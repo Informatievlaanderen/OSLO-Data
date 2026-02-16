@@ -1,6 +1,5 @@
 {
-  "title": "GeregistreerdPersoon.heeftBurgerlijkeStaat",
-  "operationId": "GeregistreerdPersoon.heeftBurgerlijkeStaatGET",
+  "operationId": "GeregistreerdPersoonGET",
   "parameters": {
     "id": "$response.body#/GeregistreerdPersoon.heeftBurgerlijkeStaat/@id"
   },
