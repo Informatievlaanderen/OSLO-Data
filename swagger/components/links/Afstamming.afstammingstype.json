@@ -1,0 +1,8 @@
+{
+  "title": "Afstamming.afstammingstype",
+  "operationId": "Afstamming.afstammingstypeGET",
+  "parameters": {
+    "id": "$response.body#/Afstamming.afstammingstype/@id"
+  },
+  "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Afstammingstype` op te halen."
+}

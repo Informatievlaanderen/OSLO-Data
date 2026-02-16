@@ -1,0 +1,8 @@
+{
+  "title": "Voogdij.metPersoon",
+  "operationId": "Voogdij.metPersoonGET",
+  "parameters": {
+    "id": "$response.body#/Voogdij.metPersoon/@id"
+  },
+  "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Persoon` op te halen."
+}

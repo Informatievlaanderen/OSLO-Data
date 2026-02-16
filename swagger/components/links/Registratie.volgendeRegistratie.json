@@ -1,0 +1,8 @@
+{
+  "title": "Registratie.volgendeRegistratie",
+  "operationId": "Registratie.volgendeRegistratieGET",
+  "parameters": {
+    "id": "$response.body#/Registratie.volgendeRegistratie/@id"
+  },
+  "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Registratie` op te halen."
+}

@@ -1,0 +1,8 @@
+{
+  "title": "Overlijden.plaats",
+  "operationId": "Overlijden.plaatsGET",
+  "parameters": {
+    "id": "$response.body#/Overlijden.plaats/@id"
+  },
+  "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Plaats` op te halen."
+}

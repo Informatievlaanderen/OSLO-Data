@@ -1,0 +1,8 @@
+{
+  "title": "Gezin.gezinslid",
+  "operationId": "Gezin.gezinslidGET",
+  "parameters": {
+    "id": "$response.body#/Gezin.gezinslid/@id"
+  },
+  "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Persoon` op te halen."
+}

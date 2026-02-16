@@ -1,0 +1,82 @@
+{
+  "title": "Samenwonen",
+  "type": "object",
+  "description": "Regeling waarbij twee personen die niet getrouwd zijn samenleven.",
+  "properties": {
+    "@context": {
+      "type": "string",
+      "format": "uri",
+      "enum": [
+        "http://example.org/context.jsonld"
+      ]
+    },
+    "@id": {
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "type": "array",
+      "description": "Lijst van object types (klasse)",
+      "items": {
+        "type": "string",
+        "description": "Samenwonen type"
+      },
+      "minItems": 1
+    },
+    "Samenwonen.vanPersoon": {
+      "type": "object",
+      "description": "Persoon die een persoonsrelatie heeft.",
+      "properties": {
+        "@id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "uri"
+            },
+            {
+              "type": "string",
+              "format": "blanknode"
+            },
+            {
+              "$ref": "http://data.vlaanderen.be/swagger/components/schemas/http://www.w3.org/ns/person#Person.json"
+            }
+          ]
+        }
+      },
+      "required": [
+        "@id"
+      ]
+    },
+    "Samenwonen.metPersoon": {
+      "type": "object",
+      "description": "De persoon waarmee de persoon een relatie heeft.",
+      "properties": {
+        "@id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "uri"
+            },
+            {
+              "type": "string",
+              "format": "blanknode"
+            },
+            {
+              "$ref": "http://data.vlaanderen.be/swagger/components/schemas/http://www.w3.org/ns/person#Person.json"
+            }
+          ]
+        }
+      },
+      "required": [
+        "@id"
+      ]
+    }
+  },
+  "required": [
+    "@context",
+    "@id",
+    "@type",
+    "Samenwonen.vanPersoon",
+    "Samenwonen.metPersoon"
+  ]
+}

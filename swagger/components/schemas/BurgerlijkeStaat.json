@@ -1,0 +1,57 @@
+{
+  "title": "BurgerlijkeStaat",
+  "type": "object",
+  "description": "Burgerrechtelijke toestand van een Persoon.",
+  "properties": {
+    "@context": {
+      "type": "string",
+      "format": "uri",
+      "enum": [
+        "http://example.org/context.jsonld"
+      ]
+    },
+    "@id": {
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "type": "array",
+      "description": "Lijst van object types (klasse)",
+      "items": {
+        "type": "string",
+        "description": "BurgerlijkeStaat type"
+      },
+      "minItems": 1
+    },
+    "BurgerlijkeStaat.type": {
+      "type": "object",
+      "description": "Aard van de Burgerlijke Staat.",
+      "properties": {
+        "@id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "uri"
+            },
+            {
+              "type": "string",
+              "format": "blanknode"
+            },
+            {
+              "$ref": "http://data.vlaanderen.be/swagger/components/schemas/http://www.w3.org/2004/02/skos/core#Concept.json"
+            }
+          ]
+        }
+      },
+      "required": [
+        "@id"
+      ]
+    }
+  },
+  "required": [
+    "@context",
+    "@id",
+    "@type",
+    "BurgerlijkeStaat.type"
+  ]
+}

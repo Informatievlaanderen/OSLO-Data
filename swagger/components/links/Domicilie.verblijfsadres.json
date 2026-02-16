@@ -1,0 +1,8 @@
+{
+  "title": "Domicilie.verblijfsadres",
+  "operationId": "Domicilie.verblijfsadresGET",
+  "parameters": {
+    "id": "$response.body#/Domicilie.verblijfsadres/@id"
+  },
+  "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Adresvoorstelling` op te halen."
+}

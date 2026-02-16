@@ -1,0 +1,8 @@
+{
+  "title": "GeregistreerdPersoon.inwonerschap",
+  "operationId": "GeregistreerdPersoon.inwonerschapGET",
+  "parameters": {
+    "id": "$response.body#/GeregistreerdPersoon.inwonerschap/@id"
+  },
+  "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Jurisdictie` op te halen."
+}

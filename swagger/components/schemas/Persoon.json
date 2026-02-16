@@ -1,0 +1,352 @@
+{
+  "title": "Persoon",
+  "type": "object",
+  "description": "Natuurlijk persoon.",
+  "properties": {
+    "@context": {
+      "type": "string",
+      "format": "uri",
+      "enum": [
+        "http://example.org/context.jsonld"
+      ]
+    },
+    "@id": {
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "type": "array",
+      "description": "Lijst van object types (klasse)",
+      "items": {
+        "type": "string",
+        "description": "Persoon type"
+      },
+      "minItems": 1
+    },
+    "Persoon.voornaam": {
+      "type": "array",
+      "description": "Lijst van String items.",
+      "items": {
+        "type": "object",
+        "description": "Naam die een Persoon bij geboorte wordt gegeven. Onderscheidt de Persoon van de andere personen in de familie.",
+        "properties": {
+          "@value": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "@value"
+        ]
+      },
+      "minItems": 0
+    },
+    "Persoon.achternaam": {
+      "type": "object",
+      "description": "Gedeelte van de volledige naam van de Persoon ontvangen van de vorige generatie. Ook wel familienaam genoemd omdat de achternaam een familiale verwantschap aanduidt.",
+      "properties": {
+        "@value": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "@value"
+      ]
+    },
+    "Persoon.contactinfo": {
+      "type": "object",
+      "description": "Informatie zoals email, telefoon, ... die toelaat de Persoon te contacteren.",
+      "properties": {
+        "@id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "uri"
+            },
+            {
+              "type": "string",
+              "format": "blanknode"
+            },
+            {
+              "$ref": "http://data.vlaanderen.be/swagger/components/schemas/https://schema.org/ContactPoint.json"
+            }
+          ]
+        }
+      },
+      "required": [
+        "@id"
+      ]
+    },
+    "Persoon.geslacht": {
+      "type": "object",
+      "description": "De uiting van een Persoon's indentiteit, expressie en sociale rol. Het geslacht van een Persoon is sterk afhankelijk van de manier waarop dit gedefinieerd is, dit kan op basis van de biologische kenmerken maar ook op basis van gender, genderindentiteit, genderexpressie, etc. Voor meer informatie zie <a href=\"https://www.vlaanderen.be/dienst-diversiteitsbeleid/begrippen-rond-gender-en-seksuele-diversiteit\">Begrippen rond gender- en seksuele diversiteit</a>.",
+      "properties": {
+        "@id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "uri"
+            },
+            {
+              "type": "string",
+              "format": "blanknode"
+            },
+            {
+              "$ref": "http://data.vlaanderen.be/swagger/components/schemas/http://www.w3.org/2004/02/skos/core#Concept.json"
+            }
+          ]
+        }
+      },
+      "required": [
+        "@id"
+      ]
+    },
+    "Persoon.isHoofdVan": {
+      "type": "object",
+      "description": "Persoon die standaard het Gezin vertegenwoordigt.",
+      "properties": {
+        "@id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "uri"
+            },
+            {
+              "type": "string",
+              "format": "blanknode"
+            },
+            {
+              "$ref": "http://data.vlaanderen.be/swagger/components/schemas/https://data.vlaanderen.be/ns/persoon#Gezin.json"
+            }
+          ]
+        }
+      },
+      "required": [
+        "@id"
+      ]
+    },
+    "Persoon.heeftBurgerlijkeStaat": {
+      "type": "object",
+      "description": "Burgerlijke Staat van de Persoon.",
+      "properties": {
+        "@id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "uri"
+            },
+            {
+              "type": "string",
+              "format": "blanknode"
+            },
+            {
+              "$ref": "http://data.vlaanderen.be/swagger/components/schemas/https://data.vlaanderen.be/ns/persoon#BurgerlijkeStaat.json"
+            }
+          ]
+        }
+      },
+      "required": [
+        "@id"
+      ]
+    },
+    "Persoon.heeftGeboorte": {
+      "type": "object",
+      "description": "Verwijst naar de geboortegebeurtenis van de Persoon. Bevat vaak de geboortegevens van de Persoon.",
+      "properties": {
+        "@id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "uri"
+            },
+            {
+              "type": "string",
+              "format": "blanknode"
+            },
+            {
+              "$ref": "http://data.vlaanderen.be/swagger/components/schemas/http://purl.org/vocab/bio/0.1/Birth.json"
+            }
+          ]
+        }
+      },
+      "required": [
+        "@id"
+      ]
+    },
+    "Persoon.heeftOverlijden": {
+      "type": "object",
+      "description": "Verwijst naar de overlijdensgebeurtenis van de Persoon. Bevat vaak de overlijdensgegevens van de Persoon.",
+      "properties": {
+        "@id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "uri"
+            },
+            {
+              "type": "string",
+              "format": "blanknode"
+            },
+            {
+              "$ref": "http://data.vlaanderen.be/swagger/components/schemas/http://purl.org/vocab/bio/0.1/Death.json"
+            }
+          ]
+        }
+      },
+      "required": [
+        "@id"
+      ]
+    },
+    "Persoon.inwonerschap": {
+      "type": "array",
+      "description": "Lijst van Jurisdictie items.",
+      "items": {
+        "type": "object",
+        "description": "Jurisdictie waarbinnen het Inwonerschap van de Persoon is gedefinieerd.",
+        "properties": {
+          "@id": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "type": "string",
+                "format": "blanknode"
+              },
+              {
+                "$ref": "http://data.vlaanderen.be/swagger/components/schemas/http://purl.org/dc/terms/Jurisdiction.json"
+              }
+            ]
+          }
+        },
+        "required": [
+          "@id"
+        ]
+      },
+      "minItems": 0
+    },
+    "Persoon.inwonerschapdetail": {
+      "type": "array",
+      "description": "Lijst van Inwonerschap items.",
+      "items": {
+        "type": "object",
+        "description": "Inwonerschap van de persoon.",
+        "properties": {
+          "@id": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "type": "string",
+                "format": "blanknode"
+              },
+              {
+                "$ref": "http://data.vlaanderen.be/swagger/components/schemas/https://data.vlaanderen.be/ns/persoon#Inwonerschap.json"
+              }
+            ]
+          }
+        },
+        "required": [
+          "@id"
+        ]
+      },
+      "minItems": 0
+    },
+    "Persoon.heeftRelatieMet": {
+      "type": "array",
+      "description": "Lijst van Persoon items.",
+      "items": {
+        "type": "object",
+        "description": "Persoon waarmee de Persoon gerelateerd is.",
+        "properties": {
+          "@id": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "type": "string",
+                "format": "blanknode"
+              },
+              {
+                "$ref": "http://data.vlaanderen.be/swagger/components/schemas/http://www.w3.org/ns/person#Person.json"
+              }
+            ]
+          }
+        },
+        "required": [
+          "@id"
+        ]
+      },
+      "minItems": 0
+    },
+    "Persoon.persoonsrelatiedetail": {
+      "type": "array",
+      "description": "Lijst van Persoonsrelatie items.",
+      "items": {
+        "type": "object",
+        "description": "Persoonsrelatie van de persoon.",
+        "properties": {
+          "@id": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "type": "string",
+                "format": "blanknode"
+              },
+              {
+                "$ref": "http://data.vlaanderen.be/swagger/components/schemas/https://data.vlaanderen.be/ns/persoon#Persoonsrelatie.json"
+              }
+            ]
+          }
+        },
+        "required": [
+          "@id"
+        ]
+      },
+      "minItems": 0
+    },
+    "Persoon.isLidVan": {
+      "type": "array",
+      "description": "Lijst van Gezin items.",
+      "items": {
+        "type": "object",
+        "description": "Persoon die tot een Gezin behoort.",
+        "properties": {
+          "@id": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "type": "string",
+                "format": "blanknode"
+              },
+              {
+                "$ref": "http://data.vlaanderen.be/swagger/components/schemas/https://data.vlaanderen.be/ns/persoon#Gezin.json"
+              }
+            ]
+          }
+        },
+        "required": [
+          "@id"
+        ]
+      },
+      "minItems": 0
+    }
+  },
+  "required": [
+    "@context",
+    "@id",
+    "@type",
+    "Persoon.geslacht",
+    "Persoon.heeftGeboorte"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "title": "GeregistreerdPersoon.persoonsrelatiedetail",
+  "operationId": "GeregistreerdPersoon.persoonsrelatiedetailGET",
+  "parameters": {
+    "id": "$response.body#/GeregistreerdPersoon.persoonsrelatiedetail/@id"
+  },
+  "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Persoonsrelatie` op te halen."
+}

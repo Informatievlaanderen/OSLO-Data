@@ -1,0 +1,1639 @@
+{
+  "openapi": "3.0.4",
+  "info": {
+    "title": "MAGDA PersoonREST",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "http://data.vlaanderen.be/",
+      "description": "Basis URL"
+    }
+  ],
+  "paths": {
+    "/id/Persoon/{id}": {
+      "get": {
+        "summary": "Natuurlijk persoon.",
+        "description": "Natuurlijk persoon.",
+        "operationId": "PersoonGET",
+        "tags": [
+          "Externe datastandaarden"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Identificator van een Persoon object.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Persoon object gevonden.",
+            "content": {
+              "application/ld+json": {
+                "schema": {
+                  "$ref": "http://data.vlaanderen.be/swagger/components/schemas/Persoon.json"
+                }
+              }
+            },
+            "links": {
+              "$ref": "http://data.vlaanderen.be/swagger/components/links/Persoon.json"
+            }
+          },
+          "400": {
+            "description": "Ontbrekende informatie bij het opvragen een Persoon object."
+          },
+          "404": {
+            "description": "Persoon object met gegeven ID niet gevonden."
+          }
+        }
+      }
+    },
+    "/id/Plaats/{id}": {
+      "get": {
+        "summary": "Een ruimtelijk gebied of benoemde plaats.",
+        "description": "Een ruimtelijk gebied of benoemde plaats.",
+        "operationId": "PlaatsGET",
+        "tags": [
+          "Externe datastandaarden"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Identificator van een Plaats object.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Plaats object gevonden.",
+            "content": {
+              "application/ld+json": {
+                "schema": {
+                  "$ref": "http://data.vlaanderen.be/swagger/components/schemas/Plaats.json"
+                }
+              }
+            },
+            "links": {
+              "$ref": "http://data.vlaanderen.be/swagger/components/links/Plaats.json"
+            }
+          },
+          "400": {
+            "description": "Ontbrekende informatie bij het opvragen een Plaats object."
+          },
+          "404": {
+            "description": "Plaats object met gegeven ID niet gevonden."
+          }
+        }
+      }
+    },
+    "/id/Gezinsrelatie/{id}": {
+      "get": {
+        "summary": "Relatie tussen leden van eenzelfde gezin.",
+        "description": "Relatie tussen leden van eenzelfde gezin.",
+        "operationId": "GezinsrelatieGET",
+        "tags": [
+          "Externe datastandaarden"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Identificator van een Gezinsrelatie object.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Gezinsrelatie object gevonden.",
+            "content": {
+              "application/ld+json": {
+                "schema": {
+                  "$ref": "http://data.vlaanderen.be/swagger/components/schemas/Gezinsrelatie.json"
+                }
+              }
+            },
+            "links": {
+              "$ref": "http://data.vlaanderen.be/swagger/components/links/Gezinsrelatie.json"
+            }
+          },
+          "400": {
+            "description": "Ontbrekende informatie bij het opvragen een Gezinsrelatie object."
+          },
+          "404": {
+            "description": "Gezinsrelatie object met gegeven ID niet gevonden."
+          }
+        }
+      }
+    },
+    "/id/Persoonsrelatie/{id}": {
+      "get": {
+        "summary": "Relatie tussen twee of meer personen.",
+        "description": "Relatie tussen twee of meer personen.",
+        "operationId": "PersoonsrelatieGET",
+        "tags": [
+          "Externe datastandaarden"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Identificator van een Persoonsrelatie object.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Persoonsrelatie object gevonden.",
+            "content": {
+              "application/ld+json": {
+                "schema": {
+                  "$ref": "http://data.vlaanderen.be/swagger/components/schemas/Persoonsrelatie.json"
+                }
+              }
+            },
+            "links": {
+              "$ref": "http://data.vlaanderen.be/swagger/components/links/Persoonsrelatie.json"
+            }
+          },
+          "400": {
+            "description": "Ontbrekende informatie bij het opvragen een Persoonsrelatie object."
+          },
+          "404": {
+            "description": "Persoonsrelatie object met gegeven ID niet gevonden."
+          }
+        }
+      }
+    },
+    "/id/Overlijden/{id}": {
+      "get": {
+        "summary": "Het doodgaan van een Persoon.",
+        "description": "Het doodgaan van een Persoon.",
+        "operationId": "OverlijdenGET",
+        "tags": [
+          "Externe datastandaarden"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Identificator van een Overlijden object.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Overlijden object gevonden.",
+            "content": {
+              "application/ld+json": {
+                "schema": {
+                  "$ref": "http://data.vlaanderen.be/swagger/components/schemas/Overlijden.json"
+                }
+              }
+            },
+            "links": {
+              "$ref": "http://data.vlaanderen.be/swagger/components/links/Overlijden.json"
+            }
+          },
+          "400": {
+            "description": "Ontbrekende informatie bij het opvragen een Overlijden object."
+          },
+          "404": {
+            "description": "Overlijden object met gegeven ID niet gevonden."
+          }
+        }
+      }
+    },
+    "/id/Persoonsgebeurtenis/{id}": {
+      "get": {
+        "summary": "Belangrijke gebeurtenis ih leven ve persoon.",
+        "description": "Belangrijke gebeurtenis ih leven ve persoon.",
+        "operationId": "PersoonsgebeurtenisGET",
+        "tags": [
+          "Externe datastandaarden"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Identificator van een Persoonsgebeurtenis object.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Persoonsgebeurtenis object gevonden.",
+            "content": {
+              "application/ld+json": {
+                "schema": {
+                  "$ref": "http://data.vlaanderen.be/swagger/components/schemas/Persoonsgebeurtenis.json"
+                }
+              }
+            },
+            "links": {
+              "$ref": "http://data.vlaanderen.be/swagger/components/links/Persoonsgebeurtenis.json"
+            }
+          },
+          "400": {
+            "description": "Ontbrekende informatie bij het opvragen een Persoonsgebeurtenis object."
+          },
+          "404": {
+            "description": "Persoonsgebeurtenis object met gegeven ID niet gevonden."
+          }
+        }
+      }
+    },
+    "/id/Geboorte/{id}": {
+      "get": {
+        "summary": "Het ter wereld komen van een Persoon.",
+        "description": "Het ter wereld komen van een Persoon.",
+        "operationId": "GeboorteGET",
+        "tags": [
+          "Externe datastandaarden"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Identificator van een Geboorte object.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Geboorte object gevonden.",
+            "content": {
+              "application/ld+json": {
+                "schema": {
+                  "$ref": "http://data.vlaanderen.be/swagger/components/schemas/Geboorte.json"
+                }
+              }
+            },
+            "links": {
+              "$ref": "http://data.vlaanderen.be/swagger/components/links/Geboorte.json"
+            }
+          },
+          "400": {
+            "description": "Ontbrekende informatie bij het opvragen een Geboorte object."
+          },
+          "404": {
+            "description": "Geboorte object met gegeven ID niet gevonden."
+          }
+        }
+      }
+    },
+    "/id/Huwelijk/{id}": {
+      "get": {
+        "summary": "Een door burgerlijk of religieus recht geregelde samenlevingsvorm van twee personen.",
+        "description": "Een door burgerlijk of religieus recht geregelde samenlevingsvorm van twee personen.",
+        "operationId": "HuwelijkGET",
+        "tags": [
+          "Externe datastandaarden"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Identificator van een Huwelijk object.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Huwelijk object gevonden.",
+            "content": {
+              "application/ld+json": {
+                "schema": {
+                  "$ref": "http://data.vlaanderen.be/swagger/components/schemas/Huwelijk.json"
+                }
+              }
+            },
+            "links": {
+              "$ref": "http://data.vlaanderen.be/swagger/components/links/Huwelijk.json"
+            }
+          },
+          "400": {
+            "description": "Ontbrekende informatie bij het opvragen een Huwelijk object."
+          },
+          "404": {
+            "description": "Huwelijk object met gegeven ID niet gevonden."
+          }
+        }
+      }
+    },
+    "/id/Brontype/{id}": {
+      "get": {
+        "operationId": "BrontypeGET",
+        "tags": [
+          "Externe datastandaarden"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Identificator van een Brontype object.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Brontype object gevonden.",
+            "content": {
+              "application/ld+json": {
+                "schema": {
+                  "$ref": "http://data.vlaanderen.be/swagger/components/schemas/Brontype.json"
+                }
+              }
+            },
+            "links": {
+              "$ref": "http://data.vlaanderen.be/swagger/components/links/Brontype.json"
+            }
+          },
+          "400": {
+            "description": "Ontbrekende informatie bij het opvragen een Brontype object."
+          },
+          "404": {
+            "description": "Brontype object met gegeven ID niet gevonden."
+          }
+        }
+      }
+    },
+    "/id/Registratie/{id}": {
+      "get": {
+        "summary": "Opname van de Persoon in het register.",
+        "description": "Opname van de Persoon in het register.",
+        "operationId": "RegistratieGET",
+        "tags": [
+          "Externe datastandaarden"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Identificator van een Registratie object.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Registratie object gevonden.",
+            "content": {
+              "application/ld+json": {
+                "schema": {
+                  "$ref": "http://data.vlaanderen.be/swagger/components/schemas/Registratie.json"
+                }
+              }
+            },
+            "links": {
+              "$ref": "http://data.vlaanderen.be/swagger/components/links/Registratie.json"
+            }
+          },
+          "400": {
+            "description": "Ontbrekende informatie bij het opvragen een Registratie object."
+          },
+          "404": {
+            "description": "Registratie object met gegeven ID niet gevonden."
+          }
+        }
+      }
+    },
+    "/id/Versie/{id}": {
+      "get": {
+        "summary": "Entiteit gedurende een bepaalde periode in de databank.",
+        "description": "Entiteit gedurende een bepaalde periode in de databank.",
+        "operationId": "VersieGET",
+        "tags": [
+          "Externe datastandaarden"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Identificator van een Versie object.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Versie object gevonden.",
+            "content": {
+              "application/ld+json": {
+                "schema": {
+                  "$ref": "http://data.vlaanderen.be/swagger/components/schemas/Versie.json"
+                }
+              }
+            },
+            "links": {
+              "$ref": "http://data.vlaanderen.be/swagger/components/links/Versie.json"
+            }
+          },
+          "400": {
+            "description": "Ontbrekende informatie bij het opvragen een Versie object."
+          },
+          "404": {
+            "description": "Versie object met gegeven ID niet gevonden."
+          }
+        }
+      }
+    },
+    "/id/Geslacht/{id}": {
+      "get": {
+        "operationId": "GeslachtGET",
+        "tags": [
+          "Externe datastandaarden"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Identificator van een Geslacht object.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Geslacht object gevonden.",
+            "content": {
+              "application/ld+json": {
+                "schema": {
+                  "$ref": "http://data.vlaanderen.be/swagger/components/schemas/Geslacht.json"
+                }
+              }
+            },
+            "links": {
+              "$ref": "http://data.vlaanderen.be/swagger/components/links/Geslacht.json"
+            }
+          },
+          "400": {
+            "description": "Ontbrekende informatie bij het opvragen een Geslacht object."
+          },
+          "404": {
+            "description": "Geslacht object met gegeven ID niet gevonden."
+          }
+        }
+      }
+    },
+    "/id/Inwonerschap/{id}": {
+      "get": {
+        "summary": "Het feit dat een Persoon verblijf houdt in een plaats of land.",
+        "description": "Het feit dat een Persoon verblijf houdt in een plaats of land.",
+        "operationId": "InwonerschapGET",
+        "tags": [
+          "Externe datastandaarden"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Identificator van een Inwonerschap object.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Inwonerschap object gevonden.",
+            "content": {
+              "application/ld+json": {
+                "schema": {
+                  "$ref": "http://data.vlaanderen.be/swagger/components/schemas/Inwonerschap.json"
+                }
+              }
+            },
+            "links": {
+              "$ref": "http://data.vlaanderen.be/swagger/components/links/Inwonerschap.json"
+            }
+          },
+          "400": {
+            "description": "Ontbrekende informatie bij het opvragen een Inwonerschap object."
+          },
+          "404": {
+            "description": "Inwonerschap object met gegeven ID niet gevonden."
+          }
+        }
+      }
+    },
+    "/id/GeregistreerdeOrganisatie/{id}": {
+      "get": {
+        "summary": "Organisatie met een juridisch statuut vastgelegd door registratie. Vergelijk met een FormeleOrganisatie waarbij dit statuut ook op een andere manier verkregen kan zijn.",
+        "description": "Organisatie met een juridisch statuut vastgelegd door registratie. Vergelijk met een FormeleOrganisatie waarbij dit statuut ook op een andere manier verkregen kan zijn.",
+        "operationId": "GeregistreerdeOrganisatieGET",
+        "tags": [
+          "Externe datastandaarden"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Identificator van een GeregistreerdeOrganisatie object.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "GeregistreerdeOrganisatie object gevonden.",
+            "content": {
+              "application/ld+json": {
+                "schema": {
+                  "$ref": "http://data.vlaanderen.be/swagger/components/schemas/GeregistreerdeOrganisatie.json"
+                }
+              }
+            },
+            "links": {
+              "$ref": "http://data.vlaanderen.be/swagger/components/links/GeregistreerdeOrganisatie.json"
+            }
+          },
+          "400": {
+            "description": "Ontbrekende informatie bij het opvragen een GeregistreerdeOrganisatie object."
+          },
+          "404": {
+            "description": "GeregistreerdeOrganisatie object met gegeven ID niet gevonden."
+          }
+        }
+      }
+    },
+    "/id/Organisatie/{id}": {
+      "get": {
+        "summary": "Een aantal mensen georganiseerd in een gemeenschap of andere sociale, commerciële of politieke structuur. De groep heeft een gemeenschappelijk doel of bestaansreden die de individuele leden ervan overstijgt en kan handelen als agent. Een Organisatie heeft dikwijls een hiërarchische structuur.",
+        "description": "Een aantal mensen georganiseerd in een gemeenschap of andere sociale, commerciële of politieke structuur. De groep heeft een gemeenschappelijk doel of bestaansreden die de individuele leden ervan overstijgt en kan handelen als agent. Een Organisatie heeft dikwijls een hiërarchische structuur.",
+        "operationId": "OrganisatieGET",
+        "tags": [
+          "Externe datastandaarden"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Identificator van een Organisatie object.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Organisatie object gevonden.",
+            "content": {
+              "application/ld+json": {
+                "schema": {
+                  "$ref": "http://data.vlaanderen.be/swagger/components/schemas/Organisatie.json"
+                }
+              }
+            },
+            "links": {
+              "$ref": "http://data.vlaanderen.be/swagger/components/links/Organisatie.json"
+            }
+          },
+          "400": {
+            "description": "Ontbrekende informatie bij het opvragen een Organisatie object."
+          },
+          "404": {
+            "description": "Organisatie object met gegeven ID niet gevonden."
+          }
+        }
+      }
+    },
+    "/id/BurgerlijkeStaatType/{id}": {
+      "get": {
+        "operationId": "BurgerlijkeStaatTypeGET",
+        "tags": [
+          "Externe datastandaarden"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Identificator van een BurgerlijkeStaatType object.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "BurgerlijkeStaatType object gevonden.",
+            "content": {
+              "application/ld+json": {
+                "schema": {
+                  "$ref": "http://data.vlaanderen.be/swagger/components/schemas/BurgerlijkeStaatType.json"
+                }
+              }
+            },
+            "links": {
+              "$ref": "http://data.vlaanderen.be/swagger/components/links/BurgerlijkeStaatType.json"
+            }
+          },
+          "400": {
+            "description": "Ontbrekende informatie bij het opvragen een BurgerlijkeStaatType object."
+          },
+          "404": {
+            "description": "BurgerlijkeStaatType object met gegeven ID niet gevonden."
+          }
+        }
+      }
+    },
+    "/id/Samenwonen/{id}": {
+      "get": {
+        "summary": "Regeling waarbij twee personen die niet getrouwd zijn samenleven.",
+        "description": "Regeling waarbij twee personen die niet getrouwd zijn samenleven.",
+        "operationId": "SamenwonenGET",
+        "tags": [
+          "Externe datastandaarden"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Identificator van een Samenwonen object.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Samenwonen object gevonden.",
+            "content": {
+              "application/ld+json": {
+                "schema": {
+                  "$ref": "http://data.vlaanderen.be/swagger/components/schemas/Samenwonen.json"
+                }
+              }
+            },
+            "links": {
+              "$ref": "http://data.vlaanderen.be/swagger/components/links/Samenwonen.json"
+            }
+          },
+          "400": {
+            "description": "Ontbrekende informatie bij het opvragen een Samenwonen object."
+          },
+          "404": {
+            "description": "Samenwonen object met gegeven ID niet gevonden."
+          }
+        }
+      }
+    },
+    "/id/GeregistreerdPersoon/{id}": {
+      "get": {
+        "summary": "Persoon waarvan de gegevens zijn ingeschreven in een register.",
+        "description": "Persoon waarvan de gegevens zijn ingeschreven in een register.",
+        "operationId": "GeregistreerdPersoonGET",
+        "tags": [
+          "Externe datastandaarden"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Identificator van een GeregistreerdPersoon object.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "GeregistreerdPersoon object gevonden.",
+            "content": {
+              "application/ld+json": {
+                "schema": {
+                  "$ref": "http://data.vlaanderen.be/swagger/components/schemas/GeregistreerdPersoon.json"
+                }
+              }
+            },
+            "links": {
+              "$ref": "http://data.vlaanderen.be/swagger/components/links/GeregistreerdPersoon.json"
+            }
+          },
+          "400": {
+            "description": "Ontbrekende informatie bij het opvragen een GeregistreerdPersoon object."
+          },
+          "404": {
+            "description": "GeregistreerdPersoon object met gegeven ID niet gevonden."
+          }
+        }
+      }
+    },
+    "/id/Domicilie/{id}": {
+      "get": {
+        "summary": "Hoofdverblijfplaats van een Persoon.",
+        "description": "Hoofdverblijfplaats van een Persoon.",
+        "operationId": "DomicilieGET",
+        "tags": [
+          "Externe datastandaarden"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Identificator van een Domicilie object.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Domicilie object gevonden.",
+            "content": {
+              "application/ld+json": {
+                "schema": {
+                  "$ref": "http://data.vlaanderen.be/swagger/components/schemas/Domicilie.json"
+                }
+              }
+            },
+            "links": {
+              "$ref": "http://data.vlaanderen.be/swagger/components/links/Domicilie.json"
+            }
+          },
+          "400": {
+            "description": "Ontbrekende informatie bij het opvragen een Domicilie object."
+          },
+          "404": {
+            "description": "Domicilie object met gegeven ID niet gevonden."
+          }
+        }
+      }
+    },
+    "/id/Verblijfplaats/{id}": {
+      "get": {
+        "summary": "Plaats waar een Persoon al dan niet tijdelijk woont of logeert.",
+        "description": "Plaats waar een Persoon al dan niet tijdelijk woont of logeert.",
+        "operationId": "VerblijfplaatsGET",
+        "tags": [
+          "Externe datastandaarden"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Identificator van een Verblijfplaats object.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Verblijfplaats object gevonden.",
+            "content": {
+              "application/ld+json": {
+                "schema": {
+                  "$ref": "http://data.vlaanderen.be/swagger/components/schemas/Verblijfplaats.json"
+                }
+              }
+            },
+            "links": {
+              "$ref": "http://data.vlaanderen.be/swagger/components/links/Verblijfplaats.json"
+            }
+          },
+          "400": {
+            "description": "Ontbrekende informatie bij het opvragen een Verblijfplaats object."
+          },
+          "404": {
+            "description": "Verblijfplaats object met gegeven ID niet gevonden."
+          }
+        }
+      }
+    },
+    "/id/Afstamming/{id}": {
+      "get": {
+        "summary": "Afstamming is de dalende lijn van bloedverwantschap tussen verschillende generaties.",
+        "description": "Afstamming is de dalende lijn van bloedverwantschap tussen verschillende generaties.",
+        "operationId": "AfstammingGET",
+        "tags": [
+          "Externe datastandaarden"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Identificator van een Afstamming object.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Afstamming object gevonden.",
+            "content": {
+              "application/ld+json": {
+                "schema": {
+                  "$ref": "http://data.vlaanderen.be/swagger/components/schemas/Afstamming.json"
+                }
+              }
+            },
+            "links": {
+              "$ref": "http://data.vlaanderen.be/swagger/components/links/Afstamming.json"
+            }
+          },
+          "400": {
+            "description": "Ontbrekende informatie bij het opvragen een Afstamming object."
+          },
+          "404": {
+            "description": "Afstamming object met gegeven ID niet gevonden."
+          }
+        }
+      }
+    },
+    "/id/AangegevenAdres/{id}": {
+      "get": {
+        "summary": "Adres dat door een persoon wordt opgegeven als hoofdverblijplaats.",
+        "description": "Adres dat door een persoon wordt opgegeven als hoofdverblijplaats.",
+        "operationId": "AangegevenAdresGET",
+        "tags": [
+          "Externe datastandaarden"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Identificator van een AangegevenAdres object.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "AangegevenAdres object gevonden.",
+            "content": {
+              "application/ld+json": {
+                "schema": {
+                  "$ref": "http://data.vlaanderen.be/swagger/components/schemas/AangegevenAdres.json"
+                }
+              }
+            },
+            "links": {
+              "$ref": "http://data.vlaanderen.be/swagger/components/links/AangegevenAdres.json"
+            }
+          },
+          "400": {
+            "description": "Ontbrekende informatie bij het opvragen een AangegevenAdres object."
+          },
+          "404": {
+            "description": "AangegevenAdres object met gegeven ID niet gevonden."
+          }
+        }
+      }
+    },
+    "/id/Afwezig/{id}": {
+      "get": {
+        "summary": "Verblijfplaats van een persoon die afwezig is verklaard.",
+        "description": "Verblijfplaats van een persoon die afwezig is verklaard.",
+        "operationId": "AfwezigGET",
+        "tags": [
+          "Externe datastandaarden"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Identificator van een Afwezig object.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Afwezig object gevonden.",
+            "content": {
+              "application/ld+json": {
+                "schema": {
+                  "$ref": "http://data.vlaanderen.be/swagger/components/schemas/Afwezig.json"
+                }
+              }
+            },
+            "links": {
+              "$ref": "http://data.vlaanderen.be/swagger/components/links/Afwezig.json"
+            }
+          },
+          "400": {
+            "description": "Ontbrekende informatie bij het opvragen een Afwezig object."
+          },
+          "404": {
+            "description": "Afwezig object met gegeven ID niet gevonden."
+          }
+        }
+      }
+    },
+    "/id/AdministratiefBeheerdertype/{id}": {
+      "get": {
+        "operationId": "AdministratiefBeheerdertypeGET",
+        "tags": [
+          "Externe datastandaarden"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Identificator van een AdministratiefBeheerdertype object.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "AdministratiefBeheerdertype object gevonden.",
+            "content": {
+              "application/ld+json": {
+                "schema": {
+                  "$ref": "http://data.vlaanderen.be/swagger/components/schemas/AdministratiefBeheerdertype.json"
+                }
+              }
+            },
+            "links": {
+              "$ref": "http://data.vlaanderen.be/swagger/components/links/AdministratiefBeheerdertype.json"
+            }
+          },
+          "400": {
+            "description": "Ontbrekende informatie bij het opvragen een AdministratiefBeheerdertype object."
+          },
+          "404": {
+            "description": "AdministratiefBeheerdertype object met gegeven ID niet gevonden."
+          }
+        }
+      }
+    },
+    "/id/Dossierstatustype/{id}": {
+      "get": {
+        "operationId": "DossierstatustypeGET",
+        "tags": [
+          "Externe datastandaarden"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Identificator van een Dossierstatustype object.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Dossierstatustype object gevonden.",
+            "content": {
+              "application/ld+json": {
+                "schema": {
+                  "$ref": "http://data.vlaanderen.be/swagger/components/schemas/Dossierstatustype.json"
+                }
+              }
+            },
+            "links": {
+              "$ref": "http://data.vlaanderen.be/swagger/components/links/Dossierstatustype.json"
+            }
+          },
+          "400": {
+            "description": "Ontbrekende informatie bij het opvragen een Dossierstatustype object."
+          },
+          "404": {
+            "description": "Dossierstatustype object met gegeven ID niet gevonden."
+          }
+        }
+      }
+    },
+    "/id/BelgischAdres/{id}": {
+      "get": {
+        "summary": "Informatie die toelaat om op een gestructureerde en unieke manier te verwijzen naar een gebouweenheid,een ligplaats,een standplaats of een perceel op basis van een gemeentenaam,een straatnaam,een huisnummer en eventueel een busnummer en een postcode.",
+        "description": "Informatie die toelaat om op een gestructureerde en unieke manier te verwijzen naar een gebouweenheid,een ligplaats,een standplaats of een perceel op basis van een gemeentenaam,een straatnaam,een huisnummer en eventueel een busnummer en een postcode.",
+        "operationId": "BelgischAdresGET",
+        "tags": [
+          "Externe datastandaarden"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Identificator van een BelgischAdres object.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "BelgischAdres object gevonden.",
+            "content": {
+              "application/ld+json": {
+                "schema": {
+                  "$ref": "http://data.vlaanderen.be/swagger/components/schemas/BelgischAdres.json"
+                }
+              }
+            },
+            "links": {
+              "$ref": "http://data.vlaanderen.be/swagger/components/links/BelgischAdres.json"
+            }
+          },
+          "400": {
+            "description": "Ontbrekende informatie bij het opvragen een BelgischAdres object."
+          },
+          "404": {
+            "description": "BelgischAdres object met gegeven ID niet gevonden."
+          }
+        }
+      }
+    },
+    "/id/Voogdij/{id}": {
+      "get": {
+        "summary": "Situatie waarbij een Persoon die optreedt als voogd van een ander Persoon en in die hoedanigheid instaat voor deze Persoon en zijn goederen.",
+        "description": "Situatie waarbij een Persoon die optreedt als voogd van een ander Persoon en in die hoedanigheid instaat voor deze Persoon en zijn goederen.",
+        "operationId": "VoogdijGET",
+        "tags": [
+          "Externe datastandaarden"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Identificator van een Voogdij object.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Voogdij object gevonden.",
+            "content": {
+              "application/ld+json": {
+                "schema": {
+                  "$ref": "http://data.vlaanderen.be/swagger/components/schemas/Voogdij.json"
+                }
+              }
+            },
+            "links": {
+              "$ref": "http://data.vlaanderen.be/swagger/components/links/Voogdij.json"
+            }
+          },
+          "400": {
+            "description": "Ontbrekende informatie bij het opvragen een Voogdij object."
+          },
+          "404": {
+            "description": "Voogdij object met gegeven ID niet gevonden."
+          }
+        }
+      }
+    },
+    "/id/Jurisdictie/{id}": {
+      "get": {
+        "summary": "Het gebied waarover de rechtsmacht van een overheid zich uitstrekt.",
+        "description": "Het gebied waarover de rechtsmacht van een overheid zich uitstrekt.",
+        "operationId": "JurisdictieGET",
+        "tags": [
+          "Externe datastandaarden"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Identificator van een Jurisdictie object.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Jurisdictie object gevonden.",
+            "content": {
+              "application/ld+json": {
+                "schema": {
+                  "$ref": "http://data.vlaanderen.be/swagger/components/schemas/Jurisdictie.json"
+                }
+              }
+            },
+            "links": {
+              "$ref": "http://data.vlaanderen.be/swagger/components/links/Jurisdictie.json"
+            }
+          },
+          "400": {
+            "description": "Ontbrekende informatie bij het opvragen een Jurisdictie object."
+          },
+          "404": {
+            "description": "Jurisdictie object met gegeven ID niet gevonden."
+          }
+        }
+      }
+    },
+    "/id/Taal/{id}": {
+      "get": {
+        "summary": "De taal waarin een document of andere resources zijn opgesteld.",
+        "description": "De taal waarin een document of andere resources zijn opgesteld.",
+        "operationId": "TaalGET",
+        "tags": [
+          "Externe datastandaarden"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Identificator van een Taal object.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Taal object gevonden.",
+            "content": {
+              "application/ld+json": {
+                "schema": {
+                  "$ref": "http://data.vlaanderen.be/swagger/components/schemas/Taal.json"
+                }
+              }
+            },
+            "links": {
+              "$ref": "http://data.vlaanderen.be/swagger/components/links/Taal.json"
+            }
+          },
+          "400": {
+            "description": "Ontbrekende informatie bij het opvragen een Taal object."
+          },
+          "404": {
+            "description": "Taal object met gegeven ID niet gevonden."
+          }
+        }
+      }
+    },
+    "/id/Gezin/{id}": {
+      "get": {
+        "summary": "Samenwerkingsvorm die een herkenbare sociale eenheid vormt (bijvoorbeeld ten gevolge van een huwelijk), met al dan niet verwante personen die duurzame banden hebben en elkaar onderling steun en verzorging verlenen.",
+        "description": "Samenwerkingsvorm die een herkenbare sociale eenheid vormt (bijvoorbeeld ten gevolge van een huwelijk), met al dan niet verwante personen die duurzame banden hebben en elkaar onderling steun en verzorging verlenen.",
+        "operationId": "GezinGET",
+        "tags": [
+          "Externe datastandaarden"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Identificator van een Gezin object.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Gezin object gevonden.",
+            "content": {
+              "application/ld+json": {
+                "schema": {
+                  "$ref": "http://data.vlaanderen.be/swagger/components/schemas/Gezin.json"
+                }
+              }
+            },
+            "links": {
+              "$ref": "http://data.vlaanderen.be/swagger/components/links/Gezin.json"
+            }
+          },
+          "400": {
+            "description": "Ontbrekende informatie bij het opvragen een Gezin object."
+          },
+          "404": {
+            "description": "Gezin object met gegeven ID niet gevonden."
+          }
+        }
+      }
+    },
+    "/id/BurgerlijkeStaat/{id}": {
+      "get": {
+        "summary": "Burgerrechtelijke toestand van een Persoon.",
+        "description": "Burgerrechtelijke toestand van een Persoon.",
+        "operationId": "BurgerlijkeStaatGET",
+        "tags": [
+          "Externe datastandaarden"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Identificator van een BurgerlijkeStaat object.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "BurgerlijkeStaat object gevonden.",
+            "content": {
+              "application/ld+json": {
+                "schema": {
+                  "$ref": "http://data.vlaanderen.be/swagger/components/schemas/BurgerlijkeStaat.json"
+                }
+              }
+            },
+            "links": {
+              "$ref": "http://data.vlaanderen.be/swagger/components/links/BurgerlijkeStaat.json"
+            }
+          },
+          "400": {
+            "description": "Ontbrekende informatie bij het opvragen een BurgerlijkeStaat object."
+          },
+          "404": {
+            "description": "BurgerlijkeStaat object met gegeven ID niet gevonden."
+          }
+        }
+      }
+    },
+    "/id/Afstammingstype/{id}": {
+      "get": {
+        "operationId": "AfstammingstypeGET",
+        "tags": [
+          "Externe datastandaarden"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Identificator van een Afstammingstype object.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Afstammingstype object gevonden.",
+            "content": {
+              "application/ld+json": {
+                "schema": {
+                  "$ref": "http://data.vlaanderen.be/swagger/components/schemas/Afstammingstype.json"
+                }
+              }
+            },
+            "links": {
+              "$ref": "http://data.vlaanderen.be/swagger/components/links/Afstammingstype.json"
+            }
+          },
+          "400": {
+            "description": "Ontbrekende informatie bij het opvragen een Afstammingstype object."
+          },
+          "404": {
+            "description": "Afstammingstype object met gegeven ID niet gevonden."
+          }
+        }
+      }
+    },
+    "/id/Gezinsrelatietype/{id}": {
+      "get": {
+        "operationId": "GezinsrelatietypeGET",
+        "tags": [
+          "Externe datastandaarden"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Identificator van een Gezinsrelatietype object.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Gezinsrelatietype object gevonden.",
+            "content": {
+              "application/ld+json": {
+                "schema": {
+                  "$ref": "http://data.vlaanderen.be/swagger/components/schemas/Gezinsrelatietype.json"
+                }
+              }
+            },
+            "links": {
+              "$ref": "http://data.vlaanderen.be/swagger/components/links/Gezinsrelatietype.json"
+            }
+          },
+          "400": {
+            "description": "Ontbrekende informatie bij het opvragen een Gezinsrelatietype object."
+          },
+          "404": {
+            "description": "Gezinsrelatietype object met gegeven ID niet gevonden."
+          }
+        }
+      }
+    },
+    "/id/Postadres/{id}": {
+      "get": {
+        "summary": "Postadres van de verblijfplaats van een persoon.",
+        "description": "Postadres van de verblijfplaats van een persoon.",
+        "operationId": "PostadresGET",
+        "tags": [
+          "Externe datastandaarden"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Identificator van een Postadres object.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Postadres object gevonden.",
+            "content": {
+              "application/ld+json": {
+                "schema": {
+                  "$ref": "http://data.vlaanderen.be/swagger/components/schemas/Postadres.json"
+                }
+              }
+            },
+            "links": {
+              "$ref": "http://data.vlaanderen.be/swagger/components/links/Postadres.json"
+            }
+          },
+          "400": {
+            "description": "Ontbrekende informatie bij het opvragen een Postadres object."
+          },
+          "404": {
+            "description": "Postadres object met gegeven ID niet gevonden."
+          }
+        }
+      }
+    },
+    "/id/Referentieadres/{id}": {
+      "get": {
+        "summary": "Adres van een andere persoon of rechtspersoon voor personen zonder vaste verblijfplaats.",
+        "description": "Adres van een andere persoon of rechtspersoon voor personen zonder vaste verblijfplaats.",
+        "operationId": "ReferentieadresGET",
+        "tags": [
+          "Externe datastandaarden"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Identificator van een Referentieadres object.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Referentieadres object gevonden.",
+            "content": {
+              "application/ld+json": {
+                "schema": {
+                  "$ref": "http://data.vlaanderen.be/swagger/components/schemas/Referentieadres.json"
+                }
+              }
+            },
+            "links": {
+              "$ref": "http://data.vlaanderen.be/swagger/components/links/Referentieadres.json"
+            }
+          },
+          "400": {
+            "description": "Ontbrekende informatie bij het opvragen een Referentieadres object."
+          },
+          "404": {
+            "description": "Referentieadres object met gegeven ID niet gevonden."
+          }
+        }
+      }
+    },
+    "/id/VerblijfplaatsBuitenlandDomicilie/{id}": {
+      "get": {
+        "summary": "Hoofdverblijplaats in het buitenland.",
+        "description": "Hoofdverblijplaats in het buitenland.",
+        "operationId": "VerblijfplaatsBuitenlandDomicilieGET",
+        "tags": [
+          "Externe datastandaarden"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Identificator van een VerblijfplaatsBuitenlandDomicilie object.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "VerblijfplaatsBuitenlandDomicilie object gevonden.",
+            "content": {
+              "application/ld+json": {
+                "schema": {
+                  "$ref": "http://data.vlaanderen.be/swagger/components/schemas/VerblijfplaatsBuitenlandDomicilie.json"
+                }
+              }
+            },
+            "links": {
+              "$ref": "http://data.vlaanderen.be/swagger/components/links/VerblijfplaatsBuitenlandDomicilie.json"
+            }
+          },
+          "400": {
+            "description": "Ontbrekende informatie bij het opvragen een VerblijfplaatsBuitenlandDomicilie object."
+          },
+          "404": {
+            "description": "VerblijfplaatsBuitenlandDomicilie object met gegeven ID niet gevonden."
+          }
+        }
+      }
+    },
+    "/id/VerblijfplaatsBuitenland/{id}": {
+      "get": {
+        "summary": "Verblijplaats in het buitenland.",
+        "description": "Verblijplaats in het buitenland.",
+        "operationId": "VerblijfplaatsBuitenlandGET",
+        "tags": [
+          "Externe datastandaarden"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Identificator van een VerblijfplaatsBuitenland object.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "VerblijfplaatsBuitenland object gevonden.",
+            "content": {
+              "application/ld+json": {
+                "schema": {
+                  "$ref": "http://data.vlaanderen.be/swagger/components/schemas/VerblijfplaatsBuitenland.json"
+                }
+              }
+            },
+            "links": {
+              "$ref": "http://data.vlaanderen.be/swagger/components/links/VerblijfplaatsBuitenland.json"
+            }
+          },
+          "400": {
+            "description": "Ontbrekende informatie bij het opvragen een VerblijfplaatsBuitenland object."
+          },
+          "404": {
+            "description": "VerblijfplaatsBuitenland object met gegeven ID niet gevonden."
+          }
+        }
+      }
+    },
+    "/id/WettelijkVerblijf/{id}": {
+      "get": {
+        "summary": "Juridisch vastgelegde verblijplaats.",
+        "description": "Juridisch vastgelegde verblijplaats.",
+        "operationId": "WettelijkVerblijfGET",
+        "tags": [
+          "Externe datastandaarden"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Identificator van een WettelijkVerblijf object.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "WettelijkVerblijf object gevonden.",
+            "content": {
+              "application/ld+json": {
+                "schema": {
+                  "$ref": "http://data.vlaanderen.be/swagger/components/schemas/WettelijkVerblijf.json"
+                }
+              }
+            },
+            "links": {
+              "$ref": "http://data.vlaanderen.be/swagger/components/links/WettelijkVerblijf.json"
+            }
+          },
+          "400": {
+            "description": "Ontbrekende informatie bij het opvragen een WettelijkVerblijf object."
+          },
+          "404": {
+            "description": "WettelijkVerblijf object met gegeven ID niet gevonden."
+          }
+        }
+      }
+    },
+    "/id/AdministratiefBeheerder/{id}": {
+      "get": {
+        "summary": "Organisatie die het dossier van de persoon in het register beheert.",
+        "description": "Organisatie die het dossier van de persoon in het register beheert.",
+        "operationId": "AdministratiefBeheerderGET",
+        "tags": [
+          "Externe datastandaarden"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Identificator van een AdministratiefBeheerder object.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "AdministratiefBeheerder object gevonden.",
+            "content": {
+              "application/ld+json": {
+                "schema": {
+                  "$ref": "http://data.vlaanderen.be/swagger/components/schemas/AdministratiefBeheerder.json"
+                }
+              }
+            },
+            "links": {
+              "$ref": "http://data.vlaanderen.be/swagger/components/links/AdministratiefBeheerder.json"
+            }
+          },
+          "400": {
+            "description": "Ontbrekende informatie bij het opvragen een AdministratiefBeheerder object."
+          },
+          "404": {
+            "description": "AdministratiefBeheerder object met gegeven ID niet gevonden."
+          }
+        }
+      }
+    }
+  }
+}

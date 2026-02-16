@@ -1,0 +1,82 @@
+{
+  "title": "Voogdij",
+  "type": "object",
+  "description": "Situatie waarbij een Persoon die optreedt als voogd van een ander Persoon en in die hoedanigheid instaat voor deze Persoon en zijn goederen.",
+  "properties": {
+    "@context": {
+      "type": "string",
+      "format": "uri",
+      "enum": [
+        "http://example.org/context.jsonld"
+      ]
+    },
+    "@id": {
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "type": "array",
+      "description": "Lijst van object types (klasse)",
+      "items": {
+        "type": "string",
+        "description": "Voogdij type"
+      },
+      "minItems": 1
+    },
+    "Voogdij.vanPersoon": {
+      "type": "object",
+      "description": "Persoon die een persoonsrelatie heeft.",
+      "properties": {
+        "@id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "uri"
+            },
+            {
+              "type": "string",
+              "format": "blanknode"
+            },
+            {
+              "$ref": "http://data.vlaanderen.be/swagger/components/schemas/http://www.w3.org/ns/person#Person.json"
+            }
+          ]
+        }
+      },
+      "required": [
+        "@id"
+      ]
+    },
+    "Voogdij.metPersoon": {
+      "type": "object",
+      "description": "De persoon waarmee de persoon een relatie heeft.",
+      "properties": {
+        "@id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "uri"
+            },
+            {
+              "type": "string",
+              "format": "blanknode"
+            },
+            {
+              "$ref": "http://data.vlaanderen.be/swagger/components/schemas/http://www.w3.org/ns/person#Person.json"
+            }
+          ]
+        }
+      },
+      "required": [
+        "@id"
+      ]
+    }
+  },
+  "required": [
+    "@context",
+    "@id",
+    "@type",
+    "Voogdij.vanPersoon",
+    "Voogdij.metPersoon"
+  ]
+}

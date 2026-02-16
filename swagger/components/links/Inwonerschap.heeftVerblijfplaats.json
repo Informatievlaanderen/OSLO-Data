@@ -1,0 +1,8 @@
+{
+  "title": "Inwonerschap.heeftVerblijfplaats",
+  "operationId": "Inwonerschap.heeftVerblijfplaatsGET",
+  "parameters": {
+    "id": "$response.body#/Inwonerschap.heeftVerblijfplaats/@id"
+  },
+  "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Verblijfplaats` op te halen."
+}

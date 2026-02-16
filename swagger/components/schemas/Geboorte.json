@@ -1,0 +1,78 @@
+{
+  "title": "Geboorte",
+  "type": "object",
+  "description": "Het ter wereld komen van een Persoon.",
+  "properties": {
+    "@context": {
+      "type": "string",
+      "format": "uri",
+      "enum": [
+        "http://example.org/context.jsonld"
+      ]
+    },
+    "@id": {
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "type": "array",
+      "description": "Lijst van object types (klasse)",
+      "items": {
+        "type": "string",
+        "description": "Geboorte type"
+      },
+      "minItems": 1
+    },
+    "Geboorte.datum": {
+      "type": "object",
+      "description": "Datum waarop de gebeurtenis plaatsvond.",
+      "properties": {
+        "@value": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "@type": {
+          "type": "string",
+          "enum": [
+            "DateTime"
+          ]
+        }
+      },
+      "required": [
+        "@value",
+        "@type"
+      ]
+    },
+    "Geboorte.plaats": {
+      "type": "object",
+      "description": "Plaats waar de gebeurtenis plaatsvond. Doorgaans een land of stad.",
+      "properties": {
+        "@id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "uri"
+            },
+            {
+              "type": "string",
+              "format": "blanknode"
+            },
+            {
+              "$ref": "http://data.vlaanderen.be/swagger/components/schemas/http://purl.org/dc/terms/Location.json"
+            }
+          ]
+        }
+      },
+      "required": [
+        "@id"
+      ]
+    }
+  },
+  "required": [
+    "@context",
+    "@id",
+    "@type",
+    "Geboorte.datum",
+    "Geboorte.plaats"
+  ]
+}
