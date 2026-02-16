@@ -60,7 +60,7 @@
                 "format": "blanknode"
               },
               {
-                "$ref": "http://data.vlaanderen.be/swagger/components/schemas/https://schema.org/ContactPoint.json"
+                "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Contactinfo.json"
               }
             ]
           }

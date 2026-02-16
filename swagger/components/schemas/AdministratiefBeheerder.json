@@ -38,7 +38,7 @@
               "format": "blanknode"
             },
             {
-              "$ref": "http://data.vlaanderen.be/swagger/components/schemas/http://www.w3.org/2004/02/skos/core#Concept.json"
+              "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/AdministratiefBeheerdertype.json"
             }
           ]
         }

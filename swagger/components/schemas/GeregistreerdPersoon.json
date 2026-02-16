@@ -38,7 +38,7 @@
               "format": "blanknode"
             },
             {
-              "$ref": "http://data.vlaanderen.be/swagger/components/schemas/http://www.w3.org/ns/adms#Identifier.json"
+              "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Identificator.json"
             }
           ]
         }
@@ -62,7 +62,7 @@
               "format": "blanknode"
             },
             {
-              "$ref": "http://data.vlaanderen.be/swagger/components/schemas/https://test.data.vlaanderen.be/ns/magda/persoon#AdministratiefBeheerder.json"
+              "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/AdministratiefBeheerder.json"
             }
           ]
         }
@@ -86,7 +86,7 @@
               "format": "blanknode"
             },
             {
-              "$ref": "http://data.vlaanderen.be/swagger/components/schemas/https://test.data.vlaanderen.be/ns/magda/persoon#Registratie.json"
+              "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Registratie.json"
             }
           ]
         }
@@ -139,7 +139,7 @@
               "format": "blanknode"
             },
             {
-              "$ref": "http://data.vlaanderen.be/swagger/components/schemas/https://schema.org/ContactPoint.json"
+              "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Contactinfo.json"
             }
           ]
         }
@@ -163,7 +163,7 @@
               "format": "blanknode"
             },
             {
-              "$ref": "http://data.vlaanderen.be/swagger/components/schemas/http://www.w3.org/2004/02/skos/core#Concept.json"
+              "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Geslacht.json"
             }
           ]
         }
@@ -187,7 +187,7 @@
               "format": "blanknode"
             },
             {
-              "$ref": "http://data.vlaanderen.be/swagger/components/schemas/https://data.vlaanderen.be/ns/persoon#Gezin.json"
+              "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Gezin.json"
             }
           ]
         }
@@ -211,7 +211,7 @@
               "format": "blanknode"
             },
             {
-              "$ref": "http://data.vlaanderen.be/swagger/components/schemas/https://data.vlaanderen.be/ns/persoon#BurgerlijkeStaat.json"
+              "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/BurgerlijkeStaat.json"
             }
           ]
         }
@@ -235,7 +235,7 @@
               "format": "blanknode"
             },
             {
-              "$ref": "http://data.vlaanderen.be/swagger/components/schemas/http://purl.org/vocab/bio/0.1/Birth.json"
+              "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Geboorte.json"
             }
           ]
         }
@@ -259,7 +259,7 @@
               "format": "blanknode"
             },
             {
-              "$ref": "http://data.vlaanderen.be/swagger/components/schemas/http://purl.org/vocab/bio/0.1/Death.json"
+              "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Overlijden.json"
             }
           ]
         }
@@ -286,7 +286,7 @@
                 "format": "blanknode"
               },
               {
-                "$ref": "http://data.vlaanderen.be/swagger/components/schemas/http://purl.org/dc/terms/Jurisdiction.json"
+                "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Jurisdictie.json"
               }
             ]
           }
@@ -315,7 +315,7 @@
                 "format": "blanknode"
               },
               {
-                "$ref": "http://data.vlaanderen.be/swagger/components/schemas/https://data.vlaanderen.be/ns/persoon#Inwonerschap.json"
+                "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Inwonerschap.json"
               }
             ]
           }
@@ -344,7 +344,7 @@
                 "format": "blanknode"
               },
               {
-                "$ref": "http://data.vlaanderen.be/swagger/components/schemas/http://www.w3.org/ns/person#Person.json"
+                "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Persoon.json"
               }
             ]
           }
@@ -373,7 +373,7 @@
                 "format": "blanknode"
               },
               {
-                "$ref": "http://data.vlaanderen.be/swagger/components/schemas/https://data.vlaanderen.be/ns/persoon#Persoonsrelatie.json"
+                "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Persoonsrelatie.json"
               }
             ]
           }
@@ -402,7 +402,7 @@
                 "format": "blanknode"
               },
               {
-                "$ref": "http://data.vlaanderen.be/swagger/components/schemas/https://data.vlaanderen.be/ns/persoon#Gezin.json"
+                "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Gezin.json"
               }
             ]
           }

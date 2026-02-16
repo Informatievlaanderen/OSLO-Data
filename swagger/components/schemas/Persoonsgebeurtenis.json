@@ -58,7 +58,7 @@
               "format": "blanknode"
             },
             {
-              "$ref": "http://data.vlaanderen.be/swagger/components/schemas/http://purl.org/dc/terms/Location.json"
+              "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Plaats.json"
             }
           ]
         }

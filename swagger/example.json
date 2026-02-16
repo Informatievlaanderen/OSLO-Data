@@ -6,7 +6,7 @@
   },
   "servers": [
     {
-      "url": "http://data.vlaanderen.be/",
+      "url": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/",
       "description": "Basis URL"
     }
   ],
@@ -36,12 +36,9 @@
             "content": {
               "application/ld+json": {
                 "schema": {
-                  "$ref": "http://data.vlaanderen.be/swagger/components/schemas/Persoon.json"
+                  "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Persoon.json"
                 }
               }
-            },
-            "links": {
-              "$ref": "http://data.vlaanderen.be/swagger/components/links/Persoon.json"
             }
           },
           "400": {
@@ -78,12 +75,9 @@
             "content": {
               "application/ld+json": {
                 "schema": {
-                  "$ref": "http://data.vlaanderen.be/swagger/components/schemas/Plaats.json"
+                  "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Plaats.json"
                 }
               }
-            },
-            "links": {
-              "$ref": "http://data.vlaanderen.be/swagger/components/links/Plaats.json"
             }
           },
           "400": {
@@ -120,12 +114,9 @@
             "content": {
               "application/ld+json": {
                 "schema": {
-                  "$ref": "http://data.vlaanderen.be/swagger/components/schemas/Gezinsrelatie.json"
+                  "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Gezinsrelatie.json"
                 }
               }
-            },
-            "links": {
-              "$ref": "http://data.vlaanderen.be/swagger/components/links/Gezinsrelatie.json"
             }
           },
           "400": {
@@ -162,12 +153,9 @@
             "content": {
               "application/ld+json": {
                 "schema": {
-                  "$ref": "http://data.vlaanderen.be/swagger/components/schemas/Persoonsrelatie.json"
+                  "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Persoonsrelatie.json"
                 }
               }
-            },
-            "links": {
-              "$ref": "http://data.vlaanderen.be/swagger/components/links/Persoonsrelatie.json"
             }
           },
           "400": {
@@ -204,12 +192,9 @@
             "content": {
               "application/ld+json": {
                 "schema": {
-                  "$ref": "http://data.vlaanderen.be/swagger/components/schemas/Overlijden.json"
+                  "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Overlijden.json"
                 }
               }
-            },
-            "links": {
-              "$ref": "http://data.vlaanderen.be/swagger/components/links/Overlijden.json"
             }
           },
           "400": {
@@ -246,12 +231,9 @@
             "content": {
               "application/ld+json": {
                 "schema": {
-                  "$ref": "http://data.vlaanderen.be/swagger/components/schemas/Persoonsgebeurtenis.json"
+                  "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Persoonsgebeurtenis.json"
                 }
               }
-            },
-            "links": {
-              "$ref": "http://data.vlaanderen.be/swagger/components/links/Persoonsgebeurtenis.json"
             }
           },
           "400": {
@@ -288,12 +270,9 @@
             "content": {
               "application/ld+json": {
                 "schema": {
-                  "$ref": "http://data.vlaanderen.be/swagger/components/schemas/Geboorte.json"
+                  "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Geboorte.json"
                 }
               }
-            },
-            "links": {
-              "$ref": "http://data.vlaanderen.be/swagger/components/links/Geboorte.json"
             }
           },
           "400": {
@@ -330,12 +309,9 @@
             "content": {
               "application/ld+json": {
                 "schema": {
-                  "$ref": "http://data.vlaanderen.be/swagger/components/schemas/Huwelijk.json"
+                  "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Huwelijk.json"
                 }
               }
-            },
-            "links": {
-              "$ref": "http://data.vlaanderen.be/swagger/components/links/Huwelijk.json"
             }
           },
           "400": {
@@ -370,12 +346,9 @@
             "content": {
               "application/ld+json": {
                 "schema": {
-                  "$ref": "http://data.vlaanderen.be/swagger/components/schemas/Brontype.json"
+                  "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Brontype.json"
                 }
               }
-            },
-            "links": {
-              "$ref": "http://data.vlaanderen.be/swagger/components/links/Brontype.json"
             }
           },
           "400": {
@@ -412,12 +385,9 @@
             "content": {
               "application/ld+json": {
                 "schema": {
-                  "$ref": "http://data.vlaanderen.be/swagger/components/schemas/Registratie.json"
+                  "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Registratie.json"
                 }
               }
-            },
-            "links": {
-              "$ref": "http://data.vlaanderen.be/swagger/components/links/Registratie.json"
             }
           },
           "400": {
@@ -454,12 +424,9 @@
             "content": {
               "application/ld+json": {
                 "schema": {
-                  "$ref": "http://data.vlaanderen.be/swagger/components/schemas/Versie.json"
+                  "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Versie.json"
                 }
               }
-            },
-            "links": {
-              "$ref": "http://data.vlaanderen.be/swagger/components/links/Versie.json"
             }
           },
           "400": {
@@ -494,12 +461,9 @@
             "content": {
               "application/ld+json": {
                 "schema": {
-                  "$ref": "http://data.vlaanderen.be/swagger/components/schemas/Geslacht.json"
+                  "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Geslacht.json"
                 }
               }
-            },
-            "links": {
-              "$ref": "http://data.vlaanderen.be/swagger/components/links/Geslacht.json"
             }
           },
           "400": {
@@ -536,12 +500,9 @@
             "content": {
               "application/ld+json": {
                 "schema": {
-                  "$ref": "http://data.vlaanderen.be/swagger/components/schemas/Inwonerschap.json"
+                  "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Inwonerschap.json"
                 }
               }
-            },
-            "links": {
-              "$ref": "http://data.vlaanderen.be/swagger/components/links/Inwonerschap.json"
             }
           },
           "400": {
@@ -578,12 +539,9 @@
             "content": {
               "application/ld+json": {
                 "schema": {
-                  "$ref": "http://data.vlaanderen.be/swagger/components/schemas/GeregistreerdeOrganisatie.json"
+                  "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/GeregistreerdeOrganisatie.json"
                 }
               }
-            },
-            "links": {
-              "$ref": "http://data.vlaanderen.be/swagger/components/links/GeregistreerdeOrganisatie.json"
             }
           },
           "400": {
@@ -620,12 +578,9 @@
             "content": {
               "application/ld+json": {
                 "schema": {
-                  "$ref": "http://data.vlaanderen.be/swagger/components/schemas/Organisatie.json"
+                  "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Organisatie.json"
                 }
               }
-            },
-            "links": {
-              "$ref": "http://data.vlaanderen.be/swagger/components/links/Organisatie.json"
             }
           },
           "400": {
@@ -660,12 +615,9 @@
             "content": {
               "application/ld+json": {
                 "schema": {
-                  "$ref": "http://data.vlaanderen.be/swagger/components/schemas/BurgerlijkeStaatType.json"
+                  "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/BurgerlijkeStaatType.json"
                 }
               }
-            },
-            "links": {
-              "$ref": "http://data.vlaanderen.be/swagger/components/links/BurgerlijkeStaatType.json"
             }
           },
           "400": {
@@ -702,12 +654,9 @@
             "content": {
               "application/ld+json": {
                 "schema": {
-                  "$ref": "http://data.vlaanderen.be/swagger/components/schemas/Samenwonen.json"
+                  "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Samenwonen.json"
                 }
               }
-            },
-            "links": {
-              "$ref": "http://data.vlaanderen.be/swagger/components/links/Samenwonen.json"
             }
           },
           "400": {
@@ -744,12 +693,9 @@
             "content": {
               "application/ld+json": {
                 "schema": {
-                  "$ref": "http://data.vlaanderen.be/swagger/components/schemas/GeregistreerdPersoon.json"
+                  "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/GeregistreerdPersoon.json"
                 }
               }
-            },
-            "links": {
-              "$ref": "http://data.vlaanderen.be/swagger/components/links/GeregistreerdPersoon.json"
             }
           },
           "400": {
@@ -786,12 +732,9 @@
             "content": {
               "application/ld+json": {
                 "schema": {
-                  "$ref": "http://data.vlaanderen.be/swagger/components/schemas/Domicilie.json"
+                  "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Domicilie.json"
                 }
               }
-            },
-            "links": {
-              "$ref": "http://data.vlaanderen.be/swagger/components/links/Domicilie.json"
             }
           },
           "400": {
@@ -828,12 +771,9 @@
             "content": {
               "application/ld+json": {
                 "schema": {
-                  "$ref": "http://data.vlaanderen.be/swagger/components/schemas/Verblijfplaats.json"
+                  "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Verblijfplaats.json"
                 }
               }
-            },
-            "links": {
-              "$ref": "http://data.vlaanderen.be/swagger/components/links/Verblijfplaats.json"
             }
           },
           "400": {
@@ -870,12 +810,9 @@
             "content": {
               "application/ld+json": {
                 "schema": {
-                  "$ref": "http://data.vlaanderen.be/swagger/components/schemas/Afstamming.json"
+                  "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Afstamming.json"
                 }
               }
-            },
-            "links": {
-              "$ref": "http://data.vlaanderen.be/swagger/components/links/Afstamming.json"
             }
           },
           "400": {
@@ -912,12 +849,9 @@
             "content": {
               "application/ld+json": {
                 "schema": {
-                  "$ref": "http://data.vlaanderen.be/swagger/components/schemas/AangegevenAdres.json"
+                  "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/AangegevenAdres.json"
                 }
               }
-            },
-            "links": {
-              "$ref": "http://data.vlaanderen.be/swagger/components/links/AangegevenAdres.json"
             }
           },
           "400": {
@@ -954,12 +888,9 @@
             "content": {
               "application/ld+json": {
                 "schema": {
-                  "$ref": "http://data.vlaanderen.be/swagger/components/schemas/Afwezig.json"
+                  "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Afwezig.json"
                 }
               }
-            },
-            "links": {
-              "$ref": "http://data.vlaanderen.be/swagger/components/links/Afwezig.json"
             }
           },
           "400": {
@@ -994,12 +925,9 @@
             "content": {
               "application/ld+json": {
                 "schema": {
-                  "$ref": "http://data.vlaanderen.be/swagger/components/schemas/AdministratiefBeheerdertype.json"
+                  "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/AdministratiefBeheerdertype.json"
                 }
               }
-            },
-            "links": {
-              "$ref": "http://data.vlaanderen.be/swagger/components/links/AdministratiefBeheerdertype.json"
             }
           },
           "400": {
@@ -1034,12 +962,9 @@
             "content": {
               "application/ld+json": {
                 "schema": {
-                  "$ref": "http://data.vlaanderen.be/swagger/components/schemas/Dossierstatustype.json"
+                  "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Dossierstatustype.json"
                 }
               }
-            },
-            "links": {
-              "$ref": "http://data.vlaanderen.be/swagger/components/links/Dossierstatustype.json"
             }
           },
           "400": {
@@ -1076,12 +1001,9 @@
             "content": {
               "application/ld+json": {
                 "schema": {
-                  "$ref": "http://data.vlaanderen.be/swagger/components/schemas/BelgischAdres.json"
+                  "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/BelgischAdres.json"
                 }
               }
-            },
-            "links": {
-              "$ref": "http://data.vlaanderen.be/swagger/components/links/BelgischAdres.json"
             }
           },
           "400": {
@@ -1118,12 +1040,9 @@
             "content": {
               "application/ld+json": {
                 "schema": {
-                  "$ref": "http://data.vlaanderen.be/swagger/components/schemas/Voogdij.json"
+                  "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Voogdij.json"
                 }
               }
-            },
-            "links": {
-              "$ref": "http://data.vlaanderen.be/swagger/components/links/Voogdij.json"
             }
           },
           "400": {
@@ -1160,12 +1079,9 @@
             "content": {
               "application/ld+json": {
                 "schema": {
-                  "$ref": "http://data.vlaanderen.be/swagger/components/schemas/Jurisdictie.json"
+                  "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Jurisdictie.json"
                 }
               }
-            },
-            "links": {
-              "$ref": "http://data.vlaanderen.be/swagger/components/links/Jurisdictie.json"
             }
           },
           "400": {
@@ -1202,12 +1118,9 @@
             "content": {
               "application/ld+json": {
                 "schema": {
-                  "$ref": "http://data.vlaanderen.be/swagger/components/schemas/Taal.json"
+                  "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Taal.json"
                 }
               }
-            },
-            "links": {
-              "$ref": "http://data.vlaanderen.be/swagger/components/links/Taal.json"
             }
           },
           "400": {
@@ -1244,12 +1157,9 @@
             "content": {
               "application/ld+json": {
                 "schema": {
-                  "$ref": "http://data.vlaanderen.be/swagger/components/schemas/Gezin.json"
+                  "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Gezin.json"
                 }
               }
-            },
-            "links": {
-              "$ref": "http://data.vlaanderen.be/swagger/components/links/Gezin.json"
             }
           },
           "400": {
@@ -1286,12 +1196,9 @@
             "content": {
               "application/ld+json": {
                 "schema": {
-                  "$ref": "http://data.vlaanderen.be/swagger/components/schemas/BurgerlijkeStaat.json"
+                  "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/BurgerlijkeStaat.json"
                 }
               }
-            },
-            "links": {
-              "$ref": "http://data.vlaanderen.be/swagger/components/links/BurgerlijkeStaat.json"
             }
           },
           "400": {
@@ -1326,12 +1233,9 @@
             "content": {
               "application/ld+json": {
                 "schema": {
-                  "$ref": "http://data.vlaanderen.be/swagger/components/schemas/Afstammingstype.json"
+                  "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Afstammingstype.json"
                 }
               }
-            },
-            "links": {
-              "$ref": "http://data.vlaanderen.be/swagger/components/links/Afstammingstype.json"
             }
           },
           "400": {
@@ -1366,12 +1270,9 @@
             "content": {
               "application/ld+json": {
                 "schema": {
-                  "$ref": "http://data.vlaanderen.be/swagger/components/schemas/Gezinsrelatietype.json"
+                  "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Gezinsrelatietype.json"
                 }
               }
-            },
-            "links": {
-              "$ref": "http://data.vlaanderen.be/swagger/components/links/Gezinsrelatietype.json"
             }
           },
           "400": {
@@ -1408,12 +1309,9 @@
             "content": {
               "application/ld+json": {
                 "schema": {
-                  "$ref": "http://data.vlaanderen.be/swagger/components/schemas/Postadres.json"
+                  "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Postadres.json"
                 }
               }
-            },
-            "links": {
-              "$ref": "http://data.vlaanderen.be/swagger/components/links/Postadres.json"
             }
           },
           "400": {
@@ -1450,12 +1348,9 @@
             "content": {
               "application/ld+json": {
                 "schema": {
-                  "$ref": "http://data.vlaanderen.be/swagger/components/schemas/Referentieadres.json"
+                  "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Referentieadres.json"
                 }
               }
-            },
-            "links": {
-              "$ref": "http://data.vlaanderen.be/swagger/components/links/Referentieadres.json"
             }
           },
           "400": {
@@ -1492,12 +1387,9 @@
             "content": {
               "application/ld+json": {
                 "schema": {
-                  "$ref": "http://data.vlaanderen.be/swagger/components/schemas/VerblijfplaatsBuitenlandDomicilie.json"
+                  "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/VerblijfplaatsBuitenlandDomicilie.json"
                 }
               }
-            },
-            "links": {
-              "$ref": "http://data.vlaanderen.be/swagger/components/links/VerblijfplaatsBuitenlandDomicilie.json"
             }
           },
           "400": {
@@ -1534,12 +1426,9 @@
             "content": {
               "application/ld+json": {
                 "schema": {
-                  "$ref": "http://data.vlaanderen.be/swagger/components/schemas/VerblijfplaatsBuitenland.json"
+                  "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/VerblijfplaatsBuitenland.json"
                 }
               }
-            },
-            "links": {
-              "$ref": "http://data.vlaanderen.be/swagger/components/links/VerblijfplaatsBuitenland.json"
             }
           },
           "400": {
@@ -1576,12 +1465,9 @@
             "content": {
               "application/ld+json": {
                 "schema": {
-                  "$ref": "http://data.vlaanderen.be/swagger/components/schemas/WettelijkVerblijf.json"
+                  "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/WettelijkVerblijf.json"
                 }
               }
-            },
-            "links": {
-              "$ref": "http://data.vlaanderen.be/swagger/components/links/WettelijkVerblijf.json"
             }
           },
           "400": {
@@ -1618,12 +1504,9 @@
             "content": {
               "application/ld+json": {
                 "schema": {
-                  "$ref": "http://data.vlaanderen.be/swagger/components/schemas/AdministratiefBeheerder.json"
+                  "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/AdministratiefBeheerder.json"
                 }
               }
-            },
-            "links": {
-              "$ref": "http://data.vlaanderen.be/swagger/components/links/AdministratiefBeheerder.json"
             }
           },
           "400": {

@@ -41,7 +41,7 @@
                 "format": "blanknode"
               },
               {
-                "$ref": "http://data.vlaanderen.be/swagger/components/schemas/http://www.w3.org/2004/02/skos/core#Concept.json"
+                "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Dossierstatustype.json"
               }
             ]
           }
@@ -67,7 +67,7 @@
               "format": "blanknode"
             },
             {
-              "$ref": "http://data.vlaanderen.be/swagger/components/schemas/https://data.vlaanderen.be/ns/persoon#GeregistreerdPersoon.json"
+              "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/GeregistreerdPersoon.json"
             }
           ]
         }
@@ -91,7 +91,7 @@
               "format": "blanknode"
             },
             {
-              "$ref": "http://data.vlaanderen.be/swagger/components/schemas/https://test.data.vlaanderen.be/ns/magda/persoon#Registratie.json"
+              "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Registratie.json"
             }
           ]
         }
@@ -115,7 +115,7 @@
               "format": "blanknode"
             },
             {
-              "$ref": "http://data.vlaanderen.be/swagger/components/schemas/https://test.data.vlaanderen.be/ns/magda/persoon#Registratie.json"
+              "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Registratie.json"
             }
           ]
         }
