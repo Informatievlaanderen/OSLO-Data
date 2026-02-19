@@ -36,6 +36,9 @@
             {
               "type": "string",
               "format": "blanknode"
+            },
+            {
+              "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Identificator.json"
             }
           ]
         }
@@ -57,6 +60,9 @@
             {
               "type": "string",
               "format": "blanknode"
+            },
+            {
+              "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/AdministratiefBeheerder.json"
             }
           ]
         }
@@ -78,6 +84,9 @@
             {
               "type": "string",
               "format": "blanknode"
+            },
+            {
+              "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Registratie.json"
             }
           ]
         }
@@ -128,6 +137,9 @@
             {
               "type": "string",
               "format": "blanknode"
+            },
+            {
+              "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Contactinfo.json"
             }
           ]
         }
@@ -149,6 +161,9 @@
             {
               "type": "string",
               "format": "blanknode"
+            },
+            {
+              "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Geslacht.json"
             }
           ]
         }
@@ -170,6 +185,9 @@
             {
               "type": "string",
               "format": "blanknode"
+            },
+            {
+              "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Gezin.json"
             }
           ]
         }
@@ -191,6 +209,9 @@
             {
               "type": "string",
               "format": "blanknode"
+            },
+            {
+              "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/BurgerlijkeStaat.json"
             }
           ]
         }
@@ -212,6 +233,9 @@
             {
               "type": "string",
               "format": "blanknode"
+            },
+            {
+              "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Geboorte.json"
             }
           ]
         }
@@ -233,6 +257,9 @@
             {
               "type": "string",
               "format": "blanknode"
+            },
+            {
+              "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Overlijden.json"
             }
           ]
         }
@@ -257,6 +284,9 @@
               {
                 "type": "string",
                 "format": "blanknode"
+              },
+              {
+                "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Jurisdictie.json"
               }
             ]
           }
@@ -283,6 +313,9 @@
               {
                 "type": "string",
                 "format": "blanknode"
+              },
+              {
+                "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Inwonerschap.json"
               }
             ]
           }
@@ -309,6 +342,9 @@
               {
                 "type": "string",
                 "format": "blanknode"
+              },
+              {
+                "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Persoon.json"
               }
             ]
           }
@@ -335,6 +371,9 @@
               {
                 "type": "string",
                 "format": "blanknode"
+              },
+              {
+                "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Persoonsrelatie.json"
               }
             ]
           }
@@ -361,6 +400,9 @@
               {
                 "type": "string",
                 "format": "blanknode"
+              },
+              {
+                "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Gezin.json"
               }
             ]
           }

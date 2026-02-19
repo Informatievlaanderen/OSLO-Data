@@ -1,0 +1,102 @@
+{
+  "title": "Gezin",
+  "type": "object",
+  "description": "Samenwerkingsvorm die een herkenbare sociale eenheid vormt (bijvoorbeeld ten gevolge van een huwelijk), met al dan niet verwante personen die duurzame banden hebben en elkaar onderling steun en verzorging verlenen.",
+  "properties": {
+    "@context": {
+      "type": "string",
+      "format": "uri",
+      "enum": [
+        "http://example.org/context.jsonld"
+      ]
+    },
+    "@id": {
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "type": "array",
+      "description": "Lijst van object types (klasse)",
+      "items": {
+        "type": "string",
+        "description": "Gezin type"
+      },
+      "minItems": 1
+    },
+    "Gezin.gezinsadres": {
+      "type": "object",
+      "description": "Verblijfplaats van het Gezin. Vaak een criterium om te bepalen of personen deel uitmaken van eenzelfde Gezin.",
+      "properties": {
+        "@id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "uri"
+            },
+            {
+              "type": "string",
+              "format": "blanknode"
+            }
+          ]
+        }
+      },
+      "required": [
+        "@id"
+      ]
+    },
+    "Gezin.gezinshoofd": {
+      "type": "object",
+      "description": "De standaard vertegenwoordiger van het Gezin.",
+      "properties": {
+        "@id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "uri"
+            },
+            {
+              "type": "string",
+              "format": "blanknode"
+            }
+          ]
+        }
+      },
+      "required": [
+        "@id"
+      ]
+    },
+    "Gezin.gezinslid": {
+      "type": "array",
+      "description": "Lijst van Persoon items.",
+      "items": {
+        "type": "object",
+        "description": "Personen waaruit het Gezin bestaat.",
+        "properties": {
+          "@id": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "type": "string",
+                "format": "blanknode"
+              }
+            ]
+          }
+        },
+        "required": [
+          "@id"
+        ]
+      },
+      "minItems": 1
+    }
+  },
+  "required": [
+    "@context",
+    "@id",
+    "@type",
+    "Gezin.gezinshoofd",
+    "Gezin.gezinslid"
+  ]
+}

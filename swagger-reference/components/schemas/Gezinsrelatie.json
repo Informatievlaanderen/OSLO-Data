@@ -1,0 +1,98 @@
+{
+  "title": "Gezinsrelatie",
+  "type": "object",
+  "description": "Relatie tussen leden van eenzelfde gezin.",
+  "properties": {
+    "@context": {
+      "type": "string",
+      "format": "uri",
+      "enum": [
+        "http://example.org/context.jsonld"
+      ]
+    },
+    "@id": {
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "type": "array",
+      "description": "Lijst van object types (klasse)",
+      "items": {
+        "type": "string",
+        "description": "Gezinsrelatie type"
+      },
+      "minItems": 1
+    },
+    "Gezinsrelatie.gezinsrelatietype": {
+      "type": "object",
+      "description": "Aard van de relatie. Wordt typisch bepaald ten opzichte van het gezinshoofd. Bijvoorbeeld als de vader gezinshoofd en een gezinslid is zoon, dan zou als de grootvader gezinshoofd zou zijn datzelfde gezinslid kleinzoon.",
+      "properties": {
+        "@id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "uri"
+            },
+            {
+              "type": "string",
+              "format": "blanknode"
+            }
+          ]
+        }
+      },
+      "required": [
+        "@id"
+      ]
+    },
+    "Gezinsrelatie.vanPersoon": {
+      "type": "object",
+      "description": "Persoon die een persoonsrelatie heeft.",
+      "properties": {
+        "@id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "uri"
+            },
+            {
+              "type": "string",
+              "format": "blanknode"
+            }
+          ]
+        }
+      },
+      "required": [
+        "@id"
+      ]
+    },
+    "Gezinsrelatie.metPersoon": {
+      "type": "object",
+      "description": "De persoon waarmee de persoon een relatie heeft.",
+      "properties": {
+        "@id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "uri"
+            },
+            {
+              "type": "string",
+              "format": "blanknode"
+            }
+          ]
+        }
+      },
+      "required": [
+        "@id"
+      ]
+    }
+  },
+  "required": [
+    "@context",
+    "@id",
+    "@type",
+    "Gezinsrelatie.gezinsrelatietype",
+    "Gezinsrelatie.vanPersoon",
+    "Gezinsrelatie.metPersoon"
+  ]
+}

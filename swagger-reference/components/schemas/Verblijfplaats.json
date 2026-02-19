@@ -1,0 +1,54 @@
+{
+  "title": "Verblijfplaats",
+  "type": "object",
+  "description": "Plaats waar een Persoon al dan niet tijdelijk woont of logeert.",
+  "properties": {
+    "@context": {
+      "type": "string",
+      "format": "uri",
+      "enum": [
+        "http://example.org/context.jsonld"
+      ]
+    },
+    "@id": {
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "type": "array",
+      "description": "Lijst van object types (klasse)",
+      "items": {
+        "type": "string",
+        "description": "Verblijfplaats type"
+      },
+      "minItems": 1
+    },
+    "Verblijfplaats.verblijfsadres": {
+      "type": "object",
+      "description": "Adres van de Verblijfplaats.",
+      "properties": {
+        "@id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "uri"
+            },
+            {
+              "type": "string",
+              "format": "blanknode"
+            }
+          ]
+        }
+      },
+      "required": [
+        "@id"
+      ]
+    }
+  },
+  "required": [
+    "@context",
+    "@id",
+    "@type",
+    "Verblijfplaats.verblijfsadres"
+  ]
+}

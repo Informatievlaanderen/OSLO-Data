@@ -1,0 +1,54 @@
+{
+  "title": "Afwezig",
+  "type": "object",
+  "description": "Verblijfplaats van een persoon die afwezig is verklaard.",
+  "properties": {
+    "@context": {
+      "type": "string",
+      "format": "uri",
+      "enum": [
+        "http://example.org/context.jsonld"
+      ]
+    },
+    "@id": {
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "type": "array",
+      "description": "Lijst van object types (klasse)",
+      "items": {
+        "type": "string",
+        "description": "Afwezig type"
+      },
+      "minItems": 1
+    },
+    "Afwezig.verblijfsadres": {
+      "type": "object",
+      "description": "Adres van de Verblijfplaats.",
+      "properties": {
+        "@id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "uri"
+            },
+            {
+              "type": "string",
+              "format": "blanknode"
+            }
+          ]
+        }
+      },
+      "required": [
+        "@id"
+      ]
+    }
+  },
+  "required": [
+    "@context",
+    "@id",
+    "@type",
+    "Afwezig.verblijfsadres"
+  ]
+}

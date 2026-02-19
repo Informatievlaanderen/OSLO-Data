@@ -1,0 +1,2074 @@
+{
+  "openapi": "3.0.4",
+  "info": {
+    "title": "MAGDA PersoonREST",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/",
+      "description": "Basis URL"
+    }
+  ],
+  "paths": {
+    "/id/Persoon/{id}": {
+      "get": {
+        "summary": "Natuurlijk persoon.",
+        "description": "Natuurlijk persoon.",
+        "operationId": "PersoonGET",
+        "tags": [
+          "Externe datastandaarden"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Identificator van een Persoon object.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Persoon object gevonden.",
+            "content": {
+              "application/ld+json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Persoon.json"
+                }
+              }
+            },
+            "links": {
+              "Persoon.contactinfo": {
+                "operationId": "PersoonGET",
+                "parameters": {
+                  "id": "$response.body#/Persoon.contactinfo/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Contactinfo` op te halen."
+              },
+              "Persoon.geslacht": {
+                "operationId": "PersoonGET",
+                "parameters": {
+                  "id": "$response.body#/Persoon.geslacht/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Geslacht` op te halen."
+              },
+              "Persoon.isHoofdVan": {
+                "operationId": "PersoonGET",
+                "parameters": {
+                  "id": "$response.body#/Persoon.isHoofdVan/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Gezin` op te halen."
+              },
+              "Persoon.heeftBurgerlijkeStaat": {
+                "operationId": "PersoonGET",
+                "parameters": {
+                  "id": "$response.body#/Persoon.heeftBurgerlijkeStaat/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `BurgerlijkeStaat` op te halen."
+              },
+              "Persoon.heeftGeboorte": {
+                "operationId": "PersoonGET",
+                "parameters": {
+                  "id": "$response.body#/Persoon.heeftGeboorte/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Geboorte` op te halen."
+              },
+              "Persoon.heeftOverlijden": {
+                "operationId": "PersoonGET",
+                "parameters": {
+                  "id": "$response.body#/Persoon.heeftOverlijden/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Overlijden` op te halen."
+              },
+              "Persoon.inwonerschap": {
+                "operationId": "PersoonGET",
+                "parameters": {
+                  "id": "$response.body#/Persoon.inwonerschap/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Jurisdictie` op te halen."
+              },
+              "Persoon.inwonerschapdetail": {
+                "operationId": "PersoonGET",
+                "parameters": {
+                  "id": "$response.body#/Persoon.inwonerschapdetail/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Inwonerschap` op te halen."
+              },
+              "Persoon.heeftRelatieMet": {
+                "operationId": "PersoonGET",
+                "parameters": {
+                  "id": "$response.body#/Persoon.heeftRelatieMet/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Persoon` op te halen."
+              },
+              "Persoon.persoonsrelatiedetail": {
+                "operationId": "PersoonGET",
+                "parameters": {
+                  "id": "$response.body#/Persoon.persoonsrelatiedetail/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Persoonsrelatie` op te halen."
+              },
+              "Persoon.isLidVan": {
+                "operationId": "PersoonGET",
+                "parameters": {
+                  "id": "$response.body#/Persoon.isLidVan/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Gezin` op te halen."
+              }
+            }
+          },
+          "400": {
+            "description": "Ontbrekende informatie bij het opvragen een Persoon object."
+          },
+          "404": {
+            "description": "Persoon object met gegeven ID niet gevonden."
+          }
+        }
+      }
+    },
+    "/id/Plaats/{id}": {
+      "get": {
+        "summary": "Een ruimtelijk gebied of benoemde plaats.",
+        "description": "Een ruimtelijk gebied of benoemde plaats.",
+        "operationId": "PlaatsGET",
+        "tags": [
+          "Externe datastandaarden"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Identificator van een Plaats object.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Plaats object gevonden.",
+            "content": {
+              "application/ld+json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Plaats.json"
+                }
+              }
+            },
+            "links": {
+              "Plaats.geometrie": {
+                "operationId": "PlaatsGET",
+                "parameters": {
+                  "id": "$response.body#/Plaats.geometrie/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Geometrie` op te halen."
+              }
+            }
+          },
+          "400": {
+            "description": "Ontbrekende informatie bij het opvragen een Plaats object."
+          },
+          "404": {
+            "description": "Plaats object met gegeven ID niet gevonden."
+          }
+        }
+      }
+    },
+    "/id/Gezinsrelatie/{id}": {
+      "get": {
+        "summary": "Relatie tussen leden van eenzelfde gezin.",
+        "description": "Relatie tussen leden van eenzelfde gezin.",
+        "operationId": "GezinsrelatieGET",
+        "tags": [
+          "Externe datastandaarden"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Identificator van een Gezinsrelatie object.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Gezinsrelatie object gevonden.",
+            "content": {
+              "application/ld+json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Gezinsrelatie.json"
+                }
+              }
+            },
+            "links": {
+              "Gezinsrelatie.gezinsrelatietype": {
+                "operationId": "GezinsrelatieGET",
+                "parameters": {
+                  "id": "$response.body#/Gezinsrelatie.gezinsrelatietype/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Gezinsrelatietype` op te halen."
+              },
+              "Gezinsrelatie.vanPersoon": {
+                "operationId": "GezinsrelatieGET",
+                "parameters": {
+                  "id": "$response.body#/Gezinsrelatie.vanPersoon/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Persoon` op te halen."
+              },
+              "Gezinsrelatie.metPersoon": {
+                "operationId": "GezinsrelatieGET",
+                "parameters": {
+                  "id": "$response.body#/Gezinsrelatie.metPersoon/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Persoon` op te halen."
+              }
+            }
+          },
+          "400": {
+            "description": "Ontbrekende informatie bij het opvragen een Gezinsrelatie object."
+          },
+          "404": {
+            "description": "Gezinsrelatie object met gegeven ID niet gevonden."
+          }
+        }
+      }
+    },
+    "/id/Persoonsrelatie/{id}": {
+      "get": {
+        "summary": "Relatie tussen twee of meer personen.",
+        "description": "Relatie tussen twee of meer personen.",
+        "operationId": "PersoonsrelatieGET",
+        "tags": [
+          "Externe datastandaarden"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Identificator van een Persoonsrelatie object.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Persoonsrelatie object gevonden.",
+            "content": {
+              "application/ld+json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Persoonsrelatie.json"
+                }
+              }
+            },
+            "links": {
+              "Persoonsrelatie.vanPersoon": {
+                "operationId": "PersoonsrelatieGET",
+                "parameters": {
+                  "id": "$response.body#/Persoonsrelatie.vanPersoon/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Persoon` op te halen."
+              },
+              "Persoonsrelatie.metPersoon": {
+                "operationId": "PersoonsrelatieGET",
+                "parameters": {
+                  "id": "$response.body#/Persoonsrelatie.metPersoon/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Persoon` op te halen."
+              }
+            }
+          },
+          "400": {
+            "description": "Ontbrekende informatie bij het opvragen een Persoonsrelatie object."
+          },
+          "404": {
+            "description": "Persoonsrelatie object met gegeven ID niet gevonden."
+          }
+        }
+      }
+    },
+    "/id/Overlijden/{id}": {
+      "get": {
+        "summary": "Het doodgaan van een Persoon.",
+        "description": "Het doodgaan van een Persoon.",
+        "operationId": "OverlijdenGET",
+        "tags": [
+          "Externe datastandaarden"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Identificator van een Overlijden object.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Overlijden object gevonden.",
+            "content": {
+              "application/ld+json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Overlijden.json"
+                }
+              }
+            },
+            "links": {
+              "Overlijden.plaats": {
+                "operationId": "OverlijdenGET",
+                "parameters": {
+                  "id": "$response.body#/Overlijden.plaats/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Plaats` op te halen."
+              }
+            }
+          },
+          "400": {
+            "description": "Ontbrekende informatie bij het opvragen een Overlijden object."
+          },
+          "404": {
+            "description": "Overlijden object met gegeven ID niet gevonden."
+          }
+        }
+      }
+    },
+    "/id/Persoonsgebeurtenis/{id}": {
+      "get": {
+        "summary": "Belangrijke gebeurtenis ih leven ve persoon.",
+        "description": "Belangrijke gebeurtenis ih leven ve persoon.",
+        "operationId": "PersoonsgebeurtenisGET",
+        "tags": [
+          "Externe datastandaarden"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Identificator van een Persoonsgebeurtenis object.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Persoonsgebeurtenis object gevonden.",
+            "content": {
+              "application/ld+json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Persoonsgebeurtenis.json"
+                }
+              }
+            },
+            "links": {
+              "Persoonsgebeurtenis.plaats": {
+                "operationId": "PersoonsgebeurtenisGET",
+                "parameters": {
+                  "id": "$response.body#/Persoonsgebeurtenis.plaats/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Plaats` op te halen."
+              }
+            }
+          },
+          "400": {
+            "description": "Ontbrekende informatie bij het opvragen een Persoonsgebeurtenis object."
+          },
+          "404": {
+            "description": "Persoonsgebeurtenis object met gegeven ID niet gevonden."
+          }
+        }
+      }
+    },
+    "/id/Geboorte/{id}": {
+      "get": {
+        "summary": "Het ter wereld komen van een Persoon.",
+        "description": "Het ter wereld komen van een Persoon.",
+        "operationId": "GeboorteGET",
+        "tags": [
+          "Externe datastandaarden"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Identificator van een Geboorte object.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Geboorte object gevonden.",
+            "content": {
+              "application/ld+json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Geboorte.json"
+                }
+              }
+            },
+            "links": {
+              "Geboorte.plaats": {
+                "operationId": "GeboorteGET",
+                "parameters": {
+                  "id": "$response.body#/Geboorte.plaats/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Plaats` op te halen."
+              }
+            }
+          },
+          "400": {
+            "description": "Ontbrekende informatie bij het opvragen een Geboorte object."
+          },
+          "404": {
+            "description": "Geboorte object met gegeven ID niet gevonden."
+          }
+        }
+      }
+    },
+    "/id/Huwelijk/{id}": {
+      "get": {
+        "summary": "Een door burgerlijk of religieus recht geregelde samenlevingsvorm van twee personen.",
+        "description": "Een door burgerlijk of religieus recht geregelde samenlevingsvorm van twee personen.",
+        "operationId": "HuwelijkGET",
+        "tags": [
+          "Externe datastandaarden"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Identificator van een Huwelijk object.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Huwelijk object gevonden.",
+            "content": {
+              "application/ld+json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Huwelijk.json"
+                }
+              }
+            },
+            "links": {
+              "Huwelijk.vanPersoon": {
+                "operationId": "HuwelijkGET",
+                "parameters": {
+                  "id": "$response.body#/Huwelijk.vanPersoon/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Persoon` op te halen."
+              },
+              "Huwelijk.metPersoon": {
+                "operationId": "HuwelijkGET",
+                "parameters": {
+                  "id": "$response.body#/Huwelijk.metPersoon/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Persoon` op te halen."
+              }
+            }
+          },
+          "400": {
+            "description": "Ontbrekende informatie bij het opvragen een Huwelijk object."
+          },
+          "404": {
+            "description": "Huwelijk object met gegeven ID niet gevonden."
+          }
+        }
+      }
+    },
+    "/id/Brontype/{id}": {
+      "get": {
+        "operationId": "BrontypeGET",
+        "tags": [
+          "Externe datastandaarden"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Identificator van een Brontype object.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Brontype object gevonden.",
+            "content": {
+              "application/ld+json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Brontype.json"
+                }
+              }
+            },
+            "links": {}
+          },
+          "400": {
+            "description": "Ontbrekende informatie bij het opvragen een Brontype object."
+          },
+          "404": {
+            "description": "Brontype object met gegeven ID niet gevonden."
+          }
+        }
+      }
+    },
+    "/id/Registratie/{id}": {
+      "get": {
+        "summary": "Opname van de Persoon in het register.",
+        "description": "Opname van de Persoon in het register.",
+        "operationId": "RegistratieGET",
+        "tags": [
+          "Externe datastandaarden"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Identificator van een Registratie object.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Registratie object gevonden.",
+            "content": {
+              "application/ld+json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Registratie.json"
+                }
+              }
+            },
+            "links": {
+              "Registratie.dossierstatus": {
+                "operationId": "RegistratieGET",
+                "parameters": {
+                  "id": "$response.body#/Registratie.dossierstatus/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Dossierstatustype` op te halen."
+              },
+              "Registratie.geregistreerdPersoon": {
+                "operationId": "RegistratieGET",
+                "parameters": {
+                  "id": "$response.body#/Registratie.geregistreerdPersoon/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `GeregistreerdPersoon` op te halen."
+              },
+              "Registratie.vorigeRegistratie": {
+                "operationId": "RegistratieGET",
+                "parameters": {
+                  "id": "$response.body#/Registratie.vorigeRegistratie/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Registratie` op te halen."
+              },
+              "Registratie.volgendeRegistratie": {
+                "operationId": "RegistratieGET",
+                "parameters": {
+                  "id": "$response.body#/Registratie.volgendeRegistratie/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Registratie` op te halen."
+              }
+            }
+          },
+          "400": {
+            "description": "Ontbrekende informatie bij het opvragen een Registratie object."
+          },
+          "404": {
+            "description": "Registratie object met gegeven ID niet gevonden."
+          }
+        }
+      }
+    },
+    "/id/Versie/{id}": {
+      "get": {
+        "summary": "Entiteit gedurende een bepaalde periode in de databank.",
+        "description": "Entiteit gedurende een bepaalde periode in de databank.",
+        "operationId": "VersieGET",
+        "tags": [
+          "Externe datastandaarden"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Identificator van een Versie object.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Versie object gevonden.",
+            "content": {
+              "application/ld+json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Versie.json"
+                }
+              }
+            },
+            "links": {
+              "Versie.bron": {
+                "operationId": "VersieGET",
+                "parameters": {
+                  "id": "$response.body#/Versie.bron/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Organisatie` op te halen."
+              }
+            }
+          },
+          "400": {
+            "description": "Ontbrekende informatie bij het opvragen een Versie object."
+          },
+          "404": {
+            "description": "Versie object met gegeven ID niet gevonden."
+          }
+        }
+      }
+    },
+    "/id/Geslacht/{id}": {
+      "get": {
+        "operationId": "GeslachtGET",
+        "tags": [
+          "Externe datastandaarden"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Identificator van een Geslacht object.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Geslacht object gevonden.",
+            "content": {
+              "application/ld+json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Geslacht.json"
+                }
+              }
+            },
+            "links": {}
+          },
+          "400": {
+            "description": "Ontbrekende informatie bij het opvragen een Geslacht object."
+          },
+          "404": {
+            "description": "Geslacht object met gegeven ID niet gevonden."
+          }
+        }
+      }
+    },
+    "/id/Inwonerschap/{id}": {
+      "get": {
+        "summary": "Het feit dat een Persoon verblijf houdt in een plaats of land.",
+        "description": "Het feit dat een Persoon verblijf houdt in een plaats of land.",
+        "operationId": "InwonerschapGET",
+        "tags": [
+          "Externe datastandaarden"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Identificator van een Inwonerschap object.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Inwonerschap object gevonden.",
+            "content": {
+              "application/ld+json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Inwonerschap.json"
+                }
+              }
+            },
+            "links": {
+              "Inwonerschap.persoon": {
+                "operationId": "InwonerschapGET",
+                "parameters": {
+                  "id": "$response.body#/Inwonerschap.persoon/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Persoon` op te halen."
+              },
+              "Inwonerschap.jurisdictie": {
+                "operationId": "InwonerschapGET",
+                "parameters": {
+                  "id": "$response.body#/Inwonerschap.jurisdictie/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Jurisdictie` op te halen."
+              },
+              "Inwonerschap.heeftVerblijfplaats": {
+                "operationId": "InwonerschapGET",
+                "parameters": {
+                  "id": "$response.body#/Inwonerschap.heeftVerblijfplaats/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Verblijfplaats` op te halen."
+              }
+            }
+          },
+          "400": {
+            "description": "Ontbrekende informatie bij het opvragen een Inwonerschap object."
+          },
+          "404": {
+            "description": "Inwonerschap object met gegeven ID niet gevonden."
+          }
+        }
+      }
+    },
+    "/id/GeregistreerdeOrganisatie/{id}": {
+      "get": {
+        "summary": "Organisatie met een juridisch statuut vastgelegd door registratie. Vergelijk met een FormeleOrganisatie waarbij dit statuut ook op een andere manier verkregen kan zijn.",
+        "description": "Organisatie met een juridisch statuut vastgelegd door registratie. Vergelijk met een FormeleOrganisatie waarbij dit statuut ook op een andere manier verkregen kan zijn.",
+        "operationId": "GeregistreerdeOrganisatieGET",
+        "tags": [
+          "Externe datastandaarden"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Identificator van een GeregistreerdeOrganisatie object.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "GeregistreerdeOrganisatie object gevonden.",
+            "content": {
+              "application/ld+json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/GeregistreerdeOrganisatie.json"
+                }
+              }
+            },
+            "links": {
+              "GeregistreerdeOrganisatie.registratie": {
+                "operationId": "GeregistreerdeOrganisatieGET",
+                "parameters": {
+                  "id": "$response.body#/GeregistreerdeOrganisatie.registratie/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Identificator` op te halen."
+              },
+              "GeregistreerdeOrganisatie.contactinfo": {
+                "operationId": "GeregistreerdeOrganisatieGET",
+                "parameters": {
+                  "id": "$response.body#/GeregistreerdeOrganisatie.contactinfo/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Contactinfo` op te halen."
+              }
+            }
+          },
+          "400": {
+            "description": "Ontbrekende informatie bij het opvragen een GeregistreerdeOrganisatie object."
+          },
+          "404": {
+            "description": "GeregistreerdeOrganisatie object met gegeven ID niet gevonden."
+          }
+        }
+      }
+    },
+    "/id/Organisatie/{id}": {
+      "get": {
+        "summary": "Een aantal mensen georganiseerd in een gemeenschap of andere sociale, commerciële of politieke structuur. De groep heeft een gemeenschappelijk doel of bestaansreden die de individuele leden ervan overstijgt en kan handelen als agent. Een Organisatie heeft dikwijls een hiërarchische structuur.",
+        "description": "Een aantal mensen georganiseerd in een gemeenschap of andere sociale, commerciële of politieke structuur. De groep heeft een gemeenschappelijk doel of bestaansreden die de individuele leden ervan overstijgt en kan handelen als agent. Een Organisatie heeft dikwijls een hiërarchische structuur.",
+        "operationId": "OrganisatieGET",
+        "tags": [
+          "Externe datastandaarden"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Identificator van een Organisatie object.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Organisatie object gevonden.",
+            "content": {
+              "application/ld+json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Organisatie.json"
+                }
+              }
+            },
+            "links": {
+              "Organisatie.contactinfo": {
+                "operationId": "OrganisatieGET",
+                "parameters": {
+                  "id": "$response.body#/Organisatie.contactinfo/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Contactinfo` op te halen."
+              }
+            }
+          },
+          "400": {
+            "description": "Ontbrekende informatie bij het opvragen een Organisatie object."
+          },
+          "404": {
+            "description": "Organisatie object met gegeven ID niet gevonden."
+          }
+        }
+      }
+    },
+    "/id/BurgerlijkeStaatType/{id}": {
+      "get": {
+        "operationId": "BurgerlijkeStaatTypeGET",
+        "tags": [
+          "Externe datastandaarden"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Identificator van een BurgerlijkeStaatType object.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "BurgerlijkeStaatType object gevonden.",
+            "content": {
+              "application/ld+json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/BurgerlijkeStaatType.json"
+                }
+              }
+            },
+            "links": {}
+          },
+          "400": {
+            "description": "Ontbrekende informatie bij het opvragen een BurgerlijkeStaatType object."
+          },
+          "404": {
+            "description": "BurgerlijkeStaatType object met gegeven ID niet gevonden."
+          }
+        }
+      }
+    },
+    "/id/Samenwonen/{id}": {
+      "get": {
+        "summary": "Regeling waarbij twee personen die niet getrouwd zijn samenleven.",
+        "description": "Regeling waarbij twee personen die niet getrouwd zijn samenleven.",
+        "operationId": "SamenwonenGET",
+        "tags": [
+          "Externe datastandaarden"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Identificator van een Samenwonen object.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Samenwonen object gevonden.",
+            "content": {
+              "application/ld+json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Samenwonen.json"
+                }
+              }
+            },
+            "links": {
+              "Samenwonen.vanPersoon": {
+                "operationId": "SamenwonenGET",
+                "parameters": {
+                  "id": "$response.body#/Samenwonen.vanPersoon/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Persoon` op te halen."
+              },
+              "Samenwonen.metPersoon": {
+                "operationId": "SamenwonenGET",
+                "parameters": {
+                  "id": "$response.body#/Samenwonen.metPersoon/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Persoon` op te halen."
+              }
+            }
+          },
+          "400": {
+            "description": "Ontbrekende informatie bij het opvragen een Samenwonen object."
+          },
+          "404": {
+            "description": "Samenwonen object met gegeven ID niet gevonden."
+          }
+        }
+      }
+    },
+    "/id/GeregistreerdPersoon/{id}": {
+      "get": {
+        "summary": "Persoon waarvan de gegevens zijn ingeschreven in een register.",
+        "description": "Persoon waarvan de gegevens zijn ingeschreven in een register.",
+        "operationId": "GeregistreerdPersoonGET",
+        "tags": [
+          "Externe datastandaarden"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Identificator van een GeregistreerdPersoon object.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "GeregistreerdPersoon object gevonden.",
+            "content": {
+              "application/ld+json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/GeregistreerdPersoon.json"
+                }
+              }
+            },
+            "links": {
+              "GeregistreerdPersoon.registratie": {
+                "operationId": "GeregistreerdPersoonGET",
+                "parameters": {
+                  "id": "$response.body#/GeregistreerdPersoon.registratie/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Identificator` op te halen."
+              },
+              "GeregistreerdPersoon.beheerder": {
+                "operationId": "GeregistreerdPersoonGET",
+                "parameters": {
+                  "id": "$response.body#/GeregistreerdPersoon.beheerder/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `AdministratiefBeheerder` op te halen."
+              },
+              "GeregistreerdPersoon.registratiedetail": {
+                "operationId": "GeregistreerdPersoonGET",
+                "parameters": {
+                  "id": "$response.body#/GeregistreerdPersoon.registratiedetail/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Registratie` op te halen."
+              },
+              "GeregistreerdPersoon.contactinfo": {
+                "operationId": "GeregistreerdPersoonGET",
+                "parameters": {
+                  "id": "$response.body#/GeregistreerdPersoon.contactinfo/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Contactinfo` op te halen."
+              },
+              "GeregistreerdPersoon.geslacht": {
+                "operationId": "GeregistreerdPersoonGET",
+                "parameters": {
+                  "id": "$response.body#/GeregistreerdPersoon.geslacht/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Geslacht` op te halen."
+              },
+              "GeregistreerdPersoon.isHoofdVan": {
+                "operationId": "GeregistreerdPersoonGET",
+                "parameters": {
+                  "id": "$response.body#/GeregistreerdPersoon.isHoofdVan/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Gezin` op te halen."
+              },
+              "GeregistreerdPersoon.heeftBurgerlijkeStaat": {
+                "operationId": "GeregistreerdPersoonGET",
+                "parameters": {
+                  "id": "$response.body#/GeregistreerdPersoon.heeftBurgerlijkeStaat/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `BurgerlijkeStaat` op te halen."
+              },
+              "GeregistreerdPersoon.heeftGeboorte": {
+                "operationId": "GeregistreerdPersoonGET",
+                "parameters": {
+                  "id": "$response.body#/GeregistreerdPersoon.heeftGeboorte/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Geboorte` op te halen."
+              },
+              "GeregistreerdPersoon.heeftOverlijden": {
+                "operationId": "GeregistreerdPersoonGET",
+                "parameters": {
+                  "id": "$response.body#/GeregistreerdPersoon.heeftOverlijden/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Overlijden` op te halen."
+              },
+              "GeregistreerdPersoon.inwonerschap": {
+                "operationId": "GeregistreerdPersoonGET",
+                "parameters": {
+                  "id": "$response.body#/GeregistreerdPersoon.inwonerschap/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Jurisdictie` op te halen."
+              },
+              "GeregistreerdPersoon.inwonerschapdetail": {
+                "operationId": "GeregistreerdPersoonGET",
+                "parameters": {
+                  "id": "$response.body#/GeregistreerdPersoon.inwonerschapdetail/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Inwonerschap` op te halen."
+              },
+              "GeregistreerdPersoon.heeftRelatieMet": {
+                "operationId": "GeregistreerdPersoonGET",
+                "parameters": {
+                  "id": "$response.body#/GeregistreerdPersoon.heeftRelatieMet/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Persoon` op te halen."
+              },
+              "GeregistreerdPersoon.persoonsrelatiedetail": {
+                "operationId": "GeregistreerdPersoonGET",
+                "parameters": {
+                  "id": "$response.body#/GeregistreerdPersoon.persoonsrelatiedetail/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Persoonsrelatie` op te halen."
+              },
+              "GeregistreerdPersoon.isLidVan": {
+                "operationId": "GeregistreerdPersoonGET",
+                "parameters": {
+                  "id": "$response.body#/GeregistreerdPersoon.isLidVan/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Gezin` op te halen."
+              }
+            }
+          },
+          "400": {
+            "description": "Ontbrekende informatie bij het opvragen een GeregistreerdPersoon object."
+          },
+          "404": {
+            "description": "GeregistreerdPersoon object met gegeven ID niet gevonden."
+          }
+        }
+      }
+    },
+    "/id/Domicilie/{id}": {
+      "get": {
+        "summary": "Hoofdverblijfplaats van een Persoon.",
+        "description": "Hoofdverblijfplaats van een Persoon.",
+        "operationId": "DomicilieGET",
+        "tags": [
+          "Externe datastandaarden"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Identificator van een Domicilie object.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Domicilie object gevonden.",
+            "content": {
+              "application/ld+json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Domicilie.json"
+                }
+              }
+            },
+            "links": {
+              "Domicilie.verblijfsadres": {
+                "operationId": "DomicilieGET",
+                "parameters": {
+                  "id": "$response.body#/Domicilie.verblijfsadres/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Adresvoorstelling` op te halen."
+              }
+            }
+          },
+          "400": {
+            "description": "Ontbrekende informatie bij het opvragen een Domicilie object."
+          },
+          "404": {
+            "description": "Domicilie object met gegeven ID niet gevonden."
+          }
+        }
+      }
+    },
+    "/id/Verblijfplaats/{id}": {
+      "get": {
+        "summary": "Plaats waar een Persoon al dan niet tijdelijk woont of logeert.",
+        "description": "Plaats waar een Persoon al dan niet tijdelijk woont of logeert.",
+        "operationId": "VerblijfplaatsGET",
+        "tags": [
+          "Externe datastandaarden"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Identificator van een Verblijfplaats object.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Verblijfplaats object gevonden.",
+            "content": {
+              "application/ld+json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Verblijfplaats.json"
+                }
+              }
+            },
+            "links": {
+              "Verblijfplaats.verblijfsadres": {
+                "operationId": "VerblijfplaatsGET",
+                "parameters": {
+                  "id": "$response.body#/Verblijfplaats.verblijfsadres/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Adresvoorstelling` op te halen."
+              }
+            }
+          },
+          "400": {
+            "description": "Ontbrekende informatie bij het opvragen een Verblijfplaats object."
+          },
+          "404": {
+            "description": "Verblijfplaats object met gegeven ID niet gevonden."
+          }
+        }
+      }
+    },
+    "/id/Afstamming/{id}": {
+      "get": {
+        "summary": "Afstamming is de dalende lijn van bloedverwantschap tussen verschillende generaties.",
+        "description": "Afstamming is de dalende lijn van bloedverwantschap tussen verschillende generaties.",
+        "operationId": "AfstammingGET",
+        "tags": [
+          "Externe datastandaarden"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Identificator van een Afstamming object.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Afstamming object gevonden.",
+            "content": {
+              "application/ld+json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Afstamming.json"
+                }
+              }
+            },
+            "links": {
+              "Afstamming.afstammingstype": {
+                "operationId": "AfstammingGET",
+                "parameters": {
+                  "id": "$response.body#/Afstamming.afstammingstype/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Afstammingstype` op te halen."
+              },
+              "Afstamming.vanPersoon": {
+                "operationId": "AfstammingGET",
+                "parameters": {
+                  "id": "$response.body#/Afstamming.vanPersoon/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Persoon` op te halen."
+              },
+              "Afstamming.metPersoon": {
+                "operationId": "AfstammingGET",
+                "parameters": {
+                  "id": "$response.body#/Afstamming.metPersoon/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Persoon` op te halen."
+              }
+            }
+          },
+          "400": {
+            "description": "Ontbrekende informatie bij het opvragen een Afstamming object."
+          },
+          "404": {
+            "description": "Afstamming object met gegeven ID niet gevonden."
+          }
+        }
+      }
+    },
+    "/id/AangegevenAdres/{id}": {
+      "get": {
+        "summary": "Adres dat door een persoon wordt opgegeven als hoofdverblijplaats.",
+        "description": "Adres dat door een persoon wordt opgegeven als hoofdverblijplaats.",
+        "operationId": "AangegevenAdresGET",
+        "tags": [
+          "Externe datastandaarden"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Identificator van een AangegevenAdres object.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "AangegevenAdres object gevonden.",
+            "content": {
+              "application/ld+json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/AangegevenAdres.json"
+                }
+              }
+            },
+            "links": {
+              "AangegevenAdres.verblijfsadres": {
+                "operationId": "AangegevenAdresGET",
+                "parameters": {
+                  "id": "$response.body#/AangegevenAdres.verblijfsadres/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Adresvoorstelling` op te halen."
+              }
+            }
+          },
+          "400": {
+            "description": "Ontbrekende informatie bij het opvragen een AangegevenAdres object."
+          },
+          "404": {
+            "description": "AangegevenAdres object met gegeven ID niet gevonden."
+          }
+        }
+      }
+    },
+    "/id/Afwezig/{id}": {
+      "get": {
+        "summary": "Verblijfplaats van een persoon die afwezig is verklaard.",
+        "description": "Verblijfplaats van een persoon die afwezig is verklaard.",
+        "operationId": "AfwezigGET",
+        "tags": [
+          "Externe datastandaarden"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Identificator van een Afwezig object.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Afwezig object gevonden.",
+            "content": {
+              "application/ld+json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Afwezig.json"
+                }
+              }
+            },
+            "links": {
+              "Afwezig.verblijfsadres": {
+                "operationId": "AfwezigGET",
+                "parameters": {
+                  "id": "$response.body#/Afwezig.verblijfsadres/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Adresvoorstelling` op te halen."
+              }
+            }
+          },
+          "400": {
+            "description": "Ontbrekende informatie bij het opvragen een Afwezig object."
+          },
+          "404": {
+            "description": "Afwezig object met gegeven ID niet gevonden."
+          }
+        }
+      }
+    },
+    "/id/AdministratiefBeheerdertype/{id}": {
+      "get": {
+        "operationId": "AdministratiefBeheerdertypeGET",
+        "tags": [
+          "Externe datastandaarden"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Identificator van een AdministratiefBeheerdertype object.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "AdministratiefBeheerdertype object gevonden.",
+            "content": {
+              "application/ld+json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/AdministratiefBeheerdertype.json"
+                }
+              }
+            },
+            "links": {}
+          },
+          "400": {
+            "description": "Ontbrekende informatie bij het opvragen een AdministratiefBeheerdertype object."
+          },
+          "404": {
+            "description": "AdministratiefBeheerdertype object met gegeven ID niet gevonden."
+          }
+        }
+      }
+    },
+    "/id/Dossierstatustype/{id}": {
+      "get": {
+        "operationId": "DossierstatustypeGET",
+        "tags": [
+          "Externe datastandaarden"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Identificator van een Dossierstatustype object.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Dossierstatustype object gevonden.",
+            "content": {
+              "application/ld+json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Dossierstatustype.json"
+                }
+              }
+            },
+            "links": {}
+          },
+          "400": {
+            "description": "Ontbrekende informatie bij het opvragen een Dossierstatustype object."
+          },
+          "404": {
+            "description": "Dossierstatustype object met gegeven ID niet gevonden."
+          }
+        }
+      }
+    },
+    "/id/BelgischAdres/{id}": {
+      "get": {
+        "summary": "Informatie die toelaat om op een gestructureerde en unieke manier te verwijzen naar een gebouweenheid,een ligplaats,een standplaats of een perceel op basis van een gemeentenaam,een straatnaam,een huisnummer en eventueel een busnummer en een postcode.",
+        "description": "Informatie die toelaat om op een gestructureerde en unieke manier te verwijzen naar een gebouweenheid,een ligplaats,een standplaats of een perceel op basis van een gemeentenaam,een straatnaam,een huisnummer en eventueel een busnummer en een postcode.",
+        "operationId": "BelgischAdresGET",
+        "tags": [
+          "Externe datastandaarden"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Identificator van een BelgischAdres object.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "BelgischAdres object gevonden.",
+            "content": {
+              "application/ld+json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/BelgischAdres.json"
+                }
+              }
+            },
+            "links": {}
+          },
+          "400": {
+            "description": "Ontbrekende informatie bij het opvragen een BelgischAdres object."
+          },
+          "404": {
+            "description": "BelgischAdres object met gegeven ID niet gevonden."
+          }
+        }
+      }
+    },
+    "/id/Voogdij/{id}": {
+      "get": {
+        "summary": "Situatie waarbij een Persoon die optreedt als voogd van een ander Persoon en in die hoedanigheid instaat voor deze Persoon en zijn goederen.",
+        "description": "Situatie waarbij een Persoon die optreedt als voogd van een ander Persoon en in die hoedanigheid instaat voor deze Persoon en zijn goederen.",
+        "operationId": "VoogdijGET",
+        "tags": [
+          "Externe datastandaarden"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Identificator van een Voogdij object.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Voogdij object gevonden.",
+            "content": {
+              "application/ld+json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Voogdij.json"
+                }
+              }
+            },
+            "links": {
+              "Voogdij.vanPersoon": {
+                "operationId": "VoogdijGET",
+                "parameters": {
+                  "id": "$response.body#/Voogdij.vanPersoon/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Persoon` op te halen."
+              },
+              "Voogdij.metPersoon": {
+                "operationId": "VoogdijGET",
+                "parameters": {
+                  "id": "$response.body#/Voogdij.metPersoon/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Persoon` op te halen."
+              }
+            }
+          },
+          "400": {
+            "description": "Ontbrekende informatie bij het opvragen een Voogdij object."
+          },
+          "404": {
+            "description": "Voogdij object met gegeven ID niet gevonden."
+          }
+        }
+      }
+    },
+    "/id/Jurisdictie/{id}": {
+      "get": {
+        "summary": "Het gebied waarover de rechtsmacht van een overheid zich uitstrekt.",
+        "description": "Het gebied waarover de rechtsmacht van een overheid zich uitstrekt.",
+        "operationId": "JurisdictieGET",
+        "tags": [
+          "Externe datastandaarden"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Identificator van een Jurisdictie object.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Jurisdictie object gevonden.",
+            "content": {
+              "application/ld+json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Jurisdictie.json"
+                }
+              }
+            },
+            "links": {
+              "Jurisdictie.plaats": {
+                "operationId": "JurisdictieGET",
+                "parameters": {
+                  "id": "$response.body#/Jurisdictie.plaats/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Plaats` op te halen."
+              }
+            }
+          },
+          "400": {
+            "description": "Ontbrekende informatie bij het opvragen een Jurisdictie object."
+          },
+          "404": {
+            "description": "Jurisdictie object met gegeven ID niet gevonden."
+          }
+        }
+      }
+    },
+    "/id/Taal/{id}": {
+      "get": {
+        "summary": "De taal waarin een document of andere resources zijn opgesteld.",
+        "description": "De taal waarin een document of andere resources zijn opgesteld.",
+        "operationId": "TaalGET",
+        "tags": [
+          "Externe datastandaarden"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Identificator van een Taal object.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Taal object gevonden.",
+            "content": {
+              "application/ld+json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Taal.json"
+                }
+              }
+            },
+            "links": {}
+          },
+          "400": {
+            "description": "Ontbrekende informatie bij het opvragen een Taal object."
+          },
+          "404": {
+            "description": "Taal object met gegeven ID niet gevonden."
+          }
+        }
+      }
+    },
+    "/id/Gezin/{id}": {
+      "get": {
+        "summary": "Samenwerkingsvorm die een herkenbare sociale eenheid vormt (bijvoorbeeld ten gevolge van een huwelijk), met al dan niet verwante personen die duurzame banden hebben en elkaar onderling steun en verzorging verlenen.",
+        "description": "Samenwerkingsvorm die een herkenbare sociale eenheid vormt (bijvoorbeeld ten gevolge van een huwelijk), met al dan niet verwante personen die duurzame banden hebben en elkaar onderling steun en verzorging verlenen.",
+        "operationId": "GezinGET",
+        "tags": [
+          "Externe datastandaarden"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Identificator van een Gezin object.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Gezin object gevonden.",
+            "content": {
+              "application/ld+json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Gezin.json"
+                }
+              }
+            },
+            "links": {
+              "Gezin.gezinsadres": {
+                "operationId": "GezinGET",
+                "parameters": {
+                  "id": "$response.body#/Gezin.gezinsadres/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Adresvoorstelling` op te halen."
+              },
+              "Gezin.gezinshoofd": {
+                "operationId": "GezinGET",
+                "parameters": {
+                  "id": "$response.body#/Gezin.gezinshoofd/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Persoon` op te halen."
+              },
+              "Gezin.gezinslid": {
+                "operationId": "GezinGET",
+                "parameters": {
+                  "id": "$response.body#/Gezin.gezinslid/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Persoon` op te halen."
+              }
+            }
+          },
+          "400": {
+            "description": "Ontbrekende informatie bij het opvragen een Gezin object."
+          },
+          "404": {
+            "description": "Gezin object met gegeven ID niet gevonden."
+          }
+        }
+      }
+    },
+    "/id/BurgerlijkeStaat/{id}": {
+      "get": {
+        "summary": "Burgerrechtelijke toestand van een Persoon.",
+        "description": "Burgerrechtelijke toestand van een Persoon.",
+        "operationId": "BurgerlijkeStaatGET",
+        "tags": [
+          "Externe datastandaarden"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Identificator van een BurgerlijkeStaat object.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "BurgerlijkeStaat object gevonden.",
+            "content": {
+              "application/ld+json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/BurgerlijkeStaat.json"
+                }
+              }
+            },
+            "links": {
+              "BurgerlijkeStaat.type": {
+                "operationId": "BurgerlijkeStaatGET",
+                "parameters": {
+                  "id": "$response.body#/BurgerlijkeStaat.type/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `BurgerlijkeStaatType` op te halen."
+              }
+            }
+          },
+          "400": {
+            "description": "Ontbrekende informatie bij het opvragen een BurgerlijkeStaat object."
+          },
+          "404": {
+            "description": "BurgerlijkeStaat object met gegeven ID niet gevonden."
+          }
+        }
+      }
+    },
+    "/id/Afstammingstype/{id}": {
+      "get": {
+        "operationId": "AfstammingstypeGET",
+        "tags": [
+          "Externe datastandaarden"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Identificator van een Afstammingstype object.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Afstammingstype object gevonden.",
+            "content": {
+              "application/ld+json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Afstammingstype.json"
+                }
+              }
+            },
+            "links": {}
+          },
+          "400": {
+            "description": "Ontbrekende informatie bij het opvragen een Afstammingstype object."
+          },
+          "404": {
+            "description": "Afstammingstype object met gegeven ID niet gevonden."
+          }
+        }
+      }
+    },
+    "/id/Gezinsrelatietype/{id}": {
+      "get": {
+        "operationId": "GezinsrelatietypeGET",
+        "tags": [
+          "Externe datastandaarden"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Identificator van een Gezinsrelatietype object.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Gezinsrelatietype object gevonden.",
+            "content": {
+              "application/ld+json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Gezinsrelatietype.json"
+                }
+              }
+            },
+            "links": {}
+          },
+          "400": {
+            "description": "Ontbrekende informatie bij het opvragen een Gezinsrelatietype object."
+          },
+          "404": {
+            "description": "Gezinsrelatietype object met gegeven ID niet gevonden."
+          }
+        }
+      }
+    },
+    "/id/Postadres/{id}": {
+      "get": {
+        "summary": "Postadres van de verblijfplaats van een persoon.",
+        "description": "Postadres van de verblijfplaats van een persoon.",
+        "operationId": "PostadresGET",
+        "tags": [
+          "Externe datastandaarden"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Identificator van een Postadres object.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Postadres object gevonden.",
+            "content": {
+              "application/ld+json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Postadres.json"
+                }
+              }
+            },
+            "links": {
+              "Postadres.verblijfsadres": {
+                "operationId": "PostadresGET",
+                "parameters": {
+                  "id": "$response.body#/Postadres.verblijfsadres/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Adresvoorstelling` op te halen."
+              }
+            }
+          },
+          "400": {
+            "description": "Ontbrekende informatie bij het opvragen een Postadres object."
+          },
+          "404": {
+            "description": "Postadres object met gegeven ID niet gevonden."
+          }
+        }
+      }
+    },
+    "/id/Referentieadres/{id}": {
+      "get": {
+        "summary": "Adres van een andere persoon of rechtspersoon voor personen zonder vaste verblijfplaats.",
+        "description": "Adres van een andere persoon of rechtspersoon voor personen zonder vaste verblijfplaats.",
+        "operationId": "ReferentieadresGET",
+        "tags": [
+          "Externe datastandaarden"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Identificator van een Referentieadres object.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Referentieadres object gevonden.",
+            "content": {
+              "application/ld+json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Referentieadres.json"
+                }
+              }
+            },
+            "links": {
+              "Referentieadres.verblijfsadres": {
+                "operationId": "ReferentieadresGET",
+                "parameters": {
+                  "id": "$response.body#/Referentieadres.verblijfsadres/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Adresvoorstelling` op te halen."
+              }
+            }
+          },
+          "400": {
+            "description": "Ontbrekende informatie bij het opvragen een Referentieadres object."
+          },
+          "404": {
+            "description": "Referentieadres object met gegeven ID niet gevonden."
+          }
+        }
+      }
+    },
+    "/id/VerblijfplaatsBuitenlandDomicilie/{id}": {
+      "get": {
+        "summary": "Hoofdverblijplaats in het buitenland.",
+        "description": "Hoofdverblijplaats in het buitenland.",
+        "operationId": "VerblijfplaatsBuitenlandDomicilieGET",
+        "tags": [
+          "Externe datastandaarden"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Identificator van een VerblijfplaatsBuitenlandDomicilie object.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "VerblijfplaatsBuitenlandDomicilie object gevonden.",
+            "content": {
+              "application/ld+json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/VerblijfplaatsBuitenlandDomicilie.json"
+                }
+              }
+            },
+            "links": {
+              "VerblijfplaatsBuitenlandDomicilie.verblijfsadres": {
+                "operationId": "VerblijfplaatsBuitenlandDomicilieGET",
+                "parameters": {
+                  "id": "$response.body#/VerblijfplaatsBuitenlandDomicilie.verblijfsadres/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Adresvoorstelling` op te halen."
+              }
+            }
+          },
+          "400": {
+            "description": "Ontbrekende informatie bij het opvragen een VerblijfplaatsBuitenlandDomicilie object."
+          },
+          "404": {
+            "description": "VerblijfplaatsBuitenlandDomicilie object met gegeven ID niet gevonden."
+          }
+        }
+      }
+    },
+    "/id/VerblijfplaatsBuitenland/{id}": {
+      "get": {
+        "summary": "Verblijplaats in het buitenland.",
+        "description": "Verblijplaats in het buitenland.",
+        "operationId": "VerblijfplaatsBuitenlandGET",
+        "tags": [
+          "Externe datastandaarden"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Identificator van een VerblijfplaatsBuitenland object.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "VerblijfplaatsBuitenland object gevonden.",
+            "content": {
+              "application/ld+json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/VerblijfplaatsBuitenland.json"
+                }
+              }
+            },
+            "links": {
+              "VerblijfplaatsBuitenland.verblijfsadres": {
+                "operationId": "VerblijfplaatsBuitenlandGET",
+                "parameters": {
+                  "id": "$response.body#/VerblijfplaatsBuitenland.verblijfsadres/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Adresvoorstelling` op te halen."
+              }
+            }
+          },
+          "400": {
+            "description": "Ontbrekende informatie bij het opvragen een VerblijfplaatsBuitenland object."
+          },
+          "404": {
+            "description": "VerblijfplaatsBuitenland object met gegeven ID niet gevonden."
+          }
+        }
+      }
+    },
+    "/id/WettelijkVerblijf/{id}": {
+      "get": {
+        "summary": "Juridisch vastgelegde verblijplaats.",
+        "description": "Juridisch vastgelegde verblijplaats.",
+        "operationId": "WettelijkVerblijfGET",
+        "tags": [
+          "Externe datastandaarden"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Identificator van een WettelijkVerblijf object.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "WettelijkVerblijf object gevonden.",
+            "content": {
+              "application/ld+json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/WettelijkVerblijf.json"
+                }
+              }
+            },
+            "links": {
+              "WettelijkVerblijf.verblijfsadres": {
+                "operationId": "WettelijkVerblijfGET",
+                "parameters": {
+                  "id": "$response.body#/WettelijkVerblijf.verblijfsadres/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Adresvoorstelling` op te halen."
+              }
+            }
+          },
+          "400": {
+            "description": "Ontbrekende informatie bij het opvragen een WettelijkVerblijf object."
+          },
+          "404": {
+            "description": "WettelijkVerblijf object met gegeven ID niet gevonden."
+          }
+        }
+      }
+    },
+    "/id/AdministratiefBeheerder/{id}": {
+      "get": {
+        "summary": "Organisatie die het dossier van de persoon in het register beheert.",
+        "description": "Organisatie die het dossier van de persoon in het register beheert.",
+        "operationId": "AdministratiefBeheerderGET",
+        "tags": [
+          "Externe datastandaarden"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "Identificator van een AdministratiefBeheerder object.",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "AdministratiefBeheerder object gevonden.",
+            "content": {
+              "application/ld+json": {
+                "schema": {
+                  "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/AdministratiefBeheerder.json"
+                }
+              }
+            },
+            "links": {
+              "AdministratiefBeheerder.type": {
+                "operationId": "AdministratiefBeheerderGET",
+                "parameters": {
+                  "id": "$response.body#/AdministratiefBeheerder.type/@id"
+                },
+                "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `AdministratiefBeheerdertype` op te halen."
+              }
+            }
+          },
+          "400": {
+            "description": "Ontbrekende informatie bij het opvragen een AdministratiefBeheerder object."
+          },
+          "404": {
+            "description": "AdministratiefBeheerder object met gegeven ID niet gevonden."
+          }
+        }
+      }
+    }
+  }
+}

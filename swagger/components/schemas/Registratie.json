@@ -39,6 +39,9 @@
               {
                 "type": "string",
                 "format": "blanknode"
+              },
+              {
+                "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Dossierstatustype.json"
               }
             ]
           }
@@ -62,6 +65,9 @@
             {
               "type": "string",
               "format": "blanknode"
+            },
+            {
+              "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/GeregistreerdPersoon.json"
             }
           ]
         }
@@ -83,6 +89,9 @@
             {
               "type": "string",
               "format": "blanknode"
+            },
+            {
+              "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Registratie.json"
             }
           ]
         }
@@ -104,6 +113,9 @@
             {
               "type": "string",
               "format": "blanknode"
+            },
+            {
+              "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Registratie.json"
             }
           ]
         }

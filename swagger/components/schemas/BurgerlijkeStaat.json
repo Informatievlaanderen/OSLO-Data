@@ -36,6 +36,9 @@
             {
               "type": "string",
               "format": "blanknode"
+            },
+            {
+              "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/BurgerlijkeStaatType.json"
             }
           ]
         }

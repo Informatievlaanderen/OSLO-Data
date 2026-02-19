@@ -1,0 +1,73 @@
+{
+  "title": "Plaats",
+  "type": "object",
+  "description": "Een ruimtelijk gebied of benoemde plaats.",
+  "properties": {
+    "@context": {
+      "type": "string",
+      "format": "uri",
+      "enum": [
+        "http://example.org/context.jsonld"
+      ]
+    },
+    "@id": {
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "type": "array",
+      "description": "Lijst van object types (klasse)",
+      "items": {
+        "type": "string",
+        "description": "Plaats type"
+      },
+      "minItems": 1
+    },
+    "Plaats.plaatsnaam": {
+      "type": "object",
+      "description": "Naam van de plaats of van het gebied.",
+      "properties": {
+        "@value": {
+          "type": "string"
+        },
+        "@language": {
+          "type": "string",
+          "enum": [
+            "nl"
+          ]
+        }
+      },
+      "required": [
+        "@value",
+        "@language"
+      ]
+    },
+    "Plaats.geometrie": {
+      "type": "object",
+      "description": "Geometrie van de plaats of het gebied.",
+      "properties": {
+        "@id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "uri"
+            },
+            {
+              "type": "string",
+              "format": "blanknode"
+            }
+          ]
+        }
+      },
+      "required": [
+        "@id"
+      ]
+    }
+  },
+  "required": [
+    "@context",
+    "@id",
+    "@type",
+    "Plaats.plaatsnaam"
+  ]
+}
