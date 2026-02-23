@@ -6,6 +6,20 @@
   },
   "components": {
     "schemas": {
+      "JsonLdRoot": {
+        "title": "JSON-LD Root object",
+        "type": "object",
+        "description": "Enveloppe waarin elk object, dat via een API beschikbaar is, moet zitten om JSON-LD compliant te zijn.",
+        "properties": {
+          "@context": {
+            "type": "string",
+            "format": "uri",
+            "enum": [
+              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
+            ]
+          }
+        }
+      },
       "ProbleemDetails": {
         "title": "ProbleemDetails",
         "type": "object",
@@ -127,13 +141,6 @@
         "type": "object",
         "description": "Natuurlijk persoon.",
         "properties": {
-          "@context": {
-            "type": "string",
-            "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
-          },
           "@id": {
             "type": "string",
             "format": "uri"
@@ -319,13 +326,6 @@
         "type": "object",
         "description": "Een ruimtelijk gebied of benoemde plaats.",
         "properties": {
-          "@context": {
-            "type": "string",
-            "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
-          },
           "@id": {
             "type": "string",
             "format": "uri"
@@ -375,13 +375,6 @@
         "type": "object",
         "description": "Relatie tussen leden van eenzelfde gezin.",
         "properties": {
-          "@context": {
-            "type": "string",
-            "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
-          },
           "@id": {
             "type": "string",
             "format": "uri"
@@ -419,13 +412,6 @@
         "type": "object",
         "description": "Relatie tussen twee of meer personen.",
         "properties": {
-          "@context": {
-            "type": "string",
-            "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
-          },
           "@id": {
             "type": "string",
             "format": "uri"
@@ -460,13 +446,6 @@
         "type": "object",
         "description": "Het doodgaan van een Persoon.",
         "properties": {
-          "@context": {
-            "type": "string",
-            "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
-          },
           "@id": {
             "type": "string",
             "format": "uri"
@@ -514,13 +493,6 @@
         "type": "object",
         "description": "Belangrijke gebeurtenis ih leven ve persoon.",
         "properties": {
-          "@context": {
-            "type": "string",
-            "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
-          },
           "@id": {
             "type": "string",
             "format": "uri"
@@ -568,13 +540,6 @@
         "type": "object",
         "description": "Het ter wereld komen van een Persoon.",
         "properties": {
-          "@context": {
-            "type": "string",
-            "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
-          },
           "@id": {
             "type": "string",
             "format": "uri"
@@ -622,13 +587,6 @@
         "type": "object",
         "description": "Een door burgerlijk of religieus recht geregelde samenlevingsvorm van twee personen.",
         "properties": {
-          "@context": {
-            "type": "string",
-            "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
-          },
           "@id": {
             "type": "string",
             "format": "uri"
@@ -663,13 +621,6 @@
         "type": "object",
         "description": "Opname van de Persoon in het register.",
         "properties": {
-          "@context": {
-            "type": "string",
-            "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
-          },
           "@id": {
             "type": "string",
             "format": "uri"
@@ -714,13 +665,6 @@
         "type": "object",
         "description": "Entiteit gedurende een bepaalde periode in de databank.",
         "properties": {
-          "@context": {
-            "type": "string",
-            "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
-          },
           "@id": {
             "type": "string",
             "format": "uri"
@@ -788,13 +732,6 @@
         "type": "object",
         "description": "Een erkende Organisatie,erkend in brede zin of  meer specifiek in juridische zin met bijbehorende rechten en plichten.",
         "properties": {
-          "@context": {
-            "type": "string",
-            "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
-          },
           "@id": {
             "type": "string",
             "format": "uri"
@@ -821,13 +758,6 @@
         "type": "object",
         "description": "Het feit dat een Persoon verblijf houdt in een plaats of land.",
         "properties": {
-          "@context": {
-            "type": "string",
-            "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
-          },
           "@id": {
             "type": "string",
             "format": "uri"
@@ -900,13 +830,6 @@
         "type": "object",
         "description": "Organisatie met een juridisch statuut vastgelegd door registratie. Vergelijk met een FormeleOrganisatie waarbij dit statuut ook op een andere manier verkregen kan zijn.",
         "properties": {
-          "@context": {
-            "type": "string",
-            "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
-          },
           "@id": {
             "type": "string",
             "format": "uri"
@@ -978,13 +901,6 @@
         "type": "object",
         "description": "Een aantal mensen georganiseerd in een gemeenschap of andere sociale, commerciële of politieke structuur. De groep heeft een gemeenschappelijk doel of bestaansreden die de individuele leden ervan overstijgt en kan handelen als agent. Een Organisatie heeft dikwijls een hiërarchische structuur.",
         "properties": {
-          "@context": {
-            "type": "string",
-            "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
-          },
           "@id": {
             "type": "string",
             "format": "uri"
@@ -1036,13 +952,6 @@
         "type": "object",
         "description": "Regeling waarbij twee personen die niet getrouwd zijn samenleven.",
         "properties": {
-          "@context": {
-            "type": "string",
-            "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
-          },
           "@id": {
             "type": "string",
             "format": "uri"
@@ -1077,13 +986,6 @@
         "type": "object",
         "description": "Persoon waarvan de gegevens zijn ingeschreven in een register.",
         "properties": {
-          "@context": {
-            "type": "string",
-            "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
-          },
           "@id": {
             "type": "string",
             "format": "uri"
@@ -1278,13 +1180,6 @@
         "type": "object",
         "description": "Hoofdverblijfplaats van een Persoon.",
         "properties": {
-          "@context": {
-            "type": "string",
-            "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
-          },
           "@id": {
             "type": "string",
             "format": "uri"
@@ -1314,13 +1209,6 @@
         "type": "object",
         "description": "Plaats waar een Persoon al dan niet tijdelijk woont of logeert.",
         "properties": {
-          "@context": {
-            "type": "string",
-            "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
-          },
           "@id": {
             "type": "string",
             "format": "uri"
@@ -1350,13 +1238,6 @@
         "type": "object",
         "description": "Afstamming is de dalende lijn van bloedverwantschap tussen verschillende generaties.",
         "properties": {
-          "@context": {
-            "type": "string",
-            "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
-          },
           "@id": {
             "type": "string",
             "format": "uri"
@@ -1412,13 +1293,6 @@
         "type": "object",
         "description": "Een Locatie,Periode of Jurisdictie.",
         "properties": {
-          "@context": {
-            "type": "string",
-            "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
-          },
           "@id": {
             "type": "string",
             "format": "uri"
@@ -1445,13 +1319,6 @@
         "type": "object",
         "description": "Adres dat door een persoon wordt opgegeven als hoofdverblijplaats.",
         "properties": {
-          "@context": {
-            "type": "string",
-            "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
-          },
           "@id": {
             "type": "string",
             "format": "uri"
@@ -1481,13 +1348,6 @@
         "type": "object",
         "description": "Verblijfplaats van een persoon die afwezig is verklaard.",
         "properties": {
-          "@context": {
-            "type": "string",
-            "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
-          },
           "@id": {
             "type": "string",
             "format": "uri"
@@ -1517,13 +1377,6 @@
         "type": "object",
         "description": "Informatie die toelaat om op een gestructureerde en unieke manier te verwijzen naar een gebouweenheid,een ligplaats,een standplaats of een perceel op basis van een gemeentenaam,een straatnaam,een huisnummer en eventueel een busnummer en een postcode.",
         "properties": {
-          "@context": {
-            "type": "string",
-            "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
-          },
           "@id": {
             "type": "string",
             "format": "uri"
@@ -1550,13 +1403,6 @@
         "type": "object",
         "description": "Het gebied waarover de rechtsmacht van een overheid zich uitstrekt.",
         "properties": {
-          "@context": {
-            "type": "string",
-            "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
-          },
           "@id": {
             "type": "string",
             "format": "uri"
@@ -1586,13 +1432,6 @@
         "type": "object",
         "description": "Iemand die of iets dat kan handelen of een effect kan teweeg brengen.",
         "properties": {
-          "@context": {
-            "type": "string",
-            "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
-          },
           "@id": {
             "type": "string",
             "format": "uri"
@@ -1619,13 +1458,6 @@
         "type": "object",
         "description": "Samenwerkingsvorm die een herkenbare sociale eenheid vormt (bijvoorbeeld ten gevolge van een huwelijk), met al dan niet verwante personen die duurzame banden hebben en elkaar onderling steun en verzorging verlenen.",
         "properties": {
-          "@context": {
-            "type": "string",
-            "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
-          },
           "@id": {
             "type": "string",
             "format": "uri"
@@ -1693,13 +1525,6 @@
         "type": "object",
         "description": "Burgerrechtelijke toestand van een Persoon.",
         "properties": {
-          "@context": {
-            "type": "string",
-            "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
-          },
           "@id": {
             "type": "string",
             "format": "uri"
@@ -1732,13 +1557,6 @@
         "type": "object",
         "description": "Postadres van de verblijfplaats van een persoon.",
         "properties": {
-          "@context": {
-            "type": "string",
-            "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
-          },
           "@id": {
             "type": "string",
             "format": "uri"
@@ -1768,13 +1586,6 @@
         "type": "object",
         "description": "Adres van een andere persoon of rechtspersoon voor personen zonder vaste verblijfplaats.",
         "properties": {
-          "@context": {
-            "type": "string",
-            "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
-          },
           "@id": {
             "type": "string",
             "format": "uri"
@@ -1804,13 +1615,6 @@
         "type": "object",
         "description": "Hoofdverblijplaats in het buitenland.",
         "properties": {
-          "@context": {
-            "type": "string",
-            "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
-          },
           "@id": {
             "type": "string",
             "format": "uri"
@@ -1840,13 +1644,6 @@
         "type": "object",
         "description": "Verblijplaats in het buitenland.",
         "properties": {
-          "@context": {
-            "type": "string",
-            "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
-          },
           "@id": {
             "type": "string",
             "format": "uri"
@@ -1876,13 +1673,6 @@
         "type": "object",
         "description": "Juridisch vastgelegde verblijplaats.",
         "properties": {
-          "@context": {
-            "type": "string",
-            "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
-          },
           "@id": {
             "type": "string",
             "format": "uri"
@@ -1912,13 +1702,6 @@
         "type": "object",
         "description": "Organisatie die het dossier van de persoon in het register beheert.",
         "properties": {
-          "@context": {
-            "type": "string",
-            "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
-          },
           "@id": {
             "type": "string",
             "format": "uri"
@@ -1973,13 +1756,6 @@
         "type": "object",
         "description": "Een locatie kan een identificeerbare geografische locatie zijn (ISO 19112), maar deze locatie kan ook een niet-geografische locatie zijn, zoals een directory, rij of kolom. Als zodanig zijn er talloze manieren waarop locatie kan worden uitgedrukt.",
         "properties": {
-          "@context": {
-            "type": "string",
-            "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
-          },
           "@id": {
             "type": "string",
             "format": "uri"
@@ -2009,13 +1785,6 @@
         "type": "object",
         "description": "Meer leesbare voorstelling met enkel de basisgegevens van het adres, bedoeld voor het gebruik van een adres als attribuut van een ander object.",
         "properties": {
-          "@context": {
-            "type": "string",
-            "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
-          },
           "@id": {
             "type": "string",
             "format": "uri"
@@ -2271,13 +2040,6 @@
         "type": "object",
         "description": "Informatie gebruikt om een object uniek te identificeren.",
         "properties": {
-          "@context": {
-            "type": "string",
-            "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
-          },
           "@id": {
             "type": "string",
             "format": "uri"
@@ -2349,13 +2111,6 @@
         "type": "object",
         "description": "Informatie zoals email, telefoon, adres die toelaat om iemand of iets te contacteren.",
         "properties": {
-          "@context": {
-            "type": "string",
-            "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
-          },
           "@id": {
             "type": "string",
             "format": "uri"
