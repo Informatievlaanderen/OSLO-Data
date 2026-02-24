@@ -1,7 +1,0 @@
-{
-  "operationId": "VersieGET",
-  "parameters": {
-    "id": "$response.body#/Versie.bron/@id"
-  },
-  "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Organisatie` op te halen."
-}

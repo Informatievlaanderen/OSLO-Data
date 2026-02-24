@@ -1,7 +1,0 @@
-{
-  "operationId": "OrganisatieGET",
-  "parameters": {
-    "id": "$response.body#/Organisatie.contactinfo/@id"
-  },
-  "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Contactinfo` op te halen."
-}

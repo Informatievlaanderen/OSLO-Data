@@ -1,7 +1,0 @@
-{
-  "operationId": "WettelijkVerblijfGET",
-  "parameters": {
-    "id": "$response.body#/WettelijkVerblijf.verblijfsadres/@id"
-  },
-  "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Adresvoorstelling` op te halen."
-}

@@ -1,7 +1,0 @@
-{
-  "operationId": "PlaatsGET",
-  "parameters": {
-    "id": "$response.body#/Plaats.geometrie/@id"
-  },
-  "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Geometrie` op te halen."
-}

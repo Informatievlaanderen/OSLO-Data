@@ -1,7 +1,0 @@
-{
-  "operationId": "BurgerlijkeStaatGET",
-  "parameters": {
-    "id": "$response.body#/BurgerlijkeStaat.type/@id"
-  },
-  "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `BurgerlijkeStaatType` op te halen."
-}
