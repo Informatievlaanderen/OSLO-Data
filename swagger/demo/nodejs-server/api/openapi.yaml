@@ -1,0 +1,3828 @@
+openapi: 3.0.4
+info:
+  title: MAGDA geefPersoon REST
+  contact:
+    name: MAGDA Helpdesk
+    url: https://overheid.vlaanderen.be/magda
+  license:
+    name: Persoon domein
+    url: https://overheid.vlaanderen.be/magda
+  version: 1.0.0
+servers:
+- url: http://localhost:8080/api/v1/persoon
+  description: Basis URL
+paths:
+  /persoon:
+    get:
+      summary: Persoon waarvan de gegevens zijn ingeschreven in een register.
+      description: Persoon waarvan de gegevens zijn ingeschreven in een register.
+      operationId: persoonGET
+      parameters:
+      - name: X-INSZ
+        in: header
+        description: INSZ van een GeregistreerdPersoon object.
+        required: true
+        style: simple
+        explode: false
+        schema:
+          pattern: "^\\d{11}$"
+          type: string
+      - name: X-Correlation-Id
+        in: header
+        description: Correlatie ID van het request.
+        required: true
+        style: simple
+        explode: false
+        schema:
+          maxLength: 36
+          minLength: 10
+          type: string
+      responses:
+        "200":
+          description: GeregistreerdPersoon object gevonden.
+          content:
+            application/ld+json:
+              schema:
+                $ref: "#/components/schemas/GeregistreerdPersoonJsonLd"
+              examples:
+                persoon:
+                  summary: "INSZ 29012818180"
+                  externalValue: "https://informatievlaanderen.github.io/OSLO-Data/swagger/example-29012818180.json"
+          links:
+            Persoon.contactinfo:
+              operationId: persoonGET
+              parameters:
+                id: $response.body#/Persoon.contactinfo/@id
+              description: De waarde van het attribuut `@id` kan gebruikt worden om
+                het gerefereerde object van het type `Contactinfo` op te halen.
+            Persoon.geslacht:
+              operationId: persoonGET
+              parameters:
+                id: $response.body#/Persoon.geslacht/@id
+              description: De waarde van het attribuut `@id` kan gebruikt worden om
+                het gerefereerde object van het type `Geslacht` op te halen.
+            Persoon.isHoofdVan:
+              operationId: persoonGET
+              parameters:
+                id: $response.body#/Persoon.isHoofdVan/@id
+              description: De waarde van het attribuut `@id` kan gebruikt worden om
+                het gerefereerde object van het type `Gezin` op te halen.
+            Persoon.heeftBurgerlijkeStaat:
+              operationId: persoonGET
+              parameters:
+                id: $response.body#/Persoon.heeftBurgerlijkeStaat/@id
+              description: De waarde van het attribuut `@id` kan gebruikt worden om
+                het gerefereerde object van het type `BurgerlijkeStaat` op te halen.
+            Persoon.heeftGeboorte:
+              operationId: persoonGET
+              parameters:
+                id: $response.body#/Persoon.heeftGeboorte/@id
+              description: De waarde van het attribuut `@id` kan gebruikt worden om
+                het gerefereerde object van het type `Geboorte` op te halen.
+            Persoon.heeftOverlijden:
+              operationId: persoonGET
+              parameters:
+                id: $response.body#/Persoon.heeftOverlijden/@id
+              description: De waarde van het attribuut `@id` kan gebruikt worden om
+                het gerefereerde object van het type `Overlijden` op te halen.
+            Persoon.inwonerschap:
+              operationId: persoonGET
+              parameters:
+                id: $response.body#/Persoon.inwonerschap/@id
+              description: De waarde van het attribuut `@id` kan gebruikt worden om
+                het gerefereerde object van het type `Jurisdictie` op te halen.
+            Persoon.inwonerschapdetail:
+              operationId: persoonGET
+              parameters:
+                id: $response.body#/Persoon.inwonerschapdetail/@id
+              description: De waarde van het attribuut `@id` kan gebruikt worden om
+                het gerefereerde object van het type `Inwonerschap` op te halen.
+            Persoon.heeftRelatieMet:
+              operationId: persoonGET
+              parameters:
+                id: $response.body#/Persoon.heeftRelatieMet/@id
+              description: De waarde van het attribuut `@id` kan gebruikt worden om
+                het gerefereerde object van het type `Persoon` op te halen.
+            Persoon.persoonsrelatiedetail:
+              operationId: persoonGET
+              parameters:
+                id: $response.body#/Persoon.persoonsrelatiedetail/@id
+              description: De waarde van het attribuut `@id` kan gebruikt worden om
+                het gerefereerde object van het type `Persoonsrelatie` op te halen.
+            Persoon.isLidVan:
+              operationId: persoonGET
+              parameters:
+                id: $response.body#/Persoon.isLidVan/@id
+              description: De waarde van het attribuut `@id` kan gebruikt worden om
+                het gerefereerde object van het type `Gezin` op te halen.
+            Persoon.bron:
+              operationId: persoonGET
+              parameters:
+                id: $response.body#/Persoon.bron/@id
+              description: De waarde van het attribuut `@id` kan gebruikt worden om
+                het gerefereerde object van het type `Organisatie` op te halen.
+        "400":
+          description: Invalid data supplied.
+          content:
+            application/problem+json:
+              schema:
+                $ref: "#/components/schemas/ProbleemDetails"
+          links:
+            ProbleemDetails.type:
+              operationId: persoonGET
+              parameters:
+                type: $response.body#/type
+              description: De waarde van het attribuut `type` kan gebruikt worden
+                om het gerefereerde object van het type `ProblemDetails` op te halen.
+        "401":
+          description: Invalid authorization.
+          content:
+            application/problem+json:
+              schema:
+                $ref: "#/components/schemas/ProbleemDetails"
+          links:
+            ProbleemDetails.type:
+              operationId: persoonGET
+              parameters:
+                type: $response.body#/type
+              description: De waarde van het attribuut `type` kan gebruikt worden
+                om het gerefereerde object van het type `ProblemDetails` op te halen.
+        "403":
+          description: Authentication failed.
+          content:
+            application/problem+json:
+              schema:
+                $ref: "#/components/schemas/ProbleemDetails"
+          links:
+            ProbleemDetails.type:
+              operationId: persoonGET
+              parameters:
+                type: $response.body#/type
+              description: De waarde van het attribuut `type` kan gebruikt worden
+                om het gerefereerde object van het type `ProblemDetails` op te halen.
+        "404":
+          description: Resource not found.
+          content:
+            application/problem+json:
+              schema:
+                $ref: "#/components/schemas/ProbleemDetails"
+          links:
+            ProbleemDetails.type:
+              operationId: persoonGET
+              parameters:
+                type: $response.body#/type
+              description: De waarde van het attribuut `type` kan gebruikt worden
+                om het gerefereerde object van het type `ProblemDetails` op te halen.
+        "412":
+          description: Pre-condition failed.
+          content:
+            application/problem+json:
+              schema:
+                $ref: "#/components/schemas/ProbleemDetails"
+          links:
+            ProbleemDetails.type:
+              operationId: persoonGET
+              parameters:
+                type: $response.body#/type
+              description: De waarde van het attribuut `type` kan gebruikt worden
+                om het gerefereerde object van het type `ProblemDetails` op te halen.
+        "500":
+          description: Unexpected Server Error.
+          content:
+            application/problem+json:
+              schema:
+                $ref: "#/components/schemas/ProbleemDetails"
+          links:
+            ProbleemDetails.type:
+              operationId: persoonGET
+              parameters:
+                type: $response.body#/type
+              description: De waarde van het attribuut `type` kan gebruikt worden
+                om het gerefereerde object van het type `ProblemDetails` op te halen.
+        "502":
+          description: Bad Gateway.
+          content:
+            application/problem+json:
+              schema:
+                $ref: "#/components/schemas/ProbleemDetails"
+          links:
+            ProbleemDetails.type:
+              operationId: persoonGET
+              parameters:
+                type: $response.body#/type
+              description: De waarde van het attribuut `type` kan gebruikt worden
+                om het gerefereerde object van het type `ProblemDetails` op te halen.
+        "503":
+          description: Service unavailable.
+          content:
+            application/problem+json:
+              schema:
+                $ref: "#/components/schemas/ProbleemDetails"
+          links:
+            ProbleemDetails.type:
+              operationId: persoonGET
+              parameters:
+                type: $response.body#/type
+              description: De waarde van het attribuut `type` kan gebruikt worden
+                om het gerefereerde object van het type `ProblemDetails` op te halen.
+        "504":
+          description: Gateway Timeout.
+          content:
+            application/problem+json:
+              schema:
+                $ref: "#/components/schemas/ProbleemDetails"
+          links:
+            ProbleemDetails.type:
+              operationId: persoonGET
+              parameters:
+                type: $response.body#/type
+              description: De waarde van het attribuut `type` kan gebruikt worden
+                om het gerefereerde object van het type `ProblemDetails` op te halen.
+      x-swagger-router-controller: Default
+components:
+  schemas:
+    GeregistereerdPersoonJsonLd:
+      title: GeregistreerdPersoon
+      required:
+      - '@context'
+      - '@id'
+      - '@type'
+      - GeregistreerdPersoon.bron
+      - GeregistreerdPersoon.tijdstipCreatie
+      type: object
+      properties:
+        '@id':
+          type: string
+          format: uri
+        '@type':
+          minItems: 1
+          type: array
+          description: Lijst van object types (klasse)
+          items:
+            pattern: ^GeregistreerdPersoon$
+            type: string
+            description: GeregistreerdPersoon type
+        GeregistreerdPersoon.registratie:
+          $ref: "#/components/schemas/Identificator"
+        GeregistreerdPersoon.beheerder:
+          $ref: "#/components/schemas/AdministratiefBeheerder"
+        GeregistreerdPersoon.registratiedetail:
+          $ref: "#/components/schemas/Registratie"
+        GeregistreerdPersoon.voornaam:
+          minItems: 0
+          type: array
+          description: Lijst van String items.
+          items:
+            $ref: '#/components/schemas/GeregistereerdPersoonJsonLd_GeregistreerdPersoon.voornaam'
+        GeregistreerdPersoon.achternaam:
+          minItems: 0
+          type: array
+          description: Lijst van String items.
+          items:
+            $ref: '#/components/schemas/GeregistereerdPersoonJsonLd_GeregistreerdPersoon.achternaam'
+        GeregistreerdPersoon.contactinfo:
+          $ref: "#/components/schemas/Contactinfo"
+        GeregistreerdPersoon.geslacht:
+          $ref: "#/components/schemas/Geslacht"
+        GeregistreerdPersoon.isHoofdVan:
+          $ref: "#/components/schemas/Gezin"
+        GeregistreerdPersoon.heeftBurgerlijkeStaat:
+          $ref: "#/components/schemas/BurgerlijkeStaat"
+        GeregistreerdPersoon.heeftGeboorte:
+          $ref: "#/components/schemas/Geboorte"
+        GeregistreerdPersoon.heeftOverlijden:
+          $ref: "#/components/schemas/Overlijden"
+        GeregistreerdPersoon.inwonerschap:
+          minItems: 0
+          type: array
+          description: Lijst van Jurisdictie items.
+          items:
+            $ref: "#/components/schemas/Jurisdictie"
+        GeregistreerdPersoon.inwonerschapdetail:
+          minItems: 0
+          type: array
+          description: Lijst van Inwonerschap items.
+          items:
+            $ref: "#/components/schemas/Inwonerschap"
+        GeregistreerdPersoon.heeftRelatieMet:
+          minItems: 0
+          type: array
+          description: Lijst van Persoon items.
+          items:
+            $ref: "#/components/schemas/Persoon"
+        GeregistreerdPersoon.persoonsrelatiedetail:
+          minItems: 0
+          type: array
+          description: Lijst van Persoonsrelatie items.
+          items:
+            discriminator:
+              propertyName: '@type'
+              mapping:
+                Persoonsrelatie: "#/components/schemas/Persoonsrelatie"
+                Gezinsrelatie: "#/components/schemas/Gezinsrelatie"
+                Huwelijk: "#/components/schemas/Huwelijk"
+                Samenwonen: "#/components/schemas/Samenwonen"
+                Afstamming: "#/components/schemas/Afstamming"
+            oneOf:
+            - $ref: "#/components/schemas/Persoonsrelatie"
+            - $ref: "#/components/schemas/Gezinsrelatie"
+            - $ref: "#/components/schemas/Huwelijk"
+            - $ref: "#/components/schemas/Samenwonen"
+            - $ref: "#/components/schemas/Afstamming"
+        GeregistreerdPersoon.isLidVan:
+          minItems: 0
+          type: array
+          description: Lijst van Gezin items.
+          items:
+            $ref: "#/components/schemas/Gezin"
+        GeregistreerdPersoon.tijdstipCreatie:
+          $ref: "#/components/schemas/GeregistereerdPersoonJsonLd_GeregistreerdPersoon.tijdstipCreatie"
+        GeregistreerdPersoon.tijdstipModificatie:
+          $ref: "#/components/schemas/GeregistereerdPersoonJsonLd_GeregistreerdPersoon.tijdstipModificatie"
+        GeregistreerdPersoon.bron:
+          $ref: "#/components/schemas/Organisatie"
+        '@context':
+          type: string
+          format: uri
+          enum:
+          - https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+      description: Persoon waarvan de gegevens zijn ingeschreven in een register.
+      example:
+        GeregistreerdPersoon.heeftBurgerlijkeStaat: null
+        GeregistreerdPersoon.heeftOverlijden: null
+        GeregistreerdPersoon.registratie:
+          Identificator.toegekendDoor(String):
+            '@value': '@value'
+          '@type':
+          - '@type'
+          - '@type'
+          Identificator.identificator:
+            '@value': '@value'
+          '@id': http://example.com/aeiou
+          Identificator.toegekendOp:
+            '@value': 2000-01-23T04:56:07.000+00:00
+            '@type': '@type'
+          '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+          Identificator.toegekendDoor:
+            '@type':
+            - '@type'
+            - '@type'
+            '@id': http://example.com/aeiou
+            '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+        GeregistreerdPersoon.registratiedetail:
+          Registratie.dossierstatus:
+          - '@id': http://example.com/aeiou
+          - '@id': http://example.com/aeiou
+          '@type':
+          - '@type'
+          - '@type'
+          Registratie.geregistreerdPersoon:
+            GeregistreerdPersoon.heeftBurgerlijkeStaat: null
+            GeregistreerdPersoon.heeftOverlijden: null
+            GeregistreerdPersoon.registratie: null
+            GeregistreerdPersoon.registratiedetail: null
+            '@type':
+            - '@type'
+            - '@type'
+            GeregistreerdPersoon.inwonerschap:
+            - null
+            - null
+            GeregistreerdPersoon.inwonerschapdetail:
+            - null
+            - null
+            GeregistreerdPersoon.isLidVan:
+            - null
+            - null
+            GeregistreerdPersoon.achternaam:
+            - '@value': '@value'
+            - '@value': '@value'
+            GeregistreerdPersoon.bron: null
+            GeregistreerdPersoon.beheerder: null
+            GeregistreerdPersoon.geslacht:
+              '@id': http://example.com/aeiou
+            '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+            GeregistreerdPersoon.heeftGeboorte: null
+            GeregistreerdPersoon.heeftRelatieMet:
+            - null
+            - null
+            GeregistreerdPersoon.persoonsrelatiedetail:
+            - ""
+            - ""
+            GeregistreerdPersoon.isHoofdVan:
+              Gezin.gezinslid:
+              - null
+              - null
+              Gezin.contactinfo:
+              - null
+              - null
+              '@type':
+              - '@type'
+              - '@type'
+              '@id': http://example.com/aeiou
+              '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+              Gezin.gezinsadres: null
+              Gezin.gezinshoofd:
+                Persoon.geslacht: null
+                Persoon.inwonerschap:
+                - '@type':
+                  - '@type'
+                  - '@type'
+                  '@id': http://example.com/aeiou
+                  Jurisdictie.plaats: null
+                  '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+                - '@type':
+                  - '@type'
+                  - '@type'
+                  '@id': http://example.com/aeiou
+                  Jurisdictie.plaats: null
+                  '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+                Persoon.voornaam:
+                - null
+                - null
+                Persoon.achternaam:
+                - null
+                - null
+                Persoon.isLidVan:
+                - null
+                - null
+                Persoon.heeftGeboorte:
+                  '@type':
+                  - '@type'
+                  - '@type'
+                  Geboorte.plaats: null
+                  '@id': http://example.com/aeiou
+                  Geboorte.datum:
+                    '@value': 2000-01-23T04:56:07.000+00:00
+                    '@type': '@type'
+                  '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+                Persoon.heeftRelatieMet:
+                - null
+                - null
+                '@type':
+                - '@type'
+                - '@type'
+                Persoon.heeftOverlijden:
+                  Overlijden.datum:
+                    '@value': 2000-01-23T04:56:07.000+00:00
+                    '@type': '@type'
+                  Overlijden.plaats: null
+                  '@type':
+                  - '@type'
+                  - '@type'
+                  '@id': http://example.com/aeiou
+                  '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+                Persoon.tijdstipCreatie:
+                  '@value': 2000-01-23T04:56:07.000+00:00
+                  '@type': '@type'
+                Persoon.tijdstipModificatie:
+                  '@value': 2000-01-23T04:56:07.000+00:00
+                  '@type': '@type'
+                '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+                Persoon.contactinfo: null
+                Persoon.bron:
+                  '@type':
+                  - '@type'
+                  - '@type'
+                  Organisatie.contactinfo:
+                  - null
+                  - null
+                  '@id': http://example.com/aeiou
+                  Organisatie.voorkeursnaam:
+                    '@value': '@value'
+                    '@language': '@language'
+                  '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+                '@id': http://example.com/aeiou
+                Persoon.inwonerschapdetail:
+                - Inwonerschap.heeftVerblijfplaats:
+                  - ""
+                  - ""
+                  Inwonerschap.persoon: null
+                  '@type':
+                  - '@type'
+                  - '@type'
+                  Inwonerschap.jurisdictie: null
+                  '@id': http://example.com/aeiou
+                  '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+                - Inwonerschap.heeftVerblijfplaats:
+                  - ""
+                  - ""
+                  Inwonerschap.persoon: null
+                  '@type':
+                  - '@type'
+                  - '@type'
+                  Inwonerschap.jurisdictie: null
+                  '@id': http://example.com/aeiou
+                  '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+                Persoon.isHoofdVan: null
+                Persoon.heeftBurgerlijkeStaat:
+                  BurgerlijkeStaat.type:
+                    '@id': http://example.com/aeiou
+                  '@type':
+                  - '@type'
+                  - '@type'
+                  BurgerlijkeStaat.plaats: null
+                  '@id': http://example.com/aeiou
+                  '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+                Persoon.persoonsrelatiedetail:
+                - ""
+                - ""
+              Gezin.voorkeursnaam: null
+            GeregistreerdPersoon.contactinfo: null
+            '@id': http://example.com/aeiou
+            GeregistreerdPersoon.tijdstipModificatie: null
+            GeregistreerdPersoon.tijdstipCreatie: null
+            GeregistreerdPersoon.voornaam:
+            - '@value': '@value'
+            - '@value': '@value'
+          '@id': http://example.com/aeiou
+          Registratie.vorigeRegistratie: null
+          Registratie.volgendeRegistratie: null
+          '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+        '@type':
+        - '@type'
+        - '@type'
+        GeregistreerdPersoon.inwonerschap:
+        - null
+        - null
+        GeregistreerdPersoon.inwonerschapdetail:
+        - null
+        - null
+        GeregistreerdPersoon.isLidVan:
+        - null
+        - null
+        GeregistreerdPersoon.achternaam:
+        - null
+        - null
+        GeregistreerdPersoon.bron: null
+        GeregistreerdPersoon.beheerder:
+          AdministratiefBeheerder.type:
+            '@id': http://example.com/aeiou
+          '@type':
+          - '@type'
+          - '@type'
+          AdministratiefBeheerder.voorkeursnaam:
+            '@value': '@value'
+            '@language': '@language'
+          '@id': http://example.com/aeiou
+          AdministratiefBeheerder.contactinfo:
+          - Contactinfo.adres:
+              Adresvoorstelling.busnummer:
+                '@value': '@value'
+              Adresvoorstelling.plaats:
+                Plaats.identificator: null
+                Plaats.plaatsnaam:
+                  '@value': '@value'
+                  '@language': '@language'
+                '@type':
+                - '@type'
+                - '@type'
+                '@id': http://example.com/aeiou
+                Plaats.plaats: null
+                '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+              Adresvoorstelling.administratieveEenheidNiveau2:
+                '@value': '@value'
+                '@language': '@language'
+              Adresvoorstelling.straatnaam:
+                '@value': '@value'
+                '@language': '@language'
+              Adresvoorstelling.administratieveEenheidNiveau1:
+                '@value': '@value'
+                '@language': '@language'
+              Adresvoorstelling.volledigAdres:
+                '@value': '@value'
+                '@language': '@language'
+              '@type':
+              - '@type'
+              - '@type'
+              Adresvoorstelling.locatieaanduiding:
+              - '@value': '@value'
+              - '@value': '@value'
+              Adresvoorstelling.postbus:
+                '@value': '@value'
+              Adresvoorstelling.gemeentenaam:
+                '@value': '@value'
+                '@language': '@language'
+              Adresvoorstelling.postnaam:
+                '@value': '@value'
+                '@language': '@language'
+              '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+              Adresvoorstelling.land:
+                '@value': '@value'
+                '@language': '@language'
+              Adresvoorstelling.postcode:
+                '@value': '@value'
+              Adresvoorstelling.adresgebied:
+                '@value': '@value'
+                '@language': '@language'
+              Adresvoorstelling.locatienaam:
+              - '@value': '@value'
+                '@language': '@language'
+              - '@value': '@value'
+                '@language': '@language'
+              '@id': http://example.com/aeiou
+              Adresvoorstelling.huisnummer:
+                '@value': '@value'
+              Adresvoorstelling.verwijstNaar:
+                '@type':
+                - '@type'
+                - '@type'
+                '@id': http://example.com/aeiou
+                '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+            Contactinfo.telefoon:
+              '@value': '@value'
+            Contactinfo.email:
+              '@value': '@value'
+            '@type':
+            - '@type'
+            - '@type'
+            Contactinfo.aanschrijfvorm:
+              '@value': '@value'
+              '@language': '@language'
+            Contactinfo.naam:
+              '@value': '@value'
+            Contactinfo.faxnummer:
+              '@value': '@value'
+            '@id': http://example.com/aeiou
+            Contactinfo.website:
+              '@id': http://example.com/aeiou
+            '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+          - Contactinfo.adres:
+              Adresvoorstelling.busnummer:
+                '@value': '@value'
+              Adresvoorstelling.plaats:
+                Plaats.identificator: null
+                Plaats.plaatsnaam:
+                  '@value': '@value'
+                  '@language': '@language'
+                '@type':
+                - '@type'
+                - '@type'
+                '@id': http://example.com/aeiou
+                Plaats.plaats: null
+                '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+              Adresvoorstelling.administratieveEenheidNiveau2:
+                '@value': '@value'
+                '@language': '@language'
+              Adresvoorstelling.straatnaam:
+                '@value': '@value'
+                '@language': '@language'
+              Adresvoorstelling.administratieveEenheidNiveau1:
+                '@value': '@value'
+                '@language': '@language'
+              Adresvoorstelling.volledigAdres:
+                '@value': '@value'
+                '@language': '@language'
+              '@type':
+              - '@type'
+              - '@type'
+              Adresvoorstelling.locatieaanduiding:
+              - '@value': '@value'
+              - '@value': '@value'
+              Adresvoorstelling.postbus:
+                '@value': '@value'
+              Adresvoorstelling.gemeentenaam:
+                '@value': '@value'
+                '@language': '@language'
+              Adresvoorstelling.postnaam:
+                '@value': '@value'
+                '@language': '@language'
+              '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+              Adresvoorstelling.land:
+                '@value': '@value'
+                '@language': '@language'
+              Adresvoorstelling.postcode:
+                '@value': '@value'
+              Adresvoorstelling.adresgebied:
+                '@value': '@value'
+                '@language': '@language'
+              Adresvoorstelling.locatienaam:
+              - '@value': '@value'
+                '@language': '@language'
+              - '@value': '@value'
+                '@language': '@language'
+              '@id': http://example.com/aeiou
+              Adresvoorstelling.huisnummer:
+                '@value': '@value'
+              Adresvoorstelling.verwijstNaar:
+                '@type':
+                - '@type'
+                - '@type'
+                '@id': http://example.com/aeiou
+                '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+            Contactinfo.telefoon:
+              '@value': '@value'
+            Contactinfo.email:
+              '@value': '@value'
+            '@type':
+            - '@type'
+            - '@type'
+            Contactinfo.aanschrijfvorm:
+              '@value': '@value'
+              '@language': '@language'
+            Contactinfo.naam:
+              '@value': '@value'
+            Contactinfo.faxnummer:
+              '@value': '@value'
+            '@id': http://example.com/aeiou
+            Contactinfo.website:
+              '@id': http://example.com/aeiou
+            '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+          '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+        GeregistreerdPersoon.geslacht: null
+        '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+        GeregistreerdPersoon.heeftGeboorte: null
+        GeregistreerdPersoon.heeftRelatieMet:
+        - null
+        - null
+        GeregistreerdPersoon.persoonsrelatiedetail:
+        - ""
+        - ""
+        GeregistreerdPersoon.isHoofdVan: null
+        GeregistreerdPersoon.contactinfo: null
+        '@id': http://example.com/aeiou
+        GeregistreerdPersoon.tijdstipModificatie:
+          '@value': 2000-01-23T04:56:07.000+00:00
+          '@type': '@type'
+        GeregistreerdPersoon.tijdstipCreatie:
+          '@value': 2000-01-23T04:56:07.000+00:00
+          '@type': '@type'
+        GeregistreerdPersoon.voornaam:
+        - null
+        - null
+    GeregistreerdPersoonJsonLd:
+      title: GeregistreerdPersoon
+      required:
+      - '@context'
+      - '@id'
+      - '@type'
+      - GeregistreerdPersoon.bron
+      - GeregistreerdPersoon.tijdstipCreatie
+      type: object
+      properties:
+        '@id':
+          type: string
+          format: uri
+        '@type':
+          minItems: 1
+          type: array
+          description: Lijst van object types (klasse)
+          items:
+            pattern: ^GeregistreerdPersoon$
+            type: string
+            description: GeregistreerdPersoon type
+        GeregistreerdPersoon.registratie:
+          $ref: "#/components/schemas/Identificator"
+        GeregistreerdPersoon.beheerder:
+          $ref: "#/components/schemas/AdministratiefBeheerder"
+        GeregistreerdPersoon.registratiedetail:
+          $ref: "#/components/schemas/Registratie"
+        GeregistreerdPersoon.voornaam:
+          minItems: 0
+          type: array
+          description: Lijst van String items.
+          items:
+            $ref: '#/components/schemas/GeregistereerdPersoonJsonLd_GeregistreerdPersoon.voornaam'
+        GeregistreerdPersoon.achternaam:
+          minItems: 0
+          type: array
+          description: Lijst van String items.
+          items:
+            $ref: '#/components/schemas/GeregistereerdPersoonJsonLd_GeregistreerdPersoon.achternaam'
+        GeregistreerdPersoon.contactinfo:
+          $ref: "#/components/schemas/Contactinfo"
+        GeregistreerdPersoon.geslacht:
+          $ref: "#/components/schemas/Geslacht"
+        GeregistreerdPersoon.isHoofdVan:
+          $ref: "#/components/schemas/Gezin"
+        GeregistreerdPersoon.heeftBurgerlijkeStaat:
+          $ref: "#/components/schemas/BurgerlijkeStaat"
+        GeregistreerdPersoon.heeftGeboorte:
+          $ref: "#/components/schemas/Geboorte"
+        GeregistreerdPersoon.heeftOverlijden:
+          $ref: "#/components/schemas/Overlijden"
+        GeregistreerdPersoon.inwonerschap:
+          minItems: 0
+          type: array
+          description: Lijst van Jurisdictie items.
+          items:
+            $ref: "#/components/schemas/Jurisdictie"
+        GeregistreerdPersoon.inwonerschapdetail:
+          minItems: 0
+          type: array
+          description: Lijst van Inwonerschap items.
+          items:
+            $ref: "#/components/schemas/Inwonerschap"
+        GeregistreerdPersoon.heeftRelatieMet:
+          minItems: 0
+          type: array
+          description: Lijst van Persoon items.
+          items:
+            $ref: "#/components/schemas/Persoon"
+        GeregistreerdPersoon.persoonsrelatiedetail:
+          minItems: 0
+          type: array
+          description: Lijst van Persoonsrelatie items.
+          items:
+            discriminator:
+              propertyName: '@type'
+              mapping:
+                Persoonsrelatie: "#/components/schemas/Persoonsrelatie"
+                Gezinsrelatie: "#/components/schemas/Gezinsrelatie"
+                Huwelijk: "#/components/schemas/Huwelijk"
+                Samenwonen: "#/components/schemas/Samenwonen"
+                Afstamming: "#/components/schemas/Afstamming"
+            oneOf:
+            - $ref: "#/components/schemas/Persoonsrelatie"
+            - $ref: "#/components/schemas/Gezinsrelatie"
+            - $ref: "#/components/schemas/Huwelijk"
+            - $ref: "#/components/schemas/Samenwonen"
+            - $ref: "#/components/schemas/Afstamming"
+        GeregistreerdPersoon.isLidVan:
+          minItems: 0
+          type: array
+          description: Lijst van Gezin items.
+          items:
+            $ref: "#/components/schemas/Gezin"
+        GeregistreerdPersoon.tijdstipCreatie:
+          $ref: "#/components/schemas/GeregistereerdPersoonJsonLd_GeregistreerdPersoon.tijdstipCreatie"
+        GeregistreerdPersoon.tijdstipModificatie:
+          $ref: "#/components/schemas/GeregistereerdPersoonJsonLd_GeregistreerdPersoon.tijdstipModificatie"
+        GeregistreerdPersoon.bron:
+          $ref: "#/components/schemas/Organisatie"
+        '@context':
+          type: string
+          format: uri
+          enum:
+          - https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+      description: Persoon waarvan de gegevens zijn ingeschreven in een register.
+      example:
+        GeregistreerdPersoon.heeftBurgerlijkeStaat: null
+        GeregistreerdPersoon.heeftOverlijden: null
+        GeregistreerdPersoon.registratie:
+          Identificator.toegekendDoor(String):
+            '@value': '@value'
+          '@type':
+          - '@type'
+          - '@type'
+          Identificator.identificator:
+            '@value': '@value'
+          '@id': http://example.com/aeiou
+          Identificator.toegekendOp:
+            '@value': 2000-01-23T04:56:07.000+00:00
+            '@type': '@type'
+          '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+          Identificator.toegekendDoor:
+            '@type':
+            - '@type'
+            - '@type'
+            '@id': http://example.com/aeiou
+            '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+        GeregistreerdPersoon.registratiedetail:
+          Registratie.dossierstatus:
+          - '@id': http://example.com/aeiou
+          - '@id': http://example.com/aeiou
+          '@type':
+          - '@type'
+          - '@type'
+          Registratie.geregistreerdPersoon:
+            GeregistreerdPersoon.heeftBurgerlijkeStaat: null
+            GeregistreerdPersoon.heeftOverlijden: null
+            GeregistreerdPersoon.registratie: null
+            GeregistreerdPersoon.registratiedetail: null
+            '@type':
+            - '@type'
+            - '@type'
+            GeregistreerdPersoon.inwonerschap:
+            - null
+            - null
+            GeregistreerdPersoon.inwonerschapdetail:
+            - null
+            - null
+            GeregistreerdPersoon.isLidVan:
+            - null
+            - null
+            GeregistreerdPersoon.achternaam:
+            - '@value': '@value'
+            - '@value': '@value'
+            GeregistreerdPersoon.bron: null
+            GeregistreerdPersoon.beheerder: null
+            GeregistreerdPersoon.geslacht:
+              '@id': http://example.com/aeiou
+            '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+            GeregistreerdPersoon.heeftGeboorte: null
+            GeregistreerdPersoon.heeftRelatieMet:
+            - null
+            - null
+            GeregistreerdPersoon.persoonsrelatiedetail:
+            - ""
+            - ""
+            GeregistreerdPersoon.isHoofdVan:
+              Gezin.gezinslid:
+              - null
+              - null
+              Gezin.contactinfo:
+              - null
+              - null
+              '@type':
+              - '@type'
+              - '@type'
+              '@id': http://example.com/aeiou
+              '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+              Gezin.gezinsadres: null
+              Gezin.gezinshoofd:
+                Persoon.geslacht: null
+                Persoon.inwonerschap:
+                - '@type':
+                  - '@type'
+                  - '@type'
+                  '@id': http://example.com/aeiou
+                  Jurisdictie.plaats: null
+                  '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+                - '@type':
+                  - '@type'
+                  - '@type'
+                  '@id': http://example.com/aeiou
+                  Jurisdictie.plaats: null
+                  '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+                Persoon.voornaam:
+                - null
+                - null
+                Persoon.achternaam:
+                - null
+                - null
+                Persoon.isLidVan:
+                - null
+                - null
+                Persoon.heeftGeboorte:
+                  '@type':
+                  - '@type'
+                  - '@type'
+                  Geboorte.plaats: null
+                  '@id': http://example.com/aeiou
+                  Geboorte.datum:
+                    '@value': 2000-01-23T04:56:07.000+00:00
+                    '@type': '@type'
+                  '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+                Persoon.heeftRelatieMet:
+                - null
+                - null
+                '@type':
+                - '@type'
+                - '@type'
+                Persoon.heeftOverlijden:
+                  Overlijden.datum:
+                    '@value': 2000-01-23T04:56:07.000+00:00
+                    '@type': '@type'
+                  Overlijden.plaats: null
+                  '@type':
+                  - '@type'
+                  - '@type'
+                  '@id': http://example.com/aeiou
+                  '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+                Persoon.tijdstipCreatie:
+                  '@value': 2000-01-23T04:56:07.000+00:00
+                  '@type': '@type'
+                Persoon.tijdstipModificatie:
+                  '@value': 2000-01-23T04:56:07.000+00:00
+                  '@type': '@type'
+                '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+                Persoon.contactinfo: null
+                Persoon.bron:
+                  '@type':
+                  - '@type'
+                  - '@type'
+                  Organisatie.contactinfo:
+                  - null
+                  - null
+                  '@id': http://example.com/aeiou
+                  Organisatie.voorkeursnaam:
+                    '@value': '@value'
+                    '@language': '@language'
+                  '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+                '@id': http://example.com/aeiou
+                Persoon.inwonerschapdetail:
+                - Inwonerschap.heeftVerblijfplaats:
+                  - ""
+                  - ""
+                  Inwonerschap.persoon: null
+                  '@type':
+                  - '@type'
+                  - '@type'
+                  Inwonerschap.jurisdictie: null
+                  '@id': http://example.com/aeiou
+                  '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+                - Inwonerschap.heeftVerblijfplaats:
+                  - ""
+                  - ""
+                  Inwonerschap.persoon: null
+                  '@type':
+                  - '@type'
+                  - '@type'
+                  Inwonerschap.jurisdictie: null
+                  '@id': http://example.com/aeiou
+                  '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+                Persoon.isHoofdVan: null
+                Persoon.heeftBurgerlijkeStaat:
+                  BurgerlijkeStaat.type:
+                    '@id': http://example.com/aeiou
+                  '@type':
+                  - '@type'
+                  - '@type'
+                  BurgerlijkeStaat.plaats: null
+                  '@id': http://example.com/aeiou
+                  '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+                Persoon.persoonsrelatiedetail:
+                - ""
+                - ""
+              Gezin.voorkeursnaam: null
+            GeregistreerdPersoon.contactinfo: null
+            '@id': http://example.com/aeiou
+            GeregistreerdPersoon.tijdstipModificatie: null
+            GeregistreerdPersoon.tijdstipCreatie: null
+            GeregistreerdPersoon.voornaam:
+            - '@value': '@value'
+            - '@value': '@value'
+          '@id': http://example.com/aeiou
+          Registratie.vorigeRegistratie: null
+          Registratie.volgendeRegistratie: null
+          '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+        '@type':
+        - '@type'
+        - '@type'
+        GeregistreerdPersoon.inwonerschap:
+        - null
+        - null
+        GeregistreerdPersoon.inwonerschapdetail:
+        - null
+        - null
+        GeregistreerdPersoon.isLidVan:
+        - null
+        - null
+        GeregistreerdPersoon.achternaam:
+        - null
+        - null
+        GeregistreerdPersoon.bron: null
+        GeregistreerdPersoon.beheerder:
+          AdministratiefBeheerder.type:
+            '@id': http://example.com/aeiou
+          '@type':
+          - '@type'
+          - '@type'
+          AdministratiefBeheerder.voorkeursnaam:
+            '@value': '@value'
+            '@language': '@language'
+          '@id': http://example.com/aeiou
+          AdministratiefBeheerder.contactinfo:
+          - Contactinfo.adres:
+              Adresvoorstelling.busnummer:
+                '@value': '@value'
+              Adresvoorstelling.plaats:
+                Plaats.identificator: null
+                Plaats.plaatsnaam:
+                  '@value': '@value'
+                  '@language': '@language'
+                '@type':
+                - '@type'
+                - '@type'
+                '@id': http://example.com/aeiou
+                Plaats.plaats: null
+                '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+              Adresvoorstelling.administratieveEenheidNiveau2:
+                '@value': '@value'
+                '@language': '@language'
+              Adresvoorstelling.straatnaam:
+                '@value': '@value'
+                '@language': '@language'
+              Adresvoorstelling.administratieveEenheidNiveau1:
+                '@value': '@value'
+                '@language': '@language'
+              Adresvoorstelling.volledigAdres:
+                '@value': '@value'
+                '@language': '@language'
+              '@type':
+              - '@type'
+              - '@type'
+              Adresvoorstelling.locatieaanduiding:
+              - '@value': '@value'
+              - '@value': '@value'
+              Adresvoorstelling.postbus:
+                '@value': '@value'
+              Adresvoorstelling.gemeentenaam:
+                '@value': '@value'
+                '@language': '@language'
+              Adresvoorstelling.postnaam:
+                '@value': '@value'
+                '@language': '@language'
+              '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+              Adresvoorstelling.land:
+                '@value': '@value'
+                '@language': '@language'
+              Adresvoorstelling.postcode:
+                '@value': '@value'
+              Adresvoorstelling.adresgebied:
+                '@value': '@value'
+                '@language': '@language'
+              Adresvoorstelling.locatienaam:
+              - '@value': '@value'
+                '@language': '@language'
+              - '@value': '@value'
+                '@language': '@language'
+              '@id': http://example.com/aeiou
+              Adresvoorstelling.huisnummer:
+                '@value': '@value'
+              Adresvoorstelling.verwijstNaar:
+                '@type':
+                - '@type'
+                - '@type'
+                '@id': http://example.com/aeiou
+                '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+            Contactinfo.telefoon:
+              '@value': '@value'
+            Contactinfo.email:
+              '@value': '@value'
+            '@type':
+            - '@type'
+            - '@type'
+            Contactinfo.aanschrijfvorm:
+              '@value': '@value'
+              '@language': '@language'
+            Contactinfo.naam:
+              '@value': '@value'
+            Contactinfo.faxnummer:
+              '@value': '@value'
+            '@id': http://example.com/aeiou
+            Contactinfo.website:
+              '@id': http://example.com/aeiou
+            '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+          - Contactinfo.adres:
+              Adresvoorstelling.busnummer:
+                '@value': '@value'
+              Adresvoorstelling.plaats:
+                Plaats.identificator: null
+                Plaats.plaatsnaam:
+                  '@value': '@value'
+                  '@language': '@language'
+                '@type':
+                - '@type'
+                - '@type'
+                '@id': http://example.com/aeiou
+                Plaats.plaats: null
+                '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+              Adresvoorstelling.administratieveEenheidNiveau2:
+                '@value': '@value'
+                '@language': '@language'
+              Adresvoorstelling.straatnaam:
+                '@value': '@value'
+                '@language': '@language'
+              Adresvoorstelling.administratieveEenheidNiveau1:
+                '@value': '@value'
+                '@language': '@language'
+              Adresvoorstelling.volledigAdres:
+                '@value': '@value'
+                '@language': '@language'
+              '@type':
+              - '@type'
+              - '@type'
+              Adresvoorstelling.locatieaanduiding:
+              - '@value': '@value'
+              - '@value': '@value'
+              Adresvoorstelling.postbus:
+                '@value': '@value'
+              Adresvoorstelling.gemeentenaam:
+                '@value': '@value'
+                '@language': '@language'
+              Adresvoorstelling.postnaam:
+                '@value': '@value'
+                '@language': '@language'
+              '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+              Adresvoorstelling.land:
+                '@value': '@value'
+                '@language': '@language'
+              Adresvoorstelling.postcode:
+                '@value': '@value'
+              Adresvoorstelling.adresgebied:
+                '@value': '@value'
+                '@language': '@language'
+              Adresvoorstelling.locatienaam:
+              - '@value': '@value'
+                '@language': '@language'
+              - '@value': '@value'
+                '@language': '@language'
+              '@id': http://example.com/aeiou
+              Adresvoorstelling.huisnummer:
+                '@value': '@value'
+              Adresvoorstelling.verwijstNaar:
+                '@type':
+                - '@type'
+                - '@type'
+                '@id': http://example.com/aeiou
+                '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+            Contactinfo.telefoon:
+              '@value': '@value'
+            Contactinfo.email:
+              '@value': '@value'
+            '@type':
+            - '@type'
+            - '@type'
+            Contactinfo.aanschrijfvorm:
+              '@value': '@value'
+              '@language': '@language'
+            Contactinfo.naam:
+              '@value': '@value'
+            Contactinfo.faxnummer:
+              '@value': '@value'
+            '@id': http://example.com/aeiou
+            Contactinfo.website:
+              '@id': http://example.com/aeiou
+            '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+          '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+        GeregistreerdPersoon.geslacht: null
+        '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+        GeregistreerdPersoon.heeftGeboorte: null
+        GeregistreerdPersoon.heeftRelatieMet:
+        - null
+        - null
+        GeregistreerdPersoon.persoonsrelatiedetail:
+        - ""
+        - ""
+        GeregistreerdPersoon.isHoofdVan: null
+        GeregistreerdPersoon.contactinfo: null
+        '@id': http://example.com/aeiou
+        GeregistreerdPersoon.tijdstipModificatie:
+          '@value': 2000-01-23T04:56:07.000+00:00
+          '@type': '@type'
+        GeregistreerdPersoon.tijdstipCreatie:
+          '@value': 2000-01-23T04:56:07.000+00:00
+          '@type': '@type'
+        GeregistreerdPersoon.voornaam:
+        - null
+        - null
+    Identificator:
+      title: Identificator
+      required:
+      - '@context'
+      - '@id'
+      - '@type'
+      type: object
+      properties:
+        '@id':
+          type: string
+          format: uri
+        '@type':
+          minItems: 1
+          type: array
+          description: Lijst van object types (klasse)
+          items:
+            pattern: ^Identificator$
+            type: string
+            description: Identificator type
+        Identificator.identificator:
+          $ref: "#/components/schemas/Identificator_Identificator.identificator"
+        Identificator.toegekendDoor(String):
+          $ref: "#/components/schemas/Identificator_Identificator.toegekendDoorString"
+        Identificator.toegekendOp:
+          $ref: "#/components/schemas/Identificator_Identificator.toegekendOp"
+        Identificator.toegekendDoor:
+          $ref: "#/components/schemas/Agent"
+        '@context':
+          type: string
+          format: uri
+          enum:
+          - https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+      description: Informatie gebruikt om een object uniek te identificeren.
+      example:
+        Identificator.toegekendDoor(String):
+          '@value': '@value'
+        '@type':
+        - '@type'
+        - '@type'
+        Identificator.identificator:
+          '@value': '@value'
+        '@id': http://example.com/aeiou
+        Identificator.toegekendOp:
+          '@value': 2000-01-23T04:56:07.000+00:00
+          '@type': '@type'
+        '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+        Identificator.toegekendDoor:
+          '@type':
+          - '@type'
+          - '@type'
+          '@id': http://example.com/aeiou
+          '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+    Agent:
+      title: Agent
+      required:
+      - '@context'
+      - '@id'
+      - '@type'
+      type: object
+      properties:
+        '@id':
+          type: string
+          format: uri
+        '@type':
+          minItems: 1
+          type: array
+          description: Lijst van object types (klasse)
+          items:
+            pattern: ^Agent$
+            type: string
+            description: Agent type
+        '@context':
+          type: string
+          format: uri
+          enum:
+          - https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+      description: Iemand die of iets dat kan handelen of een effect kan teweeg brengen.
+      example:
+        '@type':
+        - '@type'
+        - '@type'
+        '@id': http://example.com/aeiou
+        '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+    AdministratiefBeheerder:
+      title: AdministratiefBeheerder
+      required:
+      - '@context'
+      - '@id'
+      - '@type'
+      type: object
+      properties:
+        '@id':
+          type: string
+          format: uri
+        '@type':
+          minItems: 1
+          type: array
+          description: Lijst van object types (klasse)
+          items:
+            pattern: ^AdministratiefBeheerder$
+            type: string
+            description: AdministratiefBeheerder type
+        AdministratiefBeheerder.type:
+          $ref: "#/components/schemas/AdministratiefBeheerdertype"
+        AdministratiefBeheerder.voorkeursnaam:
+          $ref: "#/components/schemas/AdministratiefBeheerder_AdministratiefBeheerder.voorkeursnaam"
+        AdministratiefBeheerder.contactinfo:
+          minItems: 0
+          type: array
+          description: Lijst van Contactinfo items.
+          items:
+            $ref: "#/components/schemas/Contactinfo"
+        '@context':
+          type: string
+          format: uri
+          enum:
+          - https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+      description: Organisatie die het dossier van de persoon in het register beheert.
+      example:
+        AdministratiefBeheerder.type:
+          '@id': http://example.com/aeiou
+        '@type':
+        - '@type'
+        - '@type'
+        AdministratiefBeheerder.voorkeursnaam:
+          '@value': '@value'
+          '@language': '@language'
+        '@id': http://example.com/aeiou
+        AdministratiefBeheerder.contactinfo:
+        - Contactinfo.adres:
+            Adresvoorstelling.busnummer:
+              '@value': '@value'
+            Adresvoorstelling.plaats:
+              Plaats.identificator: null
+              Plaats.plaatsnaam:
+                '@value': '@value'
+                '@language': '@language'
+              '@type':
+              - '@type'
+              - '@type'
+              '@id': http://example.com/aeiou
+              Plaats.plaats: null
+              '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+            Adresvoorstelling.administratieveEenheidNiveau2:
+              '@value': '@value'
+              '@language': '@language'
+            Adresvoorstelling.straatnaam:
+              '@value': '@value'
+              '@language': '@language'
+            Adresvoorstelling.administratieveEenheidNiveau1:
+              '@value': '@value'
+              '@language': '@language'
+            Adresvoorstelling.volledigAdres:
+              '@value': '@value'
+              '@language': '@language'
+            '@type':
+            - '@type'
+            - '@type'
+            Adresvoorstelling.locatieaanduiding:
+            - '@value': '@value'
+            - '@value': '@value'
+            Adresvoorstelling.postbus:
+              '@value': '@value'
+            Adresvoorstelling.gemeentenaam:
+              '@value': '@value'
+              '@language': '@language'
+            Adresvoorstelling.postnaam:
+              '@value': '@value'
+              '@language': '@language'
+            '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+            Adresvoorstelling.land:
+              '@value': '@value'
+              '@language': '@language'
+            Adresvoorstelling.postcode:
+              '@value': '@value'
+            Adresvoorstelling.adresgebied:
+              '@value': '@value'
+              '@language': '@language'
+            Adresvoorstelling.locatienaam:
+            - '@value': '@value'
+              '@language': '@language'
+            - '@value': '@value'
+              '@language': '@language'
+            '@id': http://example.com/aeiou
+            Adresvoorstelling.huisnummer:
+              '@value': '@value'
+            Adresvoorstelling.verwijstNaar:
+              '@type':
+              - '@type'
+              - '@type'
+              '@id': http://example.com/aeiou
+              '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+          Contactinfo.telefoon:
+            '@value': '@value'
+          Contactinfo.email:
+            '@value': '@value'
+          '@type':
+          - '@type'
+          - '@type'
+          Contactinfo.aanschrijfvorm:
+            '@value': '@value'
+            '@language': '@language'
+          Contactinfo.naam:
+            '@value': '@value'
+          Contactinfo.faxnummer:
+            '@value': '@value'
+          '@id': http://example.com/aeiou
+          Contactinfo.website:
+            '@id': http://example.com/aeiou
+          '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+        - Contactinfo.adres:
+            Adresvoorstelling.busnummer:
+              '@value': '@value'
+            Adresvoorstelling.plaats:
+              Plaats.identificator: null
+              Plaats.plaatsnaam:
+                '@value': '@value'
+                '@language': '@language'
+              '@type':
+              - '@type'
+              - '@type'
+              '@id': http://example.com/aeiou
+              Plaats.plaats: null
+              '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+            Adresvoorstelling.administratieveEenheidNiveau2:
+              '@value': '@value'
+              '@language': '@language'
+            Adresvoorstelling.straatnaam:
+              '@value': '@value'
+              '@language': '@language'
+            Adresvoorstelling.administratieveEenheidNiveau1:
+              '@value': '@value'
+              '@language': '@language'
+            Adresvoorstelling.volledigAdres:
+              '@value': '@value'
+              '@language': '@language'
+            '@type':
+            - '@type'
+            - '@type'
+            Adresvoorstelling.locatieaanduiding:
+            - '@value': '@value'
+            - '@value': '@value'
+            Adresvoorstelling.postbus:
+              '@value': '@value'
+            Adresvoorstelling.gemeentenaam:
+              '@value': '@value'
+              '@language': '@language'
+            Adresvoorstelling.postnaam:
+              '@value': '@value'
+              '@language': '@language'
+            '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+            Adresvoorstelling.land:
+              '@value': '@value'
+              '@language': '@language'
+            Adresvoorstelling.postcode:
+              '@value': '@value'
+            Adresvoorstelling.adresgebied:
+              '@value': '@value'
+              '@language': '@language'
+            Adresvoorstelling.locatienaam:
+            - '@value': '@value'
+              '@language': '@language'
+            - '@value': '@value'
+              '@language': '@language'
+            '@id': http://example.com/aeiou
+            Adresvoorstelling.huisnummer:
+              '@value': '@value'
+            Adresvoorstelling.verwijstNaar:
+              '@type':
+              - '@type'
+              - '@type'
+              '@id': http://example.com/aeiou
+              '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+          Contactinfo.telefoon:
+            '@value': '@value'
+          Contactinfo.email:
+            '@value': '@value'
+          '@type':
+          - '@type'
+          - '@type'
+          Contactinfo.aanschrijfvorm:
+            '@value': '@value'
+            '@language': '@language'
+          Contactinfo.naam:
+            '@value': '@value'
+          Contactinfo.faxnummer:
+            '@value': '@value'
+          '@id': http://example.com/aeiou
+          Contactinfo.website:
+            '@id': http://example.com/aeiou
+          '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+        '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+    AdministratiefBeheerdertype:
+      title: AdministratiefBeheerdertype
+      required:
+      - '@id'
+      type: object
+      properties:
+        '@id':
+          type: string
+          format: uri
+      description: Enumeratie van AdministratiefBeheerdertype
+      example:
+        '@id': http://example.com/aeiou
+    Contactinfo:
+      title: Contactinfo
+      required:
+      - '@context'
+      - '@id'
+      - '@type'
+      type: object
+      properties:
+        '@id':
+          type: string
+          format: uri
+        '@type':
+          minItems: 1
+          type: array
+          description: Lijst van object types (klasse)
+          items:
+            pattern: ^Contactinfo$
+            type: string
+            description: Contactinfo type
+        Contactinfo.aanschrijfvorm:
+          $ref: "#/components/schemas/Contactinfo_Contactinfo.aanschrijfvorm"
+        Contactinfo.naam:
+          $ref: "#/components/schemas/Contactinfo_Contactinfo.naam"
+        Contactinfo.email:
+          $ref: "#/components/schemas/Contactinfo_Contactinfo.email"
+        Contactinfo.faxnummer:
+          $ref: "#/components/schemas/Contactinfo_Contactinfo.faxnummer"
+        Contactinfo.telefoon:
+          $ref: "#/components/schemas/Contactinfo_Contactinfo.telefoon"
+        Contactinfo.website:
+          $ref: "#/components/schemas/Contactinfo_Contactinfo.website"
+        Contactinfo.adres:
+          $ref: "#/components/schemas/Adresvoorstelling"
+        '@context':
+          type: string
+          format: uri
+          enum:
+          - https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+      description: "Informatie zoals email, telefoon, adres die toelaat om iemand\
+        \ of iets te contacteren."
+      example:
+        Contactinfo.adres:
+          Adresvoorstelling.busnummer:
+            '@value': '@value'
+          Adresvoorstelling.plaats:
+            Plaats.identificator: null
+            Plaats.plaatsnaam:
+              '@value': '@value'
+              '@language': '@language'
+            '@type':
+            - '@type'
+            - '@type'
+            '@id': http://example.com/aeiou
+            Plaats.plaats: null
+            '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+          Adresvoorstelling.administratieveEenheidNiveau2:
+            '@value': '@value'
+            '@language': '@language'
+          Adresvoorstelling.straatnaam:
+            '@value': '@value'
+            '@language': '@language'
+          Adresvoorstelling.administratieveEenheidNiveau1:
+            '@value': '@value'
+            '@language': '@language'
+          Adresvoorstelling.volledigAdres:
+            '@value': '@value'
+            '@language': '@language'
+          '@type':
+          - '@type'
+          - '@type'
+          Adresvoorstelling.locatieaanduiding:
+          - '@value': '@value'
+          - '@value': '@value'
+          Adresvoorstelling.postbus:
+            '@value': '@value'
+          Adresvoorstelling.gemeentenaam:
+            '@value': '@value'
+            '@language': '@language'
+          Adresvoorstelling.postnaam:
+            '@value': '@value'
+            '@language': '@language'
+          '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+          Adresvoorstelling.land:
+            '@value': '@value'
+            '@language': '@language'
+          Adresvoorstelling.postcode:
+            '@value': '@value'
+          Adresvoorstelling.adresgebied:
+            '@value': '@value'
+            '@language': '@language'
+          Adresvoorstelling.locatienaam:
+          - '@value': '@value'
+            '@language': '@language'
+          - '@value': '@value'
+            '@language': '@language'
+          '@id': http://example.com/aeiou
+          Adresvoorstelling.huisnummer:
+            '@value': '@value'
+          Adresvoorstelling.verwijstNaar:
+            '@type':
+            - '@type'
+            - '@type'
+            '@id': http://example.com/aeiou
+            '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+        Contactinfo.telefoon:
+          '@value': '@value'
+        Contactinfo.email:
+          '@value': '@value'
+        '@type':
+        - '@type'
+        - '@type'
+        Contactinfo.aanschrijfvorm:
+          '@value': '@value'
+          '@language': '@language'
+        Contactinfo.naam:
+          '@value': '@value'
+        Contactinfo.faxnummer:
+          '@value': '@value'
+        '@id': http://example.com/aeiou
+        Contactinfo.website:
+          '@id': http://example.com/aeiou
+        '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+    Adresvoorstelling:
+      title: Adresvoorstelling
+      required:
+      - '@context'
+      - '@id'
+      - '@type'
+      type: object
+      properties:
+        '@id':
+          type: string
+          format: uri
+        '@type':
+          minItems: 1
+          type: array
+          description: Lijst van object types (klasse)
+          items:
+            pattern: ^Adresvoorstelling$
+            type: string
+            description: Adresvoorstelling type
+        Adresvoorstelling.administratieveEenheidNiveau1:
+          $ref: "#/components/schemas/Adresvoorstelling_Adresvoorstelling.administratieveEenheidNiveau1"
+        Adresvoorstelling.administratieveEenheidNiveau2:
+          $ref: "#/components/schemas/Adresvoorstelling_Adresvoorstelling.administratieveEenheidNiveau2"
+        Adresvoorstelling.adresgebied:
+          $ref: "#/components/schemas/Adresvoorstelling_Adresvoorstelling.adresgebied"
+        Adresvoorstelling.busnummer:
+          $ref: "#/components/schemas/Adresvoorstelling_Adresvoorstelling.busnummer"
+        Adresvoorstelling.gemeentenaam:
+          $ref: "#/components/schemas/Adresvoorstelling_Adresvoorstelling.gemeentenaam"
+        Adresvoorstelling.huisnummer:
+          $ref: "#/components/schemas/Adresvoorstelling_Adresvoorstelling.huisnummer"
+        Adresvoorstelling.land:
+          $ref: "#/components/schemas/Adresvoorstelling_Adresvoorstelling.land"
+        Adresvoorstelling.locatieaanduiding:
+          minItems: 0
+          type: array
+          description: Lijst van String items.
+          items:
+            $ref: '#/components/schemas/Adresvoorstelling_Adresvoorstelling.locatieaanduiding'
+        Adresvoorstelling.locatienaam:
+          minItems: 0
+          type: array
+          description: Lijst van LangString items.
+          items:
+            $ref: '#/components/schemas/Adresvoorstelling_Adresvoorstelling.locatienaam'
+        Adresvoorstelling.postbus:
+          $ref: "#/components/schemas/Adresvoorstelling_Adresvoorstelling.postbus"
+        Adresvoorstelling.postcode:
+          $ref: "#/components/schemas/Adresvoorstelling_Adresvoorstelling.postcode"
+        Adresvoorstelling.postnaam:
+          $ref: "#/components/schemas/Adresvoorstelling_Adresvoorstelling.postnaam"
+        Adresvoorstelling.straatnaam:
+          $ref: "#/components/schemas/Adresvoorstelling_Adresvoorstelling.straatnaam"
+        Adresvoorstelling.volledigAdres:
+          $ref: "#/components/schemas/Adresvoorstelling_Adresvoorstelling.volledigAdres"
+        Adresvoorstelling.verwijstNaar:
+          $ref: "#/components/schemas/BelgischAdres"
+        Adresvoorstelling.plaats:
+          $ref: "#/components/schemas/Plaats"
+        '@context':
+          type: string
+          format: uri
+          enum:
+          - https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+      description: "Meer leesbare voorstelling met enkel de basisgegevens van het\
+        \ adres, bedoeld voor het gebruik van een adres als attribuut van een ander\
+        \ object."
+      example:
+        Adresvoorstelling.busnummer:
+          '@value': '@value'
+        Adresvoorstelling.plaats:
+          Plaats.identificator: null
+          Plaats.plaatsnaam:
+            '@value': '@value'
+            '@language': '@language'
+          '@type':
+          - '@type'
+          - '@type'
+          '@id': http://example.com/aeiou
+          Plaats.plaats: null
+          '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+        Adresvoorstelling.administratieveEenheidNiveau2:
+          '@value': '@value'
+          '@language': '@language'
+        Adresvoorstelling.straatnaam:
+          '@value': '@value'
+          '@language': '@language'
+        Adresvoorstelling.administratieveEenheidNiveau1:
+          '@value': '@value'
+          '@language': '@language'
+        Adresvoorstelling.volledigAdres:
+          '@value': '@value'
+          '@language': '@language'
+        '@type':
+        - '@type'
+        - '@type'
+        Adresvoorstelling.locatieaanduiding:
+        - '@value': '@value'
+        - '@value': '@value'
+        Adresvoorstelling.postbus:
+          '@value': '@value'
+        Adresvoorstelling.gemeentenaam:
+          '@value': '@value'
+          '@language': '@language'
+        Adresvoorstelling.postnaam:
+          '@value': '@value'
+          '@language': '@language'
+        '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+        Adresvoorstelling.land:
+          '@value': '@value'
+          '@language': '@language'
+        Adresvoorstelling.postcode:
+          '@value': '@value'
+        Adresvoorstelling.adresgebied:
+          '@value': '@value'
+          '@language': '@language'
+        Adresvoorstelling.locatienaam:
+        - '@value': '@value'
+          '@language': '@language'
+        - '@value': '@value'
+          '@language': '@language'
+        '@id': http://example.com/aeiou
+        Adresvoorstelling.huisnummer:
+          '@value': '@value'
+        Adresvoorstelling.verwijstNaar:
+          '@type':
+          - '@type'
+          - '@type'
+          '@id': http://example.com/aeiou
+          '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+    BelgischAdres:
+      title: BelgischAdres
+      required:
+      - '@context'
+      - '@id'
+      - '@type'
+      type: object
+      properties:
+        '@id':
+          type: string
+          format: uri
+        '@type':
+          minItems: 1
+          type: array
+          description: Lijst van object types (klasse)
+          items:
+            pattern: ^BelgischAdres$
+            type: string
+            description: BelgischAdres type
+        '@context':
+          type: string
+          format: uri
+          enum:
+          - https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+      description: "Informatie die toelaat om op een gestructureerde en unieke manier\
+        \ te verwijzen naar een gebouweenheid,een ligplaats,een standplaats of een\
+        \ perceel op basis van een gemeentenaam,een straatnaam,een huisnummer en eventueel\
+        \ een busnummer en een postcode."
+      example:
+        '@type':
+        - '@type'
+        - '@type'
+        '@id': http://example.com/aeiou
+        '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+    Plaats:
+      title: Plaats
+      required:
+      - '@context'
+      - '@id'
+      - '@type'
+      type: object
+      properties:
+        '@id':
+          type: string
+          format: uri
+        '@type':
+          minItems: 1
+          type: array
+          description: Lijst van object types (klasse)
+          items:
+            pattern: ^Plaats$
+            type: string
+            description: Plaats type
+        Plaats.plaatsnaam:
+          $ref: "#/components/schemas/Plaats_Plaats.plaatsnaam"
+        Plaats.identificator:
+          $ref: "#/components/schemas/Identificator"
+        Plaats.plaats:
+          $ref: "#/components/schemas/Plaats"
+        '@context':
+          type: string
+          format: uri
+          enum:
+          - https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+      description: Een ruimtelijk gebied of benoemde plaats.
+      example:
+        Plaats.identificator: null
+        Plaats.plaatsnaam:
+          '@value': '@value'
+          '@language': '@language'
+        '@type':
+        - '@type'
+        - '@type'
+        '@id': http://example.com/aeiou
+        Plaats.plaats: null
+        '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+    Registratie:
+      title: Registratie
+      required:
+      - '@context'
+      - '@id'
+      - '@type'
+      - Registratie.geregistreerdPersoon
+      type: object
+      properties:
+        '@id':
+          type: string
+          format: uri
+        '@type':
+          minItems: 1
+          type: array
+          description: Lijst van object types (klasse)
+          items:
+            pattern: ^Registratie$
+            type: string
+            description: Registratie type
+        Registratie.dossierstatus:
+          minItems: 0
+          type: array
+          description: Lijst van Dossierstatustype items.
+          items:
+            $ref: "#/components/schemas/Dossierstatustype"
+        Registratie.geregistreerdPersoon:
+          $ref: "#/components/schemas/GeregistreerdPersoon"
+        Registratie.vorigeRegistratie:
+          $ref: "#/components/schemas/Registratie"
+        Registratie.volgendeRegistratie:
+          $ref: "#/components/schemas/Registratie"
+        '@context':
+          type: string
+          format: uri
+          enum:
+          - https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+      description: Opname van de Persoon in het register.
+      example:
+        Registratie.dossierstatus:
+        - '@id': http://example.com/aeiou
+        - '@id': http://example.com/aeiou
+        '@type':
+        - '@type'
+        - '@type'
+        Registratie.geregistreerdPersoon:
+          GeregistreerdPersoon.heeftBurgerlijkeStaat: null
+          GeregistreerdPersoon.heeftOverlijden: null
+          GeregistreerdPersoon.registratie: null
+          GeregistreerdPersoon.registratiedetail: null
+          '@type':
+          - '@type'
+          - '@type'
+          GeregistreerdPersoon.inwonerschap:
+          - null
+          - null
+          GeregistreerdPersoon.inwonerschapdetail:
+          - null
+          - null
+          GeregistreerdPersoon.isLidVan:
+          - null
+          - null
+          GeregistreerdPersoon.achternaam:
+          - '@value': '@value'
+          - '@value': '@value'
+          GeregistreerdPersoon.bron: null
+          GeregistreerdPersoon.beheerder: null
+          GeregistreerdPersoon.geslacht:
+            '@id': http://example.com/aeiou
+          '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+          GeregistreerdPersoon.heeftGeboorte: null
+          GeregistreerdPersoon.heeftRelatieMet:
+          - null
+          - null
+          GeregistreerdPersoon.persoonsrelatiedetail:
+          - ""
+          - ""
+          GeregistreerdPersoon.isHoofdVan:
+            Gezin.gezinslid:
+            - null
+            - null
+            Gezin.contactinfo:
+            - null
+            - null
+            '@type':
+            - '@type'
+            - '@type'
+            '@id': http://example.com/aeiou
+            '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+            Gezin.gezinsadres: null
+            Gezin.gezinshoofd:
+              Persoon.geslacht: null
+              Persoon.inwonerschap:
+              - '@type':
+                - '@type'
+                - '@type'
+                '@id': http://example.com/aeiou
+                Jurisdictie.plaats: null
+                '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+              - '@type':
+                - '@type'
+                - '@type'
+                '@id': http://example.com/aeiou
+                Jurisdictie.plaats: null
+                '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+              Persoon.voornaam:
+              - null
+              - null
+              Persoon.achternaam:
+              - null
+              - null
+              Persoon.isLidVan:
+              - null
+              - null
+              Persoon.heeftGeboorte:
+                '@type':
+                - '@type'
+                - '@type'
+                Geboorte.plaats: null
+                '@id': http://example.com/aeiou
+                Geboorte.datum:
+                  '@value': 2000-01-23T04:56:07.000+00:00
+                  '@type': '@type'
+                '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+              Persoon.heeftRelatieMet:
+              - null
+              - null
+              '@type':
+              - '@type'
+              - '@type'
+              Persoon.heeftOverlijden:
+                Overlijden.datum:
+                  '@value': 2000-01-23T04:56:07.000+00:00
+                  '@type': '@type'
+                Overlijden.plaats: null
+                '@type':
+                - '@type'
+                - '@type'
+                '@id': http://example.com/aeiou
+                '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+              Persoon.tijdstipCreatie:
+                '@value': 2000-01-23T04:56:07.000+00:00
+                '@type': '@type'
+              Persoon.tijdstipModificatie:
+                '@value': 2000-01-23T04:56:07.000+00:00
+                '@type': '@type'
+              '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+              Persoon.contactinfo: null
+              Persoon.bron:
+                '@type':
+                - '@type'
+                - '@type'
+                Organisatie.contactinfo:
+                - null
+                - null
+                '@id': http://example.com/aeiou
+                Organisatie.voorkeursnaam:
+                  '@value': '@value'
+                  '@language': '@language'
+                '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+              '@id': http://example.com/aeiou
+              Persoon.inwonerschapdetail:
+              - Inwonerschap.heeftVerblijfplaats:
+                - ""
+                - ""
+                Inwonerschap.persoon: null
+                '@type':
+                - '@type'
+                - '@type'
+                Inwonerschap.jurisdictie: null
+                '@id': http://example.com/aeiou
+                '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+              - Inwonerschap.heeftVerblijfplaats:
+                - ""
+                - ""
+                Inwonerschap.persoon: null
+                '@type':
+                - '@type'
+                - '@type'
+                Inwonerschap.jurisdictie: null
+                '@id': http://example.com/aeiou
+                '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+              Persoon.isHoofdVan: null
+              Persoon.heeftBurgerlijkeStaat:
+                BurgerlijkeStaat.type:
+                  '@id': http://example.com/aeiou
+                '@type':
+                - '@type'
+                - '@type'
+                BurgerlijkeStaat.plaats: null
+                '@id': http://example.com/aeiou
+                '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+              Persoon.persoonsrelatiedetail:
+              - ""
+              - ""
+            Gezin.voorkeursnaam: null
+          GeregistreerdPersoon.contactinfo: null
+          '@id': http://example.com/aeiou
+          GeregistreerdPersoon.tijdstipModificatie: null
+          GeregistreerdPersoon.tijdstipCreatie: null
+          GeregistreerdPersoon.voornaam:
+          - '@value': '@value'
+          - '@value': '@value'
+        '@id': http://example.com/aeiou
+        Registratie.vorigeRegistratie: null
+        Registratie.volgendeRegistratie: null
+        '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+    Dossierstatustype:
+      title: Dossierstatustype
+      required:
+      - '@id'
+      type: object
+      properties:
+        '@id':
+          type: string
+          format: uri
+      description: Enumeratie van Dossierstatustype
+      example:
+        '@id': http://example.com/aeiou
+    GeregistreerdPersoon:
+      title: GeregistreerdPersoon
+      required:
+      - '@context'
+      - '@id'
+      - '@type'
+      - GeregistreerdPersoon.bron
+      - GeregistreerdPersoon.tijdstipCreatie
+      type: object
+      properties:
+        '@id':
+          type: string
+          format: uri
+        '@type':
+          minItems: 1
+          type: array
+          description: Lijst van object types (klasse)
+          items:
+            pattern: ^GeregistreerdPersoon$
+            type: string
+            description: GeregistreerdPersoon type
+        GeregistreerdPersoon.registratie:
+          $ref: "#/components/schemas/Identificator"
+        GeregistreerdPersoon.beheerder:
+          $ref: "#/components/schemas/AdministratiefBeheerder"
+        GeregistreerdPersoon.registratiedetail:
+          $ref: "#/components/schemas/Registratie"
+        GeregistreerdPersoon.voornaam:
+          minItems: 0
+          type: array
+          description: Lijst van String items.
+          items:
+            $ref: '#/components/schemas/GeregistereerdPersoonJsonLd_GeregistreerdPersoon.voornaam'
+        GeregistreerdPersoon.achternaam:
+          minItems: 0
+          type: array
+          description: Lijst van String items.
+          items:
+            $ref: '#/components/schemas/GeregistereerdPersoonJsonLd_GeregistreerdPersoon.achternaam'
+        GeregistreerdPersoon.contactinfo:
+          $ref: "#/components/schemas/Contactinfo"
+        GeregistreerdPersoon.geslacht:
+          $ref: "#/components/schemas/Geslacht"
+        GeregistreerdPersoon.isHoofdVan:
+          $ref: "#/components/schemas/Gezin"
+        GeregistreerdPersoon.heeftBurgerlijkeStaat:
+          $ref: "#/components/schemas/BurgerlijkeStaat"
+        GeregistreerdPersoon.heeftGeboorte:
+          $ref: "#/components/schemas/Geboorte"
+        GeregistreerdPersoon.heeftOverlijden:
+          $ref: "#/components/schemas/Overlijden"
+        GeregistreerdPersoon.inwonerschap:
+          minItems: 0
+          type: array
+          description: Lijst van Jurisdictie items.
+          items:
+            $ref: "#/components/schemas/Jurisdictie"
+        GeregistreerdPersoon.inwonerschapdetail:
+          minItems: 0
+          type: array
+          description: Lijst van Inwonerschap items.
+          items:
+            $ref: "#/components/schemas/Inwonerschap"
+        GeregistreerdPersoon.heeftRelatieMet:
+          minItems: 0
+          type: array
+          description: Lijst van Persoon items.
+          items:
+            $ref: "#/components/schemas/Persoon"
+        GeregistreerdPersoon.persoonsrelatiedetail:
+          minItems: 0
+          type: array
+          description: Lijst van Persoonsrelatie items.
+          items:
+            discriminator:
+              propertyName: '@type'
+              mapping:
+                Persoonsrelatie: "#/components/schemas/Persoonsrelatie"
+                Gezinsrelatie: "#/components/schemas/Gezinsrelatie"
+                Huwelijk: "#/components/schemas/Huwelijk"
+                Samenwonen: "#/components/schemas/Samenwonen"
+                Afstamming: "#/components/schemas/Afstamming"
+            oneOf:
+            - $ref: "#/components/schemas/Persoonsrelatie"
+            - $ref: "#/components/schemas/Gezinsrelatie"
+            - $ref: "#/components/schemas/Huwelijk"
+            - $ref: "#/components/schemas/Samenwonen"
+            - $ref: "#/components/schemas/Afstamming"
+        GeregistreerdPersoon.isLidVan:
+          minItems: 0
+          type: array
+          description: Lijst van Gezin items.
+          items:
+            $ref: "#/components/schemas/Gezin"
+        GeregistreerdPersoon.tijdstipCreatie:
+          $ref: '#/components/schemas/GeregistereerdPersoonJsonLd_GeregistreerdPersoon.tijdstipCreatie'
+        GeregistreerdPersoon.tijdstipModificatie:
+          $ref: '#/components/schemas/GeregistereerdPersoonJsonLd_GeregistreerdPersoon.tijdstipModificatie'
+        GeregistreerdPersoon.bron:
+          $ref: "#/components/schemas/Organisatie"
+        '@context':
+          type: string
+          format: uri
+          enum:
+          - https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+      description: Persoon waarvan de gegevens zijn ingeschreven in een register.
+      example:
+        GeregistreerdPersoon.heeftBurgerlijkeStaat: null
+        GeregistreerdPersoon.heeftOverlijden: null
+        GeregistreerdPersoon.registratie: null
+        GeregistreerdPersoon.registratiedetail: null
+        '@type':
+        - '@type'
+        - '@type'
+        GeregistreerdPersoon.inwonerschap:
+        - null
+        - null
+        GeregistreerdPersoon.inwonerschapdetail:
+        - null
+        - null
+        GeregistreerdPersoon.isLidVan:
+        - null
+        - null
+        GeregistreerdPersoon.achternaam:
+        - '@value': '@value'
+        - '@value': '@value'
+        GeregistreerdPersoon.bron: null
+        GeregistreerdPersoon.beheerder: null
+        GeregistreerdPersoon.geslacht:
+          '@id': http://example.com/aeiou
+        '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+        GeregistreerdPersoon.heeftGeboorte: null
+        GeregistreerdPersoon.heeftRelatieMet:
+        - null
+        - null
+        GeregistreerdPersoon.persoonsrelatiedetail:
+        - ""
+        - ""
+        GeregistreerdPersoon.isHoofdVan:
+          Gezin.gezinslid:
+          - null
+          - null
+          Gezin.contactinfo:
+          - null
+          - null
+          '@type':
+          - '@type'
+          - '@type'
+          '@id': http://example.com/aeiou
+          '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+          Gezin.gezinsadres: null
+          Gezin.gezinshoofd:
+            Persoon.geslacht: null
+            Persoon.inwonerschap:
+            - '@type':
+              - '@type'
+              - '@type'
+              '@id': http://example.com/aeiou
+              Jurisdictie.plaats: null
+              '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+            - '@type':
+              - '@type'
+              - '@type'
+              '@id': http://example.com/aeiou
+              Jurisdictie.plaats: null
+              '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+            Persoon.voornaam:
+            - null
+            - null
+            Persoon.achternaam:
+            - null
+            - null
+            Persoon.isLidVan:
+            - null
+            - null
+            Persoon.heeftGeboorte:
+              '@type':
+              - '@type'
+              - '@type'
+              Geboorte.plaats: null
+              '@id': http://example.com/aeiou
+              Geboorte.datum:
+                '@value': 2000-01-23T04:56:07.000+00:00
+                '@type': '@type'
+              '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+            Persoon.heeftRelatieMet:
+            - null
+            - null
+            '@type':
+            - '@type'
+            - '@type'
+            Persoon.heeftOverlijden:
+              Overlijden.datum:
+                '@value': 2000-01-23T04:56:07.000+00:00
+                '@type': '@type'
+              Overlijden.plaats: null
+              '@type':
+              - '@type'
+              - '@type'
+              '@id': http://example.com/aeiou
+              '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+            Persoon.tijdstipCreatie:
+              '@value': 2000-01-23T04:56:07.000+00:00
+              '@type': '@type'
+            Persoon.tijdstipModificatie:
+              '@value': 2000-01-23T04:56:07.000+00:00
+              '@type': '@type'
+            '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+            Persoon.contactinfo: null
+            Persoon.bron:
+              '@type':
+              - '@type'
+              - '@type'
+              Organisatie.contactinfo:
+              - null
+              - null
+              '@id': http://example.com/aeiou
+              Organisatie.voorkeursnaam:
+                '@value': '@value'
+                '@language': '@language'
+              '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+            '@id': http://example.com/aeiou
+            Persoon.inwonerschapdetail:
+            - Inwonerschap.heeftVerblijfplaats:
+              - ""
+              - ""
+              Inwonerschap.persoon: null
+              '@type':
+              - '@type'
+              - '@type'
+              Inwonerschap.jurisdictie: null
+              '@id': http://example.com/aeiou
+              '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+            - Inwonerschap.heeftVerblijfplaats:
+              - ""
+              - ""
+              Inwonerschap.persoon: null
+              '@type':
+              - '@type'
+              - '@type'
+              Inwonerschap.jurisdictie: null
+              '@id': http://example.com/aeiou
+              '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+            Persoon.isHoofdVan: null
+            Persoon.heeftBurgerlijkeStaat:
+              BurgerlijkeStaat.type:
+                '@id': http://example.com/aeiou
+              '@type':
+              - '@type'
+              - '@type'
+              BurgerlijkeStaat.plaats: null
+              '@id': http://example.com/aeiou
+              '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+            Persoon.persoonsrelatiedetail:
+            - ""
+            - ""
+          Gezin.voorkeursnaam: null
+        GeregistreerdPersoon.contactinfo: null
+        '@id': http://example.com/aeiou
+        GeregistreerdPersoon.tijdstipModificatie: null
+        GeregistreerdPersoon.tijdstipCreatie: null
+        GeregistreerdPersoon.voornaam:
+        - '@value': '@value'
+        - '@value': '@value'
+    Geslacht:
+      title: Geslacht
+      required:
+      - '@id'
+      type: object
+      properties:
+        '@id':
+          type: string
+          format: uri
+      description: Enumeratie van Geslacht
+      example:
+        '@id': http://example.com/aeiou
+    Gezin:
+      title: Gezin
+      required:
+      - '@context'
+      - '@id'
+      - '@type'
+      - Gezin.gezinshoofd
+      - Gezin.gezinslid
+      type: object
+      properties:
+        '@id':
+          type: string
+          format: uri
+        '@type':
+          minItems: 1
+          type: array
+          description: Lijst van object types (klasse)
+          items:
+            pattern: ^Gezin$
+            type: string
+            description: Gezin type
+        Gezin.gezinsadres:
+          $ref: "#/components/schemas/Adresvoorstelling"
+        Gezin.gezinshoofd:
+          $ref: "#/components/schemas/Persoon"
+        Gezin.gezinslid:
+          minItems: 1
+          type: array
+          description: Lijst van Persoon items.
+          items:
+            $ref: "#/components/schemas/Persoon"
+        Gezin.voorkeursnaam:
+          $ref: '#/components/schemas/AdministratiefBeheerder_AdministratiefBeheerder.voorkeursnaam'
+        Gezin.contactinfo:
+          minItems: 0
+          type: array
+          description: Lijst van Contactinfo items.
+          items:
+            $ref: "#/components/schemas/Contactinfo"
+        '@context':
+          type: string
+          format: uri
+          enum:
+          - https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+      description: "Samenwerkingsvorm die een herkenbare sociale eenheid vormt (bijvoorbeeld\
+        \ ten gevolge van een huwelijk), met al dan niet verwante personen die duurzame\
+        \ banden hebben en elkaar onderling steun en verzorging verlenen."
+      example:
+        Gezin.gezinslid:
+        - null
+        - null
+        Gezin.contactinfo:
+        - null
+        - null
+        '@type':
+        - '@type'
+        - '@type'
+        '@id': http://example.com/aeiou
+        '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+        Gezin.gezinsadres: null
+        Gezin.gezinshoofd:
+          Persoon.geslacht: null
+          Persoon.inwonerschap:
+          - '@type':
+            - '@type'
+            - '@type'
+            '@id': http://example.com/aeiou
+            Jurisdictie.plaats: null
+            '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+          - '@type':
+            - '@type'
+            - '@type'
+            '@id': http://example.com/aeiou
+            Jurisdictie.plaats: null
+            '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+          Persoon.voornaam:
+          - null
+          - null
+          Persoon.achternaam:
+          - null
+          - null
+          Persoon.isLidVan:
+          - null
+          - null
+          Persoon.heeftGeboorte:
+            '@type':
+            - '@type'
+            - '@type'
+            Geboorte.plaats: null
+            '@id': http://example.com/aeiou
+            Geboorte.datum:
+              '@value': 2000-01-23T04:56:07.000+00:00
+              '@type': '@type'
+            '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+          Persoon.heeftRelatieMet:
+          - null
+          - null
+          '@type':
+          - '@type'
+          - '@type'
+          Persoon.heeftOverlijden:
+            Overlijden.datum:
+              '@value': 2000-01-23T04:56:07.000+00:00
+              '@type': '@type'
+            Overlijden.plaats: null
+            '@type':
+            - '@type'
+            - '@type'
+            '@id': http://example.com/aeiou
+            '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+          Persoon.tijdstipCreatie:
+            '@value': 2000-01-23T04:56:07.000+00:00
+            '@type': '@type'
+          Persoon.tijdstipModificatie:
+            '@value': 2000-01-23T04:56:07.000+00:00
+            '@type': '@type'
+          '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+          Persoon.contactinfo: null
+          Persoon.bron:
+            '@type':
+            - '@type'
+            - '@type'
+            Organisatie.contactinfo:
+            - null
+            - null
+            '@id': http://example.com/aeiou
+            Organisatie.voorkeursnaam:
+              '@value': '@value'
+              '@language': '@language'
+            '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+          '@id': http://example.com/aeiou
+          Persoon.inwonerschapdetail:
+          - Inwonerschap.heeftVerblijfplaats:
+            - ""
+            - ""
+            Inwonerschap.persoon: null
+            '@type':
+            - '@type'
+            - '@type'
+            Inwonerschap.jurisdictie: null
+            '@id': http://example.com/aeiou
+            '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+          - Inwonerschap.heeftVerblijfplaats:
+            - ""
+            - ""
+            Inwonerschap.persoon: null
+            '@type':
+            - '@type'
+            - '@type'
+            Inwonerschap.jurisdictie: null
+            '@id': http://example.com/aeiou
+            '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+          Persoon.isHoofdVan: null
+          Persoon.heeftBurgerlijkeStaat:
+            BurgerlijkeStaat.type:
+              '@id': http://example.com/aeiou
+            '@type':
+            - '@type'
+            - '@type'
+            BurgerlijkeStaat.plaats: null
+            '@id': http://example.com/aeiou
+            '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+          Persoon.persoonsrelatiedetail:
+          - ""
+          - ""
+        Gezin.voorkeursnaam: null
+    Persoon:
+      title: Persoon
+      required:
+      - '@context'
+      - '@id'
+      - '@type'
+      - Persoon.bron
+      - Persoon.tijdstipCreatie
+      type: object
+      properties:
+        '@id':
+          type: string
+          format: uri
+        '@type':
+          minItems: 1
+          type: array
+          description: Lijst van object types (klasse)
+          items:
+            pattern: ^Persoon$
+            type: string
+            description: Persoon type
+        Persoon.voornaam:
+          minItems: 0
+          type: array
+          description: Lijst van String items.
+          items:
+            $ref: '#/components/schemas/GeregistereerdPersoonJsonLd_GeregistreerdPersoon.voornaam'
+        Persoon.achternaam:
+          minItems: 0
+          type: array
+          description: Lijst van String items.
+          items:
+            $ref: '#/components/schemas/GeregistereerdPersoonJsonLd_GeregistreerdPersoon.achternaam'
+        Persoon.contactinfo:
+          $ref: "#/components/schemas/Contactinfo"
+        Persoon.geslacht:
+          $ref: "#/components/schemas/Geslacht"
+        Persoon.isHoofdVan:
+          $ref: "#/components/schemas/Gezin"
+        Persoon.heeftBurgerlijkeStaat:
+          $ref: "#/components/schemas/BurgerlijkeStaat"
+        Persoon.heeftGeboorte:
+          $ref: "#/components/schemas/Geboorte"
+        Persoon.heeftOverlijden:
+          $ref: "#/components/schemas/Overlijden"
+        Persoon.inwonerschap:
+          minItems: 0
+          type: array
+          description: Lijst van Jurisdictie items.
+          items:
+            $ref: "#/components/schemas/Jurisdictie"
+        Persoon.inwonerschapdetail:
+          minItems: 0
+          type: array
+          description: Lijst van Inwonerschap items.
+          items:
+            $ref: "#/components/schemas/Inwonerschap"
+        Persoon.heeftRelatieMet:
+          minItems: 0
+          type: array
+          description: Lijst van Persoon items.
+          items:
+            $ref: "#/components/schemas/Persoon"
+        Persoon.persoonsrelatiedetail:
+          minItems: 0
+          type: array
+          description: Lijst van Persoonsrelatie items.
+          items:
+            discriminator:
+              propertyName: '@type'
+              mapping:
+                Persoonsrelatie: "#/components/schemas/Persoonsrelatie"
+                Gezinsrelatie: "#/components/schemas/Gezinsrelatie"
+                Huwelijk: "#/components/schemas/Huwelijk"
+                Samenwonen: "#/components/schemas/Samenwonen"
+                Afstamming: "#/components/schemas/Afstamming"
+            oneOf:
+            - $ref: "#/components/schemas/Persoonsrelatie"
+            - $ref: "#/components/schemas/Gezinsrelatie"
+            - $ref: "#/components/schemas/Huwelijk"
+            - $ref: "#/components/schemas/Samenwonen"
+            - $ref: "#/components/schemas/Afstamming"
+        Persoon.isLidVan:
+          minItems: 0
+          type: array
+          description: Lijst van Gezin items.
+          items:
+            $ref: "#/components/schemas/Gezin"
+        Persoon.tijdstipCreatie:
+          $ref: '#/components/schemas/GeregistereerdPersoonJsonLd_GeregistreerdPersoon.tijdstipCreatie'
+        Persoon.tijdstipModificatie:
+          $ref: '#/components/schemas/GeregistereerdPersoonJsonLd_GeregistreerdPersoon.tijdstipModificatie'
+        Persoon.bron:
+          $ref: "#/components/schemas/Organisatie"
+        '@context':
+          type: string
+          format: uri
+          enum:
+          - https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+      description: Natuurlijk persoon.
+      example:
+        Persoon.geslacht: null
+        Persoon.inwonerschap:
+        - '@type':
+          - '@type'
+          - '@type'
+          '@id': http://example.com/aeiou
+          Jurisdictie.plaats: null
+          '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+        - '@type':
+          - '@type'
+          - '@type'
+          '@id': http://example.com/aeiou
+          Jurisdictie.plaats: null
+          '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+        Persoon.voornaam:
+        - null
+        - null
+        Persoon.achternaam:
+        - null
+        - null
+        Persoon.isLidVan:
+        - null
+        - null
+        Persoon.heeftGeboorte:
+          '@type':
+          - '@type'
+          - '@type'
+          Geboorte.plaats: null
+          '@id': http://example.com/aeiou
+          Geboorte.datum:
+            '@value': 2000-01-23T04:56:07.000+00:00
+            '@type': '@type'
+          '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+        Persoon.heeftRelatieMet:
+        - null
+        - null
+        '@type':
+        - '@type'
+        - '@type'
+        Persoon.heeftOverlijden:
+          Overlijden.datum:
+            '@value': 2000-01-23T04:56:07.000+00:00
+            '@type': '@type'
+          Overlijden.plaats: null
+          '@type':
+          - '@type'
+          - '@type'
+          '@id': http://example.com/aeiou
+          '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+        Persoon.tijdstipCreatie:
+          '@value': 2000-01-23T04:56:07.000+00:00
+          '@type': '@type'
+        Persoon.tijdstipModificatie:
+          '@value': 2000-01-23T04:56:07.000+00:00
+          '@type': '@type'
+        '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+        Persoon.contactinfo: null
+        Persoon.bron:
+          '@type':
+          - '@type'
+          - '@type'
+          Organisatie.contactinfo:
+          - null
+          - null
+          '@id': http://example.com/aeiou
+          Organisatie.voorkeursnaam:
+            '@value': '@value'
+            '@language': '@language'
+          '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+        '@id': http://example.com/aeiou
+        Persoon.inwonerschapdetail:
+        - Inwonerschap.heeftVerblijfplaats:
+          - ""
+          - ""
+          Inwonerschap.persoon: null
+          '@type':
+          - '@type'
+          - '@type'
+          Inwonerschap.jurisdictie: null
+          '@id': http://example.com/aeiou
+          '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+        - Inwonerschap.heeftVerblijfplaats:
+          - ""
+          - ""
+          Inwonerschap.persoon: null
+          '@type':
+          - '@type'
+          - '@type'
+          Inwonerschap.jurisdictie: null
+          '@id': http://example.com/aeiou
+          '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+        Persoon.isHoofdVan: null
+        Persoon.heeftBurgerlijkeStaat:
+          BurgerlijkeStaat.type:
+            '@id': http://example.com/aeiou
+          '@type':
+          - '@type'
+          - '@type'
+          BurgerlijkeStaat.plaats: null
+          '@id': http://example.com/aeiou
+          '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+        Persoon.persoonsrelatiedetail:
+        - ""
+        - ""
+    BurgerlijkeStaat:
+      title: BurgerlijkeStaat
+      required:
+      - '@context'
+      - '@id'
+      - '@type'
+      type: object
+      properties:
+        '@id':
+          type: string
+          format: uri
+        '@type':
+          minItems: 1
+          type: array
+          description: Lijst van object types (klasse)
+          items:
+            pattern: ^BurgerlijkeStaat$
+            type: string
+            description: BurgerlijkeStaat type
+        BurgerlijkeStaat.plaats:
+          $ref: "#/components/schemas/Plaats"
+        BurgerlijkeStaat.type:
+          $ref: "#/components/schemas/BurgerlijkeStaatType"
+        '@context':
+          type: string
+          format: uri
+          enum:
+          - https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+      description: Burgerrechtelijke toestand van een Persoon.
+      example:
+        BurgerlijkeStaat.type:
+          '@id': http://example.com/aeiou
+        '@type':
+        - '@type'
+        - '@type'
+        BurgerlijkeStaat.plaats: null
+        '@id': http://example.com/aeiou
+        '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+    BurgerlijkeStaatType:
+      title: BurgerlijkeStaatType
+      required:
+      - '@id'
+      type: object
+      properties:
+        '@id':
+          type: string
+          format: uri
+      description: Enumeratie van BurgerlijkeStaatType
+      example:
+        '@id': http://example.com/aeiou
+    Geboorte:
+      title: Geboorte
+      required:
+      - '@context'
+      - '@id'
+      - '@type'
+      type: object
+      properties:
+        '@id':
+          type: string
+          format: uri
+        '@type':
+          minItems: 1
+          type: array
+          description: Lijst van object types (klasse)
+          items:
+            pattern: ^Geboorte$
+            type: string
+            description: Geboorte type
+        Geboorte.datum:
+          $ref: "#/components/schemas/Geboorte_Geboorte.datum"
+        Geboorte.plaats:
+          $ref: "#/components/schemas/Plaats"
+        '@context':
+          type: string
+          format: uri
+          enum:
+          - https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+      description: Het ter wereld komen van een Persoon.
+      example:
+        '@type':
+        - '@type'
+        - '@type'
+        Geboorte.plaats: null
+        '@id': http://example.com/aeiou
+        Geboorte.datum:
+          '@value': 2000-01-23T04:56:07.000+00:00
+          '@type': '@type'
+        '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+    Overlijden:
+      title: Overlijden
+      required:
+      - '@context'
+      - '@id'
+      - '@type'
+      type: object
+      properties:
+        '@id':
+          type: string
+          format: uri
+        '@type':
+          minItems: 1
+          type: array
+          description: Lijst van object types (klasse)
+          items:
+            pattern: ^Overlijden$
+            type: string
+            description: Overlijden type
+        Overlijden.datum:
+          $ref: '#/components/schemas/Geboorte_Geboorte.datum'
+        Overlijden.plaats:
+          $ref: "#/components/schemas/Plaats"
+        '@context':
+          type: string
+          format: uri
+          enum:
+          - https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+      description: Het doodgaan van een Persoon.
+      example:
+        Overlijden.datum:
+          '@value': 2000-01-23T04:56:07.000+00:00
+          '@type': '@type'
+        Overlijden.plaats: null
+        '@type':
+        - '@type'
+        - '@type'
+        '@id': http://example.com/aeiou
+        '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+    Jurisdictie:
+      title: Jurisdictie
+      required:
+      - '@context'
+      - '@id'
+      - '@type'
+      type: object
+      properties:
+        '@id':
+          type: string
+          format: uri
+        '@type':
+          minItems: 1
+          type: array
+          description: Lijst van object types (klasse)
+          items:
+            pattern: ^Jurisdictie$
+            type: string
+            description: Jurisdictie type
+        Jurisdictie.plaats:
+          $ref: "#/components/schemas/Plaats"
+        '@context':
+          type: string
+          format: uri
+          enum:
+          - https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+      description: Het gebied waarover de rechtsmacht van een overheid zich uitstrekt.
+      example:
+        '@type':
+        - '@type'
+        - '@type'
+        '@id': http://example.com/aeiou
+        Jurisdictie.plaats: null
+        '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+    Inwonerschap:
+      title: Inwonerschap
+      required:
+      - '@context'
+      - '@id'
+      - '@type'
+      - Inwonerschap.jurisdictie
+      - Inwonerschap.persoon
+      type: object
+      properties:
+        '@id':
+          type: string
+          format: uri
+        '@type':
+          minItems: 1
+          type: array
+          description: Lijst van object types (klasse)
+          items:
+            pattern: ^Inwonerschap$
+            type: string
+            description: Inwonerschap type
+        Inwonerschap.persoon:
+          $ref: "#/components/schemas/Persoon"
+        Inwonerschap.jurisdictie:
+          $ref: "#/components/schemas/Jurisdictie"
+        Inwonerschap.heeftVerblijfplaats:
+          minItems: 0
+          type: array
+          description: Lijst van Verblijfplaats items.
+          items:
+            discriminator:
+              propertyName: '@type'
+              mapping:
+                Verblijfplaats: "#/components/schemas/Verblijfplaats"
+                Domicilie: "#/components/schemas/Domicilie"
+                Afwezig: "#/components/schemas/Afwezig"
+                Postadres: "#/components/schemas/Postadres"
+                VerblijfplaatsBuitenland: "#/components/schemas/VerblijfplaatsBuitenland"
+                WettelijkVerblijf: "#/components/schemas/WettelijkVerblijf"
+            oneOf:
+            - $ref: "#/components/schemas/Verblijfplaats"
+            - $ref: "#/components/schemas/Domicilie"
+            - $ref: "#/components/schemas/Afwezig"
+            - $ref: "#/components/schemas/Postadres"
+            - $ref: "#/components/schemas/VerblijfplaatsBuitenland"
+            - $ref: "#/components/schemas/WettelijkVerblijf"
+        '@context':
+          type: string
+          format: uri
+          enum:
+          - https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+      description: Het feit dat een Persoon verblijf houdt in een plaats of land.
+      example:
+        Inwonerschap.heeftVerblijfplaats:
+        - ""
+        - ""
+        Inwonerschap.persoon: null
+        '@type':
+        - '@type'
+        - '@type'
+        Inwonerschap.jurisdictie: null
+        '@id': http://example.com/aeiou
+        '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+    Verblijfplaats:
+      title: Verblijfplaats
+      required:
+      - '@context'
+      - '@id'
+      - '@type'
+      type: object
+      properties:
+        '@id':
+          type: string
+          format: uri
+        '@type':
+          minItems: 1
+          type: array
+          description: Lijst van object types (klasse)
+          items:
+            pattern: ^Verblijfplaats$
+            type: string
+            description: Verblijfplaats type
+        Verblijfplaats.verblijfsadres:
+          $ref: "#/components/schemas/Adresvoorstelling"
+        '@context':
+          type: string
+          format: uri
+          enum:
+          - https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+      description: Plaats waar een Persoon al dan niet tijdelijk woont of logeert.
+    Domicilie:
+      title: Domicilie
+      required:
+      - '@context'
+      - '@id'
+      - '@type'
+      type: object
+      properties:
+        '@id':
+          type: string
+          format: uri
+        '@type':
+          minItems: 1
+          type: array
+          description: Lijst van object types (klasse)
+          items:
+            pattern: ^Domicilie$
+            type: string
+            description: Domicilie type
+        Domicilie.verblijfsadres:
+          $ref: "#/components/schemas/Adresvoorstelling"
+        '@context':
+          type: string
+          format: uri
+          enum:
+          - https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+      description: Hoofdverblijfplaats van een Persoon.
+    Afwezig:
+      title: Afwezig
+      required:
+      - '@context'
+      - '@id'
+      - '@type'
+      type: object
+      properties:
+        '@id':
+          type: string
+          format: uri
+        '@type':
+          minItems: 1
+          type: array
+          description: Lijst van object types (klasse)
+          items:
+            pattern: ^Afwezig$
+            type: string
+            description: Afwezig type
+        Afwezig.verblijfsadres:
+          $ref: "#/components/schemas/Adresvoorstelling"
+        '@context':
+          type: string
+          format: uri
+          enum:
+          - https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+      description: Verblijfplaats van een persoon die afwezig is verklaard.
+    Postadres:
+      title: Postadres
+      required:
+      - '@context'
+      - '@id'
+      - '@type'
+      type: object
+      properties:
+        '@id':
+          type: string
+          format: uri
+        '@type':
+          minItems: 1
+          type: array
+          description: Lijst van object types (klasse)
+          items:
+            pattern: ^Postadres$
+            type: string
+            description: Postadres type
+        Postadres.verblijfsadres:
+          $ref: "#/components/schemas/Adresvoorstelling"
+        '@context':
+          type: string
+          format: uri
+          enum:
+          - https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+      description: Postadres van de verblijfplaats van een persoon.
+    VerblijfplaatsBuitenland:
+      title: VerblijfplaatsBuitenland
+      required:
+      - '@context'
+      - '@id'
+      - '@type'
+      type: object
+      properties:
+        '@id':
+          type: string
+          format: uri
+        '@type':
+          minItems: 1
+          type: array
+          description: Lijst van object types (klasse)
+          items:
+            pattern: ^VerblijfplaatsBuitenland$
+            type: string
+            description: VerblijfplaatsBuitenland type
+        VerblijfplaatsBuitenland.verblijfsadres:
+          $ref: "#/components/schemas/Adresvoorstelling"
+        '@context':
+          type: string
+          format: uri
+          enum:
+          - https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+      description: Verblijplaats in het buitenland.
+    WettelijkVerblijf:
+      title: WettelijkVerblijf
+      required:
+      - '@context'
+      - '@id'
+      - '@type'
+      type: object
+      properties:
+        '@id':
+          type: string
+          format: uri
+        '@type':
+          minItems: 1
+          type: array
+          description: Lijst van object types (klasse)
+          items:
+            pattern: ^WettelijkVerblijf$
+            type: string
+            description: WettelijkVerblijf type
+        WettelijkVerblijf.verblijfsadres:
+          $ref: "#/components/schemas/Adresvoorstelling"
+        '@context':
+          type: string
+          format: uri
+          enum:
+          - https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+      description: Juridisch vastgelegde verblijplaats.
+    Persoonsrelatie:
+      title: Persoonsrelatie
+      required:
+      - '@context'
+      - '@id'
+      - '@type'
+      - Persoonsrelatie.metPersoon
+      - Persoonsrelatie.vanPersoon
+      type: object
+      properties:
+        '@id':
+          type: string
+          format: uri
+        '@type':
+          minItems: 1
+          type: array
+          description: Lijst van object types (klasse)
+          items:
+            pattern: ^Persoonsrelatie$
+            type: string
+            description: Persoonsrelatie type
+        Persoonsrelatie.vanPersoon:
+          $ref: "#/components/schemas/Persoon"
+        Persoonsrelatie.metPersoon:
+          $ref: "#/components/schemas/Persoon"
+        '@context':
+          type: string
+          format: uri
+          enum:
+          - https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+      description: Relatie tussen twee of meer personen.
+    Gezinsrelatie:
+      title: Gezinsrelatie
+      required:
+      - '@context'
+      - '@id'
+      - '@type'
+      - Gezinsrelatie.metPersoon
+      - Gezinsrelatie.vanPersoon
+      type: object
+      properties:
+        '@id':
+          type: string
+          format: uri
+        '@type':
+          minItems: 1
+          type: array
+          description: Lijst van object types (klasse)
+          items:
+            pattern: ^Gezinsrelatie$
+            type: string
+            description: Gezinsrelatie type
+        Gezinsrelatie.gezinsrelatietype:
+          $ref: "#/components/schemas/Gezinsrelatietype"
+        Gezinsrelatie.vanPersoon:
+          $ref: "#/components/schemas/Persoon"
+        Gezinsrelatie.metPersoon:
+          $ref: "#/components/schemas/Persoon"
+        '@context':
+          type: string
+          format: uri
+          enum:
+          - https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+      description: Relatie tussen leden van eenzelfde gezin.
+    Gezinsrelatietype:
+      title: Gezinsrelatietype
+      required:
+      - '@id'
+      type: object
+      properties:
+        '@id':
+          type: string
+          format: uri
+      description: Enumeratie van Gezinsrelatietype
+    Huwelijk:
+      title: Huwelijk
+      required:
+      - '@context'
+      - '@id'
+      - '@type'
+      - Huwelijk.metPersoon
+      - Huwelijk.vanPersoon
+      type: object
+      properties:
+        '@id':
+          type: string
+          format: uri
+        '@type':
+          minItems: 1
+          type: array
+          description: Lijst van object types (klasse)
+          items:
+            pattern: ^Huwelijk$
+            type: string
+            description: Huwelijk type
+        Huwelijk.vanPersoon:
+          $ref: "#/components/schemas/Persoon"
+        Huwelijk.metPersoon:
+          $ref: "#/components/schemas/Persoon"
+        '@context':
+          type: string
+          format: uri
+          enum:
+          - https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+      description: Een door burgerlijk of religieus recht geregelde samenlevingsvorm
+        van twee personen.
+    Samenwonen:
+      title: Samenwonen
+      required:
+      - '@context'
+      - '@id'
+      - '@type'
+      - Samenwonen.metPersoon
+      - Samenwonen.vanPersoon
+      type: object
+      properties:
+        '@id':
+          type: string
+          format: uri
+        '@type':
+          minItems: 1
+          type: array
+          description: Lijst van object types (klasse)
+          items:
+            pattern: ^Samenwonen$
+            type: string
+            description: Samenwonen type
+        Samenwonen.vanPersoon:
+          $ref: "#/components/schemas/Persoon"
+        Samenwonen.metPersoon:
+          $ref: "#/components/schemas/Persoon"
+        '@context':
+          type: string
+          format: uri
+          enum:
+          - https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+      description: Regeling waarbij twee personen die niet getrouwd zijn samenleven.
+    Afstamming:
+      title: Afstamming
+      required:
+      - '@context'
+      - '@id'
+      - '@type'
+      - Afstamming.metPersoon
+      - Afstamming.vanPersoon
+      type: object
+      properties:
+        '@id':
+          type: string
+          format: uri
+        '@type':
+          minItems: 1
+          type: array
+          description: Lijst van object types (klasse)
+          items:
+            pattern: ^Afstamming$
+            type: string
+            description: Afstamming type
+        Afstamming.datumVanAfstamming:
+          $ref: "#/components/schemas/Afstamming_Afstamming.datumVanAfstamming"
+        Afstamming.afstammingstype:
+          $ref: "#/components/schemas/Afstammingstype"
+        Afstamming.vanPersoon:
+          $ref: "#/components/schemas/Persoon"
+        Afstamming.metPersoon:
+          $ref: "#/components/schemas/Persoon"
+        '@context':
+          type: string
+          format: uri
+          enum:
+          - https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+      description: Afstamming is de dalende lijn van bloedverwantschap tussen verschillende generaties.
+    Afstammingstype:
+      title: Afstammingstype
+      required:
+      - '@id'
+      type: object
+      properties:
+        '@id':
+          type: string
+          format: uri
+      description: Enumeratie van Afstammingstype
+    Organisatie:
+      title: Organisatie
+      required:
+      - '@context'
+      - '@id'
+      - '@type'
+      type: object
+      properties:
+        '@id':
+          type: string
+          format: uri
+        '@type':
+          minItems: 1
+          type: array
+          description: Lijst van object types (klasse)
+          items:
+            pattern: ^Organisatie$
+            type: string
+            description: Organisatie type
+        Organisatie.voorkeursnaam:
+          $ref: '#/components/schemas/AdministratiefBeheerder_AdministratiefBeheerder.voorkeursnaam'
+        Organisatie.contactinfo:
+          minItems: 0
+          type: array
+          description: Lijst van Contactinfo items.
+          items:
+            $ref: "#/components/schemas/Contactinfo"
+        '@context':
+          type: string
+          format: uri
+          enum:
+          - https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+      description: "Een aantal mensen georganiseerd in een gemeenschap of andere sociale,\
+        \ commerciële of politieke structuur. De groep heeft een gemeenschappelijk\
+        \ doel of bestaansreden die de individuele leden ervan overstijgt en kan handelen\
+        \ als agent. Een Organisatie heeft dikwijls een hiërarchische structuur."
+      example:
+        '@type':
+        - '@type'
+        - '@type'
+        Organisatie.contactinfo:
+        - null
+        - null
+        '@id': http://example.com/aeiou
+        Organisatie.voorkeursnaam:
+          '@value': '@value'
+          '@language': '@language'
+        '@context': https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld
+    ProbleemDetails:
+      title: ProbleemDetails
+      required:
+      - detail
+      - title
+      type: object
+      properties:
+        type:
+          type: string
+          description: "URI referentie die het probleem identificeert. Deze specificatie\
+            \ moedigt aan om, wanneer de referentie wordt verwijderd, een leesbare\
+            \ documentatie te bieden voor het probleemtype. Als dit element niet aanwezig\
+            \ is, wordt aangenomen dat de waarde about:blank is."
+          format: uri
+        title:
+          type: string
+          description: "Een korte, voor mensen leesbare samenvatting van het probleemtype.\
+            \ Het MAG NIET veranderen tussen verschillende voorkomens van de fout,\
+            \ behalve voor doeleinden van lokalisatie."
+        status:
+          type: string
+          description: De HTTP-statuscode die is gegenereerd door de oorspronkelijke
+            server voor dit optreden van het probleem.
+        detail:
+          type: string
+          description: Een voor mensen leesbare uitleg die specifiek is voor dit optreden
+            van het probleem
+        instance:
+          type: string
+          description: Een URI-referentie die het specifieke optreden van het probleem
+            identificeert. Het kan al dan niet meer informatie opleveren als de referentie
+            wordt verwijderd.
+      description: Een weergave van een algemene foutmelding zoals gedefinieerd in
+        RFC 7807.
+    GeregistereerdPersoonJsonLd_GeregistreerdPersoon.voornaam:
+      required:
+      - '@value'
+      type: object
+      properties:
+        '@value':
+          type: string
+      description: Naam die een Persoon bij geboorte wordt gegeven. Onderscheidt de
+        Persoon van de andere personen in de familie.
+      example:
+        '@value': '@value'
+    GeregistereerdPersoonJsonLd_GeregistreerdPersoon.achternaam:
+      required:
+      - '@value'
+      type: object
+      properties:
+        '@value':
+          type: string
+      description: Gedeelte van de volledige naam van de Persoon ontvangen van de
+        vorige generatie. Ook wel familienaam genoemd omdat de achternaam een familiale
+        verwantschap aanduidt.
+      example:
+        '@value': '@value'
+    GeregistereerdPersoonJsonLd_GeregistreerdPersoon.tijdstipCreatie:
+      required:
+      - '@type'
+      - '@value'
+      type: object
+      properties:
+        '@value':
+          type: string
+          format: date-time
+        '@type':
+          pattern: ^DateTime$
+          type: string
+      description: Tijdstip waarop de gegevens zijn ingevoerd.
+      example:
+        '@value': 2000-01-23T04:56:07.000+00:00
+        '@type': '@type'
+    GeregistereerdPersoonJsonLd_GeregistreerdPersoon.tijdstipModificatie:
+      required:
+      - '@type'
+      - '@value'
+      type: object
+      properties:
+        '@value':
+          type: string
+          format: date-time
+        '@type':
+          pattern: ^DateTime$
+          type: string
+      description: Tijdstip waarop de gegevens werden bijgewerkt.
+      example:
+        '@value': 2000-01-23T04:56:07.000+00:00
+        '@type': '@type'
+    Identificator_Identificator.identificator:
+      required:
+      - '@value'
+      type: object
+      properties:
+        '@value':
+          type: string
+      description: "String gebruikt om het object uniek te identificeren. Type vd\
+        \ string slaat op het identificatiesysteem (incl de versie ervan), de string\
+        \ zelf op de eigenlijke identificator."
+      example:
+        '@value': '@value'
+    Identificator_Identificator.toegekendDoorString:
+      required:
+      - '@value'
+      type: object
+      properties:
+        '@value':
+          type: string
+      description: Naam vd agent die de identificator heeft toegekend.
+      example:
+        '@value': '@value'
+    Identificator_Identificator.toegekendOp:
+      required:
+      - '@type'
+      - '@value'
+      type: object
+      properties:
+        '@value':
+          type: string
+          format: date-time
+        '@type':
+          pattern: ^DateTime$
+          type: string
+      description: Tijdstip waarop de identificator werd uitgegeven.
+      example:
+        '@value': 2000-01-23T04:56:07.000+00:00
+        '@type': '@type'
+    AdministratiefBeheerder_AdministratiefBeheerder.voorkeursnaam:
+      required:
+      - '@language'
+      - '@value'
+      type: object
+      properties:
+        '@value':
+          type: string
+        '@language':
+          pattern: ^nl$
+          type: string
+      description: Naam waarmee de Organisatie bij voorkeur wordt aangeduid.
+      example:
+        '@value': '@value'
+        '@language': '@language'
+    Contactinfo_Contactinfo.aanschrijfvorm:
+      required:
+      - '@language'
+      - '@value'
+      type: object
+      properties:
+        '@value':
+          type: string
+        '@language':
+          pattern: ^nl$
+          type: string
+      description: "Titel waarmee iemand wordt aangeschreven of aangesproken of waarmee\
+        \ naar iemand wordt verwezen. Bijvoorbeeld: De heer/Mevrouw, Excellentie,\
+        \ Dokter, ..."
+      example:
+        '@value': '@value'
+        '@language': '@language'
+    Contactinfo_Contactinfo.naam:
+      required:
+      - '@value'
+      type: object
+      properties:
+        '@value':
+          type: string
+      description: Naam van bijvoorbeeld de persoon die men kan contacteren.
+      example:
+        '@value': '@value'
+    Contactinfo_Contactinfo.email:
+      required:
+      - '@value'
+      type: object
+      properties:
+        '@value':
+          type: string
+      description: Email-adres waarnaar men kan mailen.
+      example:
+        '@value': '@value'
+    Contactinfo_Contactinfo.faxnummer:
+      required:
+      - '@value'
+      type: object
+      properties:
+        '@value':
+          type: string
+      description: Faxnummer waarnaar men kan faxen.
+      example:
+        '@value': '@value'
+    Contactinfo_Contactinfo.telefoon:
+      required:
+      - '@value'
+      type: object
+      properties:
+        '@value':
+          type: string
+      description: Telefoonnummer waarop men kan bellen.
+      example:
+        '@value': '@value'
+    Contactinfo_Contactinfo.website:
+      required:
+      - '@id'
+      type: object
+      properties:
+        '@id':
+          type: string
+          format: uri
+      description: Website waarnaar men kan surfen.
+      example:
+        '@id': http://example.com/aeiou
+    Adresvoorstelling_Adresvoorstelling.administratieveEenheidNiveau1:
+      required:
+      - '@language'
+      - '@value'
+      type: object
+      properties:
+        '@value':
+          type: string
+        '@language':
+          pattern: ^nl$
+          type: string
+      description: "Hoogste Administratieve eenheid van het adres, doorgaans een land."
+      example:
+        '@value': '@value'
+        '@language': '@language'
+    Adresvoorstelling_Adresvoorstelling.administratieveEenheidNiveau2:
+      required:
+      - '@language'
+      - '@value'
+      type: object
+      properties:
+        '@value':
+          type: string
+        '@language':
+          pattern: ^nl$
+          type: string
+      description: "De regio van het adres, doorgaans een provincie of deelstaat of\
+        \ gelijkaardig gebied dat typisch meerdere plaatsen omvat."
+      example:
+        '@value': '@value'
+        '@language': '@language'
+    Adresvoorstelling_Adresvoorstelling.adresgebied:
+      required:
+      - '@language'
+      - '@value'
+      type: object
+      properties:
+        '@value':
+          type: string
+        '@language':
+          pattern: ^nl$
+          type: string
+      description: Naam van een geografisch gebied of plaats die een aantal adresseerbare
+        objecten groepeert om deze te adresseren zonder dat het gebied of de plaats
+        een administratieve eenheid is. Bvb de naam van het gehucht waarin het adres
+        ligt.
+      example:
+        '@value': '@value'
+        '@language': '@language'
+    Adresvoorstelling_Adresvoorstelling.busnummer:
+      required:
+      - '@value'
+      type: object
+      properties:
+        '@value':
+          type: string
+      description: "Officieel toegekende alfanumerieke code die wordt toegevoegd aan\
+        \ het huisnummer om meerdere gebouweenheden, standplaatsen, ligplaatsen of\
+        \ percelen te onderscheiden die eenzelfde huisnummer hebben. Specialisatie\
+        \ van Adresvoorstelling:locatieaanduiding ten behoeve van Belgische adressen."
+      example:
+        '@value': '@value'
+    Adresvoorstelling_Adresvoorstelling.gemeentenaam:
+      required:
+      - '@language'
+      - '@value'
+      type: object
+      properties:
+        '@value':
+          type: string
+        '@language':
+          pattern: ^nl$
+          type: string
+      description: Gemeentenaam van het adres.
+      example:
+        '@value': '@value'
+        '@language': '@language'
+    Adresvoorstelling_Adresvoorstelling.huisnummer:
+      required:
+      - '@value'
+      type: object
+      properties:
+        '@value':
+          type: string
+      description: "Alfanumerieke code officieel toegekend aan gebouweenheden, ligplaatsen,\
+        \ standplaatsen of percelen. Specialisatie van Adresvoorstelling:locatieaanduiding\
+        \ tbv Belgische adressen."
+      example:
+        '@value': '@value'
+    Adresvoorstelling_Adresvoorstelling.land:
+      required:
+      - '@language'
+      - '@value'
+      type: object
+      properties:
+        '@value':
+          type: string
+        '@language':
+          pattern: ^nl$
+          type: string
+      description: Land waarin het adres gelegen is.
+      example:
+        '@value': '@value'
+        '@language': '@language'
+    Adresvoorstelling_Adresvoorstelling.locatieaanduiding:
+      required:
+      - '@value'
+      type: object
+      properties:
+        '@value':
+          type: string
+      description: "Alfanumerieke code die de adreslocator uniek identificeert binnen\
+        \ de straat, administratieve eenheid etc."
+      example:
+        '@value': '@value'
+    Adresvoorstelling_Adresvoorstelling.locatienaam:
+      required:
+      - '@language'
+      - '@value'
+      type: object
+      properties:
+        '@value':
+          type: string
+        '@language':
+          pattern: ^nl$
+          type: string
+      description: Naam of omschrijving van het het geografisch object dat de adreslocator
+        aanduidt.
+      example:
+        '@value': '@value'
+        '@language': '@language'
+    Adresvoorstelling_Adresvoorstelling.postbus:
+      required:
+      - '@value'
+      type: object
+      properties:
+        '@value':
+          type: string
+      description: Postbusnummer in een postkantoor.
+      example:
+        '@value': '@value'
+    Adresvoorstelling_Adresvoorstelling.postcode:
+      required:
+      - '@value'
+      type: object
+      properties:
+        '@value':
+          type: string
+      description: Code waarmee het geografisch gebied dat adressen voor postale doeleinden
+        groepeert wordt aangeduid.
+      example:
+        '@value': '@value'
+    Adresvoorstelling_Adresvoorstelling.postnaam:
+      required:
+      - '@language'
+      - '@value'
+      type: object
+      properties:
+        '@value':
+          type: string
+        '@language':
+          pattern: ^nl$
+          type: string
+      description: Naam waarmee het geografisch gebied dat adressen voor postale doeleinden
+        groepeert wordt aangeduid.
+      example:
+        '@value': '@value'
+        '@language': '@language'
+    Adresvoorstelling_Adresvoorstelling.straatnaam:
+      required:
+      - '@language'
+      - '@value'
+      type: object
+      properties:
+        '@value':
+          type: string
+        '@language':
+          pattern: ^nl$
+          type: string
+      description: Straatnaam van het adres.
+      example:
+        '@value': '@value'
+        '@language': '@language'
+    Adresvoorstelling_Adresvoorstelling.volledigAdres:
+      required:
+      - '@language'
+      - '@value'
+      type: object
+      properties:
+        '@value':
+          type: string
+        '@language':
+          pattern: ^nl$
+          type: string
+      description: "Het complete adres in één string, al dan niet geformatteerd. Vermijdt\
+        \ fouten ten gevolge van het opsplitsen van een adres in zijn onderdelen.\
+        \ Geeft de voorgeschreven volgorde van de verschillende onderdelen weer."
+      example:
+        '@value': '@value'
+        '@language': '@language'
+    Plaats_Plaats.plaatsnaam:
+      required:
+      - '@language'
+      - '@value'
+      type: object
+      properties:
+        '@value':
+          type: string
+        '@language':
+          pattern: ^nl$
+          type: string
+      description: Naam van de plaats of van het gebied.
+      example:
+        '@value': '@value'
+        '@language': '@language'
+    Geboorte_Geboorte.datum:
+      required:
+      - '@type'
+      - '@value'
+      type: object
+      properties:
+        '@value':
+          type: string
+          format: date-time
+        '@type':
+          pattern: ^DateTime$
+          type: string
+      description: Datum waarop de gebeurtenis plaatsvond.
+      example:
+        '@value': 2000-01-23T04:56:07.000+00:00
+        '@type': '@type'
+    Afstamming_Afstamming.datumVanAfstamming:
+      required:
+      - '@type'
+      - '@value'
+      type: object
+      properties:
+        '@value':
+          type: string
+          format: date-time
+        '@type':
+          pattern: ^DateTime$
+          type: string
+      description: De datum waarop de afstamming wordt vastgesteld.

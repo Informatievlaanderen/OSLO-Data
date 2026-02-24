@@ -1,0 +1,379 @@
+"use strict";
+
+/**
+ * Persoon waarvan de gegevens zijn ingeschreven in een register.
+ * Persoon waarvan de gegevens zijn ingeschreven in een register.
+ *
+ * xINSZ String INSZ van een GeregistreerdPersoon object.
+ * xCorrelationId String Correlatie ID van het request.
+ * returns GeregistreerdPersoonJsonLd
+ **/
+exports.persoonGET = function (xINSZ, xCorrelationId) {
+  return new Promise(function (resolve, reject) {
+    var examples = {};
+    examples["application/ld+json"] = {
+      "@context":
+        "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld",
+      "@id": "_:persoon_29012818180",
+      "@type": ["GeregistreerdPersoon", "Persoon"],
+      "GeregistreerdPersoon.registratie": {
+        "@id": "_:identificator_29012818180",
+        "@type": ["Identificator"],
+        "Identificator.toegekendDoor(String)": {
+          "@value": "Rijksregister",
+        },
+        "Identificator.identificator": {
+          "@value": "29012818180",
+          "@type": "Literal",
+        },
+        "Identificator.toegekendOp": {
+          "@value": "1971-03-19",
+          "@type": "DateTime",
+        },
+        "Identificator.toegekendDoor": {
+          "@type": ["GeregistreerdeOrganisatie"],
+          "@id": "https://data.vlaanderen.be/id/organisatie/OVO027341",
+        },
+      },
+      "GeregistreerdPersoon.registratiedetail": {
+        "@type": ["Registratie"],
+        "Registratie.dossierstatus": [
+          {
+            "@id": "https://data.vlaanderen.be/id/concept/IT001/99990",
+          },
+        ],
+        "Registratie.geregistreerdPersoon": {
+          "@id": "_:persoon_29012818180",
+        },
+      },
+      "Persoon.inwonerschap": [
+        {
+          "@id": "https://data.vlaanderen.be/id/land/Belgie",
+          "@type": ["Jurisdictie"],
+        },
+      ],
+      "Persoon.inwonerschapdetail": [
+        {
+          "@id": "_:inwonerschap_29012818180",
+          "@type": ["Inwonerschap"],
+          "Inwonerschap.heeftVerblijfplaats": [
+            {
+              "@id": "_:verblijfplaats_1984-10-09",
+              "@type": ["Verblijfplaats", "Domicilie"],
+              "Verblijfplaats.verblijfsadres": {
+                "@id": "_:adresvoorstelling_1984-10-09",
+                "@type": ["Adresvoorstelling"],
+                "Adresvoorstelling.huisnummer": {
+                  "@value": "15",
+                },
+                "Adresvoorstelling.postcode": {
+                  "@value": "6941",
+                },
+                "Adresvoorstelling.straatnaam": {
+                  "@value":
+                    "Voie de Ferrières (Izier)(V. 18.07.1993 rue du Mazy)",
+                  "@language": "nl",
+                },
+                "Adresvoorstelling.land": {
+                  "@value": "Belgie",
+                  "@language": "nl",
+                },
+                "Adresvoorstelling.verwijstNaar": {
+                  "@id": "https://data.vlaanderen.be/id/adres/326762",
+                },
+                "Adresvoorstelling.volledigAdres":
+                  "Voie de Ferrières (Izier)(V. 18.07.1993 rue du Mazy) 15 6941 Belgie",
+              },
+            },
+            {
+              "@id": "_:verblijfplaats_1994-10-27",
+              "@type": ["Verblijfplaats", "WettelijkVerblijf"],
+              "Verblijfplaats.verblijfsadres": {
+                "@id": "_:adresvoorstelling_1984-10-09",
+                "@type": ["Adresvoorstelling"],
+                "Adresvoorstelling.volledigAdres": {
+                  "@value": "¨Le Village¨ St Trinit 84390 Sault",
+                  "@language": "nl",
+                },
+              },
+            },
+            {
+              "@id": "_:verblijfplaats_2009-11-01",
+              "@type": ["Verblijfplaats", "VerblijfplaatsBuitenland"],
+              "Verblijfplaats.verblijfsadres": {
+                "@id": "_:adresvoorstelling_1984-10-09",
+                "@type": ["Adresvoorstelling"],
+                "Adresvoorstelling.volledigAdres": {
+                  "@value": "Les Beylons 84220 Murs France",
+                  "@language": "nl",
+                },
+              },
+            },
+          ],
+        },
+      ],
+      "Persoon.heeftGeboorte": {
+        "@id": "_:geboorte_29012818180",
+        "@type": ["Persoonsgebeurtenis", "Geboorte"],
+        "Persoonsgebeurtenis.datum": {
+          "@value": "1929-01-28",
+          "@type": "DateTime",
+        },
+        "Persoonsgebeurtenis.plaats": {
+          "@id": "https://data.vlaanderen.be/id/gemeente/57085",
+        },
+      },
+      "Persoon.heeftOverlijden": {
+        "@id": "_:overlijden_29012818180",
+        "@type": ["Persoonsgebeurtenis", "Overlijden"],
+        "Persoonsgebeurtenis.datum": {
+          "@value": "1971-03-19",
+          "@type": "DateTime",
+        },
+      },
+      "Persoon.isLidVan": [
+        {
+          "@id": "_:gezin",
+          "@type": "Gezin",
+          "Gezin.gezinslid": [
+            {
+              "@id": "_:persoon_29012818180",
+            },
+            {
+              "@id": "_:persoon_28110813202",
+            },
+          ],
+        },
+      ],
+      "Persoon.voornaam": [
+        {
+          "@value": "Gérard",
+        },
+        {
+          "@value": "Fernand",
+        },
+        {
+          "@value": "Joseph",
+        },
+        {
+          "@value": "Ghislain",
+        },
+      ],
+      "Persoon.achternaam": [
+        {
+          "@value": "Bataille",
+        },
+      ],
+      "GeregistreerdPersoon.beheerder": {
+        "@id": "_:diplomatiekePost_1270",
+        "@type": ["AdministratiefBeheerder", "Organisatie"],
+        "AdministratiefBeheerder.type": {
+          "@id":
+            "https://data.vlaanderen.be/id/concept/AdministratiefBeheerdertype/DiplomatiekePost",
+        },
+        "Organisatie.voorkeursnaam": {
+          "@value": "Marseille",
+          "@language": "nl",
+        },
+        "Organisatie.contactinfo": [
+          {
+            "@id": "_:contactinfo_diplomatiekePost_1270",
+            "@type": ["Contactinfo"],
+            "Contactinfo.adres": {
+              "@id": "_:adresvoorstelling_diplomatiekePost_1270",
+              "@type": ["Adresvoorstelling"],
+              "Adresvoorstelling.gemeentenaam": {
+                "@value": "Marseille",
+                "@language": "nl",
+              },
+              "Adresvoorstelling.land": {
+                "@value": "Frankrijk",
+                "@language": "nl",
+              },
+            },
+          },
+        ],
+      },
+      "Persoon.heeftBurgerlijkeStaat": {
+        "@id": "_:burgerlijkeStaat_29012818180",
+        "@type": ["BurgerlijkeStaat"],
+        "BurgerlijkeStaat.type": {
+          "@id": "https://data.vlaanderen.be/id/concept/IT120/20",
+        },
+      },
+      "Persoon.heeftRelatieMet": [
+        {
+          "@id": "_:persoon_00000100000",
+          "@type": ["Persoon"],
+          "Persoon.voornaam": [
+            {
+              "@value": "Jeanne",
+            },
+            {
+              "@value": "Palmyre",
+            },
+          ],
+          "Persoon.achternaam": [
+            {
+              "@value": "Fontaine",
+            },
+          ],
+        },
+        {
+          "@id": "_:persoon_00000199900",
+          "@type": ["Persoon"],
+          "Persoon.voornaam": [
+            {
+              "@value": "Fernand",
+            },
+          ],
+          "Persoon.achternaam": [
+            {
+              "@value": "Bataille",
+            },
+          ],
+        },
+        {
+          "@id": "_:persoon_28110813202",
+          "@type": ["GeregistreerdPersoon", "Persoon"],
+          "Persoon.voornaam": [
+            {
+              "@value": "Emilie",
+            },
+            {
+              "@value": "Florence",
+            },
+            {
+              "@value": "Françoise",
+            },
+            {
+              "@value": "Maria",
+            },
+          ],
+          "Persoon.achternaam": [
+            {
+              "@value": "Janssens",
+            },
+          ],
+        },
+        {
+          "@id": "_:persoon_52021916184",
+          "@type": ["GeregistreerdPersoon", "Persoon"],
+        },
+        {
+          "@id": "_:persoon_53010737550",
+          "@type": ["GeregistreerdPersoon", "Persoon"],
+        },
+      ],
+      "Persoon.persoonsrelatiedetail": [
+        {
+          "@id": "_:persoonsrelatie_29012818180_00000100000_afstamming",
+          "@type": ["Persoonsrelatie", "Afstamming"],
+          "Persoonsrelatie.vanPersoon": {
+            "@id": "_:persoon_29012818180",
+          },
+          "Persoonsrelatie.metPersoon": {
+            "@id": "_:persoon_00000100000",
+          },
+          "Afstamming.afstammingstype": {
+            "@id": "https://data.vlaanderen.be/id/concept/IT110/00",
+          },
+          "Afstamming.datumVanAfstamming": {
+            "@value": "1929-01-28",
+            "@type": "DateTime",
+          },
+        },
+        {
+          "@id": "_:persoonsrelatie_29012818180_00000199900_afstamming",
+          "@type": ["Persoonsrelatie", "Afstamming"],
+          "Persoonsrelatie.vanPersoon": {
+            "@id": "_:persoon_29012818180",
+          },
+          "Persoonsrelatie.metPersoon": {
+            "@id": "_:persoon_00000199900",
+          },
+          "Afstamming.afstammingstype": {
+            "@id": "https://data.vlaanderen.be/id/concept/IT110/00",
+          },
+          "Afstamming.datumVanAfstamming": {
+            "@value": "1929-01-28",
+            "@type": "DateTime",
+          },
+        },
+        {
+          "@id": "_:persoonsrelatie_29012818180_52021916184_afstamming",
+          "@type": ["Persoonsrelatie", "Afstamming"],
+          "Persoonsrelatie.vanPersoon": {
+            "@id": "_:persoon_29012818180",
+          },
+          "Persoonsrelatie.metPersoon": {
+            "@id": "_:persoon_52021916184",
+          },
+          "Afstamming.afstammingstype": {
+            "@id": "https://data.vlaanderen.be/id/concept/IT114/00",
+          },
+          "Afstamming.datumVanAfstamming": {
+            "@value": "1952-02-19",
+            "@type": "DateTime",
+          },
+        },
+        {
+          "@id": "_:persoonsrelatie_29012818180_53010737550_afstamming",
+          "@type": ["Persoonsrelatie", "Afstamming"],
+          "Persoonsrelatie.vanPersoon": {
+            "@id": "_:persoon_29012818180",
+          },
+          "Persoonsrelatie.metPersoon": {
+            "@id": "_:persoon_53010737550",
+          },
+          "Afstamming.afstammingstype": {
+            "@id": "https://data.vlaanderen.be/id/concept/IT114/00",
+          },
+          "Afstamming.datumVanAfstamming": {
+            "@value": "1953-01-07",
+            "@type": "DateTime",
+          },
+        },
+        {
+          "@id": "_:persoonsrelatie_29012818180_28110813202_gezin",
+          "@type": ["Persoonsrelatie", "Gezinsrelatie"],
+          "Persoonsrelatie.vanPersoon": {
+            "@id": "_:persoon_29012818180",
+          },
+          "Persoonsrelatie.metPersoon": {
+            "@id": "_:persoon_28110813202",
+          },
+          "Gezinsrelatie.gezinsrelatietype": {
+            "@id": "https://data.vlaanderen.be/id/concept/IT141/02",
+          },
+        },
+        {
+          "@id": "_:persoonsrelatie_29012818180_28110813202_huwelijk",
+          "@type": ["Persoonsrelatie", "Huwelijk"],
+          "Persoonsrelatie.vanPersoon": {
+            "@id": "_:persoon_29012818180",
+          },
+          "Persoonsrelatie.metPersoon": {
+            "@id": "_:persoon_28110813202",
+          },
+        },
+      ],
+      "Versie.tijdstipModificatie": {
+        "@value": "2017-03-15",
+        "@type": "DateTime",
+      },
+      "Versie.tijdstipCreatie": {
+        "@value": "1971-03-19",
+        "@type": "DateTime",
+      },
+      "Versie.bron": {
+        "@id": "https://data.vlaanderen.be/id/organisatie/OVO027248",
+      },
+    };
+    if (Object.keys(examples).length > 0) {
+      resolve(examples[Object.keys(examples)[0]]);
+    } else {
+      resolve();
+    }
+  });
+};
