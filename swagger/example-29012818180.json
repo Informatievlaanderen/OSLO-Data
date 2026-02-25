@@ -438,11 +438,11 @@
       }
     }
   ],
-  "Versie.tijdstipModificatie": {
+  "Versie.modificatiedatum": {
     "@value": "2017-03-15",
     "@type": "Date"
   },
-  "Versie.tijdstipCreatie": {
+  "Versie.creatiedatum": {
     "@value": "1971-03-19",
     "@type": "Date"
   },
