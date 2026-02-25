@@ -342,6 +342,18 @@
       "@id": "http://xmlns.com/foaf/0.1/givenName",
       "@type": "http://www.w3.org/2001/XMLSchema#string"
     },
+    "GeregistreerdPersoon.bron": {
+      "@id": "http://purl.org/dc/terms/creator",
+      "@type": "@id"
+    },
+    "GeregistreerdPersoon.creatiedatum": {
+      "@id": "http://purl.org/dc/terms/created",
+      "@type": "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "GeregistreerdPersoon.modificatiedatum": {
+      "@id": "http://purl.org/dc/terms/modified",
+      "@type": "http://www.w3.org/2001/XMLSchema#date"
+    },
     "Persoonsgebeurtenis": "http://purl.org/vocab/bio/0.1/Event",
     "Persoonsgebeurtenis.datum": {
       "@id": "http://purl.org/vocab/bio/0.1/date",
