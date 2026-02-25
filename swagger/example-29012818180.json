@@ -1,5 +1,10 @@
 {
-  "@context": "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld",
+  "@context": [
+    "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld",
+    {
+      "SKOS": "http://www.w3.org/2004/02/skos/core#"
+    }
+  ],
   "@id": "_:persoon_29012818180",
   "@type": [
     "GeregistreerdPersoon",
@@ -19,12 +24,10 @@
     },
     "Identificator.toegekendOp": {
       "@value": "1971-03-19",
-      "@type": "DateTime"
+      "@type": "Date"
     },
     "Identificator.toegekendDoor": {
-      "@type": [
-        "GeregistreerdeOrganisatie"
-      ],
+      "@type": "Agent",
       "@id": "https://data.vlaanderen.be/id/organisatie/OVO027341"
     }
   },
@@ -34,7 +37,8 @@
     ],
     "Registratie.dossierstatus": [
       {
-        "@id": "https://data.vlaanderen.be/id/concept/IT001/99990"
+        "@id": "https://data.vlaanderen.be/id/concept/IT001/99990",
+        "@type": "SKOS:Concept"
       }
     ],
     "Registratie.geregistreerdPersoon": {
@@ -43,7 +47,7 @@
   },
   "Persoon.inwonerschap": [
     {
-      "@id": "https://data.vlaanderen.be/id/land/Belgie",
+      "@id": "http://data.europa.eu/nuts/code/BE",
       "@type": [
         "Jurisdictie"
       ]
@@ -55,6 +59,12 @@
       "@type": [
         "Inwonerschap"
       ],
+      "Inwonerschap.jurisdictie": {
+        "@id": "http://data.europa.eu/nuts/code/BE"
+      },
+      "Inwonerschap.persoon": {
+        "@id": "_:persoon_29012818180"
+      },
       "Inwonerschap.heeftVerblijfplaats": [
         {
           "@id": "_:verblijfplaats_1984-10-09",
@@ -65,7 +75,8 @@
           "Verblijfplaats.verblijfsadres": {
             "@id": "_:adresvoorstelling_1984-10-09",
             "@type": [
-              "Adresvoorstelling"
+              "Adresvoorstelling",
+              "BelgischAdres"
             ],
             "Adresvoorstelling.huisnummer": {
               "@value": "15"
@@ -82,9 +93,13 @@
               "@language": "nl"
             },
             "Adresvoorstelling.verwijstNaar": {
-              "@id": "https://data.vlaanderen.be/id/adres/326762"
+              "@id": "https://data.vlaanderen.be/id/adres/326762",
+              "@type": "BelgischAdres"
             },
-            "Adresvoorstelling.volledigAdres": "Voie de Ferrières (Izier)(V. 18.07.1993 rue du Mazy) 15 6941 Belgie"
+            "Adresvoorstelling.volledigAdres": {
+              "@value": "Voie de Ferrières (Izier)(V. 18.07.1993 rue du Mazy) 15 6941 Belgie",
+              "@language": "nl"
+            }
           }
         },
         {
@@ -94,7 +109,7 @@
             "WettelijkVerblijf"
           ],
           "Verblijfplaats.verblijfsadres": {
-            "@id": "_:adresvoorstelling_1984-10-09",
+            "@id": "_:adresvoorstelling_1994-10-27",
             "@type": [
               "Adresvoorstelling"
             ],
@@ -111,7 +126,7 @@
             "VerblijfplaatsBuitenland"
           ],
           "Verblijfplaats.verblijfsadres": {
-            "@id": "_:adresvoorstelling_1984-10-09",
+            "@id": "_:adresvoorstelling_2009-11-01",
             "@type": [
               "Adresvoorstelling"
             ],
@@ -132,10 +147,11 @@
     ],
     "Persoonsgebeurtenis.datum": {
       "@value": "1929-01-28",
-      "@type": "DateTime"
+      "@type": "Date"
     },
     "Persoonsgebeurtenis.plaats": {
-      "@id": "https://data.vlaanderen.be/id/gemeente/57085"
+      "@id": "https://data.vlaanderen.be/id/gemeente/57085",
+      "@type": "Plaats"
     }
   },
   "Persoon.heeftOverlijden": {
@@ -146,7 +162,7 @@
     ],
     "Persoonsgebeurtenis.datum": {
       "@value": "1971-03-19",
-      "@type": "DateTime"
+      "@type": "Date"
     }
   },
   "Persoon.isLidVan": [
@@ -189,7 +205,8 @@
       "Organisatie"
     ],
     "AdministratiefBeheerder.type": {
-      "@id": "https://data.vlaanderen.be/id/concept/AdministratiefBeheerdertype/DiplomatiekePost"
+      "@id": "https://data.vlaanderen.be/id/concept/AdministratiefBeheerdertype/DiplomatiekePost",
+      "@type": "SKOS:Concept"
     },
     "Organisatie.voorkeursnaam": {
       "@value": "Marseille",
@@ -224,7 +241,8 @@
       "BurgerlijkeStaat"
     ],
     "BurgerlijkeStaat.type": {
-      "@id": "https://data.vlaanderen.be/id/concept/IT120/20"
+      "@id": "https://data.vlaanderen.be/id/concept/IT120/20",
+      "@type": "SKOS:Concept"
     }
   },
   "Persoon.heeftRelatieMet": [
@@ -318,11 +336,12 @@
         "@id": "_:persoon_00000100000"
       },
       "Afstamming.afstammingstype": {
-        "@id": "https://data.vlaanderen.be/id/concept/IT110/00"
+        "@id": "https://data.vlaanderen.be/id/concept/IT110/00",
+        "@type": "SKOS:Concept"
       },
       "Afstamming.datumVanAfstamming": {
         "@value": "1929-01-28",
-        "@type": "DateTime"
+        "@type": "Date"
       }
     },
     {
@@ -338,11 +357,12 @@
         "@id": "_:persoon_00000199900"
       },
       "Afstamming.afstammingstype": {
-        "@id": "https://data.vlaanderen.be/id/concept/IT110/00"
+        "@id": "https://data.vlaanderen.be/id/concept/IT110/00",
+        "@type": "SKOS:Concept"
       },
       "Afstamming.datumVanAfstamming": {
         "@value": "1929-01-28",
-        "@type": "DateTime"
+        "@type": "Date"
       }
     },
     {
@@ -358,11 +378,12 @@
         "@id": "_:persoon_52021916184"
       },
       "Afstamming.afstammingstype": {
-        "@id": "https://data.vlaanderen.be/id/concept/IT114/00"
+        "@id": "https://data.vlaanderen.be/id/concept/IT114/00",
+        "@type": "SKOS:Concept"
       },
       "Afstamming.datumVanAfstamming": {
         "@value": "1952-02-19",
-        "@type": "DateTime"
+        "@type": "Date"
       }
     },
     {
@@ -378,11 +399,12 @@
         "@id": "_:persoon_53010737550"
       },
       "Afstamming.afstammingstype": {
-        "@id": "https://data.vlaanderen.be/id/concept/IT114/00"
+        "@id": "https://data.vlaanderen.be/id/concept/IT114/00",
+        "@type": "SKOS:Concept"
       },
       "Afstamming.datumVanAfstamming": {
         "@value": "1953-01-07",
-        "@type": "DateTime"
+        "@type": "Date"
       }
     },
     {
@@ -398,7 +420,8 @@
         "@id": "_:persoon_28110813202"
       },
       "Gezinsrelatie.gezinsrelatietype": {
-        "@id": "https://data.vlaanderen.be/id/concept/IT141/02"
+        "@id": "https://data.vlaanderen.be/id/concept/IT141/02",
+        "@type": "SKOS:Concept"
       }
     },
     {
@@ -417,13 +440,14 @@
   ],
   "Versie.tijdstipModificatie": {
     "@value": "2017-03-15",
-    "@type": "DateTime"
+    "@type": "Date"
   },
   "Versie.tijdstipCreatie": {
     "@value": "1971-03-19",
-    "@type": "DateTime"
+    "@type": "Date"
   },
   "Versie.bron": {
-    "@id": "https://data.vlaanderen.be/id/organisatie/OVO027248"
+    "@id": "https://data.vlaanderen.be/id/organisatie/OVO027248",
+    "@type": "Agent"
   }
 }
