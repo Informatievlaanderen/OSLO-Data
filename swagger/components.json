@@ -301,9 +301,7 @@
         },
         "required": [
           "@id",
-          "@type",
-          "Persoon.creatiedatum",
-          "Persoon.bron"
+          "@type"
         ]
       },
       "PersoonJsonLd": {
@@ -491,8 +489,6 @@
         "required": [
           "@id",
           "@type",
-          "Persoon.creatiedatum",
-          "Persoon.bron",
           "@context"
         ]
       },
@@ -2276,9 +2272,7 @@
         },
         "required": [
           "@id",
-          "@type",
-          "GeregistreerdPersoon.creatiedatum",
-          "GeregistreerdPersoon.bron"
+          "@type"
         ]
       },
       "GeregistreerdPersoonJsonLd": {
@@ -2475,8 +2469,6 @@
         "required": [
           "@id",
           "@type",
-          "GeregistreerdPersoon.creatiedatum",
-          "GeregistreerdPersoon.bron",
           "@context"
         ]
       },
