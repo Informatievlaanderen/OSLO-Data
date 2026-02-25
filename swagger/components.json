@@ -259,17 +259,17 @@
             },
             "minItems": 0
           },
-          "Persoon.tijdstipCreatie": {
+          "Persoon.creatiedatum": {
             "type": "object",
-            "description": "Tijdstip waarop de gegevens zijn ingevoerd.",
+            "description": "Datum waarop de gegevens zijn ingevoerd.",
             "properties": {
               "@value": {
                 "type": "string",
-                "format": "date-time"
+                "format": "date"
               },
               "@type": {
                 "type": "string",
-                "pattern": "^DateTime$"
+                "pattern": "^Date$"
               }
             },
             "required": [
@@ -277,17 +277,17 @@
               "@type"
             ]
           },
-          "Persoon.tijdstipModificatie": {
+          "Persoon.modificatiedatum": {
             "type": "object",
-            "description": "Tijdstip waarop de gegevens werden bijgewerkt.",
+            "description": "Datum waarop de gegevens werden bijgewerkt.",
             "properties": {
               "@value": {
                 "type": "string",
-                "format": "date-time"
+                "format": "date"
               },
               "@type": {
                 "type": "string",
-                "pattern": "^DateTime$"
+                "pattern": "^Date$"
               }
             },
             "required": [
@@ -297,20 +297,12 @@
           },
           "Persoon.bron": {
             "$ref": "#/components/schemas/Organisatie"
-          },
-          "@context": {
-            "type": "string",
-            "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
           }
         },
         "required": [
-          "@context",
           "@id",
           "@type",
-          "Persoon.tijdstipCreatie",
+          "Persoon.creatiedatum",
           "Persoon.bron"
         ]
       },
@@ -451,17 +443,17 @@
             },
             "minItems": 0
           },
-          "Persoon.tijdstipCreatie": {
+          "Persoon.creatiedatum": {
             "type": "object",
-            "description": "Tijdstip waarop de gegevens zijn ingevoerd.",
+            "description": "Datum waarop de gegevens zijn ingevoerd.",
             "properties": {
               "@value": {
                 "type": "string",
-                "format": "date-time"
+                "format": "date"
               },
               "@type": {
                 "type": "string",
-                "pattern": "^DateTime$"
+                "pattern": "^Date$"
               }
             },
             "required": [
@@ -469,17 +461,17 @@
               "@type"
             ]
           },
-          "Persoon.tijdstipModificatie": {
+          "Persoon.modificatiedatum": {
             "type": "object",
-            "description": "Tijdstip waarop de gegevens werden bijgewerkt.",
+            "description": "Datum waarop de gegevens werden bijgewerkt.",
             "properties": {
               "@value": {
                 "type": "string",
-                "format": "date-time"
+                "format": "date"
               },
               "@type": {
                 "type": "string",
-                "pattern": "^DateTime$"
+                "pattern": "^Date$"
               }
             },
             "required": [
@@ -493,17 +485,15 @@
           "@context": {
             "type": "string",
             "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
+            "pattern": "^https:\\/\\/test.data.vlaanderen.be\\/doc\\/implementatiemodel\\/magda\\/persoon\\/context\\/persoon-IM.jsonld$"
           }
         },
         "required": [
-          "@context",
           "@id",
           "@type",
-          "Persoon.tijdstipCreatie",
-          "Persoon.bron"
+          "Persoon.creatiedatum",
+          "Persoon.bron",
+          "@context"
         ]
       },
       "Plaats": {
@@ -547,17 +537,9 @@
           },
           "Plaats.plaats": {
             "$ref": "#/components/schemas/Plaats"
-          },
-          "@context": {
-            "type": "string",
-            "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
           }
         },
         "required": [
-          "@context",
           "@id",
           "@type"
         ]
@@ -607,15 +589,13 @@
           "@context": {
             "type": "string",
             "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
+            "pattern": "^https:\\/\\/test.data.vlaanderen.be\\/doc\\/implementatiemodel\\/magda\\/persoon\\/context\\/persoon-IM.jsonld$"
           }
         },
         "required": [
-          "@context",
           "@id",
-          "@type"
+          "@type",
+          "@context"
         ]
       },
       "Gezinsrelatie": {
@@ -645,17 +625,9 @@
           },
           "Gezinsrelatie.metPersoon": {
             "$ref": "#/components/schemas/Persoon"
-          },
-          "@context": {
-            "type": "string",
-            "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
           }
         },
         "required": [
-          "@context",
           "@id",
           "@type",
           "Gezinsrelatie.vanPersoon",
@@ -693,17 +665,15 @@
           "@context": {
             "type": "string",
             "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
+            "pattern": "^https:\\/\\/test.data.vlaanderen.be\\/doc\\/implementatiemodel\\/magda\\/persoon\\/context\\/persoon-IM.jsonld$"
           }
         },
         "required": [
-          "@context",
           "@id",
           "@type",
           "Gezinsrelatie.vanPersoon",
-          "Gezinsrelatie.metPersoon"
+          "Gezinsrelatie.metPersoon",
+          "@context"
         ]
       },
       "Persoonsrelatie": {
@@ -730,17 +700,9 @@
           },
           "Persoonsrelatie.metPersoon": {
             "$ref": "#/components/schemas/Persoon"
-          },
-          "@context": {
-            "type": "string",
-            "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
           }
         },
         "required": [
-          "@context",
           "@id",
           "@type",
           "Persoonsrelatie.vanPersoon",
@@ -775,17 +737,15 @@
           "@context": {
             "type": "string",
             "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
+            "pattern": "^https:\\/\\/test.data.vlaanderen.be\\/doc\\/implementatiemodel\\/magda\\/persoon\\/context\\/persoon-IM.jsonld$"
           }
         },
         "required": [
-          "@context",
           "@id",
           "@type",
           "Persoonsrelatie.vanPersoon",
-          "Persoonsrelatie.metPersoon"
+          "Persoonsrelatie.metPersoon",
+          "@context"
         ]
       },
       "Overlijden": {
@@ -813,11 +773,11 @@
             "properties": {
               "@value": {
                 "type": "string",
-                "format": "date-time"
+                "format": "date"
               },
               "@type": {
                 "type": "string",
-                "pattern": "^DateTime$"
+                "pattern": "^Date$"
               }
             },
             "required": [
@@ -827,17 +787,9 @@
           },
           "Overlijden.plaats": {
             "$ref": "#/components/schemas/Plaats"
-          },
-          "@context": {
-            "type": "string",
-            "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
           }
         },
         "required": [
-          "@context",
           "@id",
           "@type"
         ]
@@ -867,11 +819,11 @@
             "properties": {
               "@value": {
                 "type": "string",
-                "format": "date-time"
+                "format": "date"
               },
               "@type": {
                 "type": "string",
-                "pattern": "^DateTime$"
+                "pattern": "^Date$"
               }
             },
             "required": [
@@ -885,15 +837,13 @@
           "@context": {
             "type": "string",
             "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
+            "pattern": "^https:\\/\\/test.data.vlaanderen.be\\/doc\\/implementatiemodel\\/magda\\/persoon\\/context\\/persoon-IM.jsonld$"
           }
         },
         "required": [
-          "@context",
           "@id",
-          "@type"
+          "@type",
+          "@context"
         ]
       },
       "Persoonsgebeurtenis": {
@@ -921,11 +871,11 @@
             "properties": {
               "@value": {
                 "type": "string",
-                "format": "date-time"
+                "format": "date"
               },
               "@type": {
                 "type": "string",
-                "pattern": "^DateTime$"
+                "pattern": "^Date$"
               }
             },
             "required": [
@@ -935,17 +885,9 @@
           },
           "Persoonsgebeurtenis.plaats": {
             "$ref": "#/components/schemas/Plaats"
-          },
-          "@context": {
-            "type": "string",
-            "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
           }
         },
         "required": [
-          "@context",
           "@id",
           "@type"
         ]
@@ -975,11 +917,11 @@
             "properties": {
               "@value": {
                 "type": "string",
-                "format": "date-time"
+                "format": "date"
               },
               "@type": {
                 "type": "string",
-                "pattern": "^DateTime$"
+                "pattern": "^Date$"
               }
             },
             "required": [
@@ -993,15 +935,13 @@
           "@context": {
             "type": "string",
             "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
+            "pattern": "^https:\\/\\/test.data.vlaanderen.be\\/doc\\/implementatiemodel\\/magda\\/persoon\\/context\\/persoon-IM.jsonld$"
           }
         },
         "required": [
-          "@context",
           "@id",
-          "@type"
+          "@type",
+          "@context"
         ]
       },
       "Geboorte": {
@@ -1029,11 +969,11 @@
             "properties": {
               "@value": {
                 "type": "string",
-                "format": "date-time"
+                "format": "date"
               },
               "@type": {
                 "type": "string",
-                "pattern": "^DateTime$"
+                "pattern": "^Date$"
               }
             },
             "required": [
@@ -1043,17 +983,9 @@
           },
           "Geboorte.plaats": {
             "$ref": "#/components/schemas/Plaats"
-          },
-          "@context": {
-            "type": "string",
-            "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
           }
         },
         "required": [
-          "@context",
           "@id",
           "@type"
         ]
@@ -1083,11 +1015,11 @@
             "properties": {
               "@value": {
                 "type": "string",
-                "format": "date-time"
+                "format": "date"
               },
               "@type": {
                 "type": "string",
-                "pattern": "^DateTime$"
+                "pattern": "^Date$"
               }
             },
             "required": [
@@ -1101,15 +1033,13 @@
           "@context": {
             "type": "string",
             "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
+            "pattern": "^https:\\/\\/test.data.vlaanderen.be\\/doc\\/implementatiemodel\\/magda\\/persoon\\/context\\/persoon-IM.jsonld$"
           }
         },
         "required": [
-          "@context",
           "@id",
-          "@type"
+          "@type",
+          "@context"
         ]
       },
       "Huwelijk": {
@@ -1136,17 +1066,9 @@
           },
           "Huwelijk.metPersoon": {
             "$ref": "#/components/schemas/Persoon"
-          },
-          "@context": {
-            "type": "string",
-            "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
           }
         },
         "required": [
-          "@context",
           "@id",
           "@type",
           "Huwelijk.vanPersoon",
@@ -1181,17 +1103,15 @@
           "@context": {
             "type": "string",
             "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
+            "pattern": "^https:\\/\\/test.data.vlaanderen.be\\/doc\\/implementatiemodel\\/magda\\/persoon\\/context\\/persoon-IM.jsonld$"
           }
         },
         "required": [
-          "@context",
           "@id",
           "@type",
           "Huwelijk.vanPersoon",
-          "Huwelijk.metPersoon"
+          "Huwelijk.metPersoon",
+          "@context"
         ]
       },
       "Registratie": {
@@ -1229,17 +1149,9 @@
           },
           "Registratie.volgendeRegistratie": {
             "$ref": "#/components/schemas/Registratie"
-          },
-          "@context": {
-            "type": "string",
-            "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
           }
         },
         "required": [
-          "@context",
           "@id",
           "@type",
           "Registratie.geregistreerdPersoon"
@@ -1284,16 +1196,14 @@
           "@context": {
             "type": "string",
             "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
+            "pattern": "^https:\\/\\/test.data.vlaanderen.be\\/doc\\/implementatiemodel\\/magda\\/persoon\\/context\\/persoon-IM.jsonld$"
           }
         },
         "required": [
-          "@context",
           "@id",
           "@type",
-          "Registratie.geregistreerdPersoon"
+          "Registratie.geregistreerdPersoon",
+          "@context"
         ]
       },
       "Versie": {
@@ -1315,17 +1225,17 @@
             },
             "minItems": 1
           },
-          "Versie.tijdstipCreatie": {
+          "Versie.creatiedatum": {
             "type": "object",
-            "description": "Tijdstip waarop de gegevens zijn ingevoerd.",
+            "description": "Datum waarop de gegevens zijn ingevoerd.",
             "properties": {
               "@value": {
                 "type": "string",
-                "format": "date-time"
+                "format": "date"
               },
               "@type": {
                 "type": "string",
-                "pattern": "^DateTime$"
+                "pattern": "^Date$"
               }
             },
             "required": [
@@ -1333,17 +1243,17 @@
               "@type"
             ]
           },
-          "Versie.tijdstipModificatie": {
+          "Versie.modificatiedatum": {
             "type": "object",
-            "description": "Tijdstip waarop de gegevens werden bijgewerkt.",
+            "description": "Datum waarop de gegevens werden bijgewerkt.",
             "properties": {
               "@value": {
                 "type": "string",
-                "format": "date-time"
+                "format": "date"
               },
               "@type": {
                 "type": "string",
-                "pattern": "^DateTime$"
+                "pattern": "^Date$"
               }
             },
             "required": [
@@ -1353,20 +1263,12 @@
           },
           "Versie.bron": {
             "$ref": "#/components/schemas/Organisatie"
-          },
-          "@context": {
-            "type": "string",
-            "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
           }
         },
         "required": [
-          "@context",
           "@id",
           "@type",
-          "Versie.tijdstipCreatie",
+          "Versie.creatiedatum",
           "Versie.bron"
         ]
       },
@@ -1389,17 +1291,17 @@
             },
             "minItems": 1
           },
-          "Versie.tijdstipCreatie": {
+          "Versie.creatiedatum": {
             "type": "object",
-            "description": "Tijdstip waarop de gegevens zijn ingevoerd.",
+            "description": "Datum waarop de gegevens zijn ingevoerd.",
             "properties": {
               "@value": {
                 "type": "string",
-                "format": "date-time"
+                "format": "date"
               },
               "@type": {
                 "type": "string",
-                "pattern": "^DateTime$"
+                "pattern": "^Date$"
               }
             },
             "required": [
@@ -1407,17 +1309,17 @@
               "@type"
             ]
           },
-          "Versie.tijdstipModificatie": {
+          "Versie.modificatiedatum": {
             "type": "object",
-            "description": "Tijdstip waarop de gegevens werden bijgewerkt.",
+            "description": "Datum waarop de gegevens werden bijgewerkt.",
             "properties": {
               "@value": {
                 "type": "string",
-                "format": "date-time"
+                "format": "date"
               },
               "@type": {
                 "type": "string",
-                "pattern": "^DateTime$"
+                "pattern": "^Date$"
               }
             },
             "required": [
@@ -1431,17 +1333,15 @@
           "@context": {
             "type": "string",
             "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
+            "pattern": "^https:\\/\\/test.data.vlaanderen.be\\/doc\\/implementatiemodel\\/magda\\/persoon\\/context\\/persoon-IM.jsonld$"
           }
         },
         "required": [
-          "@context",
           "@id",
           "@type",
-          "Versie.tijdstipCreatie",
-          "Versie.bron"
+          "Versie.creatiedatum",
+          "Versie.bron",
+          "@context"
         ]
       },
       "FormeleOrganisatie": {
@@ -1462,17 +1362,9 @@
               "pattern": "^FormeleOrganisatie$"
             },
             "minItems": 1
-          },
-          "@context": {
-            "type": "string",
-            "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
           }
         },
         "required": [
-          "@context",
           "@id",
           "@type"
         ]
@@ -1499,15 +1391,229 @@
           "@context": {
             "type": "string",
             "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
+            "pattern": "^https:\\/\\/test.data.vlaanderen.be\\/doc\\/implementatiemodel\\/magda\\/persoon\\/context\\/persoon-IM.jsonld$"
+          }
+        },
+        "required": [
+          "@id",
+          "@type",
+          "@context"
+        ]
+      },
+      "HttpApiProbleemdetail": {
+        "title": "HttpApiProbleemdetail",
+        "type": "object",
+        "description": "Meer getedailleerde beschrijving van de fout in een HTTP response.",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          },
+          "@type": {
+            "type": "array",
+            "description": "Lijst van object types (klasse)",
+            "items": {
+              "type": "string",
+              "description": "HttpApiProbleemdetail type",
+              "pattern": "^HttpApiProbleemdetail$"
+            },
+            "minItems": 1
+          },
+          "HttpApiProbleemdetail.type": {
+            "type": "object",
+            "description": "Aard van de fout.",
+            "properties": {
+              "@id": {
+                "type": "string",
+                "format": "uri"
+              }
+            },
+            "required": [
+              "@id"
+            ]
+          },
+          "HttpApiProbleemdetail.titel": {
+            "type": "object",
+            "description": "Korte mensleesbare beschrijving van de fout.",
+            "properties": {
+              "@value": {
+                "type": "string"
+              },
+              "@language": {
+                "type": "string",
+                "pattern": "^nl$"
+              }
+            },
+            "required": [
+              "@value",
+              "@language"
+            ]
+          },
+          "HttpApiProbleemdetail.status": {
+            "type": "object",
+            "description": "HTTP foutcode. Zoals beschreven in <a href=\"https://www.rfc-editor.org/rfc/rfc7231\">rfc7231</a>. Bvb 404 voor \"Not Found\".",
+            "properties": {
+              "@value": {
+                "type": "number",
+                "format": "int64"
+              },
+              "@type": {
+                "type": "string",
+                "pattern": "^Integer$"
+              }
+            },
+            "required": [
+              "@value",
+              "@type"
+            ]
+          },
+          "HttpApiProbleemdetail.detail": {
+            "type": "object",
+            "description": "Mensleesbare beschrijving van de fout.",
+            "properties": {
+              "@value": {
+                "type": "string"
+              },
+              "@language": {
+                "type": "string",
+                "pattern": "^nl$"
+              }
+            },
+            "required": [
+              "@value",
+              "@language"
+            ]
+          },
+          "HttpApiProbleemdetail.instantie": {
+            "type": "object",
+            "description": "Verwijzing naar de instantie van het object waarop de fout betrekking heeft. Bvb verwijzing naar de request.",
+            "properties": {
+              "@id": {
+                "type": "string",
+                "format": "uri"
+              }
+            },
+            "required": [
+              "@id"
             ]
           }
         },
         "required": [
-          "@context",
           "@id",
-          "@type"
+          "@type",
+          "HttpApiProbleemdetail.type",
+          "HttpApiProbleemdetail.titel"
+        ]
+      },
+      "HttpApiProbleemdetailJsonLd": {
+        "title": "HttpApiProbleemdetail",
+        "type": "object",
+        "description": "Meer getedailleerde beschrijving van de fout in een HTTP response.",
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          },
+          "@type": {
+            "type": "array",
+            "description": "Lijst van object types (klasse)",
+            "items": {
+              "type": "string",
+              "description": "HttpApiProbleemdetail type",
+              "pattern": "^HttpApiProbleemdetail$"
+            },
+            "minItems": 1
+          },
+          "HttpApiProbleemdetail.type": {
+            "type": "object",
+            "description": "Aard van de fout.",
+            "properties": {
+              "@id": {
+                "type": "string",
+                "format": "uri"
+              }
+            },
+            "required": [
+              "@id"
+            ]
+          },
+          "HttpApiProbleemdetail.titel": {
+            "type": "object",
+            "description": "Korte mensleesbare beschrijving van de fout.",
+            "properties": {
+              "@value": {
+                "type": "string"
+              },
+              "@language": {
+                "type": "string",
+                "pattern": "^nl$"
+              }
+            },
+            "required": [
+              "@value",
+              "@language"
+            ]
+          },
+          "HttpApiProbleemdetail.status": {
+            "type": "object",
+            "description": "HTTP foutcode. Zoals beschreven in <a href=\"https://www.rfc-editor.org/rfc/rfc7231\">rfc7231</a>. Bvb 404 voor \"Not Found\".",
+            "properties": {
+              "@value": {
+                "type": "number",
+                "format": "int64"
+              },
+              "@type": {
+                "type": "string",
+                "pattern": "^Integer$"
+              }
+            },
+            "required": [
+              "@value",
+              "@type"
+            ]
+          },
+          "HttpApiProbleemdetail.detail": {
+            "type": "object",
+            "description": "Mensleesbare beschrijving van de fout.",
+            "properties": {
+              "@value": {
+                "type": "string"
+              },
+              "@language": {
+                "type": "string",
+                "pattern": "^nl$"
+              }
+            },
+            "required": [
+              "@value",
+              "@language"
+            ]
+          },
+          "HttpApiProbleemdetail.instantie": {
+            "type": "object",
+            "description": "Verwijzing naar de instantie van het object waarop de fout betrekking heeft. Bvb verwijzing naar de request.",
+            "properties": {
+              "@id": {
+                "type": "string",
+                "format": "uri"
+              }
+            },
+            "required": [
+              "@id"
+            ]
+          },
+          "@context": {
+            "type": "string",
+            "format": "uri",
+            "pattern": "^https:\\/\\/test.data.vlaanderen.be\\/doc\\/implementatiemodel\\/magda\\/persoon\\/context\\/persoon-IM.jsonld$"
+          }
+        },
+        "required": [
+          "@id",
+          "@type",
+          "HttpApiProbleemdetail.type",
+          "HttpApiProbleemdetail.titel",
+          "@context"
         ]
       },
       "Inwonerschap": {
@@ -1572,17 +1678,9 @@
               }
             },
             "minItems": 0
-          },
-          "@context": {
-            "type": "string",
-            "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
           }
         },
         "required": [
-          "@context",
           "@id",
           "@type",
           "Inwonerschap.persoon",
@@ -1655,17 +1753,15 @@
           "@context": {
             "type": "string",
             "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
+            "pattern": "^https:\\/\\/test.data.vlaanderen.be\\/doc\\/implementatiemodel\\/magda\\/persoon\\/context\\/persoon-IM.jsonld$"
           }
         },
         "required": [
-          "@context",
           "@id",
           "@type",
           "Inwonerschap.persoon",
-          "Inwonerschap.jurisdictie"
+          "Inwonerschap.jurisdictie",
+          "@context"
         ]
       },
       "GeregistreerdeOrganisatie": {
@@ -1731,17 +1827,9 @@
               "$ref": "#/components/schemas/Contactinfo"
             },
             "minItems": 0
-          },
-          "@context": {
-            "type": "string",
-            "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
           }
         },
         "required": [
-          "@context",
           "@id",
           "@type"
         ]
@@ -1813,15 +1901,13 @@
           "@context": {
             "type": "string",
             "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
+            "pattern": "^https:\\/\\/test.data.vlaanderen.be\\/doc\\/implementatiemodel\\/magda\\/persoon\\/context\\/persoon-IM.jsonld$"
           }
         },
         "required": [
-          "@context",
           "@id",
-          "@type"
+          "@type",
+          "@context"
         ]
       },
       "Organisatie": {
@@ -1867,17 +1953,9 @@
               "$ref": "#/components/schemas/Contactinfo"
             },
             "minItems": 0
-          },
-          "@context": {
-            "type": "string",
-            "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
           }
         },
         "required": [
-          "@context",
           "@id",
           "@type"
         ]
@@ -1929,15 +2007,13 @@
           "@context": {
             "type": "string",
             "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
+            "pattern": "^https:\\/\\/test.data.vlaanderen.be\\/doc\\/implementatiemodel\\/magda\\/persoon\\/context\\/persoon-IM.jsonld$"
           }
         },
         "required": [
-          "@context",
           "@id",
-          "@type"
+          "@type",
+          "@context"
         ]
       },
       "Samenwonen": {
@@ -1964,17 +2040,9 @@
           },
           "Samenwonen.metPersoon": {
             "$ref": "#/components/schemas/Persoon"
-          },
-          "@context": {
-            "type": "string",
-            "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
           }
         },
         "required": [
-          "@context",
           "@id",
           "@type",
           "Samenwonen.vanPersoon",
@@ -2009,17 +2077,15 @@
           "@context": {
             "type": "string",
             "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
+            "pattern": "^https:\\/\\/test.data.vlaanderen.be\\/doc\\/implementatiemodel\\/magda\\/persoon\\/context\\/persoon-IM.jsonld$"
           }
         },
         "required": [
-          "@context",
           "@id",
           "@type",
           "Samenwonen.vanPersoon",
-          "Samenwonen.metPersoon"
+          "Samenwonen.metPersoon",
+          "@context"
         ]
       },
       "GeregistreerdPersoon": {
@@ -2168,17 +2234,17 @@
             },
             "minItems": 0
           },
-          "GeregistreerdPersoon.tijdstipCreatie": {
+          "GeregistreerdPersoon.creatiedatum": {
             "type": "object",
-            "description": "Tijdstip waarop de gegevens zijn ingevoerd.",
+            "description": "Datum waarop de gegevens zijn ingevoerd.",
             "properties": {
               "@value": {
                 "type": "string",
-                "format": "date-time"
+                "format": "date"
               },
               "@type": {
                 "type": "string",
-                "pattern": "^DateTime$"
+                "pattern": "^Date$"
               }
             },
             "required": [
@@ -2186,17 +2252,17 @@
               "@type"
             ]
           },
-          "GeregistreerdPersoon.tijdstipModificatie": {
+          "GeregistreerdPersoon.modificatiedatum": {
             "type": "object",
-            "description": "Tijdstip waarop de gegevens werden bijgewerkt.",
+            "description": "Datum waarop de gegevens werden bijgewerkt.",
             "properties": {
               "@value": {
                 "type": "string",
-                "format": "date-time"
+                "format": "date"
               },
               "@type": {
                 "type": "string",
-                "pattern": "^DateTime$"
+                "pattern": "^Date$"
               }
             },
             "required": [
@@ -2206,20 +2272,12 @@
           },
           "GeregistreerdPersoon.bron": {
             "$ref": "#/components/schemas/Organisatie"
-          },
-          "@context": {
-            "type": "string",
-            "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
           }
         },
         "required": [
-          "@context",
           "@id",
           "@type",
-          "GeregistreerdPersoon.tijdstipCreatie",
+          "GeregistreerdPersoon.creatiedatum",
           "GeregistreerdPersoon.bron"
         ]
       },
@@ -2369,17 +2427,17 @@
             },
             "minItems": 0
           },
-          "GeregistreerdPersoon.tijdstipCreatie": {
+          "GeregistreerdPersoon.creatiedatum": {
             "type": "object",
-            "description": "Tijdstip waarop de gegevens zijn ingevoerd.",
+            "description": "Datum waarop de gegevens zijn ingevoerd.",
             "properties": {
               "@value": {
                 "type": "string",
-                "format": "date-time"
+                "format": "date"
               },
               "@type": {
                 "type": "string",
-                "pattern": "^DateTime$"
+                "pattern": "^Date$"
               }
             },
             "required": [
@@ -2387,17 +2445,17 @@
               "@type"
             ]
           },
-          "GeregistreerdPersoon.tijdstipModificatie": {
+          "GeregistreerdPersoon.modificatiedatum": {
             "type": "object",
-            "description": "Tijdstip waarop de gegevens werden bijgewerkt.",
+            "description": "Datum waarop de gegevens werden bijgewerkt.",
             "properties": {
               "@value": {
                 "type": "string",
-                "format": "date-time"
+                "format": "date"
               },
               "@type": {
                 "type": "string",
-                "pattern": "^DateTime$"
+                "pattern": "^Date$"
               }
             },
             "required": [
@@ -2411,17 +2469,15 @@
           "@context": {
             "type": "string",
             "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
+            "pattern": "^https:\\/\\/test.data.vlaanderen.be\\/doc\\/implementatiemodel\\/magda\\/persoon\\/context\\/persoon-IM.jsonld$"
           }
         },
         "required": [
-          "@context",
           "@id",
           "@type",
-          "GeregistreerdPersoon.tijdstipCreatie",
-          "GeregistreerdPersoon.bron"
+          "GeregistreerdPersoon.creatiedatum",
+          "GeregistreerdPersoon.bron",
+          "@context"
         ]
       },
       "Domicilie": {
@@ -2445,17 +2501,9 @@
           },
           "Domicilie.verblijfsadres": {
             "$ref": "#/components/schemas/Adresvoorstelling"
-          },
-          "@context": {
-            "type": "string",
-            "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
           }
         },
         "required": [
-          "@context",
           "@id",
           "@type"
         ]
@@ -2485,15 +2533,13 @@
           "@context": {
             "type": "string",
             "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
+            "pattern": "^https:\\/\\/test.data.vlaanderen.be\\/doc\\/implementatiemodel\\/magda\\/persoon\\/context\\/persoon-IM.jsonld$"
           }
         },
         "required": [
-          "@context",
           "@id",
-          "@type"
+          "@type",
+          "@context"
         ]
       },
       "Verblijfplaats": {
@@ -2517,17 +2563,9 @@
           },
           "Verblijfplaats.verblijfsadres": {
             "$ref": "#/components/schemas/Adresvoorstelling"
-          },
-          "@context": {
-            "type": "string",
-            "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
           }
         },
         "required": [
-          "@context",
           "@id",
           "@type"
         ]
@@ -2557,15 +2595,13 @@
           "@context": {
             "type": "string",
             "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
+            "pattern": "^https:\\/\\/test.data.vlaanderen.be\\/doc\\/implementatiemodel\\/magda\\/persoon\\/context\\/persoon-IM.jsonld$"
           }
         },
         "required": [
-          "@context",
           "@id",
-          "@type"
+          "@type",
+          "@context"
         ]
       },
       "Afstamming": {
@@ -2593,11 +2629,11 @@
             "properties": {
               "@value": {
                 "type": "string",
-                "format": "date-time"
+                "format": "date"
               },
               "@type": {
                 "type": "string",
-                "pattern": "^DateTime$"
+                "pattern": "^Date$"
               }
             },
             "required": [
@@ -2613,17 +2649,9 @@
           },
           "Afstamming.metPersoon": {
             "$ref": "#/components/schemas/Persoon"
-          },
-          "@context": {
-            "type": "string",
-            "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
           }
         },
         "required": [
-          "@context",
           "@id",
           "@type",
           "Afstamming.vanPersoon",
@@ -2655,11 +2683,11 @@
             "properties": {
               "@value": {
                 "type": "string",
-                "format": "date-time"
+                "format": "date"
               },
               "@type": {
                 "type": "string",
-                "pattern": "^DateTime$"
+                "pattern": "^Date$"
               }
             },
             "required": [
@@ -2679,17 +2707,15 @@
           "@context": {
             "type": "string",
             "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
+            "pattern": "^https:\\/\\/test.data.vlaanderen.be\\/doc\\/implementatiemodel\\/magda\\/persoon\\/context\\/persoon-IM.jsonld$"
           }
         },
         "required": [
-          "@context",
           "@id",
           "@type",
           "Afstamming.vanPersoon",
-          "Afstamming.metPersoon"
+          "Afstamming.metPersoon",
+          "@context"
         ]
       },
       "LocatiePeriodeOfJurisdictie": {
@@ -2710,17 +2736,9 @@
               "pattern": "^LocatiePeriodeOfJurisdictie$"
             },
             "minItems": 1
-          },
-          "@context": {
-            "type": "string",
-            "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
           }
         },
         "required": [
-          "@context",
           "@id",
           "@type"
         ]
@@ -2747,15 +2765,13 @@
           "@context": {
             "type": "string",
             "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
+            "pattern": "^https:\\/\\/test.data.vlaanderen.be\\/doc\\/implementatiemodel\\/magda\\/persoon\\/context\\/persoon-IM.jsonld$"
           }
         },
         "required": [
-          "@context",
           "@id",
-          "@type"
+          "@type",
+          "@context"
         ]
       },
       "AangegevenAdres": {
@@ -2779,17 +2795,9 @@
           },
           "AangegevenAdres.verblijfsadres": {
             "$ref": "#/components/schemas/Adresvoorstelling"
-          },
-          "@context": {
-            "type": "string",
-            "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
           }
         },
         "required": [
-          "@context",
           "@id",
           "@type"
         ]
@@ -2819,15 +2827,13 @@
           "@context": {
             "type": "string",
             "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
+            "pattern": "^https:\\/\\/test.data.vlaanderen.be\\/doc\\/implementatiemodel\\/magda\\/persoon\\/context\\/persoon-IM.jsonld$"
           }
         },
         "required": [
-          "@context",
           "@id",
-          "@type"
+          "@type",
+          "@context"
         ]
       },
       "Afwezig": {
@@ -2851,17 +2857,9 @@
           },
           "Afwezig.verblijfsadres": {
             "$ref": "#/components/schemas/Adresvoorstelling"
-          },
-          "@context": {
-            "type": "string",
-            "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
           }
         },
         "required": [
-          "@context",
           "@id",
           "@type"
         ]
@@ -2891,15 +2889,13 @@
           "@context": {
             "type": "string",
             "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
+            "pattern": "^https:\\/\\/test.data.vlaanderen.be\\/doc\\/implementatiemodel\\/magda\\/persoon\\/context\\/persoon-IM.jsonld$"
           }
         },
         "required": [
-          "@context",
           "@id",
-          "@type"
+          "@type",
+          "@context"
         ]
       },
       "BelgischAdres": {
@@ -2920,17 +2916,9 @@
               "pattern": "^BelgischAdres$"
             },
             "minItems": 1
-          },
-          "@context": {
-            "type": "string",
-            "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
           }
         },
         "required": [
-          "@context",
           "@id",
           "@type"
         ]
@@ -2957,15 +2945,13 @@
           "@context": {
             "type": "string",
             "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
+            "pattern": "^https:\\/\\/test.data.vlaanderen.be\\/doc\\/implementatiemodel\\/magda\\/persoon\\/context\\/persoon-IM.jsonld$"
           }
         },
         "required": [
-          "@context",
           "@id",
-          "@type"
+          "@type",
+          "@context"
         ]
       },
       "Jurisdictie": {
@@ -2989,17 +2975,9 @@
           },
           "Jurisdictie.plaats": {
             "$ref": "#/components/schemas/Plaats"
-          },
-          "@context": {
-            "type": "string",
-            "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
           }
         },
         "required": [
-          "@context",
           "@id",
           "@type"
         ]
@@ -3029,15 +3007,13 @@
           "@context": {
             "type": "string",
             "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
+            "pattern": "^https:\\/\\/test.data.vlaanderen.be\\/doc\\/implementatiemodel\\/magda\\/persoon\\/context\\/persoon-IM.jsonld$"
           }
         },
         "required": [
-          "@context",
           "@id",
-          "@type"
+          "@type",
+          "@context"
         ]
       },
       "Agent": {
@@ -3058,17 +3034,9 @@
               "pattern": "^Agent$"
             },
             "minItems": 1
-          },
-          "@context": {
-            "type": "string",
-            "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
           }
         },
         "required": [
-          "@context",
           "@id",
           "@type"
         ]
@@ -3095,15 +3063,13 @@
           "@context": {
             "type": "string",
             "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
+            "pattern": "^https:\\/\\/test.data.vlaanderen.be\\/doc\\/implementatiemodel\\/magda\\/persoon\\/context\\/persoon-IM.jsonld$"
           }
         },
         "required": [
-          "@context",
           "@id",
-          "@type"
+          "@type",
+          "@context"
         ]
       },
       "Gezin": {
@@ -3137,7 +3103,7 @@
             "items": {
               "$ref": "#/components/schemas/Persoon"
             },
-            "minItems": 1
+            "minItems": 0
           },
           "Gezin.voorkeursnaam": {
             "type": "object",
@@ -3163,21 +3129,11 @@
               "$ref": "#/components/schemas/Contactinfo"
             },
             "minItems": 0
-          },
-          "@context": {
-            "type": "string",
-            "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
           }
         },
         "required": [
-          "@context",
           "@id",
-          "@type",
-          "Gezin.gezinshoofd",
-          "Gezin.gezinslid"
+          "@type"
         ]
       },
       "GezinJsonLd": {
@@ -3211,7 +3167,7 @@
             "items": {
               "$ref": "#/components/schemas/Persoon"
             },
-            "minItems": 1
+            "minItems": 0
           },
           "Gezin.voorkeursnaam": {
             "type": "object",
@@ -3241,17 +3197,13 @@
           "@context": {
             "type": "string",
             "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
+            "pattern": "^https:\\/\\/test.data.vlaanderen.be\\/doc\\/implementatiemodel\\/magda\\/persoon\\/context\\/persoon-IM.jsonld$"
           }
         },
         "required": [
-          "@context",
           "@id",
           "@type",
-          "Gezin.gezinshoofd",
-          "Gezin.gezinslid"
+          "@context"
         ]
       },
       "BurgerlijkeStaat": {
@@ -3278,17 +3230,9 @@
           },
           "BurgerlijkeStaat.type": {
             "$ref": "#/components/schemas/BurgerlijkeStaatType"
-          },
-          "@context": {
-            "type": "string",
-            "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
           }
         },
         "required": [
-          "@context",
           "@id",
           "@type"
         ]
@@ -3321,15 +3265,13 @@
           "@context": {
             "type": "string",
             "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
+            "pattern": "^https:\\/\\/test.data.vlaanderen.be\\/doc\\/implementatiemodel\\/magda\\/persoon\\/context\\/persoon-IM.jsonld$"
           }
         },
         "required": [
-          "@context",
           "@id",
-          "@type"
+          "@type",
+          "@context"
         ]
       },
       "Postadres": {
@@ -3353,17 +3295,9 @@
           },
           "Postadres.verblijfsadres": {
             "$ref": "#/components/schemas/Adresvoorstelling"
-          },
-          "@context": {
-            "type": "string",
-            "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
           }
         },
         "required": [
-          "@context",
           "@id",
           "@type"
         ]
@@ -3393,15 +3327,13 @@
           "@context": {
             "type": "string",
             "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
+            "pattern": "^https:\\/\\/test.data.vlaanderen.be\\/doc\\/implementatiemodel\\/magda\\/persoon\\/context\\/persoon-IM.jsonld$"
           }
         },
         "required": [
-          "@context",
           "@id",
-          "@type"
+          "@type",
+          "@context"
         ]
       },
       "Referentieadres": {
@@ -3425,17 +3357,9 @@
           },
           "Referentieadres.verblijfsadres": {
             "$ref": "#/components/schemas/Adresvoorstelling"
-          },
-          "@context": {
-            "type": "string",
-            "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
           }
         },
         "required": [
-          "@context",
           "@id",
           "@type"
         ]
@@ -3465,15 +3389,13 @@
           "@context": {
             "type": "string",
             "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
+            "pattern": "^https:\\/\\/test.data.vlaanderen.be\\/doc\\/implementatiemodel\\/magda\\/persoon\\/context\\/persoon-IM.jsonld$"
           }
         },
         "required": [
-          "@context",
           "@id",
-          "@type"
+          "@type",
+          "@context"
         ]
       },
       "VerblijfplaatsBuitenlandDomicilie": {
@@ -3497,17 +3419,9 @@
           },
           "VerblijfplaatsBuitenlandDomicilie.verblijfsadres": {
             "$ref": "#/components/schemas/Adresvoorstelling"
-          },
-          "@context": {
-            "type": "string",
-            "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
           }
         },
         "required": [
-          "@context",
           "@id",
           "@type"
         ]
@@ -3537,15 +3451,13 @@
           "@context": {
             "type": "string",
             "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
+            "pattern": "^https:\\/\\/test.data.vlaanderen.be\\/doc\\/implementatiemodel\\/magda\\/persoon\\/context\\/persoon-IM.jsonld$"
           }
         },
         "required": [
-          "@context",
           "@id",
-          "@type"
+          "@type",
+          "@context"
         ]
       },
       "VerblijfplaatsBuitenland": {
@@ -3569,17 +3481,9 @@
           },
           "VerblijfplaatsBuitenland.verblijfsadres": {
             "$ref": "#/components/schemas/Adresvoorstelling"
-          },
-          "@context": {
-            "type": "string",
-            "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
           }
         },
         "required": [
-          "@context",
           "@id",
           "@type"
         ]
@@ -3609,15 +3513,13 @@
           "@context": {
             "type": "string",
             "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
+            "pattern": "^https:\\/\\/test.data.vlaanderen.be\\/doc\\/implementatiemodel\\/magda\\/persoon\\/context\\/persoon-IM.jsonld$"
           }
         },
         "required": [
-          "@context",
           "@id",
-          "@type"
+          "@type",
+          "@context"
         ]
       },
       "WettelijkVerblijf": {
@@ -3641,17 +3543,9 @@
           },
           "WettelijkVerblijf.verblijfsadres": {
             "$ref": "#/components/schemas/Adresvoorstelling"
-          },
-          "@context": {
-            "type": "string",
-            "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
           }
         },
         "required": [
-          "@context",
           "@id",
           "@type"
         ]
@@ -3681,15 +3575,13 @@
           "@context": {
             "type": "string",
             "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
+            "pattern": "^https:\\/\\/test.data.vlaanderen.be\\/doc\\/implementatiemodel\\/magda\\/persoon\\/context\\/persoon-IM.jsonld$"
           }
         },
         "required": [
-          "@context",
           "@id",
-          "@type"
+          "@type",
+          "@context"
         ]
       },
       "AdministratiefBeheerder": {
@@ -3738,17 +3630,9 @@
               "$ref": "#/components/schemas/Contactinfo"
             },
             "minItems": 0
-          },
-          "@context": {
-            "type": "string",
-            "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
           }
         },
         "required": [
-          "@context",
           "@id",
           "@type"
         ]
@@ -3803,15 +3687,13 @@
           "@context": {
             "type": "string",
             "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
+            "pattern": "^https:\\/\\/test.data.vlaanderen.be\\/doc\\/implementatiemodel\\/magda\\/persoon\\/context\\/persoon-IM.jsonld$"
           }
         },
         "required": [
-          "@context",
           "@id",
-          "@type"
+          "@type",
+          "@context"
         ]
       },
       "Locatie": {
@@ -3835,17 +3717,9 @@
           },
           "Locatie.plaats": {
             "$ref": "#/components/schemas/Plaats"
-          },
-          "@context": {
-            "type": "string",
-            "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
           }
         },
         "required": [
-          "@context",
           "@id",
           "@type"
         ]
@@ -3875,15 +3749,13 @@
           "@context": {
             "type": "string",
             "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
+            "pattern": "^https:\\/\\/test.data.vlaanderen.be\\/doc\\/implementatiemodel\\/magda\\/persoon\\/context\\/persoon-IM.jsonld$"
           }
         },
         "required": [
-          "@context",
           "@id",
-          "@type"
+          "@type",
+          "@context"
         ]
       },
       "Adresvoorstelling": {
@@ -4133,17 +4005,9 @@
           },
           "Adresvoorstelling.plaats": {
             "$ref": "#/components/schemas/Plaats"
-          },
-          "@context": {
-            "type": "string",
-            "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
           }
         },
         "required": [
-          "@context",
           "@id",
           "@type"
         ]
@@ -4399,15 +4263,13 @@
           "@context": {
             "type": "string",
             "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
+            "pattern": "^https:\\/\\/test.data.vlaanderen.be\\/doc\\/implementatiemodel\\/magda\\/persoon\\/context\\/persoon-IM.jsonld$"
           }
         },
         "required": [
-          "@context",
           "@id",
-          "@type"
+          "@type",
+          "@context"
         ]
       },
       "Identificator": {
@@ -4455,15 +4317,15 @@
           },
           "Identificator.toegekendOp": {
             "type": "object",
-            "description": "Tijdstip waarop de identificator werd uitgegeven.",
+            "description": "Datum waarop de identificator werd uitgegeven.",
             "properties": {
               "@value": {
                 "type": "string",
-                "format": "date-time"
+                "format": "date"
               },
               "@type": {
                 "type": "string",
-                "pattern": "^DateTime$"
+                "pattern": "^Date$"
               }
             },
             "required": [
@@ -4473,17 +4335,9 @@
           },
           "Identificator.toegekendDoor": {
             "$ref": "#/components/schemas/Agent"
-          },
-          "@context": {
-            "type": "string",
-            "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
           }
         },
         "required": [
-          "@context",
           "@id",
           "@type"
         ]
@@ -4533,15 +4387,15 @@
           },
           "Identificator.toegekendOp": {
             "type": "object",
-            "description": "Tijdstip waarop de identificator werd uitgegeven.",
+            "description": "Datum waarop de identificator werd uitgegeven.",
             "properties": {
               "@value": {
                 "type": "string",
-                "format": "date-time"
+                "format": "date"
               },
               "@type": {
                 "type": "string",
-                "pattern": "^DateTime$"
+                "pattern": "^Date$"
               }
             },
             "required": [
@@ -4555,15 +4409,13 @@
           "@context": {
             "type": "string",
             "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
+            "pattern": "^https:\\/\\/test.data.vlaanderen.be\\/doc\\/implementatiemodel\\/magda\\/persoon\\/context\\/persoon-IM.jsonld$"
           }
         },
         "required": [
-          "@context",
           "@id",
-          "@type"
+          "@type",
+          "@context"
         ]
       },
       "Contactinfo": {
@@ -4665,17 +4517,9 @@
           },
           "Contactinfo.adres": {
             "$ref": "#/components/schemas/Adresvoorstelling"
-          },
-          "@context": {
-            "type": "string",
-            "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
           }
         },
         "required": [
-          "@context",
           "@id",
           "@type"
         ]
@@ -4783,15 +4627,13 @@
           "@context": {
             "type": "string",
             "format": "uri",
-            "enum": [
-              "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld"
-            ]
+            "pattern": "^https:\\/\\/test.data.vlaanderen.be\\/doc\\/implementatiemodel\\/magda\\/persoon\\/context\\/persoon-IM.jsonld$"
           }
         },
         "required": [
-          "@context",
           "@id",
-          "@type"
+          "@type",
+          "@context"
         ]
       }
     },
