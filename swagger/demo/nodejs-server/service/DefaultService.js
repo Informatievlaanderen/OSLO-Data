@@ -12,8 +12,12 @@ exports.persoonGET = function (xINSZ, xCorrelationId) {
   return new Promise(function (resolve, reject) {
     var examples = {};
     examples["application/ld+json"] = {
-      "@context":
-        "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld",
+      "@context": [
+        "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/persoon-swagger-demo/swagger/context.jsonld",
+        {
+          SKOS: "http://www.w3.org/2004/02/skos/core#",
+        },
+      ],
       "@id": "_:persoon_29012818180",
       "@type": ["GeregistreerdPersoon", "Persoon"],
       "GeregistreerdPersoon.registratie": {
@@ -28,41 +32,52 @@ exports.persoonGET = function (xINSZ, xCorrelationId) {
         },
         "Identificator.toegekendOp": {
           "@value": "1971-03-19",
-          "@type": "DateTime",
+          "@type": "Date",
         },
         "Identificator.toegekendDoor": {
-          "@type": ["GeregistreerdeOrganisatie"],
+          "@type": ["Agent"],
           "@id": "https://data.vlaanderen.be/id/organisatie/OVO027341",
         },
       },
       "GeregistreerdPersoon.registratiedetail": {
+        "@id": "_:registratie_29012818180",
         "@type": ["Registratie"],
         "Registratie.dossierstatus": [
           {
             "@id": "https://data.vlaanderen.be/id/concept/IT001/99990",
+            "@type": "SKOS:Concept",
           },
         ],
         "Registratie.geregistreerdPersoon": {
           "@id": "_:persoon_29012818180",
+          "@type": ["GeregistreerdPersoon"],
         },
       },
-      "Persoon.inwonerschap": [
+      "GeregistreerdPersoon.inwonerschap": [
         {
-          "@id": "https://data.vlaanderen.be/id/land/Belgie",
+          "@id": "http://data.europa.eu/nuts/code/BE",
           "@type": ["Jurisdictie"],
         },
       ],
-      "Persoon.inwonerschapdetail": [
+      "GeregistreerdPersoon.inwonerschapdetail": [
         {
           "@id": "_:inwonerschap_29012818180",
           "@type": ["Inwonerschap"],
+          "Inwonerschap.jurisdictie": {
+            "@id": "http://data.europa.eu/nuts/code/BE",
+            "@type": ["Jurisdictie"],
+          },
+          "Inwonerschap.persoon": {
+            "@id": "_:persoon_29012818180",
+            "@type": ["GeregistreerdPersoon"],
+          },
           "Inwonerschap.heeftVerblijfplaats": [
             {
               "@id": "_:verblijfplaats_1984-10-09",
               "@type": ["Verblijfplaats", "Domicilie"],
-              "Verblijfplaats.verblijfsadres": {
+              "Domicilie.verblijfsadres": {
                 "@id": "_:adresvoorstelling_1984-10-09",
-                "@type": ["Adresvoorstelling"],
+                "@type": ["Adresvoorstelling", "BelgischAdres"],
                 "Adresvoorstelling.huisnummer": {
                   "@value": "15",
                 },
@@ -80,16 +95,20 @@ exports.persoonGET = function (xINSZ, xCorrelationId) {
                 },
                 "Adresvoorstelling.verwijstNaar": {
                   "@id": "https://data.vlaanderen.be/id/adres/326762",
+                  "@type": ["BelgischAdres"],
                 },
-                "Adresvoorstelling.volledigAdres":
-                  "Voie de Ferrières (Izier)(V. 18.07.1993 rue du Mazy) 15 6941 Belgie",
+                "Adresvoorstelling.volledigAdres": {
+                  "@value":
+                    "Voie de Ferrières (Izier)(V. 18.07.1993 rue du Mazy) 15 6941 Belgie",
+                  "@language": "nl",
+                },
               },
             },
             {
               "@id": "_:verblijfplaats_1994-10-27",
               "@type": ["Verblijfplaats", "WettelijkVerblijf"],
-              "Verblijfplaats.verblijfsadres": {
-                "@id": "_:adresvoorstelling_1984-10-09",
+              "WettelijkVerblijf.verblijfsadres": {
+                "@id": "_:adresvoorstelling_1994-10-27",
                 "@type": ["Adresvoorstelling"],
                 "Adresvoorstelling.volledigAdres": {
                   "@value": "¨Le Village¨ St Trinit 84390 Sault",
@@ -100,8 +119,8 @@ exports.persoonGET = function (xINSZ, xCorrelationId) {
             {
               "@id": "_:verblijfplaats_2009-11-01",
               "@type": ["Verblijfplaats", "VerblijfplaatsBuitenland"],
-              "Verblijfplaats.verblijfsadres": {
-                "@id": "_:adresvoorstelling_1984-10-09",
+              "VerblijfplaatsBuitenland.verblijfsadres": {
+                "@id": "_:adresvoorstelling_2009-11-01",
                 "@type": ["Adresvoorstelling"],
                 "Adresvoorstelling.volledigAdres": {
                   "@value": "Les Beylons 84220 Murs France",
@@ -112,40 +131,43 @@ exports.persoonGET = function (xINSZ, xCorrelationId) {
           ],
         },
       ],
-      "Persoon.heeftGeboorte": {
+      "GeregistreerdPersoon.heeftGeboorte": {
         "@id": "_:geboorte_29012818180",
         "@type": ["Persoonsgebeurtenis", "Geboorte"],
-        "Persoonsgebeurtenis.datum": {
+        "Geboorte.datum": {
           "@value": "1929-01-28",
-          "@type": "DateTime",
+          "@type": "Date",
         },
-        "Persoonsgebeurtenis.plaats": {
+        "Geboorte.plaats": {
           "@id": "https://data.vlaanderen.be/id/gemeente/57085",
+          "@type": ["Plaats"],
         },
       },
-      "Persoon.heeftOverlijden": {
+      "GeregistreerdPersoon.heeftOverlijden": {
         "@id": "_:overlijden_29012818180",
         "@type": ["Persoonsgebeurtenis", "Overlijden"],
-        "Persoonsgebeurtenis.datum": {
+        "Overlijden.datum": {
           "@value": "1971-03-19",
-          "@type": "DateTime",
+          "@type": "Date",
         },
       },
-      "Persoon.isLidVan": [
+      "GeregistreerdPersoon.isLidVan": [
         {
           "@id": "_:gezin",
           "@type": "Gezin",
           "Gezin.gezinslid": [
             {
               "@id": "_:persoon_29012818180",
+              "@type": ["GeregistreerdPersoon"],
             },
             {
               "@id": "_:persoon_28110813202",
+              "@type": ["GeregistreerdPersoon"],
             },
           ],
         },
       ],
-      "Persoon.voornaam": [
+      "GeregistreerdPersoon.voornaam": [
         {
           "@value": "Gérard",
         },
@@ -159,7 +181,7 @@ exports.persoonGET = function (xINSZ, xCorrelationId) {
           "@value": "Ghislain",
         },
       ],
-      "Persoon.achternaam": [
+      "GeregistreerdPersoon.achternaam": [
         {
           "@value": "Bataille",
         },
@@ -170,12 +192,13 @@ exports.persoonGET = function (xINSZ, xCorrelationId) {
         "AdministratiefBeheerder.type": {
           "@id":
             "https://data.vlaanderen.be/id/concept/AdministratiefBeheerdertype/DiplomatiekePost",
+          "@type": "SKOS:Concept",
         },
-        "Organisatie.voorkeursnaam": {
+        "AdministratiefBeheerder.voorkeursnaam": {
           "@value": "Marseille",
           "@language": "nl",
         },
-        "Organisatie.contactinfo": [
+        "AdministratiefBeheerder.contactinfo": [
           {
             "@id": "_:contactinfo_diplomatiekePost_1270",
             "@type": ["Contactinfo"],
@@ -194,18 +217,19 @@ exports.persoonGET = function (xINSZ, xCorrelationId) {
           },
         ],
       },
-      "Persoon.heeftBurgerlijkeStaat": {
+      "GeregistreerdPersoon.heeftBurgerlijkeStaat": {
         "@id": "_:burgerlijkeStaat_29012818180",
         "@type": ["BurgerlijkeStaat"],
         "BurgerlijkeStaat.type": {
           "@id": "https://data.vlaanderen.be/id/concept/IT120/20",
+          "@type": "SKOS:Concept",
         },
       },
-      "Persoon.heeftRelatieMet": [
+      "GeregistreerdPersoon.heeftRelatieMet": [
         {
           "@id": "_:persoon_00000100000",
           "@type": ["Persoon"],
-          "Persoon.voornaam": [
+          "GeregistreerdPersoon.voornaam": [
             {
               "@value": "Jeanne",
             },
@@ -213,7 +237,7 @@ exports.persoonGET = function (xINSZ, xCorrelationId) {
               "@value": "Palmyre",
             },
           ],
-          "Persoon.achternaam": [
+          "GeregistreerdPersoon.achternaam": [
             {
               "@value": "Fontaine",
             },
@@ -222,12 +246,12 @@ exports.persoonGET = function (xINSZ, xCorrelationId) {
         {
           "@id": "_:persoon_00000199900",
           "@type": ["Persoon"],
-          "Persoon.voornaam": [
+          "GeregistreerdPersoon.voornaam": [
             {
               "@value": "Fernand",
             },
           ],
-          "Persoon.achternaam": [
+          "GeregistreerdPersoon.achternaam": [
             {
               "@value": "Bataille",
             },
@@ -236,7 +260,7 @@ exports.persoonGET = function (xINSZ, xCorrelationId) {
         {
           "@id": "_:persoon_28110813202",
           "@type": ["GeregistreerdPersoon", "Persoon"],
-          "Persoon.voornaam": [
+          "GeregistreerdPersoon.voornaam": [
             {
               "@value": "Emilie",
             },
@@ -250,7 +274,7 @@ exports.persoonGET = function (xINSZ, xCorrelationId) {
               "@value": "Maria",
             },
           ],
-          "Persoon.achternaam": [
+          "GeregistreerdPersoon.achternaam": [
             {
               "@value": "Janssens",
             },
@@ -265,109 +289,127 @@ exports.persoonGET = function (xINSZ, xCorrelationId) {
           "@type": ["GeregistreerdPersoon", "Persoon"],
         },
       ],
-      "Persoon.persoonsrelatiedetail": [
+      "GeregistreerdPersoon.persoonsrelatiedetail": [
         {
           "@id": "_:persoonsrelatie_29012818180_00000100000_afstamming",
           "@type": ["Persoonsrelatie", "Afstamming"],
-          "Persoonsrelatie.vanPersoon": {
+          "Afstamming.vanPersoon": {
             "@id": "_:persoon_29012818180",
+            "@type": ["GeregistreerdPersoon"],
           },
-          "Persoonsrelatie.metPersoon": {
+          "Afstamming.metPersoon": {
             "@id": "_:persoon_00000100000",
+            "@type": ["Persoon"],
           },
           "Afstamming.afstammingstype": {
             "@id": "https://data.vlaanderen.be/id/concept/IT110/00",
+            "@type": "SKOS:Concept",
           },
           "Afstamming.datumVanAfstamming": {
             "@value": "1929-01-28",
-            "@type": "DateTime",
+            "@type": "Date",
           },
         },
         {
           "@id": "_:persoonsrelatie_29012818180_00000199900_afstamming",
           "@type": ["Persoonsrelatie", "Afstamming"],
-          "Persoonsrelatie.vanPersoon": {
+          "Afstamming.vanPersoon": {
             "@id": "_:persoon_29012818180",
+            "@type": ["GeregistreerdPersoon"],
           },
-          "Persoonsrelatie.metPersoon": {
+          "Afstamming.metPersoon": {
             "@id": "_:persoon_00000199900",
+            "@type": ["Persoon"],
           },
           "Afstamming.afstammingstype": {
             "@id": "https://data.vlaanderen.be/id/concept/IT110/00",
+            "@type": "SKOS:Concept",
           },
           "Afstamming.datumVanAfstamming": {
             "@value": "1929-01-28",
-            "@type": "DateTime",
+            "@type": "Date",
           },
         },
         {
           "@id": "_:persoonsrelatie_29012818180_52021916184_afstamming",
           "@type": ["Persoonsrelatie", "Afstamming"],
-          "Persoonsrelatie.vanPersoon": {
+          "Afstamming.vanPersoon": {
             "@id": "_:persoon_29012818180",
+            "@type": ["GeregistreerdPersoon"],
           },
-          "Persoonsrelatie.metPersoon": {
+          "Afstamming.metPersoon": {
             "@id": "_:persoon_52021916184",
+            "@type": ["GeregistreerdPersoon"],
           },
           "Afstamming.afstammingstype": {
             "@id": "https://data.vlaanderen.be/id/concept/IT114/00",
+            "@type": "SKOS:Concept",
           },
           "Afstamming.datumVanAfstamming": {
             "@value": "1952-02-19",
-            "@type": "DateTime",
+            "@type": "Date",
           },
         },
         {
           "@id": "_:persoonsrelatie_29012818180_53010737550_afstamming",
           "@type": ["Persoonsrelatie", "Afstamming"],
-          "Persoonsrelatie.vanPersoon": {
+          "Afstamming.vanPersoon": {
             "@id": "_:persoon_29012818180",
+            "@type": ["GeregistreerdPersoon"],
           },
-          "Persoonsrelatie.metPersoon": {
+          "Afstamming.metPersoon": {
             "@id": "_:persoon_53010737550",
+            "@type": ["GeregistreerdPersoon"],
           },
           "Afstamming.afstammingstype": {
             "@id": "https://data.vlaanderen.be/id/concept/IT114/00",
+            "@type": "SKOS:Concept",
           },
           "Afstamming.datumVanAfstamming": {
             "@value": "1953-01-07",
-            "@type": "DateTime",
+            "@type": "Date",
           },
         },
         {
           "@id": "_:persoonsrelatie_29012818180_28110813202_gezin",
           "@type": ["Persoonsrelatie", "Gezinsrelatie"],
-          "Persoonsrelatie.vanPersoon": {
+          "Gezinsrelatie.vanPersoon": {
             "@id": "_:persoon_29012818180",
+            "@type": ["GeregistreerdPersoon"],
           },
-          "Persoonsrelatie.metPersoon": {
+          "Gezinsrelatie.metPersoon": {
             "@id": "_:persoon_28110813202",
+            "@type": ["GeregistreerdPersoon"],
           },
           "Gezinsrelatie.gezinsrelatietype": {
             "@id": "https://data.vlaanderen.be/id/concept/IT141/02",
+            "@type": "SKOS:Concept",
           },
         },
         {
           "@id": "_:persoonsrelatie_29012818180_28110813202_huwelijk",
           "@type": ["Persoonsrelatie", "Huwelijk"],
-          "Persoonsrelatie.vanPersoon": {
+          "Huwelijk.vanPersoon": {
             "@id": "_:persoon_29012818180",
+            "@type": ["GeregistreerdPersoon"],
           },
-          "Persoonsrelatie.metPersoon": {
+          "Huwelijk.metPersoon": {
             "@id": "_:persoon_28110813202",
+            "@type": ["GeregistreerdPersoon"],
           },
         },
       ],
-      "Versie.tijdstipModificatie": {
+      "GeregistreerdPersoon.modificatiedatum": {
         "@value": "2017-03-15",
-        "@type": "DateTime",
+        "@type": "Date",
       },
-      "Versie.tijdstipCreatie": {
+      "GeregistreerdPersoon.creatiedatum": {
         "@value": "1971-03-19",
-        "@type": "DateTime",
+        "@type": "Date",
       },
-      "Versie.bron": {
+      "GeregistreerdPersoon.bron": {
         "@id": "https://data.vlaanderen.be/id/organisatie/OVO027248",
+        "@type": ["Agent"],
       },
     };
     if (Object.keys(examples).length > 0) {
