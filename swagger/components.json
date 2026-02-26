@@ -132,14 +132,9 @@
             "format": "uri"
           },
           "@type": {
-            "type": "array",
-            "description": "Lijst van object types (klasse)",
-            "items": {
-              "type": "string",
-              "description": "Persoon type",
-              "pattern": "^Persoon$"
-            },
-            "minItems": 1
+            "type": "object",
+            "description": "Object type (klasse Persoon)",
+            "pattern": "^Persoon$"
           },
           "Persoon.voornaam": {
             "type": "array",
@@ -259,7 +254,7 @@
             },
             "minItems": 0
           },
-          "Persoon.creatiedatum": {
+          "Versie.creatiedatum": {
             "type": "object",
             "description": "Datum waarop de gegevens zijn ingevoerd.",
             "properties": {
@@ -277,7 +272,7 @@
               "@type"
             ]
           },
-          "Persoon.modificatiedatum": {
+          "Versie.modificatiedatum": {
             "type": "object",
             "description": "Datum waarop de gegevens werden bijgewerkt.",
             "properties": {
@@ -295,13 +290,15 @@
               "@type"
             ]
           },
-          "Persoon.bron": {
+          "Versie.bron": {
             "$ref": "#/components/schemas/Organisatie"
           }
         },
         "required": [
           "@id",
-          "@type"
+          "@type",
+          "Persoon.creatiedatum",
+          "Persoon.bron"
         ]
       },
       "PersoonJsonLd": {
@@ -314,14 +311,9 @@
             "format": "uri"
           },
           "@type": {
-            "type": "array",
-            "description": "Lijst van object types (klasse)",
-            "items": {
-              "type": "string",
-              "description": "Persoon type",
-              "pattern": "^Persoon$"
-            },
-            "minItems": 1
+            "type": "object",
+            "description": "Object type (klasse Persoon)",
+            "pattern": "^Persoon$"
           },
           "Persoon.voornaam": {
             "type": "array",
@@ -441,7 +433,7 @@
             },
             "minItems": 0
           },
-          "Persoon.creatiedatum": {
+          "Versie.creatiedatum": {
             "type": "object",
             "description": "Datum waarop de gegevens zijn ingevoerd.",
             "properties": {
@@ -459,7 +451,7 @@
               "@type"
             ]
           },
-          "Persoon.modificatiedatum": {
+          "Versie.modificatiedatum": {
             "type": "object",
             "description": "Datum waarop de gegevens werden bijgewerkt.",
             "properties": {
@@ -477,7 +469,7 @@
               "@type"
             ]
           },
-          "Persoon.bron": {
+          "Versie.bron": {
             "$ref": "#/components/schemas/Organisatie"
           },
           "@context": {
@@ -489,6 +481,8 @@
         "required": [
           "@id",
           "@type",
+          "Persoon.creatiedatum",
+          "Persoon.bron",
           "@context"
         ]
       },
@@ -502,14 +496,9 @@
             "format": "uri"
           },
           "@type": {
-            "type": "array",
-            "description": "Lijst van object types (klasse)",
-            "items": {
-              "type": "string",
-              "description": "Plaats type",
-              "pattern": "^Plaats$"
-            },
-            "minItems": 1
+            "type": "object",
+            "description": "Object type (klasse Plaats)",
+            "pattern": "^Plaats$"
           },
           "Plaats.plaatsnaam": {
             "type": "object",
@@ -531,7 +520,7 @@
           "Plaats.identificator": {
             "$ref": "#/components/schemas/Identificator"
           },
-          "Plaats.plaats": {
+          "Jurisdictie.plaats": {
             "$ref": "#/components/schemas/Plaats"
           }
         },
@@ -550,14 +539,9 @@
             "format": "uri"
           },
           "@type": {
-            "type": "array",
-            "description": "Lijst van object types (klasse)",
-            "items": {
-              "type": "string",
-              "description": "Plaats type",
-              "pattern": "^Plaats$"
-            },
-            "minItems": 1
+            "type": "object",
+            "description": "Object type (klasse Plaats)",
+            "pattern": "^Plaats$"
           },
           "Plaats.plaatsnaam": {
             "type": "object",
@@ -579,7 +563,7 @@
           "Plaats.identificator": {
             "$ref": "#/components/schemas/Identificator"
           },
-          "Plaats.plaats": {
+          "Jurisdictie.plaats": {
             "$ref": "#/components/schemas/Plaats"
           },
           "@context": {
@@ -604,22 +588,17 @@
             "format": "uri"
           },
           "@type": {
-            "type": "array",
-            "description": "Lijst van object types (klasse)",
-            "items": {
-              "type": "string",
-              "description": "Gezinsrelatie type",
-              "pattern": "^Gezinsrelatie$"
-            },
-            "minItems": 1
+            "type": "object",
+            "description": "Object type (klasse Gezinsrelatie)",
+            "pattern": "^Gezinsrelatie$"
           },
           "Gezinsrelatie.gezinsrelatietype": {
             "$ref": "#/components/schemas/Gezinsrelatietype"
           },
-          "Gezinsrelatie.vanPersoon": {
+          "Persoonsrelatie.vanPersoon": {
             "$ref": "#/components/schemas/Persoon"
           },
-          "Gezinsrelatie.metPersoon": {
+          "Persoonsrelatie.metPersoon": {
             "$ref": "#/components/schemas/Persoon"
           }
         },
@@ -640,22 +619,17 @@
             "format": "uri"
           },
           "@type": {
-            "type": "array",
-            "description": "Lijst van object types (klasse)",
-            "items": {
-              "type": "string",
-              "description": "Gezinsrelatie type",
-              "pattern": "^Gezinsrelatie$"
-            },
-            "minItems": 1
+            "type": "object",
+            "description": "Object type (klasse Gezinsrelatie)",
+            "pattern": "^Gezinsrelatie$"
           },
           "Gezinsrelatie.gezinsrelatietype": {
             "$ref": "#/components/schemas/Gezinsrelatietype"
           },
-          "Gezinsrelatie.vanPersoon": {
+          "Persoonsrelatie.vanPersoon": {
             "$ref": "#/components/schemas/Persoon"
           },
-          "Gezinsrelatie.metPersoon": {
+          "Persoonsrelatie.metPersoon": {
             "$ref": "#/components/schemas/Persoon"
           },
           "@context": {
@@ -682,14 +656,9 @@
             "format": "uri"
           },
           "@type": {
-            "type": "array",
-            "description": "Lijst van object types (klasse)",
-            "items": {
-              "type": "string",
-              "description": "Persoonsrelatie type",
-              "pattern": "^Persoonsrelatie$"
-            },
-            "minItems": 1
+            "type": "object",
+            "description": "Object type (klasse Persoonsrelatie)",
+            "pattern": "^Persoonsrelatie$"
           },
           "Persoonsrelatie.vanPersoon": {
             "$ref": "#/components/schemas/Persoon"
@@ -715,14 +684,9 @@
             "format": "uri"
           },
           "@type": {
-            "type": "array",
-            "description": "Lijst van object types (klasse)",
-            "items": {
-              "type": "string",
-              "description": "Persoonsrelatie type",
-              "pattern": "^Persoonsrelatie$"
-            },
-            "minItems": 1
+            "type": "object",
+            "description": "Object type (klasse Persoonsrelatie)",
+            "pattern": "^Persoonsrelatie$"
           },
           "Persoonsrelatie.vanPersoon": {
             "$ref": "#/components/schemas/Persoon"
@@ -754,16 +718,11 @@
             "format": "uri"
           },
           "@type": {
-            "type": "array",
-            "description": "Lijst van object types (klasse)",
-            "items": {
-              "type": "string",
-              "description": "Overlijden type",
-              "pattern": "^Overlijden$"
-            },
-            "minItems": 1
+            "type": "object",
+            "description": "Object type (klasse Overlijden)",
+            "pattern": "^Overlijden$"
           },
-          "Overlijden.datum": {
+          "Persoonsgebeurtenis.datum": {
             "type": "object",
             "description": "Datum waarop de gebeurtenis plaatsvond.",
             "properties": {
@@ -781,7 +740,7 @@
               "@type"
             ]
           },
-          "Overlijden.plaats": {
+          "Persoonsgebeurtenis.plaats": {
             "$ref": "#/components/schemas/Plaats"
           }
         },
@@ -800,16 +759,11 @@
             "format": "uri"
           },
           "@type": {
-            "type": "array",
-            "description": "Lijst van object types (klasse)",
-            "items": {
-              "type": "string",
-              "description": "Overlijden type",
-              "pattern": "^Overlijden$"
-            },
-            "minItems": 1
+            "type": "object",
+            "description": "Object type (klasse Overlijden)",
+            "pattern": "^Overlijden$"
           },
-          "Overlijden.datum": {
+          "Persoonsgebeurtenis.datum": {
             "type": "object",
             "description": "Datum waarop de gebeurtenis plaatsvond.",
             "properties": {
@@ -827,7 +781,7 @@
               "@type"
             ]
           },
-          "Overlijden.plaats": {
+          "Persoonsgebeurtenis.plaats": {
             "$ref": "#/components/schemas/Plaats"
           },
           "@context": {
@@ -852,14 +806,9 @@
             "format": "uri"
           },
           "@type": {
-            "type": "array",
-            "description": "Lijst van object types (klasse)",
-            "items": {
-              "type": "string",
-              "description": "Persoonsgebeurtenis type",
-              "pattern": "^Persoonsgebeurtenis$"
-            },
-            "minItems": 1
+            "type": "object",
+            "description": "Object type (klasse Persoonsgebeurtenis)",
+            "pattern": "^Persoonsgebeurtenis$"
           },
           "Persoonsgebeurtenis.datum": {
             "type": "object",
@@ -898,14 +847,9 @@
             "format": "uri"
           },
           "@type": {
-            "type": "array",
-            "description": "Lijst van object types (klasse)",
-            "items": {
-              "type": "string",
-              "description": "Persoonsgebeurtenis type",
-              "pattern": "^Persoonsgebeurtenis$"
-            },
-            "minItems": 1
+            "type": "object",
+            "description": "Object type (klasse Persoonsgebeurtenis)",
+            "pattern": "^Persoonsgebeurtenis$"
           },
           "Persoonsgebeurtenis.datum": {
             "type": "object",
@@ -950,16 +894,11 @@
             "format": "uri"
           },
           "@type": {
-            "type": "array",
-            "description": "Lijst van object types (klasse)",
-            "items": {
-              "type": "string",
-              "description": "Geboorte type",
-              "pattern": "^Geboorte$"
-            },
-            "minItems": 1
+            "type": "object",
+            "description": "Object type (klasse Geboorte)",
+            "pattern": "^Geboorte$"
           },
-          "Geboorte.datum": {
+          "Persoonsgebeurtenis.datum": {
             "type": "object",
             "description": "Datum waarop de gebeurtenis plaatsvond.",
             "properties": {
@@ -977,7 +916,7 @@
               "@type"
             ]
           },
-          "Geboorte.plaats": {
+          "Persoonsgebeurtenis.plaats": {
             "$ref": "#/components/schemas/Plaats"
           }
         },
@@ -996,16 +935,11 @@
             "format": "uri"
           },
           "@type": {
-            "type": "array",
-            "description": "Lijst van object types (klasse)",
-            "items": {
-              "type": "string",
-              "description": "Geboorte type",
-              "pattern": "^Geboorte$"
-            },
-            "minItems": 1
+            "type": "object",
+            "description": "Object type (klasse Geboorte)",
+            "pattern": "^Geboorte$"
           },
-          "Geboorte.datum": {
+          "Persoonsgebeurtenis.datum": {
             "type": "object",
             "description": "Datum waarop de gebeurtenis plaatsvond.",
             "properties": {
@@ -1023,7 +957,7 @@
               "@type"
             ]
           },
-          "Geboorte.plaats": {
+          "Persoonsgebeurtenis.plaats": {
             "$ref": "#/components/schemas/Plaats"
           },
           "@context": {
@@ -1048,19 +982,14 @@
             "format": "uri"
           },
           "@type": {
-            "type": "array",
-            "description": "Lijst van object types (klasse)",
-            "items": {
-              "type": "string",
-              "description": "Huwelijk type",
-              "pattern": "^Huwelijk$"
-            },
-            "minItems": 1
+            "type": "object",
+            "description": "Object type (klasse Huwelijk)",
+            "pattern": "^Huwelijk$"
           },
-          "Huwelijk.vanPersoon": {
+          "Persoonsrelatie.vanPersoon": {
             "$ref": "#/components/schemas/Persoon"
           },
-          "Huwelijk.metPersoon": {
+          "Persoonsrelatie.metPersoon": {
             "$ref": "#/components/schemas/Persoon"
           }
         },
@@ -1081,19 +1010,14 @@
             "format": "uri"
           },
           "@type": {
-            "type": "array",
-            "description": "Lijst van object types (klasse)",
-            "items": {
-              "type": "string",
-              "description": "Huwelijk type",
-              "pattern": "^Huwelijk$"
-            },
-            "minItems": 1
+            "type": "object",
+            "description": "Object type (klasse Huwelijk)",
+            "pattern": "^Huwelijk$"
           },
-          "Huwelijk.vanPersoon": {
+          "Persoonsrelatie.vanPersoon": {
             "$ref": "#/components/schemas/Persoon"
           },
-          "Huwelijk.metPersoon": {
+          "Persoonsrelatie.metPersoon": {
             "$ref": "#/components/schemas/Persoon"
           },
           "@context": {
@@ -1120,14 +1044,9 @@
             "format": "uri"
           },
           "@type": {
-            "type": "array",
-            "description": "Lijst van object types (klasse)",
-            "items": {
-              "type": "string",
-              "description": "Registratie type",
-              "pattern": "^Registratie$"
-            },
-            "minItems": 1
+            "type": "object",
+            "description": "Object type (klasse Registratie)",
+            "pattern": "^Registratie$"
           },
           "Registratie.dossierstatus": {
             "type": "array",
@@ -1163,14 +1082,9 @@
             "format": "uri"
           },
           "@type": {
-            "type": "array",
-            "description": "Lijst van object types (klasse)",
-            "items": {
-              "type": "string",
-              "description": "Registratie type",
-              "pattern": "^Registratie$"
-            },
-            "minItems": 1
+            "type": "object",
+            "description": "Object type (klasse Registratie)",
+            "pattern": "^Registratie$"
           },
           "Registratie.dossierstatus": {
             "type": "array",
@@ -1212,14 +1126,9 @@
             "format": "uri"
           },
           "@type": {
-            "type": "array",
-            "description": "Lijst van object types (klasse)",
-            "items": {
-              "type": "string",
-              "description": "Versie type",
-              "pattern": "^Versie$"
-            },
-            "minItems": 1
+            "type": "object",
+            "description": "Object type (klasse Versie)",
+            "pattern": "^Versie$"
           },
           "Versie.creatiedatum": {
             "type": "object",
@@ -1278,14 +1187,9 @@
             "format": "uri"
           },
           "@type": {
-            "type": "array",
-            "description": "Lijst van object types (klasse)",
-            "items": {
-              "type": "string",
-              "description": "Versie type",
-              "pattern": "^Versie$"
-            },
-            "minItems": 1
+            "type": "object",
+            "description": "Object type (klasse Versie)",
+            "pattern": "^Versie$"
           },
           "Versie.creatiedatum": {
             "type": "object",
@@ -1350,14 +1254,9 @@
             "format": "uri"
           },
           "@type": {
-            "type": "array",
-            "description": "Lijst van object types (klasse)",
-            "items": {
-              "type": "string",
-              "description": "FormeleOrganisatie type",
-              "pattern": "^FormeleOrganisatie$"
-            },
-            "minItems": 1
+            "type": "object",
+            "description": "Object type (klasse FormeleOrganisatie)",
+            "pattern": "^FormeleOrganisatie$"
           }
         },
         "required": [
@@ -1375,14 +1274,9 @@
             "format": "uri"
           },
           "@type": {
-            "type": "array",
-            "description": "Lijst van object types (klasse)",
-            "items": {
-              "type": "string",
-              "description": "FormeleOrganisatie type",
-              "pattern": "^FormeleOrganisatie$"
-            },
-            "minItems": 1
+            "type": "object",
+            "description": "Object type (klasse FormeleOrganisatie)",
+            "pattern": "^FormeleOrganisatie$"
           },
           "@context": {
             "type": "string",
@@ -1406,14 +1300,9 @@
             "format": "uri"
           },
           "@type": {
-            "type": "array",
-            "description": "Lijst van object types (klasse)",
-            "items": {
-              "type": "string",
-              "description": "HttpApiProbleemdetail type",
-              "pattern": "^HttpApiProbleemdetail$"
-            },
-            "minItems": 1
+            "type": "object",
+            "description": "Object type (klasse HttpApiProbleemdetail)",
+            "pattern": "^HttpApiProbleemdetail$"
           },
           "HttpApiProbleemdetail.type": {
             "type": "object",
@@ -1511,14 +1400,9 @@
             "format": "uri"
           },
           "@type": {
-            "type": "array",
-            "description": "Lijst van object types (klasse)",
-            "items": {
-              "type": "string",
-              "description": "HttpApiProbleemdetail type",
-              "pattern": "^HttpApiProbleemdetail$"
-            },
-            "minItems": 1
+            "type": "object",
+            "description": "Object type (klasse HttpApiProbleemdetail)",
+            "pattern": "^HttpApiProbleemdetail$"
           },
           "HttpApiProbleemdetail.type": {
             "type": "object",
@@ -1622,14 +1506,9 @@
             "format": "uri"
           },
           "@type": {
-            "type": "array",
-            "description": "Lijst van object types (klasse)",
-            "items": {
-              "type": "string",
-              "description": "Inwonerschap type",
-              "pattern": "^Inwonerschap$"
-            },
-            "minItems": 1
+            "type": "object",
+            "description": "Object type (klasse Inwonerschap)",
+            "pattern": "^Inwonerschap$"
           },
           "Inwonerschap.persoon": {
             "$ref": "#/components/schemas/Persoon"
@@ -1693,14 +1572,9 @@
             "format": "uri"
           },
           "@type": {
-            "type": "array",
-            "description": "Lijst van object types (klasse)",
-            "items": {
-              "type": "string",
-              "description": "Inwonerschap type",
-              "pattern": "^Inwonerschap$"
-            },
-            "minItems": 1
+            "type": "object",
+            "description": "Object type (klasse Inwonerschap)",
+            "pattern": "^Inwonerschap$"
           },
           "Inwonerschap.persoon": {
             "$ref": "#/components/schemas/Persoon"
@@ -1770,14 +1644,9 @@
             "format": "uri"
           },
           "@type": {
-            "type": "array",
-            "description": "Lijst van object types (klasse)",
-            "items": {
-              "type": "string",
-              "description": "GeregistreerdeOrganisatie type",
-              "pattern": "^GeregistreerdeOrganisatie$"
-            },
-            "minItems": 1
+            "type": "object",
+            "description": "Object type (klasse GeregistreerdeOrganisatie)",
+            "pattern": "^GeregistreerdeOrganisatie$"
           },
           "GeregistreerdeOrganisatie.wettelijkeNaam": {
             "type": "object",
@@ -1799,7 +1668,7 @@
           "GeregistreerdeOrganisatie.registratie": {
             "$ref": "#/components/schemas/Identificator"
           },
-          "GeregistreerdeOrganisatie.voorkeursnaam": {
+          "Organisatie.voorkeursnaam": {
             "type": "object",
             "description": "Naam waarmee de Organisatie bij voorkeur wordt aangeduid.",
             "properties": {
@@ -1816,7 +1685,7 @@
               "@language"
             ]
           },
-          "GeregistreerdeOrganisatie.contactinfo": {
+          "Organisatie.contactinfo": {
             "type": "array",
             "description": "Lijst van Contactinfo items.",
             "items": {
@@ -1840,14 +1709,9 @@
             "format": "uri"
           },
           "@type": {
-            "type": "array",
-            "description": "Lijst van object types (klasse)",
-            "items": {
-              "type": "string",
-              "description": "GeregistreerdeOrganisatie type",
-              "pattern": "^GeregistreerdeOrganisatie$"
-            },
-            "minItems": 1
+            "type": "object",
+            "description": "Object type (klasse GeregistreerdeOrganisatie)",
+            "pattern": "^GeregistreerdeOrganisatie$"
           },
           "GeregistreerdeOrganisatie.wettelijkeNaam": {
             "type": "object",
@@ -1869,7 +1733,7 @@
           "GeregistreerdeOrganisatie.registratie": {
             "$ref": "#/components/schemas/Identificator"
           },
-          "GeregistreerdeOrganisatie.voorkeursnaam": {
+          "Organisatie.voorkeursnaam": {
             "type": "object",
             "description": "Naam waarmee de Organisatie bij voorkeur wordt aangeduid.",
             "properties": {
@@ -1886,7 +1750,7 @@
               "@language"
             ]
           },
-          "GeregistreerdeOrganisatie.contactinfo": {
+          "Organisatie.contactinfo": {
             "type": "array",
             "description": "Lijst van Contactinfo items.",
             "items": {
@@ -1916,14 +1780,9 @@
             "format": "uri"
           },
           "@type": {
-            "type": "array",
-            "description": "Lijst van object types (klasse)",
-            "items": {
-              "type": "string",
-              "description": "Organisatie type",
-              "pattern": "^Organisatie$"
-            },
-            "minItems": 1
+            "type": "object",
+            "description": "Object type (klasse Organisatie)",
+            "pattern": "^Organisatie$"
           },
           "Organisatie.voorkeursnaam": {
             "type": "object",
@@ -1966,14 +1825,9 @@
             "format": "uri"
           },
           "@type": {
-            "type": "array",
-            "description": "Lijst van object types (klasse)",
-            "items": {
-              "type": "string",
-              "description": "Organisatie type",
-              "pattern": "^Organisatie$"
-            },
-            "minItems": 1
+            "type": "object",
+            "description": "Object type (klasse Organisatie)",
+            "pattern": "^Organisatie$"
           },
           "Organisatie.voorkeursnaam": {
             "type": "object",
@@ -2022,19 +1876,14 @@
             "format": "uri"
           },
           "@type": {
-            "type": "array",
-            "description": "Lijst van object types (klasse)",
-            "items": {
-              "type": "string",
-              "description": "Samenwonen type",
-              "pattern": "^Samenwonen$"
-            },
-            "minItems": 1
+            "type": "object",
+            "description": "Object type (klasse Samenwonen)",
+            "pattern": "^Samenwonen$"
           },
-          "Samenwonen.vanPersoon": {
+          "Persoonsrelatie.vanPersoon": {
             "$ref": "#/components/schemas/Persoon"
           },
-          "Samenwonen.metPersoon": {
+          "Persoonsrelatie.metPersoon": {
             "$ref": "#/components/schemas/Persoon"
           }
         },
@@ -2055,19 +1904,14 @@
             "format": "uri"
           },
           "@type": {
-            "type": "array",
-            "description": "Lijst van object types (klasse)",
-            "items": {
-              "type": "string",
-              "description": "Samenwonen type",
-              "pattern": "^Samenwonen$"
-            },
-            "minItems": 1
+            "type": "object",
+            "description": "Object type (klasse Samenwonen)",
+            "pattern": "^Samenwonen$"
           },
-          "Samenwonen.vanPersoon": {
+          "Persoonsrelatie.vanPersoon": {
             "$ref": "#/components/schemas/Persoon"
           },
-          "Samenwonen.metPersoon": {
+          "Persoonsrelatie.metPersoon": {
             "$ref": "#/components/schemas/Persoon"
           },
           "@context": {
@@ -2094,14 +1938,9 @@
             "format": "uri"
           },
           "@type": {
-            "type": "array",
-            "description": "Lijst van object types (klasse)",
-            "items": {
-              "type": "string",
-              "description": "GeregistreerdPersoon type",
-              "pattern": "^GeregistreerdPersoon$"
-            },
-            "minItems": 1
+            "type": "object",
+            "description": "Object type (klasse GeregistreerdPersoon)",
+            "pattern": "^GeregistreerdPersoon$"
           },
           "GeregistreerdPersoon.registratie": {
             "$ref": "#/components/schemas/Identificator"
@@ -2112,7 +1951,7 @@
           "GeregistreerdPersoon.registratiedetail": {
             "$ref": "#/components/schemas/Registratie"
           },
-          "GeregistreerdPersoon.voornaam": {
+          "Persoon.voornaam": {
             "type": "array",
             "description": "Lijst van String items.",
             "items": {
@@ -2129,7 +1968,7 @@
             },
             "minItems": 0
           },
-          "GeregistreerdPersoon.achternaam": {
+          "Persoon.achternaam": {
             "type": "array",
             "description": "Lijst van String items.",
             "items": {
@@ -2146,25 +1985,25 @@
             },
             "minItems": 0
           },
-          "GeregistreerdPersoon.contactinfo": {
+          "Persoon.contactinfo": {
             "$ref": "#/components/schemas/Contactinfo"
           },
-          "GeregistreerdPersoon.geslacht": {
+          "Persoon.geslacht": {
             "$ref": "#/components/schemas/Geslacht"
           },
-          "GeregistreerdPersoon.isHoofdVan": {
+          "Persoon.isHoofdVan": {
             "$ref": "#/components/schemas/Gezin"
           },
-          "GeregistreerdPersoon.heeftBurgerlijkeStaat": {
+          "Persoon.heeftBurgerlijkeStaat": {
             "$ref": "#/components/schemas/BurgerlijkeStaat"
           },
-          "GeregistreerdPersoon.heeftGeboorte": {
+          "Persoon.heeftGeboorte": {
             "$ref": "#/components/schemas/Geboorte"
           },
-          "GeregistreerdPersoon.heeftOverlijden": {
+          "Persoon.heeftOverlijden": {
             "$ref": "#/components/schemas/Overlijden"
           },
-          "GeregistreerdPersoon.inwonerschap": {
+          "Persoon.inwonerschap": {
             "type": "array",
             "description": "Lijst van Jurisdictie items.",
             "items": {
@@ -2172,7 +2011,7 @@
             },
             "minItems": 0
           },
-          "GeregistreerdPersoon.inwonerschapdetail": {
+          "Persoon.inwonerschapdetail": {
             "type": "array",
             "description": "Lijst van Inwonerschap items.",
             "items": {
@@ -2180,7 +2019,7 @@
             },
             "minItems": 0
           },
-          "GeregistreerdPersoon.heeftRelatieMet": {
+          "Persoon.heeftRelatieMet": {
             "type": "array",
             "description": "Lijst van Persoon items.",
             "items": {
@@ -2188,7 +2027,7 @@
             },
             "minItems": 0
           },
-          "GeregistreerdPersoon.persoonsrelatiedetail": {
+          "Persoon.persoonsrelatiedetail": {
             "type": "array",
             "description": "Lijst van Persoonsrelatie items.",
             "items": {
@@ -2222,7 +2061,7 @@
             },
             "minItems": 0
           },
-          "GeregistreerdPersoon.isLidVan": {
+          "Persoon.isLidVan": {
             "type": "array",
             "description": "Lijst van Gezin items.",
             "items": {
@@ -2230,7 +2069,7 @@
             },
             "minItems": 0
           },
-          "GeregistreerdPersoon.creatiedatum": {
+          "Versie.creatiedatum": {
             "type": "object",
             "description": "Datum waarop de gegevens zijn ingevoerd.",
             "properties": {
@@ -2248,7 +2087,7 @@
               "@type"
             ]
           },
-          "GeregistreerdPersoon.modificatiedatum": {
+          "Versie.modificatiedatum": {
             "type": "object",
             "description": "Datum waarop de gegevens werden bijgewerkt.",
             "properties": {
@@ -2266,13 +2105,15 @@
               "@type"
             ]
           },
-          "GeregistreerdPersoon.bron": {
+          "Versie.bron": {
             "$ref": "#/components/schemas/Organisatie"
           }
         },
         "required": [
           "@id",
-          "@type"
+          "@type",
+          "GeregistreerdPersoon.creatiedatum",
+          "GeregistreerdPersoon.bron"
         ]
       },
       "GeregistreerdPersoonJsonLd": {
@@ -2285,14 +2126,9 @@
             "format": "uri"
           },
           "@type": {
-            "type": "array",
-            "description": "Lijst van object types (klasse)",
-            "items": {
-              "type": "string",
-              "description": "GeregistreerdPersoon type",
-              "pattern": "^GeregistreerdPersoon$"
-            },
-            "minItems": 1
+            "type": "object",
+            "description": "Object type (klasse GeregistreerdPersoon)",
+            "pattern": "^GeregistreerdPersoon$"
           },
           "GeregistreerdPersoon.registratie": {
             "$ref": "#/components/schemas/Identificator"
@@ -2303,7 +2139,7 @@
           "GeregistreerdPersoon.registratiedetail": {
             "$ref": "#/components/schemas/Registratie"
           },
-          "GeregistreerdPersoon.voornaam": {
+          "Persoon.voornaam": {
             "type": "array",
             "description": "Lijst van String items.",
             "items": {
@@ -2320,7 +2156,7 @@
             },
             "minItems": 0
           },
-          "GeregistreerdPersoon.achternaam": {
+          "Persoon.achternaam": {
             "type": "array",
             "description": "Lijst van String items.",
             "items": {
@@ -2337,25 +2173,25 @@
             },
             "minItems": 0
           },
-          "GeregistreerdPersoon.contactinfo": {
+          "Persoon.contactinfo": {
             "$ref": "#/components/schemas/Contactinfo"
           },
-          "GeregistreerdPersoon.geslacht": {
+          "Persoon.geslacht": {
             "$ref": "#/components/schemas/Geslacht"
           },
-          "GeregistreerdPersoon.isHoofdVan": {
+          "Persoon.isHoofdVan": {
             "$ref": "#/components/schemas/Gezin"
           },
-          "GeregistreerdPersoon.heeftBurgerlijkeStaat": {
+          "Persoon.heeftBurgerlijkeStaat": {
             "$ref": "#/components/schemas/BurgerlijkeStaat"
           },
-          "GeregistreerdPersoon.heeftGeboorte": {
+          "Persoon.heeftGeboorte": {
             "$ref": "#/components/schemas/Geboorte"
           },
-          "GeregistreerdPersoon.heeftOverlijden": {
+          "Persoon.heeftOverlijden": {
             "$ref": "#/components/schemas/Overlijden"
           },
-          "GeregistreerdPersoon.inwonerschap": {
+          "Persoon.inwonerschap": {
             "type": "array",
             "description": "Lijst van Jurisdictie items.",
             "items": {
@@ -2363,7 +2199,7 @@
             },
             "minItems": 0
           },
-          "GeregistreerdPersoon.inwonerschapdetail": {
+          "Persoon.inwonerschapdetail": {
             "type": "array",
             "description": "Lijst van Inwonerschap items.",
             "items": {
@@ -2371,7 +2207,7 @@
             },
             "minItems": 0
           },
-          "GeregistreerdPersoon.heeftRelatieMet": {
+          "Persoon.heeftRelatieMet": {
             "type": "array",
             "description": "Lijst van Persoon items.",
             "items": {
@@ -2379,7 +2215,7 @@
             },
             "minItems": 0
           },
-          "GeregistreerdPersoon.persoonsrelatiedetail": {
+          "Persoon.persoonsrelatiedetail": {
             "type": "array",
             "description": "Lijst van Persoonsrelatie items.",
             "items": {
@@ -2413,7 +2249,7 @@
             },
             "minItems": 0
           },
-          "GeregistreerdPersoon.isLidVan": {
+          "Persoon.isLidVan": {
             "type": "array",
             "description": "Lijst van Gezin items.",
             "items": {
@@ -2421,7 +2257,7 @@
             },
             "minItems": 0
           },
-          "GeregistreerdPersoon.creatiedatum": {
+          "Versie.creatiedatum": {
             "type": "object",
             "description": "Datum waarop de gegevens zijn ingevoerd.",
             "properties": {
@@ -2439,7 +2275,7 @@
               "@type"
             ]
           },
-          "GeregistreerdPersoon.modificatiedatum": {
+          "Versie.modificatiedatum": {
             "type": "object",
             "description": "Datum waarop de gegevens werden bijgewerkt.",
             "properties": {
@@ -2457,7 +2293,7 @@
               "@type"
             ]
           },
-          "GeregistreerdPersoon.bron": {
+          "Versie.bron": {
             "$ref": "#/components/schemas/Organisatie"
           },
           "@context": {
@@ -2469,6 +2305,8 @@
         "required": [
           "@id",
           "@type",
+          "GeregistreerdPersoon.creatiedatum",
+          "GeregistreerdPersoon.bron",
           "@context"
         ]
       },
@@ -2482,16 +2320,14 @@
             "format": "uri"
           },
           "@type": {
-            "type": "array",
-            "description": "Lijst van object types (klasse)",
-            "items": {
-              "type": "string",
-              "description": "Domicilie type",
-              "pattern": "^Domicilie$"
-            },
-            "minItems": 1
+            "type": "object",
+            "description": "Object type (klasse Domicilie)",
+            "pattern": "^Domicilie$"
           },
           "Domicilie.verblijfsadres": {
+            "$ref": "#/components/schemas/BelgischAdres"
+          },
+          "Verblijfplaats.verblijfsadres": {
             "$ref": "#/components/schemas/Adresvoorstelling"
           }
         },
@@ -2510,16 +2346,14 @@
             "format": "uri"
           },
           "@type": {
-            "type": "array",
-            "description": "Lijst van object types (klasse)",
-            "items": {
-              "type": "string",
-              "description": "Domicilie type",
-              "pattern": "^Domicilie$"
-            },
-            "minItems": 1
+            "type": "object",
+            "description": "Object type (klasse Domicilie)",
+            "pattern": "^Domicilie$"
           },
           "Domicilie.verblijfsadres": {
+            "$ref": "#/components/schemas/BelgischAdres"
+          },
+          "Verblijfplaats.verblijfsadres": {
             "$ref": "#/components/schemas/Adresvoorstelling"
           },
           "@context": {
@@ -2544,14 +2378,9 @@
             "format": "uri"
           },
           "@type": {
-            "type": "array",
-            "description": "Lijst van object types (klasse)",
-            "items": {
-              "type": "string",
-              "description": "Verblijfplaats type",
-              "pattern": "^Verblijfplaats$"
-            },
-            "minItems": 1
+            "type": "object",
+            "description": "Object type (klasse Verblijfplaats)",
+            "pattern": "^Verblijfplaats$"
           },
           "Verblijfplaats.verblijfsadres": {
             "$ref": "#/components/schemas/Adresvoorstelling"
@@ -2572,14 +2401,9 @@
             "format": "uri"
           },
           "@type": {
-            "type": "array",
-            "description": "Lijst van object types (klasse)",
-            "items": {
-              "type": "string",
-              "description": "Verblijfplaats type",
-              "pattern": "^Verblijfplaats$"
-            },
-            "minItems": 1
+            "type": "object",
+            "description": "Object type (klasse Verblijfplaats)",
+            "pattern": "^Verblijfplaats$"
           },
           "Verblijfplaats.verblijfsadres": {
             "$ref": "#/components/schemas/Adresvoorstelling"
@@ -2606,14 +2430,9 @@
             "format": "uri"
           },
           "@type": {
-            "type": "array",
-            "description": "Lijst van object types (klasse)",
-            "items": {
-              "type": "string",
-              "description": "Afstamming type",
-              "pattern": "^Afstamming$"
-            },
-            "minItems": 1
+            "type": "object",
+            "description": "Object type (klasse Afstamming)",
+            "pattern": "^Afstamming$"
           },
           "Afstamming.datumVanAfstamming": {
             "type": "object",
@@ -2636,10 +2455,10 @@
           "Afstamming.afstammingstype": {
             "$ref": "#/components/schemas/Afstammingstype"
           },
-          "Afstamming.vanPersoon": {
+          "Persoonsrelatie.vanPersoon": {
             "$ref": "#/components/schemas/Persoon"
           },
-          "Afstamming.metPersoon": {
+          "Persoonsrelatie.metPersoon": {
             "$ref": "#/components/schemas/Persoon"
           }
         },
@@ -2660,14 +2479,9 @@
             "format": "uri"
           },
           "@type": {
-            "type": "array",
-            "description": "Lijst van object types (klasse)",
-            "items": {
-              "type": "string",
-              "description": "Afstamming type",
-              "pattern": "^Afstamming$"
-            },
-            "minItems": 1
+            "type": "object",
+            "description": "Object type (klasse Afstamming)",
+            "pattern": "^Afstamming$"
           },
           "Afstamming.datumVanAfstamming": {
             "type": "object",
@@ -2690,10 +2504,10 @@
           "Afstamming.afstammingstype": {
             "$ref": "#/components/schemas/Afstammingstype"
           },
-          "Afstamming.vanPersoon": {
+          "Persoonsrelatie.vanPersoon": {
             "$ref": "#/components/schemas/Persoon"
           },
-          "Afstamming.metPersoon": {
+          "Persoonsrelatie.metPersoon": {
             "$ref": "#/components/schemas/Persoon"
           },
           "@context": {
@@ -2720,14 +2534,9 @@
             "format": "uri"
           },
           "@type": {
-            "type": "array",
-            "description": "Lijst van object types (klasse)",
-            "items": {
-              "type": "string",
-              "description": "LocatiePeriodeOfJurisdictie type",
-              "pattern": "^LocatiePeriodeOfJurisdictie$"
-            },
-            "minItems": 1
+            "type": "object",
+            "description": "Object type (klasse LocatiePeriodeOfJurisdictie)",
+            "pattern": "^LocatiePeriodeOfJurisdictie$"
           }
         },
         "required": [
@@ -2745,14 +2554,9 @@
             "format": "uri"
           },
           "@type": {
-            "type": "array",
-            "description": "Lijst van object types (klasse)",
-            "items": {
-              "type": "string",
-              "description": "LocatiePeriodeOfJurisdictie type",
-              "pattern": "^LocatiePeriodeOfJurisdictie$"
-            },
-            "minItems": 1
+            "type": "object",
+            "description": "Object type (klasse LocatiePeriodeOfJurisdictie)",
+            "pattern": "^LocatiePeriodeOfJurisdictie$"
           },
           "@context": {
             "type": "string",
@@ -2776,16 +2580,14 @@
             "format": "uri"
           },
           "@type": {
-            "type": "array",
-            "description": "Lijst van object types (klasse)",
-            "items": {
-              "type": "string",
-              "description": "AangegevenAdres type",
-              "pattern": "^AangegevenAdres$"
-            },
-            "minItems": 1
+            "type": "object",
+            "description": "Object type (klasse AangegevenAdres)",
+            "pattern": "^AangegevenAdres$"
           },
-          "AangegevenAdres.verblijfsadres": {
+          "Domicilie.verblijfsadres": {
+            "$ref": "#/components/schemas/BelgischAdres"
+          },
+          "Verblijfplaats.verblijfsadres": {
             "$ref": "#/components/schemas/Adresvoorstelling"
           }
         },
@@ -2804,16 +2606,14 @@
             "format": "uri"
           },
           "@type": {
-            "type": "array",
-            "description": "Lijst van object types (klasse)",
-            "items": {
-              "type": "string",
-              "description": "AangegevenAdres type",
-              "pattern": "^AangegevenAdres$"
-            },
-            "minItems": 1
+            "type": "object",
+            "description": "Object type (klasse AangegevenAdres)",
+            "pattern": "^AangegevenAdres$"
           },
-          "AangegevenAdres.verblijfsadres": {
+          "Domicilie.verblijfsadres": {
+            "$ref": "#/components/schemas/BelgischAdres"
+          },
+          "Verblijfplaats.verblijfsadres": {
             "$ref": "#/components/schemas/Adresvoorstelling"
           },
           "@context": {
@@ -2838,16 +2638,11 @@
             "format": "uri"
           },
           "@type": {
-            "type": "array",
-            "description": "Lijst van object types (klasse)",
-            "items": {
-              "type": "string",
-              "description": "Afwezig type",
-              "pattern": "^Afwezig$"
-            },
-            "minItems": 1
+            "type": "object",
+            "description": "Object type (klasse Afwezig)",
+            "pattern": "^Afwezig$"
           },
-          "Afwezig.verblijfsadres": {
+          "Verblijfplaats.verblijfsadres": {
             "$ref": "#/components/schemas/Adresvoorstelling"
           }
         },
@@ -2866,16 +2661,11 @@
             "format": "uri"
           },
           "@type": {
-            "type": "array",
-            "description": "Lijst van object types (klasse)",
-            "items": {
-              "type": "string",
-              "description": "Afwezig type",
-              "pattern": "^Afwezig$"
-            },
-            "minItems": 1
+            "type": "object",
+            "description": "Object type (klasse Afwezig)",
+            "pattern": "^Afwezig$"
           },
-          "Afwezig.verblijfsadres": {
+          "Verblijfplaats.verblijfsadres": {
             "$ref": "#/components/schemas/Adresvoorstelling"
           },
           "@context": {
@@ -2900,14 +2690,9 @@
             "format": "uri"
           },
           "@type": {
-            "type": "array",
-            "description": "Lijst van object types (klasse)",
-            "items": {
-              "type": "string",
-              "description": "BelgischAdres type",
-              "pattern": "^BelgischAdres$"
-            },
-            "minItems": 1
+            "type": "object",
+            "description": "Object type (klasse BelgischAdres)",
+            "pattern": "^BelgischAdres$"
           }
         },
         "required": [
@@ -2925,14 +2710,9 @@
             "format": "uri"
           },
           "@type": {
-            "type": "array",
-            "description": "Lijst van object types (klasse)",
-            "items": {
-              "type": "string",
-              "description": "BelgischAdres type",
-              "pattern": "^BelgischAdres$"
-            },
-            "minItems": 1
+            "type": "object",
+            "description": "Object type (klasse BelgischAdres)",
+            "pattern": "^BelgischAdres$"
           },
           "@context": {
             "type": "string",
@@ -2956,14 +2736,9 @@
             "format": "uri"
           },
           "@type": {
-            "type": "array",
-            "description": "Lijst van object types (klasse)",
-            "items": {
-              "type": "string",
-              "description": "Jurisdictie type",
-              "pattern": "^Jurisdictie$"
-            },
-            "minItems": 1
+            "type": "object",
+            "description": "Object type (klasse Jurisdictie)",
+            "pattern": "^Jurisdictie$"
           },
           "Jurisdictie.plaats": {
             "$ref": "#/components/schemas/Plaats"
@@ -2984,14 +2759,9 @@
             "format": "uri"
           },
           "@type": {
-            "type": "array",
-            "description": "Lijst van object types (klasse)",
-            "items": {
-              "type": "string",
-              "description": "Jurisdictie type",
-              "pattern": "^Jurisdictie$"
-            },
-            "minItems": 1
+            "type": "object",
+            "description": "Object type (klasse Jurisdictie)",
+            "pattern": "^Jurisdictie$"
           },
           "Jurisdictie.plaats": {
             "$ref": "#/components/schemas/Plaats"
@@ -3018,14 +2788,9 @@
             "format": "uri"
           },
           "@type": {
-            "type": "array",
-            "description": "Lijst van object types (klasse)",
-            "items": {
-              "type": "string",
-              "description": "Agent type",
-              "pattern": "^Agent$"
-            },
-            "minItems": 1
+            "type": "object",
+            "description": "Object type (klasse Agent)",
+            "pattern": "^Agent$"
           }
         },
         "required": [
@@ -3043,14 +2808,9 @@
             "format": "uri"
           },
           "@type": {
-            "type": "array",
-            "description": "Lijst van object types (klasse)",
-            "items": {
-              "type": "string",
-              "description": "Agent type",
-              "pattern": "^Agent$"
-            },
-            "minItems": 1
+            "type": "object",
+            "description": "Object type (klasse Agent)",
+            "pattern": "^Agent$"
           },
           "@context": {
             "type": "string",
@@ -3074,14 +2834,9 @@
             "format": "uri"
           },
           "@type": {
-            "type": "array",
-            "description": "Lijst van object types (klasse)",
-            "items": {
-              "type": "string",
-              "description": "Gezin type",
-              "pattern": "^Gezin$"
-            },
-            "minItems": 1
+            "type": "object",
+            "description": "Object type (klasse Gezin)",
+            "pattern": "^Gezin$"
           },
           "Gezin.gezinsadres": {
             "$ref": "#/components/schemas/Adresvoorstelling"
@@ -3097,7 +2852,7 @@
             },
             "minItems": 0
           },
-          "Gezin.voorkeursnaam": {
+          "Organisatie.voorkeursnaam": {
             "type": "object",
             "description": "Naam waarmee de Organisatie bij voorkeur wordt aangeduid.",
             "properties": {
@@ -3114,7 +2869,7 @@
               "@language"
             ]
           },
-          "Gezin.contactinfo": {
+          "Organisatie.contactinfo": {
             "type": "array",
             "description": "Lijst van Contactinfo items.",
             "items": {
@@ -3138,14 +2893,9 @@
             "format": "uri"
           },
           "@type": {
-            "type": "array",
-            "description": "Lijst van object types (klasse)",
-            "items": {
-              "type": "string",
-              "description": "Gezin type",
-              "pattern": "^Gezin$"
-            },
-            "minItems": 1
+            "type": "object",
+            "description": "Object type (klasse Gezin)",
+            "pattern": "^Gezin$"
           },
           "Gezin.gezinsadres": {
             "$ref": "#/components/schemas/Adresvoorstelling"
@@ -3161,7 +2911,7 @@
             },
             "minItems": 0
           },
-          "Gezin.voorkeursnaam": {
+          "Organisatie.voorkeursnaam": {
             "type": "object",
             "description": "Naam waarmee de Organisatie bij voorkeur wordt aangeduid.",
             "properties": {
@@ -3178,7 +2928,7 @@
               "@language"
             ]
           },
-          "Gezin.contactinfo": {
+          "Organisatie.contactinfo": {
             "type": "array",
             "description": "Lijst van Contactinfo items.",
             "items": {
@@ -3208,14 +2958,9 @@
             "format": "uri"
           },
           "@type": {
-            "type": "array",
-            "description": "Lijst van object types (klasse)",
-            "items": {
-              "type": "string",
-              "description": "BurgerlijkeStaat type",
-              "pattern": "^BurgerlijkeStaat$"
-            },
-            "minItems": 1
+            "type": "object",
+            "description": "Object type (klasse BurgerlijkeStaat)",
+            "pattern": "^BurgerlijkeStaat$"
           },
           "BurgerlijkeStaat.plaats": {
             "$ref": "#/components/schemas/Plaats"
@@ -3239,14 +2984,9 @@
             "format": "uri"
           },
           "@type": {
-            "type": "array",
-            "description": "Lijst van object types (klasse)",
-            "items": {
-              "type": "string",
-              "description": "BurgerlijkeStaat type",
-              "pattern": "^BurgerlijkeStaat$"
-            },
-            "minItems": 1
+            "type": "object",
+            "description": "Object type (klasse BurgerlijkeStaat)",
+            "pattern": "^BurgerlijkeStaat$"
           },
           "BurgerlijkeStaat.plaats": {
             "$ref": "#/components/schemas/Plaats"
@@ -3276,16 +3016,11 @@
             "format": "uri"
           },
           "@type": {
-            "type": "array",
-            "description": "Lijst van object types (klasse)",
-            "items": {
-              "type": "string",
-              "description": "Postadres type",
-              "pattern": "^Postadres$"
-            },
-            "minItems": 1
+            "type": "object",
+            "description": "Object type (klasse Postadres)",
+            "pattern": "^Postadres$"
           },
-          "Postadres.verblijfsadres": {
+          "Verblijfplaats.verblijfsadres": {
             "$ref": "#/components/schemas/Adresvoorstelling"
           }
         },
@@ -3304,16 +3039,11 @@
             "format": "uri"
           },
           "@type": {
-            "type": "array",
-            "description": "Lijst van object types (klasse)",
-            "items": {
-              "type": "string",
-              "description": "Postadres type",
-              "pattern": "^Postadres$"
-            },
-            "minItems": 1
+            "type": "object",
+            "description": "Object type (klasse Postadres)",
+            "pattern": "^Postadres$"
           },
-          "Postadres.verblijfsadres": {
+          "Verblijfplaats.verblijfsadres": {
             "$ref": "#/components/schemas/Adresvoorstelling"
           },
           "@context": {
@@ -3338,16 +3068,14 @@
             "format": "uri"
           },
           "@type": {
-            "type": "array",
-            "description": "Lijst van object types (klasse)",
-            "items": {
-              "type": "string",
-              "description": "Referentieadres type",
-              "pattern": "^Referentieadres$"
-            },
-            "minItems": 1
+            "type": "object",
+            "description": "Object type (klasse Referentieadres)",
+            "pattern": "^Referentieadres$"
           },
-          "Referentieadres.verblijfsadres": {
+          "Domicilie.verblijfsadres": {
+            "$ref": "#/components/schemas/BelgischAdres"
+          },
+          "Verblijfplaats.verblijfsadres": {
             "$ref": "#/components/schemas/Adresvoorstelling"
           }
         },
@@ -3366,16 +3094,14 @@
             "format": "uri"
           },
           "@type": {
-            "type": "array",
-            "description": "Lijst van object types (klasse)",
-            "items": {
-              "type": "string",
-              "description": "Referentieadres type",
-              "pattern": "^Referentieadres$"
-            },
-            "minItems": 1
+            "type": "object",
+            "description": "Object type (klasse Referentieadres)",
+            "pattern": "^Referentieadres$"
           },
-          "Referentieadres.verblijfsadres": {
+          "Domicilie.verblijfsadres": {
+            "$ref": "#/components/schemas/BelgischAdres"
+          },
+          "Verblijfplaats.verblijfsadres": {
             "$ref": "#/components/schemas/Adresvoorstelling"
           },
           "@context": {
@@ -3400,16 +3126,17 @@
             "format": "uri"
           },
           "@type": {
-            "type": "array",
-            "description": "Lijst van object types (klasse)",
-            "items": {
-              "type": "string",
-              "description": "VerblijfplaatsBuitenlandDomicilie type",
-              "pattern": "^VerblijfplaatsBuitenlandDomicilie$"
-            },
-            "minItems": 1
+            "type": "object",
+            "description": "Object type (klasse VerblijfplaatsBuitenlandDomicilie)",
+            "pattern": "^VerblijfplaatsBuitenlandDomicilie$"
           },
           "VerblijfplaatsBuitenlandDomicilie.verblijfsadres": {
+            "$ref": "#/components/schemas/Adresvoorstelling"
+          },
+          "Domicilie.verblijfsadres": {
+            "$ref": "#/components/schemas/BelgischAdres"
+          },
+          "Verblijfplaats.verblijfsadres": {
             "$ref": "#/components/schemas/Adresvoorstelling"
           }
         },
@@ -3428,16 +3155,17 @@
             "format": "uri"
           },
           "@type": {
-            "type": "array",
-            "description": "Lijst van object types (klasse)",
-            "items": {
-              "type": "string",
-              "description": "VerblijfplaatsBuitenlandDomicilie type",
-              "pattern": "^VerblijfplaatsBuitenlandDomicilie$"
-            },
-            "minItems": 1
+            "type": "object",
+            "description": "Object type (klasse VerblijfplaatsBuitenlandDomicilie)",
+            "pattern": "^VerblijfplaatsBuitenlandDomicilie$"
           },
           "VerblijfplaatsBuitenlandDomicilie.verblijfsadres": {
+            "$ref": "#/components/schemas/Adresvoorstelling"
+          },
+          "Domicilie.verblijfsadres": {
+            "$ref": "#/components/schemas/BelgischAdres"
+          },
+          "Verblijfplaats.verblijfsadres": {
             "$ref": "#/components/schemas/Adresvoorstelling"
           },
           "@context": {
@@ -3462,16 +3190,11 @@
             "format": "uri"
           },
           "@type": {
-            "type": "array",
-            "description": "Lijst van object types (klasse)",
-            "items": {
-              "type": "string",
-              "description": "VerblijfplaatsBuitenland type",
-              "pattern": "^VerblijfplaatsBuitenland$"
-            },
-            "minItems": 1
+            "type": "object",
+            "description": "Object type (klasse VerblijfplaatsBuitenland)",
+            "pattern": "^VerblijfplaatsBuitenland$"
           },
-          "VerblijfplaatsBuitenland.verblijfsadres": {
+          "Verblijfplaats.verblijfsadres": {
             "$ref": "#/components/schemas/Adresvoorstelling"
           }
         },
@@ -3490,16 +3213,11 @@
             "format": "uri"
           },
           "@type": {
-            "type": "array",
-            "description": "Lijst van object types (klasse)",
-            "items": {
-              "type": "string",
-              "description": "VerblijfplaatsBuitenland type",
-              "pattern": "^VerblijfplaatsBuitenland$"
-            },
-            "minItems": 1
+            "type": "object",
+            "description": "Object type (klasse VerblijfplaatsBuitenland)",
+            "pattern": "^VerblijfplaatsBuitenland$"
           },
-          "VerblijfplaatsBuitenland.verblijfsadres": {
+          "Verblijfplaats.verblijfsadres": {
             "$ref": "#/components/schemas/Adresvoorstelling"
           },
           "@context": {
@@ -3524,16 +3242,11 @@
             "format": "uri"
           },
           "@type": {
-            "type": "array",
-            "description": "Lijst van object types (klasse)",
-            "items": {
-              "type": "string",
-              "description": "WettelijkVerblijf type",
-              "pattern": "^WettelijkVerblijf$"
-            },
-            "minItems": 1
+            "type": "object",
+            "description": "Object type (klasse WettelijkVerblijf)",
+            "pattern": "^WettelijkVerblijf$"
           },
-          "WettelijkVerblijf.verblijfsadres": {
+          "Verblijfplaats.verblijfsadres": {
             "$ref": "#/components/schemas/Adresvoorstelling"
           }
         },
@@ -3552,16 +3265,11 @@
             "format": "uri"
           },
           "@type": {
-            "type": "array",
-            "description": "Lijst van object types (klasse)",
-            "items": {
-              "type": "string",
-              "description": "WettelijkVerblijf type",
-              "pattern": "^WettelijkVerblijf$"
-            },
-            "minItems": 1
+            "type": "object",
+            "description": "Object type (klasse WettelijkVerblijf)",
+            "pattern": "^WettelijkVerblijf$"
           },
-          "WettelijkVerblijf.verblijfsadres": {
+          "Verblijfplaats.verblijfsadres": {
             "$ref": "#/components/schemas/Adresvoorstelling"
           },
           "@context": {
@@ -3586,19 +3294,14 @@
             "format": "uri"
           },
           "@type": {
-            "type": "array",
-            "description": "Lijst van object types (klasse)",
-            "items": {
-              "type": "string",
-              "description": "AdministratiefBeheerder type",
-              "pattern": "^AdministratiefBeheerder$"
-            },
-            "minItems": 1
+            "type": "object",
+            "description": "Object type (klasse AdministratiefBeheerder)",
+            "pattern": "^AdministratiefBeheerder$"
           },
           "AdministratiefBeheerder.type": {
             "$ref": "#/components/schemas/AdministratiefBeheerdertype"
           },
-          "AdministratiefBeheerder.voorkeursnaam": {
+          "Organisatie.voorkeursnaam": {
             "type": "object",
             "description": "Naam waarmee de Organisatie bij voorkeur wordt aangeduid.",
             "properties": {
@@ -3615,7 +3318,7 @@
               "@language"
             ]
           },
-          "AdministratiefBeheerder.contactinfo": {
+          "Organisatie.contactinfo": {
             "type": "array",
             "description": "Lijst van Contactinfo items.",
             "items": {
@@ -3639,19 +3342,14 @@
             "format": "uri"
           },
           "@type": {
-            "type": "array",
-            "description": "Lijst van object types (klasse)",
-            "items": {
-              "type": "string",
-              "description": "AdministratiefBeheerder type",
-              "pattern": "^AdministratiefBeheerder$"
-            },
-            "minItems": 1
+            "type": "object",
+            "description": "Object type (klasse AdministratiefBeheerder)",
+            "pattern": "^AdministratiefBeheerder$"
           },
           "AdministratiefBeheerder.type": {
             "$ref": "#/components/schemas/AdministratiefBeheerdertype"
           },
-          "AdministratiefBeheerder.voorkeursnaam": {
+          "Organisatie.voorkeursnaam": {
             "type": "object",
             "description": "Naam waarmee de Organisatie bij voorkeur wordt aangeduid.",
             "properties": {
@@ -3668,7 +3366,7 @@
               "@language"
             ]
           },
-          "AdministratiefBeheerder.contactinfo": {
+          "Organisatie.contactinfo": {
             "type": "array",
             "description": "Lijst van Contactinfo items.",
             "items": {
@@ -3698,16 +3396,11 @@
             "format": "uri"
           },
           "@type": {
-            "type": "array",
-            "description": "Lijst van object types (klasse)",
-            "items": {
-              "type": "string",
-              "description": "Locatie type",
-              "pattern": "^Locatie$"
-            },
-            "minItems": 1
+            "type": "object",
+            "description": "Object type (klasse Locatie)",
+            "pattern": "^Locatie$"
           },
-          "Locatie.plaats": {
+          "Jurisdictie.plaats": {
             "$ref": "#/components/schemas/Plaats"
           }
         },
@@ -3726,16 +3419,11 @@
             "format": "uri"
           },
           "@type": {
-            "type": "array",
-            "description": "Lijst van object types (klasse)",
-            "items": {
-              "type": "string",
-              "description": "Locatie type",
-              "pattern": "^Locatie$"
-            },
-            "minItems": 1
+            "type": "object",
+            "description": "Object type (klasse Locatie)",
+            "pattern": "^Locatie$"
           },
-          "Locatie.plaats": {
+          "Jurisdictie.plaats": {
             "$ref": "#/components/schemas/Plaats"
           },
           "@context": {
@@ -3760,14 +3448,9 @@
             "format": "uri"
           },
           "@type": {
-            "type": "array",
-            "description": "Lijst van object types (klasse)",
-            "items": {
-              "type": "string",
-              "description": "Adresvoorstelling type",
-              "pattern": "^Adresvoorstelling$"
-            },
-            "minItems": 1
+            "type": "object",
+            "description": "Object type (klasse Adresvoorstelling)",
+            "pattern": "^Adresvoorstelling$"
           },
           "Adresvoorstelling.administratieveEenheidNiveau1": {
             "type": "object",
@@ -3995,7 +3678,7 @@
           "Adresvoorstelling.verwijstNaar": {
             "$ref": "#/components/schemas/BelgischAdres"
           },
-          "Adresvoorstelling.plaats": {
+          "Jurisdictie.plaats": {
             "$ref": "#/components/schemas/Plaats"
           }
         },
@@ -4014,14 +3697,9 @@
             "format": "uri"
           },
           "@type": {
-            "type": "array",
-            "description": "Lijst van object types (klasse)",
-            "items": {
-              "type": "string",
-              "description": "Adresvoorstelling type",
-              "pattern": "^Adresvoorstelling$"
-            },
-            "minItems": 1
+            "type": "object",
+            "description": "Object type (klasse Adresvoorstelling)",
+            "pattern": "^Adresvoorstelling$"
           },
           "Adresvoorstelling.administratieveEenheidNiveau1": {
             "type": "object",
@@ -4249,7 +3927,7 @@
           "Adresvoorstelling.verwijstNaar": {
             "$ref": "#/components/schemas/BelgischAdres"
           },
-          "Adresvoorstelling.plaats": {
+          "Jurisdictie.plaats": {
             "$ref": "#/components/schemas/Plaats"
           },
           "@context": {
@@ -4274,14 +3952,9 @@
             "format": "uri"
           },
           "@type": {
-            "type": "array",
-            "description": "Lijst van object types (klasse)",
-            "items": {
-              "type": "string",
-              "description": "Identificator type",
-              "pattern": "^Identificator$"
-            },
-            "minItems": 1
+            "type": "object",
+            "description": "Object type (klasse Identificator)",
+            "pattern": "^Identificator$"
           },
           "Identificator.identificator": {
             "type": "object",
@@ -4344,14 +4017,9 @@
             "format": "uri"
           },
           "@type": {
-            "type": "array",
-            "description": "Lijst van object types (klasse)",
-            "items": {
-              "type": "string",
-              "description": "Identificator type",
-              "pattern": "^Identificator$"
-            },
-            "minItems": 1
+            "type": "object",
+            "description": "Object type (klasse Identificator)",
+            "pattern": "^Identificator$"
           },
           "Identificator.identificator": {
             "type": "object",
@@ -4420,14 +4088,9 @@
             "format": "uri"
           },
           "@type": {
-            "type": "array",
-            "description": "Lijst van object types (klasse)",
-            "items": {
-              "type": "string",
-              "description": "Contactinfo type",
-              "pattern": "^Contactinfo$"
-            },
-            "minItems": 1
+            "type": "object",
+            "description": "Object type (klasse Contactinfo)",
+            "pattern": "^Contactinfo$"
           },
           "Contactinfo.aanschrijfvorm": {
             "type": "object",
@@ -4526,14 +4189,9 @@
             "format": "uri"
           },
           "@type": {
-            "type": "array",
-            "description": "Lijst van object types (klasse)",
-            "items": {
-              "type": "string",
-              "description": "Contactinfo type",
-              "pattern": "^Contactinfo$"
-            },
-            "minItems": 1
+            "type": "object",
+            "description": "Object type (klasse Contactinfo)",
+            "pattern": "^Contactinfo$"
           },
           "Contactinfo.aanschrijfvorm": {
             "type": "object",
