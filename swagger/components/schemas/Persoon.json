@@ -46,28 +46,28 @@
       },
       "minItems": 0
     },
-    "Persoon.contactinfo": {
+    "contactinfo": {
       "$ref": "#/components/schemas/Contactinfo"
     },
-    "Persoon.geslacht": {
+    "geslacht": {
       "$ref": "#/components/schemas/Geslacht"
     },
-    "Persoon.isHoofdVan": {
+    "isHoofdVan": {
       "$ref": "#/components/schemas/Gezin"
     },
-    "Persoon.heeftBurgerlijkeStaat": {
+    "heeftBurgerlijkeStaat": {
       "$ref": "#/components/schemas/BurgerlijkeStaat"
     },
-    "Persoon.heeftGeboorte": {
+    "heeftGeboorte": {
       "$ref": "#/components/schemas/Geboorte"
     },
-    "Persoon.heeftOverlijden": {
+    "heeftOverlijden": {
       "$ref": "#/components/schemas/Overlijden"
     },
-    "Persoon.heeftInwonerschap": {
+    "heeftInwonerschap": {
       "$ref": "#/components/schemas/Inwonerschap"
     },
-    "Persoon.heeftPersoonsrelatie": {
+    "heeftPersoonsrelatie": {
       "oneOf": [
         {
           "$ref": "#/components/schemas/Persoonsrelatie"
@@ -104,7 +104,7 @@
       },
       "minItems": 0
     },
-    "Versie.creatiedatum": {
+    "creatiedatum": {
       "type": "object",
       "description": "Datum waarop de gegevens zijn ingevoerd.",
       "properties": {
@@ -122,7 +122,7 @@
         "@type"
       ]
     },
-    "Versie.modificatiedatum": {
+    "modificatiedatum": {
       "type": "object",
       "description": "Datum waarop de gegevens werden bijgewerkt.",
       "properties": {
@@ -140,7 +140,7 @@
         "@type"
       ]
     },
-    "Versie.bron": {
+    "bron": {
       "$ref": "#/components/schemas/Organisatie"
     }
   },

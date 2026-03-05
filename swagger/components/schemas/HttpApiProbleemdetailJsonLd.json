@@ -12,7 +12,7 @@
       "description": "Object type (klasse HttpApiProbleemdetail)",
       "pattern": "^HttpApiProbleemdetail$"
     },
-    "HttpApiProbleemdetail.type": {
+    "type": {
       "type": "object",
       "description": "Aard van de fout.",
       "properties": {
@@ -25,7 +25,7 @@
         "@id"
       ]
     },
-    "HttpApiProbleemdetail.titel": {
+    "titel": {
       "type": "object",
       "description": "Korte mensleesbare beschrijving van de fout.",
       "properties": {
@@ -42,7 +42,7 @@
         "@language"
       ]
     },
-    "HttpApiProbleemdetail.status": {
+    "status": {
       "type": "object",
       "description": "HTTP foutcode. Zoals beschreven in <a href=\"https://www.rfc-editor.org/rfc/rfc7231\">rfc7231</a>. Bvb 404 voor \"Not Found\".",
       "properties": {
@@ -60,7 +60,7 @@
         "@type"
       ]
     },
-    "HttpApiProbleemdetail.detail": {
+    "detail": {
       "type": "object",
       "description": "Mensleesbare beschrijving van de fout.",
       "properties": {
@@ -77,7 +77,7 @@
         "@language"
       ]
     },
-    "HttpApiProbleemdetail.instantie": {
+    "instantie": {
       "type": "object",
       "description": "Verwijzing naar de instantie van het object waarop de fout betrekking heeft. Bvb verwijzing naar de request.",
       "properties": {

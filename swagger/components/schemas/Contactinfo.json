@@ -12,7 +12,7 @@
       "description": "Object type (klasse Contactinfo)",
       "pattern": "^Contactinfo$"
     },
-    "Contactinfo.aanschrijfvorm": {
+    "aanschrijfvorm": {
       "type": "object",
       "description": "Titel waarmee iemand wordt aangeschreven of aangesproken of waarmee naar iemand wordt verwezen. Bijvoorbeeld: De heer/Mevrouw, Excellentie, Dokter, ...",
       "properties": {
@@ -29,7 +29,7 @@
         "@language"
       ]
     },
-    "Contactinfo.naam": {
+    "naam": {
       "type": "object",
       "description": "Naam van bijvoorbeeld de persoon die men kan contacteren.",
       "properties": {
@@ -41,7 +41,7 @@
         "@value"
       ]
     },
-    "Contactinfo.email": {
+    "email": {
       "type": "object",
       "description": "Email-adres waarnaar men kan mailen.",
       "properties": {
@@ -53,7 +53,7 @@
         "@value"
       ]
     },
-    "Contactinfo.faxnummer": {
+    "faxnummer": {
       "type": "object",
       "description": "Faxnummer waarnaar men kan faxen.",
       "properties": {
@@ -65,7 +65,7 @@
         "@value"
       ]
     },
-    "Contactinfo.telefoon": {
+    "telefoon": {
       "type": "object",
       "description": "Telefoonnummer waarop men kan bellen.",
       "properties": {
@@ -77,7 +77,7 @@
         "@value"
       ]
     },
-    "Contactinfo.website": {
+    "website": {
       "type": "object",
       "description": "Website waarnaar men kan surfen.",
       "properties": {
@@ -90,7 +90,7 @@
         "@id"
       ]
     },
-    "Contactinfo.adres": {
+    "adres": {
       "$ref": "#/components/schemas/Adresvoorstelling"
     }
   },

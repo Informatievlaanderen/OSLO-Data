@@ -12,7 +12,7 @@
       "description": "Object type (klasse Afstamming)",
       "pattern": "^Afstamming$"
     },
-    "Afstamming.datumVanAfstamming": {
+    "datumVanAfstamming": {
       "type": "object",
       "description": "De datum waarop de afstamming wordt vastgesteld.",
       "properties": {
@@ -30,13 +30,13 @@
         "@type"
       ]
     },
-    "Afstamming.afstammingstype": {
+    "afstammingstype": {
       "$ref": "#/components/schemas/Afstammingstype"
     },
-    "Persoonsrelatie.vanPersoon": {
+    "vanPersoon": {
       "$ref": "#/components/schemas/Persoon"
     },
-    "Persoonsrelatie.metPersoon": {
+    "metPersoon": {
       "$ref": "#/components/schemas/Persoon"
     },
     "@context": {

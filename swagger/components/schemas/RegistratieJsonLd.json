@@ -20,13 +20,13 @@
       },
       "minItems": 0
     },
-    "Registratie.geregistreerdPersoon": {
+    "geregistreerdPersoon": {
       "$ref": "#/components/schemas/GeregistreerdPersoon"
     },
-    "Registratie.vorigeRegistratie": {
+    "vorigeRegistratie": {
       "$ref": "#/components/schemas/Registratie"
     },
-    "Registratie.volgendeRegistratie": {
+    "volgendeRegistratie": {
       "$ref": "#/components/schemas/Registratie"
     },
     "@context": {

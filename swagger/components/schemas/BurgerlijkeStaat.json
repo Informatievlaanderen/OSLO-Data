@@ -12,10 +12,10 @@
       "description": "Object type (klasse BurgerlijkeStaat)",
       "pattern": "^BurgerlijkeStaat$"
     },
-    "BurgerlijkeStaat.plaats": {
+    "plaats": {
       "$ref": "#/components/schemas/Plaats"
     },
-    "BurgerlijkeStaat.type": {
+    "type": {
       "$ref": "#/components/schemas/BurgerlijkeStaatType"
     }
   },

@@ -7572,28 +7572,28 @@
             },
             "minItems": 0
           },
-          "Persoon.contactinfo": {
+          "contactinfo": {
             "$ref": "#/components/schemas/Contactinfo"
           },
-          "Persoon.geslacht": {
+          "geslacht": {
             "$ref": "#/components/schemas/Geslacht"
           },
-          "Persoon.isHoofdVan": {
+          "isHoofdVan": {
             "$ref": "#/components/schemas/Gezin"
           },
-          "Persoon.heeftBurgerlijkeStaat": {
+          "heeftBurgerlijkeStaat": {
             "$ref": "#/components/schemas/BurgerlijkeStaat"
           },
-          "Persoon.heeftGeboorte": {
+          "heeftGeboorte": {
             "$ref": "#/components/schemas/Geboorte"
           },
-          "Persoon.heeftOverlijden": {
+          "heeftOverlijden": {
             "$ref": "#/components/schemas/Overlijden"
           },
-          "Persoon.heeftInwonerschap": {
+          "heeftInwonerschap": {
             "$ref": "#/components/schemas/Inwonerschap"
           },
-          "Persoon.heeftPersoonsrelatie": {
+          "heeftPersoonsrelatie": {
             "oneOf": [
               {
                 "$ref": "#/components/schemas/Persoonsrelatie"
@@ -7630,7 +7630,7 @@
             },
             "minItems": 0
           },
-          "Versie.creatiedatum": {
+          "creatiedatum": {
             "type": "object",
             "description": "Datum waarop de gegevens zijn ingevoerd.",
             "properties": {
@@ -7648,7 +7648,7 @@
               "@type"
             ]
           },
-          "Versie.modificatiedatum": {
+          "modificatiedatum": {
             "type": "object",
             "description": "Datum waarop de gegevens werden bijgewerkt.",
             "properties": {
@@ -7666,7 +7666,7 @@
               "@type"
             ]
           },
-          "Versie.bron": {
+          "bron": {
             "$ref": "#/components/schemas/Organisatie"
           }
         },
@@ -7727,28 +7727,28 @@
             },
             "minItems": 0
           },
-          "Persoon.contactinfo": {
+          "contactinfo": {
             "$ref": "#/components/schemas/Contactinfo"
           },
-          "Persoon.geslacht": {
+          "geslacht": {
             "$ref": "#/components/schemas/Geslacht"
           },
-          "Persoon.isHoofdVan": {
+          "isHoofdVan": {
             "$ref": "#/components/schemas/Gezin"
           },
-          "Persoon.heeftBurgerlijkeStaat": {
+          "heeftBurgerlijkeStaat": {
             "$ref": "#/components/schemas/BurgerlijkeStaat"
           },
-          "Persoon.heeftGeboorte": {
+          "heeftGeboorte": {
             "$ref": "#/components/schemas/Geboorte"
           },
-          "Persoon.heeftOverlijden": {
+          "heeftOverlijden": {
             "$ref": "#/components/schemas/Overlijden"
           },
-          "Persoon.heeftInwonerschap": {
+          "heeftInwonerschap": {
             "$ref": "#/components/schemas/Inwonerschap"
           },
-          "Persoon.heeftPersoonsrelatie": {
+          "heeftPersoonsrelatie": {
             "oneOf": [
               {
                 "$ref": "#/components/schemas/Persoonsrelatie"
@@ -7785,7 +7785,7 @@
             },
             "minItems": 0
           },
-          "Versie.creatiedatum": {
+          "creatiedatum": {
             "type": "object",
             "description": "Datum waarop de gegevens zijn ingevoerd.",
             "properties": {
@@ -7803,7 +7803,7 @@
               "@type"
             ]
           },
-          "Versie.modificatiedatum": {
+          "modificatiedatum": {
             "type": "object",
             "description": "Datum waarop de gegevens werden bijgewerkt.",
             "properties": {
@@ -7821,7 +7821,7 @@
               "@type"
             ]
           },
-          "Versie.bron": {
+          "bron": {
             "$ref": "#/components/schemas/Organisatie"
           },
           "@context": {
@@ -7854,7 +7854,7 @@
             "description": "Object type (klasse Plaats)",
             "pattern": "^Plaats$"
           },
-          "Plaats.plaatsnaam": {
+          "plaatsnaam": {
             "type": "object",
             "description": "Naam van de plaats of van het gebied.",
             "properties": {
@@ -7871,10 +7871,10 @@
               "@language"
             ]
           },
-          "Plaats.identificator": {
+          "identificator": {
             "$ref": "#/components/schemas/Identificator"
           },
-          "Jurisdictie.plaats": {
+          "plaats": {
             "$ref": "#/components/schemas/Plaats"
           }
         },
@@ -7897,7 +7897,7 @@
             "description": "Object type (klasse Plaats)",
             "pattern": "^Plaats$"
           },
-          "Plaats.plaatsnaam": {
+          "plaatsnaam": {
             "type": "object",
             "description": "Naam van de plaats of van het gebied.",
             "properties": {
@@ -7914,10 +7914,10 @@
               "@language"
             ]
           },
-          "Plaats.identificator": {
+          "identificator": {
             "$ref": "#/components/schemas/Identificator"
           },
-          "Jurisdictie.plaats": {
+          "plaats": {
             "$ref": "#/components/schemas/Plaats"
           },
           "@context": {
@@ -7946,13 +7946,13 @@
             "description": "Object type (klasse Gezinsrelatie)",
             "pattern": "^Gezinsrelatie$"
           },
-          "Gezinsrelatie.gezinsrelatietype": {
+          "gezinsrelatietype": {
             "$ref": "#/components/schemas/Gezinsrelatietype"
           },
-          "Persoonsrelatie.vanPersoon": {
+          "vanPersoon": {
             "$ref": "#/components/schemas/Persoon"
           },
-          "Persoonsrelatie.metPersoon": {
+          "metPersoon": {
             "$ref": "#/components/schemas/Persoon"
           }
         },
@@ -7977,13 +7977,13 @@
             "description": "Object type (klasse Gezinsrelatie)",
             "pattern": "^Gezinsrelatie$"
           },
-          "Gezinsrelatie.gezinsrelatietype": {
+          "gezinsrelatietype": {
             "$ref": "#/components/schemas/Gezinsrelatietype"
           },
-          "Persoonsrelatie.vanPersoon": {
+          "vanPersoon": {
             "$ref": "#/components/schemas/Persoon"
           },
-          "Persoonsrelatie.metPersoon": {
+          "metPersoon": {
             "$ref": "#/components/schemas/Persoon"
           },
           "@context": {
@@ -8014,10 +8014,10 @@
             "description": "Object type (klasse Persoonsrelatie)",
             "pattern": "^Persoonsrelatie$"
           },
-          "Persoonsrelatie.vanPersoon": {
+          "vanPersoon": {
             "$ref": "#/components/schemas/Persoon"
           },
-          "Persoonsrelatie.metPersoon": {
+          "metPersoon": {
             "$ref": "#/components/schemas/Persoon"
           }
         },
@@ -8042,10 +8042,10 @@
             "description": "Object type (klasse Persoonsrelatie)",
             "pattern": "^Persoonsrelatie$"
           },
-          "Persoonsrelatie.vanPersoon": {
+          "vanPersoon": {
             "$ref": "#/components/schemas/Persoon"
           },
-          "Persoonsrelatie.metPersoon": {
+          "metPersoon": {
             "$ref": "#/components/schemas/Persoon"
           },
           "@context": {
@@ -8076,7 +8076,7 @@
             "description": "Object type (klasse Overlijden)",
             "pattern": "^Overlijden$"
           },
-          "Persoonsgebeurtenis.datum": {
+          "datum": {
             "type": "object",
             "description": "Datum waarop de gebeurtenis plaatsvond.",
             "properties": {
@@ -8094,7 +8094,7 @@
               "@type"
             ]
           },
-          "Persoonsgebeurtenis.plaats": {
+          "plaats": {
             "$ref": "#/components/schemas/Plaats"
           }
         },
@@ -8117,7 +8117,7 @@
             "description": "Object type (klasse Overlijden)",
             "pattern": "^Overlijden$"
           },
-          "Persoonsgebeurtenis.datum": {
+          "datum": {
             "type": "object",
             "description": "Datum waarop de gebeurtenis plaatsvond.",
             "properties": {
@@ -8135,7 +8135,7 @@
               "@type"
             ]
           },
-          "Persoonsgebeurtenis.plaats": {
+          "plaats": {
             "$ref": "#/components/schemas/Plaats"
           },
           "@context": {
@@ -8164,7 +8164,7 @@
             "description": "Object type (klasse Persoonsgebeurtenis)",
             "pattern": "^Persoonsgebeurtenis$"
           },
-          "Persoonsgebeurtenis.datum": {
+          "datum": {
             "type": "object",
             "description": "Datum waarop de gebeurtenis plaatsvond.",
             "properties": {
@@ -8182,7 +8182,7 @@
               "@type"
             ]
           },
-          "Persoonsgebeurtenis.plaats": {
+          "plaats": {
             "$ref": "#/components/schemas/Plaats"
           }
         },
@@ -8205,7 +8205,7 @@
             "description": "Object type (klasse Persoonsgebeurtenis)",
             "pattern": "^Persoonsgebeurtenis$"
           },
-          "Persoonsgebeurtenis.datum": {
+          "datum": {
             "type": "object",
             "description": "Datum waarop de gebeurtenis plaatsvond.",
             "properties": {
@@ -8223,7 +8223,7 @@
               "@type"
             ]
           },
-          "Persoonsgebeurtenis.plaats": {
+          "plaats": {
             "$ref": "#/components/schemas/Plaats"
           },
           "@context": {
@@ -8252,7 +8252,7 @@
             "description": "Object type (klasse Geboorte)",
             "pattern": "^Geboorte$"
           },
-          "Persoonsgebeurtenis.datum": {
+          "datum": {
             "type": "object",
             "description": "Datum waarop de gebeurtenis plaatsvond.",
             "properties": {
@@ -8270,7 +8270,7 @@
               "@type"
             ]
           },
-          "Persoonsgebeurtenis.plaats": {
+          "plaats": {
             "$ref": "#/components/schemas/Plaats"
           }
         },
@@ -8293,7 +8293,7 @@
             "description": "Object type (klasse Geboorte)",
             "pattern": "^Geboorte$"
           },
-          "Persoonsgebeurtenis.datum": {
+          "datum": {
             "type": "object",
             "description": "Datum waarop de gebeurtenis plaatsvond.",
             "properties": {
@@ -8311,7 +8311,7 @@
               "@type"
             ]
           },
-          "Persoonsgebeurtenis.plaats": {
+          "plaats": {
             "$ref": "#/components/schemas/Plaats"
           },
           "@context": {
@@ -8340,10 +8340,10 @@
             "description": "Object type (klasse Huwelijk)",
             "pattern": "^Huwelijk$"
           },
-          "Persoonsrelatie.vanPersoon": {
+          "vanPersoon": {
             "$ref": "#/components/schemas/Persoon"
           },
-          "Persoonsrelatie.metPersoon": {
+          "metPersoon": {
             "$ref": "#/components/schemas/Persoon"
           }
         },
@@ -8368,10 +8368,10 @@
             "description": "Object type (klasse Huwelijk)",
             "pattern": "^Huwelijk$"
           },
-          "Persoonsrelatie.vanPersoon": {
+          "vanPersoon": {
             "$ref": "#/components/schemas/Persoon"
           },
-          "Persoonsrelatie.metPersoon": {
+          "metPersoon": {
             "$ref": "#/components/schemas/Persoon"
           },
           "@context": {
@@ -8410,13 +8410,13 @@
             },
             "minItems": 0
           },
-          "Registratie.geregistreerdPersoon": {
+          "geregistreerdPersoon": {
             "$ref": "#/components/schemas/GeregistreerdPersoon"
           },
-          "Registratie.vorigeRegistratie": {
+          "vorigeRegistratie": {
             "$ref": "#/components/schemas/Registratie"
           },
-          "Registratie.volgendeRegistratie": {
+          "volgendeRegistratie": {
             "$ref": "#/components/schemas/Registratie"
           }
         },
@@ -8448,13 +8448,13 @@
             },
             "minItems": 0
           },
-          "Registratie.geregistreerdPersoon": {
+          "geregistreerdPersoon": {
             "$ref": "#/components/schemas/GeregistreerdPersoon"
           },
-          "Registratie.vorigeRegistratie": {
+          "vorigeRegistratie": {
             "$ref": "#/components/schemas/Registratie"
           },
-          "Registratie.volgendeRegistratie": {
+          "volgendeRegistratie": {
             "$ref": "#/components/schemas/Registratie"
           },
           "@context": {
@@ -8484,7 +8484,7 @@
             "description": "Object type (klasse Versie)",
             "pattern": "^Versie$"
           },
-          "Versie.creatiedatum": {
+          "creatiedatum": {
             "type": "object",
             "description": "Datum waarop de gegevens zijn ingevoerd.",
             "properties": {
@@ -8502,7 +8502,7 @@
               "@type"
             ]
           },
-          "Versie.modificatiedatum": {
+          "modificatiedatum": {
             "type": "object",
             "description": "Datum waarop de gegevens werden bijgewerkt.",
             "properties": {
@@ -8520,7 +8520,7 @@
               "@type"
             ]
           },
-          "Versie.bron": {
+          "bron": {
             "$ref": "#/components/schemas/Organisatie"
           }
         },
@@ -8545,7 +8545,7 @@
             "description": "Object type (klasse Versie)",
             "pattern": "^Versie$"
           },
-          "Versie.creatiedatum": {
+          "creatiedatum": {
             "type": "object",
             "description": "Datum waarop de gegevens zijn ingevoerd.",
             "properties": {
@@ -8563,7 +8563,7 @@
               "@type"
             ]
           },
-          "Versie.modificatiedatum": {
+          "modificatiedatum": {
             "type": "object",
             "description": "Datum waarop de gegevens werden bijgewerkt.",
             "properties": {
@@ -8581,7 +8581,7 @@
               "@type"
             ]
           },
-          "Versie.bron": {
+          "bron": {
             "$ref": "#/components/schemas/Organisatie"
           },
           "@context": {
@@ -8658,7 +8658,7 @@
             "description": "Object type (klasse HttpApiProbleemdetail)",
             "pattern": "^HttpApiProbleemdetail$"
           },
-          "HttpApiProbleemdetail.type": {
+          "type": {
             "type": "object",
             "description": "Aard van de fout.",
             "properties": {
@@ -8671,7 +8671,7 @@
               "@id"
             ]
           },
-          "HttpApiProbleemdetail.titel": {
+          "titel": {
             "type": "object",
             "description": "Korte mensleesbare beschrijving van de fout.",
             "properties": {
@@ -8688,7 +8688,7 @@
               "@language"
             ]
           },
-          "HttpApiProbleemdetail.status": {
+          "status": {
             "type": "object",
             "description": "HTTP foutcode. Zoals beschreven in <a href=\"https://www.rfc-editor.org/rfc/rfc7231\">rfc7231</a>. Bvb 404 voor \"Not Found\".",
             "properties": {
@@ -8706,7 +8706,7 @@
               "@type"
             ]
           },
-          "HttpApiProbleemdetail.detail": {
+          "detail": {
             "type": "object",
             "description": "Mensleesbare beschrijving van de fout.",
             "properties": {
@@ -8723,7 +8723,7 @@
               "@language"
             ]
           },
-          "HttpApiProbleemdetail.instantie": {
+          "instantie": {
             "type": "object",
             "description": "Verwijzing naar de instantie van het object waarop de fout betrekking heeft. Bvb verwijzing naar de request.",
             "properties": {
@@ -8758,7 +8758,7 @@
             "description": "Object type (klasse HttpApiProbleemdetail)",
             "pattern": "^HttpApiProbleemdetail$"
           },
-          "HttpApiProbleemdetail.type": {
+          "type": {
             "type": "object",
             "description": "Aard van de fout.",
             "properties": {
@@ -8771,7 +8771,7 @@
               "@id"
             ]
           },
-          "HttpApiProbleemdetail.titel": {
+          "titel": {
             "type": "object",
             "description": "Korte mensleesbare beschrijving van de fout.",
             "properties": {
@@ -8788,7 +8788,7 @@
               "@language"
             ]
           },
-          "HttpApiProbleemdetail.status": {
+          "status": {
             "type": "object",
             "description": "HTTP foutcode. Zoals beschreven in <a href=\"https://www.rfc-editor.org/rfc/rfc7231\">rfc7231</a>. Bvb 404 voor \"Not Found\".",
             "properties": {
@@ -8806,7 +8806,7 @@
               "@type"
             ]
           },
-          "HttpApiProbleemdetail.detail": {
+          "detail": {
             "type": "object",
             "description": "Mensleesbare beschrijving van de fout.",
             "properties": {
@@ -8823,7 +8823,7 @@
               "@language"
             ]
           },
-          "HttpApiProbleemdetail.instantie": {
+          "instantie": {
             "type": "object",
             "description": "Verwijzing naar de instantie van het object waarop de fout betrekking heeft. Bvb verwijzing naar de request.",
             "properties": {
@@ -8864,10 +8864,10 @@
             "description": "Object type (klasse Inwonerschap)",
             "pattern": "^Inwonerschap$"
           },
-          "Inwonerschap.persoon": {
+          "persoon": {
             "$ref": "#/components/schemas/Persoon"
           },
-          "Inwonerschap.jurisdictie": {
+          "jurisdictie": {
             "$ref": "#/components/schemas/Jurisdictie"
           },
           "heeftVerblijfplaats": {
@@ -8930,10 +8930,10 @@
             "description": "Object type (klasse Inwonerschap)",
             "pattern": "^Inwonerschap$"
           },
-          "Inwonerschap.persoon": {
+          "persoon": {
             "$ref": "#/components/schemas/Persoon"
           },
-          "Inwonerschap.jurisdictie": {
+          "jurisdictie": {
             "$ref": "#/components/schemas/Jurisdictie"
           },
           "heeftVerblijfplaats": {
@@ -9002,7 +9002,7 @@
             "description": "Object type (klasse GeregistreerdeOrganisatie)",
             "pattern": "^GeregistreerdeOrganisatie$"
           },
-          "GeregistreerdeOrganisatie.wettelijkeNaam": {
+          "wettelijkeNaam": {
             "type": "object",
             "description": "Wettelijk geregistreerde naam vd organisatie. Evt in verschillende talen.",
             "properties": {
@@ -9019,10 +9019,10 @@
               "@language"
             ]
           },
-          "GeregistreerdeOrganisatie.registratie": {
+          "registratie": {
             "$ref": "#/components/schemas/Identificator"
           },
-          "Organisatie.voorkeursnaam": {
+          "voorkeursnaam": {
             "type": "object",
             "description": "Naam waarmee de Organisatie bij voorkeur wordt aangeduid.",
             "properties": {
@@ -9067,7 +9067,7 @@
             "description": "Object type (klasse GeregistreerdeOrganisatie)",
             "pattern": "^GeregistreerdeOrganisatie$"
           },
-          "GeregistreerdeOrganisatie.wettelijkeNaam": {
+          "wettelijkeNaam": {
             "type": "object",
             "description": "Wettelijk geregistreerde naam vd organisatie. Evt in verschillende talen.",
             "properties": {
@@ -9084,10 +9084,10 @@
               "@language"
             ]
           },
-          "GeregistreerdeOrganisatie.registratie": {
+          "registratie": {
             "$ref": "#/components/schemas/Identificator"
           },
-          "Organisatie.voorkeursnaam": {
+          "voorkeursnaam": {
             "type": "object",
             "description": "Naam waarmee de Organisatie bij voorkeur wordt aangeduid.",
             "properties": {
@@ -9138,7 +9138,7 @@
             "description": "Object type (klasse Organisatie)",
             "pattern": "^Organisatie$"
           },
-          "Organisatie.voorkeursnaam": {
+          "voorkeursnaam": {
             "type": "object",
             "description": "Naam waarmee de Organisatie bij voorkeur wordt aangeduid.",
             "properties": {
@@ -9183,7 +9183,7 @@
             "description": "Object type (klasse Organisatie)",
             "pattern": "^Organisatie$"
           },
-          "Organisatie.voorkeursnaam": {
+          "voorkeursnaam": {
             "type": "object",
             "description": "Naam waarmee de Organisatie bij voorkeur wordt aangeduid.",
             "properties": {
@@ -9234,10 +9234,10 @@
             "description": "Object type (klasse Samenwonen)",
             "pattern": "^Samenwonen$"
           },
-          "Persoonsrelatie.vanPersoon": {
+          "vanPersoon": {
             "$ref": "#/components/schemas/Persoon"
           },
-          "Persoonsrelatie.metPersoon": {
+          "metPersoon": {
             "$ref": "#/components/schemas/Persoon"
           }
         },
@@ -9262,10 +9262,10 @@
             "description": "Object type (klasse Samenwonen)",
             "pattern": "^Samenwonen$"
           },
-          "Persoonsrelatie.vanPersoon": {
+          "vanPersoon": {
             "$ref": "#/components/schemas/Persoon"
           },
-          "Persoonsrelatie.metPersoon": {
+          "metPersoon": {
             "$ref": "#/components/schemas/Persoon"
           },
           "@context": {
@@ -9296,13 +9296,13 @@
             "description": "Object type (klasse GeregistreerdPersoon)",
             "pattern": "^GeregistreerdPersoon$"
           },
-          "GeregistreerdPersoon.registratie": {
+          "registratie": {
             "$ref": "#/components/schemas/Identificator"
           },
-          "GeregistreerdPersoon.beheerder": {
+          "beheerder": {
             "$ref": "#/components/schemas/AdministratiefBeheerder"
           },
-          "GeregistreerdPersoon.registratiedetail": {
+          "registratiedetail": {
             "$ref": "#/components/schemas/Registratie"
           },
           "voornaam": {
@@ -9339,28 +9339,28 @@
             },
             "minItems": 0
           },
-          "Persoon.contactinfo": {
+          "contactinfo": {
             "$ref": "#/components/schemas/Contactinfo"
           },
-          "Persoon.geslacht": {
+          "geslacht": {
             "$ref": "#/components/schemas/Geslacht"
           },
-          "Persoon.isHoofdVan": {
+          "isHoofdVan": {
             "$ref": "#/components/schemas/Gezin"
           },
-          "Persoon.heeftBurgerlijkeStaat": {
+          "heeftBurgerlijkeStaat": {
             "$ref": "#/components/schemas/BurgerlijkeStaat"
           },
-          "Persoon.heeftGeboorte": {
+          "heeftGeboorte": {
             "$ref": "#/components/schemas/Geboorte"
           },
-          "Persoon.heeftOverlijden": {
+          "heeftOverlijden": {
             "$ref": "#/components/schemas/Overlijden"
           },
-          "Persoon.heeftInwonerschap": {
+          "heeftInwonerschap": {
             "$ref": "#/components/schemas/Inwonerschap"
           },
-          "Persoon.heeftPersoonsrelatie": {
+          "heeftPersoonsrelatie": {
             "oneOf": [
               {
                 "$ref": "#/components/schemas/Persoonsrelatie"
@@ -9397,7 +9397,7 @@
             },
             "minItems": 0
           },
-          "Versie.creatiedatum": {
+          "creatiedatum": {
             "type": "object",
             "description": "Datum waarop de gegevens zijn ingevoerd.",
             "properties": {
@@ -9415,7 +9415,7 @@
               "@type"
             ]
           },
-          "Versie.modificatiedatum": {
+          "modificatiedatum": {
             "type": "object",
             "description": "Datum waarop de gegevens werden bijgewerkt.",
             "properties": {
@@ -9433,7 +9433,7 @@
               "@type"
             ]
           },
-          "Versie.bron": {
+          "bron": {
             "$ref": "#/components/schemas/Organisatie"
           }
         },
@@ -9460,13 +9460,13 @@
             "description": "Object type (klasse GeregistreerdPersoon)",
             "pattern": "^GeregistreerdPersoon$"
           },
-          "GeregistreerdPersoon.registratie": {
+          "registratie": {
             "$ref": "#/components/schemas/Identificator"
           },
-          "GeregistreerdPersoon.beheerder": {
+          "beheerder": {
             "$ref": "#/components/schemas/AdministratiefBeheerder"
           },
-          "GeregistreerdPersoon.registratiedetail": {
+          "registratiedetail": {
             "$ref": "#/components/schemas/Registratie"
           },
           "voornaam": {
@@ -9503,28 +9503,28 @@
             },
             "minItems": 0
           },
-          "Persoon.contactinfo": {
+          "contactinfo": {
             "$ref": "#/components/schemas/Contactinfo"
           },
-          "Persoon.geslacht": {
+          "geslacht": {
             "$ref": "#/components/schemas/Geslacht"
           },
-          "Persoon.isHoofdVan": {
+          "isHoofdVan": {
             "$ref": "#/components/schemas/Gezin"
           },
-          "Persoon.heeftBurgerlijkeStaat": {
+          "heeftBurgerlijkeStaat": {
             "$ref": "#/components/schemas/BurgerlijkeStaat"
           },
-          "Persoon.heeftGeboorte": {
+          "heeftGeboorte": {
             "$ref": "#/components/schemas/Geboorte"
           },
-          "Persoon.heeftOverlijden": {
+          "heeftOverlijden": {
             "$ref": "#/components/schemas/Overlijden"
           },
-          "Persoon.heeftInwonerschap": {
+          "heeftInwonerschap": {
             "$ref": "#/components/schemas/Inwonerschap"
           },
-          "Persoon.heeftPersoonsrelatie": {
+          "heeftPersoonsrelatie": {
             "oneOf": [
               {
                 "$ref": "#/components/schemas/Persoonsrelatie"
@@ -9561,7 +9561,7 @@
             },
             "minItems": 0
           },
-          "Versie.creatiedatum": {
+          "creatiedatum": {
             "type": "object",
             "description": "Datum waarop de gegevens zijn ingevoerd.",
             "properties": {
@@ -9579,7 +9579,7 @@
               "@type"
             ]
           },
-          "Versie.modificatiedatum": {
+          "modificatiedatum": {
             "type": "object",
             "description": "Datum waarop de gegevens werden bijgewerkt.",
             "properties": {
@@ -9597,7 +9597,7 @@
               "@type"
             ]
           },
-          "Versie.bron": {
+          "bron": {
             "$ref": "#/components/schemas/Organisatie"
           },
           "@context": {
@@ -9630,10 +9630,7 @@
             "description": "Object type (klasse Domicilie)",
             "pattern": "^Domicilie$"
           },
-          "Domicilie.verblijfsadres": {
-            "$ref": "#/components/schemas/BelgischAdres"
-          },
-          "Verblijfplaats.verblijfsadres": {
+          "verblijfsadres": {
             "$ref": "#/components/schemas/Adresvoorstelling"
           }
         },
@@ -9656,10 +9653,7 @@
             "description": "Object type (klasse Domicilie)",
             "pattern": "^Domicilie$"
           },
-          "Domicilie.verblijfsadres": {
-            "$ref": "#/components/schemas/BelgischAdres"
-          },
-          "Verblijfplaats.verblijfsadres": {
+          "verblijfsadres": {
             "$ref": "#/components/schemas/Adresvoorstelling"
           },
           "@context": {
@@ -9688,7 +9682,7 @@
             "description": "Object type (klasse Verblijfplaats)",
             "pattern": "^Verblijfplaats$"
           },
-          "Verblijfplaats.verblijfsadres": {
+          "verblijfsadres": {
             "$ref": "#/components/schemas/Adresvoorstelling"
           }
         },
@@ -9711,7 +9705,7 @@
             "description": "Object type (klasse Verblijfplaats)",
             "pattern": "^Verblijfplaats$"
           },
-          "Verblijfplaats.verblijfsadres": {
+          "verblijfsadres": {
             "$ref": "#/components/schemas/Adresvoorstelling"
           },
           "@context": {
@@ -9740,7 +9734,7 @@
             "description": "Object type (klasse Afstamming)",
             "pattern": "^Afstamming$"
           },
-          "Afstamming.datumVanAfstamming": {
+          "datumVanAfstamming": {
             "type": "object",
             "description": "De datum waarop de afstamming wordt vastgesteld.",
             "properties": {
@@ -9758,13 +9752,13 @@
               "@type"
             ]
           },
-          "Afstamming.afstammingstype": {
+          "afstammingstype": {
             "$ref": "#/components/schemas/Afstammingstype"
           },
-          "Persoonsrelatie.vanPersoon": {
+          "vanPersoon": {
             "$ref": "#/components/schemas/Persoon"
           },
-          "Persoonsrelatie.metPersoon": {
+          "metPersoon": {
             "$ref": "#/components/schemas/Persoon"
           }
         },
@@ -9789,7 +9783,7 @@
             "description": "Object type (klasse Afstamming)",
             "pattern": "^Afstamming$"
           },
-          "Afstamming.datumVanAfstamming": {
+          "datumVanAfstamming": {
             "type": "object",
             "description": "De datum waarop de afstamming wordt vastgesteld.",
             "properties": {
@@ -9807,13 +9801,13 @@
               "@type"
             ]
           },
-          "Afstamming.afstammingstype": {
+          "afstammingstype": {
             "$ref": "#/components/schemas/Afstammingstype"
           },
-          "Persoonsrelatie.vanPersoon": {
+          "vanPersoon": {
             "$ref": "#/components/schemas/Persoon"
           },
-          "Persoonsrelatie.metPersoon": {
+          "metPersoon": {
             "$ref": "#/components/schemas/Persoon"
           },
           "@context": {
@@ -9890,10 +9884,7 @@
             "description": "Object type (klasse AangegevenAdres)",
             "pattern": "^AangegevenAdres$"
           },
-          "Domicilie.verblijfsadres": {
-            "$ref": "#/components/schemas/BelgischAdres"
-          },
-          "Verblijfplaats.verblijfsadres": {
+          "verblijfsadres": {
             "$ref": "#/components/schemas/Adresvoorstelling"
           }
         },
@@ -9916,10 +9907,7 @@
             "description": "Object type (klasse AangegevenAdres)",
             "pattern": "^AangegevenAdres$"
           },
-          "Domicilie.verblijfsadres": {
-            "$ref": "#/components/schemas/BelgischAdres"
-          },
-          "Verblijfplaats.verblijfsadres": {
+          "verblijfsadres": {
             "$ref": "#/components/schemas/Adresvoorstelling"
           },
           "@context": {
@@ -9948,7 +9936,7 @@
             "description": "Object type (klasse Afwezig)",
             "pattern": "^Afwezig$"
           },
-          "Verblijfplaats.verblijfsadres": {
+          "verblijfsadres": {
             "$ref": "#/components/schemas/Adresvoorstelling"
           }
         },
@@ -9971,7 +9959,7 @@
             "description": "Object type (klasse Afwezig)",
             "pattern": "^Afwezig$"
           },
-          "Verblijfplaats.verblijfsadres": {
+          "verblijfsadres": {
             "$ref": "#/components/schemas/Adresvoorstelling"
           },
           "@context": {
@@ -10046,7 +10034,7 @@
             "description": "Object type (klasse Jurisdictie)",
             "pattern": "^Jurisdictie$"
           },
-          "Jurisdictie.plaats": {
+          "plaats": {
             "$ref": "#/components/schemas/Plaats"
           }
         },
@@ -10069,7 +10057,7 @@
             "description": "Object type (klasse Jurisdictie)",
             "pattern": "^Jurisdictie$"
           },
-          "Jurisdictie.plaats": {
+          "plaats": {
             "$ref": "#/components/schemas/Plaats"
           },
           "@context": {
@@ -10144,13 +10132,13 @@
             "description": "Object type (klasse Gezin)",
             "pattern": "^Gezin$"
           },
-          "Gezin.gezinsadres": {
+          "gezinsadres": {
             "$ref": "#/components/schemas/Adresvoorstelling"
           },
-          "Gezin.woonvorm": {
+          "woonvorm": {
             "$ref": "#/components/schemas/Woonvormtype"
           },
-          "Gezin.gezinshoofd": {
+          "gezinshoofd": {
             "$ref": "#/components/schemas/Persoon"
           },
           "gezinslid": {
@@ -10181,13 +10169,13 @@
             "description": "Object type (klasse Gezin)",
             "pattern": "^Gezin$"
           },
-          "Gezin.gezinsadres": {
+          "gezinsadres": {
             "$ref": "#/components/schemas/Adresvoorstelling"
           },
-          "Gezin.woonvorm": {
+          "woonvorm": {
             "$ref": "#/components/schemas/Woonvormtype"
           },
-          "Gezin.gezinshoofd": {
+          "gezinshoofd": {
             "$ref": "#/components/schemas/Persoon"
           },
           "gezinslid": {
@@ -10224,10 +10212,10 @@
             "description": "Object type (klasse BurgerlijkeStaat)",
             "pattern": "^BurgerlijkeStaat$"
           },
-          "BurgerlijkeStaat.plaats": {
+          "plaats": {
             "$ref": "#/components/schemas/Plaats"
           },
-          "BurgerlijkeStaat.type": {
+          "type": {
             "$ref": "#/components/schemas/BurgerlijkeStaatType"
           }
         },
@@ -10250,10 +10238,10 @@
             "description": "Object type (klasse BurgerlijkeStaat)",
             "pattern": "^BurgerlijkeStaat$"
           },
-          "BurgerlijkeStaat.plaats": {
+          "plaats": {
             "$ref": "#/components/schemas/Plaats"
           },
-          "BurgerlijkeStaat.type": {
+          "type": {
             "$ref": "#/components/schemas/BurgerlijkeStaatType"
           },
           "@context": {
@@ -10282,7 +10270,7 @@
             "description": "Object type (klasse Postadres)",
             "pattern": "^Postadres$"
           },
-          "Verblijfplaats.verblijfsadres": {
+          "verblijfsadres": {
             "$ref": "#/components/schemas/Adresvoorstelling"
           }
         },
@@ -10305,7 +10293,7 @@
             "description": "Object type (klasse Postadres)",
             "pattern": "^Postadres$"
           },
-          "Verblijfplaats.verblijfsadres": {
+          "verblijfsadres": {
             "$ref": "#/components/schemas/Adresvoorstelling"
           },
           "@context": {
@@ -10334,10 +10322,7 @@
             "description": "Object type (klasse Referentieadres)",
             "pattern": "^Referentieadres$"
           },
-          "Domicilie.verblijfsadres": {
-            "$ref": "#/components/schemas/BelgischAdres"
-          },
-          "Verblijfplaats.verblijfsadres": {
+          "verblijfsadres": {
             "$ref": "#/components/schemas/Adresvoorstelling"
           }
         },
@@ -10360,10 +10345,7 @@
             "description": "Object type (klasse Referentieadres)",
             "pattern": "^Referentieadres$"
           },
-          "Domicilie.verblijfsadres": {
-            "$ref": "#/components/schemas/BelgischAdres"
-          },
-          "Verblijfplaats.verblijfsadres": {
+          "verblijfsadres": {
             "$ref": "#/components/schemas/Adresvoorstelling"
           },
           "@context": {
@@ -10392,13 +10374,7 @@
             "description": "Object type (klasse VerblijfplaatsBuitenlandDomicilie)",
             "pattern": "^VerblijfplaatsBuitenlandDomicilie$"
           },
-          "VerblijfplaatsBuitenlandDomicilie.verblijfsadres": {
-            "$ref": "#/components/schemas/Adresvoorstelling"
-          },
-          "Domicilie.verblijfsadres": {
-            "$ref": "#/components/schemas/BelgischAdres"
-          },
-          "Verblijfplaats.verblijfsadres": {
+          "verblijfsadres": {
             "$ref": "#/components/schemas/Adresvoorstelling"
           }
         },
@@ -10421,13 +10397,7 @@
             "description": "Object type (klasse VerblijfplaatsBuitenlandDomicilie)",
             "pattern": "^VerblijfplaatsBuitenlandDomicilie$"
           },
-          "VerblijfplaatsBuitenlandDomicilie.verblijfsadres": {
-            "$ref": "#/components/schemas/Adresvoorstelling"
-          },
-          "Domicilie.verblijfsadres": {
-            "$ref": "#/components/schemas/BelgischAdres"
-          },
-          "Verblijfplaats.verblijfsadres": {
+          "verblijfsadres": {
             "$ref": "#/components/schemas/Adresvoorstelling"
           },
           "@context": {
@@ -10456,7 +10426,7 @@
             "description": "Object type (klasse VerblijfplaatsBuitenland)",
             "pattern": "^VerblijfplaatsBuitenland$"
           },
-          "Verblijfplaats.verblijfsadres": {
+          "verblijfsadres": {
             "$ref": "#/components/schemas/Adresvoorstelling"
           }
         },
@@ -10479,7 +10449,7 @@
             "description": "Object type (klasse VerblijfplaatsBuitenland)",
             "pattern": "^VerblijfplaatsBuitenland$"
           },
-          "Verblijfplaats.verblijfsadres": {
+          "verblijfsadres": {
             "$ref": "#/components/schemas/Adresvoorstelling"
           },
           "@context": {
@@ -10508,7 +10478,7 @@
             "description": "Object type (klasse WettelijkVerblijf)",
             "pattern": "^WettelijkVerblijf$"
           },
-          "Verblijfplaats.verblijfsadres": {
+          "verblijfsadres": {
             "$ref": "#/components/schemas/Adresvoorstelling"
           }
         },
@@ -10531,7 +10501,7 @@
             "description": "Object type (klasse WettelijkVerblijf)",
             "pattern": "^WettelijkVerblijf$"
           },
-          "Verblijfplaats.verblijfsadres": {
+          "verblijfsadres": {
             "$ref": "#/components/schemas/Adresvoorstelling"
           },
           "@context": {
@@ -10560,10 +10530,10 @@
             "description": "Object type (klasse AdministratiefBeheerder)",
             "pattern": "^AdministratiefBeheerder$"
           },
-          "AdministratiefBeheerder.type": {
+          "type": {
             "$ref": "#/components/schemas/AdministratiefBeheerdertype"
           },
-          "Organisatie.voorkeursnaam": {
+          "voorkeursnaam": {
             "type": "object",
             "description": "Naam waarmee de Organisatie bij voorkeur wordt aangeduid.",
             "properties": {
@@ -10608,10 +10578,10 @@
             "description": "Object type (klasse AdministratiefBeheerder)",
             "pattern": "^AdministratiefBeheerder$"
           },
-          "AdministratiefBeheerder.type": {
+          "type": {
             "$ref": "#/components/schemas/AdministratiefBeheerdertype"
           },
-          "Organisatie.voorkeursnaam": {
+          "voorkeursnaam": {
             "type": "object",
             "description": "Naam waarmee de Organisatie bij voorkeur wordt aangeduid.",
             "properties": {
@@ -10662,7 +10632,7 @@
             "description": "Object type (klasse Locatie)",
             "pattern": "^Locatie$"
           },
-          "Jurisdictie.plaats": {
+          "plaats": {
             "$ref": "#/components/schemas/Plaats"
           }
         },
@@ -10685,7 +10655,7 @@
             "description": "Object type (klasse Locatie)",
             "pattern": "^Locatie$"
           },
-          "Jurisdictie.plaats": {
+          "plaats": {
             "$ref": "#/components/schemas/Plaats"
           },
           "@context": {
@@ -10714,7 +10684,7 @@
             "description": "Object type (klasse Adresvoorstelling)",
             "pattern": "^Adresvoorstelling$"
           },
-          "Adresvoorstelling.administratieveEenheidNiveau1": {
+          "administratieveEenheidNiveau1": {
             "type": "object",
             "description": "Hoogste Administratieve eenheid van het adres, doorgaans een land.",
             "properties": {
@@ -10731,7 +10701,7 @@
               "@language"
             ]
           },
-          "Adresvoorstelling.administratieveEenheidNiveau2": {
+          "administratieveEenheidNiveau2": {
             "type": "object",
             "description": "De regio van het adres, doorgaans een provincie of deelstaat of gelijkaardig gebied dat typisch meerdere plaatsen omvat.",
             "properties": {
@@ -10748,7 +10718,7 @@
               "@language"
             ]
           },
-          "Adresvoorstelling.adresgebied": {
+          "adresgebied": {
             "type": "object",
             "description": "Naam van een geografisch gebied of plaats die een aantal adresseerbare objecten groepeert om deze te adresseren zonder dat het gebied of de plaats een administratieve eenheid is. Bvb de naam van het gehucht waarin het adres ligt.",
             "properties": {
@@ -10765,7 +10735,7 @@
               "@language"
             ]
           },
-          "Adresvoorstelling.busnummer": {
+          "busnummer": {
             "type": "object",
             "description": "Officieel toegekende alfanumerieke code die wordt toegevoegd aan het huisnummer om meerdere gebouweenheden, standplaatsen, ligplaatsen of percelen te onderscheiden die eenzelfde huisnummer hebben. Specialisatie van Adresvoorstelling:locatieaanduiding ten behoeve van Belgische adressen.",
             "properties": {
@@ -10777,7 +10747,7 @@
               "@value"
             ]
           },
-          "Adresvoorstelling.gemeentenaam": {
+          "gemeentenaam": {
             "type": "object",
             "description": "Gemeentenaam van het adres.",
             "properties": {
@@ -10794,7 +10764,7 @@
               "@language"
             ]
           },
-          "Adresvoorstelling.huisnummer": {
+          "huisnummer": {
             "type": "object",
             "description": "Alfanumerieke code officieel toegekend aan gebouweenheden, ligplaatsen, standplaatsen of percelen. Specialisatie van Adresvoorstelling:locatieaanduiding tbv Belgische adressen.",
             "properties": {
@@ -10806,7 +10776,7 @@
               "@value"
             ]
           },
-          "Adresvoorstelling.land": {
+          "land": {
             "type": "object",
             "description": "Land waarin het adres gelegen is.",
             "properties": {
@@ -10862,7 +10832,7 @@
             },
             "minItems": 0
           },
-          "Adresvoorstelling.postbus": {
+          "postbus": {
             "type": "object",
             "description": "Postbusnummer in een postkantoor.",
             "properties": {
@@ -10874,7 +10844,7 @@
               "@value"
             ]
           },
-          "Adresvoorstelling.postcode": {
+          "postcode": {
             "type": "object",
             "description": "Code waarmee het geografisch gebied dat adressen voor postale doeleinden groepeert wordt aangeduid.",
             "properties": {
@@ -10886,7 +10856,7 @@
               "@value"
             ]
           },
-          "Adresvoorstelling.postnaam": {
+          "postnaam": {
             "type": "object",
             "description": "Naam waarmee het geografisch gebied dat adressen voor postale doeleinden groepeert wordt aangeduid.",
             "properties": {
@@ -10903,7 +10873,7 @@
               "@language"
             ]
           },
-          "Adresvoorstelling.straatnaam": {
+          "straatnaam": {
             "type": "object",
             "description": "Straatnaam van het adres.",
             "properties": {
@@ -10920,7 +10890,7 @@
               "@language"
             ]
           },
-          "Adresvoorstelling.volledigAdres": {
+          "volledigAdres": {
             "type": "object",
             "description": "Het complete adres in één string, al dan niet geformatteerd. Vermijdt fouten ten gevolge van het opsplitsen van een adres in zijn onderdelen. Geeft de voorgeschreven volgorde van de verschillende onderdelen weer.",
             "properties": {
@@ -10937,10 +10907,10 @@
               "@language"
             ]
           },
-          "Adresvoorstelling.verwijstNaar": {
+          "verwijstNaar": {
             "$ref": "#/components/schemas/BelgischAdres"
           },
-          "Jurisdictie.plaats": {
+          "plaats": {
             "$ref": "#/components/schemas/Plaats"
           }
         },
@@ -10963,7 +10933,7 @@
             "description": "Object type (klasse Adresvoorstelling)",
             "pattern": "^Adresvoorstelling$"
           },
-          "Adresvoorstelling.administratieveEenheidNiveau1": {
+          "administratieveEenheidNiveau1": {
             "type": "object",
             "description": "Hoogste Administratieve eenheid van het adres, doorgaans een land.",
             "properties": {
@@ -10980,7 +10950,7 @@
               "@language"
             ]
           },
-          "Adresvoorstelling.administratieveEenheidNiveau2": {
+          "administratieveEenheidNiveau2": {
             "type": "object",
             "description": "De regio van het adres, doorgaans een provincie of deelstaat of gelijkaardig gebied dat typisch meerdere plaatsen omvat.",
             "properties": {
@@ -10997,7 +10967,7 @@
               "@language"
             ]
           },
-          "Adresvoorstelling.adresgebied": {
+          "adresgebied": {
             "type": "object",
             "description": "Naam van een geografisch gebied of plaats die een aantal adresseerbare objecten groepeert om deze te adresseren zonder dat het gebied of de plaats een administratieve eenheid is. Bvb de naam van het gehucht waarin het adres ligt.",
             "properties": {
@@ -11014,7 +10984,7 @@
               "@language"
             ]
           },
-          "Adresvoorstelling.busnummer": {
+          "busnummer": {
             "type": "object",
             "description": "Officieel toegekende alfanumerieke code die wordt toegevoegd aan het huisnummer om meerdere gebouweenheden, standplaatsen, ligplaatsen of percelen te onderscheiden die eenzelfde huisnummer hebben. Specialisatie van Adresvoorstelling:locatieaanduiding ten behoeve van Belgische adressen.",
             "properties": {
@@ -11026,7 +10996,7 @@
               "@value"
             ]
           },
-          "Adresvoorstelling.gemeentenaam": {
+          "gemeentenaam": {
             "type": "object",
             "description": "Gemeentenaam van het adres.",
             "properties": {
@@ -11043,7 +11013,7 @@
               "@language"
             ]
           },
-          "Adresvoorstelling.huisnummer": {
+          "huisnummer": {
             "type": "object",
             "description": "Alfanumerieke code officieel toegekend aan gebouweenheden, ligplaatsen, standplaatsen of percelen. Specialisatie van Adresvoorstelling:locatieaanduiding tbv Belgische adressen.",
             "properties": {
@@ -11055,7 +11025,7 @@
               "@value"
             ]
           },
-          "Adresvoorstelling.land": {
+          "land": {
             "type": "object",
             "description": "Land waarin het adres gelegen is.",
             "properties": {
@@ -11111,7 +11081,7 @@
             },
             "minItems": 0
           },
-          "Adresvoorstelling.postbus": {
+          "postbus": {
             "type": "object",
             "description": "Postbusnummer in een postkantoor.",
             "properties": {
@@ -11123,7 +11093,7 @@
               "@value"
             ]
           },
-          "Adresvoorstelling.postcode": {
+          "postcode": {
             "type": "object",
             "description": "Code waarmee het geografisch gebied dat adressen voor postale doeleinden groepeert wordt aangeduid.",
             "properties": {
@@ -11135,7 +11105,7 @@
               "@value"
             ]
           },
-          "Adresvoorstelling.postnaam": {
+          "postnaam": {
             "type": "object",
             "description": "Naam waarmee het geografisch gebied dat adressen voor postale doeleinden groepeert wordt aangeduid.",
             "properties": {
@@ -11152,7 +11122,7 @@
               "@language"
             ]
           },
-          "Adresvoorstelling.straatnaam": {
+          "straatnaam": {
             "type": "object",
             "description": "Straatnaam van het adres.",
             "properties": {
@@ -11169,7 +11139,7 @@
               "@language"
             ]
           },
-          "Adresvoorstelling.volledigAdres": {
+          "volledigAdres": {
             "type": "object",
             "description": "Het complete adres in één string, al dan niet geformatteerd. Vermijdt fouten ten gevolge van het opsplitsen van een adres in zijn onderdelen. Geeft de voorgeschreven volgorde van de verschillende onderdelen weer.",
             "properties": {
@@ -11186,10 +11156,10 @@
               "@language"
             ]
           },
-          "Adresvoorstelling.verwijstNaar": {
+          "verwijstNaar": {
             "$ref": "#/components/schemas/BelgischAdres"
           },
-          "Jurisdictie.plaats": {
+          "plaats": {
             "$ref": "#/components/schemas/Plaats"
           },
           "@context": {
@@ -11218,7 +11188,7 @@
             "description": "Object type (klasse Identificator)",
             "pattern": "^Identificator$"
           },
-          "Identificator.identificator": {
+          "identificator": {
             "type": "object",
             "description": "String gebruikt om het object uniek te identificeren. Type vd string slaat op het identificatiesysteem (incl de versie ervan), de string zelf op de eigenlijke identificator.",
             "properties": {
@@ -11250,7 +11220,7 @@
             "description": "Object type (klasse Identificator)",
             "pattern": "^Identificator$"
           },
-          "Identificator.identificator": {
+          "identificator": {
             "type": "object",
             "description": "String gebruikt om het object uniek te identificeren. Type vd string slaat op het identificatiesysteem (incl de versie ervan), de string zelf op de eigenlijke identificator.",
             "properties": {
@@ -11288,7 +11258,7 @@
             "description": "Object type (klasse Contactinfo)",
             "pattern": "^Contactinfo$"
           },
-          "Contactinfo.aanschrijfvorm": {
+          "aanschrijfvorm": {
             "type": "object",
             "description": "Titel waarmee iemand wordt aangeschreven of aangesproken of waarmee naar iemand wordt verwezen. Bijvoorbeeld: De heer/Mevrouw, Excellentie, Dokter, ...",
             "properties": {
@@ -11305,7 +11275,7 @@
               "@language"
             ]
           },
-          "Contactinfo.naam": {
+          "naam": {
             "type": "object",
             "description": "Naam van bijvoorbeeld de persoon die men kan contacteren.",
             "properties": {
@@ -11317,7 +11287,7 @@
               "@value"
             ]
           },
-          "Contactinfo.email": {
+          "email": {
             "type": "object",
             "description": "Email-adres waarnaar men kan mailen.",
             "properties": {
@@ -11329,7 +11299,7 @@
               "@value"
             ]
           },
-          "Contactinfo.faxnummer": {
+          "faxnummer": {
             "type": "object",
             "description": "Faxnummer waarnaar men kan faxen.",
             "properties": {
@@ -11341,7 +11311,7 @@
               "@value"
             ]
           },
-          "Contactinfo.telefoon": {
+          "telefoon": {
             "type": "object",
             "description": "Telefoonnummer waarop men kan bellen.",
             "properties": {
@@ -11353,7 +11323,7 @@
               "@value"
             ]
           },
-          "Contactinfo.website": {
+          "website": {
             "type": "object",
             "description": "Website waarnaar men kan surfen.",
             "properties": {
@@ -11366,7 +11336,7 @@
               "@id"
             ]
           },
-          "Contactinfo.adres": {
+          "adres": {
             "$ref": "#/components/schemas/Adresvoorstelling"
           }
         },
@@ -11389,7 +11359,7 @@
             "description": "Object type (klasse Contactinfo)",
             "pattern": "^Contactinfo$"
           },
-          "Contactinfo.aanschrijfvorm": {
+          "aanschrijfvorm": {
             "type": "object",
             "description": "Titel waarmee iemand wordt aangeschreven of aangesproken of waarmee naar iemand wordt verwezen. Bijvoorbeeld: De heer/Mevrouw, Excellentie, Dokter, ...",
             "properties": {
@@ -11406,7 +11376,7 @@
               "@language"
             ]
           },
-          "Contactinfo.naam": {
+          "naam": {
             "type": "object",
             "description": "Naam van bijvoorbeeld de persoon die men kan contacteren.",
             "properties": {
@@ -11418,7 +11388,7 @@
               "@value"
             ]
           },
-          "Contactinfo.email": {
+          "email": {
             "type": "object",
             "description": "Email-adres waarnaar men kan mailen.",
             "properties": {
@@ -11430,7 +11400,7 @@
               "@value"
             ]
           },
-          "Contactinfo.faxnummer": {
+          "faxnummer": {
             "type": "object",
             "description": "Faxnummer waarnaar men kan faxen.",
             "properties": {
@@ -11442,7 +11412,7 @@
               "@value"
             ]
           },
-          "Contactinfo.telefoon": {
+          "telefoon": {
             "type": "object",
             "description": "Telefoonnummer waarop men kan bellen.",
             "properties": {
@@ -11454,7 +11424,7 @@
               "@value"
             ]
           },
-          "Contactinfo.website": {
+          "website": {
             "type": "object",
             "description": "Website waarnaar men kan surfen.",
             "properties": {
@@ -11467,7 +11437,7 @@
               "@id"
             ]
           },
-          "Contactinfo.adres": {
+          "adres": {
             "$ref": "#/components/schemas/Adresvoorstelling"
           },
           "@context": {

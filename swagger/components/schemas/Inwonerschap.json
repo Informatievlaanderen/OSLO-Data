@@ -12,10 +12,10 @@
       "description": "Object type (klasse Inwonerschap)",
       "pattern": "^Inwonerschap$"
     },
-    "Inwonerschap.persoon": {
+    "persoon": {
       "$ref": "#/components/schemas/Persoon"
     },
-    "Inwonerschap.jurisdictie": {
+    "jurisdictie": {
       "$ref": "#/components/schemas/Jurisdictie"
     },
     "heeftVerblijfplaats": {

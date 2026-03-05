@@ -12,13 +12,13 @@
       "description": "Object type (klasse Gezinsrelatie)",
       "pattern": "^Gezinsrelatie$"
     },
-    "Gezinsrelatie.gezinsrelatietype": {
+    "gezinsrelatietype": {
       "$ref": "#/components/schemas/Gezinsrelatietype"
     },
-    "Persoonsrelatie.vanPersoon": {
+    "vanPersoon": {
       "$ref": "#/components/schemas/Persoon"
     },
-    "Persoonsrelatie.metPersoon": {
+    "metPersoon": {
       "$ref": "#/components/schemas/Persoon"
     },
     "@context": {

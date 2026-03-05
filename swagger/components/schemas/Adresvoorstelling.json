@@ -12,7 +12,7 @@
       "description": "Object type (klasse Adresvoorstelling)",
       "pattern": "^Adresvoorstelling$"
     },
-    "Adresvoorstelling.administratieveEenheidNiveau1": {
+    "administratieveEenheidNiveau1": {
       "type": "object",
       "description": "Hoogste Administratieve eenheid van het adres, doorgaans een land.",
       "properties": {
@@ -29,7 +29,7 @@
         "@language"
       ]
     },
-    "Adresvoorstelling.administratieveEenheidNiveau2": {
+    "administratieveEenheidNiveau2": {
       "type": "object",
       "description": "De regio van het adres, doorgaans een provincie of deelstaat of gelijkaardig gebied dat typisch meerdere plaatsen omvat.",
       "properties": {
@@ -46,7 +46,7 @@
         "@language"
       ]
     },
-    "Adresvoorstelling.adresgebied": {
+    "adresgebied": {
       "type": "object",
       "description": "Naam van een geografisch gebied of plaats die een aantal adresseerbare objecten groepeert om deze te adresseren zonder dat het gebied of de plaats een administratieve eenheid is. Bvb de naam van het gehucht waarin het adres ligt.",
       "properties": {
@@ -63,7 +63,7 @@
         "@language"
       ]
     },
-    "Adresvoorstelling.busnummer": {
+    "busnummer": {
       "type": "object",
       "description": "Officieel toegekende alfanumerieke code die wordt toegevoegd aan het huisnummer om meerdere gebouweenheden, standplaatsen, ligplaatsen of percelen te onderscheiden die eenzelfde huisnummer hebben. Specialisatie van Adresvoorstelling:locatieaanduiding ten behoeve van Belgische adressen.",
       "properties": {
@@ -75,7 +75,7 @@
         "@value"
       ]
     },
-    "Adresvoorstelling.gemeentenaam": {
+    "gemeentenaam": {
       "type": "object",
       "description": "Gemeentenaam van het adres.",
       "properties": {
@@ -92,7 +92,7 @@
         "@language"
       ]
     },
-    "Adresvoorstelling.huisnummer": {
+    "huisnummer": {
       "type": "object",
       "description": "Alfanumerieke code officieel toegekend aan gebouweenheden, ligplaatsen, standplaatsen of percelen. Specialisatie van Adresvoorstelling:locatieaanduiding tbv Belgische adressen.",
       "properties": {
@@ -104,7 +104,7 @@
         "@value"
       ]
     },
-    "Adresvoorstelling.land": {
+    "land": {
       "type": "object",
       "description": "Land waarin het adres gelegen is.",
       "properties": {
@@ -160,7 +160,7 @@
       },
       "minItems": 0
     },
-    "Adresvoorstelling.postbus": {
+    "postbus": {
       "type": "object",
       "description": "Postbusnummer in een postkantoor.",
       "properties": {
@@ -172,7 +172,7 @@
         "@value"
       ]
     },
-    "Adresvoorstelling.postcode": {
+    "postcode": {
       "type": "object",
       "description": "Code waarmee het geografisch gebied dat adressen voor postale doeleinden groepeert wordt aangeduid.",
       "properties": {
@@ -184,7 +184,7 @@
         "@value"
       ]
     },
-    "Adresvoorstelling.postnaam": {
+    "postnaam": {
       "type": "object",
       "description": "Naam waarmee het geografisch gebied dat adressen voor postale doeleinden groepeert wordt aangeduid.",
       "properties": {
@@ -201,7 +201,7 @@
         "@language"
       ]
     },
-    "Adresvoorstelling.straatnaam": {
+    "straatnaam": {
       "type": "object",
       "description": "Straatnaam van het adres.",
       "properties": {
@@ -218,7 +218,7 @@
         "@language"
       ]
     },
-    "Adresvoorstelling.volledigAdres": {
+    "volledigAdres": {
       "type": "object",
       "description": "Het complete adres in één string, al dan niet geformatteerd. Vermijdt fouten ten gevolge van het opsplitsen van een adres in zijn onderdelen. Geeft de voorgeschreven volgorde van de verschillende onderdelen weer.",
       "properties": {
@@ -235,10 +235,10 @@
         "@language"
       ]
     },
-    "Adresvoorstelling.verwijstNaar": {
+    "verwijstNaar": {
       "$ref": "#/components/schemas/BelgischAdres"
     },
-    "Jurisdictie.plaats": {
+    "plaats": {
       "$ref": "#/components/schemas/Plaats"
     }
   },

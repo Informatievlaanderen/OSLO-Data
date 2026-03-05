@@ -12,7 +12,7 @@
       "description": "Object type (klasse Organisatie)",
       "pattern": "^Organisatie$"
     },
-    "Organisatie.voorkeursnaam": {
+    "voorkeursnaam": {
       "type": "object",
       "description": "Naam waarmee de Organisatie bij voorkeur wordt aangeduid.",
       "properties": {

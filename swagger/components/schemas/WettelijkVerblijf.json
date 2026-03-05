@@ -12,7 +12,7 @@
       "description": "Object type (klasse WettelijkVerblijf)",
       "pattern": "^WettelijkVerblijf$"
     },
-    "Verblijfplaats.verblijfsadres": {
+    "verblijfsadres": {
       "$ref": "#/components/schemas/Adresvoorstelling"
     }
   },

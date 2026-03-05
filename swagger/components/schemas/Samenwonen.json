@@ -12,10 +12,10 @@
       "description": "Object type (klasse Samenwonen)",
       "pattern": "^Samenwonen$"
     },
-    "Persoonsrelatie.vanPersoon": {
+    "vanPersoon": {
       "$ref": "#/components/schemas/Persoon"
     },
-    "Persoonsrelatie.metPersoon": {
+    "metPersoon": {
       "$ref": "#/components/schemas/Persoon"
     }
   },

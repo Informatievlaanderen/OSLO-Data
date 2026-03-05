@@ -12,7 +12,7 @@
       "description": "Object type (klasse Versie)",
       "pattern": "^Versie$"
     },
-    "Versie.creatiedatum": {
+    "creatiedatum": {
       "type": "object",
       "description": "Datum waarop de gegevens zijn ingevoerd.",
       "properties": {
@@ -30,7 +30,7 @@
         "@type"
       ]
     },
-    "Versie.modificatiedatum": {
+    "modificatiedatum": {
       "type": "object",
       "description": "Datum waarop de gegevens werden bijgewerkt.",
       "properties": {
@@ -48,7 +48,7 @@
         "@type"
       ]
     },
-    "Versie.bron": {
+    "bron": {
       "$ref": "#/components/schemas/Organisatie"
     }
   },

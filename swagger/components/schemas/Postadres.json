@@ -12,7 +12,7 @@
       "description": "Object type (klasse Postadres)",
       "pattern": "^Postadres$"
     },
-    "Verblijfplaats.verblijfsadres": {
+    "verblijfsadres": {
       "$ref": "#/components/schemas/Adresvoorstelling"
     }
   },

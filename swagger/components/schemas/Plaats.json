@@ -12,7 +12,7 @@
       "description": "Object type (klasse Plaats)",
       "pattern": "^Plaats$"
     },
-    "Plaats.plaatsnaam": {
+    "plaatsnaam": {
       "type": "object",
       "description": "Naam van de plaats of van het gebied.",
       "properties": {
@@ -29,10 +29,10 @@
         "@language"
       ]
     },
-    "Plaats.identificator": {
+    "identificator": {
       "$ref": "#/components/schemas/Identificator"
     },
-    "Jurisdictie.plaats": {
+    "plaats": {
       "$ref": "#/components/schemas/Plaats"
     }
   },

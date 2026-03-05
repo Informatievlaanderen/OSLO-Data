@@ -12,7 +12,7 @@
       "description": "Object type (klasse Identificator)",
       "pattern": "^Identificator$"
     },
-    "Identificator.identificator": {
+    "identificator": {
       "type": "object",
       "description": "String gebruikt om het object uniek te identificeren. Type vd string slaat op het identificatiesysteem (incl de versie ervan), de string zelf op de eigenlijke identificator.",
       "properties": {

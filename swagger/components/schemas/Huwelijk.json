@@ -12,10 +12,10 @@
       "description": "Object type (klasse Huwelijk)",
       "pattern": "^Huwelijk$"
     },
-    "Persoonsrelatie.vanPersoon": {
+    "vanPersoon": {
       "$ref": "#/components/schemas/Persoon"
     },
-    "Persoonsrelatie.metPersoon": {
+    "metPersoon": {
       "$ref": "#/components/schemas/Persoon"
     }
   },

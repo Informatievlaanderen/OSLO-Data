@@ -12,10 +12,7 @@
       "description": "Object type (klasse AangegevenAdres)",
       "pattern": "^AangegevenAdres$"
     },
-    "Domicilie.verblijfsadres": {
-      "$ref": "#/components/schemas/BelgischAdres"
-    },
-    "Verblijfplaats.verblijfsadres": {
+    "verblijfsadres": {
       "$ref": "#/components/schemas/Adresvoorstelling"
     },
     "@context": {

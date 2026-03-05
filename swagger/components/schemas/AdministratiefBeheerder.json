@@ -12,10 +12,10 @@
       "description": "Object type (klasse AdministratiefBeheerder)",
       "pattern": "^AdministratiefBeheerder$"
     },
-    "AdministratiefBeheerder.type": {
+    "type": {
       "$ref": "#/components/schemas/AdministratiefBeheerdertype"
     },
-    "Organisatie.voorkeursnaam": {
+    "voorkeursnaam": {
       "type": "object",
       "description": "Naam waarmee de Organisatie bij voorkeur wordt aangeduid.",
       "properties": {

@@ -12,13 +12,7 @@
       "description": "Object type (klasse VerblijfplaatsBuitenlandDomicilie)",
       "pattern": "^VerblijfplaatsBuitenlandDomicilie$"
     },
-    "VerblijfplaatsBuitenlandDomicilie.verblijfsadres": {
-      "$ref": "#/components/schemas/Adresvoorstelling"
-    },
-    "Domicilie.verblijfsadres": {
-      "$ref": "#/components/schemas/BelgischAdres"
-    },
-    "Verblijfplaats.verblijfsadres": {
+    "verblijfsadres": {
       "$ref": "#/components/schemas/Adresvoorstelling"
     }
   },

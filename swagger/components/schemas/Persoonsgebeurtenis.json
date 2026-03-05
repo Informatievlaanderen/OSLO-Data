@@ -12,7 +12,7 @@
       "description": "Object type (klasse Persoonsgebeurtenis)",
       "pattern": "^Persoonsgebeurtenis$"
     },
-    "Persoonsgebeurtenis.datum": {
+    "datum": {
       "type": "object",
       "description": "Datum waarop de gebeurtenis plaatsvond.",
       "properties": {
@@ -30,7 +30,7 @@
         "@type"
       ]
     },
-    "Persoonsgebeurtenis.plaats": {
+    "plaats": {
       "$ref": "#/components/schemas/Plaats"
     }
   },

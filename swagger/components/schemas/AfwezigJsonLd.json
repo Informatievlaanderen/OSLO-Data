@@ -12,7 +12,7 @@
       "description": "Object type (klasse Afwezig)",
       "pattern": "^Afwezig$"
     },
-    "Verblijfplaats.verblijfsadres": {
+    "verblijfsadres": {
       "$ref": "#/components/schemas/Adresvoorstelling"
     },
     "@context": {

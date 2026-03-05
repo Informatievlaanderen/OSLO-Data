@@ -12,13 +12,13 @@
       "description": "Object type (klasse Gezin)",
       "pattern": "^Gezin$"
     },
-    "Gezin.gezinsadres": {
+    "gezinsadres": {
       "$ref": "#/components/schemas/Adresvoorstelling"
     },
-    "Gezin.woonvorm": {
+    "woonvorm": {
       "$ref": "#/components/schemas/Woonvormtype"
     },
-    "Gezin.gezinshoofd": {
+    "gezinshoofd": {
       "$ref": "#/components/schemas/Persoon"
     },
     "gezinslid": {
