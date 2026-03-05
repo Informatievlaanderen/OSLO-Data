@@ -1,0 +1,55 @@
+{
+  "title": "Afstamming",
+  "type": "object",
+  "description": "Afstamming is de dalende lijn van bloedverwantschap tussen verschillende generaties.",
+  "properties": {
+    "@id": {
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "type": "object",
+      "description": "Object type (klasse Afstamming)",
+      "pattern": "^Afstamming$"
+    },
+    "Afstamming.datumVanAfstamming": {
+      "type": "object",
+      "description": "De datum waarop de afstamming wordt vastgesteld.",
+      "properties": {
+        "@value": {
+          "type": "string",
+          "format": "date"
+        },
+        "@type": {
+          "type": "string",
+          "pattern": "^Date$"
+        }
+      },
+      "required": [
+        "@value",
+        "@type"
+      ]
+    },
+    "Afstamming.afstammingstype": {
+      "$ref": "#/components/schemas/Afstammingstype"
+    },
+    "Persoonsrelatie.vanPersoon": {
+      "$ref": "#/components/schemas/Persoon"
+    },
+    "Persoonsrelatie.metPersoon": {
+      "$ref": "#/components/schemas/Persoon"
+    },
+    "@context": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https:\\/\\/test.data.vlaanderen.be\\/doc\\/implementatiemodel\\/magda\\/persoon\\/context\\/persoon-IM.jsonld$"
+    }
+  },
+  "required": [
+    "@id",
+    "@type",
+    "Afstamming.vanPersoon",
+    "Afstamming.metPersoon",
+    "@context"
+  ]
+}

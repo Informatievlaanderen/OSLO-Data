@@ -1,0 +1,43 @@
+{
+  "title": "Gezin",
+  "type": "object",
+  "description": "Samenwerkingsvorm die een herkenbare sociale eenheid vormt (bijvoorbeeld ten gevolge van een huwelijk), met al dan niet verwante personen die duurzame banden hebben en elkaar onderling steun en verzorging verlenen.",
+  "properties": {
+    "@id": {
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "type": "object",
+      "description": "Object type (klasse Gezin)",
+      "pattern": "^Gezin$"
+    },
+    "Gezin.gezinsadres": {
+      "$ref": "#/components/schemas/Adresvoorstelling"
+    },
+    "Gezin.woonvorm": {
+      "$ref": "#/components/schemas/Woonvormtype"
+    },
+    "Gezin.gezinshoofd": {
+      "$ref": "#/components/schemas/Persoon"
+    },
+    "Gezin.gezinslid": {
+      "type": "array",
+      "description": "Lijst van Persoon items.",
+      "items": {
+        "$ref": "#/components/schemas/Persoon"
+      },
+      "minItems": 0
+    },
+    "@context": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https:\\/\\/test.data.vlaanderen.be\\/doc\\/implementatiemodel\\/magda\\/persoon\\/context\\/persoon-IM.jsonld$"
+    }
+  },
+  "required": [
+    "@id",
+    "@type",
+    "@context"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "title": "FormeleOrganisatie",
+  "type": "object",
+  "description": "Een erkende Organisatie,erkend in brede zin of  meer specifiek in juridische zin met bijbehorende rechten en plichten.",
+  "properties": {
+    "@id": {
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "type": "object",
+      "description": "Object type (klasse FormeleOrganisatie)",
+      "pattern": "^FormeleOrganisatie$"
+    }
+  },
+  "required": [
+    "@id",
+    "@type"
+  ]
+}

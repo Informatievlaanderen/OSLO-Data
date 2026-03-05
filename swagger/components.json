@@ -188,63 +188,37 @@
           "Persoon.heeftOverlijden": {
             "$ref": "#/components/schemas/Overlijden"
           },
-          "Persoon.inwonerschap": {
-            "type": "array",
-            "description": "Lijst van Jurisdictie items.",
-            "items": {
-              "$ref": "#/components/schemas/Jurisdictie"
-            },
-            "minItems": 0
+          "Persoon.heeftInwonerschap": {
+            "$ref": "#/components/schemas/Inwonerschap"
           },
-          "Persoon.inwonerschapdetail": {
-            "type": "array",
-            "description": "Lijst van Inwonerschap items.",
-            "items": {
-              "$ref": "#/components/schemas/Inwonerschap"
-            },
-            "minItems": 0
-          },
-          "Persoon.heeftRelatieMet": {
-            "type": "array",
-            "description": "Lijst van Persoon items.",
-            "items": {
-              "$ref": "#/components/schemas/Persoon"
-            },
-            "minItems": 0
-          },
-          "Persoon.persoonsrelatiedetail": {
-            "type": "array",
-            "description": "Lijst van Persoonsrelatie items.",
-            "items": {
-              "oneOf": [
-                {
-                  "$ref": "#/components/schemas/Persoonsrelatie"
-                },
-                {
-                  "$ref": "#/components/schemas/Gezinsrelatie"
-                },
-                {
-                  "$ref": "#/components/schemas/Huwelijk"
-                },
-                {
-                  "$ref": "#/components/schemas/Samenwonen"
-                },
-                {
-                  "$ref": "#/components/schemas/Afstamming"
-                }
-              ],
-              "discriminator": {
-                "propertyName": "@type",
-                "mapping": {
-                  "Persoonsrelatie": "#/components/schemas/Persoonsrelatie",
-                  "Gezinsrelatie": "#/components/schemas/Gezinsrelatie",
-                  "Huwelijk": "#/components/schemas/Huwelijk",
-                  "Samenwonen": "#/components/schemas/Samenwonen",
-                  "Afstamming": "#/components/schemas/Afstamming"
-                }
+          "Persoon.heeftPersoonsrelatie": {
+            "oneOf": [
+              {
+                "$ref": "#/components/schemas/Persoonsrelatie"
+              },
+              {
+                "$ref": "#/components/schemas/Gezinsrelatie"
+              },
+              {
+                "$ref": "#/components/schemas/Huwelijk"
+              },
+              {
+                "$ref": "#/components/schemas/Samenwonen"
+              },
+              {
+                "$ref": "#/components/schemas/Afstamming"
               }
-            },
-            "minItems": 0
+            ],
+            "discriminator": {
+              "propertyName": "@type",
+              "mapping": {
+                "Persoonsrelatie": "#/components/schemas/Persoonsrelatie",
+                "Gezinsrelatie": "#/components/schemas/Gezinsrelatie",
+                "Huwelijk": "#/components/schemas/Huwelijk",
+                "Samenwonen": "#/components/schemas/Samenwonen",
+                "Afstamming": "#/components/schemas/Afstamming"
+              }
+            }
           },
           "Persoon.isLidVan": {
             "type": "array",
@@ -297,6 +271,8 @@
         "required": [
           "@id",
           "@type",
+          "Persoon.heeftInwonerschap",
+          "Persoon.heeftPersoonsrelatie",
           "Persoon.creatiedatum",
           "Persoon.bron"
         ]
@@ -367,63 +343,37 @@
           "Persoon.heeftOverlijden": {
             "$ref": "#/components/schemas/Overlijden"
           },
-          "Persoon.inwonerschap": {
-            "type": "array",
-            "description": "Lijst van Jurisdictie items.",
-            "items": {
-              "$ref": "#/components/schemas/Jurisdictie"
-            },
-            "minItems": 0
+          "Persoon.heeftInwonerschap": {
+            "$ref": "#/components/schemas/Inwonerschap"
           },
-          "Persoon.inwonerschapdetail": {
-            "type": "array",
-            "description": "Lijst van Inwonerschap items.",
-            "items": {
-              "$ref": "#/components/schemas/Inwonerschap"
-            },
-            "minItems": 0
-          },
-          "Persoon.heeftRelatieMet": {
-            "type": "array",
-            "description": "Lijst van Persoon items.",
-            "items": {
-              "$ref": "#/components/schemas/Persoon"
-            },
-            "minItems": 0
-          },
-          "Persoon.persoonsrelatiedetail": {
-            "type": "array",
-            "description": "Lijst van Persoonsrelatie items.",
-            "items": {
-              "oneOf": [
-                {
-                  "$ref": "#/components/schemas/Persoonsrelatie"
-                },
-                {
-                  "$ref": "#/components/schemas/Gezinsrelatie"
-                },
-                {
-                  "$ref": "#/components/schemas/Huwelijk"
-                },
-                {
-                  "$ref": "#/components/schemas/Samenwonen"
-                },
-                {
-                  "$ref": "#/components/schemas/Afstamming"
-                }
-              ],
-              "discriminator": {
-                "propertyName": "@type",
-                "mapping": {
-                  "Persoonsrelatie": "#/components/schemas/Persoonsrelatie",
-                  "Gezinsrelatie": "#/components/schemas/Gezinsrelatie",
-                  "Huwelijk": "#/components/schemas/Huwelijk",
-                  "Samenwonen": "#/components/schemas/Samenwonen",
-                  "Afstamming": "#/components/schemas/Afstamming"
-                }
+          "Persoon.heeftPersoonsrelatie": {
+            "oneOf": [
+              {
+                "$ref": "#/components/schemas/Persoonsrelatie"
+              },
+              {
+                "$ref": "#/components/schemas/Gezinsrelatie"
+              },
+              {
+                "$ref": "#/components/schemas/Huwelijk"
+              },
+              {
+                "$ref": "#/components/schemas/Samenwonen"
+              },
+              {
+                "$ref": "#/components/schemas/Afstamming"
               }
-            },
-            "minItems": 0
+            ],
+            "discriminator": {
+              "propertyName": "@type",
+              "mapping": {
+                "Persoonsrelatie": "#/components/schemas/Persoonsrelatie",
+                "Gezinsrelatie": "#/components/schemas/Gezinsrelatie",
+                "Huwelijk": "#/components/schemas/Huwelijk",
+                "Samenwonen": "#/components/schemas/Samenwonen",
+                "Afstamming": "#/components/schemas/Afstamming"
+              }
+            }
           },
           "Persoon.isLidVan": {
             "type": "array",
@@ -481,6 +431,8 @@
         "required": [
           "@id",
           "@type",
+          "Persoon.heeftInwonerschap",
+          "Persoon.heeftPersoonsrelatie",
           "Persoon.creatiedatum",
           "Persoon.bron",
           "@context"
@@ -2003,63 +1955,37 @@
           "Persoon.heeftOverlijden": {
             "$ref": "#/components/schemas/Overlijden"
           },
-          "Persoon.inwonerschap": {
-            "type": "array",
-            "description": "Lijst van Jurisdictie items.",
-            "items": {
-              "$ref": "#/components/schemas/Jurisdictie"
-            },
-            "minItems": 0
+          "Persoon.heeftInwonerschap": {
+            "$ref": "#/components/schemas/Inwonerschap"
           },
-          "Persoon.inwonerschapdetail": {
-            "type": "array",
-            "description": "Lijst van Inwonerschap items.",
-            "items": {
-              "$ref": "#/components/schemas/Inwonerschap"
-            },
-            "minItems": 0
-          },
-          "Persoon.heeftRelatieMet": {
-            "type": "array",
-            "description": "Lijst van Persoon items.",
-            "items": {
-              "$ref": "#/components/schemas/Persoon"
-            },
-            "minItems": 0
-          },
-          "Persoon.persoonsrelatiedetail": {
-            "type": "array",
-            "description": "Lijst van Persoonsrelatie items.",
-            "items": {
-              "oneOf": [
-                {
-                  "$ref": "#/components/schemas/Persoonsrelatie"
-                },
-                {
-                  "$ref": "#/components/schemas/Gezinsrelatie"
-                },
-                {
-                  "$ref": "#/components/schemas/Huwelijk"
-                },
-                {
-                  "$ref": "#/components/schemas/Samenwonen"
-                },
-                {
-                  "$ref": "#/components/schemas/Afstamming"
-                }
-              ],
-              "discriminator": {
-                "propertyName": "@type",
-                "mapping": {
-                  "Persoonsrelatie": "#/components/schemas/Persoonsrelatie",
-                  "Gezinsrelatie": "#/components/schemas/Gezinsrelatie",
-                  "Huwelijk": "#/components/schemas/Huwelijk",
-                  "Samenwonen": "#/components/schemas/Samenwonen",
-                  "Afstamming": "#/components/schemas/Afstamming"
-                }
+          "Persoon.heeftPersoonsrelatie": {
+            "oneOf": [
+              {
+                "$ref": "#/components/schemas/Persoonsrelatie"
+              },
+              {
+                "$ref": "#/components/schemas/Gezinsrelatie"
+              },
+              {
+                "$ref": "#/components/schemas/Huwelijk"
+              },
+              {
+                "$ref": "#/components/schemas/Samenwonen"
+              },
+              {
+                "$ref": "#/components/schemas/Afstamming"
               }
-            },
-            "minItems": 0
+            ],
+            "discriminator": {
+              "propertyName": "@type",
+              "mapping": {
+                "Persoonsrelatie": "#/components/schemas/Persoonsrelatie",
+                "Gezinsrelatie": "#/components/schemas/Gezinsrelatie",
+                "Huwelijk": "#/components/schemas/Huwelijk",
+                "Samenwonen": "#/components/schemas/Samenwonen",
+                "Afstamming": "#/components/schemas/Afstamming"
+              }
+            }
           },
           "Persoon.isLidVan": {
             "type": "array",
@@ -2112,6 +2038,8 @@
         "required": [
           "@id",
           "@type",
+          "GeregistreerdPersoon.heeftInwonerschap",
+          "GeregistreerdPersoon.heeftPersoonsrelatie",
           "GeregistreerdPersoon.creatiedatum",
           "GeregistreerdPersoon.bron"
         ]
@@ -2191,63 +2119,37 @@
           "Persoon.heeftOverlijden": {
             "$ref": "#/components/schemas/Overlijden"
           },
-          "Persoon.inwonerschap": {
-            "type": "array",
-            "description": "Lijst van Jurisdictie items.",
-            "items": {
-              "$ref": "#/components/schemas/Jurisdictie"
-            },
-            "minItems": 0
+          "Persoon.heeftInwonerschap": {
+            "$ref": "#/components/schemas/Inwonerschap"
           },
-          "Persoon.inwonerschapdetail": {
-            "type": "array",
-            "description": "Lijst van Inwonerschap items.",
-            "items": {
-              "$ref": "#/components/schemas/Inwonerschap"
-            },
-            "minItems": 0
-          },
-          "Persoon.heeftRelatieMet": {
-            "type": "array",
-            "description": "Lijst van Persoon items.",
-            "items": {
-              "$ref": "#/components/schemas/Persoon"
-            },
-            "minItems": 0
-          },
-          "Persoon.persoonsrelatiedetail": {
-            "type": "array",
-            "description": "Lijst van Persoonsrelatie items.",
-            "items": {
-              "oneOf": [
-                {
-                  "$ref": "#/components/schemas/Persoonsrelatie"
-                },
-                {
-                  "$ref": "#/components/schemas/Gezinsrelatie"
-                },
-                {
-                  "$ref": "#/components/schemas/Huwelijk"
-                },
-                {
-                  "$ref": "#/components/schemas/Samenwonen"
-                },
-                {
-                  "$ref": "#/components/schemas/Afstamming"
-                }
-              ],
-              "discriminator": {
-                "propertyName": "@type",
-                "mapping": {
-                  "Persoonsrelatie": "#/components/schemas/Persoonsrelatie",
-                  "Gezinsrelatie": "#/components/schemas/Gezinsrelatie",
-                  "Huwelijk": "#/components/schemas/Huwelijk",
-                  "Samenwonen": "#/components/schemas/Samenwonen",
-                  "Afstamming": "#/components/schemas/Afstamming"
-                }
+          "Persoon.heeftPersoonsrelatie": {
+            "oneOf": [
+              {
+                "$ref": "#/components/schemas/Persoonsrelatie"
+              },
+              {
+                "$ref": "#/components/schemas/Gezinsrelatie"
+              },
+              {
+                "$ref": "#/components/schemas/Huwelijk"
+              },
+              {
+                "$ref": "#/components/schemas/Samenwonen"
+              },
+              {
+                "$ref": "#/components/schemas/Afstamming"
               }
-            },
-            "minItems": 0
+            ],
+            "discriminator": {
+              "propertyName": "@type",
+              "mapping": {
+                "Persoonsrelatie": "#/components/schemas/Persoonsrelatie",
+                "Gezinsrelatie": "#/components/schemas/Gezinsrelatie",
+                "Huwelijk": "#/components/schemas/Huwelijk",
+                "Samenwonen": "#/components/schemas/Samenwonen",
+                "Afstamming": "#/components/schemas/Afstamming"
+              }
+            }
           },
           "Persoon.isLidVan": {
             "type": "array",
@@ -2305,6 +2207,8 @@
         "required": [
           "@id",
           "@type",
+          "GeregistreerdPersoon.heeftInwonerschap",
+          "GeregistreerdPersoon.heeftPersoonsrelatie",
           "GeregistreerdPersoon.creatiedatum",
           "GeregistreerdPersoon.bron",
           "@context"
@@ -2841,6 +2745,9 @@
           "Gezin.gezinsadres": {
             "$ref": "#/components/schemas/Adresvoorstelling"
           },
+          "Gezin.woonvorm": {
+            "$ref": "#/components/schemas/Woonvormtype"
+          },
           "Gezin.gezinshoofd": {
             "$ref": "#/components/schemas/Persoon"
           },
@@ -2849,31 +2756,6 @@
             "description": "Lijst van Persoon items.",
             "items": {
               "$ref": "#/components/schemas/Persoon"
-            },
-            "minItems": 0
-          },
-          "Organisatie.voorkeursnaam": {
-            "type": "object",
-            "description": "Naam waarmee de Organisatie bij voorkeur wordt aangeduid.",
-            "properties": {
-              "@value": {
-                "type": "string"
-              },
-              "@language": {
-                "type": "string",
-                "pattern": "^nl$"
-              }
-            },
-            "required": [
-              "@value",
-              "@language"
-            ]
-          },
-          "Organisatie.contactinfo": {
-            "type": "array",
-            "description": "Lijst van Contactinfo items.",
-            "items": {
-              "$ref": "#/components/schemas/Contactinfo"
             },
             "minItems": 0
           }
@@ -2900,6 +2782,9 @@
           "Gezin.gezinsadres": {
             "$ref": "#/components/schemas/Adresvoorstelling"
           },
+          "Gezin.woonvorm": {
+            "$ref": "#/components/schemas/Woonvormtype"
+          },
           "Gezin.gezinshoofd": {
             "$ref": "#/components/schemas/Persoon"
           },
@@ -2908,31 +2793,6 @@
             "description": "Lijst van Persoon items.",
             "items": {
               "$ref": "#/components/schemas/Persoon"
-            },
-            "minItems": 0
-          },
-          "Organisatie.voorkeursnaam": {
-            "type": "object",
-            "description": "Naam waarmee de Organisatie bij voorkeur wordt aangeduid.",
-            "properties": {
-              "@value": {
-                "type": "string"
-              },
-              "@language": {
-                "type": "string",
-                "pattern": "^nl$"
-              }
-            },
-            "required": [
-              "@value",
-              "@language"
-            ]
-          },
-          "Organisatie.contactinfo": {
-            "type": "array",
-            "description": "Lijst van Contactinfo items.",
-            "items": {
-              "$ref": "#/components/schemas/Contactinfo"
             },
             "minItems": 0
           },
@@ -3967,39 +3827,6 @@
             "required": [
               "@value"
             ]
-          },
-          "Identificator.toegekendDoor(String)": {
-            "type": "object",
-            "description": "Naam vd agent die de identificator heeft toegekend.",
-            "properties": {
-              "@value": {
-                "type": "string"
-              }
-            },
-            "required": [
-              "@value"
-            ]
-          },
-          "Identificator.toegekendOp": {
-            "type": "object",
-            "description": "Datum waarop de identificator werd uitgegeven.",
-            "properties": {
-              "@value": {
-                "type": "string",
-                "format": "date"
-              },
-              "@type": {
-                "type": "string",
-                "pattern": "^Date$"
-              }
-            },
-            "required": [
-              "@value",
-              "@type"
-            ]
-          },
-          "Identificator.toegekendDoor": {
-            "$ref": "#/components/schemas/Agent"
           }
         },
         "required": [
@@ -4032,39 +3859,6 @@
             "required": [
               "@value"
             ]
-          },
-          "Identificator.toegekendDoor(String)": {
-            "type": "object",
-            "description": "Naam vd agent die de identificator heeft toegekend.",
-            "properties": {
-              "@value": {
-                "type": "string"
-              }
-            },
-            "required": [
-              "@value"
-            ]
-          },
-          "Identificator.toegekendOp": {
-            "type": "object",
-            "description": "Datum waarop de identificator werd uitgegeven.",
-            "properties": {
-              "@value": {
-                "type": "string",
-                "format": "date"
-              },
-              "@type": {
-                "type": "string",
-                "pattern": "^Date$"
-              }
-            },
-            "required": [
-              "@value",
-              "@type"
-            ]
-          },
-          "Identificator.toegekendDoor": {
-            "$ref": "#/components/schemas/Agent"
           },
           "@context": {
             "type": "string",
@@ -4330,31 +4124,17 @@
         },
         "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Overlijden` op te halen."
       },
-      "Persoon.inwonerschap": {
+      "Persoon.heeftInwonerschap": {
         "operationId": "PersoonGET",
         "parameters": {
-          "id": "$response.body#/Persoon.inwonerschap/@id"
-        },
-        "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Jurisdictie` op te halen."
-      },
-      "Persoon.inwonerschapdetail": {
-        "operationId": "PersoonGET",
-        "parameters": {
-          "id": "$response.body#/Persoon.inwonerschapdetail/@id"
+          "id": "$response.body#/Persoon.heeftInwonerschap/@id"
         },
         "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Inwonerschap` op te halen."
       },
-      "Persoon.heeftRelatieMet": {
+      "Persoon.heeftPersoonsrelatie": {
         "operationId": "PersoonGET",
         "parameters": {
-          "id": "$response.body#/Persoon.heeftRelatieMet/@id"
-        },
-        "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Persoon` op te halen."
-      },
-      "Persoon.persoonsrelatiedetail": {
-        "operationId": "PersoonGET",
-        "parameters": {
-          "id": "$response.body#/Persoon.persoonsrelatiedetail/@id"
+          "id": "$response.body#/Persoon.heeftPersoonsrelatie/@id"
         },
         "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Persoonsrelatie` op te halen."
       },
@@ -4610,31 +4390,17 @@
         },
         "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Overlijden` op te halen."
       },
-      "GeregistreerdPersoon.inwonerschap": {
+      "GeregistreerdPersoon.heeftInwonerschap": {
         "operationId": "GeregistreerdPersoonGET",
         "parameters": {
-          "id": "$response.body#/GeregistreerdPersoon.inwonerschap/@id"
-        },
-        "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Jurisdictie` op te halen."
-      },
-      "GeregistreerdPersoon.inwonerschapdetail": {
-        "operationId": "GeregistreerdPersoonGET",
-        "parameters": {
-          "id": "$response.body#/GeregistreerdPersoon.inwonerschapdetail/@id"
+          "id": "$response.body#/GeregistreerdPersoon.heeftInwonerschap/@id"
         },
         "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Inwonerschap` op te halen."
       },
-      "GeregistreerdPersoon.heeftRelatieMet": {
+      "GeregistreerdPersoon.heeftPersoonsrelatie": {
         "operationId": "GeregistreerdPersoonGET",
         "parameters": {
-          "id": "$response.body#/GeregistreerdPersoon.heeftRelatieMet/@id"
-        },
-        "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Persoon` op te halen."
-      },
-      "GeregistreerdPersoon.persoonsrelatiedetail": {
-        "operationId": "GeregistreerdPersoonGET",
-        "parameters": {
-          "id": "$response.body#/GeregistreerdPersoon.persoonsrelatiedetail/@id"
+          "id": "$response.body#/GeregistreerdPersoon.heeftPersoonsrelatie/@id"
         },
         "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Persoonsrelatie` op te halen."
       },
@@ -4715,6 +4481,13 @@
         },
         "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Adresvoorstelling` op te halen."
       },
+      "Gezin.woonvorm": {
+        "operationId": "GezinGET",
+        "parameters": {
+          "id": "$response.body#/Gezin.woonvorm/@id"
+        },
+        "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Woonvormtype` op te halen."
+      },
       "Gezin.gezinshoofd": {
         "operationId": "GezinGET",
         "parameters": {
@@ -4728,13 +4501,6 @@
           "id": "$response.body#/Gezin.gezinslid/@id"
         },
         "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Persoon` op te halen."
-      },
-      "Gezin.contactinfo": {
-        "operationId": "GezinGET",
-        "parameters": {
-          "id": "$response.body#/Gezin.contactinfo/@id"
-        },
-        "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Contactinfo` op te halen."
       },
       "BurgerlijkeStaat.plaats": {
         "operationId": "BurgerlijkeStaatGET",

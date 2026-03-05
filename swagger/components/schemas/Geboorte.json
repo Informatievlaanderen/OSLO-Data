@@ -3,39 +3,26 @@
   "type": "object",
   "description": "Het ter wereld komen van een Persoon.",
   "properties": {
-    "@context": {
-      "type": "string",
-      "format": "uri",
-      "enum": [
-        "http://example.org/context.jsonld"
-      ]
-    },
     "@id": {
       "type": "string",
       "format": "uri"
     },
     "@type": {
-      "type": "array",
-      "description": "Lijst van object types (klasse)",
-      "items": {
-        "type": "string",
-        "description": "Geboorte type"
-      },
-      "minItems": 1
+      "type": "object",
+      "description": "Object type (klasse Geboorte)",
+      "pattern": "^Geboorte$"
     },
-    "Geboorte.datum": {
+    "Persoonsgebeurtenis.datum": {
       "type": "object",
       "description": "Datum waarop de gebeurtenis plaatsvond.",
       "properties": {
         "@value": {
           "type": "string",
-          "format": "date-time"
+          "format": "date"
         },
         "@type": {
           "type": "string",
-          "enum": [
-            "DateTime"
-          ]
+          "pattern": "^Date$"
         }
       },
       "required": [
@@ -43,36 +30,12 @@
         "@type"
       ]
     },
-    "Geboorte.plaats": {
-      "type": "object",
-      "description": "Plaats waar de gebeurtenis plaatsvond. Doorgaans een land of stad.",
-      "properties": {
-        "@id": {
-          "anyOf": [
-            {
-              "type": "string",
-              "format": "uri"
-            },
-            {
-              "type": "string",
-              "format": "blanknode"
-            },
-            {
-              "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Plaats.json"
-            }
-          ]
-        }
-      },
-      "required": [
-        "@id"
-      ]
+    "Persoonsgebeurtenis.plaats": {
+      "$ref": "#/components/schemas/Plaats"
     }
   },
   "required": [
-    "@context",
     "@id",
-    "@type",
-    "Geboorte.datum",
-    "Geboorte.plaats"
+    "@type"
   ]
 }

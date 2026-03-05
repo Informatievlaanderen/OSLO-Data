@@ -1,0 +1,34 @@
+{
+  "title": "Samenwonen",
+  "type": "object",
+  "description": "Regeling waarbij twee personen die niet getrouwd zijn samenleven.",
+  "properties": {
+    "@id": {
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "type": "object",
+      "description": "Object type (klasse Samenwonen)",
+      "pattern": "^Samenwonen$"
+    },
+    "Persoonsrelatie.vanPersoon": {
+      "$ref": "#/components/schemas/Persoon"
+    },
+    "Persoonsrelatie.metPersoon": {
+      "$ref": "#/components/schemas/Persoon"
+    },
+    "@context": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https:\\/\\/test.data.vlaanderen.be\\/doc\\/implementatiemodel\\/magda\\/persoon\\/context\\/persoon-IM.jsonld$"
+    }
+  },
+  "required": [
+    "@id",
+    "@type",
+    "Samenwonen.vanPersoon",
+    "Samenwonen.metPersoon",
+    "@context"
+  ]
+}

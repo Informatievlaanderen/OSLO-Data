@@ -1,0 +1,26 @@
+{
+  "title": "BelgischAdres",
+  "type": "object",
+  "description": "Informatie die toelaat om op een gestructureerde en unieke manier te verwijzen naar een gebouweenheid,een ligplaats,een standplaats of een perceel op basis van een gemeentenaam,een straatnaam,een huisnummer en eventueel een busnummer en een postcode.",
+  "properties": {
+    "@id": {
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "type": "object",
+      "description": "Object type (klasse BelgischAdres)",
+      "pattern": "^BelgischAdres$"
+    },
+    "@context": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https:\\/\\/test.data.vlaanderen.be\\/doc\\/implementatiemodel\\/magda\\/persoon\\/context\\/persoon-IM.jsonld$"
+    }
+  },
+  "required": [
+    "@id",
+    "@type",
+    "@context"
+  ]
+}

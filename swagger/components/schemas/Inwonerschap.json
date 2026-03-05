@@ -3,106 +3,61 @@
   "type": "object",
   "description": "Het feit dat een Persoon verblijf houdt in een plaats of land.",
   "properties": {
-    "@context": {
-      "type": "string",
-      "format": "uri",
-      "enum": [
-        "http://example.org/context.jsonld"
-      ]
-    },
     "@id": {
       "type": "string",
       "format": "uri"
     },
     "@type": {
-      "type": "array",
-      "description": "Lijst van object types (klasse)",
-      "items": {
-        "type": "string",
-        "description": "Inwonerschap type"
-      },
-      "minItems": 1
+      "type": "object",
+      "description": "Object type (klasse Inwonerschap)",
+      "pattern": "^Inwonerschap$"
     },
     "Inwonerschap.persoon": {
-      "type": "object",
-      "description": "De persoon waarvan het inwonerschap binnen de opgegeven Jurisdictie valt.",
-      "properties": {
-        "@id": {
-          "anyOf": [
-            {
-              "type": "string",
-              "format": "uri"
-            },
-            {
-              "type": "string",
-              "format": "blanknode"
-            },
-            {
-              "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Persoon.json"
-            }
-          ]
-        }
-      },
-      "required": [
-        "@id"
-      ]
+      "$ref": "#/components/schemas/Persoon"
     },
     "Inwonerschap.jurisdictie": {
-      "type": "object",
-      "description": "Jurisdictie waarbinnen het inwonerschap (van een persoon) is gedefineerd.",
-      "properties": {
-        "@id": {
-          "anyOf": [
-            {
-              "type": "string",
-              "format": "uri"
-            },
-            {
-              "type": "string",
-              "format": "blanknode"
-            },
-            {
-              "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Jurisdictie.json"
-            }
-          ]
-        }
-      },
-      "required": [
-        "@id"
-      ]
+      "$ref": "#/components/schemas/Jurisdictie"
     },
     "Inwonerschap.heeftVerblijfplaats": {
       "type": "array",
       "description": "Lijst van Verblijfplaats items.",
       "items": {
-        "type": "object",
-        "description": "Plaats waar een persoon verblijft.",
-        "properties": {
-          "@id": {
-            "anyOf": [
-              {
-                "type": "string",
-                "format": "uri"
-              },
-              {
-                "type": "string",
-                "format": "blanknode"
-              },
-              {
-                "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Verblijfplaats.json"
-              }
-            ]
+        "oneOf": [
+          {
+            "$ref": "#/components/schemas/Verblijfplaats"
+          },
+          {
+            "$ref": "#/components/schemas/Domicilie"
+          },
+          {
+            "$ref": "#/components/schemas/Afwezig"
+          },
+          {
+            "$ref": "#/components/schemas/Postadres"
+          },
+          {
+            "$ref": "#/components/schemas/VerblijfplaatsBuitenland"
+          },
+          {
+            "$ref": "#/components/schemas/WettelijkVerblijf"
           }
-        },
-        "required": [
-          "@id"
-        ]
+        ],
+        "discriminator": {
+          "propertyName": "@type",
+          "mapping": {
+            "Verblijfplaats": "#/components/schemas/Verblijfplaats",
+            "Domicilie": "#/components/schemas/Domicilie",
+            "Afwezig": "#/components/schemas/Afwezig",
+            "Postadres": "#/components/schemas/Postadres",
+            "VerblijfplaatsBuitenland": "#/components/schemas/VerblijfplaatsBuitenland",
+            "WettelijkVerblijf": "#/components/schemas/WettelijkVerblijf"
+          }
+        }
       },
       "minItems": 0
     }
   },
   "required": [
-    "@context",
     "@id",
     "@type",
     "Inwonerschap.persoon",

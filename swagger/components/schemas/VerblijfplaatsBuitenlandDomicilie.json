@@ -3,57 +3,27 @@
   "type": "object",
   "description": "Hoofdverblijplaats in het buitenland.",
   "properties": {
-    "@context": {
-      "type": "string",
-      "format": "uri",
-      "enum": [
-        "http://example.org/context.jsonld"
-      ]
-    },
     "@id": {
       "type": "string",
       "format": "uri"
     },
     "@type": {
-      "type": "array",
-      "description": "Lijst van object types (klasse)",
-      "items": {
-        "type": "string",
-        "description": "VerblijfplaatsBuitenlandDomicilie type"
-      },
-      "minItems": 1
+      "type": "object",
+      "description": "Object type (klasse VerblijfplaatsBuitenlandDomicilie)",
+      "pattern": "^VerblijfplaatsBuitenlandDomicilie$"
     },
     "VerblijfplaatsBuitenlandDomicilie.verblijfsadres": {
-      "type": "object",
-      "description": "Adres van de Verblijfplaats.",
-      "properties": {
-        "@id": {
-          "anyOf": [
-            {
-              "type": "string",
-              "format": "uri"
-            },
-            {
-              "type": "string",
-              "format": "blanknode"
-            },
-            {
-              "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Adresvoorstelling.json"
-            }
-          ]
-        }
-      },
-      "required": [
-        "@id"
-      ]
+      "$ref": "#/components/schemas/Adresvoorstelling"
+    },
+    "Domicilie.verblijfsadres": {
+      "$ref": "#/components/schemas/BelgischAdres"
+    },
+    "Verblijfplaats.verblijfsadres": {
+      "$ref": "#/components/schemas/Adresvoorstelling"
     }
   },
   "required": [
-    "@context",
     "@id",
-    "@type",
-    "VerblijfplaatsBuitenlandDomicilie.verblijfsadres",
-    "VerblijfplaatsBuitenlandDomicilie.verblijfsadres",
-    "VerblijfplaatsBuitenlandDomicilie.verblijfsadres"
+    "@type"
   ]
 }

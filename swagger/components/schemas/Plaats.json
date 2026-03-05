@@ -3,25 +3,14 @@
   "type": "object",
   "description": "Een ruimtelijk gebied of benoemde plaats.",
   "properties": {
-    "@context": {
-      "type": "string",
-      "format": "uri",
-      "enum": [
-        "http://example.org/context.jsonld"
-      ]
-    },
     "@id": {
       "type": "string",
       "format": "uri"
     },
     "@type": {
-      "type": "array",
-      "description": "Lijst van object types (klasse)",
-      "items": {
-        "type": "string",
-        "description": "Plaats type"
-      },
-      "minItems": 1
+      "type": "object",
+      "description": "Object type (klasse Plaats)",
+      "pattern": "^Plaats$"
     },
     "Plaats.plaatsnaam": {
       "type": "object",
@@ -32,9 +21,7 @@
         },
         "@language": {
           "type": "string",
-          "enum": [
-            "nl"
-          ]
+          "pattern": "^nl$"
         }
       },
       "required": [
@@ -42,32 +29,15 @@
         "@language"
       ]
     },
-    "Plaats.geometrie": {
-      "type": "object",
-      "description": "Geometrie van de plaats of het gebied.",
-      "properties": {
-        "@id": {
-          "anyOf": [
-            {
-              "type": "string",
-              "format": "uri"
-            },
-            {
-              "type": "string",
-              "format": "blanknode"
-            }
-          ]
-        }
-      },
-      "required": [
-        "@id"
-      ]
+    "Plaats.identificator": {
+      "$ref": "#/components/schemas/Identificator"
+    },
+    "Jurisdictie.plaats": {
+      "$ref": "#/components/schemas/Plaats"
     }
   },
   "required": [
-    "@context",
     "@id",
-    "@type",
-    "Plaats.plaatsnaam"
+    "@type"
   ]
 }

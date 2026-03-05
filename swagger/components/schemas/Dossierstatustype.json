@@ -1,31 +1,14 @@
 {
   "title": "Dossierstatustype",
   "type": "object",
+  "description": "Enumeratie van Dossierstatustype",
   "properties": {
-    "@context": {
-      "type": "string",
-      "format": "uri",
-      "enum": [
-        "http://example.org/context.jsonld"
-      ]
-    },
     "@id": {
       "type": "string",
       "format": "uri"
-    },
-    "@type": {
-      "type": "array",
-      "description": "Lijst van object types (klasse)",
-      "items": {
-        "type": "string",
-        "description": "Dossierstatustype type"
-      },
-      "minItems": 1
     }
   },
   "required": [
-    "@context",
-    "@id",
-    "@type"
+    "@id"
   ]
 }

@@ -1,0 +1,54 @@
+{
+  "title": "AdministratiefBeheerder",
+  "type": "object",
+  "description": "Organisatie die het dossier van de persoon in het register beheert.",
+  "properties": {
+    "@id": {
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "type": "object",
+      "description": "Object type (klasse AdministratiefBeheerder)",
+      "pattern": "^AdministratiefBeheerder$"
+    },
+    "AdministratiefBeheerder.type": {
+      "$ref": "#/components/schemas/AdministratiefBeheerdertype"
+    },
+    "Organisatie.voorkeursnaam": {
+      "type": "object",
+      "description": "Naam waarmee de Organisatie bij voorkeur wordt aangeduid.",
+      "properties": {
+        "@value": {
+          "type": "string"
+        },
+        "@language": {
+          "type": "string",
+          "pattern": "^nl$"
+        }
+      },
+      "required": [
+        "@value",
+        "@language"
+      ]
+    },
+    "Organisatie.contactinfo": {
+      "type": "array",
+      "description": "Lijst van Contactinfo items.",
+      "items": {
+        "$ref": "#/components/schemas/Contactinfo"
+      },
+      "minItems": 0
+    },
+    "@context": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https:\\/\\/test.data.vlaanderen.be\\/doc\\/implementatiemodel\\/magda\\/persoon\\/context\\/persoon-IM.jsonld$"
+    }
+  },
+  "required": [
+    "@id",
+    "@type",
+    "@context"
+  ]
+}

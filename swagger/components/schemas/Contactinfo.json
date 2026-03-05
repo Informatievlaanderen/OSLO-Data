@@ -3,25 +3,14 @@
   "type": "object",
   "description": "Informatie zoals email, telefoon, adres die toelaat om iemand of iets te contacteren.",
   "properties": {
-    "@context": {
-      "type": "string",
-      "format": "uri",
-      "enum": [
-        "http://example.org/context.jsonld"
-      ]
-    },
     "@id": {
       "type": "string",
       "format": "uri"
     },
     "@type": {
-      "type": "array",
-      "description": "Lijst van object types (klasse)",
-      "items": {
-        "type": "string",
-        "description": "Contactinfo type"
-      },
-      "minItems": 1
+      "type": "object",
+      "description": "Object type (klasse Contactinfo)",
+      "pattern": "^Contactinfo$"
     },
     "Contactinfo.aanschrijfvorm": {
       "type": "object",
@@ -32,9 +21,7 @@
         },
         "@language": {
           "type": "string",
-          "enum": [
-            "nl"
-          ]
+          "pattern": "^nl$"
         }
       },
       "required": [
@@ -78,25 +65,6 @@
         "@value"
       ]
     },
-    "Contactinfo.openingsuren": {
-      "type": "object",
-      "description": "Uren waarbinnen contact kan worden opgenomen. Syntax volgens Schema.org voor openingsuren. Bijvoorbeeld: als contact kan worden opgenomen tussen 8 en 20u maandag tot zaterdag en tussen 8 en 18u op zondag wordt dit gecodeerd als \"ma-za 08:00-20:00, zo 08:00-18:00\".",
-      "properties": {
-        "@value": {
-          "type": "string"
-        },
-        "@language": {
-          "type": "string",
-          "enum": [
-            "nl"
-          ]
-        }
-      },
-      "required": [
-        "@value",
-        "@language"
-      ]
-    },
     "Contactinfo.telefoon": {
       "type": "object",
       "description": "Telefoonnummer waarop men kan bellen.",
@@ -123,53 +91,10 @@
       ]
     },
     "Contactinfo.adres": {
-      "type": "object",
-      "description": "Adres dat men kan aanschrijven of bezoeken.",
-      "properties": {
-        "@id": {
-          "anyOf": [
-            {
-              "type": "string",
-              "format": "uri"
-            },
-            {
-              "type": "string",
-              "format": "blanknode"
-            },
-            {
-              "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Adresvoorstelling.json"
-            }
-          ]
-        }
-      },
-      "required": [
-        "@id"
-      ]
-    },
-    "Contactinfo.beschikbaarheid": {
-      "type": "object",
-      "description": "Periode waarin contact kan worden opgenomen. Bijvoorbeeld: aanduiding van het seizoen waarin contact kan worden opgenomen. Begin- en einddatum volgens ISO8601 syntax.",
-      "properties": {
-        "@id": {
-          "anyOf": [
-            {
-              "type": "string",
-              "format": "uri"
-            },
-            {
-              "type": "string",
-              "format": "blanknode"
-            }
-          ]
-        }
-      },
-      "required": [
-        "@id"
-      ]
+      "$ref": "#/components/schemas/Adresvoorstelling"
     }
   },
   "required": [
-    "@context",
     "@id",
     "@type"
   ]

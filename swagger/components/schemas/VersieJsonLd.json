@@ -1,0 +1,67 @@
+{
+  "title": "Versie",
+  "type": "object",
+  "description": "Entiteit gedurende een bepaalde periode in de databank.",
+  "properties": {
+    "@id": {
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "type": "object",
+      "description": "Object type (klasse Versie)",
+      "pattern": "^Versie$"
+    },
+    "Versie.creatiedatum": {
+      "type": "object",
+      "description": "Datum waarop de gegevens zijn ingevoerd.",
+      "properties": {
+        "@value": {
+          "type": "string",
+          "format": "date"
+        },
+        "@type": {
+          "type": "string",
+          "pattern": "^Date$"
+        }
+      },
+      "required": [
+        "@value",
+        "@type"
+      ]
+    },
+    "Versie.modificatiedatum": {
+      "type": "object",
+      "description": "Datum waarop de gegevens werden bijgewerkt.",
+      "properties": {
+        "@value": {
+          "type": "string",
+          "format": "date"
+        },
+        "@type": {
+          "type": "string",
+          "pattern": "^Date$"
+        }
+      },
+      "required": [
+        "@value",
+        "@type"
+      ]
+    },
+    "Versie.bron": {
+      "$ref": "#/components/schemas/Organisatie"
+    },
+    "@context": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https:\\/\\/test.data.vlaanderen.be\\/doc\\/implementatiemodel\\/magda\\/persoon\\/context\\/persoon-IM.jsonld$"
+    }
+  },
+  "required": [
+    "@id",
+    "@type",
+    "Versie.creatiedatum",
+    "Versie.bron",
+    "@context"
+  ]
+}

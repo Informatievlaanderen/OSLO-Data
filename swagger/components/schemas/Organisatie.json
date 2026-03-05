@@ -3,25 +3,14 @@
   "type": "object",
   "description": "Een aantal mensen georganiseerd in een gemeenschap of andere sociale, commerciële of politieke structuur. De groep heeft een gemeenschappelijk doel of bestaansreden die de individuele leden ervan overstijgt en kan handelen als agent. Een Organisatie heeft dikwijls een hiërarchische structuur.",
   "properties": {
-    "@context": {
-      "type": "string",
-      "format": "uri",
-      "enum": [
-        "http://example.org/context.jsonld"
-      ]
-    },
     "@id": {
       "type": "string",
       "format": "uri"
     },
     "@type": {
-      "type": "array",
-      "description": "Lijst van object types (klasse)",
-      "items": {
-        "type": "string",
-        "description": "Organisatie type"
-      },
-      "minItems": 1
+      "type": "object",
+      "description": "Object type (klasse Organisatie)",
+      "pattern": "^Organisatie$"
     },
     "Organisatie.voorkeursnaam": {
       "type": "object",
@@ -32,9 +21,7 @@
         },
         "@language": {
           "type": "string",
-          "enum": [
-            "nl"
-          ]
+          "pattern": "^nl$"
         }
       },
       "required": [
@@ -46,36 +33,13 @@
       "type": "array",
       "description": "Lijst van Contactinfo items.",
       "items": {
-        "type": "object",
-        "description": "Informatie zoals email, telefoon... die toelaat de Organisatie te contacteren.",
-        "properties": {
-          "@id": {
-            "anyOf": [
-              {
-                "type": "string",
-                "format": "uri"
-              },
-              {
-                "type": "string",
-                "format": "blanknode"
-              },
-              {
-                "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Contactinfo.json"
-              }
-            ]
-          }
-        },
-        "required": [
-          "@id"
-        ]
+        "$ref": "#/components/schemas/Contactinfo"
       },
       "minItems": 0
     }
   },
   "required": [
-    "@context",
     "@id",
-    "@type",
-    "Organisatie.voorkeursnaam"
+    "@type"
   ]
 }

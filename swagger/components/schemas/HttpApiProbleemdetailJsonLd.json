@@ -1,0 +1,106 @@
+{
+  "title": "HttpApiProbleemdetail",
+  "type": "object",
+  "description": "Meer getedailleerde beschrijving van de fout in een HTTP response.",
+  "properties": {
+    "@id": {
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "type": "object",
+      "description": "Object type (klasse HttpApiProbleemdetail)",
+      "pattern": "^HttpApiProbleemdetail$"
+    },
+    "HttpApiProbleemdetail.type": {
+      "type": "object",
+      "description": "Aard van de fout.",
+      "properties": {
+        "@id": {
+          "type": "string",
+          "format": "uri"
+        }
+      },
+      "required": [
+        "@id"
+      ]
+    },
+    "HttpApiProbleemdetail.titel": {
+      "type": "object",
+      "description": "Korte mensleesbare beschrijving van de fout.",
+      "properties": {
+        "@value": {
+          "type": "string"
+        },
+        "@language": {
+          "type": "string",
+          "pattern": "^nl$"
+        }
+      },
+      "required": [
+        "@value",
+        "@language"
+      ]
+    },
+    "HttpApiProbleemdetail.status": {
+      "type": "object",
+      "description": "HTTP foutcode. Zoals beschreven in <a href=\"https://www.rfc-editor.org/rfc/rfc7231\">rfc7231</a>. Bvb 404 voor \"Not Found\".",
+      "properties": {
+        "@value": {
+          "type": "number",
+          "format": "int64"
+        },
+        "@type": {
+          "type": "string",
+          "pattern": "^Integer$"
+        }
+      },
+      "required": [
+        "@value",
+        "@type"
+      ]
+    },
+    "HttpApiProbleemdetail.detail": {
+      "type": "object",
+      "description": "Mensleesbare beschrijving van de fout.",
+      "properties": {
+        "@value": {
+          "type": "string"
+        },
+        "@language": {
+          "type": "string",
+          "pattern": "^nl$"
+        }
+      },
+      "required": [
+        "@value",
+        "@language"
+      ]
+    },
+    "HttpApiProbleemdetail.instantie": {
+      "type": "object",
+      "description": "Verwijzing naar de instantie van het object waarop de fout betrekking heeft. Bvb verwijzing naar de request.",
+      "properties": {
+        "@id": {
+          "type": "string",
+          "format": "uri"
+        }
+      },
+      "required": [
+        "@id"
+      ]
+    },
+    "@context": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https:\\/\\/test.data.vlaanderen.be\\/doc\\/implementatiemodel\\/magda\\/persoon\\/context\\/persoon-IM.jsonld$"
+    }
+  },
+  "required": [
+    "@id",
+    "@type",
+    "HttpApiProbleemdetail.type",
+    "HttpApiProbleemdetail.titel",
+    "@context"
+  ]
+}

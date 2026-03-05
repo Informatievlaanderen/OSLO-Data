@@ -1,0 +1,32 @@
+{
+  "title": "Referentieadres",
+  "type": "object",
+  "description": "Adres van een andere persoon of rechtspersoon voor personen zonder vaste verblijfplaats.",
+  "properties": {
+    "@id": {
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "type": "object",
+      "description": "Object type (klasse Referentieadres)",
+      "pattern": "^Referentieadres$"
+    },
+    "Domicilie.verblijfsadres": {
+      "$ref": "#/components/schemas/BelgischAdres"
+    },
+    "Verblijfplaats.verblijfsadres": {
+      "$ref": "#/components/schemas/Adresvoorstelling"
+    },
+    "@context": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https:\\/\\/test.data.vlaanderen.be\\/doc\\/implementatiemodel\\/magda\\/persoon\\/context\\/persoon-IM.jsonld$"
+    }
+  },
+  "required": [
+    "@id",
+    "@type",
+    "@context"
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "title": "Persoonsgebeurtenis",
+  "type": "object",
+  "description": "Belangrijke gebeurtenis ih leven ve persoon.",
+  "properties": {
+    "@id": {
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "type": "object",
+      "description": "Object type (klasse Persoonsgebeurtenis)",
+      "pattern": "^Persoonsgebeurtenis$"
+    },
+    "Persoonsgebeurtenis.datum": {
+      "type": "object",
+      "description": "Datum waarop de gebeurtenis plaatsvond.",
+      "properties": {
+        "@value": {
+          "type": "string",
+          "format": "date"
+        },
+        "@type": {
+          "type": "string",
+          "pattern": "^Date$"
+        }
+      },
+      "required": [
+        "@value",
+        "@type"
+      ]
+    },
+    "Persoonsgebeurtenis.plaats": {
+      "$ref": "#/components/schemas/Plaats"
+    },
+    "@context": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https:\\/\\/test.data.vlaanderen.be\\/doc\\/implementatiemodel\\/magda\\/persoon\\/context\\/persoon-IM.jsonld$"
+    }
+  },
+  "required": [
+    "@id",
+    "@type",
+    "@context"
+  ]
+}

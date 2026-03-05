@@ -3,25 +3,14 @@
   "type": "object",
   "description": "Natuurlijk persoon.",
   "properties": {
-    "@context": {
-      "type": "string",
-      "format": "uri",
-      "enum": [
-        "http://example.org/context.jsonld"
-      ]
-    },
     "@id": {
       "type": "string",
       "format": "uri"
     },
     "@type": {
-      "type": "array",
-      "description": "Lijst van object types (klasse)",
-      "items": {
-        "type": "string",
-        "description": "Persoon type"
-      },
-      "minItems": 1
+      "type": "object",
+      "description": "Object type (klasse Persoon)",
+      "pattern": "^Persoon$"
     },
     "Persoon.voornaam": {
       "type": "array",
@@ -41,312 +30,126 @@
       "minItems": 0
     },
     "Persoon.achternaam": {
-      "type": "object",
-      "description": "Gedeelte van de volledige naam van de Persoon ontvangen van de vorige generatie. Ook wel familienaam genoemd omdat de achternaam een familiale verwantschap aanduidt.",
-      "properties": {
-        "@value": {
-          "type": "string"
-        }
+      "type": "array",
+      "description": "Lijst van String items.",
+      "items": {
+        "type": "object",
+        "description": "Gedeelte van de volledige naam van de Persoon ontvangen van de vorige generatie. Ook wel familienaam genoemd omdat de achternaam een familiale verwantschap aanduidt.",
+        "properties": {
+          "@value": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "@value"
+        ]
       },
-      "required": [
-        "@value"
-      ]
+      "minItems": 0
     },
     "Persoon.contactinfo": {
-      "type": "object",
-      "description": "Informatie zoals email, telefoon, ... die toelaat de Persoon te contacteren.",
-      "properties": {
-        "@id": {
-          "anyOf": [
-            {
-              "type": "string",
-              "format": "uri"
-            },
-            {
-              "type": "string",
-              "format": "blanknode"
-            },
-            {
-              "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Contactinfo.json"
-            }
-          ]
-        }
-      },
-      "required": [
-        "@id"
-      ]
+      "$ref": "#/components/schemas/Contactinfo"
     },
     "Persoon.geslacht": {
-      "type": "object",
-      "description": "De uiting van een Persoon's indentiteit, expressie en sociale rol. Het geslacht van een Persoon is sterk afhankelijk van de manier waarop dit gedefinieerd is, dit kan op basis van de biologische kenmerken maar ook op basis van gender, genderindentiteit, genderexpressie, etc. Voor meer informatie zie <a href=\"https://www.vlaanderen.be/dienst-diversiteitsbeleid/begrippen-rond-gender-en-seksuele-diversiteit\">Begrippen rond gender- en seksuele diversiteit</a>.",
-      "properties": {
-        "@id": {
-          "anyOf": [
-            {
-              "type": "string",
-              "format": "uri"
-            },
-            {
-              "type": "string",
-              "format": "blanknode"
-            },
-            {
-              "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Geslacht.json"
-            }
-          ]
-        }
-      },
-      "required": [
-        "@id"
-      ]
+      "$ref": "#/components/schemas/Geslacht"
     },
     "Persoon.isHoofdVan": {
-      "type": "object",
-      "description": "Persoon die standaard het Gezin vertegenwoordigt.",
-      "properties": {
-        "@id": {
-          "anyOf": [
-            {
-              "type": "string",
-              "format": "uri"
-            },
-            {
-              "type": "string",
-              "format": "blanknode"
-            },
-            {
-              "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Gezin.json"
-            }
-          ]
-        }
-      },
-      "required": [
-        "@id"
-      ]
+      "$ref": "#/components/schemas/Gezin"
     },
     "Persoon.heeftBurgerlijkeStaat": {
-      "type": "object",
-      "description": "Burgerlijke Staat van de Persoon.",
-      "properties": {
-        "@id": {
-          "anyOf": [
-            {
-              "type": "string",
-              "format": "uri"
-            },
-            {
-              "type": "string",
-              "format": "blanknode"
-            },
-            {
-              "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/BurgerlijkeStaat.json"
-            }
-          ]
-        }
-      },
-      "required": [
-        "@id"
-      ]
+      "$ref": "#/components/schemas/BurgerlijkeStaat"
     },
     "Persoon.heeftGeboorte": {
-      "type": "object",
-      "description": "Verwijst naar de geboortegebeurtenis van de Persoon. Bevat vaak de geboortegevens van de Persoon.",
-      "properties": {
-        "@id": {
-          "anyOf": [
-            {
-              "type": "string",
-              "format": "uri"
-            },
-            {
-              "type": "string",
-              "format": "blanknode"
-            },
-            {
-              "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Geboorte.json"
-            }
-          ]
-        }
-      },
-      "required": [
-        "@id"
-      ]
+      "$ref": "#/components/schemas/Geboorte"
     },
     "Persoon.heeftOverlijden": {
-      "type": "object",
-      "description": "Verwijst naar de overlijdensgebeurtenis van de Persoon. Bevat vaak de overlijdensgegevens van de Persoon.",
-      "properties": {
-        "@id": {
-          "anyOf": [
-            {
-              "type": "string",
-              "format": "uri"
-            },
-            {
-              "type": "string",
-              "format": "blanknode"
-            },
-            {
-              "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Overlijden.json"
-            }
-          ]
+      "$ref": "#/components/schemas/Overlijden"
+    },
+    "Persoon.heeftInwonerschap": {
+      "$ref": "#/components/schemas/Inwonerschap"
+    },
+    "Persoon.heeftPersoonsrelatie": {
+      "oneOf": [
+        {
+          "$ref": "#/components/schemas/Persoonsrelatie"
+        },
+        {
+          "$ref": "#/components/schemas/Gezinsrelatie"
+        },
+        {
+          "$ref": "#/components/schemas/Huwelijk"
+        },
+        {
+          "$ref": "#/components/schemas/Samenwonen"
+        },
+        {
+          "$ref": "#/components/schemas/Afstamming"
         }
-      },
-      "required": [
-        "@id"
-      ]
-    },
-    "Persoon.inwonerschap": {
-      "type": "array",
-      "description": "Lijst van Jurisdictie items.",
-      "items": {
-        "type": "object",
-        "description": "Jurisdictie waarbinnen het Inwonerschap van de Persoon is gedefinieerd.",
-        "properties": {
-          "@id": {
-            "anyOf": [
-              {
-                "type": "string",
-                "format": "uri"
-              },
-              {
-                "type": "string",
-                "format": "blanknode"
-              },
-              {
-                "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Jurisdictie.json"
-              }
-            ]
-          }
-        },
-        "required": [
-          "@id"
-        ]
-      },
-      "minItems": 0
-    },
-    "Persoon.inwonerschapdetail": {
-      "type": "array",
-      "description": "Lijst van Inwonerschap items.",
-      "items": {
-        "type": "object",
-        "description": "Inwonerschap van de persoon.",
-        "properties": {
-          "@id": {
-            "anyOf": [
-              {
-                "type": "string",
-                "format": "uri"
-              },
-              {
-                "type": "string",
-                "format": "blanknode"
-              },
-              {
-                "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Inwonerschap.json"
-              }
-            ]
-          }
-        },
-        "required": [
-          "@id"
-        ]
-      },
-      "minItems": 0
-    },
-    "Persoon.heeftRelatieMet": {
-      "type": "array",
-      "description": "Lijst van Persoon items.",
-      "items": {
-        "type": "object",
-        "description": "Persoon waarmee de Persoon gerelateerd is.",
-        "properties": {
-          "@id": {
-            "anyOf": [
-              {
-                "type": "string",
-                "format": "uri"
-              },
-              {
-                "type": "string",
-                "format": "blanknode"
-              },
-              {
-                "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Persoon.json"
-              }
-            ]
-          }
-        },
-        "required": [
-          "@id"
-        ]
-      },
-      "minItems": 0
-    },
-    "Persoon.persoonsrelatiedetail": {
-      "type": "array",
-      "description": "Lijst van Persoonsrelatie items.",
-      "items": {
-        "type": "object",
-        "description": "Persoonsrelatie van de persoon.",
-        "properties": {
-          "@id": {
-            "anyOf": [
-              {
-                "type": "string",
-                "format": "uri"
-              },
-              {
-                "type": "string",
-                "format": "blanknode"
-              },
-              {
-                "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Persoonsrelatie.json"
-              }
-            ]
-          }
-        },
-        "required": [
-          "@id"
-        ]
-      },
-      "minItems": 0
+      ],
+      "discriminator": {
+        "propertyName": "@type",
+        "mapping": {
+          "Persoonsrelatie": "#/components/schemas/Persoonsrelatie",
+          "Gezinsrelatie": "#/components/schemas/Gezinsrelatie",
+          "Huwelijk": "#/components/schemas/Huwelijk",
+          "Samenwonen": "#/components/schemas/Samenwonen",
+          "Afstamming": "#/components/schemas/Afstamming"
+        }
+      }
     },
     "Persoon.isLidVan": {
       "type": "array",
       "description": "Lijst van Gezin items.",
       "items": {
-        "type": "object",
-        "description": "Persoon die tot een Gezin behoort.",
-        "properties": {
-          "@id": {
-            "anyOf": [
-              {
-                "type": "string",
-                "format": "uri"
-              },
-              {
-                "type": "string",
-                "format": "blanknode"
-              },
-              {
-                "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Gezin.json"
-              }
-            ]
-          }
-        },
-        "required": [
-          "@id"
-        ]
+        "$ref": "#/components/schemas/Gezin"
       },
       "minItems": 0
+    },
+    "Versie.creatiedatum": {
+      "type": "object",
+      "description": "Datum waarop de gegevens zijn ingevoerd.",
+      "properties": {
+        "@value": {
+          "type": "string",
+          "format": "date"
+        },
+        "@type": {
+          "type": "string",
+          "pattern": "^Date$"
+        }
+      },
+      "required": [
+        "@value",
+        "@type"
+      ]
+    },
+    "Versie.modificatiedatum": {
+      "type": "object",
+      "description": "Datum waarop de gegevens werden bijgewerkt.",
+      "properties": {
+        "@value": {
+          "type": "string",
+          "format": "date"
+        },
+        "@type": {
+          "type": "string",
+          "pattern": "^Date$"
+        }
+      },
+      "required": [
+        "@value",
+        "@type"
+      ]
+    },
+    "Versie.bron": {
+      "$ref": "#/components/schemas/Organisatie"
     }
   },
   "required": [
-    "@context",
     "@id",
     "@type",
-    "Persoon.geslacht",
-    "Persoon.heeftGeboorte"
+    "Persoon.heeftInwonerschap",
+    "Persoon.heeftPersoonsrelatie",
+    "Persoon.creatiedatum",
+    "Persoon.bron"
   ]
 }

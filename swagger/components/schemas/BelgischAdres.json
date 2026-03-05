@@ -3,29 +3,17 @@
   "type": "object",
   "description": "Informatie die toelaat om op een gestructureerde en unieke manier te verwijzen naar een gebouweenheid,een ligplaats,een standplaats of een perceel op basis van een gemeentenaam,een straatnaam,een huisnummer en eventueel een busnummer en een postcode.",
   "properties": {
-    "@context": {
-      "type": "string",
-      "format": "uri",
-      "enum": [
-        "http://example.org/context.jsonld"
-      ]
-    },
     "@id": {
       "type": "string",
       "format": "uri"
     },
     "@type": {
-      "type": "array",
-      "description": "Lijst van object types (klasse)",
-      "items": {
-        "type": "string",
-        "description": "BelgischAdres type"
-      },
-      "minItems": 1
+      "type": "object",
+      "description": "Object type (klasse BelgischAdres)",
+      "pattern": "^BelgischAdres$"
     }
   },
   "required": [
-    "@context",
     "@id",
     "@type"
   ]

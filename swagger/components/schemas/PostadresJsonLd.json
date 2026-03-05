@@ -1,0 +1,29 @@
+{
+  "title": "Postadres",
+  "type": "object",
+  "description": "Postadres van de verblijfplaats van een persoon.",
+  "properties": {
+    "@id": {
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "type": "object",
+      "description": "Object type (klasse Postadres)",
+      "pattern": "^Postadres$"
+    },
+    "Verblijfplaats.verblijfsadres": {
+      "$ref": "#/components/schemas/Adresvoorstelling"
+    },
+    "@context": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https:\\/\\/test.data.vlaanderen.be\\/doc\\/implementatiemodel\\/magda\\/persoon\\/context\\/persoon-IM.jsonld$"
+    }
+  },
+  "required": [
+    "@id",
+    "@type",
+    "@context"
+  ]
+}

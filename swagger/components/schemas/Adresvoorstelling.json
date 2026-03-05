@@ -3,25 +3,14 @@
   "type": "object",
   "description": "Meer leesbare voorstelling met enkel de basisgegevens van het adres, bedoeld voor het gebruik van een adres als attribuut van een ander object.",
   "properties": {
-    "@context": {
-      "type": "string",
-      "format": "uri",
-      "enum": [
-        "http://example.org/context.jsonld"
-      ]
-    },
     "@id": {
       "type": "string",
       "format": "uri"
     },
     "@type": {
-      "type": "array",
-      "description": "Lijst van object types (klasse)",
-      "items": {
-        "type": "string",
-        "description": "Adresvoorstelling type"
-      },
-      "minItems": 1
+      "type": "object",
+      "description": "Object type (klasse Adresvoorstelling)",
+      "pattern": "^Adresvoorstelling$"
     },
     "Adresvoorstelling.administratieveEenheidNiveau1": {
       "type": "object",
@@ -32,9 +21,7 @@
         },
         "@language": {
           "type": "string",
-          "enum": [
-            "nl"
-          ]
+          "pattern": "^nl$"
         }
       },
       "required": [
@@ -51,9 +38,7 @@
         },
         "@language": {
           "type": "string",
-          "enum": [
-            "nl"
-          ]
+          "pattern": "^nl$"
         }
       },
       "required": [
@@ -70,9 +55,7 @@
         },
         "@language": {
           "type": "string",
-          "enum": [
-            "nl"
-          ]
+          "pattern": "^nl$"
         }
       },
       "required": [
@@ -101,9 +84,7 @@
         },
         "@language": {
           "type": "string",
-          "enum": [
-            "nl"
-          ]
+          "pattern": "^nl$"
         }
       },
       "required": [
@@ -132,9 +113,7 @@
         },
         "@language": {
           "type": "string",
-          "enum": [
-            "nl"
-          ]
+          "pattern": "^nl$"
         }
       },
       "required": [
@@ -171,9 +150,7 @@
           },
           "@language": {
             "type": "string",
-            "enum": [
-              "nl"
-            ]
+            "pattern": "^nl$"
           }
         },
         "required": [
@@ -216,9 +193,7 @@
         },
         "@language": {
           "type": "string",
-          "enum": [
-            "nl"
-          ]
+          "pattern": "^nl$"
         }
       },
       "required": [
@@ -235,9 +210,7 @@
         },
         "@language": {
           "type": "string",
-          "enum": [
-            "nl"
-          ]
+          "pattern": "^nl$"
         }
       },
       "required": [
@@ -254,9 +227,7 @@
         },
         "@language": {
           "type": "string",
-          "enum": [
-            "nl"
-          ]
+          "pattern": "^nl$"
         }
       },
       "required": [
@@ -265,32 +236,13 @@
       ]
     },
     "Adresvoorstelling.verwijstNaar": {
-      "type": "object",
-      "description": "Adres waarvan de adresvoorstelling is afgeleid. Dit kan enkel voor Belgische adressen aangezien onder adres een Belgisch adres wordt verstaan.",
-      "properties": {
-        "@id": {
-          "anyOf": [
-            {
-              "type": "string",
-              "format": "uri"
-            },
-            {
-              "type": "string",
-              "format": "blanknode"
-            },
-            {
-              "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/BelgischAdres.json"
-            }
-          ]
-        }
-      },
-      "required": [
-        "@id"
-      ]
+      "$ref": "#/components/schemas/BelgischAdres"
+    },
+    "Jurisdictie.plaats": {
+      "$ref": "#/components/schemas/Plaats"
     }
   },
   "required": [
-    "@context",
     "@id",
     "@type"
   ]

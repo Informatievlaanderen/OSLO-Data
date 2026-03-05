@@ -3,56 +3,24 @@
   "type": "object",
   "description": "Adres van een andere persoon of rechtspersoon voor personen zonder vaste verblijfplaats.",
   "properties": {
-    "@context": {
-      "type": "string",
-      "format": "uri",
-      "enum": [
-        "http://example.org/context.jsonld"
-      ]
-    },
     "@id": {
       "type": "string",
       "format": "uri"
     },
     "@type": {
-      "type": "array",
-      "description": "Lijst van object types (klasse)",
-      "items": {
-        "type": "string",
-        "description": "Referentieadres type"
-      },
-      "minItems": 1
-    },
-    "Referentieadres.verblijfsadres": {
       "type": "object",
-      "description": "Adres van de Verblijfplaats.",
-      "properties": {
-        "@id": {
-          "anyOf": [
-            {
-              "type": "string",
-              "format": "uri"
-            },
-            {
-              "type": "string",
-              "format": "blanknode"
-            },
-            {
-              "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Adresvoorstelling.json"
-            }
-          ]
-        }
-      },
-      "required": [
-        "@id"
-      ]
+      "description": "Object type (klasse Referentieadres)",
+      "pattern": "^Referentieadres$"
+    },
+    "Domicilie.verblijfsadres": {
+      "$ref": "#/components/schemas/BelgischAdres"
+    },
+    "Verblijfplaats.verblijfsadres": {
+      "$ref": "#/components/schemas/Adresvoorstelling"
     }
   },
   "required": [
-    "@context",
     "@id",
-    "@type",
-    "Referentieadres.verblijfsadres",
-    "Referentieadres.verblijfsadres"
+    "@type"
   ]
 }

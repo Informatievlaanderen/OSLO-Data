@@ -1,0 +1,32 @@
+{
+  "title": "AangegevenAdres",
+  "type": "object",
+  "description": "Adres dat door een persoon wordt opgegeven als hoofdverblijplaats.",
+  "properties": {
+    "@id": {
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "type": "object",
+      "description": "Object type (klasse AangegevenAdres)",
+      "pattern": "^AangegevenAdres$"
+    },
+    "Domicilie.verblijfsadres": {
+      "$ref": "#/components/schemas/BelgischAdres"
+    },
+    "Verblijfplaats.verblijfsadres": {
+      "$ref": "#/components/schemas/Adresvoorstelling"
+    },
+    "@context": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https:\\/\\/test.data.vlaanderen.be\\/doc\\/implementatiemodel\\/magda\\/persoon\\/context\\/persoon-IM.jsonld$"
+    }
+  },
+  "required": [
+    "@id",
+    "@type",
+    "@context"
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "title": "Plaats",
+  "type": "object",
+  "description": "Een ruimtelijk gebied of benoemde plaats.",
+  "properties": {
+    "@id": {
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "type": "object",
+      "description": "Object type (klasse Plaats)",
+      "pattern": "^Plaats$"
+    },
+    "Plaats.plaatsnaam": {
+      "type": "object",
+      "description": "Naam van de plaats of van het gebied.",
+      "properties": {
+        "@value": {
+          "type": "string"
+        },
+        "@language": {
+          "type": "string",
+          "pattern": "^nl$"
+        }
+      },
+      "required": [
+        "@value",
+        "@language"
+      ]
+    },
+    "Plaats.identificator": {
+      "$ref": "#/components/schemas/Identificator"
+    },
+    "Jurisdictie.plaats": {
+      "$ref": "#/components/schemas/Plaats"
+    },
+    "@context": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https:\\/\\/test.data.vlaanderen.be\\/doc\\/implementatiemodel\\/magda\\/persoon\\/context\\/persoon-IM.jsonld$"
+    }
+  },
+  "required": [
+    "@id",
+    "@type",
+    "@context"
+  ]
+}

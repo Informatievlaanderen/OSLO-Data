@@ -3,55 +3,46 @@
   "type": "object",
   "description": "Organisatie die het dossier van de persoon in het register beheert.",
   "properties": {
-    "@context": {
-      "type": "string",
-      "format": "uri",
-      "enum": [
-        "http://example.org/context.jsonld"
-      ]
-    },
     "@id": {
       "type": "string",
       "format": "uri"
     },
     "@type": {
-      "type": "array",
-      "description": "Lijst van object types (klasse)",
-      "items": {
-        "type": "string",
-        "description": "AdministratiefBeheerder type"
-      },
-      "minItems": 1
+      "type": "object",
+      "description": "Object type (klasse AdministratiefBeheerder)",
+      "pattern": "^AdministratiefBeheerder$"
     },
     "AdministratiefBeheerder.type": {
+      "$ref": "#/components/schemas/AdministratiefBeheerdertype"
+    },
+    "Organisatie.voorkeursnaam": {
       "type": "object",
-      "description": "Aard van de AdministratiefBeheerder",
+      "description": "Naam waarmee de Organisatie bij voorkeur wordt aangeduid.",
       "properties": {
-        "@id": {
-          "anyOf": [
-            {
-              "type": "string",
-              "format": "uri"
-            },
-            {
-              "type": "string",
-              "format": "blanknode"
-            },
-            {
-              "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/AdministratiefBeheerdertype.json"
-            }
-          ]
+        "@value": {
+          "type": "string"
+        },
+        "@language": {
+          "type": "string",
+          "pattern": "^nl$"
         }
       },
       "required": [
-        "@id"
+        "@value",
+        "@language"
       ]
+    },
+    "Organisatie.contactinfo": {
+      "type": "array",
+      "description": "Lijst van Contactinfo items.",
+      "items": {
+        "$ref": "#/components/schemas/Contactinfo"
+      },
+      "minItems": 0
     }
   },
   "required": [
-    "@context",
     "@id",
-    "@type",
-    "AdministratiefBeheerder.type"
+    "@type"
   ]
 }

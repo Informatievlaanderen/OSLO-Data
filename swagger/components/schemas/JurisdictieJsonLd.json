@@ -1,0 +1,29 @@
+{
+  "title": "Jurisdictie",
+  "type": "object",
+  "description": "Het gebied waarover de rechtsmacht van een overheid zich uitstrekt.",
+  "properties": {
+    "@id": {
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "type": "object",
+      "description": "Object type (klasse Jurisdictie)",
+      "pattern": "^Jurisdictie$"
+    },
+    "Jurisdictie.plaats": {
+      "$ref": "#/components/schemas/Plaats"
+    },
+    "@context": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https:\\/\\/test.data.vlaanderen.be\\/doc\\/implementatiemodel\\/magda\\/persoon\\/context\\/persoon-IM.jsonld$"
+    }
+  },
+  "required": [
+    "@id",
+    "@type",
+    "@context"
+  ]
+}

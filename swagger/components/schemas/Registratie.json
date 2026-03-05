@@ -3,130 +3,34 @@
   "type": "object",
   "description": "Opname van de Persoon in het register.",
   "properties": {
-    "@context": {
-      "type": "string",
-      "format": "uri",
-      "enum": [
-        "http://example.org/context.jsonld"
-      ]
-    },
     "@id": {
       "type": "string",
       "format": "uri"
     },
     "@type": {
-      "type": "array",
-      "description": "Lijst van object types (klasse)",
-      "items": {
-        "type": "string",
-        "description": "Registratie type"
-      },
-      "minItems": 1
+      "type": "object",
+      "description": "Object type (klasse Registratie)",
+      "pattern": "^Registratie$"
     },
     "Registratie.dossierstatus": {
       "type": "array",
       "description": "Lijst van Dossierstatustype items.",
       "items": {
-        "type": "object",
-        "description": "Toestand van het dossier van de Registratie. In het Rijksregister gebruikt wanneer de inschrijving in het register niet meer geldig is, bvb omdat de persoon uit het register is geschrapt of een eerdere registratie werd geannuleerd of de persoon is overleden etc.",
-        "properties": {
-          "@id": {
-            "anyOf": [
-              {
-                "type": "string",
-                "format": "uri"
-              },
-              {
-                "type": "string",
-                "format": "blanknode"
-              },
-              {
-                "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Dossierstatustype.json"
-              }
-            ]
-          }
-        },
-        "required": [
-          "@id"
-        ]
+        "$ref": "#/components/schemas/Dossierstatustype"
       },
       "minItems": 0
     },
     "Registratie.geregistreerdPersoon": {
-      "type": "object",
-      "description": "Persoon die wordt geregistreerd.",
-      "properties": {
-        "@id": {
-          "anyOf": [
-            {
-              "type": "string",
-              "format": "uri"
-            },
-            {
-              "type": "string",
-              "format": "blanknode"
-            },
-            {
-              "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/GeregistreerdPersoon.json"
-            }
-          ]
-        }
-      },
-      "required": [
-        "@id"
-      ]
+      "$ref": "#/components/schemas/GeregistreerdPersoon"
     },
     "Registratie.vorigeRegistratie": {
-      "type": "object",
-      "description": "Vorige Registratie van een Persoon in het register.",
-      "properties": {
-        "@id": {
-          "anyOf": [
-            {
-              "type": "string",
-              "format": "uri"
-            },
-            {
-              "type": "string",
-              "format": "blanknode"
-            },
-            {
-              "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Registratie.json"
-            }
-          ]
-        }
-      },
-      "required": [
-        "@id"
-      ]
+      "$ref": "#/components/schemas/Registratie"
     },
     "Registratie.volgendeRegistratie": {
-      "type": "object",
-      "description": "Volgende Registratie van een Persoon in het register.",
-      "properties": {
-        "@id": {
-          "anyOf": [
-            {
-              "type": "string",
-              "format": "uri"
-            },
-            {
-              "type": "string",
-              "format": "blanknode"
-            },
-            {
-              "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Registratie.json"
-            }
-          ]
-        }
-      },
-      "required": [
-        "@id"
-      ]
+      "$ref": "#/components/schemas/Registratie"
     }
   },
   "required": [
-    "@context",
     "@id",
     "@type",
     "Registratie.geregistreerdPersoon"

@@ -1,0 +1,170 @@
+{
+  "title": "GeregistreerdPersoon",
+  "type": "object",
+  "description": "Persoon waarvan de gegevens zijn ingeschreven in een register.",
+  "properties": {
+    "@id": {
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "type": "object",
+      "description": "Object type (klasse GeregistreerdPersoon)",
+      "pattern": "^GeregistreerdPersoon$"
+    },
+    "GeregistreerdPersoon.registratie": {
+      "$ref": "#/components/schemas/Identificator"
+    },
+    "GeregistreerdPersoon.beheerder": {
+      "$ref": "#/components/schemas/AdministratiefBeheerder"
+    },
+    "GeregistreerdPersoon.registratiedetail": {
+      "$ref": "#/components/schemas/Registratie"
+    },
+    "Persoon.voornaam": {
+      "type": "array",
+      "description": "Lijst van String items.",
+      "items": {
+        "type": "object",
+        "description": "Naam die een Persoon bij geboorte wordt gegeven. Onderscheidt de Persoon van de andere personen in de familie.",
+        "properties": {
+          "@value": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "@value"
+        ]
+      },
+      "minItems": 0
+    },
+    "Persoon.achternaam": {
+      "type": "array",
+      "description": "Lijst van String items.",
+      "items": {
+        "type": "object",
+        "description": "Gedeelte van de volledige naam van de Persoon ontvangen van de vorige generatie. Ook wel familienaam genoemd omdat de achternaam een familiale verwantschap aanduidt.",
+        "properties": {
+          "@value": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "@value"
+        ]
+      },
+      "minItems": 0
+    },
+    "Persoon.contactinfo": {
+      "$ref": "#/components/schemas/Contactinfo"
+    },
+    "Persoon.geslacht": {
+      "$ref": "#/components/schemas/Geslacht"
+    },
+    "Persoon.isHoofdVan": {
+      "$ref": "#/components/schemas/Gezin"
+    },
+    "Persoon.heeftBurgerlijkeStaat": {
+      "$ref": "#/components/schemas/BurgerlijkeStaat"
+    },
+    "Persoon.heeftGeboorte": {
+      "$ref": "#/components/schemas/Geboorte"
+    },
+    "Persoon.heeftOverlijden": {
+      "$ref": "#/components/schemas/Overlijden"
+    },
+    "Persoon.heeftInwonerschap": {
+      "$ref": "#/components/schemas/Inwonerschap"
+    },
+    "Persoon.heeftPersoonsrelatie": {
+      "oneOf": [
+        {
+          "$ref": "#/components/schemas/Persoonsrelatie"
+        },
+        {
+          "$ref": "#/components/schemas/Gezinsrelatie"
+        },
+        {
+          "$ref": "#/components/schemas/Huwelijk"
+        },
+        {
+          "$ref": "#/components/schemas/Samenwonen"
+        },
+        {
+          "$ref": "#/components/schemas/Afstamming"
+        }
+      ],
+      "discriminator": {
+        "propertyName": "@type",
+        "mapping": {
+          "Persoonsrelatie": "#/components/schemas/Persoonsrelatie",
+          "Gezinsrelatie": "#/components/schemas/Gezinsrelatie",
+          "Huwelijk": "#/components/schemas/Huwelijk",
+          "Samenwonen": "#/components/schemas/Samenwonen",
+          "Afstamming": "#/components/schemas/Afstamming"
+        }
+      }
+    },
+    "Persoon.isLidVan": {
+      "type": "array",
+      "description": "Lijst van Gezin items.",
+      "items": {
+        "$ref": "#/components/schemas/Gezin"
+      },
+      "minItems": 0
+    },
+    "Versie.creatiedatum": {
+      "type": "object",
+      "description": "Datum waarop de gegevens zijn ingevoerd.",
+      "properties": {
+        "@value": {
+          "type": "string",
+          "format": "date"
+        },
+        "@type": {
+          "type": "string",
+          "pattern": "^Date$"
+        }
+      },
+      "required": [
+        "@value",
+        "@type"
+      ]
+    },
+    "Versie.modificatiedatum": {
+      "type": "object",
+      "description": "Datum waarop de gegevens werden bijgewerkt.",
+      "properties": {
+        "@value": {
+          "type": "string",
+          "format": "date"
+        },
+        "@type": {
+          "type": "string",
+          "pattern": "^Date$"
+        }
+      },
+      "required": [
+        "@value",
+        "@type"
+      ]
+    },
+    "Versie.bron": {
+      "$ref": "#/components/schemas/Organisatie"
+    },
+    "@context": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https:\\/\\/test.data.vlaanderen.be\\/doc\\/implementatiemodel\\/magda\\/persoon\\/context\\/persoon-IM.jsonld$"
+    }
+  },
+  "required": [
+    "@id",
+    "@type",
+    "GeregistreerdPersoon.heeftInwonerschap",
+    "GeregistreerdPersoon.heeftPersoonsrelatie",
+    "GeregistreerdPersoon.creatiedatum",
+    "GeregistreerdPersoon.bron",
+    "@context"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "title": "Gezinsrelatie",
+  "type": "object",
+  "description": "Relatie tussen leden van eenzelfde gezin.",
+  "properties": {
+    "@id": {
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "type": "object",
+      "description": "Object type (klasse Gezinsrelatie)",
+      "pattern": "^Gezinsrelatie$"
+    },
+    "Gezinsrelatie.gezinsrelatietype": {
+      "$ref": "#/components/schemas/Gezinsrelatietype"
+    },
+    "Persoonsrelatie.vanPersoon": {
+      "$ref": "#/components/schemas/Persoon"
+    },
+    "Persoonsrelatie.metPersoon": {
+      "$ref": "#/components/schemas/Persoon"
+    },
+    "@context": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https:\\/\\/test.data.vlaanderen.be\\/doc\\/implementatiemodel\\/magda\\/persoon\\/context\\/persoon-IM.jsonld$"
+    }
+  },
+  "required": [
+    "@id",
+    "@type",
+    "Gezinsrelatie.vanPersoon",
+    "Gezinsrelatie.metPersoon",
+    "@context"
+  ]
+}

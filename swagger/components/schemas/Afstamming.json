@@ -3,25 +3,14 @@
   "type": "object",
   "description": "Afstamming is de dalende lijn van bloedverwantschap tussen verschillende generaties.",
   "properties": {
-    "@context": {
-      "type": "string",
-      "format": "uri",
-      "enum": [
-        "http://example.org/context.jsonld"
-      ]
-    },
     "@id": {
       "type": "string",
       "format": "uri"
     },
     "@type": {
-      "type": "array",
-      "description": "Lijst van object types (klasse)",
-      "items": {
-        "type": "string",
-        "description": "Afstamming type"
-      },
-      "minItems": 1
+      "type": "object",
+      "description": "Object type (klasse Afstamming)",
+      "pattern": "^Afstamming$"
     },
     "Afstamming.datumVanAfstamming": {
       "type": "object",
@@ -29,13 +18,11 @@
       "properties": {
         "@value": {
           "type": "string",
-          "format": "date-time"
+          "format": "date"
         },
         "@type": {
           "type": "string",
-          "enum": [
-            "DateTime"
-          ]
+          "pattern": "^Date$"
         }
       },
       "required": [
@@ -44,84 +31,18 @@
       ]
     },
     "Afstamming.afstammingstype": {
-      "type": "object",
-      "description": "Aard van de afstamming. Bijvoorbeeld: geadopteerd, kind uit huwelijk, erkend door de vader, etc.",
-      "properties": {
-        "@id": {
-          "anyOf": [
-            {
-              "type": "string",
-              "format": "uri"
-            },
-            {
-              "type": "string",
-              "format": "blanknode"
-            },
-            {
-              "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Afstammingstype.json"
-            }
-          ]
-        }
-      },
-      "required": [
-        "@id"
-      ]
+      "$ref": "#/components/schemas/Afstammingstype"
     },
-    "Afstamming.vanPersoon": {
-      "type": "object",
-      "description": "Persoon die een persoonsrelatie heeft.",
-      "properties": {
-        "@id": {
-          "anyOf": [
-            {
-              "type": "string",
-              "format": "uri"
-            },
-            {
-              "type": "string",
-              "format": "blanknode"
-            },
-            {
-              "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Persoon.json"
-            }
-          ]
-        }
-      },
-      "required": [
-        "@id"
-      ]
+    "Persoonsrelatie.vanPersoon": {
+      "$ref": "#/components/schemas/Persoon"
     },
-    "Afstamming.metPersoon": {
-      "type": "object",
-      "description": "De persoon waarmee de persoon een relatie heeft.",
-      "properties": {
-        "@id": {
-          "anyOf": [
-            {
-              "type": "string",
-              "format": "uri"
-            },
-            {
-              "type": "string",
-              "format": "blanknode"
-            },
-            {
-              "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Persoon.json"
-            }
-          ]
-        }
-      },
-      "required": [
-        "@id"
-      ]
+    "Persoonsrelatie.metPersoon": {
+      "$ref": "#/components/schemas/Persoon"
     }
   },
   "required": [
-    "@context",
     "@id",
     "@type",
-    "Afstamming.datumVanAfstamming",
-    "Afstamming.afstammingstype",
     "Afstamming.vanPersoon",
     "Afstamming.metPersoon"
   ]

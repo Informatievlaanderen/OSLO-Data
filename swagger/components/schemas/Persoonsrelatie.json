@@ -3,77 +3,23 @@
   "type": "object",
   "description": "Relatie tussen twee of meer personen.",
   "properties": {
-    "@context": {
-      "type": "string",
-      "format": "uri",
-      "enum": [
-        "http://example.org/context.jsonld"
-      ]
-    },
     "@id": {
       "type": "string",
       "format": "uri"
     },
     "@type": {
-      "type": "array",
-      "description": "Lijst van object types (klasse)",
-      "items": {
-        "type": "string",
-        "description": "Persoonsrelatie type"
-      },
-      "minItems": 1
+      "type": "object",
+      "description": "Object type (klasse Persoonsrelatie)",
+      "pattern": "^Persoonsrelatie$"
     },
     "Persoonsrelatie.vanPersoon": {
-      "type": "object",
-      "description": "Persoon die een persoonsrelatie heeft.",
-      "properties": {
-        "@id": {
-          "anyOf": [
-            {
-              "type": "string",
-              "format": "uri"
-            },
-            {
-              "type": "string",
-              "format": "blanknode"
-            },
-            {
-              "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Persoon.json"
-            }
-          ]
-        }
-      },
-      "required": [
-        "@id"
-      ]
+      "$ref": "#/components/schemas/Persoon"
     },
     "Persoonsrelatie.metPersoon": {
-      "type": "object",
-      "description": "De persoon waarmee de persoon een relatie heeft.",
-      "properties": {
-        "@id": {
-          "anyOf": [
-            {
-              "type": "string",
-              "format": "uri"
-            },
-            {
-              "type": "string",
-              "format": "blanknode"
-            },
-            {
-              "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Persoon.json"
-            }
-          ]
-        }
-      },
-      "required": [
-        "@id"
-      ]
+      "$ref": "#/components/schemas/Persoon"
     }
   },
   "required": [
-    "@context",
     "@id",
     "@type",
     "Persoonsrelatie.vanPersoon",

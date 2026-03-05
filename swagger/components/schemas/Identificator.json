@@ -3,53 +3,18 @@
   "type": "object",
   "description": "Informatie gebruikt om een object uniek te identificeren.",
   "properties": {
-    "@context": {
-      "type": "string",
-      "format": "uri",
-      "enum": [
-        "http://example.org/context.jsonld"
-      ]
-    },
     "@id": {
       "type": "string",
       "format": "uri"
     },
     "@type": {
-      "type": "array",
-      "description": "Lijst van object types (klasse)",
-      "items": {
-        "type": "string",
-        "description": "Identificator type"
-      },
-      "minItems": 1
+      "type": "object",
+      "description": "Object type (klasse Identificator)",
+      "pattern": "^Identificator$"
     },
     "Identificator.identificator": {
       "type": "object",
       "description": "String gebruikt om het object uniek te identificeren. Type vd string slaat op het identificatiesysteem (incl de versie ervan), de string zelf op de eigenlijke identificator.",
-      "properties": {
-        "@id": {
-          "anyOf": [
-            {
-              "type": "string",
-              "format": "uri"
-            },
-            {
-              "type": "string",
-              "format": "blanknode"
-            },
-            {
-              "$ref": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Data/refs/heads/main/swagger/components/schemas/Literal.json"
-            }
-          ]
-        }
-      },
-      "required": [
-        "@id"
-      ]
-    },
-    "Identificator.toegekendDoor(String)": {
-      "type": "object",
-      "description": "Naam vd agent die de identificator heeft toegekend.",
       "properties": {
         "@value": {
           "type": "string"
@@ -58,51 +23,9 @@
       "required": [
         "@value"
       ]
-    },
-    "Identificator.toegekendOp": {
-      "type": "object",
-      "description": "Tijdstip waarop de identificator werd uitgegeven.",
-      "properties": {
-        "@value": {
-          "type": "string",
-          "format": "date-time"
-        },
-        "@type": {
-          "type": "string",
-          "enum": [
-            "DateTime"
-          ]
-        }
-      },
-      "required": [
-        "@value",
-        "@type"
-      ]
-    },
-    "Identificator.toegekendDoor": {
-      "type": "object",
-      "description": "Link naar de agent die de identificator heeft uitgegeven.",
-      "properties": {
-        "@id": {
-          "anyOf": [
-            {
-              "type": "string",
-              "format": "uri"
-            },
-            {
-              "type": "string",
-              "format": "blanknode"
-            }
-          ]
-        }
-      },
-      "required": [
-        "@id"
-      ]
     }
   },
   "required": [
-    "@context",
     "@id",
     "@type"
   ]

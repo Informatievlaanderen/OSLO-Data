@@ -1,0 +1,34 @@
+{
+  "title": "Huwelijk",
+  "type": "object",
+  "description": "Een door burgerlijk of religieus recht geregelde samenlevingsvorm van twee personen.",
+  "properties": {
+    "@id": {
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "type": "object",
+      "description": "Object type (klasse Huwelijk)",
+      "pattern": "^Huwelijk$"
+    },
+    "Persoonsrelatie.vanPersoon": {
+      "$ref": "#/components/schemas/Persoon"
+    },
+    "Persoonsrelatie.metPersoon": {
+      "$ref": "#/components/schemas/Persoon"
+    },
+    "@context": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https:\\/\\/test.data.vlaanderen.be\\/doc\\/implementatiemodel\\/magda\\/persoon\\/context\\/persoon-IM.jsonld$"
+    }
+  },
+  "required": [
+    "@id",
+    "@type",
+    "Huwelijk.vanPersoon",
+    "Huwelijk.metPersoon",
+    "@context"
+  ]
+}

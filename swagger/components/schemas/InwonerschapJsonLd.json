@@ -1,0 +1,72 @@
+{
+  "title": "Inwonerschap",
+  "type": "object",
+  "description": "Het feit dat een Persoon verblijf houdt in een plaats of land.",
+  "properties": {
+    "@id": {
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "type": "object",
+      "description": "Object type (klasse Inwonerschap)",
+      "pattern": "^Inwonerschap$"
+    },
+    "Inwonerschap.persoon": {
+      "$ref": "#/components/schemas/Persoon"
+    },
+    "Inwonerschap.jurisdictie": {
+      "$ref": "#/components/schemas/Jurisdictie"
+    },
+    "Inwonerschap.heeftVerblijfplaats": {
+      "type": "array",
+      "description": "Lijst van Verblijfplaats items.",
+      "items": {
+        "oneOf": [
+          {
+            "$ref": "#/components/schemas/Verblijfplaats"
+          },
+          {
+            "$ref": "#/components/schemas/Domicilie"
+          },
+          {
+            "$ref": "#/components/schemas/Afwezig"
+          },
+          {
+            "$ref": "#/components/schemas/Postadres"
+          },
+          {
+            "$ref": "#/components/schemas/VerblijfplaatsBuitenland"
+          },
+          {
+            "$ref": "#/components/schemas/WettelijkVerblijf"
+          }
+        ],
+        "discriminator": {
+          "propertyName": "@type",
+          "mapping": {
+            "Verblijfplaats": "#/components/schemas/Verblijfplaats",
+            "Domicilie": "#/components/schemas/Domicilie",
+            "Afwezig": "#/components/schemas/Afwezig",
+            "Postadres": "#/components/schemas/Postadres",
+            "VerblijfplaatsBuitenland": "#/components/schemas/VerblijfplaatsBuitenland",
+            "WettelijkVerblijf": "#/components/schemas/WettelijkVerblijf"
+          }
+        }
+      },
+      "minItems": 0
+    },
+    "@context": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https:\\/\\/test.data.vlaanderen.be\\/doc\\/implementatiemodel\\/magda\\/persoon\\/context\\/persoon-IM.jsonld$"
+    }
+  },
+  "required": [
+    "@id",
+    "@type",
+    "Inwonerschap.persoon",
+    "Inwonerschap.jurisdictie",
+    "@context"
+  ]
+}

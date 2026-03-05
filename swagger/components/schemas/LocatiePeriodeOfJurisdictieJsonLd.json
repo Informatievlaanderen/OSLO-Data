@@ -1,0 +1,26 @@
+{
+  "title": "LocatiePeriodeOfJurisdictie",
+  "type": "object",
+  "description": "Een Locatie,Periode of Jurisdictie.",
+  "properties": {
+    "@id": {
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "type": "object",
+      "description": "Object type (klasse LocatiePeriodeOfJurisdictie)",
+      "pattern": "^LocatiePeriodeOfJurisdictie$"
+    },
+    "@context": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https:\\/\\/test.data.vlaanderen.be\\/doc\\/implementatiemodel\\/magda\\/persoon\\/context\\/persoon-IM.jsonld$"
+    }
+  },
+  "required": [
+    "@id",
+    "@type",
+    "@context"
+  ]
+}
