@@ -1,0 +1,14 @@
+{
+  "title": "Woonvormtype",
+  "type": "object",
+  "description": "Enumeratie van Woonvormtype",
+  "properties": {
+    "@id": {
+      "type": "string",
+      "format": "uri"
+    }
+  },
+  "required": [
+    "@id"
+  ]
+}
