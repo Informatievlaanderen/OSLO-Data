@@ -150,7 +150,7 @@
             "description": "Object type (klasse Persoon)",
             "pattern": "^Persoon$"
           },
-          "Persoon.voornaam": {
+          "voornaam": {
             "type": "array",
             "description": "Lijst van String items.",
             "items": {
@@ -167,7 +167,7 @@
             },
             "minItems": 0
           },
-          "Persoon.achternaam": {
+          "achternaam": {
             "type": "array",
             "description": "Lijst van String items.",
             "items": {
@@ -234,7 +234,7 @@
               }
             }
           },
-          "Persoon.isLidVan": {
+          "isLidVan": {
             "type": "array",
             "description": "Lijst van Gezin items.",
             "items": {
@@ -285,10 +285,10 @@
         "required": [
           "@id",
           "@type",
-          "Persoon.heeftInwonerschap",
-          "Persoon.heeftPersoonsrelatie",
-          "Persoon.creatiedatum",
-          "Persoon.bron"
+          "heeftInwonerschap",
+          "heeftPersoonsrelatie",
+          "creatiedatum",
+          "bron"
         ]
       },
       "PersoonJsonLd": {
@@ -305,7 +305,7 @@
             "description": "Object type (klasse Persoon)",
             "pattern": "^Persoon$"
           },
-          "Persoon.voornaam": {
+          "voornaam": {
             "type": "array",
             "description": "Lijst van String items.",
             "items": {
@@ -322,7 +322,7 @@
             },
             "minItems": 0
           },
-          "Persoon.achternaam": {
+          "achternaam": {
             "type": "array",
             "description": "Lijst van String items.",
             "items": {
@@ -389,7 +389,7 @@
               }
             }
           },
-          "Persoon.isLidVan": {
+          "isLidVan": {
             "type": "array",
             "description": "Lijst van Gezin items.",
             "items": {
@@ -445,10 +445,10 @@
         "required": [
           "@id",
           "@type",
-          "Persoon.heeftInwonerschap",
-          "Persoon.heeftPersoonsrelatie",
-          "Persoon.creatiedatum",
-          "Persoon.bron",
+          "heeftInwonerschap",
+          "heeftPersoonsrelatie",
+          "creatiedatum",
+          "bron",
           "@context"
         ]
       },
@@ -571,8 +571,8 @@
         "required": [
           "@id",
           "@type",
-          "Gezinsrelatie.vanPersoon",
-          "Gezinsrelatie.metPersoon"
+          "vanPersoon",
+          "metPersoon"
         ]
       },
       "GezinsrelatieJsonLd": {
@@ -607,8 +607,8 @@
         "required": [
           "@id",
           "@type",
-          "Gezinsrelatie.vanPersoon",
-          "Gezinsrelatie.metPersoon",
+          "vanPersoon",
+          "metPersoon",
           "@context"
         ]
       },
@@ -636,8 +636,8 @@
         "required": [
           "@id",
           "@type",
-          "Persoonsrelatie.vanPersoon",
-          "Persoonsrelatie.metPersoon"
+          "vanPersoon",
+          "metPersoon"
         ]
       },
       "PersoonsrelatieJsonLd": {
@@ -669,8 +669,8 @@
         "required": [
           "@id",
           "@type",
-          "Persoonsrelatie.vanPersoon",
-          "Persoonsrelatie.metPersoon",
+          "vanPersoon",
+          "metPersoon",
           "@context"
         ]
       },
@@ -962,8 +962,8 @@
         "required": [
           "@id",
           "@type",
-          "Huwelijk.vanPersoon",
-          "Huwelijk.metPersoon"
+          "vanPersoon",
+          "metPersoon"
         ]
       },
       "HuwelijkJsonLd": {
@@ -995,8 +995,8 @@
         "required": [
           "@id",
           "@type",
-          "Huwelijk.vanPersoon",
-          "Huwelijk.metPersoon",
+          "vanPersoon",
+          "metPersoon",
           "@context"
         ]
       },
@@ -1014,7 +1014,7 @@
             "description": "Object type (klasse Registratie)",
             "pattern": "^Registratie$"
           },
-          "Registratie.dossierstatus": {
+          "dossierstatus": {
             "type": "array",
             "description": "Lijst van Dossierstatustype items.",
             "items": {
@@ -1035,7 +1035,7 @@
         "required": [
           "@id",
           "@type",
-          "Registratie.geregistreerdPersoon"
+          "geregistreerdPersoon"
         ]
       },
       "RegistratieJsonLd": {
@@ -1052,7 +1052,7 @@
             "description": "Object type (klasse Registratie)",
             "pattern": "^Registratie$"
           },
-          "Registratie.dossierstatus": {
+          "dossierstatus": {
             "type": "array",
             "description": "Lijst van Dossierstatustype items.",
             "items": {
@@ -1078,7 +1078,7 @@
         "required": [
           "@id",
           "@type",
-          "Registratie.geregistreerdPersoon",
+          "geregistreerdPersoon",
           "@context"
         ]
       },
@@ -1139,8 +1139,8 @@
         "required": [
           "@id",
           "@type",
-          "Versie.creatiedatum",
-          "Versie.bron"
+          "creatiedatum",
+          "bron"
         ]
       },
       "VersieJsonLd": {
@@ -1205,8 +1205,8 @@
         "required": [
           "@id",
           "@type",
-          "Versie.creatiedatum",
-          "Versie.bron",
+          "creatiedatum",
+          "bron",
           "@context"
         ]
       },
@@ -1352,8 +1352,8 @@
         "required": [
           "@id",
           "@type",
-          "HttpApiProbleemdetail.type",
-          "HttpApiProbleemdetail.titel"
+          "type",
+          "titel"
         ]
       },
       "HttpApiProbleemdetailJsonLd": {
@@ -1457,8 +1457,8 @@
         "required": [
           "@id",
           "@type",
-          "HttpApiProbleemdetail.type",
-          "HttpApiProbleemdetail.titel",
+          "type",
+          "titel",
           "@context"
         ]
       },
@@ -1482,7 +1482,7 @@
           "Inwonerschap.jurisdictie": {
             "$ref": "#/components/schemas/Jurisdictie"
           },
-          "Inwonerschap.heeftVerblijfplaats": {
+          "heeftVerblijfplaats": {
             "type": "array",
             "description": "Lijst van Verblijfplaats items.",
             "items": {
@@ -1524,8 +1524,8 @@
         "required": [
           "@id",
           "@type",
-          "Inwonerschap.persoon",
-          "Inwonerschap.jurisdictie"
+          "persoon",
+          "jurisdictie"
         ]
       },
       "InwonerschapJsonLd": {
@@ -1548,7 +1548,7 @@
           "Inwonerschap.jurisdictie": {
             "$ref": "#/components/schemas/Jurisdictie"
           },
-          "Inwonerschap.heeftVerblijfplaats": {
+          "heeftVerblijfplaats": {
             "type": "array",
             "description": "Lijst van Verblijfplaats items.",
             "items": {
@@ -1595,8 +1595,8 @@
         "required": [
           "@id",
           "@type",
-          "Inwonerschap.persoon",
-          "Inwonerschap.jurisdictie",
+          "persoon",
+          "jurisdictie",
           "@context"
         ]
       },
@@ -1651,7 +1651,7 @@
               "@language"
             ]
           },
-          "Organisatie.contactinfo": {
+          "contactinfo": {
             "type": "array",
             "description": "Lijst van Contactinfo items.",
             "items": {
@@ -1716,7 +1716,7 @@
               "@language"
             ]
           },
-          "Organisatie.contactinfo": {
+          "contactinfo": {
             "type": "array",
             "description": "Lijst van Contactinfo items.",
             "items": {
@@ -1767,7 +1767,7 @@
               "@language"
             ]
           },
-          "Organisatie.contactinfo": {
+          "contactinfo": {
             "type": "array",
             "description": "Lijst van Contactinfo items.",
             "items": {
@@ -1812,7 +1812,7 @@
               "@language"
             ]
           },
-          "Organisatie.contactinfo": {
+          "contactinfo": {
             "type": "array",
             "description": "Lijst van Contactinfo items.",
             "items": {
@@ -1856,8 +1856,8 @@
         "required": [
           "@id",
           "@type",
-          "Samenwonen.vanPersoon",
-          "Samenwonen.metPersoon"
+          "vanPersoon",
+          "metPersoon"
         ]
       },
       "SamenwonenJsonLd": {
@@ -1889,8 +1889,8 @@
         "required": [
           "@id",
           "@type",
-          "Samenwonen.vanPersoon",
-          "Samenwonen.metPersoon",
+          "vanPersoon",
+          "metPersoon",
           "@context"
         ]
       },
@@ -1917,7 +1917,7 @@
           "GeregistreerdPersoon.registratiedetail": {
             "$ref": "#/components/schemas/Registratie"
           },
-          "Persoon.voornaam": {
+          "voornaam": {
             "type": "array",
             "description": "Lijst van String items.",
             "items": {
@@ -1934,7 +1934,7 @@
             },
             "minItems": 0
           },
-          "Persoon.achternaam": {
+          "achternaam": {
             "type": "array",
             "description": "Lijst van String items.",
             "items": {
@@ -2001,7 +2001,7 @@
               }
             }
           },
-          "Persoon.isLidVan": {
+          "isLidVan": {
             "type": "array",
             "description": "Lijst van Gezin items.",
             "items": {
@@ -2052,10 +2052,10 @@
         "required": [
           "@id",
           "@type",
-          "GeregistreerdPersoon.heeftInwonerschap",
-          "GeregistreerdPersoon.heeftPersoonsrelatie",
-          "GeregistreerdPersoon.creatiedatum",
-          "GeregistreerdPersoon.bron"
+          "heeftInwonerschap",
+          "heeftPersoonsrelatie",
+          "creatiedatum",
+          "bron"
         ]
       },
       "GeregistreerdPersoonJsonLd": {
@@ -2081,7 +2081,7 @@
           "GeregistreerdPersoon.registratiedetail": {
             "$ref": "#/components/schemas/Registratie"
           },
-          "Persoon.voornaam": {
+          "voornaam": {
             "type": "array",
             "description": "Lijst van String items.",
             "items": {
@@ -2098,7 +2098,7 @@
             },
             "minItems": 0
           },
-          "Persoon.achternaam": {
+          "achternaam": {
             "type": "array",
             "description": "Lijst van String items.",
             "items": {
@@ -2165,7 +2165,7 @@
               }
             }
           },
-          "Persoon.isLidVan": {
+          "isLidVan": {
             "type": "array",
             "description": "Lijst van Gezin items.",
             "items": {
@@ -2221,10 +2221,10 @@
         "required": [
           "@id",
           "@type",
-          "GeregistreerdPersoon.heeftInwonerschap",
-          "GeregistreerdPersoon.heeftPersoonsrelatie",
-          "GeregistreerdPersoon.creatiedatum",
-          "GeregistreerdPersoon.bron",
+          "heeftInwonerschap",
+          "heeftPersoonsrelatie",
+          "creatiedatum",
+          "bron",
           "@context"
         ]
       },
@@ -2383,8 +2383,8 @@
         "required": [
           "@id",
           "@type",
-          "Afstamming.vanPersoon",
-          "Afstamming.metPersoon"
+          "vanPersoon",
+          "metPersoon"
         ]
       },
       "AfstammingJsonLd": {
@@ -2437,8 +2437,8 @@
         "required": [
           "@id",
           "@type",
-          "Afstamming.vanPersoon",
-          "Afstamming.metPersoon",
+          "vanPersoon",
+          "metPersoon",
           "@context"
         ]
       },
@@ -2765,7 +2765,7 @@
           "Gezin.gezinshoofd": {
             "$ref": "#/components/schemas/Persoon"
           },
-          "Gezin.gezinslid": {
+          "gezinslid": {
             "type": "array",
             "description": "Lijst van Persoon items.",
             "items": {
@@ -2802,7 +2802,7 @@
           "Gezin.gezinshoofd": {
             "$ref": "#/components/schemas/Persoon"
           },
-          "Gezin.gezinslid": {
+          "gezinslid": {
             "type": "array",
             "description": "Lijst van Persoon items.",
             "items": {
@@ -3192,7 +3192,7 @@
               "@language"
             ]
           },
-          "Organisatie.contactinfo": {
+          "contactinfo": {
             "type": "array",
             "description": "Lijst van Contactinfo items.",
             "items": {
@@ -3240,7 +3240,7 @@
               "@language"
             ]
           },
-          "Organisatie.contactinfo": {
+          "contactinfo": {
             "type": "array",
             "description": "Lijst van Contactinfo items.",
             "items": {
@@ -3435,7 +3435,7 @@
               "@language"
             ]
           },
-          "Adresvoorstelling.locatieaanduiding": {
+          "locatieaanduiding": {
             "type": "array",
             "description": "Lijst van String items.",
             "items": {
@@ -3452,7 +3452,7 @@
             },
             "minItems": 0
           },
-          "Adresvoorstelling.locatienaam": {
+          "locatienaam": {
             "type": "array",
             "description": "Lijst van LangString items.",
             "items": {
@@ -3684,7 +3684,7 @@
               "@language"
             ]
           },
-          "Adresvoorstelling.locatieaanduiding": {
+          "locatieaanduiding": {
             "type": "array",
             "description": "Lijst van String items.",
             "items": {
@@ -3701,7 +3701,7 @@
             },
             "minItems": 0
           },
-          "Adresvoorstelling.locatienaam": {
+          "locatienaam": {
             "type": "array",
             "description": "Lijst van LangString items.",
             "items": {

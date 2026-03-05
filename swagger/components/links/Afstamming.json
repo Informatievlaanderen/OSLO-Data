@@ -1,0 +1,23 @@
+{
+  "afstammingstype": {
+    "operationId": "AfstammingGET",
+    "parameters": {
+      "id": "$response.body#/afstammingstype/@id"
+    },
+    "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Afstammingstype` op te halen."
+  },
+  "vanPersoon": {
+    "operationId": "AfstammingGET",
+    "parameters": {
+      "id": "$response.body#/vanPersoon/@id"
+    },
+    "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Persoon` op te halen."
+  },
+  "metPersoon": {
+    "operationId": "AfstammingGET",
+    "parameters": {
+      "id": "$response.body#/metPersoon/@id"
+    },
+    "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Persoon` op te halen."
+  }
+}

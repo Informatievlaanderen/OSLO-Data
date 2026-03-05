@@ -12,7 +12,7 @@
       "description": "Object type (klasse Persoon)",
       "pattern": "^Persoon$"
     },
-    "Persoon.voornaam": {
+    "voornaam": {
       "type": "array",
       "description": "Lijst van String items.",
       "items": {
@@ -29,7 +29,7 @@
       },
       "minItems": 0
     },
-    "Persoon.achternaam": {
+    "achternaam": {
       "type": "array",
       "description": "Lijst van String items.",
       "items": {
@@ -96,7 +96,7 @@
         }
       }
     },
-    "Persoon.isLidVan": {
+    "isLidVan": {
       "type": "array",
       "description": "Lijst van Gezin items.",
       "items": {
@@ -147,9 +147,9 @@
   "required": [
     "@id",
     "@type",
-    "Persoon.heeftInwonerschap",
-    "Persoon.heeftPersoonsrelatie",
-    "Persoon.creatiedatum",
-    "Persoon.bron"
+    "heeftInwonerschap",
+    "heeftPersoonsrelatie",
+    "creatiedatum",
+    "bron"
   ]
 }

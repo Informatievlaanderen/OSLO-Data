@@ -1,0 +1,16 @@
+{
+  "plaats": {
+    "operationId": "BurgerlijkeStaatGET",
+    "parameters": {
+      "id": "$response.body#/plaats/@id"
+    },
+    "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Plaats` op te halen."
+  },
+  "type": {
+    "operationId": "BurgerlijkeStaatGET",
+    "parameters": {
+      "id": "$response.body#/type/@id"
+    },
+    "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `BurgerlijkeStaatType` op te halen."
+  }
+}

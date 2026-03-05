@@ -12,7 +12,7 @@
       "description": "Object type (klasse Registratie)",
       "pattern": "^Registratie$"
     },
-    "Registratie.dossierstatus": {
+    "dossierstatus": {
       "type": "array",
       "description": "Lijst van Dossierstatustype items.",
       "items": {
@@ -33,6 +33,6 @@
   "required": [
     "@id",
     "@type",
-    "Registratie.geregistreerdPersoon"
+    "geregistreerdPersoon"
   ]
 }

@@ -55,7 +55,7 @@
   "required": [
     "@id",
     "@type",
-    "Versie.creatiedatum",
-    "Versie.bron"
+    "creatiedatum",
+    "bron"
   ]
 }

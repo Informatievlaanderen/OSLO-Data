@@ -22,7 +22,7 @@
   "required": [
     "@id",
     "@type",
-    "Persoonsrelatie.vanPersoon",
-    "Persoonsrelatie.metPersoon"
+    "vanPersoon",
+    "metPersoon"
   ]
 }

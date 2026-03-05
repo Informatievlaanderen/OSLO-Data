@@ -22,7 +22,7 @@
   "required": [
     "@id",
     "@type",
-    "Samenwonen.vanPersoon",
-    "Samenwonen.metPersoon"
+    "vanPersoon",
+    "metPersoon"
   ]
 }

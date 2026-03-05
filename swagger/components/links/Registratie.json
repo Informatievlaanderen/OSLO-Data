@@ -1,0 +1,30 @@
+{
+  "dossierstatus": {
+    "operationId": "RegistratieGET",
+    "parameters": {
+      "id": "$response.body#/dossierstatus/@id"
+    },
+    "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Dossierstatustype` op te halen."
+  },
+  "geregistreerdPersoon": {
+    "operationId": "RegistratieGET",
+    "parameters": {
+      "id": "$response.body#/geregistreerdPersoon/@id"
+    },
+    "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `GeregistreerdPersoon` op te halen."
+  },
+  "vorigeRegistratie": {
+    "operationId": "RegistratieGET",
+    "parameters": {
+      "id": "$response.body#/vorigeRegistratie/@id"
+    },
+    "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Registratie` op te halen."
+  },
+  "volgendeRegistratie": {
+    "operationId": "RegistratieGET",
+    "parameters": {
+      "id": "$response.body#/volgendeRegistratie/@id"
+    },
+    "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Registratie` op te halen."
+  }
+}

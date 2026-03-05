@@ -1,0 +1,93 @@
+{
+  "registratie": {
+    "operationId": "GeregistreerdPersoonGET",
+    "parameters": {
+      "id": "$response.body#/registratie/@id"
+    },
+    "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Identificator` op te halen."
+  },
+  "beheerder": {
+    "operationId": "GeregistreerdPersoonGET",
+    "parameters": {
+      "id": "$response.body#/beheerder/@id"
+    },
+    "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `AdministratiefBeheerder` op te halen."
+  },
+  "registratiedetail": {
+    "operationId": "GeregistreerdPersoonGET",
+    "parameters": {
+      "id": "$response.body#/registratiedetail/@id"
+    },
+    "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Registratie` op te halen."
+  },
+  "contactinfo": {
+    "operationId": "GeregistreerdPersoonGET",
+    "parameters": {
+      "id": "$response.body#/contactinfo/@id"
+    },
+    "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Contactinfo` op te halen."
+  },
+  "geslacht": {
+    "operationId": "GeregistreerdPersoonGET",
+    "parameters": {
+      "id": "$response.body#/geslacht/@id"
+    },
+    "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Geslacht` op te halen."
+  },
+  "isHoofdVan": {
+    "operationId": "GeregistreerdPersoonGET",
+    "parameters": {
+      "id": "$response.body#/isHoofdVan/@id"
+    },
+    "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Gezin` op te halen."
+  },
+  "heeftBurgerlijkeStaat": {
+    "operationId": "GeregistreerdPersoonGET",
+    "parameters": {
+      "id": "$response.body#/heeftBurgerlijkeStaat/@id"
+    },
+    "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `BurgerlijkeStaat` op te halen."
+  },
+  "heeftGeboorte": {
+    "operationId": "GeregistreerdPersoonGET",
+    "parameters": {
+      "id": "$response.body#/heeftGeboorte/@id"
+    },
+    "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Geboorte` op te halen."
+  },
+  "heeftOverlijden": {
+    "operationId": "GeregistreerdPersoonGET",
+    "parameters": {
+      "id": "$response.body#/heeftOverlijden/@id"
+    },
+    "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Overlijden` op te halen."
+  },
+  "heeftInwonerschap": {
+    "operationId": "GeregistreerdPersoonGET",
+    "parameters": {
+      "id": "$response.body#/heeftInwonerschap/@id"
+    },
+    "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Inwonerschap` op te halen."
+  },
+  "heeftPersoonsrelatie": {
+    "operationId": "GeregistreerdPersoonGET",
+    "parameters": {
+      "id": "$response.body#/heeftPersoonsrelatie/@id"
+    },
+    "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Persoonsrelatie` op te halen."
+  },
+  "isLidVan": {
+    "operationId": "GeregistreerdPersoonGET",
+    "parameters": {
+      "id": "$response.body#/isLidVan/@id"
+    },
+    "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Gezin` op te halen."
+  },
+  "bron": {
+    "operationId": "GeregistreerdPersoonGET",
+    "parameters": {
+      "id": "$response.body#/bron/@id"
+    },
+    "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Organisatie` op te halen."
+  }
+}

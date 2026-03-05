@@ -94,7 +94,7 @@
   "required": [
     "@id",
     "@type",
-    "HttpApiProbleemdetail.type",
-    "HttpApiProbleemdetail.titel"
+    "type",
+    "titel"
   ]
 }

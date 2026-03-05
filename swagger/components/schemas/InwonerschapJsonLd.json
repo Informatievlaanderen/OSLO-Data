@@ -18,7 +18,7 @@
     "Inwonerschap.jurisdictie": {
       "$ref": "#/components/schemas/Jurisdictie"
     },
-    "Inwonerschap.heeftVerblijfplaats": {
+    "heeftVerblijfplaats": {
       "type": "array",
       "description": "Lijst van Verblijfplaats items.",
       "items": {
@@ -65,8 +65,8 @@
   "required": [
     "@id",
     "@type",
-    "Inwonerschap.persoon",
-    "Inwonerschap.jurisdictie",
+    "persoon",
+    "jurisdictie",
     "@context"
   ]
 }

@@ -1,0 +1,30 @@
+{
+  "gezinsadres": {
+    "operationId": "GezinGET",
+    "parameters": {
+      "id": "$response.body#/gezinsadres/@id"
+    },
+    "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Adresvoorstelling` op te halen."
+  },
+  "woonvorm": {
+    "operationId": "GezinGET",
+    "parameters": {
+      "id": "$response.body#/woonvorm/@id"
+    },
+    "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Woonvormtype` op te halen."
+  },
+  "gezinshoofd": {
+    "operationId": "GezinGET",
+    "parameters": {
+      "id": "$response.body#/gezinshoofd/@id"
+    },
+    "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Persoon` op te halen."
+  },
+  "gezinslid": {
+    "operationId": "GezinGET",
+    "parameters": {
+      "id": "$response.body#/gezinslid/@id"
+    },
+    "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Persoon` op te halen."
+  }
+}

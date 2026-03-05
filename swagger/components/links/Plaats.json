@@ -1,0 +1,16 @@
+{
+  "identificator": {
+    "operationId": "PlaatsGET",
+    "parameters": {
+      "id": "$response.body#/identificator/@id"
+    },
+    "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Identificator` op te halen."
+  },
+  "plaats": {
+    "operationId": "PlaatsGET",
+    "parameters": {
+      "id": "$response.body#/plaats/@id"
+    },
+    "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Plaats` op te halen."
+  }
+}

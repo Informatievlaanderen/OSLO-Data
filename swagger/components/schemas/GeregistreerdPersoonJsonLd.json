@@ -21,7 +21,7 @@
     "GeregistreerdPersoon.registratiedetail": {
       "$ref": "#/components/schemas/Registratie"
     },
-    "Persoon.voornaam": {
+    "voornaam": {
       "type": "array",
       "description": "Lijst van String items.",
       "items": {
@@ -38,7 +38,7 @@
       },
       "minItems": 0
     },
-    "Persoon.achternaam": {
+    "achternaam": {
       "type": "array",
       "description": "Lijst van String items.",
       "items": {
@@ -105,7 +105,7 @@
         }
       }
     },
-    "Persoon.isLidVan": {
+    "isLidVan": {
       "type": "array",
       "description": "Lijst van Gezin items.",
       "items": {
@@ -161,10 +161,10 @@
   "required": [
     "@id",
     "@type",
-    "GeregistreerdPersoon.heeftInwonerschap",
-    "GeregistreerdPersoon.heeftPersoonsrelatie",
-    "GeregistreerdPersoon.creatiedatum",
-    "GeregistreerdPersoon.bron",
+    "heeftInwonerschap",
+    "heeftPersoonsrelatie",
+    "creatiedatum",
+    "bron",
     "@context"
   ]
 }

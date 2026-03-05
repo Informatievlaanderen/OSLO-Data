@@ -21,7 +21,7 @@
     "Gezin.gezinshoofd": {
       "$ref": "#/components/schemas/Persoon"
     },
-    "Gezin.gezinslid": {
+    "gezinslid": {
       "type": "array",
       "description": "Lijst van Persoon items.",
       "items": {

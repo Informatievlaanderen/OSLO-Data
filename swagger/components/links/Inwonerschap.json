@@ -1,0 +1,23 @@
+{
+  "persoon": {
+    "operationId": "InwonerschapGET",
+    "parameters": {
+      "id": "$response.body#/persoon/@id"
+    },
+    "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Persoon` op te halen."
+  },
+  "jurisdictie": {
+    "operationId": "InwonerschapGET",
+    "parameters": {
+      "id": "$response.body#/jurisdictie/@id"
+    },
+    "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Jurisdictie` op te halen."
+  },
+  "heeftVerblijfplaats": {
+    "operationId": "InwonerschapGET",
+    "parameters": {
+      "id": "$response.body#/heeftVerblijfplaats/@id"
+    },
+    "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Verblijfplaats` op te halen."
+  }
+}

@@ -121,7 +121,7 @@
         "@language"
       ]
     },
-    "Adresvoorstelling.locatieaanduiding": {
+    "locatieaanduiding": {
       "type": "array",
       "description": "Lijst van String items.",
       "items": {
@@ -138,7 +138,7 @@
       },
       "minItems": 0
     },
-    "Adresvoorstelling.locatienaam": {
+    "locatienaam": {
       "type": "array",
       "description": "Lijst van LangString items.",
       "items": {

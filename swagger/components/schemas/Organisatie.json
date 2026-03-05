@@ -29,7 +29,7 @@
         "@language"
       ]
     },
-    "Organisatie.contactinfo": {
+    "contactinfo": {
       "type": "array",
       "description": "Lijst van Contactinfo items.",
       "items": {

@@ -1,0 +1,16 @@
+{
+  "type": {
+    "operationId": "AdministratiefBeheerderGET",
+    "parameters": {
+      "id": "$response.body#/type/@id"
+    },
+    "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `AdministratiefBeheerdertype` op te halen."
+  },
+  "contactinfo": {
+    "operationId": "AdministratiefBeheerderGET",
+    "parameters": {
+      "id": "$response.body#/contactinfo/@id"
+    },
+    "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Contactinfo` op te halen."
+  }
+}
