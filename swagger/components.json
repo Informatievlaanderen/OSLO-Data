@@ -3117,34 +3117,6 @@
             "type": "object",
             "description": "Object type (klasse AdministratiefBeheerder)",
             "pattern": "^AdministratiefBeheerder$"
-          },
-          "type": {
-            "$ref": "#/components/schemas/AdministratiefBeheerdertype"
-          },
-          "voorkeursnaam": {
-            "type": "object",
-            "description": "Naam waarmee de Organisatie bij voorkeur wordt aangeduid.",
-            "properties": {
-              "@value": {
-                "type": "string"
-              },
-              "@language": {
-                "type": "string",
-                "pattern": "^nl$"
-              }
-            },
-            "required": [
-              "@value",
-              "@language"
-            ]
-          },
-          "contactinfo": {
-            "type": "array",
-            "description": "Lijst van Contactinfo items.",
-            "items": {
-              "$ref": "#/components/schemas/Contactinfo"
-            },
-            "minItems": 0
           }
         },
         "required": [
@@ -3165,34 +3137,6 @@
             "type": "object",
             "description": "Object type (klasse AdministratiefBeheerder)",
             "pattern": "^AdministratiefBeheerder$"
-          },
-          "type": {
-            "$ref": "#/components/schemas/AdministratiefBeheerdertype"
-          },
-          "voorkeursnaam": {
-            "type": "object",
-            "description": "Naam waarmee de Organisatie bij voorkeur wordt aangeduid.",
-            "properties": {
-              "@value": {
-                "type": "string"
-              },
-              "@language": {
-                "type": "string",
-                "pattern": "^nl$"
-              }
-            },
-            "required": [
-              "@value",
-              "@language"
-            ]
-          },
-          "contactinfo": {
-            "type": "array",
-            "description": "Lijst van Contactinfo items.",
-            "items": {
-              "$ref": "#/components/schemas/Contactinfo"
-            },
-            "minItems": 0
           },
           "@context": {
             "type": "string",
@@ -4510,20 +4454,6 @@
           "id": "$response.body#/WettelijkVerblijf.verblijfsadres/@id"
         },
         "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Adresvoorstelling` op te halen."
-      },
-      "AdministratiefBeheerder.type": {
-        "operationId": "AdministratiefBeheerderGET",
-        "parameters": {
-          "id": "$response.body#/AdministratiefBeheerder.type/@id"
-        },
-        "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `AdministratiefBeheerdertype` op te halen."
-      },
-      "AdministratiefBeheerder.contactinfo": {
-        "operationId": "AdministratiefBeheerderGET",
-        "parameters": {
-          "id": "$response.body#/AdministratiefBeheerder.contactinfo/@id"
-        },
-        "description": "De waarde van het attribuut `@id` kan gebruikt worden om het gerefereerde object van het type `Contactinfo` op te halen."
       }
     }
   }
