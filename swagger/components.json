@@ -208,9 +208,6 @@
           "heeftPersoonsrelatie": {
             "oneOf": [
               {
-                "$ref": "#/components/schemas/Persoonsrelatie"
-              },
-              {
                 "$ref": "#/components/schemas/Gezinsrelatie"
               },
               {
@@ -226,7 +223,6 @@
             "discriminator": {
               "propertyName": "@type",
               "mapping": {
-                "Persoonsrelatie": "#/components/schemas/Persoonsrelatie",
                 "Gezinsrelatie": "#/components/schemas/Gezinsrelatie",
                 "Huwelijk": "#/components/schemas/Huwelijk",
                 "Samenwonen": "#/components/schemas/Samenwonen",
@@ -363,9 +359,6 @@
           "heeftPersoonsrelatie": {
             "oneOf": [
               {
-                "$ref": "#/components/schemas/Persoonsrelatie"
-              },
-              {
                 "$ref": "#/components/schemas/Gezinsrelatie"
               },
               {
@@ -381,7 +374,6 @@
             "discriminator": {
               "propertyName": "@type",
               "mapping": {
-                "Persoonsrelatie": "#/components/schemas/Persoonsrelatie",
                 "Gezinsrelatie": "#/components/schemas/Gezinsrelatie",
                 "Huwelijk": "#/components/schemas/Huwelijk",
                 "Samenwonen": "#/components/schemas/Samenwonen",
@@ -1488,9 +1480,6 @@
             "items": {
               "oneOf": [
                 {
-                  "$ref": "#/components/schemas/Verblijfplaats"
-                },
-                {
                   "$ref": "#/components/schemas/Domicilie"
                 },
                 {
@@ -1509,7 +1498,6 @@
               "discriminator": {
                 "propertyName": "@type",
                 "mapping": {
-                  "Verblijfplaats": "#/components/schemas/Verblijfplaats",
                   "Domicilie": "#/components/schemas/Domicilie",
                   "Afwezig": "#/components/schemas/Afwezig",
                   "Postadres": "#/components/schemas/Postadres",
@@ -1554,9 +1542,6 @@
             "items": {
               "oneOf": [
                 {
-                  "$ref": "#/components/schemas/Verblijfplaats"
-                },
-                {
                   "$ref": "#/components/schemas/Domicilie"
                 },
                 {
@@ -1575,7 +1560,6 @@
               "discriminator": {
                 "propertyName": "@type",
                 "mapping": {
-                  "Verblijfplaats": "#/components/schemas/Verblijfplaats",
                   "Domicilie": "#/components/schemas/Domicilie",
                   "Afwezig": "#/components/schemas/Afwezig",
                   "Postadres": "#/components/schemas/Postadres",
@@ -1975,9 +1959,6 @@
           "heeftPersoonsrelatie": {
             "oneOf": [
               {
-                "$ref": "#/components/schemas/Persoonsrelatie"
-              },
-              {
                 "$ref": "#/components/schemas/Gezinsrelatie"
               },
               {
@@ -1993,7 +1974,6 @@
             "discriminator": {
               "propertyName": "@type",
               "mapping": {
-                "Persoonsrelatie": "#/components/schemas/Persoonsrelatie",
                 "Gezinsrelatie": "#/components/schemas/Gezinsrelatie",
                 "Huwelijk": "#/components/schemas/Huwelijk",
                 "Samenwonen": "#/components/schemas/Samenwonen",
@@ -2139,9 +2119,6 @@
           "heeftPersoonsrelatie": {
             "oneOf": [
               {
-                "$ref": "#/components/schemas/Persoonsrelatie"
-              },
-              {
                 "$ref": "#/components/schemas/Gezinsrelatie"
               },
               {
@@ -2157,7 +2134,6 @@
             "discriminator": {
               "propertyName": "@type",
               "mapping": {
-                "Persoonsrelatie": "#/components/schemas/Persoonsrelatie",
                 "Gezinsrelatie": "#/components/schemas/Gezinsrelatie",
                 "Huwelijk": "#/components/schemas/Huwelijk",
                 "Samenwonen": "#/components/schemas/Samenwonen",
