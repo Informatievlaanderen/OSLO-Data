@@ -1,0 +1,218 @@
+{
+  "@context": "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld",
+  "@id": "_:persoon_25012021508",
+  "@type": [
+    "GeregistreerdPersoon",
+    "Persoon",
+    "Versie"
+  ],
+  "registratie": {
+    "@id": "_:identificator_25012021508",
+    "@type": [
+      "Identificator"
+    ],
+    "identificator": {
+      "@value": "25012021508",
+      "@type": "Literal"
+    }
+  },
+  "registratiedetail": {
+    "@type": [
+      "Registratie"
+    ],
+    "dossierstatus": [
+      {
+        "@id": "https://data.vlaanderen.be/id/concept/IT001/Dossierstatus/99990"
+      }
+    ],
+    "geregistreerdPersoon": {
+      "@id": "_:persoon_25012021508"
+    }
+  },
+  "heeftInwonerschap": [
+    {
+      "@id": "_:inwonerschap_25012021508",
+      "@type": [
+        "Inwonerschap"
+      ],
+      "heeftVerblijfplaats": [
+        {
+          "@id": "_:verblijfplaats_1995-02-22",
+          "@type": [
+            "Verblijfplaats",
+            "Domicilie"
+          ],
+          "verblijfsadres": {
+            "@id": "_:adresvoorstelling_1995-02-22",
+            "@type": [
+              "Adresvoorstelling"
+            ],
+            "huisnummer": {
+              "@value": "110"
+            },
+            "postcode": {
+              "@value": "4357"
+            },
+            "straatnaam": {
+              "@value": "Rue du Ruisseau",
+              "@language": "nl"
+            },
+            "land": {
+              "@value": "België",
+              "@language": "nl"
+            },
+            "volledigAdres": "Rue du Ruisseau 110 4357 België"
+          }
+        }
+      ]
+    }
+  ],
+  "heeftGeboorte": {
+    "@id": "_:geboorte_25012021508",
+    "@type": [
+      "Persoonsgebeurtenis",
+      "Geboorte"
+    ],
+    "datum": {
+      "@value": "1925-01-20",
+      "@type": "Date"
+    },
+    "plaats": {
+      "@id": "_:geboorteplaats_BARCELONE",
+      "@type": "Plaats",
+      "plaatsnaam": {
+         "@value": "BARCELONE"
+       }
+    }
+  },
+  "heeftOverlijden": {
+    "@id": "_:overlijden_25012021508",
+    "@type": [
+      "Persoonsgebeurtenis",
+      "Overlijden"
+    ],
+    "datum": {
+      "@value": "2001-01-01",
+      "@type": "Date"
+    },
+    "plaats": {
+      "@id": "_:plaats_van_overlijden_BARCELONE",
+      "@type": "Plaats",
+      "plaatsnaam": {
+        "@value": "AAAAAAAAAA"
+      }
+    }
+  },
+  "voornaam": [
+    {
+      "@value": "Francisco"
+    }
+  ],
+  "achternaam": [
+    {
+      "@value": "Pardo"
+    },
+    {
+      "@value": "Cols"
+    }
+  ],
+  "geslacht": {
+    "@id": "https://data.vlaanderen.be/id/concept/IT000/Geslacht/1"
+  },
+  "beheerder": {
+    "@id": "http://publications.europa.eu/resource/authority/country/ESP",
+    "@type": [
+      "AdministratiefBeheerder",
+      "Organisatie"
+    ]
+  },
+  "heeftPersoonsrelatie": [
+    {
+      "@id": "_:persoonsrelatie_25012021508_00000100000_afstamming",
+      "@type": [
+        "Persoonsrelatie",
+        "Afstamming"
+      ],
+      "vanPersoon": {
+        "@id": "_:persoon_25012021508",
+        "@type": "GeregistreerdPersoon"
+      },
+      "metPersoon": {
+        "@id": "_:persoon_00000100000",
+        "@type": "Persoon",
+        "voornaam": [
+          {
+            "@value": "Elvira"
+          }
+        ],
+        "achternaam": [
+          {
+            "@value": "Cols"
+          },
+          {
+            "@value": "Ferrer"
+          }
+        ],
+        "geslacht": {
+          "@id": "https://data.vlaanderen.be/id/concept/IT000/Geslacht/2"
+        }
+      },
+      "afstammingstype": {
+        "@id": "https://data.vlaanderen.be/id/concept/IT110/Afstammingstype/00"
+      },
+      "datumVanAfstamming": {
+        "@value": "1925-01-20",
+        "@type": "Date"
+      }
+    },
+    {
+      "@id": "_:persoonsrelatie_25012021508_00000199900_afstamming",
+      "@type": [
+        "Persoonsrelatie",
+        "Afstamming"
+      ],
+      "vanPersoon": {
+        "@id": "_:persoon_25012021508",
+        "@type": "GeregistreerdPersoon"
+      },
+      "metPersoon": {
+        "@id": "_:persoon_00000199900",
+        "@type": "Persoon",
+        "voornaam": [
+          {
+            "@value": "Buenaventura"
+          }
+        ],
+        "achternaam": [
+          {
+            "@value": "Pardo"
+          },
+          {
+            "@value": "Pardo"
+          }
+        ],
+        "geslacht": {
+            "@id": "https://data.vlaanderen.be/id/concept/IT000/Geslacht/1"
+        }
+      },
+      "afstammingstype": {
+        "@id": "https://data.vlaanderen.be/id/concept/IT110/Afstammingstype/00"
+      },
+      "datumVanAfstamming": {
+        "@value": "1925-01-20",
+        "@type": "Date"
+      }
+    }
+  ],
+  "modificatiedatum": {
+    "@value": "2003-10-04",
+    "@type": "Date"
+  },
+  "creatiedatum": {
+    "@value": "1972-01-27",
+    "@type": "Date"
+  },
+  "bron": {
+    "@id": "https://data.vlaanderen.be/id/organisatie/OVO027248"
+  }
+}

@@ -1,0 +1,292 @@
+{
+  "@context": "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld",
+  "@id": "_:persoon_64042106496",
+  "@type": [
+    "GeregistreerdPersoon",
+    "Persoon",
+    "Versie"
+  ],
+  "registratie": {
+    "@id": "_:identificator_64042106496",
+    "@type": [
+      "Identificator"
+    ],
+    "identificator": {
+      "@value": "64042106496",
+      "@type": "Literal"
+    }
+  },
+  "registratiedetail": {
+    "@type": [
+      "Registratie"
+    ],
+    "geregistreerdPersoon": {
+      "@id": "_:persoon_64042106496"
+    }
+  },
+  "heeftInwonerschap": [
+    {
+      "@id": "_:inwonerschap_64042106496",
+      "@type": [
+        "Inwonerschap"
+      ],
+      "heeftVerblijfplaats": [
+        {
+          "@id": "_:verblijfplaats_1976-01-12",
+          "@type": [
+            "Verblijfplaats",
+            "Domicilie"
+          ],
+          "verblijfsadres": {
+            "@id": "_:adresvoorstelling_1976-01-12",
+            "@type": [
+              "Adresvoorstelling"
+            ],
+            "huisnummer": {
+              "@value": "125"
+            },
+            "postcode": {
+              "@value": "1200"
+            },
+            "straatnaam": {
+              "@value": "Théodore De Cuyperstraat",
+              "@language": "nl"
+            },
+            "land": {
+              "@value": "België",
+              "@language": "nl"
+            },
+            "verwijstNaar": {
+              "@id": "https://data.vlaanderen.be/id/adres/326762"
+            },
+            "volledigAdres": "Théodore De Cuyperstraat 125 1200 België"
+          }
+        },
+        {
+          "@id": "_:verblijfplaats_2025-01-02",
+          "@type": [
+            "Verblijfplaats",
+            "VerblijfplaatsBuitenland"
+          ],
+          "verblijfsadres": {
+            "@id": "_:adresvoorstelling_2025-01-02",
+            "@type": [
+              "Adresvoorstelling"
+            ],
+            "volledigAdres": {
+              "@value": "46, Allée du jardin d'Eugénie 73470 NOVALAISE"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "heeftGeboorte": {
+    "@id": "_:geboorte_64042106496",
+    "@type": [
+      "Persoonsgebeurtenis",
+      "Geboorte"
+    ],
+    "datum": {
+      "@value": "1964-04-21",
+      "@type": "Date"
+    },
+    "plaats": {
+      "@id": "https://data.vlaanderen.be/id/gemeente/52011"
+    }
+  },
+  "isLidVan": [
+    {
+      "@id": "_:gezin",
+      "@type": "Gezin",
+      "gezinslid": [
+        {
+          "@id": "_:persoon_64042106496"
+        },
+        {
+          "@id": "_:persoon_80062699900"
+        },
+        {
+          "@id": "_:persoon_00000199900"
+        }
+      ]
+    }
+  ],
+  "voornaam": [
+    {
+      "@value": "Elise"
+    }
+  ],
+  "achternaam": [
+    {
+      "@value": "Brichard"
+    },
+    {
+      "@value": "Catherine"
+    }
+  ],
+  "geslacht": {
+    "@id": "https://data.vlaanderen.be/id/concept/IT000/Geslacht/2"
+  },
+  "beheerder": {
+    "@id": "http://publications.europa.eu/resource/authority/country/FRA",
+    "@type": [
+      "AdministratiefBeheerder",
+      "Organisatie"
+    ]
+  },
+  "heeftBurgerlijkeStaat": {
+    "@id": "_:burgerlijkeStaat_64042106496",
+    "@type": [
+      "BurgerlijkeStaat"
+    ],
+    "type": {
+      "@id": "https://data.vlaanderen.be/id/concept/IT120/BurgerlijkeStaattype/20"
+    }
+  },
+  "heeftPersoonsrelatie": [
+    {
+      "@id": "_:persoonsrelatie_64042106496_31111703784_afstamming",
+      "@type": [
+        "Persoonsrelatie",
+        "Afstamming"
+      ],
+      "vanPersoon": {
+        "@id": "_:persoon_64042106496",
+        "@type": "GeregistreerdPersoon"
+      },
+      "metPersoon": {
+        "@id": "_:persoon_31111703784",
+        "@type": "Persoon",
+        "voornaam": [
+          {
+            "@value": "Robert"
+          }
+        ],
+        "achternaam": [
+          {
+            "@value": "Brichard"
+          }
+        ],
+        "geslacht": {
+          "@id": "https://data.vlaanderen.be/id/concept/IT000/Geslacht/1"
+        }
+      },
+      "afstammingstype": {
+        "@id": "https://data.vlaanderen.be/id/concept/IT110/Afstammingstype/00"
+      },
+      "datumVanAfstamming": {
+        "@value": "1964-04-21",
+        "@type": "Date"
+      }
+    },
+    {
+      "@id": "_:persoonsrelatie_64042106496_35102804616_afstamming",
+      "@type": [
+        "Persoonsrelatie",
+        "Afstamming"
+      ],
+      "vanPersoon": {
+        "@id": "_:persoon_64042106496",
+        "@type": "GeregistreerdPersoon"
+      },
+      "metPersoon": {
+        "@id": "_:persoon_35102804616",
+        "@type": "Persoon",
+        "voornaam": [
+          {
+            "@value": "Marie"
+          },
+          {
+            "@value": "Louise"
+          }
+        ],
+        "achternaam": [
+          {
+            "@value": "Lessouey"
+          }
+        ],
+        "geslacht": {
+          "@id": "https://data.vlaanderen.be/id/concept/IT000/Geslacht/2"
+        }
+      },
+      "afstammingstype": {
+        "@id": "https://data.vlaanderen.be/id/concept/IT110/Afstammingstype/00"
+      },
+      "datumVanAfstamming": {
+        "@value": "1964-04-21",
+        "@type": "Date"
+      }
+    },
+    {
+      "@id": "_:persoonsrelatie_64042106496_80062699900_afstamming",
+      "@type": [
+        "Persoonsrelatie",
+        "Gezinsrelatie"
+      ],
+      "vanPersoon": {
+        "@id": "_:persoon_64042106496",
+        "@type": ["GeregistreerdPersoon", "Persoon"]
+      },
+      "metPersoon": {
+        "@id": "_:persoon_80062699900",
+        "@type": ["GeregistreerdPersoon", "Persoon"],
+        "voornaam": [
+          {
+            "@value": "Didier"
+          }
+        ],
+        "achternaam": [
+          {
+            "@value": "Verhoeven"
+          }
+        ],
+        "geslacht": {
+          "@id": "https://data.vlaanderen.be/id/concept/IT000/Geslacht/1"
+        }
+      },
+      "gezinsrelatietype": {
+        "@id": "https://data.vlaanderen.be/id/concept/IT141/Gezinsrelatietype/11"
+      }
+    },
+    {
+      "@id": "_:persoonsrelatie_64042106496_00000199900_afstamming",
+      "@type": [
+        "Persoonsrelatie",
+        "Gezinsrelatie"
+      ],
+      "vanPersoon": {
+        "@id": "_:persoon_64042106496",
+        "@type": ["GeregistreerdPersoon", "Persoon"]
+      },
+      "metPersoon": {
+        "@id": "_:persoon_00000199900",
+        "@type": ["GeregistreerdPersoon", "Persoon"],
+        "voornaam": [
+          {
+            "@value": "Jan"
+          }
+        ],
+        "achternaam": [
+          {
+            "@value": "Tchesnokov"
+          }
+        ]
+      },
+      "gezinsrelatietype": {
+        "@id": "https://data.vlaanderen.be/id/concept/IT141/Gezinsrelatietype/09"
+      }
+    }
+  ],
+  "modificatiedatum": {
+    "@value": "1969-10-03",
+    "@type": "Date"
+  },
+  "creatiedatum": {
+    "@value": "2025-01-07",
+    "@type": "Date"
+  },
+  "bron": {
+    "@id": "https://data.vlaanderen.be/id/organisatie/OVO027248"
+  }
+}

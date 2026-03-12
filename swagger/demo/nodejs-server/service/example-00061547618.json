@@ -1,0 +1,158 @@
+{
+  "@context": "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld",
+  "@id": "_:persoon_00061547618",
+  "@type": [
+    "GeregistreerdPersoon",
+    "Persoon",
+    "Versie"
+  ],
+  "registratie": {
+    "@id": "_:identificator_00061547618",
+    "@type": [
+      "Identificator"
+    ],
+    "identificator": {
+      "@value": "00061547618",
+      "@type": "Literal"
+    }
+  },
+  "registratiedetail": {
+    "@type": [
+      "Registratie"
+    ],
+    "geregistreerdPersoon": {
+      "@id": "_:persoon_00061547618"
+    }
+  },
+  "heeftInwonerschap": [
+    {
+      "@id": "_:inwonerschap_00061547618",
+      "@type": [
+        "Inwonerschap"
+      ],
+      "heeftVerblijfplaats": [
+        {
+          "@id": "_:verblijfplaats_2016-09-20",
+          "@type": [
+            "Verblijfplaats",
+            "Domicilie"
+          ],
+          "verblijfsadres": {
+            "@id": "_:adresvoorstelling_2016-09-20",
+            "@type": [
+              "Adresvoorstelling"
+            ],
+            "huisnummer": {
+              "@value": "39"
+            },
+            "postcode": {
+              "@value": "9000"
+            },
+            "straatnaam": {
+              "@value": "Salamanderstraat",
+              "@language": "nl"
+            },
+            "gemeentenaam": {
+              "@value": "Gent",
+              "@language": "nl"
+            },
+            "land": {
+              "@value": "België",
+              "@language": "nl"
+            },
+            "volledigAdres": "Salamanderstraat 39 9000 Gent België"
+          }
+        },
+        {
+          "@id": "_:verblijfplaats_2011-02-14",
+          "@type": [
+            "Verblijfplaats",
+            "WettelijkVerblijf"
+          ]
+        },
+        {
+          "@id": "_:verblijfplaats_2004-09-16",
+          "@type": [
+            "Verblijfplaats",
+            "WettelijkVerblijf"
+          ],
+          "verblijfsadres": {
+            "@id": "_:adresvoorstelling_2004-09-16",
+            "@type": [
+              "Adresvoorstelling"
+            ],
+            "volledigAdres": {
+              "@value": "mach BNL 5928406 t.15122004 Teheran"
+            }
+          }
+        },
+        {
+          "@id": "_:verblijfplaats_2003-12-22",
+          "@type": [
+            "Verblijfplaats",
+            "WettelijkVerblijf"
+          ],
+          "verblijfsadres": {
+            "@id": "_:adresvoorstelling_2003-12-22",
+            "@type": [
+              "Adresvoorstelling"
+            ],
+            "volledigAdres": {
+              "@value": "pasp moeder G6865596 t.22122008 Esfahan"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "heeftGeboorte": {
+    "@id": "_:geboorte_00061547618",
+    "@type": [
+      "Persoonsgebeurtenis",
+      "Geboorte"
+    ],
+    "datum": {
+      "@value": "2000-06-15",
+      "@type": "Date"
+    },
+    "plaats": {
+      "@id": "_:geboorteplaats_Isfahan",
+      "@type": "Plaats",
+      "plaatsnaam": { 
+        "@value": "Isfahan"
+      }
+    }
+  },
+  "voornaam": [
+    {
+      "@value": "Sana"
+    }
+  ],
+  "achternaam": [
+    {
+      "@value": "Miranzadeh Mahabadi"
+    }
+  ],
+  "geslacht": {
+    "@id": "https://data.vlaanderen.be/id/concept/IT000/Geslacht/2"
+  },
+  "beheerder": {
+    "@id": "https://data.vlaanderen.be/id/gemeente/44021",
+    "@type": [
+      "AdministratiefBeheerder",
+      "Organisatie"
+    ]
+  },
+  "heeftBurgerlijkeStaat": {
+    "@id": "_:burgerlijkeStaat_00061547618",
+    "@type": [
+      "BurgerlijkeStaat"
+    ],
+    "type": {
+      "@id": "https://data.vlaanderen.be/id/concept/IT120/BurgerlijkeStaattype/10"
+    }
+  },
+  "bron": {
+    "@id": "https://data.vlaanderen.be/id/organisatie/OVO008218"
+  }
+}

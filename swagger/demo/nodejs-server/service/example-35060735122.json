@@ -1,0 +1,171 @@
+{
+  "@context": [
+    "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld",
+    "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/MAGDA-IM.jsonld"
+  ],
+  "@type": "MagdaRestApiAntwoord",
+  "errors": [
+    {
+      "@id": "_:uitzondering1",
+      "@type": "HttpApiUitzonderingdetail",
+      "type": "https://data.vlaanderen.be/id/concept/MAGDA/Uitzondering/30004",
+      "title": "Nieuwe INSZ",
+      "status": 200,
+      "detail": "Persoon heeft een nieuw INSZ verkregen.",
+      "niveau": { "@id": "https://data.vlaanderen.be/id/concept/MAGDA/Uitzonderingtype/WAARSCHUWING" },
+      "annotatie": [
+        {
+          "@id": "_:annotatie1",
+          "@type": "MagdaAnnotatie",
+          "naam": "Oud INSZ",
+          "waarde": "35060735122"
+        },
+        {
+          "@id": "_:annotatie2",
+          "@type": "MagdaAnnotatie",
+          "naam": "Nieuw INSZ",
+          "waarde": "00004135311"
+        }
+      ]
+    }
+  ],
+  "body": {
+    "@id": "https://data.vlaanderen.be/id/persoon/35060735122",
+    "@type": [
+      "GeregistreerdPersoon",
+      "Persoon",
+      "Versie"
+    ],
+    "registratie": {
+      "@id": "_:identificator_35060735122",
+      "@type": [
+        "Identificator"
+      ],
+      "identificator": {
+        "@value": "35060735122",
+        "@type": "Literal"
+      }
+    },
+    "registratiedetail": {
+      "@type": [
+        "Registratie"
+      ],
+      "dossierstatus": [
+          {
+            "@id": "https://data.vlaanderen.be/id/concept/IT001/Dossierstatus/99994-02"
+          }
+        ],
+      "geregistreerdPersoon": {
+        "@id": "_:persoon_35060735122"
+      },
+      "volgendeRegistratie": {
+        "@type": [ 
+          "Registratie" 
+        ],
+        "geregistreerdPersoon": {
+          "@id": "_:persoon_00004135311",
+          "@type": [
+            "GeregistreerdPersoon"
+          ],
+          "geslacht": {
+            "@id": "https://data.vlaanderen.be/id/concept/IT000/Geslacht/1"
+          },
+          "heeftGeboorte": {
+            "@type": [
+              "Geboorte"
+            ],
+            "datum": {
+              "@value": "1900-00-00",
+              "@type": "Date"
+            }
+          }
+        }
+      }
+    },
+    "heeftInwonerschap": [
+      {
+        "@id": "_:inwonerschap_35060735122",
+        "@type": [
+          "Inwonerschap"
+        ],
+        "heeftVerblijfplaats": [
+          {
+            "@id": "_:verblijfplaats_2016-11-04",
+            "@type": [
+              "Verblijfplaats",
+              "VerblijfplaatsBuitenland"
+            ],
+            "verblijfsadres": {
+              "@id": "_:adresvoorstelling_2016-11-04",
+              "@type": [
+                "Adresvoorstelling"
+              ],
+              "land": {
+                "@value": "DUITSLAND ( BONDSREP. )",
+                "@language": "nl"
+              },
+              "volledigAdres": "Jesuitengasse 41 50735 KÖLN DUITSLAND ( BONDSREP. )"
+            }
+          }
+        ]
+      }
+    ],
+    "heeftGeboorte": {
+      "@id": "_:geboorte_35060735122",
+      "@type": [
+        "Persoonsgebeurtenis",
+        "Geboorte"
+      ],
+      "datum": {
+        "@value": "1935-06-07",
+        "@type": "Date"
+      },
+      "plaats": {
+        "@id": "https://data.vlaanderen.be/id/gemeente/21001"
+      }
+    },
+    "voornaam": [
+      {
+        "@value": "Edouard"
+      },
+      {
+        "@value": "Willem"
+      }
+    ],
+    "achternaam": [
+      {
+        "@value": "Haentjens"
+      }
+    ],
+    "geslacht": {
+      "@id": "https://data.vlaanderen.be/id/concept/IT000/Geslacht/1"
+    },
+    "beheerder": {
+      "@id": "http://publications.europa.eu/resource/authority/country/DEU",
+      "@type": [
+        "AdministratiefBeheerder",
+        "Organisatie"
+      ]
+    },
+    "heeftBurgerlijkeStaat": {
+      "@id": "_:burgerlijkeStaat_35060735122",
+      "@type": [
+        "BurgerlijkeStaat"
+      ],
+      "type": {
+        "@id": "https://data.vlaanderen.be/id/concept/IT120/BurgerlijkeStaattype/10"
+      }
+    },
+    "modificatiedatum": {
+      "@value": "2016-11-22",
+      "@type": "Date"
+    },
+    "creatiedatum": {
+      "@value": "2005-01-31",
+      "@type": "Date"
+    },
+    "bron": {
+      "@id": "https://data.vlaanderen.be/id/organisatie/OVO027248"
+    }
+  }
+}

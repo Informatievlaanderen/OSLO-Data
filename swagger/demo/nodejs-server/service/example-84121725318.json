@@ -1,0 +1,567 @@
+{
+  "@context": "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld",
+  "@id": "_:persoon_84121725318",
+  "@type": [
+    "GeregistreerdPersoon",
+    "Persoon",
+    "Versie"
+  ],
+  "registratie": {
+    "@id": "_:identificator_84121725318",
+    "@type": [
+      "Identificator"
+    ],
+    "identificator": {
+      "@value": "84121725318",
+      "@type": "Literal"
+    }
+  },
+  "registratiedetail": {
+    "@type": [
+      "Registratie"
+    ],
+    "geregistreerdPersoon": {
+      "@id": "_:persoon_84121725318"
+    }
+  },
+  "heeftInwonerschap": [
+    {
+      "@id": "_:inwonerschap_84121725318",
+      "@type": [
+        "Inwonerschap"
+      ],
+      "heeftVerblijfplaats": [
+        {
+          "@id": "_:verblijfplaats_2015-01-25",
+          "@type": [
+            "Verblijfplaats",
+            "Domicilie"
+          ],
+          "verblijfsadres": {
+            "@id": "_:adresvoorstelling_2015-01-25",
+            "@type": [
+              "Adresvoorstelling"
+            ],
+            "huisnummer": {
+              "@value": "5"
+            },
+            "postcode": {
+              "@value": "3001"
+            },
+            "straatnaam": {
+              "@value": "Kapelberg",
+              "@language": "nl"
+            },
+            "gemeentenaam": {
+              "@value": "Leuven",
+              "@language": "nl"
+            },
+            "land": {
+              "@value": "België",
+              "@language": "nl"
+            },
+            "volledigAdres": "Kapelberg 5 3001 Leuven België"
+          }
+        }
+      ]
+    }
+  ],
+  "heeftGeboorte": {
+    "@id": "_:geboorte_84121725318",
+    "@type": [
+      "Persoonsgebeurtenis",
+      "Geboorte"
+    ],
+    "datum": {
+      "@value": "1984-12-17",
+      "@type": "Date"
+    },
+    "plaats": {
+      "@id": "https://data.vlaanderen.be/id/gemeente/24062"
+    }
+  },
+  "isLidVan": [
+    {
+      "@id": "_:gezin",
+      "@type": "Gezin",
+      "gezinslid": [
+        {
+          "@id": "_:persoon_84121725318"
+        },
+        {
+          "@id": "_:persoon_28110813202"
+        }
+      ],
+      "woonvorm": {
+        "@id": "https://data.vlaanderen.be/id/concept/IT141/Woonvorm/00"
+      }
+    }
+  ],
+  "voornaam": [
+    {
+      "@value": "Brecht"
+    }
+  ],
+  "achternaam": [
+    {
+      "@value": "Bollen"
+    }
+  ],
+  "geslacht": {
+    "@id": "https://data.vlaanderen.be/id/concept/IT000/Geslacht/1"
+  },
+  "beheerder": {
+    "@id": "https://data.vlaanderen.be/id/gemeente/24062",
+    "@type": [
+      "AdministratiefBeheerder",
+      "Organisatie"
+    ]
+  },
+  "heeftBurgerlijkeStaat": {
+    "@id": "_:burgerlijkeStaat_84121725318",
+    "@type": [
+      "BurgerlijkeStaat"
+    ],
+    "type": {
+      "@id": "https://data.vlaanderen.be/id/concept/IT120/BurgerlijkeStaattype/20"
+    }
+  },
+  "heeftPersoonsrelatie": [
+    {
+      "@id": "_:persoonsrelatie_84121725318_54072841030_afstamming",
+      "@type": [
+        "Persoonsrelatie",
+        "Afstamming"
+      ],
+      "vanPersoon": {
+        "@id": "_:persoon_84121725318",
+        "@type": "GeregistreerdPersoon"
+      },
+      "metPersoon": {
+        "@id": "_:persoon_54072841030",
+        "@type": "Persoon",
+        "registratie": {
+          "@id": "_:identificator_54072841030",
+          "@type": [
+            "Identificator"
+          ],
+          "identificator": {
+            "@value": "54072841030",
+            "@type": "Literal"
+          }
+        },
+        "voornaam": [
+          {
+            "@value": "Christiane"
+          },
+          {
+            "@value": "Maria"
+          },
+          {
+            "@value": "Maurice"
+          }
+        ],
+        "achternaam": [
+          {
+            "@value": "Dewals"
+          }
+        ],
+        "heeftGeboorte": {
+          "@type": [
+            "Geboorte",
+            "Persoongebeurtenis"
+          ],
+          "datum": {
+            "@value": "1954-07-28",
+            "@type": "Date"
+          }
+        },
+        "geslacht": {
+          "@id": "https://data.vlaanderen.be/id/concept/IT000/Geslacht/2"
+        }
+      },
+      "afstammingstype": {
+        "@id": "https://data.vlaanderen.be/id/concept/IT110/Afstammingstype/00"
+      },
+      "datumVanAfstamming": {
+        "@value": "1929-01-28",
+        "@type": "Date"
+      }
+    },
+    {
+      "@id": "_:persoonsrelatie_84121725318_61041438519_afstamming",
+      "@type": [
+        "Persoonsrelatie",
+        "Afstamming"
+      ],
+      "vanPersoon": {
+        "@id": "_:persoon_84121725318",
+        "@type": "GeregistreerdPersoon"
+      },
+      "metPersoon": {
+        "@id": "_:persoon_61041438519",
+        "@type": "Persoon",
+        "registratie": {
+          "@id": "_:identificator_61041438519",
+          "@type": [
+            "Identificator"
+          ],
+          "identificator": {
+            "@value": "61041438519",
+            "@type": "Literal"
+          }
+        },
+        "voornaam": [
+          {
+            "@value": "Ludo"
+          },
+          {
+            "@value": "Maria"
+          },
+          {
+            "@value": "Flora"
+          }
+        ],
+        "achternaam": [
+          {
+            "@value": "Bollen"
+          }
+        ],
+        "heeftGeboorte": {
+          "@type": [
+            "Geboorte",
+            "Persoongebeurtenis"
+          ],
+          "datum": {
+            "@value": "1961-04-14",
+            "@type": "Date"
+          }
+        },
+        "geslacht": {
+          "@id": "https://data.vlaanderen.be/id/concept/IT000/Geslacht/1"
+        }
+      },
+      "afstammingstype": {
+        "@id": "https://data.vlaanderen.be/id/concept/IT110/Afstammingstype/00"
+      },
+      "datumVanAfstamming": {
+        "@value": "1929-01-28",
+        "@type": "Date"
+      }
+    },
+    {
+      "@id": "_:persoonsrelatie_84121725318_16100431104_afstamming",
+      "@type": [
+        "Persoonsrelatie",
+        "Afstamming"
+      ],
+      "vanPersoon": {
+        "@id": "_:persoon_84121725318",
+        "@type": ["GeregistreerdPersoon", "Persoon"]
+      },
+      "metPersoon": {
+        "@id": "_:persoon_16100431104",
+        "@type": ["GeregistreerdPersoon", "Persoon"],
+        "registratie": {
+          "@id": "_:identificator_16100431104",
+          "@type": [
+            "Identificator"
+          ],
+          "identificator": {
+            "@value": "16100431104",
+            "@type": "Literal"
+          }
+        },
+        "voornaam": [
+          {
+            "@value": "Liam"
+          }
+        ],
+        "achternaam": [
+          {
+            "@value": "Bollen"
+          }
+        ],
+        "geslacht": {
+          "@id": "https://data.vlaanderen.be/id/concept/IT000/Geslacht/1"
+        }
+      },
+      "afstammingstype": {
+        "@id": "https://data.vlaanderen.be/id/concept/IT114/Afstammingstype/10"
+      },
+      "datumVanAfstamming": {
+        "@value": "1916-10-04",
+        "@type": "Date"
+      }
+    },
+    {
+      "@id": "_:persoonsrelatie_84121725318_15021109332_afstamming",
+      "@type": [
+        "Persoonsrelatie",
+        "Afstamming"
+      ],
+      "vanPersoon": {
+        "@id": "_:persoon_84121725318",
+        "@type": ["GeregistreerdPersoon", "Persoon"]
+      },
+      "metPersoon": {
+        "@id": "_:persoon_15021109332",
+        "@type": ["GeregistreerdPersoon", "Persoon"],
+        "registratie": {
+          "@id": "_:identificator_15021109332",
+          "@type": [
+            "Identificator"
+          ],
+          "identificator": {
+            "@value": "15021109332",
+            "@type": "Literal"
+          }
+        },
+        "voornaam": [
+          {
+            "@value": "Vince"
+          }
+        ],
+        "achternaam": [
+          {
+            "@value": "Bollen"
+          }
+        ],
+        "geslacht": {
+          "@id": "https://data.vlaanderen.be/id/concept/IT000/Geslacht/1"
+        }
+      },
+      "afstammingstype": {
+        "@id": "https://data.vlaanderen.be/id/concept/IT114/Afstammingstype/10"
+      },
+      "datumVanAfstamming": {
+        "@value": "1915-02-11",
+        "@type": "Date"
+      }
+    },
+    {
+      "@id": "_:persoonsrelatie_84121725318_84101328889_gezin",
+      "@type": [
+        "Persoonsrelatie",
+        "Gezinsrelatie"
+      ],
+      "vanPersoon": {
+        "@id": "_:persoon_84121725318",
+        "@type": [ "GeregistreerdPersoon", "Persoon"]
+      },
+      "metPersoon": {
+        "@id": "_:persoon_84101328889",
+        "@type": [ "GeregistreerdPersoon", "Persoon"],
+        "registratie": {
+          "@id": "_:identificator_84101328889",
+          "@type": [
+            "Identificator"
+          ],
+          "identificator": {
+            "@value": "84101328889",
+            "@type": "Literal"
+          }
+        },
+        "voornaam": [
+          {
+            "@value": "Liesbeth"
+          },
+          {
+            "@value": "Denise"
+          },
+          {
+            "@value": "Vital"
+          }
+        ],
+        "achternaam": [
+          {
+            "@value": "Lenaerts"
+          }
+        ],
+        "heeftGeboorte": {
+          "@type": [
+            "Persoongebeurtenis",
+            "Geboorte"
+          ],
+          "datum": {
+            "@value": "1984-10-13",
+            "@type": "Date"
+          }
+        },
+        "geslacht": {
+          "@id": "https://data.vlaanderen.be/id/concept/IT000/Geslacht/2"
+        }
+      },
+      "gezinsrelatietype": {
+        "@id": "https://data.vlaanderen.be/id/concept/IT141/Gezinsrelatietype/02"
+      }
+    },
+    {
+      "@id": "_:persoonsrelatie_84121725318_15021109332_gezin",
+      "@type": [
+        "Persoonsrelatie",
+        "Gezinsrelatie"
+      ],
+      "vanPersoon": {
+        "@id": "_:persoon_84121725318",
+        "@type": [ "GeregistreerdPersoon", "Persoon"]
+      },
+      "metPersoon": {
+        "@id": "_:persoon_15021109332",
+        "@type": [ "GeregistreerdPersoon", "Persoon"],
+        "registratie": {
+          "@id": "_:identificator_15021109332",
+          "@type": [
+            "Identificator"
+          ],
+          "identificator": {
+            "@value": "15021109332",
+            "@type": "Literal"
+          }
+        },
+        "voornaam": [
+          {
+            "@value": "Vince"
+          }
+        ],
+        "achternaam": [
+          {
+            "@value": "Bollen"
+          }
+        ],
+        "heeftGeboorte": {
+          "@type": [
+            "Persoongebeurtenis",
+            "Geboorte"
+          ],
+          "datum": {
+            "@value": "1915-02-11",
+            "@type": "Date"
+          }
+        },
+        "geslacht": {
+          "@id": "https://data.vlaanderen.be/id/concept/IT000/Geslacht/1"
+        }
+      },
+      "gezinsrelatietype": {
+        "@id": "https://data.vlaanderen.be/id/concept/IT141/Gezinsrelatietype/03"
+      }
+    },
+    {
+      "@id": "_:persoonsrelatie_84121725318_16100431104_gezin",
+      "@type": [
+        "Persoonsrelatie",
+        "Gezinsrelatie"
+      ],
+      "vanPersoon": {
+        "@id": "_:persoon_84121725318",
+        "@type": [ "GeregistreerdPersoon", "Persoon"]
+      },
+      "metPersoon": {
+        "@id": "_:persoon_16100431104",
+        "@type": [ "GeregistreerdPersoon", "Persoon"],
+        "registratie": {
+          "@id": "_:identificator_16100431104",
+          "@type": [
+            "Identificator"
+          ],
+          "identificator": {
+            "@value": "16100431104",
+            "@type": "Literal"
+          }
+        },
+        "voornaam": [
+          {
+            "@value": "Liam"
+          }
+        ],
+        "achternaam": [
+          {
+            "@value": "Bollen"
+          }
+        ],
+        "heeftGeboorte": {
+          "@type": [
+            "Persoongebeurtenis",
+            "Geboorte"
+          ],
+          "datum": {
+            "@value": "1916-10-04",
+            "@type": "Date"
+          }
+        },
+        "geslacht": {
+          "@id": "https://data.vlaanderen.be/id/concept/IT000/Geslacht/1"
+        }
+      },
+      "gezinsrelatietype": {
+        "@id": "https://data.vlaanderen.be/id/concept/IT141/Gezinsrelatietype/03"
+      }
+    },
+    {
+      "@id": "_:persoonsrelatie_84121725318_84101328889_huwelijk",
+      "@type": [
+        "Persoonsrelatie",
+        "Huwelijk"
+      ],
+      "vanPersoon": {
+        "@id": "_:persoon_84121725318",
+        "@type": [ "GeregistreerdPersoon", "Persoon"]
+      },
+      "metPersoon": {
+        "@id": "_:persoon_84101328889",
+        "@type": [ "GeregistreerdPersoon", "Persoon"],
+        "registratie": {
+          "@id": "_:identificator_84101328889",
+          "@type": [
+            "Identificator"
+          ],
+          "identificator": {
+            "@value": "84101328889",
+            "@type": "Literal"
+          }
+        },
+        "voornaam": [
+          {
+            "@value": "Liesbeth"
+          },
+          {
+            "@value": "Denise"
+          },
+          {
+            "@value": "Vital"
+          }
+        ],
+        "achternaam": [
+          {
+            "@value": "Lenaerts"
+          }
+        ],
+        "heeftGeboorte": {
+          "@type": [
+            "Persoongebeurtenis",
+            "Geboorte"
+          ],
+          "datum": {
+            "@value": "1984-10-13",
+            "@type": "Date"
+          }
+        },
+        "geslacht": {
+          "@id": "https://data.vlaanderen.be/id/concept/IT000/Geslacht/2"
+        }
+      }
+    }
+  ],
+  "modificatiedatum": {
+    "@value": "2017-03-15",
+    "@type": "Date"
+  },
+  "creatiedatum": {
+    "@value": "1971-03-19",
+    "@type": "Date"
+  },
+  "bron": {
+    "@id": "https://data.vlaanderen.be/id/organisatie/OVO027248"
+  }
+}

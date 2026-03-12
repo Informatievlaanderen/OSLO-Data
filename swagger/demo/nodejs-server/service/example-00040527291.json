@@ -1,0 +1,272 @@
+{
+  "@context": "https://test.data.vlaanderen.be/doc/implementatiemodel/magda/persoon/context/persoon-IM.jsonld",
+  "@id": "_:persoon_00040527291",
+  "@type": [
+    "GeregistreerdPersoon",
+    "Persoon",
+    "Versie"
+  ],
+  "registratie": {
+    "@id": "_:identificator_00040527291",
+    "@type": [
+      "Identificator"
+    ],
+    "identificator": {
+      "@value": "00040527291",
+      "@type": "Literal"
+    }
+  },
+  "registratiedetail": {
+    "@type": [
+      "Registratie"
+    ],
+    "dossierstatus": [
+      {
+        "@id": "https://data.vlaanderen.be/id/concept/IT001/Dossierstatus/99990"
+      }
+    ],
+    "geregistreerdPersoon": {
+      "@id": "_:persoon_00040527291"
+    }
+  },
+  "heeftInwonerschap": [
+    {
+      "@id": "_:inwonerschap_00040527291",
+      "@type": [
+        "Inwonerschap"
+      ],
+      "heeftVerblijfplaats": [
+        {
+          "@id": "_:verblijfplaats_1977-02-04",
+          "@type": [
+            "Verblijfplaats",
+            "Domicilie"
+          ],
+          "verblijfsadres": {
+            "@id": "_:adresvoorstelling_1977-02-04",
+            "@type": [
+              "Adresvoorstelling"
+            ],
+            "huisnummer": {
+              "@value": "101"
+            },
+            "postcode": {
+              "@value": "1081"
+            },
+            "straatnaam": {
+              "@value": "Segherslaan",
+              "@language": "nl"
+            },
+            "gemeentenaam": {
+              "@value": "Koekelberg",
+              "@language": "nl"
+            },
+            "land": {
+              "@value": "België",
+              "@language": "nl"
+            },
+            "volledigAdres": "Segherslaan 101 1081 Koekelberg België"
+          }
+        }
+      ]
+    }
+  ],
+  "heeftGeboorte": {
+    "@id": "_:geboorte_00040527291",
+    "@type": [
+      "Persoonsgebeurtenis",
+      "Geboorte"
+    ],
+    "datum": {
+      "@value": "1900-04-05",
+      "@type": "Date"
+    },
+    "plaats": {
+      "@id": "https://data.vlaanderen.be/id/gemeente/21011"
+    }
+  },
+  "heeftOverlijden": {
+    "@id": "_:overlijden_00040527291",
+    "@type": [
+      "Persoonsgebeurtenis",
+      "Overlijden"
+    ],
+    "datum": {
+      "@value": "1986-11-13",
+      "@type": "Date"
+    },
+    "plaats": {
+      "@id": "https://data.vlaanderen.be/id/gemeente/21204"
+    }
+  },
+  "isLidVan": [
+    {
+      "@id": "_:gezin",
+      "@type": "Gezin",
+      "gezinslid": [
+        {
+          "@id": "_:persoon_00040527291"
+        },
+        {
+          "@id": "_:persoon_94061610969"
+        }
+      ],
+      "gezinshoofd": {
+        "@id": "_:persoon_94061610969"
+      }
+    }
+  ],
+  "voornaam": [
+    {
+      "@value": "Louise"
+    },
+    {
+      "@value": "Thérèse"
+    }
+  ],
+  "achternaam": [
+    {
+      "@value": "Nielens"
+    }
+  ],
+  "geslacht": {
+    "@id": "https://data.vlaanderen.be/id/concept/IT000/Geslacht/2"
+  },
+  "beheerder": {
+    "@id": "https://data.vlaanderen.be/id/gemeente/21011",
+    "@type": [
+      "AdministratiefBeheerder",
+      "Organisatie"
+    ]
+  },
+  "heeftBurgerlijkeStaat": {
+    "@id": "_:burgerlijkeStaat_00040527291",
+    "@type": [
+      "BurgerlijkeStaat"
+    ],
+    "type": {
+      "@id": "https://data.vlaanderen.be/id/concept/IT120/BurgerlijkeStaattype/30"
+    }
+  },
+  "heeftPersoonsrelatie": [
+    {
+      "@id": "_:persoonsrelatie_00040527291_00000100000_afstamming",
+      "@type": [
+        "Persoonsrelatie",
+        "Afstamming"
+      ],
+      "vanPersoon": {
+        "@id": "_:persoon_00040527291",
+        "@type": "GeregistreerdPersoon"
+      },
+      "metPersoon": {
+        "@id": "_:persoon_00000100000",
+        "@type": "Persoon",
+        "voornaam": [
+          {
+            "@value": "Thérèse"
+          }
+        ],
+        "achternaam": [
+          {
+            "@value": "Willems"
+          }
+        ],
+        "geslacht": {
+          "@id": "https://data.vlaanderen.be/id/concept/IT000/Geslacht/2"
+        }
+      },
+      "afstammingstype": {
+        "@id": "https://data.vlaanderen.be/id/concept/IT110/Afstammingstype/00"
+      },
+      "datumVanAfstamming": {
+        "@value": "1900-04-05",
+        "@type": "Date"
+      }
+    },
+    {
+      "@id": "_:persoonsrelatie_00040527291_00000199900_afstamming",
+      "@type": [
+        "Persoonsrelatie",
+        "Afstamming"
+      ],
+      "vanPersoon": {
+        "@id": "_:persoon_00040527291",
+        "@type": "GeregistreerdPersoon"
+      },
+      "metPersoon": {
+        "@id": "_:persoon_00000199900",
+        "@type": "Persoon",
+        "voornaam": [
+          {
+            "@value": "Pierre"
+          }
+        ],
+        "achternaam": [
+          {
+            "@value": "Nielens"
+          }
+        ],
+        "geslacht": {
+          "@id": "https://data.vlaanderen.be/id/concept/IT000/Geslacht/1"
+        }
+      },
+      "afstammingstype": {
+        "@id": "https://data.vlaanderen.be/id/concept/IT110/Afstammingstype/00"
+      },
+      "datumVanAfstamming": {
+        "@value": "1900-04-05",
+        "@type": "Date"
+      }
+    },
+    {
+      "@id": "_:persoonsrelatie_00040527291_94061610969_gezin",
+      "@type": [
+        "Persoonsrelatie",
+        "Gezinsrelatie"
+      ],
+      "vanPersoon": {
+        "@id": "_:persoon_00040527291",
+        "@type": [ "GeregistreerdPersoon", "Persoon"]
+      },
+      "metPersoon": {
+        "@id": "_:persoon_94061610969",
+        "@type": [ "GeregistreerdPersoon", "Persoon"],
+        "voornaam": [
+          {
+            "@value": "Pierre"
+          }
+        ],
+        "achternaam": [
+          {
+            "@value": "Schoon"
+          }
+        ],
+        "heeftGeboorte": {
+          "@type": [
+            "Geboorte",
+            "Persoongebeurtenis"
+          ],
+          "datum": {
+            "@value": "1994-06-16",
+            "@type": "Date"
+          }
+        }
+      },
+      "gezinsrelatietype": {
+        "@id": "https://data.vlaanderen.be/id/concept/IT141/Gezinsrelatietype/02"
+      }
+    }
+  ],
+  "modificatiedatum": {
+    "@value": "1996-03-03",
+    "@type": "Date"
+  },
+  "creatiedatum": {
+    "@value": "1980-11-20",
+    "@type": "Date"
+  },
+  "bron": {
+    "@id": "https://data.vlaanderen.be/id/organisatie/OVO027248"
+  }
+}
