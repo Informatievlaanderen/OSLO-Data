@@ -13,16 +13,10 @@
           "@id": {
             "type": "string",
             "format": "uri"
-          },
-          "@type": {
-            "type": "string",
-            "description": "Object type (klasse Woonvormtype)",
-            "pattern": "^Woonvormtype$"
           }
         },
         "required": [
-          "@id",
-          "@type"
+          "@id"
         ]
       },
       "AdministratieveEenheidniveau": {
@@ -32,16 +26,10 @@
           "@id": {
             "type": "string",
             "format": "uri"
-          },
-          "@type": {
-            "type": "string",
-            "description": "Object type (klasse AdministratieveEenheidniveau)",
-            "pattern": "^AdministratieveEenheidniveau$"
           }
         },
         "required": [
-          "@id",
-          "@type"
+          "@id"
         ]
       },
       "RedenAfwezigheid": {
@@ -51,16 +39,10 @@
           "@id": {
             "type": "string",
             "format": "uri"
-          },
-          "@type": {
-            "type": "string",
-            "description": "Object type (klasse RedenAfwezigheid)",
-            "pattern": "^RedenAfwezigheid$"
           }
         },
         "required": [
-          "@id",
-          "@type"
+          "@id"
         ]
       },
       "Geslacht": {
@@ -70,16 +52,10 @@
           "@id": {
             "type": "string",
             "format": "uri"
-          },
-          "@type": {
-            "type": "string",
-            "description": "Object type (klasse Geslacht)",
-            "pattern": "^Geslacht$"
           }
         },
         "required": [
-          "@id",
-          "@type"
+          "@id"
         ]
       },
       "BurgerlijkeStaatType": {
@@ -89,16 +65,10 @@
           "@id": {
             "type": "string",
             "format": "uri"
-          },
-          "@type": {
-            "type": "string",
-            "description": "Object type (klasse BurgerlijkeStaatType)",
-            "pattern": "^BurgerlijkeStaatType$"
           }
         },
         "required": [
-          "@id",
-          "@type"
+          "@id"
         ]
       },
       "AdministratiefBeheerdertype": {
@@ -108,16 +78,10 @@
           "@id": {
             "type": "string",
             "format": "uri"
-          },
-          "@type": {
-            "type": "string",
-            "description": "Object type (klasse AdministratiefBeheerdertype)",
-            "pattern": "^AdministratiefBeheerdertype$"
           }
         },
         "required": [
-          "@id",
-          "@type"
+          "@id"
         ]
       },
       "Dossierstatustype": {
@@ -127,16 +91,10 @@
           "@id": {
             "type": "string",
             "format": "uri"
-          },
-          "@type": {
-            "type": "string",
-            "description": "Object type (klasse Dossierstatustype)",
-            "pattern": "^Dossierstatustype$"
           }
         },
         "required": [
-          "@id",
-          "@type"
+          "@id"
         ]
       },
       "Afstammingstype": {
@@ -146,16 +104,10 @@
           "@id": {
             "type": "string",
             "format": "uri"
-          },
-          "@type": {
-            "type": "string",
-            "description": "Object type (klasse Afstammingstype)",
-            "pattern": "^Afstammingstype$"
           }
         },
         "required": [
-          "@id",
-          "@type"
+          "@id"
         ]
       },
       "Gezinsrelatietype": {
@@ -165,16 +117,10 @@
           "@id": {
             "type": "string",
             "format": "uri"
-          },
-          "@type": {
-            "type": "string",
-            "description": "Object type (klasse Gezinsrelatietype)",
-            "pattern": "^Gezinsrelatietype$"
           }
         },
         "required": [
-          "@id",
-          "@type"
+          "@id"
         ]
       },
       "Persoon": {
@@ -330,10 +276,7 @@
           }
         },
         "required": [
-          "@id",
-          "@type",
-          "creatiedatum",
-          "bron"
+          "@type"
         ]
       },
       "Plaats": {
@@ -386,7 +329,6 @@
           }
         },
         "required": [
-          "@id",
           "@type"
         ]
       },
@@ -426,7 +368,6 @@
           }
         },
         "required": [
-          "@id",
           "@type",
           "metPersoon"
         ]
@@ -482,7 +423,6 @@
           }
         },
         "required": [
-          "@id",
           "@type"
         ]
       },
@@ -537,7 +477,6 @@
           }
         },
         "required": [
-          "@id",
           "@type"
         ]
       },
@@ -592,14 +531,13 @@
           }
         },
         "required": [
-          "@id",
           "@type"
         ]
       },
       "Huwelijk": {
         "title": "Huwelijk",
         "type": "object",
-        "description": "Een door burgerlijk of religieus recht geregelde samenlevingsvorm van twee personen.",
+        "description": "Een door burgerlijk of religieus recht geregelde samenlevingsvorm van twee personen.",
         "properties": {
           "@id": {
             "type": "string",
@@ -646,7 +584,6 @@
           }
         },
         "required": [
-          "@id",
           "@type",
           "metPersoon"
         ]
@@ -706,10 +643,7 @@
           }
         },
         "required": [
-          "@id",
-          "@type",
-          "creatiedatum",
-          "bron"
+          "@type"
         ]
       },
       "FormeleOrganisatie": {
@@ -728,7 +662,6 @@
           }
         },
         "required": [
-          "@id",
           "@type"
         ]
       },
@@ -826,7 +759,6 @@
           }
         },
         "required": [
-          "@id",
           "@type",
           "type",
           "titel"
@@ -900,7 +832,6 @@
           }
         },
         "required": [
-          "@id",
           "@type"
         ]
       },
@@ -936,7 +867,6 @@
           }
         },
         "required": [
-          "@id",
           "@type",
           "payload"
         ]
@@ -1007,9 +937,7 @@
           }
         },
         "required": [
-          "@id",
           "@type",
-          "persoon",
           "jurisdictie"
         ]
       },
@@ -1063,7 +991,6 @@
           }
         },
         "required": [
-          "@id",
           "@type",
           "metPersoon"
         ]
@@ -1236,10 +1163,7 @@
           }
         },
         "required": [
-          "@id",
-          "@type",
-          "creatiedatum",
-          "bron"
+          "@type"
         ]
       },
       "Domicilie": {
@@ -1261,14 +1185,13 @@
           }
         },
         "required": [
-          "@id",
           "@type"
         ]
       },
       "Afstamming": {
         "title": "Afstamming",
         "type": "object",
-        "description": "Afstamming is de dalende lijn van bloedverwantschap tussen verschillende generaties.",
+        "description": "Afstamming is de dalende lijn van bloedverwantschap tussen verschillende generaties.",
         "properties": {
           "@id": {
             "type": "string",
@@ -1319,7 +1242,6 @@
           }
         },
         "required": [
-          "@id",
           "@type",
           "metPersoon"
         ]
@@ -1343,7 +1265,6 @@
           }
         },
         "required": [
-          "@id",
           "@type"
         ]
       },
@@ -1363,7 +1284,6 @@
           }
         },
         "required": [
-          "@id",
           "@type"
         ]
       },
@@ -1400,7 +1320,6 @@
           }
         },
         "required": [
-          "@id",
           "@type"
         ]
       },
@@ -1465,7 +1384,6 @@
           }
         },
         "required": [
-          "@id",
           "@type"
         ]
       },
@@ -1488,7 +1406,6 @@
           }
         },
         "required": [
-          "@id",
           "@type"
         ]
       },
@@ -1528,7 +1445,6 @@
           }
         },
         "required": [
-          "@id",
           "@type"
         ]
       },
@@ -1551,7 +1467,6 @@
           }
         },
         "required": [
-          "@id",
           "@type"
         ]
       },
@@ -1574,7 +1489,6 @@
           }
         },
         "required": [
-          "@id",
           "@type"
         ]
       },
@@ -1597,7 +1511,6 @@
           }
         },
         "required": [
-          "@id",
           "@type"
         ]
       },
@@ -1620,7 +1533,6 @@
           }
         },
         "required": [
-          "@id",
           "@type"
         ]
       },
@@ -1643,7 +1555,6 @@
           }
         },
         "required": [
-          "@id",
           "@type"
         ]
       },
@@ -1686,7 +1597,6 @@
           }
         },
         "required": [
-          "@id",
           "@type"
         ]
       },
@@ -1723,7 +1633,6 @@
           }
         },
         "required": [
-          "@id",
           "@type"
         ]
       },
@@ -1986,7 +1895,6 @@
           }
         },
         "required": [
-          "@id",
           "@type"
         ]
       },
@@ -2018,7 +1926,6 @@
           }
         },
         "required": [
-          "@id",
           "@type"
         ]
       },
@@ -2119,7 +2026,6 @@
           }
         },
         "required": [
-          "@id",
           "@type"
         ]
       }
