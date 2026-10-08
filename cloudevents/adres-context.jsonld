@@ -1,4 +1,4 @@
-{
+"@context": {
     "@base": "https://data.vlaanderen.be/id/changeevents/adres/",
     "dcterms": "http://purl.org/dc/terms/",
     "content": "http://www.w3.org/2011/content#",
