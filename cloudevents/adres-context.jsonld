@@ -11,6 +11,7 @@
     "adres": "https://data.vlaanderen.be/ns/adres#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "as": "http://www.w3.org/ns/activitystreams#",
+    "prov": "http://www.w3.org/ns/prov#",
     "id": "@id",
     "time": { "@id": "dcterms:issued", "@type": "xsd:date" },
     "type": { "@id": "dcterms:type", "@type": "@vocab" },
@@ -24,7 +25,7 @@
     "dataschema": "dcterms:conformsTo",
     "basisregisterseventtype": { "@id": "rdf:type", "@type": "@id", "@context": {"@base": "https://implementatie.data.vlaanderen.be/ns/grar/changefeeds/"} },
     "basisregisterscausationid": "dcterms:identifier",
-    "nisCodes": { "@id": "adres:heeftGemeente", "@type": "@id", "@context": {"@base": "https://data.vlaanderen.be/id/gemeente/"} },
+    "nisCodes": { "@id": "prov:wasAttributedTo", "@type": "@id", "@context": {"@base": "https://data.vlaanderen.be/id/gemeente/"} },
     "attributen": "basisregisters:attributen",
     "naam": {
       "@id": "rdf:predicate",
