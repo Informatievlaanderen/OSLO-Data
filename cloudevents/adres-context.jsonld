@@ -14,7 +14,7 @@
     "id": "@id",
     "time": { "@id": "dcterms:issued", "@type": "xsd:date" },
     "type": { "@id": "dcterms:type", "@type": "@vocab" },
-    "source": "dcterms:source",
+    "source": { "@id": "dcterms:source", "@type": "@id" },
     "datacontenttype": "dcterms:format",
     "subject": "dcterms:subject",
     "objectId": "generiek:lokaleIdentificator",
