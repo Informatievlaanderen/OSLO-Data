@@ -16,7 +16,7 @@
     "type": { "@id": "dcterms:type", "@type": "@vocab" },
     "source": { "@id": "dcterms:source", "@type": "@id" },
     "datacontenttype": "dcterms:format",
-    "subject": "dcterms:subject",
+    "subject": { "@id": "dcterms:subject", "@type": "@id" },
     "objectId": "generiek:lokaleIdentificator",
     "naamruimte": "generiek:naamruimte",
     "versieId": "generiek:versieIdentificator",
