@@ -1,4 +1,5 @@
-"@context": {
+{
+  "@context": {
     "@base": "https://data.vlaanderen.be/id/changeevents/adres/",
     "dcterms": "http://purl.org/dc/terms/",
     "content": "http://www.w3.org/2011/content#",
@@ -48,4 +49,5 @@
     "basisregisters.address.update.v1": "as:Update",
     "basisregisters.address.delete.v1": "as:Delete",
     "specversion": {"@id": "dcterms:conformsTo", "@type": "@id", "@context": {"@base": "https://github.com/cloudevents/spec/tree/" }}
+  }
 }
